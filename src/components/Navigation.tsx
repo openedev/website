@@ -32,7 +32,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <div className="text-2xl font-bold text-white">
-              <span className="text-orange-500">Edge</span>ble
+              <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">Edge</span>ble
             </div>
           </div>
 
@@ -43,7 +43,7 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-300 hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  className="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
                 >
                   {item.name}
                 </a>
@@ -53,7 +53,7 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
+            <button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
               Product Inquiry
             </button>
           </div>
@@ -78,13 +78,13 @@ const Navigation = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-300 hover:text-orange-400 block px-3 py-2 text-base font-medium transition-colors duration-200"
+                className="text-gray-300 hover:text-cyan-400 block px-3 py-2 text-base font-medium transition-colors duration-200"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
               </a>
             ))}
-            <button className="w-full text-left bg-orange-500 hover:bg-orange-600 text-white px-3 py-2 rounded-lg font-semibold transition-all duration-200 mt-4">
+            <button className="w-full text-left bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white px-3 py-2 rounded-lg font-semibold transition-all duration-200 mt-4">
               Product Inquiry
             </button>
           </div>

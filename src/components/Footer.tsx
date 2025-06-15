@@ -49,9 +49,9 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your email address"
-                className="flex-1 px-4 py-3 bg-slate-800 border border-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                className="flex-1 px-4 py-3 bg-slate-800 border border-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
               />
-              <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center whitespace-nowrap">
+              <button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center whitespace-nowrap">
                 Subscribe
                 <ArrowRight className="ml-2 w-4 h-4" />
               </button>
@@ -66,7 +66,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="text-2xl font-bold mb-4">
-              <span className="text-orange-500">Edge</span>ble
+              <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">Edge</span>ble
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Pioneering the future of edge AI with innovative hardware solutions that bring intelligence closer to where it's needed most.
@@ -95,7 +95,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-gray-400 hover:text-orange-400 transition-colors duration-200"
+                    className="text-gray-400 hover:text-cyan-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -112,7 +112,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-gray-400 hover:text-orange-400 transition-colors duration-200"
+                    className="text-gray-400 hover:text-cyan-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -129,7 +129,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-gray-400 hover:text-orange-400 transition-colors duration-200"
+                    className="text-gray-400 hover:text-cyan-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -146,7 +146,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-gray-400 hover:text-orange-400 transition-colors duration-200"
+                    className="text-gray-400 hover:text-cyan-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -167,19 +167,19 @@ const Footer = () => {
             <div className="flex space-x-6">
               <a 
                 href="#" 
-                className="text-gray-400 hover:text-orange-400 transition-colors duration-200"
+                className="text-gray-400 hover:text-cyan-400 transition-colors duration-200"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="text-gray-400 hover:text-orange-400 transition-colors duration-200"
+                className="text-gray-400 hover:text-cyan-400 transition-colors duration-200"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="text-gray-400 hover:text-orange-400 transition-colors duration-200"
+                className="text-gray-400 hover:text-cyan-400 transition-colors duration-200"
               >
                 <Github className="w-5 h-5" />
               </a>

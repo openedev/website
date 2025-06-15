@@ -57,7 +57,7 @@ const About = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            About <span className="text-orange-500">Edgeble</span>
+            About <span className="bg-gradient-to-r from-cyan-500 to-purple-600 bg-clip-text text-transparent">Edgeble</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Pioneering the future of edge AI with innovative hardware solutions that bring intelligence closer to where it's needed most.
@@ -69,7 +69,7 @@ const About = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4 flex items-center">
-                <Eye className="w-8 h-8 text-orange-500 mr-3" />
+                <Eye className="w-8 h-8 text-cyan-500 mr-3" />
                 Our Vision
               </h3>
               <p className="text-gray-600 leading-relaxed">
@@ -79,7 +79,7 @@ const About = () => {
             </div>
             <div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4 flex items-center">
-                <Target className="w-8 h-8 text-orange-500 mr-3" />
+                <Target className="w-8 h-8 text-purple-500 mr-3" />
                 Our Mission
               </h3>
               <p className="text-gray-600 leading-relaxed">
@@ -104,9 +104,14 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((value, index) => {
               const IconComponent = value.icon;
+              const gradients = [
+                'from-cyan-500 to-blue-600',
+                'from-purple-500 to-pink-600',
+                'from-emerald-500 to-teal-600'
+              ];
               return (
-                <div key={index} className="text-center p-6 bg-neutral-50 rounded-2xl hover:bg-orange-50 transition-colors duration-300">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-500 rounded-full mb-4">
+                <div key={index} className="text-center p-6 bg-slate-50 rounded-2xl hover:bg-gradient-to-br hover:from-cyan-50 hover:to-purple-50 transition-all duration-300 border border-gray-100 hover:border-cyan-200">
+                  <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r ${gradients[index]} rounded-full mb-4`}>
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
                   <h4 className="text-xl font-bold text-slate-900 mb-3">{value.title}</h4>
@@ -131,23 +136,23 @@ const About = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <a href={member.linkedin} className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-orange-500 hover:text-white transition-colors duration-200">
+                    <a href={member.linkedin} className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gradient-to-r hover:from-cyan-500 hover:to-purple-600 hover:text-white transition-all duration-200">
                       <Linkedin className="w-4 h-4" />
                     </a>
-                    <a href={member.twitter} className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-orange-500 hover:text-white transition-colors duration-200">
+                    <a href={member.twitter} className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gradient-to-r hover:from-cyan-500 hover:to-purple-600 hover:text-white transition-all duration-200">
                       <Twitter className="w-4 h-4" />
                     </a>
                   </div>
                 </div>
                 <h4 className="text-lg font-bold text-slate-900 mb-1">{member.name}</h4>
-                <p className="text-orange-500 font-medium">{member.role}</p>
+                <p className="bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent font-medium">{member.role}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Location */}
-        <div className="bg-gradient-to-r from-slate-900 to-blue-900 rounded-2xl p-8 md:p-12">
+        <div className="bg-gradient-to-r from-slate-900 via-purple-900 to-slate-800 rounded-2xl p-8 md:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
@@ -156,11 +161,11 @@ const About = () => {
               <p className="text-gray-300 mb-6">
                 Headquartered in Silicon Valley with development centers worldwide, we're positioned to serve clients globally while maintaining the agility of a focused technology company.
               </p>
-              <div className="flex items-center text-orange-400 mb-4">
+              <div className="flex items-center text-cyan-400 mb-4">
                 <MapPin className="w-5 h-5 mr-3" />
                 <span>San Francisco, CA | Austin, TX | Bangalore, India</span>
               </div>
-              <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center">
+              <button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
                 Get in Touch
               </button>
@@ -168,19 +173,19 @@ const About = () => {
             <div className="text-center lg:text-right">
               <div className="grid grid-cols-2 gap-8">
                 <div>
-                  <div className="text-3xl font-bold text-orange-400 mb-2">2019</div>
+                  <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent mb-2">2019</div>
                   <div className="text-gray-300">Founded</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-orange-400 mb-2">150+</div>
+                  <div className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-emerald-400 bg-clip-text text-transparent mb-2">150+</div>
                   <div className="text-gray-300">Team Members</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-orange-400 mb-2">50+</div>
+                  <div className="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent mb-2">50+</div>
                   <div className="text-gray-300">Patents</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-orange-400 mb-2">$50M</div>
+                  <div className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent mb-2">$50M</div>
                   <div className="text-gray-300">Series B Funding</div>
                 </div>
               </div>

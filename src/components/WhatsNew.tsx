@@ -50,12 +50,12 @@ const WhatsNew = () => {
   };
 
   return (
-    <section id="news" className="py-24 bg-neutral-50">
+    <section id="news" className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            What's <span className="text-orange-500">New</span>
+            What's <span className="bg-gradient-to-r from-cyan-500 to-purple-600 bg-clip-text text-transparent">New</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Stay updated with our latest product launches, industry partnerships, and upcoming events.
@@ -67,7 +67,7 @@ const WhatsNew = () => {
           {news.map((item, index) => {
             const IconComponent = item.icon;
             return (
-              <div key={index} className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+              <div key={index} className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100 hover:border-cyan-200">
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">
                   <img 
@@ -78,9 +78,9 @@ const WhatsNew = () => {
                   {/* Badge */}
                   <div className="absolute top-4 left-4">
                     <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                      item.type === 'product' ? 'bg-green-500 text-white' :
-                      item.type === 'event' ? 'bg-blue-500 text-white' :
-                      'bg-orange-500 text-white'
+                      item.type === 'product' ? 'bg-gradient-to-r from-emerald-500 to-teal-600 text-white' :
+                      item.type === 'event' ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white' :
+                      'bg-gradient-to-r from-purple-500 to-pink-600 text-white'
                     }`}>
                       {item.badge}
                     </span>
@@ -97,13 +97,13 @@ const WhatsNew = () => {
                 {/* Content */}
                 <div className="p-6">
                   <div className="flex items-center mb-3">
-                    <IconComponent className="w-5 h-5 text-orange-500 mr-2" />
-                    <h3 className="text-xl font-bold text-slate-900 group-hover:text-orange-500 transition-colors duration-200">
+                    <IconComponent className="w-5 h-5 text-cyan-500 mr-2" />
+                    <h3 className="text-xl font-bold text-slate-900 group-hover:bg-gradient-to-r group-hover:from-cyan-600 group-hover:to-purple-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-200">
                       {item.title}
                     </h3>
                   </div>
                   <p className="text-gray-600 mb-4 leading-relaxed">{item.description}</p>
-                  <button className="flex items-center text-orange-500 hover:text-orange-600 font-semibold transition-colors duration-200 group">
+                  <button className="flex items-center bg-gradient-to-r from-cyan-500 to-purple-600 bg-clip-text text-transparent hover:from-cyan-600 hover:to-purple-700 font-semibold transition-all duration-200 group">
                     Read More
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -114,7 +114,7 @@ const WhatsNew = () => {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="bg-gradient-to-r from-slate-900 to-blue-900 rounded-2xl p-8 md:p-12 text-center">
+        <div className="bg-gradient-to-r from-slate-900 via-purple-900 to-slate-800 rounded-2xl p-8 md:p-12 text-center">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Stay in the Loop
           </h3>
@@ -125,9 +125,9 @@ const WhatsNew = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              className="flex-1 px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
             />
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center">
+            <button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center">
               Subscribe
               <ExternalLink className="ml-2 w-4 h-4" />
             </button>
