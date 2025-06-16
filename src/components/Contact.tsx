@@ -58,7 +58,7 @@ const Contact = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            Get in <span className="bg-gradient-to-r from-cyan-500 to-purple-600 bg-clip-text text-transparent">Touch</span>
+            Get in <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">Touch</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to accelerate your AI journey? Our experts are here to help you find the perfect edge AI solution.
@@ -90,7 +90,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                     placeholder="Your full name"
                   />
                 </div>
@@ -105,7 +105,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -121,7 +121,7 @@ const Contact = () => {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                   placeholder="Your company name"
                 />
               </div>
@@ -136,7 +136,7 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                 >
                   <option value="">Select a subject</option>
                   <option value="product-inquiry">Product Inquiry</option>
@@ -158,14 +158,14 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all duration-200 resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 resize-none"
                   placeholder="Tell us about your project and requirements..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white py-4 px-6 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group"
+                className="w-full bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-400 hover:to-red-500 text-white py-4 px-6 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group"
               >
                 Send Message
                 <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -181,8 +181,8 @@ const Contact = () => {
                 {contactInfo.map((info, index) => {
                   const IconComponent = info.icon;
                   const gradients = [
-                    'from-cyan-500 to-blue-600',
-                    'from-purple-500 to-pink-600',
+                    'from-orange-500 to-red-600',
+                    'from-violet-500 to-purple-600',
                     'from-emerald-500 to-teal-600',
                     'from-amber-500 to-orange-600'
                   ];
@@ -215,12 +215,12 @@ const Contact = () => {
             </div>
 
             {/* Quick Response */}
-            <div className="bg-gradient-to-r from-slate-900 via-purple-900 to-slate-800 rounded-2xl p-8 text-white">
+            <div className="bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-800 rounded-2xl p-8 text-white">
               <h3 className="text-xl font-bold mb-4">Quick Response Guarantee</h3>
               <p className="text-gray-300 mb-4">
                 We understand that time is critical in your AI projects. Our team commits to responding to all inquiries within 24 hours.
               </p>
-              <div className="flex items-center text-cyan-400">
+              <div className="flex items-center text-orange-400">
                 <Clock className="w-5 h-5 mr-2" />
                 <span className="font-semibold">24-hour response time</span>
               </div>

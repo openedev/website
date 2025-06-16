@@ -8,14 +8,14 @@ const Solutions = () => {
       title: 'Industrial Automation',
       description: 'AI-powered quality control, predictive maintenance, and process optimization for manufacturing.',
       features: ['Real-time defect detection', 'Predictive maintenance', 'Process optimization'],
-      color: 'from-cyan-500 to-blue-600'
+      color: 'from-orange-500 to-red-600'
     },
     {
       icon: Shield,
       title: 'Defense & Security',
       description: 'Mission-critical AI applications for surveillance, threat detection, and autonomous systems.',
       features: ['Threat recognition', 'Autonomous navigation', 'Real-time analysis'],
-      color: 'from-purple-500 to-indigo-600'
+      color: 'from-violet-500 to-purple-600'
     },
     {
       icon: Heart,
@@ -36,7 +36,7 @@ const Solutions = () => {
       title: 'Automotive Edge',
       description: 'Advanced driver assistance systems, autonomous driving, and in-vehicle AI applications.',
       features: ['ADAS systems', 'Object detection', 'Driver monitoring'],
-      color: 'from-violet-500 to-purple-600'
+      color: 'from-indigo-500 to-violet-600'
     },
     {
       icon: Zap,
@@ -53,7 +53,7 @@ const Solutions = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            Industry <span className="bg-gradient-to-r from-cyan-500 to-purple-600 bg-clip-text text-transparent">Solutions</span>
+            Industry <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">Solutions</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Tailored AI solutions across diverse industries, enabling intelligent edge computing for every sector.
@@ -65,7 +65,7 @@ const Solutions = () => {
           {solutions.map((solution, index) => {
             const IconComponent = solution.icon;
             return (
-              <div key={index} className="group bg-white rounded-2xl border border-gray-200 hover:border-cyan-200 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+              <div key={index} className="group bg-white rounded-2xl border border-gray-200 hover:border-orange-200 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
                 {/* Icon Header */}
                 <div className={`bg-gradient-to-r ${solution.color} p-6`}>
                   <IconComponent className="w-12 h-12 text-white mb-4" />
@@ -82,7 +82,7 @@ const Solutions = () => {
                     <ul className="space-y-2">
                       {solution.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="text-sm text-gray-600 flex items-center">
-                          <div className="w-1.5 h-1.5 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full mr-3"></div>
+                          <div className="w-1.5 h-1.5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full mr-3"></div>
                           {feature}
                         </li>
                       ))}
@@ -90,7 +90,7 @@ const Solutions = () => {
                   </div>
 
                   {/* CTA */}
-                  <button className="w-full bg-gradient-to-r from-slate-900 to-slate-700 hover:from-cyan-600 hover:to-purple-600 text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group">
+                  <button className="w-full bg-gradient-to-r from-slate-900 to-slate-700 hover:from-orange-600 hover:to-red-600 text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group">
                     Explore Solution
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -101,22 +101,22 @@ const Solutions = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-20 bg-gradient-to-r from-slate-900 via-purple-900 to-slate-800 rounded-2xl p-8 md:p-12">
+        <div className="mt-20 bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-800 rounded-2xl p-8 md:p-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent mb-2">500+</div>
+              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent mb-2">500+</div>
               <div className="text-gray-300">Deployments</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-emerald-400 bg-clip-text text-transparent mb-2">6</div>
+              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-violet-400 to-purple-500 bg-clip-text text-transparent mb-2">6</div>
               <div className="text-gray-300">Industries</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent mb-2">99.9%</div>
+              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent mb-2">99.9%</div>
               <div className="text-gray-300">Reliability</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent mb-2">24/7</div>
+              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent mb-2">24/7</div>
               <div className="text-gray-300">Support</div>
             </div>
           </div>

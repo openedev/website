@@ -38,7 +38,7 @@ const Products = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            Our <span className="bg-gradient-to-r from-cyan-500 to-purple-600 bg-clip-text text-transparent">Products</span>
+            Our <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">Products</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Cutting-edge AI accelerators designed for diverse applications, from IoT devices to industrial automation.
@@ -48,7 +48,7 @@ const Products = () => {
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
-            <div key={product.id} className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100 hover:border-cyan-200">
+            <div key={product.id} className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100 hover:border-orange-200">
               {/* Product Image */}
               <div className="relative h-48 overflow-hidden">
                 <img 
@@ -59,9 +59,9 @@ const Products = () => {
                 {/* Badge */}
                 <div className="absolute top-4 left-4">
                   <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                    product.badge === 'Most Popular' ? 'bg-gradient-to-r from-cyan-500 to-purple-600 text-white' :
+                    product.badge === 'Most Popular' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' :
                     product.badge === 'Industrial Grade' ? 'bg-gradient-to-r from-emerald-500 to-teal-600 text-white' :
-                    'bg-gradient-to-r from-purple-500 to-pink-600 text-white'
+                    'bg-gradient-to-r from-violet-500 to-purple-600 text-white'
                   }`}>
                     {product.badge}
                   </span>
@@ -71,7 +71,7 @@ const Products = () => {
               {/* Product Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold text-slate-900 mb-2">{product.name}</h3>
-                <p className="bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent font-medium mb-3">{product.tagline}</p>
+                <p className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent font-medium mb-3">{product.tagline}</p>
                 <p className="text-gray-600 mb-4 text-sm leading-relaxed">{product.description}</p>
 
                 {/* Specifications */}
@@ -80,7 +80,7 @@ const Products = () => {
                   <ul className="space-y-1">
                     {product.specs.map((spec, index) => (
                       <li key={index} className="text-sm text-gray-600 flex items-center">
-                        <div className="w-1.5 h-1.5 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full mr-2"></div>
+                        <div className="w-1.5 h-1.5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full mr-2"></div>
                         {spec}
                       </li>
                     ))}
@@ -88,7 +88,7 @@ const Products = () => {
                 </div>
 
                 {/* CTA Button */}
-                <button className="w-full bg-gradient-to-r from-slate-900 to-slate-700 hover:from-cyan-600 hover:to-purple-600 text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group">
+                <button className="w-full bg-gradient-to-r from-slate-900 to-slate-700 hover:from-orange-600 hover:to-red-600 text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group">
                   Learn More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
@@ -99,14 +99,14 @@ const Products = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-slate-900 via-purple-900 to-slate-800 rounded-2xl p-8 md:p-12">
+          <div className="bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-800 rounded-2xl p-8 md:p-12">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
               Need a Custom Solution?
             </h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
               Our engineering team can develop tailored AI accelerators for your specific requirements and use cases.
             </p>
-            <button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105">
+            <button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-400 hover:to-red-500 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105">
               Contact Our Engineers
             </button>
           </div>
