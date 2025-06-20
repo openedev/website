@@ -60,20 +60,20 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Get in <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">Touch</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Ready to accelerate your AI journey? Our experts are here to help you find the perfect edge AI solution.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-gray-900 rounded-2xl shadow-lg p-8 border border-gray-800">
+          <div className="bg-white/5 rounded-2xl shadow-lg p-8 border border-white/10">
             <h3 className="text-2xl font-bold text-white mb-6">Send us a Message</h3>
             
             {isSubmitted && (
-              <div className="mb-6 p-4 bg-gradient-to-r from-emerald-900/50 to-teal-900/50 border border-emerald-500/50 rounded-xl flex items-center">
-                <CheckCircle className="w-5 h-5 text-emerald-400 mr-3" />
-                <span className="text-emerald-300">Thank you! Your message has been sent successfully.</span>
+              <div className="mb-6 p-4 bg-white/10 border border-white/20 rounded-xl flex items-center">
+                <CheckCircle className="w-5 h-5 text-white mr-3" />
+                <span className="text-white">Thank you! Your message has been sent successfully.</span>
               </div>
             )}
 
@@ -90,7 +90,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                     placeholder="Your full name"
                   />
                 </div>
@@ -105,7 +105,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -121,7 +121,7 @@ const Contact = () => {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                   placeholder="Your company name"
                 />
               </div>
@@ -136,7 +136,7 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                 >
                   <option value="">Select a subject</option>
                   <option value="product-inquiry">Product Inquiry</option>
@@ -158,7 +158,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 resize-none"
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 resize-none"
                   placeholder="Tell us about your project and requirements..."
                 ></textarea>
               </div>
@@ -175,26 +175,20 @@ const Contact = () => {
 
           {/* Contact Information */}
           <div className="space-y-8">
-            <div className="bg-gray-900 rounded-2xl shadow-lg p-8 border border-gray-800">
+            <div className="bg-white/5 rounded-2xl shadow-lg p-8 border border-white/10">
               <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
               <div className="space-y-6">
                 {contactInfo.map((info, index) => {
                   const IconComponent = info.icon;
-                  const gradients = [
-                    'from-orange-500 to-red-600',
-                    'from-violet-500 to-purple-600',
-                    'from-emerald-500 to-teal-600',
-                    'from-amber-500 to-orange-600'
-                  ];
                   return (
                     <div key={index} className="flex items-start">
-                      <div className={`w-12 h-12 bg-gradient-to-r ${gradients[index]} rounded-xl flex items-center justify-center mr-4 flex-shrink-0`}>
+                      <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
                         <IconComponent className="w-6 h-6 text-white" />
                       </div>
                       <div>
                         <h4 className="text-lg font-semibold text-white mb-1">{info.title}</h4>
-                        <p className="text-gray-300">{info.details}</p>
-                        <p className="text-gray-400 text-sm">{info.subtitle}</p>
+                        <p className="text-white">{info.details}</p>
+                        <p className="text-white/70 text-sm">{info.subtitle}</p>
                       </div>
                     </div>
                   );
@@ -203,24 +197,24 @@ const Contact = () => {
             </div>
 
             {/* Map Placeholder */}
-            <div className="bg-gray-900 rounded-2xl shadow-lg p-8 border border-gray-800">
+            <div className="bg-white/5 rounded-2xl shadow-lg p-8 border border-white/10">
               <h3 className="text-2xl font-bold text-white mb-6">Our Location</h3>
-              <div className="bg-gradient-to-br from-gray-800 to-gray-700 rounded-xl h-64 flex items-center justify-center">
+              <div className="bg-white/10 rounded-xl h-64 flex items-center justify-center">
                 <div className="text-center">
-                  <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-3" />
-                  <p className="text-gray-400">Interactive map would be integrated here</p>
-                  <p className="text-sm text-gray-500">San Francisco, CA</p>
+                  <MapPin className="w-12 h-12 text-white mx-auto mb-3" />
+                  <p className="text-white">Interactive map would be integrated here</p>
+                  <p className="text-sm text-white/70">San Francisco, CA</p>
                 </div>
               </div>
             </div>
 
             {/* Quick Response */}
-            <div className="bg-gradient-to-r from-black via-gray-900 to-black rounded-2xl p-8 text-white border border-gray-800">
+            <div className="bg-white/5 rounded-2xl p-8 text-white border border-white/10">
               <h3 className="text-xl font-bold mb-4">Quick Response Guarantee</h3>
-              <p className="text-gray-300 mb-4">
+              <p className="text-white mb-4">
                 We understand that time is critical in your AI projects. Our team commits to responding to all inquiries within 24 hours.
               </p>
-              <div className="flex items-center text-orange-400">
+              <div className="flex items-center text-white">
                 <Clock className="w-5 h-5 mr-2" />
                 <span className="font-semibold">24-hour response time</span>
               </div>

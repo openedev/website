@@ -57,7 +57,7 @@ const WhatsNew = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             What's <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">New</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Stay updated with our latest product launches, industry partnerships, and upcoming events.
           </p>
         </div>
@@ -67,7 +67,7 @@ const WhatsNew = () => {
           {news.map((item, index) => {
             const IconComponent = item.icon;
             return (
-              <div key={index} className="group bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-800 hover:border-orange-500/50">
+              <div key={index} className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20">
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">
                   <img 
@@ -77,11 +77,7 @@ const WhatsNew = () => {
                   />
                   {/* Badge */}
                   <div className="absolute top-4 left-4">
-                    <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                      item.type === 'product' ? 'bg-gradient-to-r from-emerald-500 to-teal-600 text-white' :
-                      item.type === 'event' ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white' :
-                      'bg-gradient-to-r from-violet-500 to-purple-600 text-white'
-                    }`}>
+                    <span className="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-orange-500 to-red-600 text-white">
                       {item.badge}
                     </span>
                   </div>
@@ -97,13 +93,13 @@ const WhatsNew = () => {
                 {/* Content */}
                 <div className="p-6">
                   <div className="flex items-center mb-3">
-                    <IconComponent className="w-5 h-5 text-orange-500 mr-2" />
-                    <h3 className="text-xl font-bold text-white group-hover:bg-gradient-to-r group-hover:from-orange-600 group-hover:to-red-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-200">
+                    <IconComponent className="w-5 h-5 text-white mr-2" />
+                    <h3 className="text-xl font-bold text-white">
                       {item.title}
                     </h3>
                   </div>
-                  <p className="text-gray-300 mb-4 leading-relaxed">{item.description}</p>
-                  <button className="flex items-center bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent hover:from-orange-600 hover:to-red-700 font-semibold transition-all duration-200 group">
+                  <p className="text-white mb-4 leading-relaxed">{item.description}</p>
+                  <button className="flex items-center text-white hover:text-orange-400 font-semibold transition-all duration-200 group">
                     Read More
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -114,18 +110,18 @@ const WhatsNew = () => {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 rounded-2xl p-8 md:p-12 text-center border border-gray-700">
+        <div className="bg-white/5 rounded-2xl p-8 md:p-12 text-center border border-white/10">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Stay in the Loop
           </h3>
-          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-white mb-8 max-w-2xl mx-auto">
             Subscribe to our newsletter for the latest updates on products, partnerships, and industry insights.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              className="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
             />
             <button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-400 hover:to-red-500 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center">
               Subscribe

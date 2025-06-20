@@ -4,15 +4,8 @@ import { ChevronRight, Play, Zap, Cpu, Globe } from 'lucide-react';
 const Hero = () => {
   return (
     <section className="relative min-h-screen bg-black overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-orange-400 to-red-500 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-violet-500 to-purple-600 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-r from-emerald-400 to-teal-500 rounded-full blur-3xl animate-pulse delay-500"></div>
-      </div>
-
       {/* Circuit Pattern Overlay */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-5">
         <svg className="w-full h-full text-white" viewBox="0 0 100 100" preserveAspectRatio="none">
           <defs>
             <pattern id="circuit" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
@@ -27,7 +20,7 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
         <div className="text-center">
           {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-400/30 text-orange-300 text-sm font-medium mb-8 animate-fadeIn">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-8 animate-fadeIn">
             <Zap className="w-4 h-4 mr-2" />
             Next-Generation Edge AI Technology
           </div>
@@ -35,14 +28,14 @@ const Hero = () => {
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 animate-fadeIn animation-delay-200">
             <span className="block">Pre-trained</span>
-            <span className="block bg-gradient-to-r from-orange-400 via-red-500 to-violet-500 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
               Edge AI
             </span>
             <span className="block">Accelerators</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto mb-12 leading-relaxed animate-fadeIn animation-delay-400">
+          <p className="text-xl md:text-2xl text-white max-w-4xl mx-auto mb-12 leading-relaxed animate-fadeIn animation-delay-400">
             Edgeble enables ultra-fast inference at the edge by embedding scalable, pre-trained AI models into compute modules, removing cloud dependencies.
           </p>
 
@@ -62,24 +55,24 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto animate-fadeIn animation-delay-800">
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
-                <Cpu className="w-8 h-8 text-orange-400 mr-3" />
+                <Cpu className="w-8 h-8 text-white mr-3" />
                 <span className="text-3xl font-bold text-white">10x</span>
               </div>
-              <p className="text-gray-400">Faster Inference</p>
+              <p className="text-white">Faster Inference</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
-                <Globe className="w-8 h-8 text-violet-400 mr-3" />
+                <Globe className="w-8 h-8 text-white mr-3" />
                 <span className="text-3xl font-bold text-white">50+</span>
               </div>
-              <p className="text-gray-400">Deployment Locations</p>
+              <p className="text-white">Deployment Locations</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
-                <Zap className="w-8 h-8 text-emerald-400 mr-3" />
+                <Zap className="w-8 h-8 text-white mr-3" />
                 <span className="text-3xl font-bold text-white">99.9%</span>
               </div>
-              <p className="text-gray-400">Uptime Guarantee</p>
+              <p className="text-white">Uptime Guarantee</p>
             </div>
           </div>
         </div>

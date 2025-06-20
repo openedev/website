@@ -36,12 +36,12 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white">
       {/* Newsletter Section */}
-      <div className="border-b border-gray-800">
+      <div className="border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold mb-2">Stay Updated</h3>
-              <p className="text-gray-400">
+              <p className="text-white/70">
                 Get the latest news, product updates, and industry insights delivered to your inbox.
               </p>
             </div>
@@ -49,7 +49,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your email address"
-                className="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                className="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
               />
               <button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-400 hover:to-red-500 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center whitespace-nowrap">
                 Subscribe
@@ -68,19 +68,19 @@ const Footer = () => {
             <div className="text-2xl font-bold mb-4">
               <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Edge</span>ble
             </div>
-            <p className="text-gray-400 mb-6 leading-relaxed">
+            <p className="text-white/70 mb-6 leading-relaxed">
               Pioneering the future of edge AI with innovative hardware solutions that bring intelligence closer to where it's needed most.
             </p>
             <div className="space-y-3">
-              <div className="flex items-center text-gray-400">
+              <div className="flex items-center text-white/70">
                 <Mail className="w-4 h-4 mr-3" />
                 <span>info@edgeble.ai</span>
               </div>
-              <div className="flex items-center text-gray-400">
+              <div className="flex items-center text-white/70">
                 <Phone className="w-4 h-4 mr-3" />
                 <span>+1 (555) 123-4567</span>
               </div>
-              <div className="flex items-center text-gray-400">
+              <div className="flex items-center text-white/70">
                 <MapPin className="w-4 h-4 mr-3" />
                 <span>San Francisco, CA</span>
               </div>
@@ -95,7 +95,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-gray-400 hover:text-orange-400 transition-colors duration-200"
+                    className="text-white/70 hover:text-orange-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -112,7 +112,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-gray-400 hover:text-orange-400 transition-colors duration-200"
+                    className="text-white/70 hover:text-orange-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -129,7 +129,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-gray-400 hover:text-orange-400 transition-colors duration-200"
+                    className="text-white/70 hover:text-orange-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -146,7 +146,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-gray-400 hover:text-orange-400 transition-colors duration-200"
+                    className="text-white/70 hover:text-orange-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -158,28 +158,28 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-gray-800">
+      <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-400 text-sm mb-4 md:mb-0">
+            <div className="text-white/70 text-sm mb-4 md:mb-0">
               © 2024 Edgeble AI. All rights reserved. | Privacy Policy | Terms of Service
             </div>
             <div className="flex space-x-6">
               <a 
                 href="#" 
-                className="text-gray-400 hover:text-orange-400 transition-colors duration-200"
+                className="text-white/70 hover:text-orange-400 transition-colors duration-200"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="text-gray-400 hover:text-orange-400 transition-colors duration-200"
+                className="text-white/70 hover:text-orange-400 transition-colors duration-200"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="text-gray-400 hover:text-orange-400 transition-colors duration-200"
+                className="text-white/70 hover:text-orange-400 transition-colors duration-200"
               >
                 <Github className="w-5 h-5" />
               </a>

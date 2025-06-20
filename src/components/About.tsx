@@ -52,14 +52,14 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-gray-900">
+    <section id="about" className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             About <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">Edgeble</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Pioneering the future of edge AI with innovative hardware solutions that bring intelligence closer to where it's needed most.
           </p>
         </div>
@@ -69,20 +69,20 @@ const About = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-white mb-4 flex items-center">
-                <Eye className="w-8 h-8 text-orange-500 mr-3" />
+                <Eye className="w-8 h-8 text-white mr-3" />
                 Our Vision
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-white leading-relaxed">
                 To democratize AI at the edge by making powerful, pre-trained AI accelerators accessible to every industry, 
                 enabling real-time intelligence without cloud dependencies and transforming how businesses operate in the digital age.
               </p>
             </div>
             <div>
               <h3 className="text-2xl font-bold text-white mb-4 flex items-center">
-                <Target className="w-8 h-8 text-red-500 mr-3" />
+                <Target className="w-8 h-8 text-white mr-3" />
                 Our Mission
               </h3>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-white leading-relaxed">
                 We develop cutting-edge AI accelerators that deliver ultra-fast inference at the edge, empowering organizations 
                 to harness the power of artificial intelligence while maintaining data privacy, reducing latency, and ensuring reliable operation.
               </p>
@@ -104,18 +104,13 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((value, index) => {
               const IconComponent = value.icon;
-              const gradients = [
-                'from-orange-500 to-red-600',
-                'from-violet-500 to-purple-600',
-                'from-emerald-500 to-teal-600'
-              ];
               return (
-                <div key={index} className="text-center p-6 bg-black rounded-2xl hover:bg-gradient-to-br hover:from-gray-900 hover:to-gray-800 transition-all duration-300 border border-gray-800 hover:border-orange-500/50">
-                  <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r ${gradients[index]} rounded-full mb-4`}>
+                <div key={index} className="text-center p-6 bg-white/5 rounded-2xl hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-white/20">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-full mb-4">
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
                   <h4 className="text-xl font-bold text-white mb-3">{value.title}</h4>
-                  <p className="text-gray-300 leading-relaxed">{value.description}</p>
+                  <p className="text-white leading-relaxed">{value.description}</p>
                 </div>
               );
             })}
@@ -152,16 +147,16 @@ const About = () => {
         </div>
 
         {/* Location */}
-        <div className="bg-gradient-to-r from-black via-gray-900 to-black rounded-2xl p-8 md:p-12 border border-gray-800">
+        <div className="bg-white/5 rounded-2xl p-8 md:p-12 border border-white/10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
                 Global Presence
               </h3>
-              <p className="text-gray-300 mb-6">
+              <p className="text-white mb-6">
                 Headquartered in Silicon Valley with development centers worldwide, we're positioned to serve clients globally while maintaining the agility of a focused technology company.
               </p>
-              <div className="flex items-center text-orange-400 mb-4">
+              <div className="flex items-center text-white mb-4">
                 <MapPin className="w-5 h-5 mr-3" />
                 <span>San Francisco, CA | Austin, TX | Bangalore, India</span>
               </div>
@@ -173,20 +168,20 @@ const About = () => {
             <div className="text-center lg:text-right">
               <div className="grid grid-cols-2 gap-8">
                 <div>
-                  <div className="text-3xl font-bold bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent mb-2">2019</div>
-                  <div className="text-gray-300">Founded</div>
+                  <div className="text-3xl font-bold text-white mb-2">2019</div>
+                  <div className="text-white">Founded</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold bg-gradient-to-r from-violet-400 to-purple-500 bg-clip-text text-transparent mb-2">150+</div>
-                  <div className="text-gray-300">Team Members</div>
+                  <div className="text-3xl font-bold text-white mb-2">150+</div>
+                  <div className="text-white">Team Members</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent mb-2">50+</div>
-                  <div className="text-gray-300">Patents</div>
+                  <div className="text-3xl font-bold text-white mb-2">50+</div>
+                  <div className="text-white">Patents</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent mb-2">$50M</div>
-                  <div className="text-gray-300">Series B Funding</div>
+                  <div className="text-3xl font-bold text-white mb-2">$50M</div>
+                  <div className="text-white">Series B Funding</div>
                 </div>
               </div>
             </div>

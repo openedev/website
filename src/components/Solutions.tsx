@@ -7,55 +7,49 @@ const Solutions = () => {
       icon: Factory,
       title: 'Industrial Automation',
       description: 'AI-powered quality control, predictive maintenance, and process optimization for manufacturing.',
-      features: ['Real-time defect detection', 'Predictive maintenance', 'Process optimization'],
-      color: 'from-orange-500 to-red-600'
+      features: ['Real-time defect detection', 'Predictive maintenance', 'Process optimization']
     },
     {
       icon: Shield,
       title: 'Defense & Security',
       description: 'Mission-critical AI applications for surveillance, threat detection, and autonomous systems.',
-      features: ['Threat recognition', 'Autonomous navigation', 'Real-time analysis'],
-      color: 'from-violet-500 to-purple-600'
+      features: ['Threat recognition', 'Autonomous navigation', 'Real-time analysis']
     },
     {
       icon: Heart,
       title: 'Medical Devices',
       description: 'AI-enhanced medical imaging, diagnostics, and patient monitoring systems.',
-      features: ['Medical imaging analysis', 'Patient monitoring', 'Diagnostic assistance'],
-      color: 'from-emerald-500 to-teal-600'
+      features: ['Medical imaging analysis', 'Patient monitoring', 'Diagnostic assistance']
     },
     {
       icon: Sprout,
       title: 'Smart Agriculture',
       description: 'Precision farming with AI-driven crop monitoring, yield prediction, and resource optimization.',
-      features: ['Crop health monitoring', 'Yield prediction', 'Resource optimization'],
-      color: 'from-green-500 to-emerald-600'
+      features: ['Crop health monitoring', 'Yield prediction', 'Resource optimization']
     },
     {
       icon: Car,
       title: 'Automotive Edge',
       description: 'Advanced driver assistance systems, autonomous driving, and in-vehicle AI applications.',
-      features: ['ADAS systems', 'Object detection', 'Driver monitoring'],
-      color: 'from-indigo-500 to-violet-600'
+      features: ['ADAS systems', 'Object detection', 'Driver monitoring']
     },
     {
       icon: Zap,
       title: 'Edge Computing',
       description: 'Distributed AI inference at the edge for reduced latency and improved privacy.',
-      features: ['Low-latency inference', 'Data privacy', 'Offline operation'],
-      color: 'from-amber-500 to-orange-600'
+      features: ['Low-latency inference', 'Data privacy', 'Offline operation']
     }
   ];
 
   return (
-    <section id="solutions" className="py-24 bg-gray-900">
+    <section id="solutions" className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Industry <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">Solutions</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Tailored AI solutions across diverse industries, enabling intelligent edge computing for every sector.
           </p>
         </div>
@@ -65,24 +59,24 @@ const Solutions = () => {
           {solutions.map((solution, index) => {
             const IconComponent = solution.icon;
             return (
-              <div key={index} className="group bg-black rounded-2xl border border-gray-800 hover:border-orange-500/50 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+              <div key={index} className="group bg-white/5 rounded-2xl border border-white/10 hover:border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
                 {/* Icon Header */}
-                <div className={`bg-gradient-to-r ${solution.color} p-6`}>
+                <div className="bg-gradient-to-r from-orange-500 to-red-600 p-6">
                   <IconComponent className="w-12 h-12 text-white mb-4" />
                   <h3 className="text-xl font-bold text-white">{solution.title}</h3>
                 </div>
 
                 {/* Content */}
                 <div className="p-6">
-                  <p className="text-gray-300 mb-6 leading-relaxed">{solution.description}</p>
+                  <p className="text-white mb-6 leading-relaxed">{solution.description}</p>
                   
                   {/* Features */}
                   <div className="mb-6">
                     <h4 className="text-sm font-semibold text-white mb-3">Key Features:</h4>
                     <ul className="space-y-2">
                       {solution.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="text-sm text-gray-300 flex items-center">
-                          <div className="w-1.5 h-1.5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full mr-3"></div>
+                        <li key={featureIndex} className="text-sm text-white flex items-center">
+                          <div className="w-1.5 h-1.5 bg-white rounded-full mr-3"></div>
                           {feature}
                         </li>
                       ))}
@@ -90,7 +84,7 @@ const Solutions = () => {
                   </div>
 
                   {/* CTA */}
-                  <button className="w-full bg-gradient-to-r from-gray-800 to-gray-700 hover:from-orange-600 hover:to-red-600 text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group">
+                  <button className="w-full bg-white/10 hover:bg-gradient-to-r hover:from-orange-600 hover:to-red-600 text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20">
                     Explore Solution
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -101,23 +95,23 @@ const Solutions = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-20 bg-gradient-to-r from-black via-gray-900 to-black rounded-2xl p-8 md:p-12 border border-gray-800">
+        <div className="mt-20 bg-white/5 rounded-2xl p-8 md:p-12 border border-white/10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent mb-2">500+</div>
-              <div className="text-gray-300">Deployments</div>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2">500+</div>
+              <div className="text-white">Deployments</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-violet-400 to-purple-500 bg-clip-text text-transparent mb-2">6</div>
-              <div className="text-gray-300">Industries</div>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2">6</div>
+              <div className="text-white">Industries</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent mb-2">99.9%</div>
-              <div className="text-gray-300">Reliability</div>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2">99.9%</div>
+              <div className="text-white">Reliability</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent mb-2">24/7</div>
-              <div className="text-gray-300">Support</div>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2">24/7</div>
+              <div className="text-white">Support</div>
             </div>
           </div>
         </div>
