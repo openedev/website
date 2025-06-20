@@ -3,9 +3,9 @@ import { ChevronRight, Play, Zap, Cpu, Globe } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-800 overflow-hidden">
+    <section className="relative min-h-screen bg-black overflow-hidden">
       {/* Animated Background Elements */}
-      <div className="absolute inset-0 opacity-20">
+      <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-orange-400 to-red-500 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-violet-500 to-purple-600 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-r from-emerald-400 to-teal-500 rounded-full blur-3xl animate-pulse delay-500"></div>
@@ -13,7 +13,7 @@ const Hero = () => {
 
       {/* Circuit Pattern Overlay */}
       <div className="absolute inset-0 opacity-10">
-        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <svg className="w-full h-full text-white" viewBox="0 0 100 100" preserveAspectRatio="none">
           <defs>
             <pattern id="circuit" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
               <path d="M0,5 L10,5 M5,0 L5,10" stroke="currentColor" strokeWidth="0.5" fill="none"/>

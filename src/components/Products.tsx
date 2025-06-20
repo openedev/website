@@ -33,14 +33,14 @@ const Products = () => {
   ];
 
   return (
-    <section id="products" className="py-24 bg-slate-50">
+    <section id="products" className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">Products</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Cutting-edge AI accelerators designed for diverse applications, from IoT devices to industrial automation.
           </p>
         </div>
@@ -48,7 +48,7 @@ const Products = () => {
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
-            <div key={product.id} className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100 hover:border-orange-200">
+            <div key={product.id} className="group bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-800 hover:border-orange-500/50">
               {/* Product Image */}
               <div className="relative h-48 overflow-hidden">
                 <img 
@@ -70,16 +70,16 @@ const Products = () => {
 
               {/* Product Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">{product.name}</h3>
+                <h3 className="text-xl font-bold text-white mb-2">{product.name}</h3>
                 <p className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent font-medium mb-3">{product.tagline}</p>
-                <p className="text-gray-600 mb-4 text-sm leading-relaxed">{product.description}</p>
+                <p className="text-gray-300 mb-4 text-sm leading-relaxed">{product.description}</p>
 
                 {/* Specifications */}
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-slate-900 mb-2">Key Specifications:</h4>
+                  <h4 className="text-sm font-semibold text-white mb-2">Key Specifications:</h4>
                   <ul className="space-y-1">
                     {product.specs.map((spec, index) => (
-                      <li key={index} className="text-sm text-gray-600 flex items-center">
+                      <li key={index} className="text-sm text-gray-300 flex items-center">
                         <div className="w-1.5 h-1.5 bg-gradient-to-r from-orange-500 to-red-600 rounded-full mr-2"></div>
                         {spec}
                       </li>
@@ -88,7 +88,7 @@ const Products = () => {
                 </div>
 
                 {/* CTA Button */}
-                <button className="w-full bg-gradient-to-r from-slate-900 to-slate-700 hover:from-orange-600 hover:to-red-600 text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group">
+                <button className="w-full bg-gradient-to-r from-gray-800 to-gray-700 hover:from-orange-600 hover:to-red-600 text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group">
                   Learn More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
@@ -99,7 +99,7 @@ const Products = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-800 rounded-2xl p-8 md:p-12">
+          <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 rounded-2xl p-8 md:p-12 border border-gray-700">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
               Need a Custom Solution?
             </h3>

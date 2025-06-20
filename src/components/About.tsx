@@ -52,14 +52,14 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-white">
+    <section id="about" className="py-24 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             About <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">Edgeble</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Pioneering the future of edge AI with innovative hardware solutions that bring intelligence closer to where it's needed most.
           </p>
         </div>
@@ -68,21 +68,21 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4 flex items-center">
+              <h3 className="text-2xl font-bold text-white mb-4 flex items-center">
                 <Eye className="w-8 h-8 text-orange-500 mr-3" />
                 Our Vision
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 To democratize AI at the edge by making powerful, pre-trained AI accelerators accessible to every industry, 
                 enabling real-time intelligence without cloud dependencies and transforming how businesses operate in the digital age.
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4 flex items-center">
+              <h3 className="text-2xl font-bold text-white mb-4 flex items-center">
                 <Target className="w-8 h-8 text-red-500 mr-3" />
                 Our Mission
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 We develop cutting-edge AI accelerators that deliver ultra-fast inference at the edge, empowering organizations 
                 to harness the power of artificial intelligence while maintaining data privacy, reducing latency, and ensuring reliable operation.
               </p>
@@ -94,13 +94,13 @@ const About = () => {
               alt="About Edgeble"
               className="rounded-2xl shadow-2xl"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent rounded-2xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
           </div>
         </div>
 
         {/* Values */}
         <div className="mb-20">
-          <h3 className="text-3xl font-bold text-slate-900 text-center mb-12">Our Values</h3>
+          <h3 className="text-3xl font-bold text-white text-center mb-12">Our Values</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {values.map((value, index) => {
               const IconComponent = value.icon;
@@ -110,12 +110,12 @@ const About = () => {
                 'from-emerald-500 to-teal-600'
               ];
               return (
-                <div key={index} className="text-center p-6 bg-slate-50 rounded-2xl hover:bg-gradient-to-br hover:from-orange-50 hover:to-red-50 transition-all duration-300 border border-gray-100 hover:border-orange-200">
+                <div key={index} className="text-center p-6 bg-black rounded-2xl hover:bg-gradient-to-br hover:from-gray-900 hover:to-gray-800 transition-all duration-300 border border-gray-800 hover:border-orange-500/50">
                   <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r ${gradients[index]} rounded-full mb-4`}>
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
-                  <h4 className="text-xl font-bold text-slate-900 mb-3">{value.title}</h4>
-                  <p className="text-gray-600 leading-relaxed">{value.description}</p>
+                  <h4 className="text-xl font-bold text-white mb-3">{value.title}</h4>
+                  <p className="text-gray-300 leading-relaxed">{value.description}</p>
                 </div>
               );
             })}
@@ -124,7 +124,7 @@ const About = () => {
 
         {/* Team */}
         <div className="mb-20">
-          <h3 className="text-3xl font-bold text-slate-900 text-center mb-12">Leadership Team</h3>
+          <h3 className="text-3xl font-bold text-white text-center mb-12">Leadership Team</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {team.map((member, index) => (
               <div key={index} className="text-center group">
@@ -134,7 +134,7 @@ const About = () => {
                     alt={member.name}
                     className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <a href={member.linkedin} className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-600 hover:text-white transition-all duration-200">
                       <Linkedin className="w-4 h-4" />
@@ -144,7 +144,7 @@ const About = () => {
                     </a>
                   </div>
                 </div>
-                <h4 className="text-lg font-bold text-slate-900 mb-1">{member.name}</h4>
+                <h4 className="text-lg font-bold text-white mb-1">{member.name}</h4>
                 <p className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent font-medium">{member.role}</p>
               </div>
             ))}
@@ -152,7 +152,7 @@ const About = () => {
         </div>
 
         {/* Location */}
-        <div className="bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-800 rounded-2xl p-8 md:p-12">
+        <div className="bg-gradient-to-r from-black via-gray-900 to-black rounded-2xl p-8 md:p-12 border border-gray-800">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">

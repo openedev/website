@@ -50,14 +50,14 @@ const WhatsNew = () => {
   };
 
   return (
-    <section id="news" className="py-24 bg-slate-50">
+    <section id="news" className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             What's <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">New</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Stay updated with our latest product launches, industry partnerships, and upcoming events.
           </p>
         </div>
@@ -67,7 +67,7 @@ const WhatsNew = () => {
           {news.map((item, index) => {
             const IconComponent = item.icon;
             return (
-              <div key={index} className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100 hover:border-orange-200">
+              <div key={index} className="group bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-800 hover:border-orange-500/50">
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">
                   <img 
@@ -98,11 +98,11 @@ const WhatsNew = () => {
                 <div className="p-6">
                   <div className="flex items-center mb-3">
                     <IconComponent className="w-5 h-5 text-orange-500 mr-2" />
-                    <h3 className="text-xl font-bold text-slate-900 group-hover:bg-gradient-to-r group-hover:from-orange-600 group-hover:to-red-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-200">
+                    <h3 className="text-xl font-bold text-white group-hover:bg-gradient-to-r group-hover:from-orange-600 group-hover:to-red-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-200">
                       {item.title}
                     </h3>
                   </div>
-                  <p className="text-gray-600 mb-4 leading-relaxed">{item.description}</p>
+                  <p className="text-gray-300 mb-4 leading-relaxed">{item.description}</p>
                   <button className="flex items-center bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent hover:from-orange-600 hover:to-red-700 font-semibold transition-all duration-200 group">
                     Read More
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -114,7 +114,7 @@ const WhatsNew = () => {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-800 rounded-2xl p-8 md:p-12 text-center">
+        <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 rounded-2xl p-8 md:p-12 text-center border border-gray-700">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Stay in the Loop
           </h3>
@@ -125,7 +125,7 @@ const WhatsNew = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              className="flex-1 px-4 py-3 rounded-xl bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
             />
             <button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-400 hover:to-red-500 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center">
               Subscribe
