@@ -47,7 +47,7 @@ const Solutions = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Industry <span className="text-white">Solutions</span>
+            Industry <span className="text-green-400 drop-shadow-[0_0_20px_rgba(34,197,94,0.5)]">Solutions</span>
           </h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
             Tailored AI solutions across diverse industries, enabling intelligent edge computing for every sector.
@@ -59,9 +59,9 @@ const Solutions = () => {
           {solutions.map((solution, index) => {
             const IconComponent = solution.icon;
             return (
-              <div key={index} className="group bg-white/5 rounded-2xl border border-white/10 hover:border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
+              <div key={index} className="group bg-white/5 rounded-2xl border border-white/10 hover:border-green-400/30 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
                 {/* Icon Header */}
-                <div className="bg-white p-6">
+                <div className="bg-green-400 p-6">
                   <IconComponent className="w-12 h-12 text-black mb-4" />
                   <h3 className="text-xl font-bold text-black">{solution.title}</h3>
                 </div>
@@ -76,7 +76,7 @@ const Solutions = () => {
                     <ul className="space-y-2">
                       {solution.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="text-sm text-white flex items-center">
-                          <div className="w-1.5 h-1.5 bg-white rounded-full mr-3"></div>
+                          <div className="w-1.5 h-1.5 bg-green-400 rounded-full mr-3"></div>
                           {feature}
                         </li>
                       ))}
@@ -84,7 +84,7 @@ const Solutions = () => {
                   </div>
 
                   {/* CTA */}
-                  <button className="w-full bg-white/10 hover:bg-white hover:text-black text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20">
+                  <button className="w-full bg-white/10 hover:bg-green-400 hover:text-black text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20 hover:border-green-400">
                     Explore Solution
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -95,22 +95,22 @@ const Solutions = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-20 bg-white/5 rounded-2xl p-8 md:p-12 border border-white/10">
+        <div className="mt-20 bg-white/5 rounded-2xl p-8 md:p-12 border border-white/10 hover:border-green-400/20 transition-all duration-300">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">500+</div>
+              <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">500+</div>
               <div className="text-white">Deployments</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">6</div>
+              <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">6</div>
               <div className="text-white">Industries</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">99.9%</div>
+              <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">99.9%</div>
               <div className="text-white">Reliability</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">24/7</div>
+              <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">24/7</div>
               <div className="text-white">Support</div>
             </div>
           </div>

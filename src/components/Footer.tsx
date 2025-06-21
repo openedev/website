@@ -49,9 +49,9 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your email address"
-                className="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent"
+                className="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
               />
-              <button className="bg-white text-black hover:bg-white/90 px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center whitespace-nowrap">
+              <button className="bg-green-400 text-black hover:bg-green-300 px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center whitespace-nowrap hover:shadow-[0_0_20px_rgba(34,197,94,0.3)]">
                 Subscribe
                 <ArrowRight className="ml-2 w-4 h-4" />
               </button>
@@ -66,7 +66,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="text-2xl font-bold mb-4">
-              Edgeble
+              Edge<span className="text-green-400">ble</span>
             </div>
             <p className="text-white/70 mb-6 leading-relaxed">
               Pioneering the future of edge AI with innovative hardware solutions that bring intelligence closer to where it's needed most.
@@ -95,7 +95,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-white/70 hover:text-white transition-colors duration-200"
+                    className="text-white/70 hover:text-green-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -112,7 +112,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-white/70 hover:text-white transition-colors duration-200"
+                    className="text-white/70 hover:text-green-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -129,7 +129,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-white/70 hover:text-white transition-colors duration-200"
+                    className="text-white/70 hover:text-green-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -146,7 +146,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-white/70 hover:text-white transition-colors duration-200"
+                    className="text-white/70 hover:text-green-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -167,19 +167,19 @@ const Footer = () => {
             <div className="flex space-x-6">
               <a 
                 href="#" 
-                className="text-white/70 hover:text-white transition-colors duration-200"
+                className="text-white/70 hover:text-green-400 transition-colors duration-200"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="text-white/70 hover:text-white transition-colors duration-200"
+                className="text-white/70 hover:text-green-400 transition-colors duration-200"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="text-white/70 hover:text-white transition-colors duration-200"
+                className="text-white/70 hover:text-green-400 transition-colors duration-200"
               >
                 <Github className="w-5 h-5" />
               </a>

@@ -55,7 +55,7 @@ const WhatsNew = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            What's <span className="text-white">New</span>
+            What's <span className="text-green-400 drop-shadow-[0_0_20px_rgba(34,197,94,0.5)]">New</span>
           </h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
             Stay updated with our latest product launches, industry partnerships, and upcoming events.
@@ -67,7 +67,7 @@ const WhatsNew = () => {
           {news.map((item, index) => {
             const IconComponent = item.icon;
             return (
-              <div key={index} className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20">
+              <div key={index} className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-green-400/30">
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">
                   <img 
@@ -77,7 +77,7 @@ const WhatsNew = () => {
                   />
                   {/* Badge */}
                   <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white text-black">
+                    <span className="px-3 py-1 rounded-full text-xs font-semibold bg-green-400 text-black">
                       {item.badge}
                     </span>
                   </div>
@@ -93,13 +93,13 @@ const WhatsNew = () => {
                 {/* Content */}
                 <div className="p-6">
                   <div className="flex items-center mb-3">
-                    <IconComponent className="w-5 h-5 text-white mr-2" />
+                    <IconComponent className="w-5 h-5 text-green-400 mr-2" />
                     <h3 className="text-xl font-bold text-white">
                       {item.title}
                     </h3>
                   </div>
                   <p className="text-white mb-4 leading-relaxed">{item.description}</p>
-                  <button className="flex items-center text-white hover:text-white/70 font-semibold transition-all duration-200 group">
+                  <button className="flex items-center text-white hover:text-green-400 font-semibold transition-all duration-200 group">
                     Read More
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -110,7 +110,7 @@ const WhatsNew = () => {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="bg-white/5 rounded-2xl p-8 md:p-12 text-center border border-white/10">
+        <div className="bg-white/5 rounded-2xl p-8 md:p-12 text-center border border-white/10 hover:border-green-400/20 transition-all duration-300">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Stay in the Loop
           </h3>
@@ -121,9 +121,9 @@ const WhatsNew = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent"
+              className="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
             />
-            <button className="bg-white text-black hover:bg-white/90 px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center">
+            <button className="bg-green-400 text-black hover:bg-green-300 px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center hover:shadow-[0_0_20px_rgba(34,197,94,0.3)]">
               Subscribe
               <ExternalLink className="ml-2 w-4 h-4" />
             </button>
