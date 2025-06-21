@@ -32,7 +32,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <div className="text-2xl font-bold text-white">
-              <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Edge</span>ble
+              Edgeble
             </div>
           </div>
 
@@ -43,7 +43,7 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-white hover:text-orange-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  className="text-white hover:text-white/70 px-3 py-2 text-sm font-medium transition-colors duration-200"
                 >
                   {item.name}
                 </a>
@@ -53,7 +53,7 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-400 hover:to-red-500 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
+            <button className="bg-white text-black hover:bg-white/90 px-6 py-2 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
               Product Inquiry
             </button>
           </div>
@@ -62,7 +62,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-orange-400 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white/70 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -78,13 +78,13 @@ const Navigation = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-white hover:text-orange-400 block px-3 py-2 text-base font-medium transition-colors duration-200"
+                className="text-white hover:text-white/70 block px-3 py-2 text-base font-medium transition-colors duration-200"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
               </a>
             ))}
-            <button className="w-full text-left bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-400 hover:to-red-500 text-white px-3 py-2 rounded-lg font-semibold transition-all duration-200 mt-4">
+            <button className="w-full text-left bg-white text-black hover:bg-white/90 px-3 py-2 rounded-lg font-semibold transition-all duration-200 mt-4">
               Product Inquiry
             </button>
           </div>

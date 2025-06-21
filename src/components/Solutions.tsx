@@ -47,7 +47,7 @@ const Solutions = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Industry <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">Solutions</span>
+            Industry <span className="text-white">Solutions</span>
           </h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
             Tailored AI solutions across diverse industries, enabling intelligent edge computing for every sector.
@@ -61,9 +61,9 @@ const Solutions = () => {
             return (
               <div key={index} className="group bg-white/5 rounded-2xl border border-white/10 hover:border-white/20 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden">
                 {/* Icon Header */}
-                <div className="bg-gradient-to-r from-orange-500 to-red-600 p-6">
-                  <IconComponent className="w-12 h-12 text-white mb-4" />
-                  <h3 className="text-xl font-bold text-white">{solution.title}</h3>
+                <div className="bg-white p-6">
+                  <IconComponent className="w-12 h-12 text-black mb-4" />
+                  <h3 className="text-xl font-bold text-black">{solution.title}</h3>
                 </div>
 
                 {/* Content */}
@@ -84,7 +84,7 @@ const Solutions = () => {
                   </div>
 
                   {/* CTA */}
-                  <button className="w-full bg-white/10 hover:bg-gradient-to-r hover:from-orange-600 hover:to-red-600 text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20">
+                  <button className="w-full bg-white/10 hover:bg-white hover:text-black text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20">
                     Explore Solution
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </button>

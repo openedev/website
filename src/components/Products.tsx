@@ -38,7 +38,7 @@ const Products = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Our <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">Products</span>
+            Our <span className="text-white">Products</span>
           </h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
             Cutting-edge AI accelerators designed for diverse applications, from IoT devices to industrial automation.
@@ -58,7 +58,7 @@ const Products = () => {
                 />
                 {/* Badge */}
                 <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-orange-500 to-red-600 text-white">
+                  <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white text-black">
                     {product.badge}
                   </span>
                 </div>
@@ -67,7 +67,7 @@ const Products = () => {
               {/* Product Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-2">{product.name}</h3>
-                <p className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent font-medium mb-3">{product.tagline}</p>
+                <p className="text-white font-medium mb-3">{product.tagline}</p>
                 <p className="text-white mb-4 text-sm leading-relaxed">{product.description}</p>
 
                 {/* Specifications */}
@@ -84,7 +84,7 @@ const Products = () => {
                 </div>
 
                 {/* CTA Button */}
-                <button className="w-full bg-white/10 hover:bg-gradient-to-r hover:from-orange-600 hover:to-red-600 text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20">
+                <button className="w-full bg-white/10 hover:bg-white hover:text-black text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20">
                   Learn More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </button>
@@ -102,7 +102,7 @@ const Products = () => {
             <p className="text-white mb-6 max-w-2xl mx-auto">
               Our engineering team can develop tailored AI accelerators for your specific requirements and use cases.
             </p>
-            <button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-400 hover:to-red-500 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105">
+            <button className="bg-white text-black hover:bg-white/90 px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105">
               Contact Our Engineers
             </button>
           </div>

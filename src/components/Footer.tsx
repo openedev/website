@@ -49,9 +49,9 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your email address"
-                className="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                className="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent"
               />
-              <button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-400 hover:to-red-500 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center whitespace-nowrap">
+              <button className="bg-white text-black hover:bg-white/90 px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center whitespace-nowrap">
                 Subscribe
                 <ArrowRight className="ml-2 w-4 h-4" />
               </button>
@@ -66,7 +66,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="text-2xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Edge</span>ble
+              Edgeble
             </div>
             <p className="text-white/70 mb-6 leading-relaxed">
               Pioneering the future of edge AI with innovative hardware solutions that bring intelligence closer to where it's needed most.
@@ -95,7 +95,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-white/70 hover:text-orange-400 transition-colors duration-200"
+                    className="text-white/70 hover:text-white transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -112,7 +112,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-white/70 hover:text-orange-400 transition-colors duration-200"
+                    className="text-white/70 hover:text-white transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -129,7 +129,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-white/70 hover:text-orange-400 transition-colors duration-200"
+                    className="text-white/70 hover:text-white transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -146,7 +146,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-white/70 hover:text-orange-400 transition-colors duration-200"
+                    className="text-white/70 hover:text-white transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -167,19 +167,19 @@ const Footer = () => {
             <div className="flex space-x-6">
               <a 
                 href="#" 
-                className="text-white/70 hover:text-orange-400 transition-colors duration-200"
+                className="text-white/70 hover:text-white transition-colors duration-200"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="text-white/70 hover:text-orange-400 transition-colors duration-200"
+                className="text-white/70 hover:text-white transition-colors duration-200"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a 
                 href="#" 
-                className="text-white/70 hover:text-orange-400 transition-colors duration-200"
+                className="text-white/70 hover:text-white transition-colors duration-200"
               >
                 <Github className="w-5 h-5" />
               </a>

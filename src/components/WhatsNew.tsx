@@ -55,7 +55,7 @@ const WhatsNew = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            What's <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">New</span>
+            What's <span className="text-white">New</span>
           </h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
             Stay updated with our latest product launches, industry partnerships, and upcoming events.
@@ -77,7 +77,7 @@ const WhatsNew = () => {
                   />
                   {/* Badge */}
                   <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-orange-500 to-red-600 text-white">
+                    <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white text-black">
                       {item.badge}
                     </span>
                   </div>
@@ -99,7 +99,7 @@ const WhatsNew = () => {
                     </h3>
                   </div>
                   <p className="text-white mb-4 leading-relaxed">{item.description}</p>
-                  <button className="flex items-center text-white hover:text-orange-400 font-semibold transition-all duration-200 group">
+                  <button className="flex items-center text-white hover:text-white/70 font-semibold transition-all duration-200 group">
                     Read More
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -121,9 +121,9 @@ const WhatsNew = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+              className="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent"
             />
-            <button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-400 hover:to-red-500 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center">
+            <button className="bg-white text-black hover:bg-white/90 px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center">
               Subscribe
               <ExternalLink className="ml-2 w-4 h-4" />
             </button>

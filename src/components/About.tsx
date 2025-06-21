@@ -57,7 +57,7 @@ const About = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            About <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">Edgeble</span>
+            About <span className="text-white">Edgeble</span>
           </h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
             Pioneering the future of edge AI with innovative hardware solutions that bring intelligence closer to where it's needed most.
@@ -106,8 +106,8 @@ const About = () => {
               const IconComponent = value.icon;
               return (
                 <div key={index} className="text-center p-6 bg-white/5 rounded-2xl hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-white/20">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-full mb-4">
-                    <IconComponent className="w-8 h-8 text-white" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-full mb-4">
+                    <IconComponent className="w-8 h-8 text-black" />
                   </div>
                   <h4 className="text-xl font-bold text-white mb-3">{value.title}</h4>
                   <p className="text-white leading-relaxed">{value.description}</p>
@@ -131,16 +131,16 @@ const About = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <a href={member.linkedin} className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-600 hover:text-white transition-all duration-200">
-                      <Linkedin className="w-4 h-4" />
+                    <a href={member.linkedin} className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-white/90 transition-all duration-200">
+                      <Linkedin className="w-4 h-4 text-black" />
                     </a>
-                    <a href={member.twitter} className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-600 hover:text-white transition-all duration-200">
-                      <Twitter className="w-4 h-4" />
+                    <a href={member.twitter} className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-white/90 transition-all duration-200">
+                      <Twitter className="w-4 h-4 text-black" />
                     </a>
                   </div>
                 </div>
                 <h4 className="text-lg font-bold text-white mb-1">{member.name}</h4>
-                <p className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent font-medium">{member.role}</p>
+                <p className="text-white font-medium">{member.role}</p>
               </div>
             ))}
           </div>
@@ -160,7 +160,7 @@ const About = () => {
                 <MapPin className="w-5 h-5 mr-3" />
                 <span>San Francisco, CA | Austin, TX | Bangalore, India</span>
               </div>
-              <button className="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-400 hover:to-red-500 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center">
+              <button className="bg-white text-black hover:bg-white/90 px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
                 Get in Touch
               </button>

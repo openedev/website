@@ -28,7 +28,7 @@ const Hero = () => {
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 animate-fadeIn animation-delay-200">
             <span className="block">Pre-trained</span>
-            <span className="block bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
+            <span className="block text-white">
               Edge AI
             </span>
             <span className="block">Accelerators</span>
@@ -41,7 +41,7 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fadeIn animation-delay-600">
-            <button className="group px-8 py-4 bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-400 hover:to-red-500 text-white font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center">
+            <button className="group px-8 py-4 bg-white text-black hover:bg-white/90 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center">
               Get Started
               <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
