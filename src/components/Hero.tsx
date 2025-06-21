@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="relative min-h-screen bg-black overflow-hidden">
       {/* Circuit Pattern Overlay */}
       <div className="absolute inset-0 opacity-5">
-        <svg className="w-full h-full text-green-400" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <svg className="w-full h-full text-white" viewBox="0 0 100 100" preserveAspectRatio="none">
           <defs>
             <pattern id="circuit" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
               <path d="M0,5 L10,5 M5,0 L5,10" stroke="currentColor" strokeWidth="0.5" fill="none"/>
@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
         <div className="text-center">
           {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-green-400/10 border border-green-400/30 text-green-400 text-sm font-medium mb-8 animate-fadeIn">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-8 animate-fadeIn">
             <Zap className="w-4 h-4 mr-2" />
             Next-Generation Edge AI Technology
           </div>
@@ -28,7 +28,7 @@ const Hero = () => {
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 animate-fadeIn animation-delay-200">
             <span className="block">Pre-trained</span>
-            <span className="block text-green-400 drop-shadow-[0_0_20px_rgba(34,197,94,0.5)]">
+            <span className="block text-white">
               Edge AI
             </span>
             <span className="block">Accelerators</span>
@@ -41,11 +41,11 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fadeIn animation-delay-600">
-            <button className="group px-8 py-4 bg-green-400 text-black hover:bg-green-300 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(34,197,94,0.5)] flex items-center justify-center">
+            <button className="group px-8 py-4 bg-white text-black hover:bg-white/90 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center">
               Get Started
               <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="group px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl border border-green-400/30 hover:border-green-400/50 transition-all duration-300 backdrop-blur-sm flex items-center justify-center">
+            <button className="group px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl border border-white/20 transition-all duration-300 backdrop-blur-sm flex items-center justify-center">
               <Play className="mr-2 w-5 h-5" />
               Watch Demo
             </button>
@@ -55,21 +55,21 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto animate-fadeIn animation-delay-800">
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
-                <Cpu className="w-8 h-8 text-green-400 mr-3" />
+                <Cpu className="w-8 h-8 text-white mr-3" />
                 <span className="text-3xl font-bold text-white">10x</span>
               </div>
               <p className="text-white">Faster Inference</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
-                <Globe className="w-8 h-8 text-green-400 mr-3" />
+                <Globe className="w-8 h-8 text-white mr-3" />
                 <span className="text-3xl font-bold text-white">50+</span>
               </div>
               <p className="text-white">Deployment Locations</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
-                <Zap className="w-8 h-8 text-green-400 mr-3" />
+                <Zap className="w-8 h-8 text-white mr-3" />
                 <span className="text-3xl font-bold text-white">99.9%</span>
               </div>
               <p className="text-white">Uptime Guarantee</p>
@@ -80,8 +80,8 @@ const Hero = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-green-400/50 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-green-400 rounded-full mt-2"></div>
+        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-white/50 rounded-full mt-2"></div>
         </div>
       </div>
     </section>

@@ -57,7 +57,7 @@ const About = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            About <span className="text-green-400 drop-shadow-[0_0_20px_rgba(34,197,94,0.5)]">Edgeble</span>
+            About <span className="text-white">Edgeble</span>
           </h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
             Pioneering the future of edge AI with innovative hardware solutions that bring intelligence closer to where it's needed most.
@@ -69,7 +69,7 @@ const About = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-white mb-4 flex items-center">
-                <Eye className="w-8 h-8 text-green-400 mr-3" />
+                <Eye className="w-8 h-8 text-white mr-3" />
                 Our Vision
               </h3>
               <p className="text-white leading-relaxed">
@@ -79,7 +79,7 @@ const About = () => {
             </div>
             <div>
               <h3 className="text-2xl font-bold text-white mb-4 flex items-center">
-                <Target className="w-8 h-8 text-green-400 mr-3" />
+                <Target className="w-8 h-8 text-white mr-3" />
                 Our Mission
               </h3>
               <p className="text-white leading-relaxed">
@@ -105,8 +105,8 @@ const About = () => {
             {values.map((value, index) => {
               const IconComponent = value.icon;
               return (
-                <div key={index} className="text-center p-6 bg-white/5 rounded-2xl hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-green-400/30">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-green-400 rounded-full mb-4">
+                <div key={index} className="text-center p-6 bg-white/5 rounded-2xl hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-white/20">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-full mb-4">
                     <IconComponent className="w-8 h-8 text-black" />
                   </div>
                   <h4 className="text-xl font-bold text-white mb-3">{value.title}</h4>
@@ -131,23 +131,23 @@ const About = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <a href={member.linkedin} className="w-8 h-8 bg-green-400 rounded-full flex items-center justify-center hover:bg-green-300 transition-all duration-200">
+                    <a href={member.linkedin} className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-white/90 transition-all duration-200">
                       <Linkedin className="w-4 h-4 text-black" />
                     </a>
-                    <a href={member.twitter} className="w-8 h-8 bg-green-400 rounded-full flex items-center justify-center hover:bg-green-300 transition-all duration-200">
+                    <a href={member.twitter} className="w-8 h-8 bg-white rounded-full flex items-center justify-center hover:bg-white/90 transition-all duration-200">
                       <Twitter className="w-4 h-4 text-black" />
                     </a>
                   </div>
                 </div>
                 <h4 className="text-lg font-bold text-white mb-1">{member.name}</h4>
-                <p className="text-green-400 font-medium">{member.role}</p>
+                <p className="text-white font-medium">{member.role}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Location */}
-        <div className="bg-white/5 rounded-2xl p-8 md:p-12 border border-white/10 hover:border-green-400/20 transition-all duration-300">
+        <div className="bg-white/5 rounded-2xl p-8 md:p-12 border border-white/10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
@@ -157,10 +157,10 @@ const About = () => {
                 Headquartered in Silicon Valley with development centers worldwide, we're positioned to serve clients globally while maintaining the agility of a focused technology company.
               </p>
               <div className="flex items-center text-white mb-4">
-                <MapPin className="w-5 h-5 text-green-400 mr-3" />
+                <MapPin className="w-5 h-5 mr-3" />
                 <span>San Francisco, CA | Austin, TX | Bangalore, India</span>
               </div>
-              <button className="bg-green-400 text-black hover:bg-green-300 px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center hover:shadow-[0_0_20px_rgba(34,197,94,0.3)]">
+              <button className="bg-white text-black hover:bg-white/90 px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
                 Get in Touch
               </button>
@@ -168,19 +168,19 @@ const About = () => {
             <div className="text-center lg:text-right">
               <div className="grid grid-cols-2 gap-8">
                 <div>
-                  <div className="text-3xl font-bold text-green-400 mb-2">2019</div>
+                  <div className="text-3xl font-bold text-white mb-2">2019</div>
                   <div className="text-white">Founded</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-green-400 mb-2">150+</div>
+                  <div className="text-3xl font-bold text-white mb-2">150+</div>
                   <div className="text-white">Team Members</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-green-400 mb-2">50+</div>
+                  <div className="text-3xl font-bold text-white mb-2">50+</div>
                   <div className="text-white">Patents</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-green-400 mb-2">$50M</div>
+                  <div className="text-3xl font-bold text-white mb-2">$50M</div>
                   <div className="text-white">Series B Funding</div>
                 </div>
               </div>
