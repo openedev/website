@@ -10,6 +10,18 @@ const Solutions = () => {
       features: ['Real-time defect detection', 'Predictive maintenance', 'Process optimization']
     },
     {
+      icon: Car,
+      title: 'Automotive Edge',
+      description: 'Advanced driver assistance systems, autonomous driving, and in-vehicle AI applications.',
+      features: ['ADAS systems', 'Object detection', 'Driver monitoring']
+    },
+    {
+      icon: Zap,
+      title: 'LLM at Edge',
+      description: 'Bringing conversational AI, summarization, documents, and decision-making closer to where data is generated',
+      features: ['No-Cloud Inference', 'Data privacy', 'Offline operation']
+    },
+    {
       icon: Shield,
       title: 'Defense & Security',
       description: 'Mission-critical AI applications for surveillance, threat detection, and autonomous systems.',
@@ -26,18 +38,6 @@ const Solutions = () => {
       title: 'Smart Agriculture',
       description: 'Precision farming with AI-driven crop monitoring, yield prediction, and resource optimization.',
       features: ['Crop health monitoring', 'Yield prediction', 'Resource optimization']
-    },
-    {
-      icon: Car,
-      title: 'Automotive Edge',
-      description: 'Advanced driver assistance systems, autonomous driving, and in-vehicle AI applications.',
-      features: ['ADAS systems', 'Object detection', 'Driver monitoring']
-    },
-    {
-      icon: Zap,
-      title: 'Edge Computing',
-      description: 'Distributed AI inference at the edge for reduced latency and improved privacy.',
-      features: ['Low-latency inference', 'Data privacy', 'Offline operation']
     }
   ];
 

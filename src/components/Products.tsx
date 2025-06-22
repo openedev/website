@@ -5,30 +5,30 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: 'EdgeCore AI-X1',
-      tagline: 'Ultra-fast inference module',
-      image: 'https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=600',
-      specs: ['ARM Cortex-A78 CPU', '16GB LPDDR5', 'NPU: 6.4 TOPS', 'Size: 87×55mm'],
-      badge: 'Most Popular',
-      description: 'High-performance compute module for edge AI applications with pre-trained models.'
+      name: 'Edge AI NPU Modules',
+      tagline: 'Ultra-fast inference modules',
+      image: 'https://www.edgeble.ai/Home-aia.png?auto=compress&cs=tinysrgb&w=600',
+      specs: ['NPU: 6/32TOPS', 'Precision: INT8/INT4', 'CPU: ARM Cortex-A76', 'LPDDR5: 32GB', 'Size: 87 × 55mm'],
+      badge: 'Chip',
+      description: 'Model-first NPUs co-designed with EdgeGPT to guarantee predictable latency and power'
     },
     {
       id: 2,
-      name: 'EdgeCore Pro-X2',
-      tagline: 'Industrial-grade AI accelerator',
+      name: 'EdgeGPT Model',
+      tagline: 'Vision, Sound, Agentic and Multimodal',
       image: 'https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=600',
       specs: ['ARM Cortex-A78AE', '32GB LPDDR5X', 'NPU: 12.8 TOPS', 'Temp: -40°C to 85°C'],
-      badge: 'Industrial Grade',
-      description: 'Ruggedized AI module designed for harsh industrial environments and mission-critical applications.'
+      badge: 'Model',
+      description: 'Pre-trained, inference-optimized models built specifically for edge constraints'
     },
     {
       id: 3,
-      name: 'EdgeCore Lite-M1',
-      tagline: 'Compact AI module for IoT',
+      name: 'Edge AI Agentic Platform',
+      tagline: 'Edge AI Orchestration, Edge Agents',
       image: 'https://images.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg?auto=compress&cs=tinysrgb&w=600',
       specs: ['ARM Cortex-A55', '8GB LPDDR4X', 'NPU: 2.4 TOPS', 'Size: 40×30mm'],
-      badge: 'New',
-      description: 'Compact and energy-efficient AI module perfect for IoT devices and edge computing applications.'
+      badge: 'Agentic',
+      description: 'Agentic lifecycle for Edge AI model deployment + updates'
     }
   ];
 
@@ -41,7 +41,7 @@ const Products = () => {
             Our <span className="text-white">Products</span>
           </h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            Cutting-edge AI accelerators designed for diverse applications, from IoT devices to industrial automation.
+            Agentic Edge AI NPUs designed for diverse applications, from IoT devices, automotive and industrial automation
           </p>
         </div>
 

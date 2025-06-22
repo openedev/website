@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, Linkedin, Twitter, Github, ArrowRight } from 'luci
 const Footer = () => {
   const footerLinks = {
     products: [
-      { name: 'EdgeCore AI-X1', href: '#' },
+      { name: 'Edge AI NPU Modules', href: '#' },
       { name: 'EdgeCore Pro-X2', href: '#' },
       { name: 'EdgeCore Lite-M1', href: '#' },
       { name: 'Custom Solutions', href: '#' }
