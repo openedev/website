@@ -31,8 +31,8 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-white">
-              Edgeble
+            <div className="text-4xl font-bold text-white">
+              edgeble
             </div>
           </div>
 
