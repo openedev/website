@@ -168,15 +168,15 @@ const About = () => {
             <div className="text-center lg:text-right">
               <div className="grid grid-cols-2 gap-8">
                 <div>
-                  <div className="text-3xl font-bold text-white mb-2">2019</div>
+                  <div className="text-3xl font-bold text-white mb-2">2022</div>
                   <div className="text-white">Founded</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-white mb-2">150+</div>
+                  <div className="text-3xl font-bold text-white mb-2">18+</div>
                   <div className="text-white">Team Members</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-white mb-2">50+</div>
+                  <div className="text-3xl font-bold text-white mb-2">1+</div>
                   <div className="text-white">Patents</div>
                 </div>
                 <div>
