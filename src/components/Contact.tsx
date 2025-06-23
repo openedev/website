@@ -47,7 +47,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Address',
-      details: 'T-Hub, Plot No 1/C, Sy No 83/1, Raidurgam, Knowledge City Rd, panmaktha, Hyderabad, Serilingampalle (M)',
+      details: 'T-Hub, Plot No 1/C, Sy No 83/1, Raidurgam, Knowledge City Rd, panmaktha, Hyderabad',
       subtitle: 'Telangana 500081'
     },
     {
