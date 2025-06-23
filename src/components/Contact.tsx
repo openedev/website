@@ -28,26 +28,32 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
-      title: 'Email',
+      title: 'Info',
       details: 'info@edgeble.ai',
-      subtitle: 'sales@edgeble.ai'
+      subtitle: ''
+    },
+    {
+      icon: Mail,
+      title: 'Sales',
+      details: 'sales@edgeble.ai',
+      subtitle: ''
     },
     {
       icon: Phone,
       title: 'Phone',
-      details: '+1 (555) 123-4567',
-      subtitle: '+1 (555) 123-4568'
+      details: '+91 91000 90959',
+      subtitle: ''
     },
     {
       icon: MapPin,
-      title: 'Headquarters',
-      details: '123 Innovation Drive',
-      subtitle: 'San Francisco, CA 94105'
+      title: 'Address',
+      details: 'T-Hub, Plot No 1/C, Sy No 83/1, Raidurgam, Knowledge City Rd, panmaktha, Hyderabad, Serilingampalle (M)',
+      subtitle: 'Telangana 500081'
     },
     {
       icon: Clock,
       title: 'Business Hours',
-      details: 'Mon - Fri: 9:00 AM - 6:00 PM PST',
+      details: 'Mon - Fri: 9:00 AM - 6:00 PM IST',
       subtitle: 'Weekend: Emergency Support'
     }
   ];
@@ -203,7 +209,7 @@ const Contact = () => {
                 <div className="text-center">
                   <MapPin className="w-12 h-12 text-white mx-auto mb-3" />
                   <p className="text-white">Interactive map would be integrated here</p>
-                  <p className="text-sm text-white/70">San Francisco, CA</p>
+                  <p className="text-sm text-white/70">Hyderabad, Telangana, India</p>
                 </div>
               </div>
             </div>
