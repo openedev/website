@@ -52,27 +52,34 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto animate-fadeIn animation-delay-800">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-4xl mx-auto animate-fadeIn animation-delay-800">
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
                 <Cpu className="w-8 h-8 text-white mr-3" />
-                <span className="text-3xl font-bold text-white">10x</span>
+                <span className="text-3xl font-bold text-white">15+</span>
               </div>
-              <p className="text-white">Faster Inference</p>
+              <p className="text-white">Vision, Sound & Multimodal</p>
+            </div>
+            <div className="text-center">
+              <div className="flex items-center justify-center mb-3">
+                <Cpu className="w-8 h-8 text-white mr-3" />
+                <span className="text-3xl font-bold text-white">8+</span>
+              </div>
+              <p className="text-white">Vision, LLM NPU Modules</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
                 <Globe className="w-8 h-8 text-white mr-3" />
-                <span className="text-3xl font-bold text-white">50+</span>
+                <span className="text-3xl font-bold text-white">10+</span>
               </div>
-              <p className="text-white">Deployment Locations</p>
+              <p className="text-white">Real-World Deployments</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
                 <Zap className="w-8 h-8 text-white mr-3" />
-                <span className="text-3xl font-bold text-white">99.9%</span>
+                <span className="text-3xl font-bold text-white">91.1%</span>
               </div>
-              <p className="text-white">Uptime Guarantee</p>
+              <p className="text-white">NPU Load Orchestrated</p>
             </div>
           </div>
         </div>
