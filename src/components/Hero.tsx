@@ -56,28 +56,28 @@ const Hero = () => {
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
                 <Cpu className="w-8 h-8 text-white mr-3" />
-                <span className="text-3xl font-bold text-white">15+</span>
+                <span className="text-4xl font-bold text-white">15+</span>
               </div>
               <p className="text-white">Vision, Sound, Multimodal</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
                 <Cpu className="w-8 h-8 text-white mr-3" />
-                <span className="text-3xl font-bold text-white">8+</span>
+                <span className="text-4xl font-bold text-white">8+</span>
               </div>
               <p className="text-white">Vision, LLM NPU Modules</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
                 <Globe className="w-8 h-8 text-white mr-3" />
-                <span className="text-3xl font-bold text-white">10+</span>
+                <span className="text-4xl font-bold text-white">10+</span>
               </div>
               <p className="text-white">Real-World Deployments</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
                 <Zap className="w-8 h-8 text-white mr-3" />
-                <span className="text-3xl font-bold text-white">91.1%</span>
+                <span className="text-4xl font-bold text-white">91.1%</span>
               </div>
               <p className="text-white">NPU Load Orchestrated</p>
             </div>
