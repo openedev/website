@@ -15,7 +15,7 @@ const Products = () => {
     {
       id: 2,
       name: 'EdgeGPT Model',
-      tagline: 'Vision, Sound, Agentic and Multimodal',
+      tagline: 'Vision, Sound, Agentic & Multimodal',
       image: 'https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=600',
       specs: ['ARM Cortex-A78AE', '32GB LPDDR5X', 'NPU: 12.8 TOPS', 'Temp: -40°C to 85°C'],
       badge: 'Model',

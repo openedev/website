@@ -58,7 +58,7 @@ const Hero = () => {
                 <Cpu className="w-8 h-8 text-white mr-3" />
                 <span className="text-3xl font-bold text-white">15+</span>
               </div>
-              <p className="text-white">Vision, Sound & Multimodal</p>
+              <p className="text-white">Vision, Sound, Multimodal</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
