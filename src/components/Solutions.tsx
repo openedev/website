@@ -98,7 +98,7 @@ const Solutions = () => {
         <div className="mt-20 bg-white/5 rounded-2xl p-8 md:p-12 border border-white/10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">500+</div>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2">15+</div>
               <div className="text-white">Deployments</div>
             </div>
             <div>

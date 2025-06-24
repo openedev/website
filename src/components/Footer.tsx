@@ -5,17 +5,16 @@ const Footer = () => {
   const footerLinks = {
     products: [
       { name: 'Edge AI NPU Modules', href: '#' },
-      { name: 'EdgeCore Pro-X2', href: '#' },
-      { name: 'EdgeCore Lite-M1', href: '#' },
-      { name: 'Custom Solutions', href: '#' }
+      { name: 'EdgeGPT Model', href: '#' },
+      { name: 'Edge AI Agentic', href: '#' },
     ],
     solutions: [
       { name: 'Industrial Automation', href: '#' },
+      { name: 'Automotive Edge', href: '#' },
+      { name: 'LLM at Edge', href: '#' },
       { name: 'Defense & Security', href: '#' },
       { name: 'Medical Devices', href: '#' },
       { name: 'Smart Agriculture', href: '#' },
-      { name: 'Automotive Edge', href: '#' },
-      { name: 'Edge Computing', href: '#' }
     ],
     company: [
       { name: 'About Us', href: '#about' },
@@ -65,8 +64,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="text-2xl font-bold mb-4">
-              Edgeble
+            <div className="text-3xl font-bold mb-4">
+              edgeble
             </div>
             <p className="text-white/70 mb-6 leading-relaxed">
               Pioneering the future of edge AI with innovative hardware solutions that bring intelligence closer to where it's needed most.
@@ -78,11 +77,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center text-white/70">
                 <Phone className="w-4 h-4 mr-3" />
-                <span>+1 (555) 123-4567</span>
+                <span>(+91) 910 009 0959</span>
               </div>
               <div className="flex items-center text-white/70">
                 <MapPin className="w-4 h-4 mr-3" />
-                <span>San Francisco, CA</span>
+                <span>Hyderabad, India</span>
               </div>
             </div>
           </div>
@@ -90,7 +89,7 @@ const Footer = () => {
           {/* Products */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Products</h4>
-            <ul className="space-y-3">
+            <ul className="space-y-2">
               {footerLinks.products.map((link, index) => (
                 <li key={index}>
                   <a 

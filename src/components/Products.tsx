@@ -23,7 +23,7 @@ const Products = () => {
     },
     {
       id: 3,
-      name: 'Edge AI Agentic Platform',
+      name: 'Edge AI Agentic',
       tagline: 'Edge AI Orchestration, Edge Agents',
       image: 'https://images.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg?auto=compress&cs=tinysrgb&w=600',
       specs: ['ARM Cortex-A55', '8GB LPDDR4X', 'NPU: 2.4 TOPS', 'Size: 40×30mm'],
