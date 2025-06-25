@@ -30,7 +30,7 @@ const About = () => {
       image: 'https://www.edgeble.ai/a2.png?auto=compress&cs=tinysrgb&w=400',
       linkedin: '#',
       twitter: '#'
-    }
+    },
     {
       name: 'Chakrish Krishtam',
       role: 'AI/ML',
