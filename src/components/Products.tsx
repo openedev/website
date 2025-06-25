@@ -7,7 +7,7 @@ const Products = () => {
       id: 1,
       name: 'EdgeGPT NPU Chips',
       tagline: 'Ultra-fast inference modules',
-      image: 'https://www.edgeble.ai/Home-aia.png?auto=compress&cs=tinysrgb&w=600',
+      image: 'https://www.edgeble.ai/Home-aia.png?auto=compress&cs=tinysrgb&w=300',
       specs: ['NPU: 6/32TOPS', 'Precision: INT8/INT4', 'CPU: ARM Cortex-A76', 'LPDDR5: 32GB', 'Size: 87 × 55mm', 'Form factor: SoM, PCIe', 'Future: Easy to Swap or Upgrade' ],
       badge: 'Chip',
       description: 'Model-first NPUs co-designed with EdgeGPT to guarantee predictable latency and power'
@@ -16,7 +16,7 @@ const Products = () => {
       id: 2,
       name: 'EdgeGPT Model',
       tagline: 'Edge-Optimized Models for Real-World Tasks',
-      image: 'https://www.edgeble.ai/Home-eai-cm.png?auto=compress&cs=tinysrgb&w=500',
+      image: 'https://www.edgeble.ai/Home-eai-cm.png?auto=compress&cs=tinysrgb&w=300',
       specs: ['NPU-aware Edge Models', 'Task-based architecture', 'Vision, Sound, Agentic','Multimodal, RAG-LLM', 'Real-word proven accuracy'],
       badge: 'Model',
       description: 'Pre-trained, inference-optimized models purpose-built for instant deployment, low compute power, and high accuracy.'
@@ -25,7 +25,7 @@ const Products = () => {
       id: 3,
       name: 'Edge AI Agentic',
       tagline: 'Edge AI Orchestration Stack + Edge Agents',
-      image: 'https://www.edgeble.ai/Home-edgeaia.png?auto=compress&cs=tinysrgb&w=600',
+      image: 'https://www.edgeble.ai/Home-edgeaia.png?auto=compress&cs=tinysrgb&w=300',
       specs: ['No Code', 'DevOpe lifecycle', 'Open Source', 'Edge AI Agents', 'Deploy in hours'],
       badge: 'Agentic',
       description: 'Full-stack orchestration to manage training, deployment, and continuous updates with support for real-time edge agents'
