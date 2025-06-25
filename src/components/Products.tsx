@@ -54,7 +54,7 @@ const Products = () => {
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-full object-contain group-hover:scale-108 transition-transform duration-300"
+                  className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
                 />
                 {/* Badge */}
                 <div className="absolute top-4 left-4">
