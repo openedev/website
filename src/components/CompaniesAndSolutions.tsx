@@ -1,7 +1,10 @@
-import React from 'react';
-import { ChevronLeft, ChevronRight, Eye, Brain, Shield, Zap, Factory, Car } from 'lucide-react';
+import React, { useEffect, useRef } from 'react';
+import { Eye, Brain, Shield, Zap, Factory, Car } from 'lucide-react';
 
 const CompaniesAndSolutions = () => {
+  const companiesScrollRef = useRef<HTMLDivElement>(null);
+  const solutionsScrollRef = useRef<HTMLDivElement>(null);
+
   const companies = [
     { name: 'Amara Raja', logo: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=200', link: '#amara-raja' },
     { name: 'AirFi', logo: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=200', link: '#airfi' },
@@ -49,19 +52,63 @@ const CompaniesAndSolutions = () => {
     }
   ];
 
-  const scrollLeft = (containerId: string) => {
-    const container = document.getElementById(containerId);
-    if (container) {
-      container.scrollBy({ left: -300, behavior: 'smooth' });
-    }
-  };
+  // Duplicate arrays for infinite scroll effect
+  const duplicatedCompanies = [...companies, ...companies, ...companies];
+  const duplicatedSolutions = [...solutions, ...solutions, ...solutions];
 
-  const scrollRight = (containerId: string) => {
-    const container = document.getElementById(containerId);
-    if (container) {
-      container.scrollBy({ left: 300, behavior: 'smooth' });
-    }
-  };
+  useEffect(() => {
+    const setupInfiniteScroll = (scrollRef: React.RefObject<HTMLDivElement>, itemWidth: number, totalItems: number) => {
+      const container = scrollRef.current;
+      if (!container) return;
+
+      let scrollPosition = 0;
+      const maxScroll = itemWidth * totalItems;
+      const speed = 0.5; // Adjust speed as needed
+
+      const scroll = () => {
+        scrollPosition += speed;
+        
+        if (scrollPosition >= maxScroll) {
+          scrollPosition = 0;
+        }
+        
+        container.scrollLeft = scrollPosition;
+        requestAnimationFrame(scroll);
+      };
+
+      // Start the animation
+      const animationId = requestAnimationFrame(scroll);
+
+      // Pause on hover
+      const handleMouseEnter = () => {
+        cancelAnimationFrame(animationId);
+      };
+
+      const handleMouseLeave = () => {
+        requestAnimationFrame(scroll);
+      };
+
+      container.addEventListener('mouseenter', handleMouseEnter);
+      container.addEventListener('mouseleave', handleMouseLeave);
+
+      return () => {
+        cancelAnimationFrame(animationId);
+        container.removeEventListener('mouseenter', handleMouseEnter);
+        container.removeEventListener('mouseleave', handleMouseLeave);
+      };
+    };
+
+    // Setup infinite scroll for companies (200px + 24px gap = 224px per item)
+    const companiesCleanup = setupInfiniteScroll(companiesScrollRef, 224, companies.length);
+    
+    // Setup infinite scroll for solutions (280px + 24px gap = 304px per item)
+    const solutionsCleanup = setupInfiniteScroll(solutionsScrollRef, 304, solutions.length);
+
+    return () => {
+      companiesCleanup?.();
+      solutionsCleanup?.();
+    };
+  }, [companies.length, solutions.length]);
 
   return (
     <section className="py-24 bg-black">
@@ -71,27 +118,15 @@ const CompaniesAndSolutions = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
             Companies We Worked With
           </h2>
-          <div className="relative">
-            <button
-              onClick={() => scrollLeft('companies-scroll')}
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/10 hover:bg-white/20 text-white p-2 rounded-full transition-all duration-200"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            <button
-              onClick={() => scrollRight('companies-scroll')}
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/10 hover:bg-white/20 text-white p-2 rounded-full transition-all duration-200"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
+          <div className="relative overflow-hidden">
             <div
-              id="companies-scroll"
-              className="flex overflow-x-auto scrollbar-hide space-x-6 pb-4"
+              ref={companiesScrollRef}
+              className="flex overflow-x-hidden scrollbar-hide space-x-6 pb-4"
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
-              {companies.map((company, index) => (
+              {duplicatedCompanies.map((company, index) => (
                 <a
-                  key={index}
+                  key={`${company.name}-${index}`}
                   href={company.link}
                   className="flex-shrink-0 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl p-6 transition-all duration-300 transform hover:-translate-y-1 min-w-[200px] h-32 flex items-center justify-center group"
                 >
@@ -116,29 +151,17 @@ const CompaniesAndSolutions = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
             Solutions We Delivered
           </h2>
-          <div className="relative">
-            <button
-              onClick={() => scrollLeft('solutions-scroll')}
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/10 hover:bg-white/20 text-white p-2 rounded-full transition-all duration-200"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            <button
-              onClick={() => scrollRight('solutions-scroll')}
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/10 hover:bg-white/20 text-white p-2 rounded-full transition-all duration-200"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
+          <div className="relative overflow-hidden">
             <div
-              id="solutions-scroll"
-              className="flex overflow-x-auto scrollbar-hide space-x-6 pb-4"
+              ref={solutionsScrollRef}
+              className="flex overflow-x-hidden scrollbar-hide space-x-6 pb-4"
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
-              {solutions.map((solution, index) => {
+              {duplicatedSolutions.map((solution, index) => {
                 const IconComponent = solution.icon;
                 return (
                   <a
-                    key={index}
+                    key={`${solution.title}-${index}`}
                     href={solution.link}
                     className="flex-shrink-0 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl p-6 transition-all duration-300 transform hover:-translate-y-1 min-w-[280px] group"
                   >
