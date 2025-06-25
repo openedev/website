@@ -4,30 +4,37 @@ import { Target, Eye, Users, MapPin, Linkedin, Twitter, Mail } from 'lucide-reac
 const About = () => {
   const team = [
     {
-      name: 'Dr. Sarah Chen',
-      role: 'CEO & Co-Founder',
-      image: 'https://images.pexels.com/photos/3777568/pexels-photo-3777568.jpeg?auto=compress&cs=tinysrgb&w=400',
+      name: 'Jagan Teki',
+      role: 'Founder',
+      image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.linkedin.com%2Fin%2Fjaganteki&psig=AOvVaw0pVmyoqBFAHFGqAo3QzuBG&ust=1750924915756000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNi_ieeNjI4DFQAAAAAdAAAAABAE?auto=compress&cs=tinysrgb&w=400',
+      linkedin: 'https://in.linkedin.com/in/jaganteki',
+      twitter: '#'
+    },
+    {
+      name: 'Srinivas Patnaik',
+      role: 'Strategy Analyst',
+      image: 'https://www.edgeble.ai/a5.png?auto=compress&cs=tinysrgb&w=400',
       linkedin: '#',
       twitter: '#'
     },
     {
-      name: 'Michael Rodriguez',
-      role: 'CTO & Co-Founder',
-      image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400',
+      name: 'Alberto Bianchi',
+      role: 'Hardware',
+      image: 'https://www.edgeble.ai/a4.png?auto=compress&cs=tinysrgb&w=400',
       linkedin: '#',
       twitter: '#'
     },
     {
-      name: 'Dr. Emily Watson',
-      role: 'VP of Engineering',
-      image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400',
+      name: 'Tom Cubie',
+      role: 'Supply Chain',
+      image: 'https://www.edgeble.ai/a2.png?auto=compress&cs=tinysrgb&w=400',
       linkedin: '#',
       twitter: '#'
-    },
+    }
     {
-      name: 'David Kim',
-      role: 'Head of Product',
-      image: 'https://images.pexels.com/photos/3831645/pexels-photo-3831645.jpeg?auto=compress&cs=tinysrgb&w=400',
+      name: 'Chakrish Krishtam',
+      role: 'AI/ML',
+      image: 'https://www.edgeble.ai/chakrish.png?auto=compress&cs=tinysrgb&w=400',
       linkedin: '#',
       twitter: '#'
     }
