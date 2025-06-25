@@ -178,7 +178,7 @@ const CompaniesAndSolutions = () => {
         {/* Solutions We Delivered */}
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Solutions We Delivered
+            NPU Modules, Models We Deployed
           </h2>
           <div className="relative overflow-hidden">
             <div
