@@ -50,11 +50,11 @@ const Products = () => {
           {products.map((product) => (
             <div key={product.id} className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20">
               {/* Product Image */}
-              <div className="relative h-96 bg-black flex items-center justify-center overflow-hidden">
+              <div className="relative h-96 bg-black flex items-fit justify-center overflow-hidden">
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain group-hover:scale-108 transition-transform duration-300"
                 />
                 {/* Badge */}
                 <div className="absolute top-4 left-4">
