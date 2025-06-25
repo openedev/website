@@ -6,11 +6,31 @@ const CompaniesAndSolutions = () => {
   const solutionsScrollRef = useRef<HTMLDivElement>(null);
 
   const companies = [
-    { name: 'Amara Raja', logo: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=200', link: '#amara-raja' },
-    { name: 'AirFi', logo: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=200', link: '#airfi' },
-    { name: 'Apollo', logo: 'https://images.pexels.com/photos/3184293/pexels-photo-3184293.jpeg?auto=compress&cs=tinysrgb&w=200', link: '#apollo' },
-    { name: 'Collins Aerospace', logo: 'https://images.pexels.com/photos/3184294/pexels-photo-3184294.jpeg?auto=compress&cs=tinysrgb&w=200', link: '#collins-aerospace' },
-    { name: 'Patil Rail Infra', logo: 'https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg?auto=compress&cs=tinysrgb&w=200', link: '#patil-rail-infra' }
+    { 
+      name: 'Amara Raja', 
+      logo: 'https://www.amararaja.co.in/images/logo.png',
+      link: '#amara-raja' 
+    },
+    { 
+      name: 'AirFi', 
+      logo: 'https://airfi.aero/wp-content/uploads/2021/03/AirFi-Logo-White-BG.png',
+      link: '#airfi' 
+    },
+    { 
+      name: 'Apollo', 
+      logo: 'https://www.apollohospitals.com/assets/images/apollo-logo.png',
+      link: '#apollo' 
+    },
+    { 
+      name: 'Collins Aerospace', 
+      logo: 'https://www.collinsaerospace.com/-/media/project/collinsaerospace/collinsaerospace/images/logos/collins-aerospace-logo.png',
+      link: '#collins-aerospace' 
+    },
+    { 
+      name: 'Patil Rail Infra', 
+      logo: 'https://www.patilrail.com/images/logo.png',
+      link: '#patil-rail-infra' 
+    }
   ];
 
   const solutions = [
@@ -130,12 +150,21 @@ const CompaniesAndSolutions = () => {
                   href={company.link}
                   className="flex-shrink-0 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl p-6 transition-all duration-300 transform hover:-translate-y-1 min-w-[200px] h-32 flex items-center justify-center group"
                 >
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center mb-2 mx-auto group-hover:bg-white/20 transition-all duration-200">
+                  <div className="text-center w-full">
+                    <div className="w-full h-16 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform duration-200">
                       <img
                         src={company.logo}
-                        alt={company.name}
-                        className="w-12 h-12 object-contain rounded-lg"
+                        alt={`${company.name} logo`}
+                        className="max-w-full max-h-full object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
+                        onError={(e) => {
+                          // Fallback to text if logo fails to load
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          const parent = target.parentElement;
+                          if (parent) {
+                            parent.innerHTML = `<div class="text-white font-bold text-sm">${company.name}</div>`;
+                          }
+                        }}
                       />
                     </div>
                     <p className="text-white font-medium text-sm">{company.name}</p>
