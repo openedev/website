@@ -152,11 +152,16 @@ const About = () => {
                 Global Presence
               </h3>
               <p className="text-white mb-6">
-                Headquartered in Silicon Valley with development centers worldwide, we're positioned to serve clients globally while maintaining the agility of a focused technology company.
+                Headquartered in India with development centers worldwide, we're positioned to serve clients globally while maintaining the agility of a focused technology company.
               </p>
-              <div className="flex items-center text-white mb-4">
-                <MapPin className="w-5 h-5 mr-3" />
-                <span>San Francisco, CA | Austin, TX | Bangalore, India</span>
+              <div className="flex items-start text-white mb-4">
+                <MapPin className="w-5 h-5 mr-3 mt-1 flex-shrink-0" />
+                <div>
+                  <div className="font-semibold mb-1">Headquarters:</div>
+                  <div>T-Hub, 1/C, 83/1, Panmaktha, Raidurgam</div>
+                  <div>Knowledge City Road, Hyderabad</div>
+                  <div>Telangana - 500081, India</div>
+                </div>
               </div>
               <button className="bg-white text-black hover:bg-white/90 px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center">
                 <Mail className="w-4 h-4 mr-2" />

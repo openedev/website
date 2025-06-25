@@ -10,7 +10,8 @@ const Products = () => {
       image: 'https://www.edgeble.ai/Home-aia.png?auto=compress&cs=tinysrgb&w=300',
       specs: ['NPU: 6/32TOPS', 'Precision: INT8/INT4', 'CPU: ARM Cortex-A76', 'LPDDR5: 32GB', 'Size: 87 × 55mm', 'Form factor: SoM, PCIe', 'Future: Easy to Swap or Upgrade' ],
       badge: 'Chip',
-      description: 'Model-first NPUs co-designed with EdgeGPT to guarantee predictable latency and power'
+      description: 'Model-first NPUs co-designed with EdgeGPT to guarantee predictable latency and power',
+      link: '/products/npu'
     },
     {
       id: 2,
@@ -19,7 +20,8 @@ const Products = () => {
       image: 'images/Pitch 118.png?auto=compress&cs=tinysrgb&w=300',
       specs: ['NPU-aware Edge Models', 'Task-based architecture', 'Vision, Sound, Agentic','Multimodal, RAG-LLM', 'Real-word proven accuracy'],
       badge: 'Model',
-      description: 'Pre-trained, inference-optimized models purpose-built for instant deployment, low compute power, and high accuracy.'
+      description: 'Pre-trained, inference-optimized models purpose-built for instant deployment, low compute power, and high accuracy.',
+      link: '/products/model'
     },
     {
       id: 3,
@@ -28,7 +30,8 @@ const Products = () => {
       image: 'images/Pitch 118(1).png?auto=compress&cs=tinysrgb&w=300',
       specs: ['No Code', 'DevOpe lifecycle', 'Open Source', 'Edge AI Agents', 'Deploy in hours'],
       badge: 'Agentic',
-      description: 'Full-stack orchestration to manage training, deployment, and continuous updates with support for real-time edge agents'
+      description: 'Full-stack orchestration to manage training, deployment, and continuous updates with support for real-time edge agents',
+      link: '/products/agentic'
     }
   ];
 
@@ -50,11 +53,17 @@ const Products = () => {
           {products.map((product) => (
             <div key={product.id} className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20">
               {/* Product Image */}
-              <div className="relative h-96 overflow-hidden">
+              <div className="relative h-96 overflow-hidden bg-white/5 flex items-center justify-center p-4">
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                  className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                  style={{ 
+                    width: 'auto', 
+                    height: 'auto',
+                    maxWidth: '100%',
+                    maxHeight: '100%'
+                  }}
                 />
                 {/* Badge */}
                 <div className="absolute top-4 left-4">
@@ -84,10 +93,13 @@ const Products = () => {
                 </div>
 
                 {/* CTA Button */}
-                <button className="w-full bg-white/10 hover:bg-white hover:text-black text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20">
+                <a 
+                  href={product.link}
+                  className="w-full bg-white/10 hover:bg-white hover:text-black text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20"
+                >
                   Learn More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </a>
               </div>
             </div>
           ))}
@@ -102,9 +114,12 @@ const Products = () => {
             <p className="text-white mb-6 max-w-2xl mx-auto">
               Our engineering team can develop tailored AI accelerators for your specific requirements and use cases.
             </p>
-            <button className="bg-white text-black hover:bg-white/90 px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105">
+            <a 
+              href="/contact-engineers"
+              className="bg-white text-black hover:bg-white/90 px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105 inline-block"
+            >
               Contact Our Engineers
-            </button>
+            </a>
           </div>
         </div>
       </div>

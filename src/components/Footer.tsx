@@ -61,31 +61,7 @@ const Footer = () => {
 
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
-          {/* Company Info */}
-          <div className="lg:col-span-2">
-            <div className="text-3xl font-bold mb-4">
-              edgeble
-            </div>
-            <p className="text-white/70 mb-6 leading-relaxed">
-              Pioneering the future of edge AI with innovative hardware solutions that bring intelligence closer to where it's needed most.
-            </p>
-            <div className="space-y-3">
-              <div className="flex items-center text-white/70">
-                <Mail className="w-4 h-4 mr-3" />
-                <span>info@edgeble.ai</span>
-              </div>
-              <div className="flex items-center text-white/70">
-                <Phone className="w-4 h-4 mr-3" />
-                <span>(+91) 910 009 0959</span>
-              </div>
-              <div className="flex items-center text-white/70">
-                <MapPin className="w-4 h-4 mr-3" />
-                <span>Hyderabad, India</span>
-              </div>
-            </div>
-          </div>
-
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Products */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Products</h4>

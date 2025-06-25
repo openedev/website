@@ -4,6 +4,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,13 +17,16 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
-    { name: 'Products', 
-    children: [
-      { name: 'EdgeGPT NPU Chips', href: '#edgegpt-chips' },
-      { name: 'EdgeGPT Model', href: '#edgegpt-model' },
-      { name: 'Edge AI Agentic', href: '#edgegpt-agentic' },
-    ] },
-    { name: 'Solutions', href: '#solutions' },
+    { 
+      name: 'Products', 
+      hasDropdown: true,
+      children: [
+        { name: 'EdgeGPT NPU Chips', href: '/products/npu' },
+        { name: 'EdgeGPT Model', href: '/products/model' },
+        { name: 'Edge AI Agentic', href: '/products/agentic' },
+      ] 
+    },
+    { name: 'Solutions', href: '/solutions' },
     { name: "What's New", href: '#news' },
     { name: 'About', href: '#about' },
     { name: 'Contact', href: '#contact' },
@@ -45,13 +49,40 @@ const Navigation = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-white hover:text-white/70 px-3 py-2 text-sm font-medium transition-colors duration-200"
-                >
-                  {item.name}
-                </a>
+                <div key={item.name} className="relative">
+                  {item.hasDropdown ? (
+                    <div
+                      className="relative"
+                      onMouseEnter={() => setIsProductsOpen(true)}
+                      onMouseLeave={() => setIsProductsOpen(false)}
+                    >
+                      <button className="text-white hover:text-white/70 px-3 py-2 text-sm font-medium transition-colors duration-200 flex items-center">
+                        {item.name}
+                        <ChevronDown className="ml-1 w-4 h-4" />
+                      </button>
+                      {isProductsOpen && (
+                        <div className="absolute top-full left-0 mt-2 w-56 bg-black/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl">
+                          {item.children?.map((child) => (
+                            <a
+                              key={child.name}
+                              href={child.href}
+                              className="block px-4 py-3 text-sm text-white hover:text-white/70 hover:bg-white/5 transition-all duration-200 first:rounded-t-xl last:rounded-b-xl"
+                            >
+                              {child.name}
+                            </a>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <a
+                      href={item.href}
+                      className="text-white hover:text-white/70 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                    >
+                      {item.name}
+                    </a>
+                  )}
+                </div>
               ))}
             </div>
           </div>
@@ -80,14 +111,41 @@ const Navigation = () => {
         <div className="md:hidden bg-black/95 backdrop-blur-md border-b border-white/10">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-white hover:text-white/70 block px-3 py-2 text-base font-medium transition-colors duration-200"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.name}
-              </a>
+              <div key={item.name}>
+                {item.hasDropdown ? (
+                  <div>
+                    <button
+                      onClick={() => setIsProductsOpen(!isProductsOpen)}
+                      className="text-white hover:text-white/70 block px-3 py-2 text-base font-medium transition-colors duration-200 w-full text-left flex items-center justify-between"
+                    >
+                      {item.name}
+                      <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isProductsOpen ? 'rotate-180' : ''}`} />
+                    </button>
+                    {isProductsOpen && (
+                      <div className="pl-4 space-y-1">
+                        {item.children?.map((child) => (
+                          <a
+                            key={child.name}
+                            href={child.href}
+                            className="text-white/70 hover:text-white block px-3 py-2 text-sm font-medium transition-colors duration-200"
+                            onClick={() => setIsOpen(false)}
+                          >
+                            {child.name}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <a
+                    href={item.href}
+                    className="text-white hover:text-white/70 block px-3 py-2 text-base font-medium transition-colors duration-200"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                )}
+              </div>
             ))}
             <button className="w-full text-left bg-white text-black hover:bg-white/90 px-3 py-2 rounded-lg font-semibold transition-all duration-200 mt-4">
               Product Inquiry
