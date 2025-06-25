@@ -6,37 +6,28 @@ const About = () => {
     {
       name: 'Jagan Teki',
       role: 'Founder',
-      image: 'https://media.licdn.com/dms/image/v2/D5603AQGrwmx9p4L1QQ/profile-displayphoto-shrink_200_200/B56ZPayTqDG8AY-/0/1734542442900?e=2147483647&v=beta&t=6n3dXGsscvgeZ6_icIcenL1UUzinwZOqLJZD7VaWtC0?auto=compress&cs=tinysrgb&w=400',
-      linkedin: 'https://in.linkedin.com/in/jaganteki',
-      twitter: '#'
+      image: 'https://www.edgeble.ai/a1.png?auto=compress&cs=tinysrgb&w=400',
+      linkedin: 'https://in.linkedin.com/in/jaganteki'
     },
     {
       name: 'Srinivas Patnaik',
       role: 'Strategy Analyst',
-      image: 'https://www.edgeble.ai/a5.png?auto=compress&cs=tinysrgb&w=400',
-      linkedin: '#',
-      twitter: '#'
+      image: 'https://www.edgeble.ai/a5.png?auto=compress&cs=tinysrgb&w=400'
     },
     {
       name: 'Alberto Bianchi',
       role: 'Hardware',
-      image: 'https://www.edgeble.ai/a4.png?auto=compress&cs=tinysrgb&w=400',
-      linkedin: '#',
-      twitter: '#'
+      image: 'https://www.edgeble.ai/a4.png?auto=compress&cs=tinysrgb&w=400'
     },
     {
       name: 'Tom Cubie',
       role: 'Supply Chain',
-      image: 'https://www.edgeble.ai/a2.png?auto=compress&cs=tinysrgb&w=400',
-      linkedin: '#',
-      twitter: '#'
+      image: 'https://www.edgeble.ai/a2.png?auto=compress&cs=tinysrgb&w=400'
     },
     {
       name: 'Chakrish Krishtam',
       role: 'AI/ML',
-      image: 'https://www.edgeble.ai/chakrish.png?auto=compress&cs=tinysrgb&w=400',
-      linkedin: '#',
-      twitter: '#'
+      image: 'https://www.edgeble.ai/chakrish.png?auto=compress&cs=tinysrgb&w=400'
     }
   ];
 
