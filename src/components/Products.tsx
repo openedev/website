@@ -5,30 +5,30 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: 'Edge AI NPU Modules',
+      name: 'EdgeGPT NPU Chips',
       tagline: 'Ultra-fast inference modules',
       image: 'https://www.edgeble.ai/Home-aia.png?auto=compress&cs=tinysrgb&w=600',
-      specs: ['NPU: 6/32TOPS', 'Precision: INT8/INT4', 'CPU: ARM Cortex-A76', 'LPDDR5: 32GB', 'Size: 87 × 55mm'],
+      specs: ['NPU: 6/32TOPS', 'Precision: INT8/INT4', 'CPU: ARM Cortex-A76', 'LPDDR5: 32GB', 'Size: 87 × 55mm', 'Form factor: SoM, PCIe', 'Future: Easy to Swap or Upgrade' ],
       badge: 'Chip',
       description: 'Model-first NPUs co-designed with EdgeGPT to guarantee predictable latency and power'
     },
     {
       id: 2,
       name: 'EdgeGPT Model',
-      tagline: 'Vision, Sound, Agentic & Multimodal',
-      image: 'https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=600',
-      specs: ['ARM Cortex-A78AE', '32GB LPDDR5X', 'NPU: 12.8 TOPS', 'Temp: -40°C to 85°C'],
+      tagline: 'Edge-Optimized Models for Real-World Tasks',
+      image: 'https://www.edgeble.ai/Home-eai-cm.png?auto=compress&cs=tinysrgb&w=600',
+      specs: ['NPU-aware Edge Models', 'Task-based architecture', 'Vision, Sound, Agentic','Multimodal, RAG-LLM', 'Real-word proven accuracy'],
       badge: 'Model',
-      description: 'Pre-trained, inference-optimized models built specifically for edge constraints'
+      description: 'Pre-trained, inference-optimized models purpose-built for instant deployment, low compute power, and high accuracy.'
     },
     {
       id: 3,
       name: 'Edge AI Agentic',
-      tagline: 'Edge AI Orchestration, Edge Agents',
-      image: 'https://images.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg?auto=compress&cs=tinysrgb&w=600',
-      specs: ['ARM Cortex-A55', '8GB LPDDR4X', 'NPU: 2.4 TOPS', 'Size: 40×30mm'],
+      tagline: 'Edge AI Orchestration Stack + Edge Agents',
+      image: 'https://www.edgeble.ai/Home-edgeaia.png?auto=compress&cs=tinysrgb&w=600',
+      specs: ['No Code', 'DevOpe lifecycle', 'Open Source', 'Edge AI Agents', 'Deploy in hours'],
       badge: 'Agentic',
-      description: 'Agentic lifecycle for Edge AI model deployment + updates'
+      description: 'Full-stack orchestration to manage training, deployment, and continuous updates with support for real-time edge agents'
     }
   ];
 
