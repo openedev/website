@@ -6,7 +6,7 @@ const About = () => {
     {
       name: 'Jagan Teki',
       role: 'Founder',
-      image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.linkedin.com%2Fin%2Fjaganteki&psig=AOvVaw0pVmyoqBFAHFGqAo3QzuBG&ust=1750924915756000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNi_ieeNjI4DFQAAAAAdAAAAABAE?auto=compress&cs=tinysrgb&w=400',
+      image: 'https://media.licdn.com/dms/image/v2/D5603AQGrwmx9p4L1QQ/profile-displayphoto-shrink_200_200/B56ZPayTqDG8AY-/0/1734542442900?e=2147483647&v=beta&t=6n3dXGsscvgeZ6_icIcenL1UUzinwZOqLJZD7VaWtC0?auto=compress&cs=tinysrgb&w=400',
       linkedin: 'https://in.linkedin.com/in/jaganteki',
       twitter: '#'
     },
