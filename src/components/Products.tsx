@@ -16,7 +16,7 @@ const Products = () => {
       id: 2,
       name: 'EdgeGPT Model',
       tagline: 'Edge-Optimized Models for Real-World Tasks',
-      image: 'images/edgegpt-1.png',
+      image: 'images/Pitch 118.png',
       specs: ['NPU-aware Edge Models', 'Task-based architecture', 'Vision, Sound, Agentic','Multimodal, RAG-LLM', 'Real-word proven accuracy'],
       badge: 'Model',
       description: 'Pre-trained, inference-optimized models purpose-built for instant deployment, low compute power, and high accuracy.'
@@ -25,7 +25,7 @@ const Products = () => {
       id: 3,
       name: 'Edge AI Agentic',
       tagline: 'Edge AI Orchestration Stack + Edge Agents',
-      image: 'https://www.edgeble.ai/Home-edgeaia.png?auto=compress&cs=tinysrgb&w=300',
+      image: 'images/Pitch 118(1).png',
       specs: ['No Code', 'DevOpe lifecycle', 'Open Source', 'Edge AI Agents', 'Deploy in hours'],
       badge: 'Agentic',
       description: 'Full-stack orchestration to manage training, deployment, and continuous updates with support for real-time edge agents'
