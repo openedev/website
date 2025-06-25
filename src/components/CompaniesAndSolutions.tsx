@@ -8,7 +8,7 @@ const CompaniesAndSolutions = () => {
   const companies = [
     { 
       name: 'Amara Raja', 
-      logo: 'https://www.amararaja.co.in/images/logo.png',
+      logo: 'images/amara-raja.png',
       link: '#amara-raja' 
     },
     { 
