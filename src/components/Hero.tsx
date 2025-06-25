@@ -29,14 +29,14 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 animate-fadeIn animation-delay-200">
             <span className="block">Model-First</span>
             <span className="block text-white">
-              Agentic Edge AI
+              Agentic
             </span>
-            <span className="block">NPU Modules</span>
+            <span className="block">Edge AI NPU</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-white max-w-4xl mx-auto mb-12 leading-relaxed animate-fadeIn animation-delay-400">
-            Powered by Edgeble EdgeGPT — Optimized models, Modules/Chips, and Orchestration for Edge-Native Agentic intelligence
+            Powered by Edgeble EdgeGPT — Optimized models, NPU Modules, and Orchestration for Edge-Native Agentic intelligence
           </p>
 
           {/* CTA Buttons */}

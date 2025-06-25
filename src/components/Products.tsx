@@ -16,7 +16,7 @@ const Products = () => {
       id: 2,
       name: 'EdgeGPT Model',
       tagline: 'Edge-Optimized Models for Real-World Tasks',
-      image: 'https://www.edgeble.ai/Home-eai-cm.png?auto=compress&cs=tinysrgb&w=300',
+      image: 'images/edgegpt-1.png',
       specs: ['NPU-aware Edge Models', 'Task-based architecture', 'Vision, Sound, Agentic','Multimodal, RAG-LLM', 'Real-word proven accuracy'],
       badge: 'Model',
       description: 'Pre-trained, inference-optimized models purpose-built for instant deployment, low compute power, and high accuracy.'
