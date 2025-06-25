@@ -17,7 +17,12 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
-    { name: 'Products', href: '#products' },
+    { name: 'Products', 
+    children: [
+      { name: 'EdgeGPT NPU Chips', href: '#edgegpt-chips' },
+      { name: 'EdgeGPT Model', href: '#edgegpt-model' },
+      { name: 'Edge AI Agentic', href: '#edgegpt-agentic' },
+    ] },
     { name: 'Solutions', href: '#solutions' },
     { name: "What's New", href: '#news' },
     { name: 'About', href: '#about' },
