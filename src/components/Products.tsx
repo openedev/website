@@ -16,7 +16,7 @@ const Products = () => {
       id: 2,
       name: 'EdgeGPT Model',
       tagline: 'Edge-Optimized Models for Real-World Tasks',
-      image: 'images/Pitch 118.png',
+      image: 'images/Pitch 118.png?auto=compress&cs=tinysrgb&w=300',
       specs: ['NPU-aware Edge Models', 'Task-based architecture', 'Vision, Sound, Agentic','Multimodal, RAG-LLM', 'Real-word proven accuracy'],
       badge: 'Model',
       description: 'Pre-trained, inference-optimized models purpose-built for instant deployment, low compute power, and high accuracy.'
@@ -25,7 +25,7 @@ const Products = () => {
       id: 3,
       name: 'Edge AI Agentic',
       tagline: 'Edge AI Orchestration Stack + Edge Agents',
-      image: 'images/Pitch 118(1).png',
+      image: 'images/Pitch 118(1).png?auto=compress&cs=tinysrgb&w=300',
       specs: ['No Code', 'DevOpe lifecycle', 'Open Source', 'Edge AI Agents', 'Deploy in hours'],
       badge: 'Agentic',
       description: 'Full-stack orchestration to manage training, deployment, and continuous updates with support for real-time edge agents'
@@ -50,11 +50,11 @@ const Products = () => {
           {products.map((product) => (
             <div key={product.id} className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20">
               {/* Product Image */}
-              <div className="relative h-96 overflow-hidden">
+              <div className="relative h-96 bg-black flex items-center justify-center overflow-hidden">
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                 />
                 {/* Badge */}
                 <div className="absolute top-4 left-4">
@@ -71,7 +71,7 @@ const Products = () => {
                 <p className="text-white mb-4 text-sm leading-relaxed">{product.description}</p>
 
                 {/* Specifications */}
-                <div className="mb-6">
+                <div className="mb-7">
                   <h4 className="text-sm font-semibold text-white mb-2">Spec:</h4>
                   <ul className="space-y-1">
                     {product.specs.map((spec, index) => (
