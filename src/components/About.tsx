@@ -20,11 +20,6 @@ const About = () => {
       image: 'https://www.edgeble.ai/a4.png?auto=compress&cs=tinysrgb&w=400'
     },
     {
-      name: 'Tom Cubie',
-      role: 'Supply Chain',
-      image: 'https://www.edgeble.ai/a2.png?auto=compress&cs=tinysrgb&w=400'
-    },
-    {
       name: 'Chakrish Krishtam',
       role: 'AI/ML',
       image: 'https://www.edgeble.ai/chakrish.png?auto=compress&cs=tinysrgb&w=400'
@@ -71,8 +66,7 @@ const About = () => {
                 Our Vision
               </h3>
               <p className="text-white leading-relaxed">
-                To democratize AI at the edge by making powerful, pre-trained AI accelerators accessible to every industry, 
-                enabling real-time intelligence without cloud dependencies and transforming how businesses operate in the digital age.
+	        To make edge AI as powerful, accessible, and scalable as cloud AI across every device, industry, and environment.  
               </p>
             </div>
             <div>
@@ -81,8 +75,7 @@ const About = () => {
                 Our Mission
               </h3>
               <p className="text-white leading-relaxed">
-                We develop cutting-edge AI accelerators that deliver ultra-fast inference at the edge, empowering organizations 
-                to harness the power of artificial intelligence while maintaining data privacy, reducing latency, and ensuring reliable operation.
+                To standardize edge intelligence through EdgeGPT: a model-first platform that unifies AI models, chips, and deployment workflows for the next generation of edge computing.
               </p>
             </div>
           </div>
