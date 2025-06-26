@@ -58,7 +58,7 @@ const About = () => {
             About <span className="text-white">Edgeble</span>
           </h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            Pioneering the future of edge AI with innovative hardware solutions that bring intelligence closer to where it's needed most.
+            Pioneering the future of Edge AI with innovative hardware solutions that bring intelligence closer to where it's needed most
           </p>
         </div>
 
@@ -158,8 +158,8 @@ const About = () => {
                 <MapPin className="w-5 h-5 mr-3 mt-1 flex-shrink-0" />
                 <div>
                   <div className="font-semibold mb-1">Headquarters:</div>
-                  <div>T-Hub, 1/C, 83/1, Panmaktha, Raidurgam</div>
-                  <div>Knowledge City Road, Hyderabad</div>
+		  <div>Flat 405, Block E, Sri Lakshmi Shubham Arcade Spoorthy</div>
+		  <div>Vidyanagar Colony, Chandanagar, Hyderabad</div>
                   <div>Telangana - 500081, India</div>
                 </div>
               </div>

@@ -8,7 +8,7 @@ const Products = () => {
       name: 'EdgeGPT NPU Chips',
       tagline: 'Ultra-fast inference modules',
       image: 'https://www.edgeble.ai/Home-aia.png?auto=compress&cs=tinysrgb&w=800',
-      specs: ['NPU: 6/32TOPS', 'Precision: INT8/INT4', 'CPU: ARM Cortex-A76', 'LPDDR5: 32GB', 'Size: 87 × 55mm', 'Form factor: SoM, PCIe', 'Future: Easy to Swap or Upgrade' ],
+      specs: ['NPU: 6/32TOPS', 'CPU: ARM Cortex-A76', 'LPDDR5: 32GB', 'Form factor: SoM, PCIe', 'Future: Easy to Swap/Upgrade' ],
       badge: 'Chip',
       description: 'Model-first NPUs co-designed with EdgeGPT to guarantee predictable latency and power',
       link: '/products/npu'
@@ -16,11 +16,11 @@ const Products = () => {
     {
       id: 2,
       name: 'EdgeGPT Model',
-      tagline: 'Edge-Optimized Models for Real-World Tasks',
+      tagline: 'Edge-Optimized Models for Real-World',
       image: 'images/Pitch 118.png?auto=compress&cs=tinysrgb&w=800',
       specs: ['NPU-aware Edge Models', 'Task-based architecture', 'Vision, Sound, Agentic','Multimodal, RAG-LLM', 'Real-word proven accuracy'],
       badge: 'Model',
-      description: 'Pre-trained, inference-optimized models purpose-built for instant deployment, low compute power, and high accuracy.',
+      description: 'Pre-trained, inference-optimized models for instant deployments, low power with accuracy',
       link: '/products/model'
     },
     {
@@ -30,7 +30,7 @@ const Products = () => {
       image: 'images/Pitch 118(1).png?auto=compress&cs=tinysrgb&w=800',
       specs: ['No Code', 'DevOpe lifecycle', 'Open Source', 'Edge AI Agents', 'Deploy in hours'],
       badge: 'Agentic',
-      description: 'Full-stack orchestration to manage training, deployment, and continuous updates with support for real-time edge agents',
+      description: 'Full-stack orchestration to train, develop, deploy, monitor and repeat',
       link: '/products/agentic'
     }
   ];
@@ -57,7 +57,7 @@ const Products = () => {
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+		  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
                 />
                 {/* Badge */}
                 <div className="absolute top-4 left-4">

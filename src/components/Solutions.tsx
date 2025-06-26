@@ -50,7 +50,7 @@ const Solutions = () => {
             Industry <span className="text-white">Solutions</span>
           </h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            Tailored AI solutions across diverse industries, enabling intelligent edge computing for every sector.
+            Tailored Edge AI solutions across diverse industries, enabling intelligent edge computing for every sector
           </p>
         </div>
 
