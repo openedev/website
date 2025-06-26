@@ -61,8 +61,8 @@ const Products = () => {
                    product.id === 1 ? 'object-contain' : 'object-cover'
                   }`}
                   style={{ 
-                    width: '100%', 
-                    height: '100%',
+                    width: '90%', 
+                    height: '80%',
                     // maxWidth: '100%',
                     // maxHeight: '100%',
                     objectFit: product.id === 1 ? 'contain' : 'cover'
