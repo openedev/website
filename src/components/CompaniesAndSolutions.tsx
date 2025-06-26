@@ -8,27 +8,27 @@ const CompaniesAndSolutions = () => {
   const companies = [
     { 
       name: 'Amara Raja', 
-      logo: 'images/amara-raja.png',
+      logo: 'https://cdn.brandfetch.io/id3CTtdAAH/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B',
       link: '#amara-raja' 
     },
     { 
       name: 'AirFi', 
-      logo: 'https://airfi.aero/wp-content/uploads/2021/03/AirFi-Logo-White-BG.png',
+      logo: 'images/airfi_logo_light_color.svg',
       link: '#airfi' 
     },
     { 
       name: 'Apollo', 
-      logo: 'https://www.apollohospitals.com/assets/images/apollo-logo.png',
+      logo: 'https://cdn.brandfetch.io/idgr_3pras/w/208/h/80/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B',
       link: '#apollo' 
     },
     { 
       name: 'Collins Aerospace', 
-      logo: 'https://www.collinsaerospace.com/-/media/project/collinsaerospace/collinsaerospace/images/logos/collins-aerospace-logo.png',
+      logo: 'https://cdn.brandfetch.io/idMr1kh5YW/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B',
       link: '#collins-aerospace' 
     },
     { 
       name: 'Patil Rail Infra', 
-      logo: 'https://www.patilrail.com/images/logo.png',
+      logo: 'images/patil.jpg',
       link: '#patil-rail-infra' 
     }
   ];
@@ -145,6 +145,23 @@ const CompaniesAndSolutions = () => {
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
               {duplicatedCompanies.map((company, index) => (
+              <div
+                key={`${company.name}-${index}`}
+                className="flex-shrink-0 flex items-center justify-center min-w-[150px] h-[80px] px-4"
+              >
+                <img
+                  src={company.logo}
+                  alt={`${company.name} logo`}
+                  className="h-[60px] w-auto object-contain grayscale invert"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                  }}
+                />
+            </div>
+         ))}
+
+{/*               {duplicatedCompanies.map((company, index) => (
                 <a
                   key={`${company.name}-${index}`}
                   href={company.link}
@@ -170,7 +187,7 @@ const CompaniesAndSolutions = () => {
                     <p className="text-white font-medium text-sm">{company.name}</p>
                   </div>
                 </a>
-              ))}
+              ))} */}
             </div>
           </div>
         </div>
