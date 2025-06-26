@@ -57,7 +57,9 @@ const Products = () => {
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className={'max-w-full max-h-full object-cover transition-transform duration-300 ${product.id === 1 ? 'object-contain' : 'object-cover'}'}
+                  className={`max-w-full max-h-full transition-transform duration-300 ${
+                   product.id === 1 ? 'object-contain' : 'object-cover'
+                  }`}
                   style={{ 
                     width: '100%', 
                     height: '100%',
