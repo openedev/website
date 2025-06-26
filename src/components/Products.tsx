@@ -58,14 +58,14 @@ const Products = () => {
                   src={product.image} 
                   alt={product.name}
                   className={`max-w-full max-h-full transition-transform duration-300 ${
-                   product.id === 1 ? 'object-contain' : 'object-cover'
+                   product.id === 1 ? 'object-contain' : 'object-contain'
                   }`}
                   style={{ 
                     width: '90%', 
                     height: '80%',
                     // maxWidth: '100%',
                     // maxHeight: '100%',
-                    objectFit: product.id === 1 ? 'contain' : 'cover'
+                    objectFit: product.id === 1 ? 'contain' : 'contain'
                   }}
                 />
                 {/* Badge */}
