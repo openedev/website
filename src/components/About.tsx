@@ -88,7 +88,7 @@ const About = () => {
           </div>
           <div className="relative">
             <img 
-              src="images/Pitch 118(1).png"
+              src="images/home.png"
               alt="Agentic Edge AI Chip"
               className="rounded-2xl shadow-2xl w-full h-full object-contain bg-white/5 p-8"
             />
@@ -183,8 +183,8 @@ const About = () => {
                   <div className="text-white">Patents</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-white mb-2">$50M</div>
-                  <div className="text-white">Series B Funding</div>
+                  <div className="text-3xl font-bold text-white mb-2">raising</div>
+                  <div className="text-white">Seed Funding</div>
                 </div>
               </div>
             </div>
