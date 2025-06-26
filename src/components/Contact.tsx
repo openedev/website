@@ -668,28 +668,18 @@ const Contact = () => {
             <div className="bg-white/5 rounded-2xl shadow-lg p-8 border border-white/10">
               <h3 className="text-2xl font-bold text-white mb-6">Our Location</h3>
               <div className="rounded-xl h-64 overflow-hidden relative">
-                {/* Fallback content if map doesn't load */}
-                <div className="absolute inset-0 bg-white/10 flex items-center justify-center">
-                  <MapPin className="w-12 h-12 text-white mx-auto mb-3" />
-                  <p className="text-white">Loading our location...</p>
-                </div>
-                
-                {/* Proper Google Maps Embed */}
-                <iframe
-                  src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyD3E1D9b-ZqkD1K02mWQx6LJN9Y6QaQK9Y&q=T-Hub,Hyderabad&zoom=16`}
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0, position: 'relative', zIndex: 10 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="rounded-xl"
-                  title="Edgeble AI Office Location"
-                ></iframe>
+		<iframe
+		   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5373101725936!2d78.3791418!3d17.433978600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb937f2ada4f9b%3A0x860789ba1f939b5!2sEdgeble%20AI!5e0!3m2!1sen!2sin!4v1750931755624!5m2!1sen!2sin"
+		   width="100%"
+		   height="100%"
+		   style={{ border: 0, position: 'relative', zIndex: 10 }}
+		   allowFullScreen
+		   loading="lazy"
+		   referrerPolicy="no-referrer-when-downgrade"
+		   className="rounded-xl"
+		   title="Edgeble AI Office Location"
+		/>
               </div>
-              <p className="text-white mt-4 text-center">
-                T-Hub, 1/C, 83/1, Panmaktha, Raidurgam, Knowledge City Rd, Hyderabad
-              </p>
             </div>
           </div>
         </div>
