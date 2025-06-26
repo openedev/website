@@ -83,7 +83,7 @@ const CompaniesAndSolutions = () => {
 
       let scrollPosition = 0;
       const maxScroll = itemWidth * totalItems;
-      const speed = 0.5; // Adjust speed as needed
+      const speed = 0.4; // Adjust speed as needed
 
       const scroll = () => {
         scrollPosition += speed;
@@ -118,14 +118,10 @@ const CompaniesAndSolutions = () => {
       };
     };
 
-    // Setup infinite scroll for companies (200px + 24px gap = 224px per item)
-    const companiesCleanup = setupInfiniteScroll(companiesScrollRef, 224, companies.length);
-    
     // Setup infinite scroll for solutions (280px + 24px gap = 304px per item)
     const solutionsCleanup = setupInfiniteScroll(solutionsScrollRef, 304, solutions.length);
 
     return () => {
-      companiesCleanup?.();
       solutionsCleanup?.();
     };
   }, [companies.length, solutions.length]);
@@ -141,7 +137,7 @@ const CompaniesAndSolutions = () => {
           <div className="relative overflow-hidden">
             <div
               ref={companiesScrollRef}
-              className="flex overflow-x-hidden scrollbar-hide space-x-6 pb-4"
+              className="flex overflow-x-hidden scrollbar-hide space-x-4 pb-4"
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
               {duplicatedCompanies.map((company, index) => (
