@@ -57,12 +57,13 @@ const Products = () => {
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                  className={'max-w-full max-h-full object-cover transition-transform duration-300 ${product.id === 1 ? 'object-contain' : 'object-cover'}'}
                   style={{ 
                     width: 'auto', 
                     height: 'auto',
                     maxWidth: '100%',
-                    maxHeight: '100%'
+                    maxHeight: '100%',
+                    objectFit: product.id === 1 ? 'contain' : 'cover'
                   }}
                 />
                 {/* Badge */}
