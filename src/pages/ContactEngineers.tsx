@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin, User, ArrowLeft } from 'lucide-react';
+import Footer from '../components/Footer';
 
 const ContactEngineers = () => {
   const engineers = [
@@ -153,6 +154,8 @@ const ContactEngineers = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Factory, Shield, Heart, Sprout, Car, Zap, ArrowLeft, ArrowRight } from 'lucide-react';
+import { Factory, Shield, Heart, Sprout, Car, Zap, ArrowLeft } from 'lucide-react';
+import Footer from '../components/Footer';
 
 const SolutionsPage = () => {
   const solutions = [
@@ -117,16 +118,10 @@ const SolutionsPage = () => {
                   </div>
 
                   {/* Case Study */}
-                  <div className="bg-white/10 rounded-xl p-4 mb-6">
+                  <div className="bg-white/10 rounded-xl p-4">
                     <h4 className="text-sm font-semibold text-white mb-2">Success Story:</h4>
                     <p className="text-white/90 text-sm">{solution.caseStudy}</p>
                   </div>
-
-                  {/* CTA */}
-                  <button className="w-full bg-white/10 hover:bg-white hover:text-black text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20">
-                    Learn More
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </button>
                 </div>
               </div>
             );
@@ -157,6 +152,8 @@ const SolutionsPage = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

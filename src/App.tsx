@@ -11,6 +11,8 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ContactEngineers from './pages/ContactEngineers';
 import SolutionsPage from './pages/SolutionsPage';
+import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
 
 function HomePage() {
   return (
@@ -37,6 +39,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/contact-engineers" element={<ContactEngineers />} />
         <Route path="/solutions" element={<SolutionsPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/products/npu" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">EdgeGPT NPU Chips - Coming Soon</h1></div>} />
         <Route path="/products/model" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">EdgeGPT Model - Coming Soon</h1></div>} />
         <Route path="/products/agentic" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">Edge AI Agentic - Coming Soon</h1></div>} />

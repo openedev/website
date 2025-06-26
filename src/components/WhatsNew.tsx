@@ -10,7 +10,8 @@ const WhatsNew = () => {
       description: 'Our flagship AI accelerator recognized at the International Edge Computing Summit 2024.',
       date: '2024-01-15',
       image: 'https://images.pexels.com/photos/3584994/pexels-photo-3584994.jpeg?auto=compress&cs=tinysrgb&w=600',
-      badge: 'Award'
+      badge: 'Award',
+      slug: 'edgecore-ai-x1-wins-innovation-award'
     },
     {
       type: 'event',
@@ -19,7 +20,8 @@ const WhatsNew = () => {
       description: 'Join us at booth #A12 to see live demonstrations of our latest AI accelerators.',
       date: '2024-02-22',
       image: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=600',
-      badge: 'Upcoming Event'
+      badge: 'Upcoming Event',
+      slug: 'ai-at-the-edge-conference-2024'
     },
     {
       type: 'news',
@@ -28,7 +30,8 @@ const WhatsNew = () => {
       description: 'Strategic collaboration to accelerate autonomous vehicle development with edge AI.',
       date: '2024-01-08',
       image: 'https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=600',
-      badge: 'Partnership'
+      badge: 'Partnership',
+      slug: 'partnership-with-global-automotive-leader'
     },
     {
       type: 'product',
@@ -37,7 +40,8 @@ const WhatsNew = () => {
       description: 'New ruggedized AI module designed for extreme industrial environments now available.',
       date: '2023-12-20',
       image: 'https://images.pexels.com/photos/159298/gear-machine-mechanical-mechanical-engineering-159298.jpeg?auto=compress&cs=tinysrgb&w=600',
-      badge: 'Product Launch'
+      badge: 'Product Launch',
+      slug: 'edgecore-pro-x2-industrial-launch'
     }
   ];
 
@@ -99,10 +103,13 @@ const WhatsNew = () => {
                     </h3>
                   </div>
                   <p className="text-white mb-4 leading-relaxed">{item.description}</p>
-                  <button className="flex items-center text-white hover:text-white/70 font-semibold transition-all duration-200 group">
+                  <a 
+                    href={`/blog/${item.slug}`}
+                    className="flex items-center text-white hover:text-white/70 font-semibold transition-all duration-200 group"
+                  >
                     Read More
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </button>
+                  </a>
                 </div>
               </div>
             );

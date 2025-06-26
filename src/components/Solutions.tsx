@@ -1,5 +1,5 @@
 import React from 'react';
-import { Factory, Shield, Heart, Sprout, Car, Zap, ArrowRight } from 'lucide-react';
+import { Factory, Shield, Heart, Sprout, Car, Zap } from 'lucide-react';
 
 const Solutions = () => {
   const solutions = [
@@ -82,15 +82,6 @@ const Solutions = () => {
                       ))}
                     </ul>
                   </div>
-
-                  {/* CTA */}
-                  <a 
-                    href="/solutions"
-                    className="w-full bg-white/10 hover:bg-white hover:text-black text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20"
-                  >
-                    Explore Solution
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </a>
                 </div>
               </div>
             );

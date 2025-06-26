@@ -7,7 +7,7 @@ const Products = () => {
       id: 1,
       name: 'EdgeGPT NPU Chips',
       tagline: 'Ultra-fast inference modules',
-      image: 'https://www.edgeble.ai/Home-aia.png?auto=compress&cs=tinysrgb&w=300',
+      image: 'https://www.edgeble.ai/Home-aia.png?auto=compress&cs=tinysrgb&w=800',
       specs: ['NPU: 6/32TOPS', 'Precision: INT8/INT4', 'CPU: ARM Cortex-A76', 'LPDDR5: 32GB', 'Size: 87 × 55mm', 'Form factor: SoM, PCIe', 'Future: Easy to Swap or Upgrade' ],
       badge: 'Chip',
       description: 'Model-first NPUs co-designed with EdgeGPT to guarantee predictable latency and power',
@@ -17,7 +17,7 @@ const Products = () => {
       id: 2,
       name: 'EdgeGPT Model',
       tagline: 'Edge-Optimized Models for Real-World Tasks',
-      image: 'images/Pitch 118.png?auto=compress&cs=tinysrgb&w=300',
+      image: 'images/Pitch 118.png?auto=compress&cs=tinysrgb&w=800',
       specs: ['NPU-aware Edge Models', 'Task-based architecture', 'Vision, Sound, Agentic','Multimodal, RAG-LLM', 'Real-word proven accuracy'],
       badge: 'Model',
       description: 'Pre-trained, inference-optimized models purpose-built for instant deployment, low compute power, and high accuracy.',
@@ -27,7 +27,7 @@ const Products = () => {
       id: 3,
       name: 'Edge AI Agentic',
       tagline: 'Edge AI Orchestration Stack + Edge Agents',
-      image: 'images/Pitch 118(1).png?auto=compress&cs=tinysrgb&w=300',
+      image: 'images/Pitch 118(1).png?auto=compress&cs=tinysrgb&w=800',
       specs: ['No Code', 'DevOpe lifecycle', 'Open Source', 'Edge AI Agents', 'Deploy in hours'],
       badge: 'Agentic',
       description: 'Full-stack orchestration to manage training, deployment, and continuous updates with support for real-time edge agents',
@@ -57,16 +57,7 @@ const Products = () => {
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className={`max-w-full max-h-full transition-transform duration-300 ${
-                   product.id === 1 ? 'object-contain' : 'object-contain'
-                  }`}
-                  style={{ 
-                    width: '90%', 
-                    height: '80%',
-                    // maxWidth: '100%',
-                    // maxHeight: '100%',
-                    objectFit: product.id === 1 ? 'contain' : 'contain'
-                  }}
+                  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
                 />
                 {/* Badge */}
                 <div className="absolute top-4 left-4">

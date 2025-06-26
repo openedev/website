@@ -88,9 +88,9 @@ const About = () => {
           </div>
           <div className="relative">
             <img 
-              src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="About Edgeble"
-              className="rounded-2xl shadow-2xl"
+              src="images/Pitch 118(1).png"
+              alt="Agentic Edge AI Chip"
+              className="rounded-2xl shadow-2xl w-full h-full object-contain bg-white/5 p-8"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
           </div>
