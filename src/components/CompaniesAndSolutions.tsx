@@ -38,7 +38,9 @@ const CompaniesAndSolutions = () => {
       icon: Eye,
       title: 'Vision AI',
       description: 'Real-time defect detection',
-      link: '/solutions/vision-ai'
+      link: '/solutions/vision-ai',
+      isCustomImage: true,
+      customImage: 'images/inspect.png'
     },
     {
       icon: Brain,
@@ -118,8 +120,8 @@ const CompaniesAndSolutions = () => {
       };
     };
 
-    // Setup infinite scroll for solutions (280px + 24px gap = 304px per item)
-    const solutionsCleanup = setupInfiniteScroll(solutionsScrollRef, 304, solutions.length);
+    // Setup infinite scroll for solutions (320px + 24px gap = 344px per item for rectangular boxes)
+    const solutionsCleanup = setupInfiniteScroll(solutionsScrollRef, 344, solutions.length);
 
     return () => {
       solutionsCleanup?.();
@@ -156,34 +158,6 @@ const CompaniesAndSolutions = () => {
                 />
             </div>
          ))}
-
-{/*               {duplicatedCompanies.map((company, index) => (
-                <a
-                  key={`${company.name}-${index}`}
-                  href={company.link}
-                  className="flex-shrink-0 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl p-6 transition-all duration-300 transform hover:-translate-y-1 min-w-[200px] h-32 flex items-center justify-center group"
-                >
-                  <div className="text-center w-full">
-                    <div className="w-full h-16 flex items-center justify-center mb-2 group-hover:scale-110 transition-transform duration-200">
-                      <img
-                        src={company.logo}
-                        alt={`${company.name} logo`}
-                        className="max-w-full max-h-full object-contain filter brightness-0 invert group-hover:brightness-100 group-hover:invert-0 transition-all duration-300"
-                        onError={(e) => {
-                          // Fallback to text if logo fails to load
-                          const target = e.target as HTMLImageElement;
-                          target.style.display = 'none';
-                          const parent = target.parentElement;
-                          if (parent) {
-                            parent.innerHTML = `<div class="text-white font-bold text-sm">${company.name}</div>`;
-                          }
-                        }}
-                      />
-                    </div>
-                    <p className="text-white font-medium text-sm">{company.name}</p>
-                  </div>
-                </a>
-              ))} */}
             </div>
           </div>
         </div>
@@ -205,12 +179,33 @@ const CompaniesAndSolutions = () => {
                   <a
                     key={`${solution.title}-${index}`}
                     href={solution.link}
-                    className="flex-shrink-0 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl p-6 transition-all duration-300 transform hover:-translate-y-1 min-w-[280px] group"
+                    className={`flex-shrink-0 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl p-6 transition-all duration-300 transform hover:-translate-y-1 group ${
+                      solution.isCustomImage ? 'min-w-[320px] h-[200px]' : 'min-w-[280px]'
+                    }`}
                   >
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-200">
-                        <IconComponent className="w-8 h-8 text-black" />
-                      </div>
+                    <div className="text-center h-full flex flex-col justify-center">
+                      {solution.isCustomImage ? (
+                        <div className="w-full h-24 flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-200">
+                          <img
+                            src={solution.customImage}
+                            alt={solution.title}
+                            className="max-w-full max-h-full object-contain"
+                            onError={(e) => {
+                              // Fallback to icon if image fails to load
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = 'none';
+                              const parent = target.parentElement;
+                              if (parent) {
+                                parent.innerHTML = `<div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center"><svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg></div>`;
+                              }
+                            }}
+                          />
+                        </div>
+                      ) : (
+                        <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-200">
+                          <IconComponent className="w-8 h-8 text-black" />
+                        </div>
+                      )}
                       <h3 className="text-lg font-bold text-white mb-2">{solution.title}</h3>
                       <p className="text-white text-sm">{solution.description}</p>
                     </div>
