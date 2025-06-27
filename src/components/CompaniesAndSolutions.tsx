@@ -36,41 +36,39 @@ const CompaniesAndSolutions = () => {
   const solutions = [
     {
       icon: Eye,
-      title: 'Vision AI',
-      description: 'Real-time defect detection',
-      link: '/solutions/vision-ai',
+      description: 'Label Inspect, Verify',
       isCustomImage: true,
       customImage: 'images/inspect.png'
     },
     {
       icon: Brain,
-      title: 'Smart Analytics',
-      description: 'Predictive maintenance systems',
-      link: '/solutions/smart-analytics'
+      description: 'Tracking, ReIdentification',
+      isCustomImage: true,
+      customImage: 'images/inspect.png'
     },
     {
       icon: Shield,
-      title: 'Security AI',
       description: 'Advanced threat detection',
-      link: '/solutions/security-ai'
+      isCustomImage: true,
+      customImage: 'images/inspect.png'
     },
     {
       icon: Zap,
-      title: 'Edge Processing',
       description: 'Ultra-low latency inference',
-      link: '/solutions/edge-processing'
+      isCustomImage: true,
+      customImage: 'images/inspect.png'
     },
     {
       icon: Factory,
-      title: 'Industrial IoT',
       description: 'Smart manufacturing solutions',
-      link: '/solutions/industrial-iot'
+      isCustomImage: true,
+      customImage: 'images/inspect.png'
     },
     {
       icon: Car,
-      title: 'Automotive AI',
       description: 'Autonomous driving systems',
-      link: '/solutions/automotive-ai'
+      isCustomImage: true,
+      customImage: 'images/inspect.png'
     }
   ];
 
@@ -179,36 +177,33 @@ const CompaniesAndSolutions = () => {
                   <a
                     key={`${solution.title}-${index}`}
                     href={solution.link}
-                    className={`flex-shrink-0 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl transition-all duration-300 transform hover:-translate-y-1 group ${
-                      solution.isCustomImage 
-                        ? 'min-w-[400px] h-[160px] p-4' 
-                        : 'min-w-[280px] p-6'
-                    }`}
+                    className={`flex-shrink-0 flex flex-col justify-between bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl transition-all duration-300 transform hover:-translate-y-1 group ${
+		      solution.isCustomImage
+		        ? 'w-[320px] h-[420px] p-2 flex flex-col justify-between'
+		        : 'min-w-[280px] p-6'
+		    }`}
                   >
                     {solution.isCustomImage ? (
-                      // Rectangular layout for Vision AI with custom image
-                      <div className="flex items-center h-full space-x-6">
-                        <div className="flex-shrink-0 w-32 h-24 flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
-                          <img
-                            src={solution.customImage}
-                            alt={solution.title}
-                            className="w-full h-full object-contain"
-                            onError={(e) => {
-                              // Fallback to icon if image fails to load
-                              const target = e.target as HTMLImageElement;
-                              target.style.display = 'none';
-                              const parent = target.parentElement;
-                              if (parent) {
-                                parent.innerHTML = `<div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center"><svg class="w-8 h-8 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg></div>`;
-                              }
-                            }}
-                          />
-                        </div>
-                        <div className="flex-1 text-left">
-                          <h3 className="text-lg font-bold text-white mb-2">{solution.title}</h3>
-                          <p className="text-white text-sm">{solution.description}</p>
-                        </div>
-                      </div>
+		    <div className="flex flex-col items-center justify-start w-[320px] h-[420px] p-2">
+		      {/* Image container */}
+		      <div className="w-full h-[320px] flex items-center justify-center overflow-hidden">
+		        <img
+			  src={solution.customImage}
+			  alt={solution.title}
+			  className="max-w-full max-h-full object-contain object-center mx-auto"
+			  onError={(e) => {
+                            const target = e.target as HTMLImageElement;
+			    target.style.display = 'none';
+			  }}
+			/>
+		      </div>
+
+                      {/* Text container */}
+		      <div className="text-center px-4 py-2">
+		        <h3 className="text-base font-bold text-white">{solution.title}</h3>
+		        <p className="text-xl text-white">{solution.description}</p>
+		      </div>
+		    </div>
                     ) : (
                       // Standard vertical layout for other solutions
                       <div className="text-center h-full flex flex-col justify-center">
