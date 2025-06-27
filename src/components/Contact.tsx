@@ -512,12 +512,6 @@ const Contact = () => {
       details: 'T-Hub, 1/C, 83/1, Panmaktha, Raidurgam, Knowledge City Rd, Hyderabad',
       subtitle: 'Telangana - 500081'
     },
-    {
-      icon: Clock,
-      title: 'Business Hours',
-      details: 'Mon - Fri: 9:00 AM - 6:00 PM IST',
-      subtitle: 'Weekend: Emergency Support'
-    }
   ];
 
   return (
@@ -529,7 +523,7 @@ const Contact = () => {
             Get in <span className="text-white">Touch</span>
           </h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
-            Ready to accelerate your AI journey? Our experts are here to help you find the perfect edge AI solution.
+            Ready to accelerate your Edge AI journey? Our experts are here to help you find the perfect edge AI solution.
           </p>
         </div>
 
