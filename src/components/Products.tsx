@@ -53,15 +53,22 @@ const Products = () => {
           {products.map((product) => (
             <div key={product.id} className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20">
               {/* Product Image */}
-              <div className="relative h-96 overflow-hidden bg-white/5 flex items-center justify-center p-4">
+              <div className="relative h-80 overflow-hidden bg-gradient-to-br from-white/10 to-white/5">
                 <img 
                   src={product.image} 
                   alt={product.name}
-		  className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                  style={{
+                    objectFit: 'cover',
+                    objectPosition: 'center'
+                  }}
                 />
+                {/* Gradient Overlay for better text readability */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                
                 {/* Badge */}
-                <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white text-black">
+                <div className="absolute top-4 left-4 z-10">
+                  <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white text-black shadow-lg">
                     {product.badge}
                   </span>
                 </div>
@@ -79,7 +86,7 @@ const Products = () => {
                   <ul className="space-y-1">
                     {product.specs.map((spec, index) => (
                       <li key={index} className="text-sm text-white flex items-center">
-                        <div className="w-1.5 h-1.5 bg-white rounded-full mr-2"></div>
+                        <div className="w-1.5 h-1.5 bg-white rounded-full mr-2 flex-shrink-0"></div>
                         {spec}
                       </li>
                     ))}
