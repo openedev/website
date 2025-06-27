@@ -75,7 +75,7 @@ const Products = () => {
 
                 {/* Specifications */}
                 <div className="mb-7">
-                  <h4 className="text-sm font-semibold text-white mb-2">Spec:</h4>
+                  <h4 className="text-sm font-semibold text-white mb-2">Highlights:</h4>
                   <ul className="space-y-1">
                     {product.specs.map((spec, index) => (
                       <li key={index} className="text-sm text-white flex items-center">
