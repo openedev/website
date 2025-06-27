@@ -120,8 +120,8 @@ const CompaniesAndSolutions = () => {
       };
     };
 
-    // Setup infinite scroll for solutions (320px + 24px gap = 344px per item for rectangular boxes)
-    const solutionsCleanup = setupInfiniteScroll(solutionsScrollRef, 344, solutions.length);
+    // Setup infinite scroll for solutions (400px + 24px gap = 424px per item for rectangular Vision AI box)
+    const solutionsCleanup = setupInfiniteScroll(solutionsScrollRef, 424, solutions.length);
 
     return () => {
       solutionsCleanup?.();
@@ -179,17 +179,20 @@ const CompaniesAndSolutions = () => {
                   <a
                     key={`${solution.title}-${index}`}
                     href={solution.link}
-                    className={`flex-shrink-0 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl p-6 transition-all duration-300 transform hover:-translate-y-1 group ${
-                      solution.isCustomImage ? 'min-w-[320px] h-[200px]' : 'min-w-[280px]'
+                    className={`flex-shrink-0 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl transition-all duration-300 transform hover:-translate-y-1 group ${
+                      solution.isCustomImage 
+                        ? 'min-w-[400px] h-[160px] p-4' 
+                        : 'min-w-[280px] p-6'
                     }`}
                   >
-                    <div className="text-center h-full flex flex-col justify-center">
-                      {solution.isCustomImage ? (
-                        <div className="w-full h-24 flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-200">
+                    {solution.isCustomImage ? (
+                      // Rectangular layout for Vision AI with custom image
+                      <div className="flex items-center h-full space-x-6">
+                        <div className="flex-shrink-0 w-32 h-24 flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
                           <img
                             src={solution.customImage}
                             alt={solution.title}
-                            className="max-w-full max-h-full object-contain"
+                            className="w-full h-full object-contain"
                             onError={(e) => {
                               // Fallback to icon if image fails to load
                               const target = e.target as HTMLImageElement;
@@ -201,14 +204,21 @@ const CompaniesAndSolutions = () => {
                             }}
                           />
                         </div>
-                      ) : (
+                        <div className="flex-1 text-left">
+                          <h3 className="text-lg font-bold text-white mb-2">{solution.title}</h3>
+                          <p className="text-white text-sm">{solution.description}</p>
+                        </div>
+                      </div>
+                    ) : (
+                      // Standard vertical layout for other solutions
+                      <div className="text-center h-full flex flex-col justify-center">
                         <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-200">
                           <IconComponent className="w-8 h-8 text-black" />
                         </div>
-                      )}
-                      <h3 className="text-lg font-bold text-white mb-2">{solution.title}</h3>
-                      <p className="text-white text-sm">{solution.description}</p>
-                    </div>
+                        <h3 className="text-lg font-bold text-white mb-2">{solution.title}</h3>
+                        <p className="text-white text-sm">{solution.description}</p>
+                      </div>
+                    )}
                   </a>
                 );
               })}
