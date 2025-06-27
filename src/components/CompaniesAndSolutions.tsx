@@ -36,39 +36,39 @@ const CompaniesAndSolutions = () => {
   const solutions = [
     {
       icon: Eye,
-      description: 'Label Inspect, Verify',
+      description: 'Inspect Label, QR, TyreTread',
       isCustomImage: true,
       customImage: 'images/inspect.png'
     },
     {
       icon: Brain,
-      description: 'Tracking, ReIdentification',
+      description: 'Track, Count, Re-Identify',
       isCustomImage: true,
-      customImage: 'images/inspect.png'
+      customImage: 'images/track.png'
     },
     {
       icon: Shield,
-      description: 'Advanced threat detection',
+      description: 'Welding Monitor Inspection',
       isCustomImage: true,
-      customImage: 'images/inspect.png'
+      customImage: 'images/weld.png'
     },
     {
       icon: Zap,
-      description: 'Ultra-low latency inference',
+      description: 'Volume, Depth Inspection',
       isCustomImage: true,
-      customImage: 'images/inspect.png'
+      customImage: 'images/volume.png'
     },
     {
       icon: Factory,
-      description: 'Smart manufacturing solutions',
+      description: 'Predictive Maintaince',
       isCustomImage: true,
-      customImage: 'images/inspect.png'
+      customImage: 'images/llm.png'
     },
     {
       icon: Car,
-      description: 'Autonomous driving systems',
+      description: 'Autonomous Driving System',
       isCustomImage: true,
-      customImage: 'images/inspect.png'
+      customImage: 'images/adas.png'
     }
   ];
 
@@ -163,12 +163,12 @@ const CompaniesAndSolutions = () => {
         {/* Solutions We Delivered */}
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            NPU Modules, Models We Deployed
+            NPU Modules, EdgeGPT-0 Models We Deployed
           </h2>
           <div className="relative overflow-hidden">
             <div
               ref={solutionsScrollRef}
-              className="flex overflow-x-hidden scrollbar-hide space-x-6 pb-4"
+              className="flex overflow-x-hidden scrollbar-hide space-x-12 pb-4"
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
               {duplicatedSolutions.map((solution, index) => {
@@ -179,7 +179,7 @@ const CompaniesAndSolutions = () => {
                     href={solution.link}
                     className={`flex-shrink-0 flex flex-col justify-between bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl transition-all duration-300 transform hover:-translate-y-1 group ${
 		      solution.isCustomImage
-		        ? 'w-[320px] h-[420px] p-2 flex flex-col justify-between'
+		        ? 'w-[340px] h-[420px] p-2 flex flex-col justify-between'
 		        : 'min-w-[280px] p-6'
 		    }`}
                   >
