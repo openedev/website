@@ -118,8 +118,8 @@ const CompaniesAndSolutions = () => {
       };
     };
 
-    // Setup infinite scroll for solutions (400px + 32px gap = 432px per item for rectangular Vision AI box)
-    const solutionsCleanup = setupInfiniteScroll(solutionsScrollRef, 432, solutions.length);
+    // Setup infinite scroll for solutions (340px + 56px gap = 396px per item for rectangular Vision AI box)
+    const solutionsCleanup = setupInfiniteScroll(solutionsScrollRef, 396, solutions.length);
 
     return () => {
       solutionsCleanup?.();
@@ -168,7 +168,7 @@ const CompaniesAndSolutions = () => {
           <div className="relative overflow-hidden">
             <div
               ref={solutionsScrollRef}
-              className="flex overflow-x-hidden scrollbar-hide space-x-8 pb-4"
+              className="flex overflow-x-hidden scrollbar-hide space-x-14 pb-4"
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
               {duplicatedSolutions.map((solution, index) => {
