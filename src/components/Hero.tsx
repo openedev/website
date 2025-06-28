@@ -17,7 +17,7 @@ const Hero = () => {
         </svg>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 pb-20">
         <div className="text-center">
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-8 animate-fadeIn">
@@ -25,7 +25,7 @@ const Hero = () => {
             The New Edge AI Standard
           </div>
 
-          {/* Main Headline */}
+          {/* Main Headline - Positioned slightly lower */}
           <h1 className="text-2xl md:text-7xl lg:text-7xl font-bold text-white mb-6 animate-fadeIn animation-delay-200">
             <span className="block">The Agentic Edge AI NPU</span>
           </h1>
