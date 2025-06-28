@@ -310,24 +310,24 @@ const BlogPage = () => {
           {blogPosts.map((post) => (
             <div key={post.id} className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20">
               {/* Image */}
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-80 overflow-hidden">
                 <img 
                   src={post.image} 
                   alt={post.title}
-                  className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-300 bg-white/5 p-4"
                   style={{
-                    objectFit: 'cover',
+                    objectFit: 'contain',
                     objectPosition: 'center'
                   }}
                 />
                 {/* Badge */}
-                <div className="absolute top-4 left-4">
+                <div className="absolute top-6 left-6">
                   <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white text-black">
                     {post.category}
                   </span>
                 </div>
                 {/* Date */}
-                <div className="absolute bottom-4 right-4 bg-black/70 backdrop-blur-sm rounded-lg px-3 py-1">
+                <div className="absolute bottom-6 right-6 bg-black/80 backdrop-blur-sm rounded-lg px-3 py-1">
                   <div className="flex items-center text-white text-sm">
                     <Calendar className="w-4 h-4 mr-2" />
                     {formatDate(post.date)}

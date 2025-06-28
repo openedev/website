@@ -366,17 +366,17 @@ const BlogPostPage = () => {
       </div>
 
       {/* Featured Image */}
-      <div className="relative h-[500px] overflow-hidden">
+      <div className="relative h-[600px] overflow-hidden bg-white/5">
         <img
           src={post.image}
           alt={post.title}
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-contain object-center p-8"
           style={{
-            objectFit: 'cover',
+            objectFit: 'contain',
             objectPosition: 'center'
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
       </div>
 
       {/* Article Content */}
