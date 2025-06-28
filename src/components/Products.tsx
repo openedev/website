@@ -55,13 +55,13 @@ const Products = () => {
           {products.map((product) => (
             <div key={product.id} className="group relative bg-white/5 rounded-3xl border border-white/10 hover:border-white/20 transition-all duration-500 transform hover:-translate-y-2 overflow-hidden backdrop-blur-sm">
               {/* Product Image */}
-              <div className="relative h-80 overflow-hidden rounded-t-3xl bg-white/10 flex items-center justify-center">
+              <div className="relative h-80 overflow-hidden rounded-t-3xl">
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   style={{
-                    objectFit: 'contain',
+                    objectFit: 'cover',
                     objectPosition: 'center'
                   }}
                   onError={(e) => {
@@ -71,7 +71,7 @@ const Products = () => {
                   }}
                 />
                 {/* Subtle gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none"></div>
               </div>
 
               {/* Product Content */}
