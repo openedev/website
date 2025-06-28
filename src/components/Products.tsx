@@ -8,24 +8,21 @@ const Products = () => {
       name: 'EdgeGPT NPU Chips',
       description: 'Model-first NPUs co-designed with EdgeGPT to guarantee predictable latency and power for ultra-fast inference.',
       image: 'https://www.edgeble.ai/Home-aia.png?auto=compress&cs=tinysrgb&w=800',
-      link: '/products/npu',
-      gradient: 'from-purple-500 via-pink-500 to-orange-500'
+      link: '/products/npu'
     },
     {
       id: 2,
       name: 'EdgeGPT Model',
       description: 'Pre-trained, inference-optimized models for instant deployments with low power consumption and high accuracy.',
       image: 'images/Pitch 118.png?auto=compress&cs=tinysrgb&w=800',
-      link: '/products/model',
-      gradient: 'from-blue-500 via-cyan-500 to-green-500'
+      link: '/products/model'
     },
     {
       id: 3,
       name: 'Edge AI Agentic',
       description: 'Full-stack orchestration platform to train, develop, deploy, monitor and manage edge AI solutions seamlessly.',
       image: 'images/Pitch 118(1).png?auto=compress&cs=tinysrgb&w=800',
-      link: '/products/agentic',
-      gradient: 'from-green-400 via-blue-500 to-purple-600'
+      link: '/products/agentic'
     }
   ];
 
@@ -57,9 +54,8 @@ const Products = () => {
         <div id="products-grid" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
             <div key={product.id} className="group relative bg-white/5 rounded-3xl border border-white/10 hover:border-white/20 transition-all duration-500 transform hover:-translate-y-2 overflow-hidden backdrop-blur-sm">
-              {/* Product Image with Gradient Overlay */}
-              <div className="relative h-80 overflow-hidden rounded-t-3xl">
-                <div className={`absolute inset-0 bg-gradient-to-br ${product.gradient} opacity-20`}></div>
+              {/* Product Image */}
+              <div className="relative h-80 overflow-hidden rounded-t-3xl bg-white/5">
                 <img 
                   src={product.image} 
                   alt={product.name}
@@ -69,14 +65,14 @@ const Products = () => {
                     objectPosition: 'center'
                   }}
                 />
-                {/* Floating geometric shapes */}
+                {/* Floating geometric shapes in monochrome */}
                 <div className="absolute inset-0 overflow-hidden">
-                  <div className={`absolute top-8 right-8 w-16 h-16 bg-gradient-to-br ${product.gradient} rounded-2xl opacity-60 transform rotate-12 group-hover:rotate-45 transition-transform duration-500`}></div>
-                  <div className={`absolute bottom-8 left-8 w-12 h-12 bg-gradient-to-br ${product.gradient} rounded-xl opacity-40 transform -rotate-12 group-hover:-rotate-45 transition-transform duration-500`}></div>
-                  <div className={`absolute top-1/2 left-1/2 w-8 h-8 bg-gradient-to-br ${product.gradient} rounded-lg opacity-30 transform -translate-x-1/2 -translate-y-1/2 rotate-45 group-hover:rotate-90 transition-transform duration-500`}></div>
+                  <div className="absolute top-8 right-8 w-16 h-16 bg-white/10 rounded-2xl backdrop-blur-sm transform rotate-12 group-hover:rotate-45 transition-transform duration-500"></div>
+                  <div className="absolute bottom-8 left-8 w-12 h-12 bg-white/5 rounded-xl backdrop-blur-sm transform -rotate-12 group-hover:-rotate-45 transition-transform duration-500"></div>
+                  <div className="absolute top-1/2 left-1/2 w-8 h-8 bg-white/15 rounded-lg backdrop-blur-sm transform -translate-x-1/2 -translate-y-1/2 rotate-45 group-hover:rotate-90 transition-transform duration-500"></div>
                 </div>
-                {/* Gradient overlay for better text readability */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                {/* Subtle gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
               </div>
 
               {/* Product Content */}
