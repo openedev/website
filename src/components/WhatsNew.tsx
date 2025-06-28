@@ -11,7 +11,7 @@ const WhatsNew = () => {
       date: '2025-03-30',
       image: 'https://www.edgeble.ai/blog14.png?auto=compress&cs=tinysrgb&w=600',
       badge: 'Roundtable',
-      slug: 'Speaking at IDA Ireland Startup Roundtable'
+      slug: 'speaking-at-ida-ireland-startup-roundtable'
     },
     {
       type: 'event',
@@ -21,7 +21,7 @@ const WhatsNew = () => {
       date: '2025-03-25',
       image: 'https://www.edgeble.ai/blog13.png?auto=compress&cs=tinysrgb&w=600',
       badge: 'Upcoming Event',
-      slug: 'Speaking at Nasscom AI Days, Mumbai'
+      slug: 'speaking-at-nasscom-ai-days-mumbai'
     },
     {
       type: 'news',
@@ -31,7 +31,7 @@ const WhatsNew = () => {
       date: '2025-12-03',
       image: 'https://www.edgeble.ai/blog12.png?auto=compress&cs=tinysrgb&w=600',
       badge: 'Partnership',
-      slug: 'Edgeble at T-Hub Innovative Enclave 2025'
+      slug: 'edgeble-at-thub-innovative-enclave-2025'
     },
     {
       type: 'product',
@@ -41,7 +41,7 @@ const WhatsNew = () => {
       date: '2025-02-24',
       image: 'https://www.edgeble.ai/blog11.png?auto=compress&cs=tinysrgb&w=600',
       badge: 'Product Launch',
-      slug: 'Speaking at CIE-IIIT Avishkar 2024'
+      slug: 'speaking-at-cie-iiit-avishkar-2024'
     }
   ];
 
@@ -73,20 +73,27 @@ const WhatsNew = () => {
             return (
               <div key={index} className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20">
                 {/* Image */}
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-900 to-black">
                   <img 
                     src={item.image} 
                     alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
+                    style={{
+                      objectFit: 'cover',
+                      objectPosition: 'center'
+                    }}
                   />
+                  {/* Overlay for better text readability */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                  
                   {/* Badge */}
-                  <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white text-black">
+                  <div className="absolute top-4 left-4 z-10">
+                    <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white text-black shadow-lg">
                       {item.badge}
                     </span>
                   </div>
                   {/* Date */}
-                  <div className="absolute bottom-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1">
+                  <div className="absolute bottom-4 right-4 bg-black/80 backdrop-blur-sm rounded-lg px-3 py-1 z-10">
                     <div className="flex items-center text-white text-sm">
                       <Calendar className="w-4 h-4 mr-2" />
                       {formatDate(item.date)}
@@ -114,6 +121,17 @@ const WhatsNew = () => {
               </div>
             );
           })}
+        </div>
+
+        {/* View All Blog Posts Button */}
+        <div className="text-center mb-12">
+          <a 
+            href="/blog"
+            className="inline-flex items-center bg-white text-black hover:bg-white/90 px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105"
+          >
+            View All Blog Posts
+            <ArrowRight className="ml-2 w-5 h-5" />
+          </a>
         </div>
 
         {/* Newsletter Signup */}
