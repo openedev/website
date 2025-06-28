@@ -141,19 +141,25 @@ const Footer = () => {
             </div>
             <div className="flex space-x-6">
               <a 
-                href="#" 
+                href="https://www.linkedin.com/company/edgeble/" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors duration-200"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
+                href="https://x.com/edgeble" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors duration-200"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
+                href="https://github.com/edgeble" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors duration-200"
               >
                 <Github className="w-5 h-5" />
