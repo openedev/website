@@ -6,6 +6,29 @@ const BlogPage = () => {
   const blogPosts = [
     {
       id: 1,
+      title: 'Showcase at Bosch Global FIT.Fest\'25',
+      slug: 'showcase-at-bosch-global-fit-fest-25',
+      excerpt: 'On behalf of the entire team at BGSW, I would like to extend our heartfelt thanks for your organization\'s participation in Marketplace Stalls at our flagship Technical Event, FIT.Fest\'25, last week.',
+      content: `
+        <p class="text-lg mb-6">On behalf of the entire team at BGSW, I would like to extend our heartfelt thanks for your organization's participation in Marketplace Stalls at our flagship Technical Event, FIT.Fest'25, last week.</p>
+        
+        <p class="mb-6">Your insights and expertise greatly enriched the event, and the feedback we received from attendees has been overwhelmingly positive. We truly appreciate the time and effort You and Your team dedicated to preparing and presenting in the Stall. Your contribution played a significant role in making FIT.Fest'25 a success, and we are grateful for your support.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Event Highlights</h3>
+        <p class="mb-6">FIT.Fest'25 brought together industry leaders, innovators, and technology enthusiasts to showcase cutting-edge solutions and foster collaboration in the automotive and technology sectors.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Edgeble's Contribution</h3>
+        <p class="mb-6">Our participation in the Marketplace Stalls provided an excellent opportunity to demonstrate our Edge AI accelerator modules and engage with Bosch's engineering teams and partners.</p>
+      `,
+      author: 'Jagan Teki',
+      date: '2025-06-19',
+      readTime: '3 min read',
+      image: 'images/image003.png?auto=compress&cs=tinysrgb&w=800',
+      tags: ['Bosch', 'FIT.Fest', 'Marketplace'],
+      category: 'Events'
+    },
+    {
+      id: 2,
       title: 'Pitching at Beyond Borders: The Era of Agentic AI',
       slug: 'pitching-at-beyond-borders-the-era-of-agentic-ai',
       excerpt: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.',
@@ -25,12 +48,12 @@ const BlogPage = () => {
       author: 'Jagan Teki',
       date: '2025-06-02',
       readTime: '5 min read',
-      image: 'images/Screenshot from 2025-06-29 02-42-29.png',
+      image: 'images/Screenshot from 2025-06-29 02-42-29.png?auto=compress&cs=tinysrgb&w=800',
       tags: ['Agentic AI', 'EY Partnership', 'T-Hub'],
       category: 'Events'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Pitching at Peak XV, Rajan Anandan',
       slug: 'pitching-at-peak-xv-rajan-anandan',
       excerpt: 'With T-Hub, Edgeble is honored to pitch with Rajan Anandan, Managing Director at Peak XV Partners (formerly Sequoia Capital India & SEA). From AI trends to the future of startups in India, the insights shared were as sharp as they were inspiring.',
@@ -48,12 +71,12 @@ const BlogPage = () => {
       author: 'Jagan Teki',
       date: '2025-03-25',
       readTime: '4 min read',
-      image: 'images/peak-xv-rajan-anandan.png',
+      image: 'images/peak-xv-rajan-anandan.png?auto=compress&cs=tinysrgb&w=800',
       tags: ['Peak XV', 'Rajan Anandan', 'T-Hub'],
       category: 'Events'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Speaking at IDA Ireland Startup Roundtable',
       slug: 'speaking-at-ida-ireland-startup-roundtable',
       excerpt: 'Excited to have been part of the IDA Ireland Startup Roundtable hosted at T-Hub. It was a great opportunity to share insights on startup innovation, global collaboration, and the growing synergy between India and Ireland in the tech and business space.',
@@ -74,7 +97,7 @@ const BlogPage = () => {
       category: 'Events'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Speaking at Nasscom AI Days, Mumbai',
       slug: 'speaking-at-nasscom-ai-days-mumbai',
       excerpt: 'Edgeble AI was proud to be part of NASSCOM AI Days held in Mumbai — an event that brought together India\'s top minds in artificial intelligence, innovation, and enterprise technology.',
@@ -95,7 +118,7 @@ const BlogPage = () => {
       category: 'Events'
     },
     {
-      id: 5,
+      id: 6,
       title: 'Edgeble at T-Hub Innovative Enclave 2025',
       slug: 'edgeble-at-thub-innovative-enclave-2025',
       excerpt: 'Edgeble AI was proud to participate in the T-Hub Innovative Enclave 2025 — a convergence of India\'s most forward-thinking startups and ecosystem leaders.',
@@ -116,7 +139,7 @@ const BlogPage = () => {
       category: 'Events'
     },
     {
-      id: 6,
+      id: 7,
       title: 'Speaking at CIE-IIIT Avishkar 2024',
       slug: 'speaking-at-cie-iiit-avishkar-2024',
       excerpt: 'About TinyML Taipei 2024, About Edgeble AI Participation, End-to-End Edge AI Lifecycle.',
@@ -137,7 +160,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 7,
+      id: 8,
       title: 'Speaking at AIJ Moscow 2024',
       slug: 'speaking-at-aij-moscow-2024',
       excerpt: 'The Future of AI Acceleration: Transforming Edge Computing for Tomorrow\'s Industries. Speaking on the future of AI acceleration and how edge computing is transforming industries.',
@@ -161,7 +184,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 8,
+      id: 9,
       title: 'Edgeble at DeepTech, GFST 2024 India',
       slug: 'edgeble-at-deeptech-gfst-2024-india',
       excerpt: 'Pushing the Limits of Edge AI: 60FPS Live YOLOv5 Object Detection on Edgeble AI\'s 6TOPS Edge AI Accelerator Modules. Demonstrating real-time AI capabilities at the edge.',
@@ -185,7 +208,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 9,
+      id: 10,
       title: 'Edgeble Sponsor DeepTech, GFST 2024 India',
       slug: 'edgeble-sponsor-deeptech-gfst-2024-india',
       excerpt: 'We would like to express our sincere gratitude to our sponsors and event partners. A big Thank you to our Lanyard Sponsor! Edgeble AI supporting the DeepTech ecosystem.',
@@ -209,7 +232,7 @@ const BlogPage = () => {
       category: 'Events'
     },
     {
-      id: 10,
+      id: 11,
       title: 'Edgeble at TinyML Taipei 2024 Innovation',
       slug: 'edgeble-at-tinyml-taipei-2024-innovation',
       excerpt: 'End-to-End Edge AI Lifecycle with Real-Time, On-Device AI. Powered by EdgeGPT Pre-trained Edge AI Accelerators. Showcasing our comprehensive edge AI solutions.',
@@ -233,7 +256,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 11,
+      id: 12,
       title: 'Industrial Future Summit 2024',
       slug: 'industrial-future-summit-2024',
       excerpt: 'Revolutionising Vehicle Battery System Welding Inspection with Edge AI. We\'re participating! Industrial Future Summit - The leading event for Future Builders in Stockholm.',
@@ -257,7 +280,7 @@ const BlogPage = () => {
       category: 'Industry'
     },
     {
-      id: 12,
+      id: 13,
       title: 'Edgeble at AI Hardware and Edge AI Summit 2024',
       slug: 'Edgeble at AI Hardware and Edge AI Summit 2024',
       excerpt: 'Summary of our participation at Edge AI For Innovation & Impact.',
@@ -278,7 +301,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 13,
+      id: 14,
       title: 'Edgeble at Indian Mobile Congress 2023',
       slug: 'Edgeble at Indian Mobile Congress 2023',
       excerpt: 'Summary of our participation at Indian Mobile Congress 2023.',
@@ -299,7 +322,7 @@ const BlogPage = () => {
       category: 'Industry'
     },
     {
-      id: 14,
+      id: 15,
       title: 'Edgeble at Edge Computing Expo Europe 2023',
       slug: 'Edgeble at Edge Computing Expo Europe 2023',
       excerpt: 'Recap of Edgeble presence at the Edge Computing Expo Europe 2023. Learn about our latest innovations and engagements with industry leaders.',
@@ -363,7 +386,7 @@ const BlogPage = () => {
                   src={post.image} 
                   alt={post.title}
                   className={`w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 ${
-                    post.id === 1 ? 'beyond-borders-image' : ''
+                    post.id === 2 ? 'beyond-borders-image' : ''
                   }`}
                   style={{
                     objectFit: 'cover',

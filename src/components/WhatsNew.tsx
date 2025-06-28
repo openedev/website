@@ -6,6 +6,16 @@ const WhatsNew = () => {
     {
       type: 'event',
       icon: Users,
+      title: 'Showcase at Bosch Global FIT.Fest\'25',
+      description: 'On behalf of the entire team at BGSW, I would like to extend our heartfelt thanks for your organization\'s participation in Marketplace Stalls at our flagship Technical Event, FIT.Fest\'25, last week.',
+      date: '2025-06-19',
+      image: 'images/image003.png?auto=compress&cs=tinysrgb&w=600',
+      badge: 'Bosch Event',
+      slug: 'showcase-at-bosch-global-fit-fest-25'
+    },
+    {
+      type: 'event',
+      icon: Users,
       title: 'Pitching at Beyond Borders: The Era of Agentic AI',
       description: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.',
       date: '2025-06-02',
@@ -32,16 +42,6 @@ const WhatsNew = () => {
       image: 'https://www.edgeble.ai/blog14.png?auto=compress&cs=tinysrgb&w=600',
       badge: 'Roundtable',
       slug: 'speaking-at-ida-ireland-startup-roundtable'
-    },
-    {
-      type: 'event',
-      icon: Users,
-      title: 'Speaking at Nasscom AI Days, Mumbai',
-      description: 'Edgeble AI was proud to be part of NASSCOM AI Days held in Mumbai — an event that brought together India\'s top minds in artificial intelligence, innovation, and enterprise technology.',
-      date: '2024-03-25',
-      image: 'https://www.edgeble.ai/blog13.png?auto=compress&cs=tinysrgb&w=600',
-      badge: 'Upcoming Event',
-      slug: 'speaking-at-nasscom-ai-days-mumbai'
     }
   ];
 
@@ -88,7 +88,7 @@ const WhatsNew = () => {
                     src={item.image} 
                     alt={item.title}
                     className={`w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300 ${
-                      index === 0 ? 'beyond-borders-image' : ''
+                      index === 1 ? 'beyond-borders-image' : ''
                     }`}
                     style={{
                       objectFit: 'cover',
