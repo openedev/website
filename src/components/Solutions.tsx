@@ -44,14 +44,21 @@ const Solutions = () => {
   return (
     <section id="solutions" className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Industry <span className="text-white">Solutions</span>
-          </h2>
-          <p className="text-xl text-white max-w-3xl mx-auto">
-            Tailored Edge AI solutions across diverse industries, enabling intelligent edge computing for every sector
-          </p>
+        {/* Section Header - Left Aligned like Products */}
+        <div className="flex items-center justify-between mb-20">
+          <div>
+            <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+              Industry Solutions
+            </h2>
+            <p className="text-xl text-white max-w-3xl">
+              Tailored Edge AI solutions across diverse industries, enabling intelligent edge computing for every sector
+            </p>
+          </div>
+          <div>
+            <button className="bg-white text-black hover:bg-white/90 px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105">
+              See Solutions
+            </button>
+          </div>
         </div>
 
         {/* Solutions Grid */}
