@@ -6,22 +6,22 @@ const WhatsNew = () => {
     {
       type: 'event',
       icon: Users,
+      title: 'Pitching at Beyond Borders: The Era of Agentic AI',
+      description: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.',
+      date: '2025-06-02',
+      image: 'images/Screenshot from 2025-06-29 02-42-29.png?auto=compress&cs=tinysrgb&w=600',
+      badge: 'Agentic AI',
+      slug: 'pitching-at-beyond-borders-the-era-of-agentic-ai'
+    },
+    {
+      type: 'event',
+      icon: Users,
       title: 'Pitching at Peak XV, Rajan Anandan',
       description: 'With T-Hub, Edgeble is honored to pitch with Rajan Anandan, Managing Director at Peak XV Partners (formerly Sequoia Capital India & SEA). From AI trends to the future of startups in India, the insights shared were as sharp as they were inspiring.',
       date: '2025-03-25',
       image: 'images/peak-xv-rajan-anandan.png?auto=compress&cs=tinysrgb&w=600',
       badge: 'Peak XV',
       slug: 'pitching-at-peak-xv-rajan-anandan'
-    },
-    {
-      type: 'event',
-      icon: Users,
-      title: 'Pitching at Beyond Borders: The Era of Agentic AI',
-      description: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.',
-      date: '2024-06-29',
-      image: 'images/Screenshot from 2025-06-29 02-42-29.png?auto=compress&cs=tinysrgb&w=600',
-      badge: 'Agentic AI',
-      slug: 'pitching-at-beyond-borders-the-era-of-agentic-ai'
     },
     {
       type: 'product',
@@ -88,7 +88,7 @@ const WhatsNew = () => {
                     src={item.image} 
                     alt={item.title}
                     className={`w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300 ${
-                      index === 1 ? 'beyond-borders-image' : ''
+                      index === 0 ? 'beyond-borders-image' : ''
                     }`}
                     style={{
                       objectFit: 'cover',

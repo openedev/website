@@ -6,6 +6,31 @@ const BlogPage = () => {
   const blogPosts = [
     {
       id: 1,
+      title: 'Pitching at Beyond Borders: The Era of Agentic AI',
+      slug: 'pitching-at-beyond-borders-the-era-of-agentic-ai',
+      excerpt: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.',
+      content: `
+        <p class="text-lg mb-6">T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.</p>
+        
+        <p class="mb-6">Our recent event, "Beyond Borders: The Era of Agentic AI," was a step in that direction.</p>
+        
+        <p class="mb-6">We brought startup builders and enterprise leaders into one room to talk honestly about what it really takes to make AI work inside large organizations—and how agentic platforms are shifting what's possible.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">The Future of Autonomous Intelligence</h3>
+        <p class="mb-6">The event showcased how agentic AI is moving beyond traditional automation to create truly autonomous systems that can reason, adapt, and make decisions independently.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Industry Transformation</h3>
+        <p class="mb-6">Enterprise leaders shared insights on how agentic AI platforms are transforming their operations, from supply chain optimization to customer service automation.</p>
+      `,
+      author: 'Jagan Teki',
+      date: '2025-06-02',
+      readTime: '5 min read',
+      image: 'images/Screenshot from 2025-06-29 02-42-29.png',
+      tags: ['Agentic AI', 'EY Partnership', 'T-Hub'],
+      category: 'Events'
+    },
+    {
+      id: 2,
       title: 'Pitching at Peak XV, Rajan Anandan',
       slug: 'pitching-at-peak-xv-rajan-anandan',
       excerpt: 'With T-Hub, Edgeble is honored to pitch with Rajan Anandan, Managing Director at Peak XV Partners (formerly Sequoia Capital India & SEA). From AI trends to the future of startups in India, the insights shared were as sharp as they were inspiring.',
@@ -25,31 +50,6 @@ const BlogPage = () => {
       readTime: '4 min read',
       image: 'images/peak-xv-rajan-anandan.png',
       tags: ['Peak XV', 'Rajan Anandan', 'T-Hub'],
-      category: 'Events'
-    },
-    {
-      id: 2,
-      title: 'Pitching at Beyond Borders: The Era of Agentic AI',
-      slug: 'pitching-at-beyond-borders-the-era-of-agentic-ai',
-      excerpt: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.',
-      content: `
-        <p class="text-lg mb-6">T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.</p>
-        
-        <p class="mb-6">Our recent event, "Beyond Borders: The Era of Agentic AI," was a step in that direction.</p>
-        
-        <p class="mb-6">We brought startup builders and enterprise leaders into one room to talk honestly about what it really takes to make AI work inside large organizations—and how agentic platforms are shifting what's possible.</p>
-        
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">The Future of Autonomous Intelligence</h3>
-        <p class="mb-6">The event showcased how agentic AI is moving beyond traditional automation to create truly autonomous systems that can reason, adapt, and make decisions independently.</p>
-        
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Industry Transformation</h3>
-        <p class="mb-6">Enterprise leaders shared insights on how agentic AI platforms are transforming their operations, from supply chain optimization to customer service automation.</p>
-      `,
-      author: 'Jagan Teki',
-      date: '2024-06-29',
-      readTime: '5 min read',
-      image: 'images/Screenshot from 2025-06-29 02-42-29.png',
-      tags: ['Agentic AI', 'EY Partnership', 'T-Hub'],
       category: 'Events'
     },
     {
@@ -363,7 +363,7 @@ const BlogPage = () => {
                   src={post.image} 
                   alt={post.title}
                   className={`w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 ${
-                    post.id === 2 ? 'beyond-borders-image' : ''
+                    post.id === 1 ? 'beyond-borders-image' : ''
                   }`}
                   style={{
                     objectFit: 'cover',
