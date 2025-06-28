@@ -4,11 +4,21 @@ import { Calendar, ArrowRight, ExternalLink, Award, Newspaper, Users } from 'luc
 const WhatsNew = () => {
   const news = [
     {
+      type: 'event',
+      icon: Users,
+      title: 'Pitching at Beyond Borders: The Era of Agentic AI by EY',
+      description: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.',
+      date: '2024-06-29',
+      image: 'images/Screenshot from 2025-06-29 02-42-29.png?auto=compress&cs=tinysrgb&w=600',
+      badge: 'Agentic AI',
+      slug: 'pitching-at-beyond-borders-the-era-of-agentic-ai-by-ey'
+    },
+    {
       type: 'product',
       icon: Users,
       title: 'Speaking at IDA Ireland Startup Roundtable',
       description: 'Excited to have been part of the IDA Ireland Startup Roundtable hosted at T-Hub. It was a great opportunity to share insights on startup innovation, global collaboration, and the growing synergy between India and Ireland in the tech and business space.',
-      date: '2025-03-30',
+      date: '2024-03-30',
       image: 'https://www.edgeble.ai/blog14.png?auto=compress&cs=tinysrgb&w=600',
       badge: 'Roundtable',
       slug: 'speaking-at-ida-ireland-startup-roundtable'
@@ -18,7 +28,7 @@ const WhatsNew = () => {
       icon: Users,
       title: 'Speaking at Nasscom AI Days, Mumbai',
       description: 'Edgeble AI was proud to be part of NASSCOM AI Days held in Mumbai — an event that brought together India\'s top minds in artificial intelligence, innovation, and enterprise technology.',
-      date: '2025-03-25',
+      date: '2024-03-25',
       image: 'https://www.edgeble.ai/blog13.png?auto=compress&cs=tinysrgb&w=600',
       badge: 'Upcoming Event',
       slug: 'speaking-at-nasscom-ai-days-mumbai'
@@ -28,20 +38,10 @@ const WhatsNew = () => {
       icon: Newspaper,
       title: 'Edgeble at T-Hub Innovative Enclave 2025',
       description: 'Edgeble AI was proud to participate in the T-Hub Innovative Enclave 2025 — a convergence of India\'s most forward-thinking startups and ecosystem leaders.',
-      date: '2025-12-03',
+      date: '2024-12-03',
       image: 'https://www.edgeble.ai/blog12.png?auto=compress&cs=tinysrgb&w=600',
       badge: 'Partnership',
       slug: 'edgeble-at-thub-innovative-enclave-2025'
-    },
-    {
-      type: 'product',
-      icon: Award,
-      title: 'Speaking at CIE-IIIT Avishkar 2024',
-      description: 'About TinyML Taipei 2024, About Edgeble AI Participation, End-to-End Edge AI Lifecycle.',
-      date: '2025-02-24',
-      image: 'https://www.edgeble.ai/blog11.png?auto=compress&cs=tinysrgb&w=600',
-      badge: 'Product Launch',
-      slug: 'speaking-at-cie-iiit-avishkar-2024'
     }
   ];
 

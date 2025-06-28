@@ -6,6 +6,31 @@ const BlogPage = () => {
   const blogPosts = [
     {
       id: 1,
+      title: 'Pitching at Beyond Borders: The Era of Agentic AI by EY',
+      slug: 'pitching-at-beyond-borders-the-era-of-agentic-ai-by-ey',
+      excerpt: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.',
+      content: `
+        <p class="text-lg mb-6">T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.</p>
+        
+        <p class="mb-6">Our recent event, "Beyond Borders: The Era of Agentic AI," was a step in that direction.</p>
+        
+        <p class="mb-6">We brought startup builders and enterprise leaders into one room to talk honestly about what it really takes to make AI work inside large organizations—and how agentic platforms are shifting what's possible.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">The Future of Autonomous Intelligence</h3>
+        <p class="mb-6">The event showcased how agentic AI is moving beyond traditional automation to create truly autonomous systems that can reason, adapt, and make decisions independently.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Industry Transformation</h3>
+        <p class="mb-6">Enterprise leaders shared insights on how agentic AI platforms are transforming their operations, from supply chain optimization to customer service automation.</p>
+      `,
+      author: 'Jagan Teki',
+      date: '2024-06-29',
+      readTime: '5 min read',
+      image: 'images/Screenshot from 2025-06-29 02-42-29.png',
+      tags: ['Agentic AI', 'EY Partnership', 'T-Hub'],
+      category: 'Events'
+    },
+    {
+      id: 2,
       title: 'Speaking at IDA Ireland Startup Roundtable',
       slug: 'speaking-at-ida-ireland-startup-roundtable',
       excerpt: 'Excited to have been part of the IDA Ireland Startup Roundtable hosted at T-Hub. It was a great opportunity to share insights on startup innovation, global collaboration, and the growing synergy between India and Ireland in the tech and business space.',
@@ -26,7 +51,7 @@ const BlogPage = () => {
       category: 'Events'
     },
     {
-      id: 2,
+      id: 3,
       title: 'Speaking at Nasscom AI Days, Mumbai',
       slug: 'speaking-at-nasscom-ai-days-mumbai',
       excerpt: 'Edgeble AI was proud to be part of NASSCOM AI Days held in Mumbai — an event that brought together India\'s top minds in artificial intelligence, innovation, and enterprise technology.',
@@ -47,7 +72,7 @@ const BlogPage = () => {
       category: 'Events'
     },
     {
-      id: 3,
+      id: 4,
       title: 'Edgeble at T-Hub Innovative Enclave 2025',
       slug: 'edgeble-at-thub-innovative-enclave-2025',
       excerpt: 'Edgeble AI was proud to participate in the T-Hub Innovative Enclave 2025 — a convergence of India\'s most forward-thinking startups and ecosystem leaders.',
@@ -68,7 +93,7 @@ const BlogPage = () => {
       category: 'Events'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Speaking at CIE-IIIT Avishkar 2024',
       slug: 'speaking-at-cie-iiit-avishkar-2024',
       excerpt: 'About TinyML Taipei 2024, About Edgeble AI Participation, End-to-End Edge AI Lifecycle.',
@@ -89,7 +114,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 5,
+      id: 6,
       title: 'Speaking at AIJ Moscow 2024',
       slug: 'speaking-at-aij-moscow-2024',
       excerpt: 'The Future of AI Acceleration: Transforming Edge Computing for Tomorrow\'s Industries. Speaking on the future of AI acceleration and how edge computing is transforming industries.',
@@ -113,7 +138,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 6,
+      id: 7,
       title: 'Edgeble at DeepTech, GFST 2024 India',
       slug: 'edgeble-at-deeptech-gfst-2024-india',
       excerpt: 'Pushing the Limits of Edge AI: 60FPS Live YOLOv5 Object Detection on Edgeble AI\'s 6TOPS Edge AI Accelerator Modules. Demonstrating real-time AI capabilities at the edge.',
@@ -137,7 +162,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 7,
+      id: 8,
       title: 'Edgeble Sponsor DeepTech, GFST 2024 India',
       slug: 'edgeble-sponsor-deeptech-gfst-2024-india',
       excerpt: 'We would like to express our sincere gratitude to our sponsors and event partners. A big Thank you to our Lanyard Sponsor! Edgeble AI supporting the DeepTech ecosystem.',
@@ -161,7 +186,7 @@ const BlogPage = () => {
       category: 'Events'
     },
     {
-      id: 8,
+      id: 9,
       title: 'Edgeble at TinyML Taipei 2024 Innovation',
       slug: 'edgeble-at-tinyml-taipei-2024-innovation',
       excerpt: 'End-to-End Edge AI Lifecycle with Real-Time, On-Device AI. Powered by EdgeGPT Pre-trained Edge AI Accelerators. Showcasing our comprehensive edge AI solutions.',
@@ -185,7 +210,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 9,
+      id: 10,
       title: 'Industrial Future Summit 2024',
       slug: 'industrial-future-summit-2024',
       excerpt: 'Revolutionising Vehicle Battery System Welding Inspection with Edge AI. We\'re participating! Industrial Future Summit - The leading event for Future Builders in Stockholm.',
@@ -209,7 +234,7 @@ const BlogPage = () => {
       category: 'Industry'
     },
     {
-      id: 10,
+      id: 11,
       title: 'Edgeble at AI Hardware and Edge AI Summit 2024',
       slug: 'Edgeble at AI Hardware and Edge AI Summit 2024',
       excerpt: 'Summary of our participation at Edge AI For Innovation & Impact.',
@@ -230,7 +255,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 11,
+      id: 12,
       title: 'Edgeble at Indian Mobile Congress 2023',
       slug: 'Edgeble at Indian Mobile Congress 2023',
       excerpt: 'Summary of our participation at Indian Mobile Congress 2023.',
@@ -251,7 +276,7 @@ const BlogPage = () => {
       category: 'Industry'
     },
     {
-      id: 12,
+      id: 13,
       title: 'Edgeble at Edge Computing Expo Europe 2023',
       slug: 'Edgeble at Edge Computing Expo Europe 2023',
       excerpt: 'Recap of Edgeble presence at the Edge Computing Expo Europe 2023. Learn about our latest innovations and engagements with industry leaders.',

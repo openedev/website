@@ -7,8 +7,51 @@ const BlogPostPage = () => {
   const { slug } = useParams();
 
   const blogPosts = {
-    'speaking-at-ida-ireland-startup-roundtable': {
+    'pitching-at-beyond-borders-the-era-of-agentic-ai-by-ey': {
       id: 1,
+      title: 'Pitching at Beyond Borders: The Era of Agentic AI by EY',
+      excerpt: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.',
+      content: `
+        <p class="text-lg mb-6">T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.</p>
+        
+        <p class="mb-6">Our recent event, "Beyond Borders: The Era of Agentic AI," was a step in that direction.</p>
+        
+        <p class="mb-6">We brought startup builders and enterprise leaders into one room to talk honestly about what it really takes to make AI work inside large organizations—and how agentic platforms are shifting what's possible.</p>
+        
+        <div class="bg-white/5 rounded-xl p-6 mb-8 border border-white/10">
+          <h4 class="text-lg font-semibold text-white mb-3">Event Highlights:</h4>
+          <ul class="space-y-2 text-white/80">
+            <li>• Convergence of startup founders and enterprise leaders</li>
+            <li>• Strategic partnership between T-Hub and EY</li>
+            <li>• Focus on autonomous intelligence and agentic AI</li>
+            <li>• Real-world implementation challenges and solutions</li>
+          </ul>
+        </div>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">The Future of Autonomous Intelligence</h3>
+        <p class="mb-6">The event showcased how agentic AI is moving beyond traditional automation to create truly autonomous systems that can reason, adapt, and make decisions independently. This represents a fundamental shift in how we approach AI implementation in enterprise environments.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Industry Transformation</h3>
+        <p class="mb-6">Enterprise leaders shared insights on how agentic AI platforms are transforming their operations, from supply chain optimization to customer service automation. The discussions revealed both the immense potential and the practical challenges of implementing autonomous AI systems at scale.</p>
+        
+        <blockquote class="border-l-4 border-white pl-6 italic text-white/90 mb-8 bg-white/5 p-4 rounded-r-xl">
+          "The convergence of startup innovation and enterprise expertise is crucial for realizing the full potential of agentic AI in transforming industries." - Event Participant
+        </blockquote>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Key Takeaways</h3>
+        <p class="mb-6">The event emphasized the importance of collaboration between innovative startups and established enterprises to successfully implement agentic AI solutions. It highlighted the need for robust frameworks, ethical considerations, and practical deployment strategies.</p>
+      `,
+      author: 'Jagan Teki',
+      authorRole: 'CEO & Founder',
+      authorImage: 'https://www.edgeble.ai/a1.png?auto=compress&cs=tinysrgb&w=150',
+      date: '2024-06-29',
+      readTime: '5 min read',
+      image: 'images/Screenshot from 2025-06-29 02-42-29.png',
+      tags: ['Agentic AI', 'EY Partnership', 'T-Hub'],
+      category: 'Events'
+    },
+    'speaking-at-ida-ireland-startup-roundtable': {
+      id: 2,
       title: 'Speaking at IDA Ireland Startup Roundtable',
       excerpt: 'Excited to have been part of the IDA Ireland Startup Roundtable hosted at T-Hub. It was a great opportunity to share insights on startup innovation, global collaboration, and the growing synergy between India and Ireland in the tech and business space.',
       content: `
@@ -44,7 +87,7 @@ const BlogPostPage = () => {
       category: 'Events'
     },
     'speaking-at-nasscom-ai-days-mumbai': {
-      id: 2,
+      id: 3,
       title: 'Speaking at Nasscom AI Days, Mumbai',
       excerpt: 'Edgeble AI was proud to be part of NASSCOM AI Days held in Mumbai — an event that brought together India\'s top minds in artificial intelligence, innovation, and enterprise technology.',
       content: `
@@ -247,7 +290,7 @@ const BlogPostPage = () => {
     },
     // Add other existing blog posts...
     'edgeble-at-thub-innovative-enclave-2025': {
-      id: 3,
+      id: 4,
       title: 'Edgeble at T-Hub Innovative Enclave 2025',
       excerpt: 'Edgeble AI was proud to participate in the T-Hub Innovative Enclave 2025 — a convergence of India\'s most forward-thinking startups and ecosystem leaders.',
       content: `
@@ -269,7 +312,7 @@ const BlogPostPage = () => {
       category: 'Events'
     },
     'speaking-at-cie-iiit-avishkar-2024': {
-      id: 4,
+      id: 10,
       title: 'Speaking at CIE-IIIT Avishkar 2024',
       excerpt: 'About TinyML Taipei 2024, About Edgeble AI Participation, End-to-End Edge AI Lifecycle.',
       content: `
