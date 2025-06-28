@@ -90,6 +90,126 @@ const BlogPage = () => {
     },
     {
       id: 5,
+      title: 'Speaking at AIJ Moscow 2024',
+      slug: 'speaking-at-aij-moscow-2024',
+      excerpt: 'The Future of AI Acceleration: Transforming Edge Computing for Tomorrow\'s Industries. Speaking on the future of AI acceleration and how edge computing is transforming industries.',
+      content: `
+        <p>AIJ Moscow 2024 provided an exceptional platform to discuss the future of AI acceleration and its impact on transforming edge computing for tomorrow's industries. Our presentation explored cutting-edge developments in AI hardware and software optimization.</p>
+        
+        <h3>AI Acceleration Trends</h3>
+        <p>We discussed the latest trends in AI acceleration, including specialized neural processing units, model optimization techniques, and the shift towards edge-first AI architectures.</p>
+        
+        <h3>Industry Transformation</h3>
+        <p>The presentation highlighted how AI acceleration is enabling new use cases across industries, from autonomous vehicles to smart manufacturing and healthcare applications.</p>
+        
+        <h3>Future Outlook</h3>
+        <p>We shared our vision for the future of edge AI, emphasizing the importance of model-first design and the role of specialized hardware in enabling widespread AI adoption.</p>
+      `,
+      author: 'Jagan Teki',
+      date: '2024-02-08',
+      readTime: '7 min read',
+      image: 'images/Screenshot (13).png',
+      tags: ['AI Acceleration', 'Moscow', 'Edge Computing'],
+      category: 'Technology'
+    },
+    {
+      id: 6,
+      title: 'Edgeble at DeepTech, GFST 2024 India',
+      slug: 'edgeble-at-deeptech-gfst-2024-india',
+      excerpt: 'Pushing the Limits of Edge AI: 60FPS Live YOLOv5 Object Detection on Edgeble AI\'s 6TOPS Edge AI Accelerator Modules. Demonstrating real-time AI capabilities at the edge.',
+      content: `
+        <p>At DeepTech GFST 2024 India, we demonstrated the incredible capabilities of our edge AI accelerator modules by showcasing 60FPS live YOLOv5 object detection running on our 6TOPS Edge AI Accelerator.</p>
+        
+        <h3>Real-Time Performance</h3>
+        <p>Our demonstration proved that edge AI can deliver real-time performance for demanding computer vision applications, achieving 60 frames per second object detection without compromising accuracy.</p>
+        
+        <h3>Technical Innovation</h3>
+        <p>The 6TOPS Edge AI Accelerator represents a breakthrough in edge computing, delivering unprecedented performance in a compact, power-efficient form factor suitable for industrial deployments.</p>
+        
+        <h3>Industry Impact</h3>
+        <p>This level of performance opens new possibilities for real-time AI applications in manufacturing, automotive, and security sectors where low latency and high accuracy are critical.</p>
+      `,
+      author: 'Alberto Bianchi',
+      date: '2024-01-26',
+      readTime: '5 min read',
+      image: 'images/Screenshot (14).png',
+      tags: ['DeepTech', 'YOLOv5', 'Real-time AI'],
+      category: 'Technology'
+    },
+    {
+      id: 7,
+      title: 'Edgeble Sponsor DeepTech, GFST 2024 India',
+      slug: 'edgeble-sponsor-deeptech-gfst-2024-india',
+      excerpt: 'We would like to express our sincere gratitude to our sponsors and event partners. A big Thank you to our Lanyard Sponsor! Edgeble AI supporting the DeepTech ecosystem.',
+      content: `
+        <p>We were proud to sponsor DeepTech GFST 2024 India, demonstrating our commitment to supporting the deep technology ecosystem and fostering innovation in AI and emerging technologies.</p>
+        
+        <h3>Supporting Innovation</h3>
+        <p>As a lanyard sponsor, we had the opportunity to connect with researchers, entrepreneurs, and technology leaders who are driving the future of deep tech in India.</p>
+        
+        <h3>Ecosystem Building</h3>
+        <p>Our sponsorship reflects our belief in the importance of building strong technology ecosystems that support innovation, collaboration, and knowledge sharing.</p>
+        
+        <h3>Community Engagement</h3>
+        <p>Events like GFST provide valuable platforms for the deep tech community to come together, share insights, and explore new opportunities for collaboration and growth.</p>
+      `,
+      author: 'Srinivas Patnaik',
+      date: '2024-01-12',
+      readTime: '3 min read',
+      image: 'images/Screenshot (15).png',
+      tags: ['Sponsorship', 'DeepTech', 'Community'],
+      category: 'Events'
+    },
+    {
+      id: 8,
+      title: 'Edgeble at TinyML Taipei 2024 Innovation',
+      slug: 'edgeble-at-tinyml-taipei-2024-innovation',
+      excerpt: 'End-to-End Edge AI Lifecycle with Real-Time, On-Device AI. Powered by EdgeGPT Pre-trained Edge AI Accelerators. Showcasing our comprehensive edge AI solutions.',
+      content: `
+        <p>TinyML Taipei 2024 Innovation Showcase provided the perfect venue to demonstrate our end-to-end edge AI lifecycle capabilities, powered by EdgeGPT pre-trained edge AI accelerators.</p>
+        
+        <h3>Complete AI Lifecycle</h3>
+        <p>We showcased how our platform supports the entire AI development lifecycle, from model training and optimization to deployment and monitoring on edge devices.</p>
+        
+        <h3>Real-Time Capabilities</h3>
+        <p>Our demonstration highlighted real-time, on-device AI processing capabilities that enable immediate decision-making without cloud dependencies.</p>
+        
+        <h3>TinyML Innovation</h3>
+        <p>The event emphasized the growing importance of TinyML in enabling AI capabilities on resource-constrained devices, opening new possibilities for IoT and embedded applications.</p>
+      `,
+      author: 'Chakrish Krishtam',
+      date: '2024-11-05',
+      readTime: '6 min read',
+      image: 'images/Screenshot (16).png',
+      tags: ['TinyML', 'Taipei', 'Edge AI Lifecycle'],
+      category: 'Technology'
+    },
+    {
+      id: 9,
+      title: 'Industrial Future Summit 2024',
+      slug: 'industrial-future-summit-2024',
+      excerpt: 'Revolutionising Vehicle Battery System Welding Inspection with Edge AI. We\'re participating! Industrial Future Summit - The leading event for Future Builders in Stockholm.',
+      content: `
+        <p>Industrial Future Summit 2024 in Stockholm brought together industry leaders to discuss the future of manufacturing and industrial automation. We were excited to participate and share our vision for edge AI in industrial applications.</p>
+        
+        <h3>Vehicle Battery Innovation</h3>
+        <p>Our presentation focused on revolutionizing vehicle battery system welding inspection using edge AI, demonstrating how real-time AI analysis can improve quality control and safety in automotive manufacturing.</p>
+        
+        <h3>Challenges in Vehicle Battery Welding</h3>
+        <p>Commercial vehicle battery systems contain a growing number of laser welds that are crucial to their functionality. The assembly of these systems requires precise quality control to ensure safety and performance.</p>
+        
+        <h3>Edge AI Solutions</h3>
+        <p>By deploying AI at the edge, we eliminate delays, protect data privacy, and enable swift, actionable insights to maintain high-quality standards in battery manufacturing processes.</p>
+      `,
+      author: 'Alberto Bianchi',
+      date: '2024-10-15',
+      readTime: '8 min read',
+      image: 'images/Screenshot (18).png',
+      tags: ['Industrial', 'Battery Systems', 'Quality Control'],
+      category: 'Industry'
+    },
+    {
+      id: 10,
       title: 'EdgeGPT NPU Architecture Deep Dive',
       slug: 'edgegpt-npu-architecture-deep-dive',
       excerpt: 'A comprehensive look at the innovative architecture behind our EdgeGPT NPU modules and how they deliver unprecedented performance at the edge.',
@@ -110,7 +230,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 6,
+      id: 11,
       title: 'Industrial AI Deployment Best Practices',
       slug: 'industrial-ai-deployment-best-practices',
       excerpt: 'Lessons learned from deploying AI solutions in industrial environments and best practices for successful edge AI implementations.',
@@ -131,7 +251,7 @@ const BlogPage = () => {
       category: 'Industry'
     },
     {
-      id: 7,
+      id: 12,
       title: 'The Future of Autonomous Vehicles with Edge AI',
       slug: 'future-of-autonomous-vehicles-edge-ai',
       excerpt: 'How edge AI is accelerating the development of autonomous vehicles and enabling real-time decision making for safer transportation.',
@@ -150,69 +270,6 @@ const BlogPage = () => {
       image: 'https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Autonomous Vehicles', 'Safety', 'Real-time'],
       category: 'Automotive'
-    },
-    {
-      id: 8,
-      title: 'Edge AI in Healthcare: Transforming Patient Care',
-      slug: 'edge-ai-healthcare-transforming-patient-care',
-      excerpt: 'Exploring how edge AI is revolutionizing healthcare by enabling real-time diagnostics and personalized treatment at the point of care.',
-      content: `
-        <p>Healthcare applications of edge AI are transforming patient care by bringing advanced diagnostic capabilities directly to the point of care, enabling faster and more accurate medical decisions.</p>
-        
-        <h3>Point-of-Care Diagnostics</h3>
-        <p>Edge AI enables sophisticated medical imaging analysis and diagnostic assistance without requiring cloud connectivity, crucial for remote healthcare facilities.</p>
-        
-        <h3>Privacy and Security</h3>
-        <p>Processing sensitive medical data locally ensures patient privacy and compliance with healthcare regulations while maintaining the highest standards of data security.</p>
-      `,
-      author: 'Dr. Sarah Chen',
-      date: '2023-10-05',
-      readTime: '5 min read',
-      image: 'https://images.pexels.com/photos/3786157/pexels-photo-3786157.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['Healthcare', 'Diagnostics', 'Privacy'],
-      category: 'Healthcare'
-    },
-    {
-      id: 9,
-      title: 'Smart Agriculture: AI-Powered Precision Farming',
-      slug: 'smart-agriculture-ai-powered-precision-farming',
-      excerpt: 'How edge AI is enabling precision agriculture through real-time crop monitoring, yield prediction, and resource optimization.',
-      content: `
-        <p>Precision agriculture powered by edge AI is revolutionizing farming practices by providing real-time insights into crop health, soil conditions, and environmental factors that affect agricultural productivity.</p>
-        
-        <h3>Crop Monitoring</h3>
-        <p>AI-powered sensors and cameras can detect early signs of disease, pest infestations, and nutrient deficiencies, enabling farmers to take proactive measures to protect their crops.</p>
-        
-        <h3>Resource Optimization</h3>
-        <p>Edge AI helps optimize the use of water, fertilizers, and pesticides, reducing environmental impact while maximizing crop yields and profitability.</p>
-      `,
-      author: 'Rajesh Kumar',
-      date: '2023-09-15',
-      readTime: '4 min read',
-      image: 'https://images.pexels.com/photos/2132227/pexels-photo-2132227.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['Agriculture', 'Precision Farming', 'Sustainability'],
-      category: 'Agriculture'
-    },
-    {
-      id: 10,
-      title: 'Building Secure Edge AI Systems',
-      slug: 'building-secure-edge-ai-systems',
-      excerpt: 'Essential security considerations and best practices for developing and deploying secure edge AI systems in enterprise environments.',
-      content: `
-        <p>Security is paramount when deploying AI systems at the edge, where devices may operate in unsecured environments and handle sensitive data. Here's how to build secure edge AI systems.</p>
-        
-        <h3>Hardware Security</h3>
-        <p>Secure boot processes, hardware-based encryption, and tamper-resistant designs provide the foundation for secure edge AI deployments.</p>
-        
-        <h3>Data Protection</h3>
-        <p>Implementing end-to-end encryption, secure key management, and privacy-preserving AI techniques ensures that sensitive data remains protected throughout the AI pipeline.</p>
-      `,
-      author: 'Security Team',
-      date: '2023-08-20',
-      readTime: '7 min read',
-      image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['Security', 'Privacy', 'Enterprise'],
-      category: 'Security'
     }
   ];
 

@@ -80,6 +80,172 @@ const BlogPostPage = () => {
       tags: ['Conference', 'AI', 'Mumbai'],
       category: 'Events'
     },
+    'speaking-at-aij-moscow-2024': {
+      id: 5,
+      title: 'Speaking at AIJ Moscow 2024',
+      excerpt: 'The Future of AI Acceleration: Transforming Edge Computing for Tomorrow\'s Industries. Speaking on the future of AI acceleration and how edge computing is transforming industries.',
+      content: `
+        <p class="text-lg mb-6">AIJ Moscow 2024 provided an exceptional platform to discuss the future of AI acceleration and its impact on transforming edge computing for tomorrow's industries. Our presentation explored cutting-edge developments in AI hardware and software optimization.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">AI Acceleration Trends</h3>
+        <p class="mb-6">We discussed the latest trends in AI acceleration, including specialized neural processing units, model optimization techniques, and the shift towards edge-first AI architectures.</p>
+        
+        <div class="bg-white/5 rounded-xl p-6 mb-8 border border-white/10">
+          <h4 class="text-lg font-semibold text-white mb-3">Key Topics Covered:</h4>
+          <ul class="space-y-2 text-white/80">
+            <li>• Neural Processing Unit architectures</li>
+            <li>• Model optimization for edge deployment</li>
+            <li>• Real-time AI inference capabilities</li>
+            <li>• Industry transformation through AI</li>
+          </ul>
+        </div>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Industry Transformation</h3>
+        <p class="mb-6">The presentation highlighted how AI acceleration is enabling new use cases across industries, from autonomous vehicles to smart manufacturing and healthcare applications.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Future Outlook</h3>
+        <p class="mb-6">We shared our vision for the future of edge AI, emphasizing the importance of model-first design and the role of specialized hardware in enabling widespread AI adoption.</p>
+      `,
+      author: 'Jagan Teki',
+      authorRole: 'CEO & Founder',
+      authorImage: 'https://www.edgeble.ai/a1.png?auto=compress&cs=tinysrgb&w=150',
+      date: '2024-02-08',
+      readTime: '7 min read',
+      image: 'images/Screenshot (13).png',
+      tags: ['AI Acceleration', 'Moscow', 'Edge Computing'],
+      category: 'Technology'
+    },
+    'edgeble-at-deeptech-gfst-2024-india': {
+      id: 6,
+      title: 'Edgeble at DeepTech, GFST 2024 India',
+      excerpt: 'Pushing the Limits of Edge AI: 60FPS Live YOLOv5 Object Detection on Edgeble AI\'s 6TOPS Edge AI Accelerator Modules. Demonstrating real-time AI capabilities at the edge.',
+      content: `
+        <p class="text-lg mb-6">At DeepTech GFST 2024 India, we demonstrated the incredible capabilities of our edge AI accelerator modules by showcasing 60FPS live YOLOv5 object detection running on our 6TOPS Edge AI Accelerator.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Real-Time Performance</h3>
+        <p class="mb-6">Our demonstration proved that edge AI can deliver real-time performance for demanding computer vision applications, achieving 60 frames per second object detection without compromising accuracy.</p>
+        
+        <div class="bg-white/5 rounded-xl p-6 mb-8 border border-white/10">
+          <h4 class="text-lg font-semibold text-white mb-3">Performance Metrics:</h4>
+          <ul class="space-y-2 text-white/80">
+            <li>• 60 FPS real-time object detection</li>
+            <li>• YOLOv5 model optimization</li>
+            <li>• 6 TOPS processing power</li>
+            <li>• Low latency inference</li>
+          </ul>
+        </div>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Technical Innovation</h3>
+        <p class="mb-6">The 6TOPS Edge AI Accelerator represents a breakthrough in edge computing, delivering unprecedented performance in a compact, power-efficient form factor suitable for industrial deployments.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Industry Impact</h3>
+        <p class="mb-6">This level of performance opens new possibilities for real-time AI applications in manufacturing, automotive, and security sectors where low latency and high accuracy are critical.</p>
+      `,
+      author: 'Alberto Bianchi',
+      authorRole: 'Hardware Engineer',
+      authorImage: 'https://www.edgeble.ai/a4.png?auto=compress&cs=tinysrgb&w=150',
+      date: '2024-01-26',
+      readTime: '5 min read',
+      image: 'images/Screenshot (14).png',
+      tags: ['DeepTech', 'YOLOv5', 'Real-time AI'],
+      category: 'Technology'
+    },
+    'edgeble-sponsor-deeptech-gfst-2024-india': {
+      id: 7,
+      title: 'Edgeble Sponsor DeepTech, GFST 2024 India',
+      excerpt: 'We would like to express our sincere gratitude to our sponsors and event partners. A big Thank you to our Lanyard Sponsor! Edgeble AI supporting the DeepTech ecosystem.',
+      content: `
+        <p class="text-lg mb-6">We were proud to sponsor DeepTech GFST 2024 India, demonstrating our commitment to supporting the deep technology ecosystem and fostering innovation in AI and emerging technologies.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Supporting Innovation</h3>
+        <p class="mb-6">As a lanyard sponsor, we had the opportunity to connect with researchers, entrepreneurs, and technology leaders who are driving the future of deep tech in India.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Ecosystem Building</h3>
+        <p class="mb-6">Our sponsorship reflects our belief in the importance of building strong technology ecosystems that support innovation, collaboration, and knowledge sharing.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Community Engagement</h3>
+        <p class="mb-6">Events like GFST provide valuable platforms for the deep tech community to come together, share insights, and explore new opportunities for collaboration and growth.</p>
+      `,
+      author: 'Srinivas Patnaik',
+      authorRole: 'Strategy Analyst',
+      authorImage: 'https://www.edgeble.ai/a5.png?auto=compress&cs=tinysrgb&w=150',
+      date: '2024-01-12',
+      readTime: '3 min read',
+      image: 'images/Screenshot (15).png',
+      tags: ['Sponsorship', 'DeepTech', 'Community'],
+      category: 'Events'
+    },
+    'edgeble-at-tinyml-taipei-2024-innovation': {
+      id: 8,
+      title: 'Edgeble at TinyML Taipei 2024 Innovation',
+      excerpt: 'End-to-End Edge AI Lifecycle with Real-Time, On-Device AI. Powered by EdgeGPT Pre-trained Edge AI Accelerators. Showcasing our comprehensive edge AI solutions.',
+      content: `
+        <p class="text-lg mb-6">TinyML Taipei 2024 Innovation Showcase provided the perfect venue to demonstrate our end-to-end edge AI lifecycle capabilities, powered by EdgeGPT pre-trained edge AI accelerators.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Complete AI Lifecycle</h3>
+        <p class="mb-6">We showcased how our platform supports the entire AI development lifecycle, from model training and optimization to deployment and monitoring on edge devices.</p>
+        
+        <div class="bg-white/5 rounded-xl p-6 mb-8 border border-white/10">
+          <h4 class="text-lg font-semibold text-white mb-3">Lifecycle Components:</h4>
+          <ul class="space-y-2 text-white/80">
+            <li>• Model development and training</li>
+            <li>• Edge optimization and quantization</li>
+            <li>• Real-time deployment</li>
+            <li>• Performance monitoring</li>
+          </ul>
+        </div>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Real-Time Capabilities</h3>
+        <p class="mb-6">Our demonstration highlighted real-time, on-device AI processing capabilities that enable immediate decision-making without cloud dependencies.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">TinyML Innovation</h3>
+        <p class="mb-6">The event emphasized the growing importance of TinyML in enabling AI capabilities on resource-constrained devices, opening new possibilities for IoT and embedded applications.</p>
+      `,
+      author: 'Chakrish Krishtam',
+      authorRole: 'AI/ML Engineer',
+      authorImage: 'https://www.edgeble.ai/chakrish.png?auto=compress&cs=tinysrgb&w=150',
+      date: '2024-11-05',
+      readTime: '6 min read',
+      image: 'images/Screenshot (16).png',
+      tags: ['TinyML', 'Taipei', 'Edge AI Lifecycle'],
+      category: 'Technology'
+    },
+    'industrial-future-summit-2024': {
+      id: 9,
+      title: 'Industrial Future Summit 2024',
+      excerpt: 'Revolutionising Vehicle Battery System Welding Inspection with Edge AI. We\'re participating! Industrial Future Summit - The leading event for Future Builders in Stockholm.',
+      content: `
+        <p class="text-lg mb-6">Industrial Future Summit 2024 in Stockholm brought together industry leaders to discuss the future of manufacturing and industrial automation. We were excited to participate and share our vision for edge AI in industrial applications.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Vehicle Battery Innovation</h3>
+        <p class="mb-6">Our presentation focused on revolutionizing vehicle battery system welding inspection using edge AI, demonstrating how real-time AI analysis can improve quality control and safety in automotive manufacturing.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Challenges in Vehicle Battery Welding</h3>
+        <p class="mb-6">Commercial vehicle battery systems contain a growing number of laser welds that are crucial to their functionality. The assembly of these systems requires precise quality control to ensure safety and performance.</p>
+        
+        <div class="bg-white/5 rounded-xl p-6 mb-8 border border-white/10">
+          <h4 class="text-lg font-semibold text-white mb-3">Key Challenges:</h4>
+          <ul class="space-y-2 text-white/80">
+            <li>• Precision welding quality control</li>
+            <li>• Real-time defect detection</li>
+            <li>• Safety compliance requirements</li>
+            <li>• Production line efficiency</li>
+          </ul>
+        </div>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Edge AI Solutions</h3>
+        <p class="mb-6">By deploying AI at the edge, we eliminate delays, protect data privacy, and enable swift, actionable insights to maintain high-quality standards in battery manufacturing processes.</p>
+      `,
+      author: 'Alberto Bianchi',
+      authorRole: 'Hardware Engineer',
+      authorImage: 'https://www.edgeble.ai/a4.png?auto=compress&cs=tinysrgb&w=150',
+      date: '2024-10-15',
+      readTime: '8 min read',
+      image: 'images/Screenshot (18).png',
+      tags: ['Industrial', 'Battery Systems', 'Quality Control'],
+      category: 'Industry'
+    },
+    // Add other existing blog posts...
     'edgeble-at-thub-innovative-enclave-2025': {
       id: 3,
       title: 'Edgeble at T-Hub Innovative Enclave 2025',
@@ -123,30 +289,7 @@ const BlogPostPage = () => {
       image: 'https://www.edgeble.ai/blog11.png?auto=compress&cs=tinysrgb&w=1200',
       tags: ['TinyML', 'Conference', 'AI Lifecycle'],
       category: 'Technology'
-    },
-    'edgegpt-npu-architecture-deep-dive': {
-      id: 5,
-      title: 'EdgeGPT NPU Architecture Deep Dive',
-      excerpt: 'A comprehensive look at the innovative architecture behind our EdgeGPT NPU modules and how they deliver unprecedented performance at the edge.',
-      content: `
-        <p class="text-lg mb-6">Our EdgeGPT NPU represents a breakthrough in edge AI processing, featuring a novel architecture designed specifically for real-world deployment scenarios. This deep dive explores the technical innovations that make it possible.</p>
-        
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Revolutionary Design</h3>
-        <p class="mb-6">The EdgeGPT NPU features a heterogeneous computing architecture that combines specialized AI processing units with traditional CPU cores, optimized for different types of AI workloads.</p>
-        
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Performance Metrics</h3>
-        <p class="mb-6">With up to 32 TOPS of AI processing power while maintaining exceptional power efficiency, our NPU delivers the performance needed for demanding edge applications.</p>
-      `,
-      author: 'Alberto Bianchi',
-      authorRole: 'Hardware Engineer',
-      authorImage: 'https://www.edgeble.ai/a4.png?auto=compress&cs=tinysrgb&w=150',
-      date: '2024-01-15',
-      readTime: '8 min read',
-      image: 'https://images.pexels.com/photos/3584994/pexels-photo-3584994.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      tags: ['NPU', 'Architecture', 'Performance'],
-      category: 'Technology'
-    },
-    // Add more blog posts with the same structure...
+    }
   };
 
   const post = blogPosts[slug as keyof typeof blogPosts];
