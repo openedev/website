@@ -1,27 +1,36 @@
 import React from 'react';
-import { Cpu, Zap, Shield, ArrowRight, ChevronRight } from 'lucide-react';
+import { Cpu, Zap, Shield, Gauge, ArrowRight } from 'lucide-react';
 
 const Products = () => {
   const products = [
     {
       id: 1,
       name: 'EdgeGPT NPU Chips',
-      description: 'Model-first NPUs co-designed with EdgeGPT to guarantee predictable latency and power for ultra-fast inference.',
+      tagline: 'Ultra-fast inference modules',
       image: 'https://www.edgeble.ai/Home-aia.png?auto=compress&cs=tinysrgb&w=800',
+      specs: ['NPU: 6/32TOPS', 'CPU: ARM Cortex-A76', 'LPDDR5: 32GB', 'Form factor: SoM, PCIe', 'Future: Easy to Swap/Upgrade' ],
+      badge: 'Chip',
+      description: 'Model-first NPUs co-designed with EdgeGPT to guarantee predictable latency and power',
       link: '/products/npu'
     },
     {
       id: 2,
       name: 'EdgeGPT Model',
-      description: 'Pre-trained, inference-optimized models for instant deployments with low power consumption and high accuracy.',
-      image: 'images/Pitch 118.png',
+      tagline: 'Edge-Optimized Models for Real-World',
+      image: 'images/Pitch 118.png?auto=compress&cs=tinysrgb&w=800',
+      specs: ['NPU-aware Edge Models', 'Task-based architecture', 'Vision, Sound, Agentic','Multimodal, RAG-LLM', 'Real-word proven accuracy'],
+      badge: 'Model',
+      description: 'Pre-trained, inference-optimized models for instant deployments, low power with accuracy',
       link: '/products/model'
     },
     {
       id: 3,
       name: 'Edge AI Agentic',
-      description: 'Full-stack orchestration platform to train, develop, deploy, monitor and manage edge AI solutions seamlessly.',
-      image: 'images/Pitch 118(1).png',
+      tagline: 'Edge AI Orchestration Stack + Edge Agents',
+      image: 'images/Pitch 118(1).png?auto=compress&cs=tinysrgb&w=800',
+      specs: ['No Code', 'DevOpe lifecycle', 'Open Source', 'Edge AI Agents', 'Deploy in hours'],
+      badge: 'Agentic',
+      description: 'Full-stack orchestration to train, develop, deploy, monitor and repeat',
       link: '/products/agentic'
     }
   ];
@@ -29,91 +38,88 @@ const Products = () => {
   return (
     <section id="products" className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header Section */}
-        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between mb-20">
-          <div className="lg:max-w-3xl mb-8 lg:mb-0">
-            <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight tracking-tight">
-              Build software faster with Our Products
-            </h2>
-            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl">
-              Intelligent, fast, and powerful. EdgeGPT is the best way to deploy AI at the edge with unprecedented performance and efficiency for real-world applications.
-            </p>
-          </div>
-          <div className="flex-shrink-0 lg:ml-8">
-            <a 
-              href="#products-grid"
-              className="inline-flex items-center px-8 py-4 bg-white text-black hover:bg-white/90 rounded-2xl font-semibold transition-all duration-300 group text-lg"
-            >
-              See Products
-              <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
-          </div>
+        {/* Section Header */}
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Our <span className="text-white">Products</span>
+          </h2>
+          <p className="text-xl text-white max-w-3xl mx-auto">
+            Agentic Edge AI NPUs designed for diverse applications, from IoT devices, automotive and industrial automation
+          </p>
         </div>
 
         {/* Products Grid */}
-        <div id="products-grid" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
-            <div key={product.id} className="group relative bg-white/5 rounded-3xl border border-white/10 hover:border-white/20 transition-all duration-500 transform hover:-translate-y-2 overflow-hidden backdrop-blur-sm">
+            <div key={product.id} className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20">
               {/* Product Image */}
-              <div className="relative h-80 overflow-hidden rounded-t-3xl">
+              <div className="relative h-80 overflow-hidden bg-gradient-to-br from-white/10 to-white/5">
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
                   style={{
                     objectFit: 'cover',
                     objectPosition: 'center'
                   }}
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                    console.log(`Failed to load image: ${product.image}`);
-                  }}
                 />
-                {/* Subtle gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none"></div>
+                {/* Gradient Overlay for better text readability */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                
+                {/* Badge */}
+                <div className="absolute top-4 left-4 z-10">
+                  <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white text-black shadow-lg">
+                    {product.badge}
+                  </span>
+                </div>
               </div>
 
               {/* Product Content */}
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-white/90 transition-colors">
-                  {product.name}
-                </h3>
-                <p className="text-white/70 mb-8 leading-relaxed text-base">
-                  {product.description}
-                </p>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-2">{product.name}</h3>
+                <p className="text-white font-medium mb-3">{product.tagline}</p>
+                <p className="text-white mb-4 text-sm leading-relaxed">{product.description}</p>
+
+                {/* Specifications */}
+                <div className="mb-7">
+                  <h4 className="text-sm font-semibold text-white mb-2">Highlights:</h4>
+                  <ul className="space-y-1">
+                    {product.specs.map((spec, index) => (
+                      <li key={index} className="text-sm text-white flex items-center">
+                        <div className="w-1.5 h-1.5 bg-white rounded-full mr-2 flex-shrink-0"></div>
+                        {spec}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
                 {/* CTA Button */}
                 <a 
                   href={product.link}
-                  className="inline-flex items-center text-white hover:text-white/80 font-semibold transition-all duration-300 group/btn text-base"
+                  className="w-full bg-white/10 hover:bg-white hover:text-black text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20"
                 >
                   Learn More
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
-
-              {/* Hover effect overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl pointer-events-none"></div>
             </div>
           ))}
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-20">
-          <div className="bg-white/5 rounded-3xl p-8 md:p-12 border border-white/10 backdrop-blur-sm">
+        <div className="text-center mt-16">
+          <div className="bg-white/5 rounded-2xl p-8 md:p-12 border border-white/10">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
               Need a Custom Solution?
             </h3>
-            <p className="text-white/80 mb-8 max-w-2xl mx-auto">
+            <p className="text-white mb-6 max-w-2xl mx-auto">
               Our engineering team can develop tailored AI accelerators for your specific requirements and use cases.
             </p>
             <a 
               href="/contact-engineers"
-              className="inline-flex items-center bg-white text-black hover:bg-white/90 px-8 py-4 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105 group"
+              className="bg-white text-black hover:bg-white/90 px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105 inline-block"
             >
               Contact Our Engineers
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
         </div>
