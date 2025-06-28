@@ -42,7 +42,7 @@ const BlogPostPage = () => {
       author: 'Jagan Teki',
       authorRole: 'CEO & Founder',
       authorImage: 'https://www.edgeble.ai/a1.png?auto=compress&cs=tinysrgb&w=150',
-      date: '2024-07-15',
+      date: '2025-03-25',
       readTime: '4 min read',
       image: 'images/peak-xv-rajan-anandan.png',
       tags: ['Peak XV', 'Rajan Anandan', 'T-Hub'],

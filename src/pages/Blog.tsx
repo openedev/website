@@ -21,7 +21,7 @@ const BlogPage = () => {
         <p class="mb-6">The event showcased the vibrant and engaged founder community in Hyderabad, with entrepreneurs from various sectors coming together to learn and network despite the short notice.</p>
       `,
       author: 'Jagan Teki',
-      date: '2024-07-15',
+      date: '2025-03-25',
       readTime: '4 min read',
       image: 'images/peak-xv-rajan-anandan.png',
       tags: ['Peak XV', 'Rajan Anandan', 'T-Hub'],
