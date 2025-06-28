@@ -16,7 +16,7 @@ const Products = () => {
       id: 2,
       name: 'EdgeGPT Model',
       tagline: 'Edge-Optimized Models for Real-World',
-      image: 'images/Pitch 118.png?auto=compress&cs=tinysrgb&w=800',
+      image: 'images/edgegpt.png?auto=compress&cs=tinysrgb&w=800',
       badge: 'Model',
       description: 'Pre-trained, inference-optimized models for instant deployments, low power with accuracy',
       link: '/products/model'
