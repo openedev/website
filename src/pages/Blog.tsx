@@ -108,7 +108,7 @@ const BlogPage = () => {
       author: 'Jagan Teki',
       date: '2024-02-08',
       readTime: '7 min read',
-      image: 'images/Screenshot (13).png',
+      image: 'https://www.edgeble.ai/blog10.png',
       tags: ['AI Acceleration', 'Moscow', 'Edge Computing'],
       category: 'Technology'
     },
@@ -132,7 +132,7 @@ const BlogPage = () => {
       author: 'Alberto Bianchi',
       date: '2024-01-26',
       readTime: '5 min read',
-      image: 'images/Screenshot (14).png',
+      image: 'https://www.edgeble.ai/blog9.png',
       tags: ['DeepTech', 'YOLOv5', 'Real-time AI'],
       category: 'Technology'
     },
@@ -156,7 +156,7 @@ const BlogPage = () => {
       author: 'Srinivas Patnaik',
       date: '2024-01-12',
       readTime: '3 min read',
-      image: 'images/Screenshot (15).png',
+      image: 'https://www.edgeble.ai/blog8.png',
       tags: ['Sponsorship', 'DeepTech', 'Community'],
       category: 'Events'
     },
@@ -180,7 +180,7 @@ const BlogPage = () => {
       author: 'Chakrish Krishtam',
       date: '2024-11-05',
       readTime: '6 min read',
-      image: 'images/Screenshot (16).png',
+      image: 'https://www.edgeble.ai/blog7.png',
       tags: ['TinyML', 'Taipei', 'Edge AI Lifecycle'],
       category: 'Technology'
     },
@@ -204,15 +204,15 @@ const BlogPage = () => {
       author: 'Alberto Bianchi',
       date: '2024-10-15',
       readTime: '8 min read',
-      image: 'images/Screenshot (18).png',
+      image: 'https://www.edgeble.ai/blog6.webp',
       tags: ['Industrial', 'Battery Systems', 'Quality Control'],
       category: 'Industry'
     },
     {
       id: 10,
-      title: 'EdgeGPT NPU Architecture Deep Dive',
-      slug: 'edgegpt-npu-architecture-deep-dive',
-      excerpt: 'A comprehensive look at the innovative architecture behind our EdgeGPT NPU modules and how they deliver unprecedented performance at the edge.',
+      title: 'Edgeble at AI Hardware and Edge AI Summit 2024',
+      slug: 'Edgeble at AI Hardware and Edge AI Summit 2024',
+      excerpt: 'Summary of our participation at Edge AiI For Innovation & Impact.',
       content: `
         <p>Our EdgeGPT NPU represents a breakthrough in edge AI processing, featuring a novel architecture designed specifically for real-world deployment scenarios. This deep dive explores the technical innovations that make it possible.</p>
         
@@ -223,17 +223,17 @@ const BlogPage = () => {
         <p>With up to 32 TOPS of AI processing power while maintaining exceptional power efficiency, our NPU delivers the performance needed for demanding edge applications.</p>
       `,
       author: 'Alberto Bianchi',
-      date: '2024-01-15',
+      date: '2024-10-09',
       readTime: '8 min read',
-      image: 'https://images.pexels.com/photos/3584994/pexels-photo-3584994.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://www.edgeble.ai/blog4.webp?auto=compress&cs=tinysrgb&w=800',
       tags: ['NPU', 'Architecture', 'Performance'],
       category: 'Technology'
     },
     {
       id: 11,
-      title: 'Industrial AI Deployment Best Practices',
-      slug: 'industrial-ai-deployment-best-practices',
-      excerpt: 'Lessons learned from deploying AI solutions in industrial environments and best practices for successful edge AI implementations.',
+      title: 'Edgeble at Indian Mobile Congress 2023',
+      slug: 'Edgeble at Indian Mobile Congress 2023',
+      excerpt: 'Summary of our participation at Indian Mobile Congress 2023.',
       content: `
         <p>Deploying AI in industrial environments presents unique challenges that require careful consideration of reliability, safety, and performance requirements. Here are the key lessons we've learned.</p>
         
@@ -243,18 +243,18 @@ const BlogPage = () => {
         <h3>Safety First</h3>
         <p>Safety-critical applications require redundant systems, fail-safe mechanisms, and compliance with industry standards such as ISO 26262 for automotive applications.</p>
       `,
-      author: 'Priya Sharma',
-      date: '2023-12-20',
+      author: '#',
+      date: '2023-10-25',
       readTime: '7 min read',
-      image: 'https://images.pexels.com/photos/159298/gear-machine-mechanical-mechanical-engineering-159298.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://www.edgeble.ai/blog3.webp?auto=compress&cs=tinysrgb&w=800',
       tags: ['Industrial', 'Deployment', 'Best Practices'],
       category: 'Industry'
     },
     {
       id: 12,
-      title: 'The Future of Autonomous Vehicles with Edge AI',
-      slug: 'future-of-autonomous-vehicles-edge-ai',
-      excerpt: 'How edge AI is accelerating the development of autonomous vehicles and enabling real-time decision making for safer transportation.',
+      title: 'Edgeble at Edge Computing Expo Europe 2023',
+      slug: 'Edgeble at Edge Computing Expo Europe 2023',
+      excerpt: 'Recap of Edgeble presence at the Edge Computing Expo Europe 2023. Learn about our latest innovations and engagements with industry leaders.',
       content: `
         <p>Autonomous vehicles represent one of the most demanding applications for edge AI, requiring real-time processing of massive amounts of sensor data to make split-second decisions that ensure passenger safety.</p>
         
@@ -264,10 +264,10 @@ const BlogPage = () => {
         <h3>Safety and Reliability</h3>
         <p>Our automotive-grade AI accelerators are designed with redundancy and fail-safe mechanisms to meet the stringent safety requirements of autonomous vehicle applications.</p>
       `,
-      author: 'Michael Rodriguez',
-      date: '2023-11-10',
+      author: '#',
+      date: '2023-06-14',
       readTime: '6 min read',
-      image: 'https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://www.edgeble.ai/blog2.webp?auto=compress&cs=tinysrgb&w=800',
       tags: ['Autonomous Vehicles', 'Safety', 'Real-time'],
       category: 'Automotive'
     }
