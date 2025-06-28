@@ -108,7 +108,7 @@ const BlogPage = () => {
       author: 'Jagan Teki',
       date: '2024-02-08',
       readTime: '7 min read',
-      image: 'images/Screenshot (13).png',
+      image: 'https://www.edgeble.ai/blog10.png?auto=compress&cs=tinysrgb&w=800',
       tags: ['AI Acceleration', 'Moscow', 'Edge Computing'],
       category: 'Technology'
     },
@@ -132,7 +132,7 @@ const BlogPage = () => {
       author: 'Alberto Bianchi',
       date: '2024-01-26',
       readTime: '5 min read',
-      image: 'images/Screenshot (14).png',
+      image: 'https://www.edgeble.ai/blog9.png?auto=compress&cs=tinysrgb&w=800',
       tags: ['DeepTech', 'YOLOv5', 'Real-time AI'],
       category: 'Technology'
     },
@@ -156,7 +156,7 @@ const BlogPage = () => {
       author: 'Srinivas Patnaik',
       date: '2024-01-12',
       readTime: '3 min read',
-      image: 'images/Screenshot (15).png',
+      image: 'https://www.edgeble.ai/blog8.png?auto=compress&cs=tinysrgb&w=800',
       tags: ['Sponsorship', 'DeepTech', 'Community'],
       category: 'Events'
     },
@@ -180,7 +180,7 @@ const BlogPage = () => {
       author: 'Chakrish Krishtam',
       date: '2024-11-05',
       readTime: '6 min read',
-      image: 'images/Screenshot (16).png',
+      image: 'https://www.edgeble.ai/blog7.png?auto=compress&cs=tinysrgb&w=800',
       tags: ['TinyML', 'Taipei', 'Edge AI Lifecycle'],
       category: 'Technology'
     },
@@ -204,7 +204,7 @@ const BlogPage = () => {
       author: 'Alberto Bianchi',
       date: '2024-10-15',
       readTime: '8 min read',
-      image: 'images/Screenshot (18).png',
+      image: 'https://www.edgeble.ai/blog6.webp?auto=compress&cs=tinysrgb&w=800',
       tags: ['Industrial', 'Battery Systems', 'Quality Control'],
       category: 'Industry'
     },
@@ -243,7 +243,7 @@ const BlogPage = () => {
         <h3>Safety First</h3>
         <p>Safety-critical applications require redundant systems, fail-safe mechanisms, and compliance with industry standards such as ISO 26262 for automotive applications.</p>
       `,
-      author: '#',
+      author: 'Jagan Teki',
       date: '2023-10-25',
       readTime: '7 min read',
       image: 'https://www.edgeble.ai/blog3.webp?auto=compress&cs=tinysrgb&w=800',
@@ -264,7 +264,7 @@ const BlogPage = () => {
         <h3>Safety and Reliability</h3>
         <p>Our automotive-grade AI accelerators are designed with redundancy and fail-safe mechanisms to meet the stringent safety requirements of autonomous vehicle applications.</p>
       `,
-      author: '#',
+      author: 'Srinivas Patnaik',
       date: '2023-06-14',
       readTime: '6 min read',
       image: 'https://www.edgeble.ai/blog2.webp?auto=compress&cs=tinysrgb&w=800',
