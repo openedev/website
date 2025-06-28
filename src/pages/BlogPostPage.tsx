@@ -7,150 +7,146 @@ const BlogPostPage = () => {
   const { slug } = useParams();
 
   const blogPosts = {
-    'edgecore-ai-x1-wins-innovation-award': {
+    'speaking-at-ida-ireland-startup-roundtable': {
       id: 1,
-      title: 'EdgeCore AI-X1 Wins Innovation Award',
-      excerpt: 'Our flagship AI accelerator recognized at the International Edge Computing Summit 2024.',
+      title: 'Speaking at IDA Ireland Startup Roundtable',
+      excerpt: 'Excited to have been part of the IDA Ireland Startup Roundtable hosted at T-Hub. It was a great opportunity to share insights on startup innovation, global collaboration, and the growing synergy between India and Ireland in the tech and business space.',
       content: `
-        <p class="text-lg mb-6">We are thrilled to announce that our flagship EdgeCore AI-X1 has been recognized with the Innovation Award at the International Edge Computing Summit 2024. This prestigious award acknowledges our commitment to pushing the boundaries of edge AI technology.</p>
+        <p class="text-lg mb-6">We were honored to participate in the IDA Ireland Startup Roundtable, a prestigious event that brought together innovative startups and industry leaders to discuss the future of technology collaboration between India and Ireland.</p>
         
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Revolutionary Architecture</h3>
-        <p class="mb-6">The EdgeCore AI-X1 represents a breakthrough in edge AI processing, featuring our proprietary neural processing unit (NPU) architecture that delivers unprecedented performance per watt. With 32 TOPS of AI processing power in a compact form factor, it's designed for real-world deployment scenarios.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Key Discussion Points</h3>
+        <p class="mb-6">The roundtable focused on emerging technologies, cross-border partnerships, and the role of AI in driving innovation across industries. Our CEO shared insights on how edge AI is transforming manufacturing and industrial automation.</p>
         
         <div class="bg-white/5 rounded-xl p-6 mb-8 border border-white/10">
-          <h4 class="text-lg font-semibold text-white mb-3">Key Technical Specifications:</h4>
+          <h4 class="text-lg font-semibold text-white mb-3">Event Highlights:</h4>
           <ul class="space-y-2 text-white/80">
-            <li>• NPU Performance: 32 TOPS INT8, 16 TOPS INT4</li>
-            <li>• Power Efficiency: 2.5 TOPS/W</li>
-            <li>• Memory: 32GB LPDDR5</li>
-            <li>• Connectivity: PCIe 4.0, USB 3.2, Ethernet</li>
-            <li>• Operating Temperature: -20°C to +70°C</li>
+            <li>• Cross-border technology partnerships</li>
+            <li>• AI innovation in manufacturing</li>
+            <li>• Startup ecosystem development</li>
+            <li>• Future of India-Ireland collaboration</li>
           </ul>
         </div>
         
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Industry Recognition</h3>
-        <p class="mb-6">The award was presented by a panel of industry experts who evaluated solutions based on innovation, practical impact, and technical excellence. Our AI-X1 stood out for its unique approach to model-first design and seamless integration capabilities.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Building Bridges</h3>
+        <p class="mb-6">The event highlighted the growing synergy between Indian innovation and Irish business expertise, creating opportunities for meaningful partnerships in the AI and technology sectors.</p>
         
         <blockquote class="border-l-4 border-white pl-6 italic text-white/90 mb-8 bg-white/5 p-4 rounded-r-xl">
-          "The EdgeCore AI-X1 represents a paradigm shift in edge AI processing. Its model-first approach and exceptional power efficiency make it a game-changer for industrial applications." - Dr. Jennifer Walsh, Summit Evaluation Committee
+          "The collaboration between Indian startups and Irish enterprises represents a powerful combination of innovation and business acumen that can drive global technology advancement." - Event Moderator
         </blockquote>
+      `,
+      author: 'Jagan Teki',
+      authorRole: 'CEO & Founder',
+      authorImage: 'https://www.edgeble.ai/a1.png?auto=compress&cs=tinysrgb&w=150',
+      date: '2024-03-30',
+      readTime: '4 min read',
+      image: 'https://www.edgeble.ai/blog14.png?auto=compress&cs=tinysrgb&w=1200',
+      tags: ['Roundtable', 'Partnership', 'Innovation'],
+      category: 'Events'
+    },
+    'speaking-at-nasscom-ai-days-mumbai': {
+      id: 2,
+      title: 'Speaking at Nasscom AI Days, Mumbai',
+      excerpt: 'Edgeble AI was proud to be part of NASSCOM AI Days held in Mumbai — an event that brought together India\'s top minds in artificial intelligence, innovation, and enterprise technology.',
+      content: `
+        <p class="text-lg mb-6">NASSCOM AI Days Mumbai was a landmark event that showcased India's leadership in artificial intelligence and emerging technologies. We were privileged to present our vision for edge AI and its transformative potential.</p>
         
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Real-World Impact</h3>
-        <p class="mb-6">Since its launch, the EdgeCore AI-X1 has been deployed in over 50 industrial automation projects, delivering measurable improvements in quality control and predictive maintenance. Our customers report up to 85% reduction in defect rates and 40% improvement in operational efficiency.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Industry Leadership</h3>
+        <p class="mb-6">The event featured presentations from leading AI companies, researchers, and innovators, highlighting India's growing influence in the global AI landscape.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Edge AI Revolution</h3>
+        <p class="mb-6">Our presentation focused on how edge AI is revolutionizing industries by bringing intelligence closer to data sources, reducing latency, and enabling real-time decision making.</p>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           <div class="bg-white/5 rounded-xl p-6 text-center border border-white/10">
-            <div class="text-3xl font-bold text-white mb-2">85%</div>
-            <div class="text-white/70">Defect Reduction</div>
-          </div>
-          <div class="bg-white/5 rounded-xl p-6 text-center border border-white/10">
-            <div class="text-3xl font-bold text-white mb-2">40%</div>
-            <div class="text-white/70">Efficiency Improvement</div>
+            <div class="text-3xl font-bold text-white mb-2">500+</div>
+            <div class="text-white/70">Attendees</div>
           </div>
           <div class="bg-white/5 rounded-xl p-6 text-center border border-white/10">
             <div class="text-3xl font-bold text-white mb-2">50+</div>
-            <div class="text-white/70">Active Deployments</div>
+            <div class="text-white/70">AI Companies</div>
+          </div>
+          <div class="bg-white/5 rounded-xl p-6 text-center border border-white/10">
+            <div class="text-3xl font-bold text-white mb-2">3</div>
+            <div class="text-white/70">Days of Innovation</div>
           </div>
         </div>
-        
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Looking Forward</h3>
-        <p class="mb-6">This recognition validates our vision of bringing powerful AI capabilities to the edge. We're already working on the next generation of EdgeCore processors, which will deliver even greater performance and efficiency for emerging AI workloads.</p>
       `,
-      author: 'Dr. Rajesh Kumar',
-      authorRole: 'Lead AI Engineer',
-      authorImage: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150',
-      date: '2024-01-15',
+      author: 'Jagan Teki',
+      authorRole: 'CEO & Founder',
+      authorImage: 'https://www.edgeble.ai/a1.png?auto=compress&cs=tinysrgb&w=150',
+      date: '2024-03-25',
       readTime: '5 min read',
-      image: 'https://images.pexels.com/photos/3584994/pexels-photo-3584994.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      tags: ['Award', 'Innovation', 'EdgeCore AI-X1'],
-      category: 'Product News',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
-    },
-    'ai-at-the-edge-conference-2024': {
-      id: 2,
-      title: 'AI at the Edge Conference 2024',
-      excerpt: 'Join us at booth #A12 to see live demonstrations of our latest AI accelerators.',
-      content: `
-        <p class="text-lg mb-6">We're excited to participate in the AI at the Edge Conference 2024, taking place in San Francisco from February 22-24. This premier event brings together industry leaders, researchers, and innovators to explore the future of edge computing.</p>
-        
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Live Demonstrations</h3>
-        <p class="mb-6">Visit our booth #A12 to experience live demonstrations of our latest AI accelerators. Our team will showcase real-time inference capabilities across various use cases including computer vision, natural language processing, and predictive analytics.</p>
-        
-        <div class="bg-white/5 rounded-xl p-6 mb-8 border border-white/10">
-          <h4 class="text-lg font-semibold text-white mb-3">Demo Schedule:</h4>
-          <ul class="space-y-2 text-white/80">
-            <li>• 10:00 AM - Computer Vision for Quality Control</li>
-            <li>• 12:00 PM - Real-time Language Processing</li>
-            <li>• 2:00 PM - Predictive Maintenance Systems</li>
-            <li>• 4:00 PM - Autonomous Vehicle AI</li>
-          </ul>
-        </div>
-        
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Speaking Sessions</h3>
-        <p class="mb-6">Our CEO, Jagan Teki, will be presenting "The Future of Agentic AI at the Edge" on February 23rd at 2:00 PM. The session will cover emerging trends in edge AI and how agentic systems are transforming industrial applications.</p>
-        
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Networking Opportunities</h3>
-        <p class="mb-6">Join us for exclusive networking sessions where you can connect with our engineering team and discuss custom solutions for your specific requirements. We'll also be hosting a technical workshop on optimizing AI models for edge deployment.</p>
-      `,
-      author: 'Sarah Chen',
-      authorRole: 'Hardware Design Engineer',
-      authorImage: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=150',
-      date: '2024-02-22',
-      readTime: '3 min read',
-      image: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      tags: ['Conference', 'Event', 'Demonstration'],
+      image: 'https://www.edgeble.ai/blog13.png?auto=compress&cs=tinysrgb&w=1200',
+      tags: ['Conference', 'AI', 'Mumbai'],
       category: 'Events'
     },
-    'partnership-with-global-automotive-leader': {
+    'edgeble-at-thub-innovative-enclave-2025': {
       id: 3,
-      title: 'Partnership with Global Automotive Leader',
-      excerpt: 'Strategic collaboration to accelerate autonomous vehicle development with edge AI.',
+      title: 'Edgeble at T-Hub Innovative Enclave 2025',
+      excerpt: 'Edgeble AI was proud to participate in the T-Hub Innovative Enclave 2025 — a convergence of India\'s most forward-thinking startups and ecosystem leaders.',
       content: `
-        <p class="text-lg mb-6">We are proud to announce a strategic partnership with a leading global automotive manufacturer to accelerate the development of autonomous vehicle technologies using our edge AI solutions.</p>
+        <p class="text-lg mb-6">The T-Hub Innovative Enclave 2025 brought together the most promising startups and technology leaders from across India. As participants, we had the opportunity to showcase our edge AI solutions and connect with fellow innovators.</p>
         
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Collaborative Innovation</h3>
-        <p class="mb-6">This partnership combines our cutting-edge AI accelerators with decades of automotive expertise to create next-generation ADAS (Advanced Driver Assistance Systems) and autonomous driving capabilities. Our EdgeCore automotive-grade modules will power real-time decision making in vehicles.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Innovation Showcase</h3>
+        <p class="mb-6">The event featured live demonstrations of cutting-edge technologies, with our EdgeGPT platform receiving significant attention from investors and industry partners.</p>
         
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Safety First Approach</h3>
-        <p class="mb-6">Safety is paramount in automotive applications. Our AI accelerators are designed with redundancy and fail-safe mechanisms to ensure reliable operation in critical driving scenarios. The partnership will focus on developing ISO 26262 compliant solutions for functional safety.</p>
-        
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Market Impact</h3>
-        <p class="mb-6">This collaboration is expected to accelerate the deployment of Level 3 and Level 4 autonomous vehicles, bringing advanced safety features to market faster. The partnership will initially focus on highway automation and urban driving assistance systems.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Ecosystem Building</h3>
+        <p class="mb-6">The enclave emphasized the importance of building strong startup ecosystems and fostering collaboration between technology companies, investors, and government initiatives.</p>
       `,
-      author: 'Michael Rodriguez',
-      authorRole: 'Software Integration Engineer',
-      authorImage: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=150',
-      date: '2024-01-08',
-      readTime: '4 min read',
-      image: 'https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      tags: ['Partnership', 'Automotive', 'Autonomous Vehicles'],
-      category: 'Business News'
+      author: 'Srinivas Patnaik',
+      authorRole: 'Strategy Analyst',
+      authorImage: 'https://www.edgeble.ai/a5.png?auto=compress&cs=tinysrgb&w=150',
+      date: '2024-12-03',
+      readTime: '3 min read',
+      image: 'https://www.edgeble.ai/blog12.png?auto=compress&cs=tinysrgb&w=1200',
+      tags: ['T-Hub', 'Innovation', 'Startup'],
+      category: 'Events'
     },
-    'edgecore-pro-x2-industrial-launch': {
+    'speaking-at-cie-iiit-avishkar-2024': {
       id: 4,
-      title: 'EdgeCore Pro-X2 Industrial Launch',
-      excerpt: 'New ruggedized AI module designed for extreme industrial environments now available.',
+      title: 'Speaking at CIE-IIIT Avishkar 2024',
+      excerpt: 'About TinyML Taipei 2024, About Edgeble AI Participation, End-to-End Edge AI Lifecycle.',
       content: `
-        <p class="text-lg mb-6">Today marks the official launch of our EdgeCore Pro-X2, a ruggedized AI module specifically designed for extreme industrial environments. This new addition to our product line addresses the growing demand for AI processing in harsh conditions.</p>
+        <p class="text-lg mb-6">The CIE-IIIT Avishkar 2024 conference provided an excellent platform to discuss the latest developments in TinyML and edge AI technologies. Our presentation covered the complete lifecycle of edge AI development and deployment.</p>
         
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Extreme Environment Ready</h3>
-        <p class="mb-6">The EdgeCore Pro-X2 is built to withstand temperatures from -40°C to +85°C, with IP67 rating for dust and water resistance. It features enhanced vibration resistance and electromagnetic interference (EMI) shielding, making it ideal for heavy industrial applications.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">TinyML Revolution</h3>
+        <p class="mb-6">We explored how TinyML is enabling AI capabilities on resource-constrained devices, opening new possibilities for IoT and embedded systems applications.</p>
         
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Enhanced Performance</h3>
-        <p class="mb-6">Despite its rugged design, the Pro-X2 delivers exceptional AI performance with 48 TOPS of processing power and support for multiple AI frameworks. The module includes advanced thermal management to maintain peak performance even in extreme conditions.</p>
-        
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Industry Applications</h3>
-        <p class="mb-6">The EdgeCore Pro-X2 is already being deployed in mining operations, oil and gas facilities, and manufacturing plants where traditional computing solutions fail. Early adopters report significant improvements in predictive maintenance and operational safety.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">End-to-End Solutions</h3>
+        <p class="mb-6">Our talk emphasized the importance of considering the entire AI lifecycle, from model development and optimization to deployment and monitoring at the edge.</p>
       `,
-      author: 'Priya Sharma',
-      authorRole: 'Solutions Architect',
-      authorImage: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=150',
-      date: '2023-12-20',
+      author: 'Chakrish Krishtam',
+      authorRole: 'AI/ML Engineer',
+      authorImage: 'https://www.edgeble.ai/chakrish.png?auto=compress&cs=tinysrgb&w=150',
+      date: '2024-02-24',
       readTime: '6 min read',
-      image: 'https://images.pexels.com/photos/159298/gear-machine-mechanical-mechanical-engineering-159298.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      tags: ['Product Launch', 'Industrial', 'Ruggedized'],
-      category: 'Product News'
-    }
+      image: 'https://www.edgeble.ai/blog11.png?auto=compress&cs=tinysrgb&w=1200',
+      tags: ['TinyML', 'Conference', 'AI Lifecycle'],
+      category: 'Technology'
+    },
+    'edgegpt-npu-architecture-deep-dive': {
+      id: 5,
+      title: 'EdgeGPT NPU Architecture Deep Dive',
+      excerpt: 'A comprehensive look at the innovative architecture behind our EdgeGPT NPU modules and how they deliver unprecedented performance at the edge.',
+      content: `
+        <p class="text-lg mb-6">Our EdgeGPT NPU represents a breakthrough in edge AI processing, featuring a novel architecture designed specifically for real-world deployment scenarios. This deep dive explores the technical innovations that make it possible.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Revolutionary Design</h3>
+        <p class="mb-6">The EdgeGPT NPU features a heterogeneous computing architecture that combines specialized AI processing units with traditional CPU cores, optimized for different types of AI workloads.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Performance Metrics</h3>
+        <p class="mb-6">With up to 32 TOPS of AI processing power while maintaining exceptional power efficiency, our NPU delivers the performance needed for demanding edge applications.</p>
+      `,
+      author: 'Alberto Bianchi',
+      authorRole: 'Hardware Engineer',
+      authorImage: 'https://www.edgeble.ai/a4.png?auto=compress&cs=tinysrgb&w=150',
+      date: '2024-01-15',
+      readTime: '8 min read',
+      image: 'https://images.pexels.com/photos/3584994/pexels-photo-3584994.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      tags: ['NPU', 'Architecture', 'Performance'],
+      category: 'Technology'
+    },
+    // Add more blog posts with the same structure...
   };
 
   const post = blogPosts[slug as keyof typeof blogPosts];
@@ -245,21 +241,6 @@ const BlogPostPage = () => {
           />
         </div>
 
-        {/* Video Embed (if available) */}
-        {post.videoUrl && (
-          <div className="mt-12 mb-8">
-            <h3 className="text-2xl font-bold text-white mb-4">Watch the Demo</h3>
-            <div className="relative aspect-video rounded-xl overflow-hidden">
-              <iframe
-                src={post.videoUrl}
-                title="Video demonstration"
-                className="w-full h-full"
-                allowFullScreen
-              />
-            </div>
-          </div>
-        )}
-
         {/* Tags */}
         <div className="mt-12 mb-8">
           <h4 className="text-lg font-semibold text-white mb-4 flex items-center">
@@ -305,8 +286,8 @@ const BlogPostPage = () => {
               <h4 className="text-lg font-semibold text-white mb-1">{post.author}</h4>
               <p className="text-white/60 text-sm mb-2">{post.authorRole}</p>
               <p className="text-white/80 text-sm">
-                {post.author} is a key member of our engineering team, specializing in AI hardware design and optimization. 
-                With over 10 years of experience in the field, they lead our efforts in developing next-generation edge AI solutions.
+                {post.author} is a key member of our team, specializing in edge AI innovation and technology development. 
+                With extensive experience in the field, they lead our efforts in developing next-generation edge AI solutions.
               </p>
             </div>
           </div>
