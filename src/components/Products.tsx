@@ -8,7 +8,6 @@ const Products = () => {
       name: 'EdgeGPT NPU Chips',
       tagline: 'Ultra-fast inference modules',
       image: 'https://www.edgeble.ai/Home-aia.png?auto=compress&cs=tinysrgb&w=800',
-      specs: ['NPU: 6/32TOPS', 'CPU: ARM Cortex-A76', 'LPDDR5: 32GB', 'Form factor: SoM, PCIe', 'Future: Easy to Swap/Upgrade' ],
       badge: 'Chip',
       description: 'Model-first NPUs co-designed with EdgeGPT to guarantee predictable latency and power',
       link: '/products/npu'
@@ -18,7 +17,6 @@ const Products = () => {
       name: 'EdgeGPT Model',
       tagline: 'Edge-Optimized Models for Real-World',
       image: 'images/Pitch 118.png?auto=compress&cs=tinysrgb&w=800',
-      specs: ['NPU-aware Edge Models', 'Task-based architecture', 'Vision, Sound, Agentic','Multimodal, RAG-LLM', 'Real-word proven accuracy'],
       badge: 'Model',
       description: 'Pre-trained, inference-optimized models for instant deployments, low power with accuracy',
       link: '/products/model'
@@ -28,7 +26,6 @@ const Products = () => {
       name: 'Edge AI Agentic',
       tagline: 'Edge AI Orchestration Stack + Edge Agents',
       image: 'images/Pitch 118(1).png?auto=compress&cs=tinysrgb&w=800',
-      specs: ['No Code', 'DevOpe lifecycle', 'Open Source', 'Edge AI Agents', 'Deploy in hours'],
       badge: 'Agentic',
       description: 'Full-stack orchestration to train, develop, deploy, monitor and repeat',
       link: '/products/agentic'
@@ -39,13 +36,20 @@ const Products = () => {
     <section id="products" className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Our <span className="text-white">Products</span>
-          </h2>
-          <p className="text-xl text-white max-w-3xl mx-auto">
-            Agentic Edge AI NPUs designed for diverse applications, from IoT devices, automotive and industrial automation
-          </p>
+        <div className="flex items-center justify-between mb-20">
+          <div>
+            <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+              Our Products
+            </h2>
+            <p className="text-xl text-white max-w-3xl">
+              Agentic Edge AI NPUs designed for diverse applications, from IoT devices, automotive and industrial automation
+            </p>
+          </div>
+          <div>
+            <button className="bg-white text-black hover:bg-white/90 px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105">
+              See Products
+            </button>
+          </div>
         </div>
 
         {/* Products Grid */}
@@ -78,20 +82,7 @@ const Products = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-2">{product.name}</h3>
                 <p className="text-white font-medium mb-3">{product.tagline}</p>
-                <p className="text-white mb-4 text-sm leading-relaxed">{product.description}</p>
-
-                {/* Specifications */}
-                <div className="mb-7">
-                  <h4 className="text-sm font-semibold text-white mb-2">Highlights:</h4>
-                  <ul className="space-y-1">
-                    {product.specs.map((spec, index) => (
-                      <li key={index} className="text-sm text-white flex items-center">
-                        <div className="w-1.5 h-1.5 bg-white rounded-full mr-2 flex-shrink-0"></div>
-                        {spec}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <p className="text-white mb-6 text-sm leading-relaxed">{product.description}</p>
 
                 {/* CTA Button */}
                 <a 
