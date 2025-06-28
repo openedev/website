@@ -79,13 +79,13 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative overflow-hidden rounded-2xl">
             <img 
               src="images/home.png"
               alt="Agentic Edge AI Chip"
-              className="rounded-2xl shadow-2xl w-full h-full object-contain bg-white/5 p-8"
+              className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
           </div>
         </div>
 
