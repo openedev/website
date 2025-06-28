@@ -6,8 +6,8 @@ const BlogPage = () => {
   const blogPosts = [
     {
       id: 1,
-      title: 'Pitching at Beyond Borders: The Era of Agentic AI by EY',
-      slug: 'pitching-at-beyond-borders-the-era-of-agentic-ai-by-ey',
+      title: 'Pitching at Beyond Borders: The Era of Agentic AI',
+      slug: 'pitching-at-beyond-borders-the-era-of-agentic-ai',
       excerpt: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.',
       content: `
         <p class="text-lg mb-6">T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.</p>
@@ -339,7 +339,9 @@ const BlogPage = () => {
                 <img 
                   src={post.image} 
                   alt={post.title}
-                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                  className={`w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 ${
+                    post.id === 1 ? 'beyond-borders-image' : ''
+                  }`}
                   style={{
                     objectFit: 'cover',
                     objectPosition: 'center'
