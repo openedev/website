@@ -10,13 +10,13 @@ const BlogPage = () => {
       slug: 'speaking-at-ida-ireland-startup-roundtable',
       excerpt: 'Excited to have been part of the IDA Ireland Startup Roundtable hosted at T-Hub. It was a great opportunity to share insights on startup innovation, global collaboration, and the growing synergy between India and Ireland in the tech and business space.',
       content: `
-        <p>We were honored to participate in the IDA Ireland Startup Roundtable, a prestigious event that brought together innovative startups and industry leaders to discuss the future of technology collaboration between India and Ireland.</p>
+        <p class="text-lg mb-6">We were honored to participate in the IDA Ireland Startup Roundtable, a prestigious event that brought together innovative startups and industry leaders to discuss the future of technology collaboration between India and Ireland.</p>
         
-        <h3>Key Discussion Points</h3>
-        <p>The roundtable focused on emerging technologies, cross-border partnerships, and the role of AI in driving innovation across industries. Our CEO shared insights on how edge AI is transforming manufacturing and industrial automation.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Key Discussion Points</h3>
+        <p class="mb-6">The roundtable focused on emerging technologies, cross-border partnerships, and the role of AI in driving innovation across industries. Our CEO shared insights on how edge AI is transforming manufacturing and industrial automation.</p>
         
-        <h3>Building Bridges</h3>
-        <p>The event highlighted the growing synergy between Indian innovation and Irish business expertise, creating opportunities for meaningful partnerships in the AI and technology sectors.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Building Bridges</h3>
+        <p class="mb-6">The event highlighted the growing synergy between Indian innovation and Irish business expertise, creating opportunities for meaningful partnerships in the AI and technology sectors.</p>
       `,
       author: 'Jagan Teki',
       date: '2024-03-30',
@@ -31,13 +31,13 @@ const BlogPage = () => {
       slug: 'speaking-at-nasscom-ai-days-mumbai',
       excerpt: 'Edgeble AI was proud to be part of NASSCOM AI Days held in Mumbai — an event that brought together India\'s top minds in artificial intelligence, innovation, and enterprise technology.',
       content: `
-        <p>NASSCOM AI Days Mumbai was a landmark event that showcased India's leadership in artificial intelligence and emerging technologies. We were privileged to present our vision for edge AI and its transformative potential.</p>
+        <p class="text-lg mb-6">NASSCOM AI Days Mumbai was a landmark event that showcased India's leadership in artificial intelligence and emerging technologies. We were privileged to present our vision for edge AI and its transformative potential.</p>
         
-        <h3>Industry Leadership</h3>
-        <p>The event featured presentations from leading AI companies, researchers, and innovators, highlighting India's growing influence in the global AI landscape.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Industry Leadership</h3>
+        <p class="mb-6">The event featured presentations from leading AI companies, researchers, and innovators, highlighting India's growing influence in the global AI landscape.</p>
         
-        <h3>Edge AI Revolution</h3>
-        <p>Our presentation focused on how edge AI is revolutionizing industries by bringing intelligence closer to data sources, reducing latency, and enabling real-time decision making.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Edge AI Revolution</h3>
+        <p class="mb-6">Our presentation focused on how edge AI is revolutionizing industries by bringing intelligence closer to data sources, reducing latency, and enabling real-time decision making.</p>
       `,
       author: 'Jagan Teki',
       date: '2024-03-25',
@@ -52,13 +52,13 @@ const BlogPage = () => {
       slug: 'edgeble-at-thub-innovative-enclave-2025',
       excerpt: 'Edgeble AI was proud to participate in the T-Hub Innovative Enclave 2025 — a convergence of India\'s most forward-thinking startups and ecosystem leaders.',
       content: `
-        <p>The T-Hub Innovative Enclave 2025 brought together the most promising startups and technology leaders from across India. As participants, we had the opportunity to showcase our edge AI solutions and connect with fellow innovators.</p>
+        <p class="text-lg mb-6">The T-Hub Innovative Enclave 2025 brought together the most promising startups and technology leaders from across India. As participants, we had the opportunity to showcase our edge AI solutions and connect with fellow innovators.</p>
         
-        <h3>Innovation Showcase</h3>
-        <p>The event featured live demonstrations of cutting-edge technologies, with our EdgeGPT platform receiving significant attention from investors and industry partners.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Innovation Showcase</h3>
+        <p class="mb-6">The event featured live demonstrations of cutting-edge technologies, with our EdgeGPT platform receiving significant attention from investors and industry partners.</p>
         
-        <h3>Ecosystem Building</h3>
-        <p>The enclave emphasized the importance of building strong startup ecosystems and fostering collaboration between technology companies, investors, and government initiatives.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Ecosystem Building</h3>
+        <p class="mb-6">The enclave emphasized the importance of building strong startup ecosystems and fostering collaboration between technology companies, investors, and government initiatives.</p>
       `,
       author: 'Srinivas Patnaik',
       date: '2024-12-03',
@@ -73,13 +73,13 @@ const BlogPage = () => {
       slug: 'speaking-at-cie-iiit-avishkar-2024',
       excerpt: 'About TinyML Taipei 2024, About Edgeble AI Participation, End-to-End Edge AI Lifecycle.',
       content: `
-        <p>The CIE-IIIT Avishkar 2024 conference provided an excellent platform to discuss the latest developments in TinyML and edge AI technologies. Our presentation covered the complete lifecycle of edge AI development and deployment.</p>
+        <p class="text-lg mb-6">The CIE-IIIT Avishkar 2024 conference provided an excellent platform to discuss the latest developments in TinyML and edge AI technologies. Our presentation covered the complete lifecycle of edge AI development and deployment.</p>
         
-        <h3>TinyML Revolution</h3>
-        <p>We explored how TinyML is enabling AI capabilities on resource-constrained devices, opening new possibilities for IoT and embedded systems applications.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">TinyML Revolution</h3>
+        <p class="mb-6">We explored how TinyML is enabling AI capabilities on resource-constrained devices, opening new possibilities for IoT and embedded systems applications.</p>
         
-        <h3>End-to-End Solutions</h3>
-        <p>Our talk emphasized the importance of considering the entire AI lifecycle, from model development and optimization to deployment and monitoring at the edge.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">End-to-End Solutions</h3>
+        <p class="mb-6">Our talk emphasized the importance of considering the entire AI lifecycle, from model development and optimization to deployment and monitoring at the edge.</p>
       `,
       author: 'Chakrish Krishtam',
       date: '2024-02-24',
@@ -94,21 +94,21 @@ const BlogPage = () => {
       slug: 'speaking-at-aij-moscow-2024',
       excerpt: 'The Future of AI Acceleration: Transforming Edge Computing for Tomorrow\'s Industries. Speaking on the future of AI acceleration and how edge computing is transforming industries.',
       content: `
-        <p>AIJ Moscow 2024 provided an exceptional platform to discuss the future of AI acceleration and its impact on transforming edge computing for tomorrow's industries. Our presentation explored cutting-edge developments in AI hardware and software optimization.</p>
+        <p class="text-lg mb-6">AIJ Moscow 2024 provided an exceptional platform to discuss the future of AI acceleration and its impact on transforming edge computing for tomorrow's industries. Our presentation explored cutting-edge developments in AI hardware and software optimization.</p>
         
-        <h3>AI Acceleration Trends</h3>
-        <p>We discussed the latest trends in AI acceleration, including specialized neural processing units, model optimization techniques, and the shift towards edge-first AI architectures.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">AI Acceleration Trends</h3>
+        <p class="mb-6">We discussed the latest trends in AI acceleration, including specialized neural processing units, model optimization techniques, and the shift towards edge-first AI architectures.</p>
         
-        <h3>Industry Transformation</h3>
-        <p>The presentation highlighted how AI acceleration is enabling new use cases across industries, from autonomous vehicles to smart manufacturing and healthcare applications.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Industry Transformation</h3>
+        <p class="mb-6">The presentation highlighted how AI acceleration is enabling new use cases across industries, from autonomous vehicles to smart manufacturing and healthcare applications.</p>
         
-        <h3>Future Outlook</h3>
-        <p>We shared our vision for the future of edge AI, emphasizing the importance of model-first design and the role of specialized hardware in enabling widespread AI adoption.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Future Outlook</h3>
+        <p class="mb-6">We shared our vision for the future of edge AI, emphasizing the importance of model-first design and the role of specialized hardware in enabling widespread AI adoption.</p>
       `,
       author: 'Jagan Teki',
       date: '2024-02-08',
       readTime: '7 min read',
-      image: 'https://www.edgeble.ai/blog10.png',
+      image: 'images/Screenshot (13).png',
       tags: ['AI Acceleration', 'Moscow', 'Edge Computing'],
       category: 'Technology'
     },
@@ -118,21 +118,21 @@ const BlogPage = () => {
       slug: 'edgeble-at-deeptech-gfst-2024-india',
       excerpt: 'Pushing the Limits of Edge AI: 60FPS Live YOLOv5 Object Detection on Edgeble AI\'s 6TOPS Edge AI Accelerator Modules. Demonstrating real-time AI capabilities at the edge.',
       content: `
-        <p>At DeepTech GFST 2024 India, we demonstrated the incredible capabilities of our edge AI accelerator modules by showcasing 60FPS live YOLOv5 object detection running on our 6TOPS Edge AI Accelerator.</p>
+        <p class="text-lg mb-6">At DeepTech GFST 2024 India, we demonstrated the incredible capabilities of our edge AI accelerator modules by showcasing 60FPS live YOLOv5 object detection running on our 6TOPS Edge AI Accelerator.</p>
         
-        <h3>Real-Time Performance</h3>
-        <p>Our demonstration proved that edge AI can deliver real-time performance for demanding computer vision applications, achieving 60 frames per second object detection without compromising accuracy.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Real-Time Performance</h3>
+        <p class="mb-6">Our demonstration proved that edge AI can deliver real-time performance for demanding computer vision applications, achieving 60 frames per second object detection without compromising accuracy.</p>
         
-        <h3>Technical Innovation</h3>
-        <p>The 6TOPS Edge AI Accelerator represents a breakthrough in edge computing, delivering unprecedented performance in a compact, power-efficient form factor suitable for industrial deployments.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Technical Innovation</h3>
+        <p class="mb-6">The 6TOPS Edge AI Accelerator represents a breakthrough in edge computing, delivering unprecedented performance in a compact, power-efficient form factor suitable for industrial deployments.</p>
         
-        <h3>Industry Impact</h3>
-        <p>This level of performance opens new possibilities for real-time AI applications in manufacturing, automotive, and security sectors where low latency and high accuracy are critical.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Industry Impact</h3>
+        <p class="mb-6">This level of performance opens new possibilities for real-time AI applications in manufacturing, automotive, and security sectors where low latency and high accuracy are critical.</p>
       `,
       author: 'Alberto Bianchi',
       date: '2024-01-26',
       readTime: '5 min read',
-      image: 'https://www.edgeble.ai/blog9.png',
+      image: 'images/Screenshot (14).png',
       tags: ['DeepTech', 'YOLOv5', 'Real-time AI'],
       category: 'Technology'
     },
@@ -142,21 +142,21 @@ const BlogPage = () => {
       slug: 'edgeble-sponsor-deeptech-gfst-2024-india',
       excerpt: 'We would like to express our sincere gratitude to our sponsors and event partners. A big Thank you to our Lanyard Sponsor! Edgeble AI supporting the DeepTech ecosystem.',
       content: `
-        <p>We were proud to sponsor DeepTech GFST 2024 India, demonstrating our commitment to supporting the deep technology ecosystem and fostering innovation in AI and emerging technologies.</p>
+        <p class="text-lg mb-6">We were proud to sponsor DeepTech GFST 2024 India, demonstrating our commitment to supporting the deep technology ecosystem and fostering innovation in AI and emerging technologies.</p>
         
-        <h3>Supporting Innovation</h3>
-        <p>As a lanyard sponsor, we had the opportunity to connect with researchers, entrepreneurs, and technology leaders who are driving the future of deep tech in India.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Supporting Innovation</h3>
+        <p class="mb-6">As a lanyard sponsor, we had the opportunity to connect with researchers, entrepreneurs, and technology leaders who are driving the future of deep tech in India.</p>
         
-        <h3>Ecosystem Building</h3>
-        <p>Our sponsorship reflects our belief in the importance of building strong technology ecosystems that support innovation, collaboration, and knowledge sharing.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Ecosystem Building</h3>
+        <p class="mb-6">Our sponsorship reflects our belief in the importance of building strong technology ecosystems that support innovation, collaboration, and knowledge sharing.</p>
         
-        <h3>Community Engagement</h3>
-        <p>Events like GFST provide valuable platforms for the deep tech community to come together, share insights, and explore new opportunities for collaboration and growth.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Community Engagement</h3>
+        <p class="mb-6">Events like GFST provide valuable platforms for the deep tech community to come together, share insights, and explore new opportunities for collaboration and growth.</p>
       `,
       author: 'Srinivas Patnaik',
       date: '2024-01-12',
       readTime: '3 min read',
-      image: 'https://www.edgeble.ai/blog8.png',
+      image: 'images/Screenshot (15).png',
       tags: ['Sponsorship', 'DeepTech', 'Community'],
       category: 'Events'
     },
@@ -166,21 +166,21 @@ const BlogPage = () => {
       slug: 'edgeble-at-tinyml-taipei-2024-innovation',
       excerpt: 'End-to-End Edge AI Lifecycle with Real-Time, On-Device AI. Powered by EdgeGPT Pre-trained Edge AI Accelerators. Showcasing our comprehensive edge AI solutions.',
       content: `
-        <p>TinyML Taipei 2024 Innovation Showcase provided the perfect venue to demonstrate our end-to-end edge AI lifecycle capabilities, powered by EdgeGPT pre-trained edge AI accelerators.</p>
+        <p class="text-lg mb-6">TinyML Taipei 2024 Innovation Showcase provided the perfect venue to demonstrate our end-to-end edge AI lifecycle capabilities, powered by EdgeGPT pre-trained edge AI accelerators.</p>
         
-        <h3>Complete AI Lifecycle</h3>
-        <p>We showcased how our platform supports the entire AI development lifecycle, from model training and optimization to deployment and monitoring on edge devices.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Complete AI Lifecycle</h3>
+        <p class="mb-6">We showcased how our platform supports the entire AI development lifecycle, from model training and optimization to deployment and monitoring on edge devices.</p>
         
-        <h3>Real-Time Capabilities</h3>
-        <p>Our demonstration highlighted real-time, on-device AI processing capabilities that enable immediate decision-making without cloud dependencies.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Real-Time Capabilities</h3>
+        <p class="mb-6">Our demonstration highlighted real-time, on-device AI processing capabilities that enable immediate decision-making without cloud dependencies.</p>
         
-        <h3>TinyML Innovation</h3>
-        <p>The event emphasized the growing importance of TinyML in enabling AI capabilities on resource-constrained devices, opening new possibilities for IoT and embedded applications.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">TinyML Innovation</h3>
+        <p class="mb-6">The event emphasized the growing importance of TinyML in enabling AI capabilities on resource-constrained devices, opening new possibilities for IoT and embedded applications.</p>
       `,
       author: 'Chakrish Krishtam',
       date: '2024-11-05',
       readTime: '6 min read',
-      image: 'https://www.edgeble.ai/blog7.png',
+      image: 'images/Screenshot (16).png',
       tags: ['TinyML', 'Taipei', 'Edge AI Lifecycle'],
       category: 'Technology'
     },
@@ -190,21 +190,21 @@ const BlogPage = () => {
       slug: 'industrial-future-summit-2024',
       excerpt: 'Revolutionising Vehicle Battery System Welding Inspection with Edge AI. We\'re participating! Industrial Future Summit - The leading event for Future Builders in Stockholm.',
       content: `
-        <p>Industrial Future Summit 2024 in Stockholm brought together industry leaders to discuss the future of manufacturing and industrial automation. We were excited to participate and share our vision for edge AI in industrial applications.</p>
+        <p class="text-lg mb-6">Industrial Future Summit 2024 in Stockholm brought together industry leaders to discuss the future of manufacturing and industrial automation. We were excited to participate and share our vision for edge AI in industrial applications.</p>
         
-        <h3>Vehicle Battery Innovation</h3>
-        <p>Our presentation focused on revolutionizing vehicle battery system welding inspection using edge AI, demonstrating how real-time AI analysis can improve quality control and safety in automotive manufacturing.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Vehicle Battery Innovation</h3>
+        <p class="mb-6">Our presentation focused on revolutionizing vehicle battery system welding inspection using edge AI, demonstrating how real-time AI analysis can improve quality control and safety in automotive manufacturing.</p>
         
-        <h3>Challenges in Vehicle Battery Welding</h3>
-        <p>Commercial vehicle battery systems contain a growing number of laser welds that are crucial to their functionality. The assembly of these systems requires precise quality control to ensure safety and performance.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Challenges in Vehicle Battery Welding</h3>
+        <p class="mb-6">Commercial vehicle battery systems contain a growing number of laser welds that are crucial to their functionality. The assembly of these systems requires precise quality control to ensure safety and performance.</p>
         
-        <h3>Edge AI Solutions</h3>
-        <p>By deploying AI at the edge, we eliminate delays, protect data privacy, and enable swift, actionable insights to maintain high-quality standards in battery manufacturing processes.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Edge AI Solutions</h3>
+        <p class="mb-6">By deploying AI at the edge, we eliminate delays, protect data privacy, and enable swift, actionable insights to maintain high-quality standards in battery manufacturing processes.</p>
       `,
       author: 'Alberto Bianchi',
       date: '2024-10-15',
       readTime: '8 min read',
-      image: 'https://www.edgeble.ai/blog6.webp',
+      image: 'images/Screenshot (18).png',
       tags: ['Industrial', 'Battery Systems', 'Quality Control'],
       category: 'Industry'
     },
@@ -212,7 +212,7 @@ const BlogPage = () => {
       id: 10,
       title: 'Edgeble at AI Hardware and Edge AI Summit 2024',
       slug: 'Edgeble at AI Hardware and Edge AI Summit 2024',
-      excerpt: 'Summary of our participation at Edge AiI For Innovation & Impact.',
+      excerpt: 'Summary of our participation at Edge AI For Innovation & Impact.',
       content: `
         <p>Our EdgeGPT NPU represents a breakthrough in edge AI processing, featuring a novel architecture designed specifically for real-world deployment scenarios. This deep dive explores the technical innovations that make it possible.</p>
         
@@ -310,11 +310,15 @@ const BlogPage = () => {
           {blogPosts.map((post) => (
             <div key={post.id} className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20">
               {/* Image */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-64 overflow-hidden">
                 <img 
                   src={post.image} 
                   alt={post.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
+                  style={{
+                    objectFit: 'cover',
+                    objectPosition: 'center'
+                  }}
                 />
                 {/* Badge */}
                 <div className="absolute top-4 left-4">
@@ -323,7 +327,7 @@ const BlogPage = () => {
                   </span>
                 </div>
                 {/* Date */}
-                <div className="absolute bottom-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg px-3 py-1">
+                <div className="absolute bottom-4 right-4 bg-black/70 backdrop-blur-sm rounded-lg px-3 py-1">
                   <div className="flex items-center text-white text-sm">
                     <Calendar className="w-4 h-4 mr-2" />
                     {formatDate(post.date)}
