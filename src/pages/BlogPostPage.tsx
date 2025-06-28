@@ -7,8 +7,49 @@ const BlogPostPage = () => {
   const { slug } = useParams();
 
   const blogPosts = {
-    'pitching-at-beyond-borders-the-era-of-agentic-ai': {
+    'pitching-at-peak-xv-rajan-anandan': {
       id: 1,
+      title: 'Pitching at Peak XV, Rajan Anandan',
+      excerpt: 'With T-Hub, Edgeble is honored to pitch with Rajan Anandan, Managing Director at Peak XV Partners (formerly Sequoia Capital India & SEA). From AI trends to the future of startups in India, the insights shared were as sharp as they were inspiring.',
+      content: `
+        <p class="text-lg mb-6">With T-Hub, Edgeble is honored to pitch with Rajan Anandan, Managing Director at Peak XV Partners (formerly Sequoia Capital India & SEA). From AI trends to the future of startups in India, the insights shared were as sharp as they were inspiring.</p>
+        
+        <p class="mb-6">It was great to see Hyderabad's incredible founder community show up on short notice, bringing curiosity, energy, and thoughtful questions.</p>
+        
+        <div class="bg-white/5 rounded-xl p-6 mb-8 border border-white/10">
+          <h4 class="text-lg font-semibold text-white mb-3">Event Highlights:</h4>
+          <ul class="space-y-2 text-white/80">
+            <li>• Fireside chat with Rajan Anandan, Managing Director at Peak XV Partners</li>
+            <li>• Insights on AI trends and startup ecosystem in India</li>
+            <li>• Engaged participation from Hyderabad's founder community</li>
+            <li>• Strategic discussions on the future of technology startups</li>
+          </ul>
+        </div>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Insights from Peak XV</h3>
+        <p class="mb-6">Rajan Anandan shared valuable perspectives on the evolving startup ecosystem in India, highlighting the growing importance of AI and deep tech innovations in driving the next wave of entrepreneurship. His insights covered market trends, investment patterns, and the unique opportunities available to Indian startups in the global market.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Hyderabad's Founder Community</h3>
+        <p class="mb-6">The event showcased the vibrant and engaged founder community in Hyderabad, with entrepreneurs from various sectors coming together to learn and network despite the short notice. The quality of questions and discussions demonstrated the depth of expertise and ambition within the local startup ecosystem.</p>
+        
+        <blockquote class="border-l-4 border-white pl-6 italic text-white/90 mb-8 bg-white/5 p-4 rounded-r-xl">
+          "The energy and curiosity of Hyderabad's founder community is truly inspiring. These are the entrepreneurs who will shape the future of Indian technology." - Event Participant
+        </blockquote>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Future of AI Startups</h3>
+        <p class="mb-6">The discussion emphasized the critical role that AI and edge computing will play in the next generation of successful startups, particularly in addressing real-world problems with scalable, efficient solutions.</p>
+      `,
+      author: 'Jagan Teki',
+      authorRole: 'CEO & Founder',
+      authorImage: 'https://www.edgeble.ai/a1.png?auto=compress&cs=tinysrgb&w=150',
+      date: '2024-07-15',
+      readTime: '4 min read',
+      image: 'images/peak-xv-rajan-anandan.png',
+      tags: ['Peak XV', 'Rajan Anandan', 'T-Hub'],
+      category: 'Events'
+    },
+    'pitching-at-beyond-borders-the-era-of-agentic-ai': {
+      id: 2,
       title: 'Pitching at Beyond Borders: The Era of Agentic AI',
       excerpt: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.',
       content: `
@@ -51,7 +92,7 @@ const BlogPostPage = () => {
       category: 'Events'
     },
     'speaking-at-ida-ireland-startup-roundtable': {
-      id: 2,
+      id: 3,
       title: 'Speaking at IDA Ireland Startup Roundtable',
       excerpt: 'Excited to have been part of the IDA Ireland Startup Roundtable hosted at T-Hub. It was a great opportunity to share insights on startup innovation, global collaboration, and the growing synergy between India and Ireland in the tech and business space.',
       content: `
@@ -87,7 +128,7 @@ const BlogPostPage = () => {
       category: 'Events'
     },
     'speaking-at-nasscom-ai-days-mumbai': {
-      id: 3,
+      id: 4,
       title: 'Speaking at Nasscom AI Days, Mumbai',
       excerpt: 'Edgeble AI was proud to be part of NASSCOM AI Days held in Mumbai — an event that brought together India\'s top minds in artificial intelligence, innovation, and enterprise technology.',
       content: `
@@ -290,7 +331,7 @@ const BlogPostPage = () => {
     },
     // Add other existing blog posts...
     'edgeble-at-thub-innovative-enclave-2025': {
-      id: 4,
+      id: 10,
       title: 'Edgeble at T-Hub Innovative Enclave 2025',
       excerpt: 'Edgeble AI was proud to participate in the T-Hub Innovative Enclave 2025 — a convergence of India\'s most forward-thinking startups and ecosystem leaders.',
       content: `
@@ -312,7 +353,7 @@ const BlogPostPage = () => {
       category: 'Events'
     },
     'speaking-at-cie-iiit-avishkar-2024': {
-      id: 10,
+      id: 11,
       title: 'Speaking at CIE-IIIT Avishkar 2024',
       excerpt: 'About TinyML Taipei 2024, About Edgeble AI Participation, End-to-End Edge AI Lifecycle.',
       content: `
@@ -414,7 +455,7 @@ const BlogPostPage = () => {
           src={post.image}
           alt={post.title}
           className={`w-full h-full object-cover object-center ${
-            post.id === 1 ? 'beyond-borders-image' : ''
+            post.id === 2 ? 'beyond-borders-image' : ''
           }`}
           style={{
             objectFit: 'cover',

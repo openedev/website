@@ -6,6 +6,16 @@ const WhatsNew = () => {
     {
       type: 'event',
       icon: Users,
+      title: 'Pitching at Peak XV, Rajan Anandan',
+      description: 'With T-Hub, Edgeble is honored to pitch with Rajan Anandan, Managing Director at Peak XV Partners (formerly Sequoia Capital India & SEA). From AI trends to the future of startups in India, the insights shared were as sharp as they were inspiring.',
+      date: '2024-07-15',
+      image: 'images/peak-xv-rajan-anandan.png?auto=compress&cs=tinysrgb&w=600',
+      badge: 'Peak XV',
+      slug: 'pitching-at-peak-xv-rajan-anandan'
+    },
+    {
+      type: 'event',
+      icon: Users,
       title: 'Pitching at Beyond Borders: The Era of Agentic AI',
       description: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.',
       date: '2024-06-29',
@@ -32,16 +42,6 @@ const WhatsNew = () => {
       image: 'https://www.edgeble.ai/blog13.png?auto=compress&cs=tinysrgb&w=600',
       badge: 'Upcoming Event',
       slug: 'speaking-at-nasscom-ai-days-mumbai'
-    },
-    {
-      type: 'news',
-      icon: Newspaper,
-      title: 'Edgeble at T-Hub Innovative Enclave 2025',
-      description: 'Edgeble AI was proud to participate in the T-Hub Innovative Enclave 2025 — a convergence of India\'s most forward-thinking startups and ecosystem leaders.',
-      date: '2024-12-03',
-      image: 'https://www.edgeble.ai/blog12.png?auto=compress&cs=tinysrgb&w=600',
-      badge: 'Partnership',
-      slug: 'edgeble-at-thub-innovative-enclave-2025'
     }
   ];
 
@@ -88,7 +88,7 @@ const WhatsNew = () => {
                     src={item.image} 
                     alt={item.title}
                     className={`w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300 ${
-                      index === 0 ? 'beyond-borders-image' : ''
+                      index === 1 ? 'beyond-borders-image' : ''
                     }`}
                     style={{
                       objectFit: 'cover',
