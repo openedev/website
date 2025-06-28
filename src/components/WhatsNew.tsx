@@ -56,14 +56,24 @@ const WhatsNew = () => {
   return (
     <section id="news" className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header - Left Aligned */}
-        <div className="mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            What's New
-          </h2>
-          <p className="text-xl text-white max-w-3xl">
-            Stay updated with our latest product launches, industry partnerships, and upcoming events.
-          </p>
+        {/* Section Header - Left Aligned with Right Button */}
+        <div className="flex items-center justify-between mb-20">
+          <div>
+            <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+              What's New
+            </h2>
+            <p className="text-xl text-white max-w-3xl">
+              Stay updated with our latest product launches, industry partnerships, and upcoming events.
+            </p>
+          </div>
+          <div>
+            <a 
+              href="/blog"
+              className="bg-white text-black hover:bg-white/90 px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105"
+            >
+              View Blog
+            </a>
+          </div>
         </div>
 
         {/* News Grid */}
@@ -121,17 +131,6 @@ const WhatsNew = () => {
               </div>
             );
           })}
-        </div>
-
-        {/* View All Blog Posts Button */}
-        <div className="text-center mb-12">
-          <a 
-            href="/blog"
-            className="inline-flex items-center bg-white text-black hover:bg-white/90 px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105"
-          >
-            View All Blog Posts
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </a>
         </div>
 
         {/* Newsletter Signup */}
