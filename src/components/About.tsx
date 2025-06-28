@@ -47,12 +47,12 @@ const About = () => {
   return (
     <section id="about" className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            About <span className="text-white">Edgeble</span>
+        {/* Section Header - Left Aligned */}
+        <div className="mb-20">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            About Edgeble
           </h2>
-          <p className="text-xl text-white max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl">
             Pioneering the future of Edge AI with innovative hardware solutions that bring intelligence closer to where it's needed most
           </p>
         </div>
