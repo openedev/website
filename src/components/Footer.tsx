@@ -137,7 +137,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-white/70 text-sm mb-4 md:mb-0">
-              © 2024 Edgeble AI. All rights reserved. | Privacy Policy | Terms of Service
+              © 2024 Edgeble. All rights reserved. | Privacy Policy | Terms of Service
             </div>
             <div className="flex space-x-6">
               <a 
