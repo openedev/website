@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,6 +34,21 @@ const Navigation = () => {
     { name: 'Contact', href: '#contact' },
   ];
 
+  const handleNavigation = (href: string) => {
+    if (href.startsWith('#')) {
+      // Handle anchor links
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Handle route navigation
+      navigate(href);
+    }
+    setIsProductsOpen(false);
+    setIsOpen(false);
+  };
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-black/95 backdrop-blur-md border-b border-white/10' : 'bg-transparent'
@@ -40,9 +57,12 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-4xl font-bold text-white">
+            <button 
+              onClick={() => handleNavigation('/')}
+              className="text-4xl font-bold text-white hover:text-white/90 transition-colors duration-200"
+            >
               edgeble
-            </div>
+            </button>
           </div>
 
           {/* Desktop Navigation */}
@@ -63,24 +83,24 @@ const Navigation = () => {
                       {isProductsOpen && (
                         <div className="absolute top-full left-0 mt-2 w-56 bg-black/95 backdrop-blur-md border border-white/10 rounded-xl shadow-2xl">
                           {item.children?.map((child) => (
-                            <a
+                            <button
                               key={child.name}
-                              href={child.href}
-                              className="block px-4 py-3 text-sm text-white hover:text-white/70 hover:bg-white/5 transition-all duration-200 first:rounded-t-xl last:rounded-b-xl"
+                              onClick={() => handleNavigation(child.href)}
+                              className="block w-full text-left px-4 py-3 text-sm text-white hover:text-white/70 hover:bg-white/5 transition-all duration-200 first:rounded-t-xl last:rounded-b-xl"
                             >
                               {child.name}
-                            </a>
+                            </button>
                           ))}
                         </div>
                       )}
                     </div>
                   ) : (
-                    <a
-                      href={item.href}
+                    <button
+                      onClick={() => handleNavigation(item.href)}
                       className="text-white hover:text-white/70 px-3 py-2 text-sm font-medium transition-colors duration-200"
                     >
                       {item.name}
-                    </a>
+                    </button>
                   )}
                 </div>
               ))}
@@ -89,7 +109,10 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <button className="bg-white text-black hover:bg-white/90 px-6 py-2 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
+            <button 
+              onClick={() => handleNavigation('#contact')}
+              className="bg-white text-black hover:bg-white/90 px-6 py-2 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105"
+            >
               Product Inquiry
             </button>
           </div>
@@ -124,30 +147,31 @@ const Navigation = () => {
                     {isProductsOpen && (
                       <div className="pl-4 space-y-1">
                         {item.children?.map((child) => (
-                          <a
+                          <button
                             key={child.name}
-                            href={child.href}
-                            className="text-white/70 hover:text-white block px-3 py-2 text-sm font-medium transition-colors duration-200"
-                            onClick={() => setIsOpen(false)}
+                            onClick={() => handleNavigation(child.href)}
+                            className="text-white/70 hover:text-white block px-3 py-2 text-sm font-medium transition-colors duration-200 w-full text-left"
                           >
                             {child.name}
-                          </a>
+                          </button>
                         ))}
                       </div>
                     )}
                   </div>
                 ) : (
-                  <a
-                    href={item.href}
-                    className="text-white hover:text-white/70 block px-3 py-2 text-base font-medium transition-colors duration-200"
-                    onClick={() => setIsOpen(false)}
+                  <button
+                    onClick={() => handleNavigation(item.href)}
+                    className="text-white hover:text-white/70 block px-3 py-2 text-base font-medium transition-colors duration-200 w-full text-left"
                   >
                     {item.name}
-                  </a>
+                  </button>
                 )}
               </div>
             ))}
-            <button className="w-full text-left bg-white text-black hover:bg-white/90 px-3 py-2 rounded-lg font-semibold transition-all duration-200 mt-4">
+            <button 
+              onClick={() => handleNavigation('#contact')}
+              className="w-full text-left bg-white text-black hover:bg-white/90 px-3 py-2 rounded-lg font-semibold transition-all duration-200 mt-4"
+            >
               Product Inquiry
             </button>
           </div>
