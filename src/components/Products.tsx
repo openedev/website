@@ -84,7 +84,13 @@ const Products = () => {
 
               {/* Product Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-2">{product.name}</h3>
+                <h3 className={`text-xl font-bold mb-2 ${
+                  product.id === 1 
+                    ? 'text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 bg-clip-text font-extrabold tracking-tight' 
+                    : 'text-white'
+                }`}>
+                  {product.name}
+                </h3>
                 <p className="text-white font-medium mb-3">{product.tagline}</p>
                 <p className="text-white mb-6 text-sm leading-relaxed">{product.description}</p>
 
