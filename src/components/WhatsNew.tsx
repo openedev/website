@@ -5,43 +5,43 @@ const WhatsNew = () => {
   const news = [
     {
       type: 'product',
-      icon: Award,
-      title: 'EdgeCore AI-X1 Wins Innovation Award',
-      description: 'Our flagship AI accelerator recognized at the International Edge Computing Summit 2024.',
-      date: '2024-01-15',
-      image: 'https://images.pexels.com/photos/3584994/pexels-photo-3584994.jpeg?auto=compress&cs=tinysrgb&w=600',
-      badge: 'Award',
-      slug: 'edgecore-ai-x1-wins-innovation-award'
+      //icon: Roundtable,
+      title: 'Speaking at IDA Ireland Startup Roundtable',
+      description: 'Excited to have been part of the IDA Ireland Startup Roundtable hosted at T-Hub. It was a great opportunity to share insights on startup innovation, global collaboration, and the growing synergy between India and Ireland in the tech and business space.',
+      date: '2025-03-30',
+      image: 'https://www.edgeble.ai/blog14.png?auto=compress&cs=tinysrgb&w=600',
+      //badge: 'Roundtable',
+      slug: 'Speaking at IDA Ireland Startup Roundtable'
     },
     {
       type: 'event',
-      icon: Users,
-      title: 'AI at the Edge Conference 2024',
-      description: 'Join us at booth #A12 to see live demonstrations of our latest AI accelerators.',
-      date: '2024-02-22',
-      image: 'https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=600',
-      badge: 'Upcoming Event',
-      slug: 'ai-at-the-edge-conference-2024'
+      //icon: Users,
+      title: 'Speaking at Nasscom AI Days, Mumbai',
+      description: 'Edgeble AI was proud to be part of NASSCOM AI Days held in Mumbai — an event that brought together India’s top minds in artificial intelligence, innovation, and enterprise technology.',
+      date: '2025-03-25',
+      image: 'https://www.edgeble.ai/blog13.png?auto=compress&cs=tinysrgb&w=600',
+      //badge: 'Upcoming Event',
+      slug: 'Speaking at Nasscom AI Days, Mumbai'
     },
     {
       type: 'news',
-      icon: Newspaper,
-      title: 'Partnership with Global Automotive Leader',
-      description: 'Strategic collaboration to accelerate autonomous vehicle development with edge AI.',
-      date: '2024-01-08',
-      image: 'https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=600',
-      badge: 'Partnership',
-      slug: 'partnership-with-global-automotive-leader'
+      //icon: Newspaper,
+      title: 'Edgeble at T-Hub Innovative Enclave 2025',
+      description: 'Edgeble AI was proud to participate in the T-Hub Innovative Enclave 2025 — a convergence of India’s most forward-thinking startups and ecosystem leaders.',
+      date: '2025-12-03',
+      image: 'https://www.edgeble.ai/blog12.png?auto=compress&cs=tinysrgb&w=600',
+      //badge: 'Partnership',
+      slug: 'Edgeble at T-Hub Innovative Enclave 2025'
     },
     {
       type: 'product',
-      icon: Award,
-      title: 'EdgeCore Pro-X2 Industrial Launch',
-      description: 'New ruggedized AI module designed for extreme industrial environments now available.',
-      date: '2023-12-20',
-      image: 'https://images.pexels.com/photos/159298/gear-machine-mechanical-mechanical-engineering-159298.jpeg?auto=compress&cs=tinysrgb&w=600',
-      badge: 'Product Launch',
-      slug: 'edgecore-pro-x2-industrial-launch'
+      //icon: Award,
+      title: 'Speaking at CIE-IIIT Avishkar 2024',
+      description: 'About TinyML Taipei 2024, About Edgeble AI Participation, End-to-End Edge AI Lifecycle.',
+      date: '2025-02-24',
+      image: 'https://www.edgeble.ai/blog11.png?auto=compress&cs=tinysrgb&w=600',
+      //badge: 'Product Launch',
+      slug: 'Speaking at CIE-IIIT Avishkar 2024'
     }
   ];
 
