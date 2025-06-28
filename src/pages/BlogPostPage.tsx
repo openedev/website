@@ -7,7 +7,7 @@ const BlogPostPage = () => {
   const { slug } = useParams();
 
   const blogPosts = {
-    'showcase-at-bosch-global-fit-fest-25': {
+    'fit-fest25': {
       id: 1,
       title: 'Showcase at Bosch Global FIT.Fest\'25',
       excerpt: 'On behalf of the entire team at BGSW, I would like to extend our heartfelt thanks for your organization\'s participation in Marketplace Stalls at our flagship Technical Event, FIT.Fest\'25, last week.',
@@ -48,7 +48,7 @@ const BlogPostPage = () => {
       tags: ['Bosch', 'FIT.Fest', 'Marketplace'],
       category: 'Events'
     },
-    'pitching-at-beyond-borders-the-era-of-agentic-ai': {
+    'beyond-borders': {
       id: 2,
       title: 'Pitching at Beyond Borders: The Era of Agentic AI',
       excerpt: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.',
@@ -91,7 +91,7 @@ const BlogPostPage = () => {
       tags: ['Agentic AI', 'EY Partnership', 'T-Hub'],
       category: 'Events'
     },
-    'pitching-at-peak-xv-rajan-anandan': {
+    'peak-xv': {
       id: 3,
       title: 'Pitching at Peak XV, Rajan Anandan',
       excerpt: 'With T-Hub, Edgeble is honored to pitch with Rajan Anandan, Managing Director at Peak XV Partners (formerly Sequoia Capital India & SEA). From AI trends to the future of startups in India, the insights shared were as sharp as they were inspiring.',
@@ -132,7 +132,7 @@ const BlogPostPage = () => {
       tags: ['Peak XV', 'Rajan Anandan', 'T-Hub'],
       category: 'Events'
     },
-    'speaking-at-ida-ireland-startup-roundtable': {
+    'ida-ireland': {
       id: 4,
       title: 'Speaking at IDA Ireland Startup Roundtable',
       excerpt: 'Excited to have been part of the IDA Ireland Startup Roundtable hosted at T-Hub. It was a great opportunity to share insights on startup innovation, global collaboration, and the growing synergy between India and Ireland in the tech and business space.',
@@ -168,7 +168,7 @@ const BlogPostPage = () => {
       tags: ['Roundtable', 'Partnership', 'Innovation'],
       category: 'Events'
     },
-    'speaking-at-nasscom-ai-days-mumbai': {
+    'nasscom-mumbai': {
       id: 5,
       title: 'Speaking at Nasscom AI Days, Mumbai',
       excerpt: 'Edgeble AI was proud to be part of NASSCOM AI Days held in Mumbai — an event that brought together India\'s top minds in artificial intelligence, innovation, and enterprise technology.',
@@ -205,7 +205,7 @@ const BlogPostPage = () => {
       tags: ['Conference', 'AI', 'Mumbai'],
       category: 'Events'
     },
-    'speaking-at-aij-moscow-2024': {
+    'aij-moscow': {
       id: 6,
       title: 'Speaking at AIJ Moscow 2024',
       excerpt: 'The Future of AI Acceleration: Transforming Edge Computing for Tomorrow\'s Industries. Speaking on the future of AI acceleration and how edge computing is transforming industries.',
@@ -240,7 +240,7 @@ const BlogPostPage = () => {
       tags: ['AI Acceleration', 'Moscow', 'Edge Computing'],
       category: 'Technology'
     },
-    'edgeble-at-deeptech-gfst-2024-india': {
+    'deeptech-gfst': {
       id: 7,
       title: 'Edgeble at DeepTech, GFST 2024 India',
       excerpt: 'Pushing the Limits of Edge AI: 60FPS Live YOLOv5 Object Detection on Edgeble AI\'s 6TOPS Edge AI Accelerator Modules. Demonstrating real-time AI capabilities at the edge.',
@@ -275,7 +275,7 @@ const BlogPostPage = () => {
       tags: ['DeepTech', 'YOLOv5', 'Real-time AI'],
       category: 'Technology'
     },
-    'edgeble-sponsor-deeptech-gfst-2024-india': {
+    'sponsor-deeptech': {
       id: 8,
       title: 'Edgeble Sponsor DeepTech, GFST 2024 India',
       excerpt: 'We would like to express our sincere gratitude to our sponsors and event partners. A big Thank you to our Lanyard Sponsor! Edgeble AI supporting the DeepTech ecosystem.',
@@ -300,7 +300,7 @@ const BlogPostPage = () => {
       tags: ['Sponsorship', 'DeepTech', 'Community'],
       category: 'Events'
     },
-    'edgeble-at-tinyml-taipei-2024-innovation': {
+    'tinyml-taipei': {
       id: 9,
       title: 'Edgeble at TinyML Taipei 2024 Innovation',
       excerpt: 'End-to-End Edge AI Lifecycle with Real-Time, On-Device AI. Powered by EdgeGPT Pre-trained Edge AI Accelerators. Showcasing our comprehensive edge AI solutions.',
@@ -335,7 +335,7 @@ const BlogPostPage = () => {
       tags: ['TinyML', 'Taipei', 'Edge AI Lifecycle'],
       category: 'Technology'
     },
-    'industrial-future-summit-2024': {
+    'industrial-summit': {
       id: 10,
       title: 'Industrial Future Summit 2024',
       excerpt: 'Revolutionising Vehicle Battery System Welding Inspection with Edge AI. We\'re participating! Industrial Future Summit - The leading event for Future Builders in Stockholm.',
@@ -371,7 +371,7 @@ const BlogPostPage = () => {
       category: 'Industry'
     },
     // Add other existing blog posts...
-    'edgeble-at-thub-innovative-enclave-2025': {
+    'thub-enclave': {
       id: 11,
       title: 'Edgeble at T-Hub Innovative Enclave 2025',
       excerpt: 'Edgeble AI was proud to participate in the T-Hub Innovative Enclave 2025 — a convergence of India\'s most forward-thinking startups and ecosystem leaders.',
@@ -393,7 +393,7 @@ const BlogPostPage = () => {
       tags: ['T-Hub', 'Innovation', 'Startup'],
       category: 'Events'
     },
-    'speaking-at-cie-iiit-avishkar-2024': {
+    'cie-avishkar': {
       id: 12,
       title: 'Speaking at CIE-IIIT Avishkar 2024',
       excerpt: 'About TinyML Taipei 2024, About Edgeble AI Participation, End-to-End Edge AI Lifecycle.',

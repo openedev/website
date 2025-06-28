@@ -11,7 +11,7 @@ const WhatsNew = () => {
       date: '2025-06-19',
       image: 'images/image003.png?auto=compress&cs=tinysrgb&w=600',
       badge: 'Bosch Event',
-      slug: 'showcase-at-bosch-global-fit-fest-25'
+      slug: 'fit-fest25'
     },
     {
       type: 'event',
@@ -21,7 +21,7 @@ const WhatsNew = () => {
       date: '2025-06-02',
       image: 'images/Screenshot from 2025-06-29 02-42-29.png?auto=compress&cs=tinysrgb&w=600',
       badge: 'Agentic AI',
-      slug: 'pitching-at-beyond-borders-the-era-of-agentic-ai'
+      slug: 'beyond-borders'
     },
     {
       type: 'event',
@@ -31,7 +31,7 @@ const WhatsNew = () => {
       date: '2025-03-25',
       image: 'images/peak-xv-rajan-anandan.png?auto=compress&cs=tinysrgb&w=600',
       badge: 'Peak XV',
-      slug: 'pitching-at-peak-xv-rajan-anandan'
+      slug: 'peak-xv'
     },
     {
       type: 'product',
@@ -41,7 +41,7 @@ const WhatsNew = () => {
       date: '2024-03-30',
       image: 'https://www.edgeble.ai/blog14.png?auto=compress&cs=tinysrgb&w=600',
       badge: 'Roundtable',
-      slug: 'speaking-at-ida-ireland-startup-roundtable'
+      slug: 'ida-ireland'
     }
   ];
 
