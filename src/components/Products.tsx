@@ -55,7 +55,11 @@ const Products = () => {
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
-            <div key={product.id} className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20">
+            <a 
+              key={product.id} 
+              href={product.link}
+              className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20 block"
+            >
               {/* Product Image */}
               <div className="relative h-80 overflow-hidden bg-gradient-to-br from-white/10 to-white/5">
                 <img 
@@ -85,15 +89,12 @@ const Products = () => {
                 <p className="text-white mb-6 text-sm leading-relaxed">{product.description}</p>
 
                 {/* CTA Button */}
-                <a 
-                  href={product.link}
-                  className="w-full bg-white/10 hover:bg-white hover:text-black text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20"
-                >
+                <div className="w-full bg-white/10 hover:bg-white hover:text-black text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20">
                   Learn More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
+                </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
