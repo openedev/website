@@ -14,14 +14,14 @@ const Products = () => {
       id: 2,
       name: 'EdgeGPT Model',
       description: 'Pre-trained, inference-optimized models for instant deployments with low power consumption and high accuracy.',
-      image: 'images/Pitch 118.png?auto=compress&cs=tinysrgb&w=800',
+      image: 'images/Pitch 118.png',
       link: '/products/model'
     },
     {
       id: 3,
       name: 'Edge AI Agentic',
       description: 'Full-stack orchestration platform to train, develop, deploy, monitor and manage edge AI solutions seamlessly.',
-      image: 'images/Pitch 118(1).png?auto=compress&cs=tinysrgb&w=800',
+      image: 'images/Pitch 118(1).png',
       link: '/products/agentic'
     }
   ];
@@ -55,18 +55,23 @@ const Products = () => {
           {products.map((product) => (
             <div key={product.id} className="group relative bg-white/5 rounded-3xl border border-white/10 hover:border-white/20 transition-all duration-500 transform hover:-translate-y-2 overflow-hidden backdrop-blur-sm">
               {/* Product Image */}
-              <div className="relative h-80 overflow-hidden rounded-t-3xl bg-white/5">
+              <div className="relative h-80 overflow-hidden rounded-t-3xl bg-white/10 flex items-center justify-center">
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-105"
                   style={{
-                    objectFit: 'cover',
+                    objectFit: 'contain',
                     objectPosition: 'center'
+                  }}
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    console.log(`Failed to load image: ${product.image}`);
                   }}
                 />
                 {/* Subtle gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
               </div>
 
               {/* Product Content */}
@@ -89,7 +94,7 @@ const Products = () => {
               </div>
 
               {/* Hover effect overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl pointer-events-none"></div>
             </div>
           ))}
         </div>
