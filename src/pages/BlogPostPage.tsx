@@ -111,7 +111,7 @@ const BlogPostPage = () => {
       authorImage: 'https://www.edgeble.ai/a1.png?auto=compress&cs=tinysrgb&w=150',
       date: '2024-02-08',
       readTime: '7 min read',
-      image: 'https://www.edgeble.ai/blog10.png?auto=compress&cs=tinysrgb&w=1200',
+      image: 'images/Screenshot (13).png',
       tags: ['AI Acceleration', 'Moscow', 'Edge Computing'],
       category: 'Technology'
     },
@@ -146,7 +146,7 @@ const BlogPostPage = () => {
       authorImage: 'https://www.edgeble.ai/a4.png?auto=compress&cs=tinysrgb&w=150',
       date: '2024-01-26',
       readTime: '5 min read',
-      image: 'https://www.edgeble.ai/blog9.png?auto=compress&cs=tinysrgb&w=1200',
+      image: 'images/Screenshot (14).png',
       tags: ['DeepTech', 'YOLOv5', 'Real-time AI'],
       category: 'Technology'
     },
@@ -171,7 +171,7 @@ const BlogPostPage = () => {
       authorImage: 'https://www.edgeble.ai/a5.png?auto=compress&cs=tinysrgb&w=150',
       date: '2024-01-12',
       readTime: '3 min read',
-      image: 'https://www.edgeble.ai/blog8.png?auto=compress&cs=tinysrgb&w=1200',
+      image: 'images/Screenshot (15).png',
       tags: ['Sponsorship', 'DeepTech', 'Community'],
       category: 'Events'
     },
@@ -206,7 +206,7 @@ const BlogPostPage = () => {
       authorImage: 'https://www.edgeble.ai/chakrish.png?auto=compress&cs=tinysrgb&w=150',
       date: '2024-11-05',
       readTime: '6 min read',
-      image: 'https://www.edgeble.ai/blog7.png?auto=compress&cs=tinysrgb&w=1200',
+      image: 'images/Screenshot (16).png',
       tags: ['TinyML', 'Taipei', 'Edge AI Lifecycle'],
       category: 'Technology'
     },
@@ -241,7 +241,7 @@ const BlogPostPage = () => {
       authorImage: 'https://www.edgeble.ai/a4.png?auto=compress&cs=tinysrgb&w=150',
       date: '2024-10-15',
       readTime: '8 min read',
-      image: 'https://www.edgeble.ai/blog6.webp?auto=compress&cs=tinysrgb&w=1200',
+      image: 'images/Screenshot (18).png',
       tags: ['Industrial', 'Battery Systems', 'Quality Control'],
       category: 'Industry'
     },
@@ -366,17 +366,17 @@ const BlogPostPage = () => {
       </div>
 
       {/* Featured Image */}
-      <div className="relative h-[600px] overflow-hidden bg-white/5">
+      <div className="relative h-[600px] overflow-hidden bg-gradient-to-br from-gray-900 to-black">
         <img
           src={post.image}
           alt={post.title}
-          className="w-full h-full object-contain object-center p-8"
+          className="w-full h-full object-cover object-center"
           style={{
-            objectFit: 'contain',
+            objectFit: 'cover',
             objectPosition: 'center'
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
       </div>
 
       {/* Article Content */}
