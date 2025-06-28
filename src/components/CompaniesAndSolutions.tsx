@@ -148,7 +148,11 @@ const CompaniesAndSolutions = () => {
                 <img
                   src={company.logo}
                   alt={`${company.name} logo`}
-                  className="h-[60px] w-auto object-contain grayscale invert"
+                  className={`${
+                    company.name === 'Patil Rail Infra' 
+                      ? 'h-[80px] w-auto object-contain' 
+                      : 'h-[60px] w-auto object-contain'
+                  } grayscale invert`}
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.style.display = 'none';
