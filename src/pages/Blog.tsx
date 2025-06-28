@@ -71,7 +71,7 @@ const BlogPage = () => {
       author: 'Jagan Teki',
       date: '2025-03-25',
       readTime: '4 min read',
-      image: 'images/peak-xv-rajan-anandan.png?auto=compress&cs=tinysrgb&w=800',
+      image: 'images/peak.png?auto=compress&cs=tinysrgb&w=800',
       tags: ['Peak XV', 'Rajan Anandan', 'T-Hub'],
       category: 'Events'
     },
