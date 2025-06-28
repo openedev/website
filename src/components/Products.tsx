@@ -31,18 +31,18 @@ const Products = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between mb-20">
-          <div className="lg:max-w-2xl mb-8 lg:mb-0">
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Our Products
+          <div className="lg:max-w-3xl mb-8 lg:mb-0">
+            <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight tracking-tight">
+              Build software faster with Our Products
             </h2>
-            <p className="text-xl text-white/80 leading-relaxed">
-              Intelligent, fast, and powerful. EdgeGPT is the best way to deploy AI at the edge with unprecedented performance and efficiency.
+            <p className="text-xl md:text-2xl text-white/70 leading-relaxed max-w-2xl">
+              Intelligent, fast, and powerful. EdgeGPT is the best way to deploy AI at the edge with unprecedented performance and efficiency for real-world applications.
             </p>
           </div>
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 lg:ml-8">
             <a 
               href="#products-grid"
-              className="inline-flex items-center px-8 py-4 bg-white/10 hover:bg-white/20 text-white rounded-2xl font-semibold transition-all duration-300 border border-white/20 hover:border-white/40 backdrop-blur-sm group"
+              className="inline-flex items-center px-8 py-4 bg-white text-black hover:bg-white/90 rounded-2xl font-semibold transition-all duration-300 group text-lg"
             >
               See Products
               <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -79,14 +79,14 @@ const Products = () => {
                 <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-white/90 transition-colors">
                   {product.name}
                 </h3>
-                <p className="text-white/70 mb-8 leading-relaxed text-sm">
+                <p className="text-white/70 mb-8 leading-relaxed text-base">
                   {product.description}
                 </p>
 
                 {/* CTA Button */}
                 <a 
                   href={product.link}
-                  className="inline-flex items-center text-white hover:text-white/80 font-semibold transition-all duration-300 group/btn"
+                  className="inline-flex items-center text-white hover:text-white/80 font-semibold transition-all duration-300 group/btn text-base"
                 >
                   Learn More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
