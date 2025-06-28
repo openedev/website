@@ -111,7 +111,7 @@ const BlogPostPage = () => {
       authorImage: 'https://www.edgeble.ai/a1.png?auto=compress&cs=tinysrgb&w=150',
       date: '2024-02-08',
       readTime: '7 min read',
-      image: 'images/Screenshot (13).png',
+      image: 'https://www.edgeble.ai/blog10.png?auto=compress&cs=tinysrgb&w=1200',
       tags: ['AI Acceleration', 'Moscow', 'Edge Computing'],
       category: 'Technology'
     },
@@ -146,7 +146,7 @@ const BlogPostPage = () => {
       authorImage: 'https://www.edgeble.ai/a4.png?auto=compress&cs=tinysrgb&w=150',
       date: '2024-01-26',
       readTime: '5 min read',
-      image: 'images/Screenshot (14).png',
+      image: 'https://www.edgeble.ai/blog9.png?auto=compress&cs=tinysrgb&w=1200',
       tags: ['DeepTech', 'YOLOv5', 'Real-time AI'],
       category: 'Technology'
     },
@@ -171,7 +171,7 @@ const BlogPostPage = () => {
       authorImage: 'https://www.edgeble.ai/a5.png?auto=compress&cs=tinysrgb&w=150',
       date: '2024-01-12',
       readTime: '3 min read',
-      image: 'images/Screenshot (15).png',
+      image: 'https://www.edgeble.ai/blog8.png?auto=compress&cs=tinysrgb&w=1200',
       tags: ['Sponsorship', 'DeepTech', 'Community'],
       category: 'Events'
     },
@@ -206,7 +206,7 @@ const BlogPostPage = () => {
       authorImage: 'https://www.edgeble.ai/chakrish.png?auto=compress&cs=tinysrgb&w=150',
       date: '2024-11-05',
       readTime: '6 min read',
-      image: 'images/Screenshot (16).png',
+      image: 'https://www.edgeble.ai/blog7.png?auto=compress&cs=tinysrgb&w=1200',
       tags: ['TinyML', 'Taipei', 'Edge AI Lifecycle'],
       category: 'Technology'
     },
@@ -241,7 +241,7 @@ const BlogPostPage = () => {
       authorImage: 'https://www.edgeble.ai/a4.png?auto=compress&cs=tinysrgb&w=150',
       date: '2024-10-15',
       readTime: '8 min read',
-      image: 'images/Screenshot (18).png',
+      image: 'https://www.edgeble.ai/blog6.webp?auto=compress&cs=tinysrgb&w=1200',
       tags: ['Industrial', 'Battery Systems', 'Quality Control'],
       category: 'Industry'
     },
