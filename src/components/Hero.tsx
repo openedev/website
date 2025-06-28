@@ -22,21 +22,17 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-8 animate-fadeIn">
             <Zap className="w-4 h-4 mr-2" />
-            Next-Generation Edge AI Technology
+            The New Edge AI Standard
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 animate-fadeIn animation-delay-200">
-            <span className="block">Model-First</span>
-            <span className="block text-white">
-              Agentic
-            </span>
-            <span className="block">Edge AI NPU</span>
+          <h1 className="text-2xl md:text-7xl lg:text-7xl font-bold text-white mb-6 animate-fadeIn animation-delay-200">
+            <span className="block">The Agentic Edge AI NPU</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-white max-w-4xl mx-auto mb-12 leading-relaxed animate-fadeIn animation-delay-400">
-            Powered by Edgeble EdgeGPT — Optimized models, NPU Modules, and Orchestration for Edge-Native Agentic intelligence
+          <p className="text-xl md:text-xl text-white max-w-4xl mx-auto mb-12 leading-relaxed animate-fadeIn animation-delay-400">
+            Powered by Edgeble EdgeGPT — a new class of optimized models, NPU modules, and orchestration for scalable, real-time edge intelligence
           </p>
 
           {/* CTA Buttons */}
