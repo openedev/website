@@ -56,12 +56,12 @@ const WhatsNew = () => {
   return (
     <section id="news" className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            What's <span className="text-white">New</span>
+        {/* Section Header - Left Aligned */}
+        <div className="mb-20">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            What's New
           </h2>
-          <p className="text-xl text-white max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl">
             Stay updated with our latest product launches, industry partnerships, and upcoming events.
           </p>
         </div>
