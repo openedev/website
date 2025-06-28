@@ -65,7 +65,7 @@ const Footer = () => {
           {/* Products */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Products</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-1">
               {footerLinks.products.map((link, index) => (
                 <li key={index}>
                   <a 
@@ -82,7 +82,7 @@ const Footer = () => {
           {/* Solutions */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Solutions</h4>
-            <ul className="space-y-3">
+            <ul className="space-y-1">
               {footerLinks.solutions.map((link, index) => (
                 <li key={index}>
                   <a 
@@ -99,7 +99,7 @@ const Footer = () => {
           {/* Company */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Company</h4>
-            <ul className="space-y-3">
+            <ul className="space-y-1">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
                   <a 
@@ -116,7 +116,7 @@ const Footer = () => {
           {/* Resources */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Resources</h4>
-            <ul className="space-y-3">
+            <ul className="space-y-1">
               {footerLinks.resources.map((link, index) => (
                 <li key={index}>
                   <a 
