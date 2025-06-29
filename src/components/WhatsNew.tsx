@@ -29,7 +29,7 @@ const WhatsNew = () => {
       title: 'Pitching at Peak XV, Rajan Anandan',
       description: 'With T-Hub, Edgeble is honored to pitch with Rajan Anandan, Managing Director at Peak XV Partners (formerly Sequoia Capital India & SEA). From AI trends to the future of startups in India, the insights shared were as sharp as they were inspiring.',
       date: '2025-03-25',
-      image: 'images/peak-xv-rajan-anandan.png?auto=compress&cs=tinysrgb&w=600',
+      image: 'images/peak.png?auto=compress&cs=tinysrgb&w=600',
       badge: 'Peak XV',
       slug: 'peak-xv'
     },
