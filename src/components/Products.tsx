@@ -55,10 +55,10 @@ const Products = () => {
             <a 
               key={product.id} 
               href={product.link}
-              className="group bg-black/40 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/20 hover:border-white/40 block h-[600px] flex flex-col"
+              className="group bg-black/40 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/20 hover:border-white/40 block h-[700px] flex flex-col"
             >
-              {/* Product Image */}
-              <div className="relative h-96 overflow-hidden bg-black/20 flex-shrink-0">
+              {/* Product Image - Increased height from h-96 to h-[480px] */}
+              <div className="relative h-[480px] overflow-hidden bg-black/20 flex-shrink-0">
                 <img 
                   src={product.image} 
                   alt={product.name}
@@ -79,7 +79,7 @@ const Products = () => {
                 </div>
               </div>
 
-              {/* Product Content */}
+              {/* Product Content - Keep same height */}
               <div className="p-8 bg-black/60 backdrop-blur-sm flex-1 flex flex-col">
                 <h3 className="text-2xl font-bold mb-6 tracking-tight text-white leading-tight">
                   {product.name}
