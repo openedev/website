@@ -7,7 +7,7 @@ const Products = () => {
       id: 1,
       name: 'EdgeGPT NPU Chips',
       description: 'Co-designed with EdgeGPT Models for predictable latency and power.',
-      image: 'https://www.edgeble.ai/Home-aia.png?auto=compress&cs=tinysrgb&w=800',
+      image: 'images/npu.png',
       badge: 'Chip',
       link: '/products/npu'
     },
@@ -15,7 +15,7 @@ const Products = () => {
       id: 2,
       name: 'EdgeGPT Model',
       description: 'Trained, Quantize, Optimized for Edge AI Usecases than model attributes.',
-      image: 'images/edgegpt.png?auto=compress&cs=tinysrgb&w=100',
+      image: 'images/edgegpt.png',
       badge: 'Model',
       link: '/products/model'
     },
