@@ -102,41 +102,35 @@ const About = () => {
         {/* Team */}
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-white text-center mb-12">Leadership Team</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-14 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl mx-auto">
             {team.map((member, index) => (
               <div key={index} className="text-center group">
-                <div className="relative mb-6 overflow-hidden rounded-2xl bg-gradient-to-br from-gray-800 to-gray-900">
-                  <div className="relative w-full h-80 flex items-center justify-center p-6">
+                <div className="relative mb-6 overflow-hidden rounded-2xl">
+                  <div className="relative w-full h-96 flex items-center justify-center bg-transparent">
                     <img
                       src={member.image}
                       alt={member.name}
-                      className={`
-                        max-w-full max-h-full object-contain object-center
-                        group-hover:scale-105 transition-transform duration-300
-                        ${index === 1 ? 'filter drop-shadow-2xl' : ''}
-                      `}
+                      className="w-full h-full object-cover object-center rounded-2xl group-hover:scale-105 transition-transform duration-300 shadow-2xl"
                       style={{
-                        maxWidth: '280px',
-                        maxHeight: '320px',
-                        objectFit: 'contain',
-                        objectPosition: 'center'
+                        objectFit: 'cover',
+                        objectPosition: 'center top'
                       }}
                     />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+                  <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <a 
                       href={member.linkedin} 
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-white/90 transition-all duration-200 shadow-lg"
+                      className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-white/90 transition-all duration-200 shadow-lg hover:scale-110"
                     >
-                      <Linkedin className="w-5 h-5 text-black" />
+                      <Linkedin className="w-6 h-6 text-black" />
                     </a>
                   </div>
                 </div>
-                <h4 className="text-xl font-bold text-white mb-2">{member.name}</h4>
-                <p className="text-white/80 font-medium">{member.role}</p>
+                <h4 className="text-2xl font-bold text-white mb-2">{member.name}</h4>
+                <p className="text-white/80 font-medium text-lg">{member.role}</p>
               </div>
             ))}
           </div>
