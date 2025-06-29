@@ -57,7 +57,7 @@ const Products = () => {
               href={product.link}
               className="group bg-black/40 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/20 hover:border-white/40 block h-[660px] flex flex-col"
             >
-              {/* Product Image - Reduced height from h-[480px] to h-[440px] */}
+              {/* Product Image */}
               <div className="relative h-[440px] overflow-hidden bg-black/20 flex-shrink-0">
                 <img 
                   src={product.image} 
@@ -65,21 +65,21 @@ const Products = () => {
                   className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
                   style={{
                     objectFit: 'cover',
-                    objectPosition: 'center'
+                    objectPosition: product.id === 1 ? 'center center' : 'center'
                   }}
                 />
                 {/* Strong gradient overlay for better text readability */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
                 
-                {/* Badge */}
-                <div className="absolute top-4 left-4 z-10">
-                  <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white text-black shadow-lg">
+                {/* Badge - Repositioned to avoid overlap */}
+                <div className="absolute top-6 left-6 z-10">
+                  <span className="px-4 py-2 rounded-full text-sm font-semibold bg-white text-black shadow-lg">
                     {product.badge}
                   </span>
                 </div>
               </div>
 
-              {/* Product Content - Keep same height */}
+              {/* Product Content */}
               <div className="p-8 bg-black/60 backdrop-blur-sm flex-1 flex flex-col">
                 <h3 className="text-2xl font-bold mb-6 tracking-tight text-white leading-tight">
                   {product.name}
