@@ -39,10 +39,6 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
-              {/* Logo */}
-              <div className="text-4xl font-bold text-white mb-4">
-                edgeble
-              </div>
               <h3 className="text-2xl font-bold mb-2">Stay Updated</h3>
               <p className="text-white/70">
                 Get the latest news, product updates, and industry insights delivered to your inbox.
@@ -139,9 +135,15 @@ const Footer = () => {
       {/* Bottom Footer */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-white/70 text-sm mb-4 md:mb-0">
-              © 2024 Edgeble. All rights reserved. | Privacy Policy | Terms of Service
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div className="mb-4 md:mb-0">
+              {/* Logo */}
+              <div className="text-4xl font-bold text-white mb-2">
+                edgeble
+              </div>
+              <div className="text-white/70 text-sm">
+                © 2024 Edgeble. All rights reserved. | Privacy Policy | Terms of Service
+              </div>
             </div>
             <div className="flex space-x-6">
               <a 
