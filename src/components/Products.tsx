@@ -15,7 +15,7 @@ const Products = () => {
       id: 2,
       name: 'EdgeGPT Model',
       description: 'Trained, Quantize, Optimized for Edge AI Usecases than model attributes.',
-      image: 'images/edgegpt.png?auto=compress&cs=tinysrgb&w=800',
+      image: 'images/edgegpt.png?auto=compress&cs=tinysrgb&w=100',
       badge: 'Model',
       link: '/products/model'
     },
@@ -23,7 +23,7 @@ const Products = () => {
       id: 3,
       name: 'Agentic Edge AI',
       description: 'Full-stack orchestration to train, develop, deploy, monitor and agent.',
-      image: 'images/Pitch 118(1).png?auto=compress&cs=tinysrgb&w=800',
+      image: 'images/agentic.png',
       badge: 'Agentic',
       link: '/products/agentic'
     }
