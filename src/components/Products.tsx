@@ -69,7 +69,7 @@ const Products = () => {
                   }}
                 />
                 {/* Gradient Overlay for better text readability */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                 
                 {/* Badge */}
                 <div className="absolute top-4 left-4 z-10">
@@ -80,18 +80,18 @@ const Products = () => {
               </div>
 
               {/* Product Content */}
-              <div className="p-8 bg-black/80 flex-1 flex flex-col justify-between">
+              <div className="p-8 bg-black flex-1 flex flex-col justify-between">
                 <div>
                   <h3 className="text-2xl font-bold mb-6 tracking-tight text-white leading-tight">
                     {product.name}
                   </h3>
-                  <p className="text-white/90 mb-8 text-base leading-relaxed font-medium">
+                  <p className="text-white mb-8 text-base leading-relaxed font-medium">
                     {product.description}
                   </p>
                 </div>
 
                 {/* CTA Button */}
-                <div className="w-full bg-white/10 hover:bg-white hover:text-black text-white py-4 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20">
+                <div className="w-full bg-white text-black hover:bg-white/90 py-4 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20">
                   Learn More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
