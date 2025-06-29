@@ -1,9 +1,16 @@
 import React from 'react';
-import { ChevronRight, Play, Zap, Cpu, Globe } from 'lucide-react';
+import { ChevronRight, Cpu, Zap, Globe } from 'lucide-react';
 
 const Hero = () => {
   const handleRunNPU = () => {
     const element = document.querySelector('#companies-solutions');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleGetStarted = () => {
+    const element = document.querySelector('#contact');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -44,7 +51,10 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fadeIn animation-delay-600">
-            <button className="group px-8 py-4 bg-white text-black hover:bg-white/90 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center">
+            <button 
+              onClick={handleGetStarted}
+              className="group px-8 py-4 bg-white text-black hover:bg-white/90 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center"
+            >
               Get Started
               <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
