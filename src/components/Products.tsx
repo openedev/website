@@ -6,28 +6,25 @@ const Products = () => {
     {
       id: 1,
       name: 'EdgeGPT NPU Chips',
-      tagline: 'Ultra-fast inference modules',
+      description: 'Co-designed with EdgeGPT Models for predictable latency and power.',
       image: 'https://www.edgeble.ai/Home-aia.png?auto=compress&cs=tinysrgb&w=800',
       badge: 'Chip',
-      description: 'Model-first NPUs co-designed with EdgeGPT to guarantee predictable latency and power',
       link: '/products/npu'
     },
     {
       id: 2,
       name: 'EdgeGPT Model',
-      tagline: 'Edge-Optimized Models for Real-World',
+      description: 'Trained, Quantize, Optimized for Edge AI Usecases than model attributes.',
       image: 'images/edgegpt.png?auto=compress&cs=tinysrgb&w=800',
       badge: 'Model',
-      description: 'Pre-trained, inference-optimized models for instant deployments, low power with accuracy',
       link: '/products/model'
     },
     {
       id: 3,
       name: 'Edge AI Agentic',
-      tagline: 'Edge AI Orchestration Stack + Edge Agents',
+      description: 'Full-stack orchestration to train, develop, deploy, monitor and agent.',
       image: 'images/Pitch 118(1).png?auto=compress&cs=tinysrgb&w=800',
       badge: 'Agentic',
-      description: 'Full-stack orchestration to train, develop, deploy, monitor and repeat',
       link: '/products/agentic'
     }
   ];
@@ -83,12 +80,13 @@ const Products = () => {
               </div>
 
               {/* Product Content */}
-              <div className="p-8 min-h-[200px] bg-black/80">
-                <h3 className="text-2xl font-extrabold mb-3 tracking-tight text-white">
+              <div className="p-8 bg-black/80">
+                <h3 className="text-2xl font-bold mb-4 tracking-tight text-white leading-tight">
                   {product.name}
                 </h3>
-                <p className="text-white font-medium mb-4 text-lg">{product.tagline}</p>
-                <p className="text-white mb-6 text-sm leading-relaxed">{product.description}</p>
+                <p className="text-white/90 mb-8 text-base leading-relaxed font-medium">
+                  {product.description}
+                </p>
 
                 {/* CTA Button */}
                 <div className="w-full bg-white/10 hover:bg-white hover:text-black text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20">
