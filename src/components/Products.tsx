@@ -1,4 +1,4 @@
-import React from 'react';
+                      =iJGJHGVHHGHH\mport React from 'react';
 import { Cpu, Zap, Shield, Gauge, ArrowRight } from 'lucide-react';
 
 const Products = () => {
