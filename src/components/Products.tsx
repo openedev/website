@@ -72,7 +72,7 @@ const Products = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
                 
                 {/* Badge - Repositioned to avoid overlap */}
-                <div className="absolute top-6 left-6 z-10">
+                <div className="absolute top-2 left-3 z-10">
                   <span className="px-4 py-2 rounded-full text-sm font-semibold bg-white text-black shadow-lg">
                     {product.badge}
                   </span>
