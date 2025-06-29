@@ -55,10 +55,10 @@ const Products = () => {
             <a 
               key={product.id} 
               href={product.link}
-              className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20 block"
+              className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20 block h-[600px] flex flex-col"
             >
               {/* Product Image */}
-              <div className="relative h-80 overflow-hidden bg-black/20">
+              <div className="relative h-96 overflow-hidden bg-black/20 flex-shrink-0">
                 <img 
                   src={product.image} 
                   alt={product.name}
@@ -80,16 +80,18 @@ const Products = () => {
               </div>
 
               {/* Product Content */}
-              <div className="p-8 bg-black/80">
-                <h3 className="text-2xl font-bold mb-4 tracking-tight text-white leading-tight">
-                  {product.name}
-                </h3>
-                <p className="text-white/90 mb-8 text-base leading-relaxed font-medium">
-                  {product.description}
-                </p>
+              <div className="p-8 bg-black/80 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 className="text-2xl font-bold mb-6 tracking-tight text-white leading-tight">
+                    {product.name}
+                  </h3>
+                  <p className="text-white/90 mb-8 text-base leading-relaxed font-medium">
+                    {product.description}
+                  </p>
+                </div>
 
                 {/* CTA Button */}
-                <div className="w-full bg-white/10 hover:bg-white hover:text-black text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20">
+                <div className="w-full bg-white/10 hover:bg-white hover:text-black text-white py-4 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20">
                   Learn More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
