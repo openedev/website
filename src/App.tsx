@@ -43,7 +43,7 @@ function App() {
         <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/products/npu" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">EdgeGPT NPU Chips - Coming Soon</h1></div>} />
         <Route path="/products/model" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">EdgeGPT Model - Coming Soon</h1></div>} />
-        <Route path="/products/agentic" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">Edge AI Agentic - Coming Soon</h1></div>} />
+        <Route path="/products/agentic" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">Agentic Edge AI Orchestration - Coming Soon</h1></div>} />
       </Routes>
     </Router>
   );
