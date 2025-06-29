@@ -132,7 +132,7 @@ const Footer = () => {
         </div>
 
         {/* Logo positioned directly on the border line */}
-        <div className="mt-16 -mb-6">
+        <div className="mt-16 -mb-8">
           <div className="text-4xl font-bold text-white">
             edgeble
           </div>
