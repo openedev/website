@@ -55,10 +55,10 @@ const Products = () => {
             <a 
               key={product.id} 
               href={product.link}
-              className="group bg-black/40 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/20 hover:border-white/40 block h-[700px] flex flex-col"
+              className="group bg-black/40 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/20 hover:border-white/40 block h-[660px] flex flex-col"
             >
-              {/* Product Image - Increased height from h-96 to h-[480px] */}
-              <div className="relative h-[480px] overflow-hidden bg-black/20 flex-shrink-0">
+              {/* Product Image - Reduced height from h-[480px] to h-[440px] */}
+              <div className="relative h-[440px] overflow-hidden bg-black/20 flex-shrink-0">
                 <img 
                   src={product.image} 
                   alt={product.name}
