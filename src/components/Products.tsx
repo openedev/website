@@ -84,15 +84,11 @@ const Products = () => {
 
               {/* Product Content - Increased padding and height */}
               <div className="p-8 min-h-[200px] bg-gray-900/80 backdrop-blur-sm">
-                <h3 className={`text-2xl font-extrabold mb-3 tracking-tight ${
-                  product.id === 1 
-                    ? 'bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 text-transparent bg-clip-text' 
-                    : 'text-white'
-                }`}>
+                <h3 className="text-2xl font-extrabold mb-3 tracking-tight text-white">
                   {product.name}
                 </h3>
-                <p className="text-gray-200 font-medium mb-4 text-lg">{product.tagline}</p>
-                <p className="text-gray-300 mb-6 text-sm leading-relaxed">{product.description}</p>
+                <p className="text-white font-medium mb-4 text-lg">{product.tagline}</p>
+                <p className="text-white mb-6 text-sm leading-relaxed">{product.description}</p>
 
                 {/* CTA Button */}
                 <div className="w-full bg-gray-800/60 hover:bg-white hover:text-black text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-gray-600/50 hover:border-white">
