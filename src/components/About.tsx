@@ -106,7 +106,7 @@ const About = () => {
             {team.map((member, index) => (
               <div key={index} className="text-center group">
                 <div className="relative mb-6 overflow-hidden rounded-2xl">
-                  <div className="relative w-full h-96 flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200">
+                  <div className="relative w-full h-72 flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200">
                     <img
                       src={member.image}
                       alt={member.name}
