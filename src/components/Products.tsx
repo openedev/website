@@ -58,10 +58,10 @@ const Products = () => {
             <a 
               key={product.id} 
               href={product.link}
-              className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20 block"
+              className="group bg-gray-900/50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-700/50 hover:border-gray-600/50 block backdrop-blur-sm"
             >
               {/* Product Image */}
-              <div className="relative h-80 overflow-hidden bg-gradient-to-br from-white/10 to-white/5">
+              <div className="relative h-80 overflow-hidden bg-gradient-to-br from-gray-800/30 to-gray-900/30">
                 <img 
                   src={product.image} 
                   alt={product.name}
@@ -71,8 +71,8 @@ const Products = () => {
                     objectPosition: 'center'
                   }}
                 />
-                {/* Gradient Overlay for better text readability */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                {/* Subtle gradient overlay for better text readability */}
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/40 via-transparent to-transparent"></div>
                 
                 {/* Badge */}
                 <div className="absolute top-4 left-4 z-10">
@@ -82,20 +82,20 @@ const Products = () => {
                 </div>
               </div>
 
-              {/* Product Content */}
-              <div className="p-6">
-                <h3 className={`text-2xl font-bold mb-2 ${
+              {/* Product Content - Increased padding and height */}
+              <div className="p-8 min-h-[200px] bg-gray-900/80 backdrop-blur-sm">
+                <h3 className={`text-2xl font-extrabold mb-3 tracking-tight ${
                   product.id === 1 
-                    ? 'bg-clip-text font-bold tracking-tight' 
+                    ? 'bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 text-transparent bg-clip-text' 
                     : 'text-white'
                 }`}>
                   {product.name}
                 </h3>
-                <p className="text-white font-medium mb-3">{product.tagline}</p>
-                <p className="text-white mb-6 text-sm leading-relaxed">{product.description}</p>
+                <p className="text-gray-200 font-medium mb-4 text-lg">{product.tagline}</p>
+                <p className="text-gray-300 mb-6 text-sm leading-relaxed">{product.description}</p>
 
                 {/* CTA Button */}
-                <div className="w-full bg-white/10 hover:bg-white hover:text-black text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-white/20">
+                <div className="w-full bg-gray-800/60 hover:bg-white hover:text-black text-white py-3 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group border border-gray-600/50 hover:border-white">
                   Learn More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
