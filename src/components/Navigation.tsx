@@ -41,22 +41,43 @@ const Navigation = () => {
         // Navigate to home page first, then scroll to section
         navigate('/');
         setTimeout(() => {
+          if (href === '#home') {
+            // Scroll to top of page
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          } else {
+            const element = document.querySelector(href);
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+            }
+          }
+        }, 100);
+      } else {
+        // Already on home page
+        if (href === '#home') {
+          // Scroll to top of page
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          // Scroll to specific section
           const element = document.querySelector(href);
           if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
           }
-        }, 100);
-      } else {
-        // Already on home page, just scroll
-        const element = document.querySelector(href);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
         }
       }
     } else {
       // Handle route navigation
       navigate(href);
     }
+    setIsProductsOpen(false);
+    setIsOpen(false);
+  };
+
+  const handleLogoClick = () => {
+    // Always navigate to home page and scroll to top
+    navigate('/');
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
     setIsProductsOpen(false);
     setIsOpen(false);
   };
@@ -91,7 +112,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <button 
-              onClick={() => handleNavigation('/')}
+              onClick={handleLogoClick}
               className="text-4xl font-bold text-white hover:text-white/90 transition-colors duration-200"
             >
               edgeble
