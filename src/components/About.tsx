@@ -58,7 +58,7 @@ const About = () => {
         </div>
 
         {/* Vision & Mission */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20 items-start">
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-white mb-4 flex items-center">
@@ -79,7 +79,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="relative overflow-hidden rounded-2xl">
+          <div className="relative overflow-hidden rounded-2xl -mt-8">
             <img 
               src="images/home.png"
               alt="Agentic Edge AI Chip"
