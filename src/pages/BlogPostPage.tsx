@@ -129,7 +129,7 @@ const BlogPostPage = () => {
       authorImage: 'https://www.edgeble.ai/a1.png?auto=compress&cs=tinysrgb&w=150',
       date: '2025-03-25',
       readTime: '4 min read',
-      image: 'images/peak-xv-rajan-anandan.png',
+      image: 'images/peak.png',
       tags: ['Peak XV', 'Rajan Anandan', 'T-Hub'],
       category: 'Events'
     },
