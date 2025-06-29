@@ -60,7 +60,7 @@ const CompaniesAndSolutions = () => {
     },
     {
       icon: Factory,
-      description: 'Predictive Maintaince',
+      description: 'Predictive Maintenance',
       isCustomImage: true,
       customImage: 'images/llm.png'
     },

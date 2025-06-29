@@ -6,23 +6,14 @@ const About = () => {
     {
       name: 'Jagan Teki',
       role: 'Founder',
-      image: 'https://www.edgeble.ai/a1.png?auto=compress&cs=tinysrgb&w=400',
+      image: 'images/jagan.jpg',
       linkedin: 'https://in.linkedin.com/in/jaganteki'
     },
     {
       name: 'Srinivas Patnaik',
-      role: 'Strategy Analyst',
-      image: 'https://www.edgeble.ai/a5.png?auto=compress&cs=tinysrgb&w=400'
-    },
-    {
-      name: 'Alberto Bianchi',
-      role: 'Hardware',
-      image: 'https://www.edgeble.ai/a4.png?auto=compress&cs=tinysrgb&w=400'
-    },
-    {
-      name: 'Chakrish Krishtam',
-      role: 'AI/ML',
-      image: 'https://www.edgeble.ai/chakrish.png?auto=compress&cs=tinysrgb&w=400'
+      role: 'Advisor/Mentor',
+      image: 'images/srinivas.png',
+      linkedin: 'https://www.linkedin.com/in/srinivassatumahanti'
     }
   ];
 
@@ -111,7 +102,7 @@ const About = () => {
         {/* Team */}
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-white text-center mb-12">Leadership Team</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-14">
             {team.map((member, index) => (
               <div key={index} className="text-center group">
                 <div className="relative mb-4 overflow-hidden rounded-2xl">
