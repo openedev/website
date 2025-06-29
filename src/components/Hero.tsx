@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRight, Cpu, Zap, Globe } from 'lucide-react';
+import { ChevronRight, Cpu, Zap, Globe, Brain } from 'lucide-react';
 
 const Hero = () => {
   const handleRunNPU = () => {
@@ -78,7 +78,7 @@ const Hero = () => {
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
-                <Cpu className="w-8 h-8 text-white mr-3" />
+                <Brain className="w-8 h-8 text-white mr-3" />
                 <span className="text-4xl font-bold text-white">8+</span>
               </div>
               <p className="text-xl text-white">Vision, LLM NPU Modules</p>
