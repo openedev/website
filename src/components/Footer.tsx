@@ -130,20 +130,21 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+
+        {/* Logo positioned above the border line */}
+        <div className="mt-16 mb-8">
+          <div className="text-4xl font-bold text-white">
+            edgeble
+          </div>
+        </div>
       </div>
 
       {/* Bottom Footer */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
-            <div className="mb-4 md:mb-0">
-              {/* Logo */}
-              <div className="text-4xl font-bold text-white mb-2">
-                edgeble
-              </div>
-              <div className="text-white/70 text-sm">
-                © 2024 Edgeble. All rights reserved. | Privacy Policy | Terms of Service
-              </div>
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="text-white/70 text-sm mb-4 md:mb-0">
+              © 2024 Edgeble. All rights reserved. | Privacy Policy | Terms of Service
             </div>
             <div className="flex space-x-6">
               <a 
