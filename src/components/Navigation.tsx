@@ -28,7 +28,7 @@ const Navigation = () => {
         { name: 'Edge AI Agentic', href: '/products/agentic' },
       ] 
     },
-    { name: 'Solutions', href: '/solutions' },
+    { name: 'Solutions', href: '#solutions' },
     { name: "Blog", href: '/blog' },
     { name: 'About', href: '#about' },
     { name: 'Contact', href: '#contact' },
