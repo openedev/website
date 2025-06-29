@@ -39,7 +39,7 @@ const WhatsNew = () => {
       title: 'Speaking at IDA Ireland Startup Roundtable',
       description: 'Excited to have been part of the IDA Ireland Startup Roundtable hosted at T-Hub. It was a great opportunity to share insights on startup innovation, global collaboration, and the growing synergy between India and Ireland in the tech and business space.',
       date: '2024-03-30',
-      image: 'https://www.edgeble.ai/blog14.png?auto=compress&cs=tinysrgb&w=600',
+      image: 'images/ida.png',
       badge: 'Roundtable',
       slug: 'ida-ireland'
     }
