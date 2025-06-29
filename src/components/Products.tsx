@@ -80,21 +80,19 @@ const Products = () => {
               </div>
 
               {/* Product Content */}
-              <div className="p-8 bg-black/60 backdrop-blur-sm flex-1 flex flex-col justify-between">
-                <div>
-                  <h3 className="text-2xl font-bold mb-6 tracking-tight text-white leading-tight">
-                    {product.name}
-                  </h3>
-                  <p className="text-white/90 mb-8 text-base leading-relaxed font-medium">
-                    {product.description}
-                  </p>
-                </div>
+              <div className="p-8 bg-black/60 backdrop-blur-sm flex-1 flex flex-col">
+                <h3 className="text-2xl font-bold mb-6 tracking-tight text-white leading-tight">
+                  {product.name}
+                </h3>
+                <p className="text-white/90 mb-6 text-base leading-relaxed font-medium">
+                  {product.description}
+                </p>
 
-                {/* CTA Button */}
-                <button className="w-full bg-white text-black hover:bg-gray-100 py-4 px-4 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group shadow-lg">
+                {/* Learn More - Left aligned with arrow */}
+                <div className="flex items-center text-white hover:text-white/80 font-semibold transition-all duration-200 group/link">
                   Learn More
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </button>
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+                </div>
               </div>
             </a>
           ))}
