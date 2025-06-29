@@ -25,7 +25,7 @@ const Navigation = () => {
       children: [
         { name: 'EdgeGPT NPU Chips', href: '/products/npu' },
         { name: 'EdgeGPT Model', href: '/products/model' },
-        { name: 'Edge AI Agentic', href: '/products/agentic' },
+        { name: 'Agentic Edge AIc', href: '/products/agentic' },
       ] 
     },
     { name: 'Solutions', href: '#solutions' },
