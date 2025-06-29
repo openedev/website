@@ -145,7 +145,7 @@ const About = () => {
                 Global Presence
               </h3>
               <p className="text-white mb-6">
-                Headquartered in India with development centers worldwide, we're positioned to serve clients globally while maintaining the agility of a focused technology company.
+                Headquartered in India serve clients globally while maintaining the agility of a focused technology company.
               </p>
               <div className="flex items-start text-white mb-4">
                 <MapPin className="w-5 h-5 mr-3 mt-1 flex-shrink-0" />
