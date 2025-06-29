@@ -127,7 +127,7 @@ const CompaniesAndSolutions = () => {
   }, [companies.length, solutions.length]);
 
   return (
-    <section className="py-24 bg-black">
+    <section id="companies-solutions" className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Companies We Worked With */}
         <div className="mb-16">

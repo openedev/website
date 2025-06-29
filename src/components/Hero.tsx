@@ -2,6 +2,13 @@ import React from 'react';
 import { ChevronRight, Play, Zap, Cpu, Globe } from 'lucide-react';
 
 const Hero = () => {
+  const handleRunNPU = () => {
+    const element = document.querySelector('#companies-solutions');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen bg-black overflow-hidden">
       {/* Circuit Pattern Overlay */}
@@ -41,9 +48,12 @@ const Hero = () => {
               Get Started
               <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="group px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl border border-white/20 transition-all duration-300 backdrop-blur-sm flex items-center justify-center">
-              <Play className="mr-2 w-5 h-5" />
-              Watch Demo
+            <button 
+              onClick={handleRunNPU}
+              className="group px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl border border-white/20 transition-all duration-300 backdrop-blur-sm flex items-center justify-center"
+            >
+              <Cpu className="mr-2 w-5 h-5" />
+              Run NPU
             </button>
           </div>
 
