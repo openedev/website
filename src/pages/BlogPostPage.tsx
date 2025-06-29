@@ -1,6 +1,7 @@
 import React from 'react';
 import { Calendar, User, ArrowLeft, Clock, Tag, Share2, Linkedin, Twitter } from 'lucide-react';
 import { useParams } from 'react-router-dom';
+import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 const BlogPostPage = () => {
@@ -422,7 +423,8 @@ const BlogPostPage = () => {
   if (!post) {
     return (
       <div className="min-h-screen bg-black text-white flex items-center justify-center">
-        <div className="text-center">
+        <Navigation />
+        <div className="text-center pt-20">
           <h1 className="text-4xl font-bold mb-4">Post Not Found</h1>
           <p className="text-white/70 mb-8">The blog post you're looking for doesn't exist.</p>
           <a href="/blog" className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-white/90 transition-all duration-200">
@@ -435,8 +437,11 @@ const BlogPostPage = () => {
 
   return (
     <div className="min-h-screen bg-black text-white">
+      {/* Navigation */}
+      <Navigation />
+
       {/* Header */}
-      <div className="bg-black border-b border-white/10">
+      <div className="bg-black border-b border-white/10 pt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex items-center mb-6">
             <button 

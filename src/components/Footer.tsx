@@ -1,7 +1,18 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Linkedin, Twitter, Github, ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    // Always navigate to home page and scroll to top
+    navigate('/');
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
+  };
+
   const footerLinks = {
     products: [
       { name: 'Edge AI NPU Modules', href: '#' },
@@ -134,9 +145,12 @@ const Footer = () => {
         {/* Logo and Social Media positioned on the border line */}
         <div className="mt-16 -mb-8">
           <div className="flex items-center justify-between">
-            <div className="text-4xl font-bold text-white">
+            <button 
+              onClick={handleLogoClick}
+              className="text-4xl font-bold text-white hover:text-white/90 transition-colors duration-200"
+            >
               edgeble
-            </div>
+            </button>
             <div className="flex space-x-6">
               <a 
                 href="https://www.linkedin.com/company/edgeble/" 
