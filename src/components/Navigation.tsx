@@ -36,16 +36,49 @@ const Navigation = () => {
 
   const handleNavigation = (href: string) => {
     if (href.startsWith('#')) {
-      // Handle anchor links
-      const element = document.querySelector(href);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+      // Handle anchor links - check if we're on home page
+      if (window.location.pathname !== '/') {
+        // Navigate to home page first, then scroll to section
+        navigate('/');
+        setTimeout(() => {
+          const element = document.querySelector(href);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      } else {
+        // Already on home page, just scroll
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
       }
     } else {
       // Handle route navigation
       navigate(href);
     }
     setIsProductsOpen(false);
+    setIsOpen(false);
+  };
+
+  const handleProductInquiry = () => {
+    // Check if we're on home page
+    if (window.location.pathname !== '/') {
+      // Navigate to home page first, then scroll to contact section
+      navigate('/');
+      setTimeout(() => {
+        const element = document.querySelector('#contact');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      // Already on home page, just scroll to contact
+      const element = document.querySelector('#contact');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
     setIsOpen(false);
   };
 
@@ -110,7 +143,7 @@ const Navigation = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <button 
-              onClick={() => handleNavigation('#contact')}
+              onClick={handleProductInquiry}
               className="bg-white text-black hover:bg-white/90 px-6 py-2 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105"
             >
               Product Inquiry
@@ -169,7 +202,7 @@ const Navigation = () => {
               </div>
             ))}
             <button 
-              onClick={() => handleNavigation('#contact')}
+              onClick={handleProductInquiry}
               className="w-full text-left bg-white text-black hover:bg-white/90 px-3 py-2 rounded-lg font-semibold transition-all duration-200 mt-4"
             >
               Product Inquiry
