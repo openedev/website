@@ -71,14 +71,14 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-4xl mx-auto animate-fadeIn animation-delay-800">
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
-                <Cpu className="w-8 h-8 text-white mr-3" />
+                <Brain className="w-8 h-8 text-white mr-3" />
                 <span className="text-4xl font-bold text-white">15+</span>
               </div>
               <p className="text-xl text-white">Vision, Sound, Multimodal</p>
             </div>
             <div className="text-center">
               <div className="flex items-center justify-center mb-3">
-                <Brain className="w-8 h-8 text-white mr-3" />
+                <Cpu className="w-8 h-8 text-white mr-3" />
                 <span className="text-4xl font-bold text-white">8+</span>
               </div>
               <p className="text-xl text-white">Vision, LLM NPU Modules</p>
