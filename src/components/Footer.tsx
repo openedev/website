@@ -131,20 +131,11 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Logo positioned directly on the border line */}
+        {/* Logo and Social Media positioned on the border line */}
         <div className="mt-16 -mb-8">
-          <div className="text-4xl font-bold text-white">
-            edgeble
-          </div>
-        </div>
-      </div>
-
-      {/* Bottom Footer */}
-      <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-white/70 text-sm mb-4 md:mb-0">
-              © 2024 Edgeble. All rights reserved. | Privacy Policy | Terms of Service
+          <div className="flex items-center justify-between">
+            <div className="text-4xl font-bold text-white">
+              edgeble
             </div>
             <div className="flex space-x-6">
               <a 
@@ -171,6 +162,17 @@ const Footer = () => {
               >
                 <Github className="w-5 h-5" />
               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Footer */}
+      <div className="border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="text-white/70 text-sm mb-4 md:mb-0">
+              © 2024 Edgeble. All rights reserved. | Privacy Policy | Terms of Service
             </div>
           </div>
         </div>
