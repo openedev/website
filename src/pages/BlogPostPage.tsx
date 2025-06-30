@@ -246,7 +246,7 @@ const BlogPostPage = () => {
       title: 'Edgeble at DeepTech, GFST 2024 India',
       excerpt: 'Pushing the Limits of Edge AI: 60FPS Live YOLOv5 Object Detection on Edgeble AI\'s 6TOPS Edge AI Accelerator Modules. Demonstrating real-time AI capabilities at the edge.',
       content: `
-        <p class="text-lg mb-6">At DeepTech GFST 2024 India, we demonstrated the incredible capabilities of our edge AI accelerator modules by showcasing 60FPS live YOLOv5 object detection running on our 6TOPS Edge AI Accelerator.</p>
+        <p class="text-lg mb-6">At DeepTech GFST 2024 India, we demonstrated the incredible capabilities of our edge AI accelerator modules by showcasing 60FPS live YOLOv5  object detection running on our 6TOPS Edge AI Accelerator.</p>
         
         <h3 class="text-2xl font-bold text-white mb-4 mt-8">Real-Time Performance</h3>
         <p class="mb-6">Our demonstration proved that edge AI can deliver real-time performance for demanding computer vision applications, achieving 60 frames per second object detection without compromising accuracy.</p>
@@ -442,7 +442,7 @@ const BlogPostPage = () => {
 
       {/* Header */}
       <div className="bg-black border-b border-white/10 pt-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex items-center mb-6">
             <button 
               onClick={() => window.history.back()}
@@ -512,7 +512,7 @@ const BlogPostPage = () => {
       </div>
 
       {/* Article Content */}
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="prose prose-lg prose-invert max-w-none">
           <div 
             className="text-white/90 leading-relaxed"

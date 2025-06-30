@@ -62,7 +62,7 @@ const SolutionsPage = () => {
 
       {/* Header */}
       <div className="bg-black border-b border-white/10 pt-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex items-center mb-6">
             <button 
               onClick={() => window.history.back()}
@@ -82,7 +82,7 @@ const SolutionsPage = () => {
       </div>
 
       {/* Solutions Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {solutions.map((solution, index) => {
             const IconComponent = solution.icon;
