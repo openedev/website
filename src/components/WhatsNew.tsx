@@ -9,7 +9,7 @@ const WhatsNew = () => {
       title: 'Showcase at Bosch Global FIT.Fest\'25',
       description: 'On behalf of the entire team at BGSW, I would like to extend our heartfelt thanks for your organization\'s participation in Marketplace Stalls at our flagship Technical Event, FIT.Fest\'25, last week.',
       date: '2025-06-19',
-      image: 'images/image003.png?auto=compress&cs=tinysrgb&w=600',
+      image: '/images/blog-bosch.png?auto=compress&cs=tinysrgb&w=600',
       badge: 'Bosch Event',
       slug: 'fit-fest25'
     },
@@ -19,7 +19,7 @@ const WhatsNew = () => {
       title: 'Pitching at Beyond Borders: The Era of Agentic AI',
       description: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.',
       date: '2025-06-02',
-      image: 'images/Screenshot from 2025-06-29 02-42-29.png?auto=compress&cs=tinysrgb&w=600',
+      image: 'images/blog-ey.png?auto=compress&cs=tinysrgb&w=600',
       badge: 'Agentic AI',
       slug: 'beyond-borders'
     },

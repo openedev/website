@@ -24,7 +24,7 @@ const BlogPage = () => {
       author: 'Jagan Teki',
       date: '2025-06-19',
       readTime: '3 min read',
-      image: 'images/image003.png',
+      image: '/images/blog-bosch.png',
       tags: ['Bosch', 'FIT.Fest', 'Marketplace'],
       category: 'Events'
     },
@@ -49,7 +49,7 @@ const BlogPage = () => {
       author: 'Jagan Teki',
       date: '2025-06-02',
       readTime: '5 min read',
-      image: 'images/Screenshot from 2025-06-29 02-42-29.png',
+      image: '/images/blog-ey.png',
       tags: ['Agentic AI', 'EY Partnership', 'T-Hub'],
       category: 'Events'
     },
