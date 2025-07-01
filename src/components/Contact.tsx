@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Send, CheckCircle, AlertCircle } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,19 +10,67 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
+    // Clear any previous errors when user starts typing
+    if (submitError) {
+      setSubmitError('');
+    }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 3000);
+    setIsSubmitting(true);
+    setSubmitError('');
+
+    try {
+      // Create mailto link with form data
+      const subject = encodeURIComponent(`[Contact Form] ${formData.subject || 'General Inquiry'}`);
+      const body = encodeURIComponent(`
+Name: ${formData.name}
+Email: ${formData.email}
+Company: ${formData.company || 'Not specified'}
+Subject: ${formData.subject}
+
+Message:
+${formData.message}
+
+---
+This message was sent from the Edgeble AI website contact form.
+      `);
+
+      const mailtoLink = `mailto:info@edgeble.ai?subject=${subject}&body=${body}`;
+
+      // Try to open the user's email client
+      window.location.href = mailtoLink;
+
+      // Show success message
+      setIsSubmitted(true);
+      
+      // Reset form after successful submission
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        subject: '',
+        message: ''
+      });
+
+      // Hide success message after 5 seconds
+      setTimeout(() => setIsSubmitted(false), 5000);
+
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitError('There was an error submitting your message. Please try again or contact us directly at info@edgeble.ai');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -30,25 +78,29 @@ const Contact = () => {
       icon: Mail,
       title: 'Info',
       details: 'info@edgeble.ai',
-      subtitle: ''
+      subtitle: '',
+      link: 'mailto:info@edgeble.ai'
     },
     {
       icon: Mail,
       title: 'Sales',
       details: 'sales@edgeble.ai',
-      subtitle: ''
+      subtitle: '',
+      link: 'mailto:sales@edgeble.ai'
     },
     {
       icon: Phone,
       title: 'Phone',
       details: '+91 91000 90959',
-      subtitle: ''
+      subtitle: '',
+      link: 'tel:+919100090959'
     },
     {
       icon: MapPin,
       title: 'Address',
       details: 'T-Hub, 1/C, 83/1, Panmaktha, Raidurgam, Knowledge City Rd, Hyderabad',
-      subtitle: 'Telangana - 500081'
+      subtitle: 'Telangana - 500081',
+      link: 'https://maps.google.com/?q=T-Hub+Hyderabad'
     },
   ];
 
@@ -71,9 +123,22 @@ const Contact = () => {
             <h3 className="text-2xl font-bold text-white mb-6">Send us a Message</h3>
             
             {isSubmitted && (
-              <div className="mb-6 p-4 bg-white/10 border border-white/20 rounded-xl flex items-center">
-                <CheckCircle className="w-5 h-5 text-white mr-3" />
-                <span className="text-white">Thank you! Your message has been sent successfully.</span>
+              <div className="mb-6 p-4 bg-green-500/20 border border-green-500/30 rounded-xl flex items-center">
+                <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                <div>
+                  <span className="text-green-400 font-semibold">Message sent successfully!</span>
+                  <p className="text-green-300 text-sm mt-1">Your email client should open with the message. If not, please contact us directly at info@edgeble.ai</p>
+                </div>
+              </div>
+            )}
+
+            {submitError && (
+              <div className="mb-6 p-4 bg-red-500/20 border border-red-500/30 rounded-xl flex items-start">
+                <AlertCircle className="w-5 h-5 text-red-400 mr-3 mt-0.5" />
+                <div>
+                  <span className="text-red-400 font-semibold">Error sending message</span>
+                  <p className="text-red-300 text-sm mt-1">{submitError}</p>
+                </div>
               </div>
             )}
 
@@ -90,7 +155,8 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-200"
+                    disabled={isSubmitting}
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-200 disabled:opacity-50"
                     placeholder="Your full name"
                   />
                 </div>
@@ -105,7 +171,8 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-200"
+                    disabled={isSubmitting}
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-200 disabled:opacity-50"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -121,7 +188,8 @@ const Contact = () => {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-200"
+                  disabled={isSubmitting}
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-200 disabled:opacity-50"
                   placeholder="Your company name"
                 />
               </div>
@@ -136,7 +204,8 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-200"
+                  disabled={isSubmitting}
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-200 disabled:opacity-50"
                 >
                   <option value="">Select a subject</option>
                   <option value="product-inquiry">Product Inquiry</option>
@@ -158,18 +227,33 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-200 resize-none"
+                  disabled={isSubmitting}
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-200 resize-none disabled:opacity-50"
                   placeholder="Tell us about your project and requirements..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-white text-black hover:bg-white/90 py-4 px-6 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group"
+                disabled={isSubmitting}
+                className="w-full bg-white text-black hover:bg-white/90 py-4 px-6 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center group disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
-                <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                {isSubmitting ? (
+                  <>
+                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-black mr-2"></div>
+                    Sending Message...
+                  </>
+                ) : (
+                  <>
+                    Send Message
+                    <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </>
+                )}
               </button>
+
+              <p className="text-white/60 text-sm text-center">
+                Your message will be sent to <strong>info@edgeble.ai</strong>
+              </p>
             </form>
           </div>
 
@@ -187,8 +271,19 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="text-lg font-semibold text-white mb-1">{info.title}</h4>
-                        <p className="text-white">{info.details}</p>
-                        <p className="text-white/70 text-sm">{info.subtitle}</p>
+                        {info.link ? (
+                          <a 
+                            href={info.link}
+                            target={info.link.startsWith('http') ? '_blank' : '_self'}
+                            rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined}
+                            className="text-white hover:text-white/70 transition-colors duration-200"
+                          >
+                            {info.details}
+                          </a>
+                        ) : (
+                          <p className="text-white">{info.details}</p>
+                        )}
+                        {info.subtitle && <p className="text-white/70 text-sm">{info.subtitle}</p>}
                       </div>
                     </div>
                   );
@@ -200,17 +295,17 @@ const Contact = () => {
             <div className="bg-white/5 rounded-2xl shadow-lg p-8 border border-white/10">
               <h3 className="text-2xl font-bold text-white mb-6">Our Location</h3>
               <div className="rounded-xl h-64 overflow-hidden relative">
-		<iframe
-		   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5373101725936!2d78.3791418!3d17.433978600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb937f2ada4f9b%3A0x860789ba1f939b5!2sEdgeble%20AI!5e0!3m2!1sen!2sin!4v1750931755624!5m2!1sen!2sin"
-		   width="100%"
-		   height="100%"
-		   style={{ border: 0, position: 'relative', zIndex: 10 }}
-		   allowFullScreen
-		   loading="lazy"
-		   referrerPolicy="no-referrer-when-downgrade"
-		   className="rounded-xl"
-		   title="Edgeble AI Office Location"
-		/>
+                <iframe
+                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5373101725936!2d78.3791418!3d17.433978600000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb937f2ada4f9b%3A0x860789ba1f939b5!2sEdgeble%20AI!5e0!3m2!1sen!2sin!4v1750931755624!5m2!1sen!2sin"
+                   width="100%"
+                   height="100%"
+                   style={{ border: 0, position: 'relative', zIndex: 10 }}
+                   allowFullScreen
+                   loading="lazy"
+                   referrerPolicy="no-referrer-when-downgrade"
+                   className="rounded-xl"
+                   title="Edgeble AI Office Location"
+                />
               </div>
             </div>
           </div>
