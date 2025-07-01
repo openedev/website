@@ -5,7 +5,7 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: 'EdgeGPT NPU Chips',
+      name: 'EdgeGPT NPU',
       description: 'Co-designed with EdgeGPT Models for predictable latency and power.',
       image: '/images/npu.png',
       badge: 'Chip',

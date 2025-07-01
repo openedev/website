@@ -23,9 +23,9 @@ const Navigation = () => {
       name: 'Products', 
       hasDropdown: true,
       children: [
-        { name: 'EdgeGPT NPU Chips', href: '/products/npu' },
+        { name: 'EdgeGPT NPU', href: '/products/npu' },
         { name: 'EdgeGPT Model', href: '/products/model' },
-        { name: 'Agentic Edge AIc', href: '/products/agentic' },
+        { name: 'Agentic Edge AI', href: '/products/agentic' },
       ] 
     },
     { name: 'Solutions', href: '#solutions' },
