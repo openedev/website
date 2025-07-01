@@ -202,7 +202,7 @@ const BlogPostPage = () => {
       authorImage: 'images/jagan.jpg',
       date: '2024-03-25',
       readTime: '5 min read',
-      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      image: 'https://www.edgeble.ai/blog13.png',
       tags: ['Conference', 'AI', 'Mumbai'],
       category: 'Events'
     },
@@ -237,7 +237,7 @@ const BlogPostPage = () => {
       authorImage: 'images/jagan.jpg',
       date: '2024-02-08',
       readTime: '7 min read',
-      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      image: 'https://www.edgeble.ai/blog10.png',
       tags: ['AI Acceleration', 'Moscow', 'Edge Computing'],
       category: 'Technology'
     },
@@ -272,7 +272,7 @@ const BlogPostPage = () => {
       authorImage: 'images/srinivas.png',
       date: '2024-01-26',
       readTime: '5 min read',
-      image: 'https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      image: 'https://www.edgeble.ai/blog9.png',
       tags: ['DeepTech', 'YOLOv5', 'Real-time AI'],
       category: 'Technology'
     },
@@ -297,7 +297,7 @@ const BlogPostPage = () => {
       authorImage: 'images/srinivas.png',
       date: '2024-01-12',
       readTime: '3 min read',
-      image: 'https://images.pexels.com/photos/159298/gear-machine-mechanical-mechanical-engineering-159298.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      image: 'https://www.edgeble.ai/blog8.png',
       tags: ['Sponsorship', 'DeepTech', 'Community'],
       category: 'Events'
     },
@@ -332,7 +332,7 @@ const BlogPostPage = () => {
       authorImage: 'images/srinivas.png',
       date: '2024-11-05',
       readTime: '6 min read',
-      image: 'https://images.pexels.com/photos/3786157/pexels-photo-3786157.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      image: 'https://www.edgeble.ai/blog7.png',
       tags: ['TinyML', 'Taipei', 'Edge AI Lifecycle'],
       category: 'Technology'
     },
@@ -367,7 +367,7 @@ const BlogPostPage = () => {
       authorImage: 'images/srinivas.png',
       date: '2024-10-15',
       readTime: '8 min read',
-      image: 'https://images.pexels.com/photos/2132227/pexels-photo-2132227.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      image: 'https://www.edgeble.ai/blog6.webp',
       tags: ['Industrial', 'Battery Systems', 'Quality Control'],
       category: 'Industry'
     },
@@ -390,7 +390,7 @@ const BlogPostPage = () => {
       authorImage: 'images/srinivas.png',
       date: '2024-12-03',
       readTime: '3 min read',
-      image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      image: 'https://www.edgeble.ai/blog12.png',
       tags: ['T-Hub', 'Innovation', 'Startup'],
       category: 'Events'
     },
@@ -412,7 +412,7 @@ const BlogPostPage = () => {
       authorImage: 'images/srinivas.png',
       date: '2024-02-24',
       readTime: '6 min read',
-      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      image: 'https://www.edgeble.ai/blog11.png',
       tags: ['TinyML', 'Conference', 'AI Lifecycle'],
       category: 'Technology'
     }
@@ -442,7 +442,7 @@ const BlogPostPage = () => {
 
       {/* Header */}
       <div className="bg-black border-b border-white/10 pt-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex items-center mb-6">
             <button 
               onClick={() => window.history.back()}
@@ -501,7 +501,7 @@ const BlogPostPage = () => {
 
       {/* Featured Image */}
       <div className="relative">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative h-[400px] md:h-[500px] overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-black">
             <img
               src={post.image}
@@ -513,10 +513,6 @@ const BlogPostPage = () => {
                 objectFit: 'cover',
                 objectPosition: 'center'
               }}
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1200';
-              }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent rounded-2xl"></div>
           </div>
@@ -524,7 +520,7 @@ const BlogPostPage = () => {
       </div>
 
       {/* Article Content */}
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <article className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="prose prose-lg prose-invert max-w-none">
           <div 
             className="text-white/90 leading-relaxed"
