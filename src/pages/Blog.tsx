@@ -24,7 +24,7 @@ const BlogPage = () => {
       author: 'Jagan Teki',
       date: '2025-06-19',
       readTime: '3 min read',
-      image: 'images/image003.png?auto=compress&cs=tinysrgb&w=800',
+      image: 'images/image003.png',
       tags: ['Bosch', 'FIT.Fest', 'Marketplace'],
       category: 'Events'
     },
@@ -49,7 +49,7 @@ const BlogPage = () => {
       author: 'Jagan Teki',
       date: '2025-06-02',
       readTime: '5 min read',
-      image: 'images/Screenshot from 2025-06-29 02-42-29.png?auto=compress&cs=tinysrgb&w=800',
+      image: 'images/Screenshot from 2025-06-29 02-42-29.png',
       tags: ['Agentic AI', 'EY Partnership', 'T-Hub'],
       category: 'Events'
     },
@@ -72,7 +72,7 @@ const BlogPage = () => {
       author: 'Jagan Teki',
       date: '2025-03-25',
       readTime: '4 min read',
-      image: 'images/peak.png?auto=compress&cs=tinysrgb&w=800',
+      image: 'images/peak.png',
       tags: ['Peak XV', 'Rajan Anandan', 'T-Hub'],
       category: 'Events'
     },
@@ -93,7 +93,7 @@ const BlogPage = () => {
       author: 'Jagan Teki',
       date: '2024-03-30',
       readTime: '4 min read',
-      image: 'https://www.edgeble.ai/blog14.png?auto=compress&cs=tinysrgb&w=800',
+      image: 'images/ida.png',
       tags: ['Roundtable', 'Partnership', 'Innovation'],
       category: 'Events'
     },
@@ -114,7 +114,7 @@ const BlogPage = () => {
       author: 'Jagan Teki',
       date: '2024-03-25',
       readTime: '5 min read',
-      image: 'https://www.edgeble.ai/blog13.png?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Conference', 'AI', 'Mumbai'],
       category: 'Events'
     },
@@ -135,7 +135,7 @@ const BlogPage = () => {
       author: 'Srinivas Patnaik',
       date: '2024-12-03',
       readTime: '3 min read',
-      image: 'https://www.edgeble.ai/blog12.png?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['T-Hub', 'Innovation', 'Startup'],
       category: 'Events'
     },
@@ -156,7 +156,7 @@ const BlogPage = () => {
       author: 'Chakrish Krishtam',
       date: '2024-02-24',
       readTime: '6 min read',
-      image: 'https://www.edgeble.ai/blog11.png?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['TinyML', 'Conference', 'AI Lifecycle'],
       category: 'Technology'
     },
@@ -180,7 +180,7 @@ const BlogPage = () => {
       author: 'Jagan Teki',
       date: '2024-02-08',
       readTime: '7 min read',
-      image: 'https://www.edgeble.ai/blog10.png?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['AI Acceleration', 'Moscow', 'Edge Computing'],
       category: 'Technology'
     },
@@ -204,7 +204,7 @@ const BlogPage = () => {
       author: 'Alberto Bianchi',
       date: '2024-01-26',
       readTime: '5 min read',
-      image: 'https://www.edgeble.ai/blog9.png?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['DeepTech', 'YOLOv5', 'Real-time AI'],
       category: 'Technology'
     },
@@ -228,7 +228,7 @@ const BlogPage = () => {
       author: 'Srinivas Patnaik',
       date: '2024-01-12',
       readTime: '3 min read',
-      image: 'https://www.edgeble.ai/blog8.png?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/159298/gear-machine-mechanical-mechanical-engineering-159298.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Sponsorship', 'DeepTech', 'Community'],
       category: 'Events'
     },
@@ -252,7 +252,7 @@ const BlogPage = () => {
       author: 'Chakrish Krishtam',
       date: '2024-11-05',
       readTime: '6 min read',
-      image: 'https://www.edgeble.ai/blog7.png?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/3786157/pexels-photo-3786157.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['TinyML', 'Taipei', 'Edge AI Lifecycle'],
       category: 'Technology'
     },
@@ -276,7 +276,7 @@ const BlogPage = () => {
       author: 'Alberto Bianchi',
       date: '2024-10-15',
       readTime: '8 min read',
-      image: 'https://www.edgeble.ai/blog6.webp?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/2132227/pexels-photo-2132227.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Industrial', 'Battery Systems', 'Quality Control'],
       category: 'Industry'
     },
@@ -297,7 +297,7 @@ const BlogPage = () => {
       author: 'Alberto Bianchi',
       date: '2024-10-09',
       readTime: '8 min read',
-      image: 'https://www.edgeble.ai/blog4.webp?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['NPU', 'Architecture', 'Performance'],
       category: 'Technology'
     },
@@ -318,7 +318,7 @@ const BlogPage = () => {
       author: 'Jagan Teki',
       date: '2023-10-25',
       readTime: '7 min read',
-      image: 'https://www.edgeble.ai/blog3.webp?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Industrial', 'Deployment', 'Best Practices'],
       category: 'Industry'
     },
@@ -339,7 +339,7 @@ const BlogPage = () => {
       author: 'Srinivas Patnaik',
       date: '2023-06-14',
       readTime: '6 min read',
-      image: 'https://www.edgeble.ai/blog2.webp?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Autonomous Vehicles', 'Safety', 'Real-time'],
       category: 'Automotive'
     }
@@ -385,7 +385,7 @@ const BlogPage = () => {
           {blogPosts.map((post) => (
             <div key={post.id} className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20">
               {/* Image */}
-              <div className="relative h-80 overflow-hidden bg-gradient-to-br from-gray-900 to-black">
+              <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-900 to-black">
                 <img 
                   src={post.image} 
                   alt={post.title}
@@ -396,18 +396,22 @@ const BlogPage = () => {
                     objectFit: 'cover',
                     objectPosition: 'center'
                   }}
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800';
+                  }}
                 />
                 {/* Overlay for better text readability */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                 
                 {/* Badge */}
-                <div className="absolute top-6 left-6 z-10">
+                <div className="absolute top-4 left-4 z-10">
                   <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white text-black shadow-lg">
                     {post.category}
                   </span>
                 </div>
                 {/* Date */}
-                <div className="absolute bottom-6 right-6 bg-black/80 backdrop-blur-sm rounded-lg px-3 py-1 z-10">
+                <div className="absolute bottom-4 right-4 bg-black/80 backdrop-blur-sm rounded-lg px-3 py-1 z-10">
                   <div className="flex items-center text-white text-sm">
                     <Calendar className="w-4 h-4 mr-2" />
                     {formatDate(post.date)}
