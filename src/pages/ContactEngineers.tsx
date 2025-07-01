@@ -46,7 +46,7 @@ const ContactEngineers = () => {
 
       {/* Header */}
       <div className="bg-black border-b border-white/10 pt-20">
-        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex items-center mb-6">
             <button 
               onClick={() => window.history.back()}
@@ -66,7 +66,7 @@ const ContactEngineers = () => {
       </div>
 
       {/* Engineers Grid */}
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {engineers.map((engineer, index) => (
             <div key={index} className="bg-white/5 rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300 overflow-hidden">

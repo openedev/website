@@ -360,7 +360,7 @@ const BlogPage = () => {
 
       {/* Header */}
       <div className="bg-black border-b border-white/10 pt-20">
-        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex items-center mb-6">
             <button 
               onClick={() => window.history.back()}
@@ -380,7 +380,7 @@ const BlogPage = () => {
       </div>
 
       {/* Blog Posts Grid */}
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {blogPosts.map((post) => (
             <div key={post.id} className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20">
