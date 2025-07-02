@@ -30,25 +30,8 @@ const Contact = () => {
     setSubmitError('');
 
     try {
-      // Create mailto link with form data
-      const subject = encodeURIComponent(`[Contact Form] ${formData.subject || 'General Inquiry'}`);
-      const body = encodeURIComponent(`
-Name: ${formData.name}
-Email: ${formData.email}
-Company: ${formData.company || 'Not specified'}
-Subject: ${formData.subject}
-
-Message:
-${formData.message}
-
----
-This message was sent from the Edgeble AI website contact form.
-      `);
-
-      const mailtoLink = `mailto:info@edgeble.ai?subject=${subject}&body=${body}`;
-
-      // Try to open the user's email client
-      window.location.href = mailtoLink;
+      // Simulate form submission (replace with actual API call)
+      await new Promise(resolve => setTimeout(resolve, 1000));
 
       // Show success message
       setIsSubmitted(true);
@@ -127,7 +110,7 @@ This message was sent from the Edgeble AI website contact form.
                 <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
                 <div>
                   <span className="text-green-400 font-semibold">Message sent successfully!</span>
-                  <p className="text-green-300 text-sm mt-1">Your email client should open with the message. If not, please contact us directly at info@edgeble.ai</p>
+                  <p className="text-green-300 text-sm mt-1">We'll get back to you within 24 hours.</p>
                 </div>
               </div>
             )}
@@ -207,12 +190,12 @@ This message was sent from the Edgeble AI website contact form.
                   disabled={isSubmitting}
                   className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-200 disabled:opacity-50"
                 >
-                  <option value="">Select a subject</option>
-                  <option value="product-inquiry">Product Inquiry</option>
-                  <option value="custom-solution">Custom Solution</option>
-                  <option value="partnership">Partnership</option>
-                  <option value="support">Support</option>
-                  <option value="other">Other</option>
+                  <option value="" className="bg-black text-white">Select a subject</option>
+                  <option value="product-inquiry" className="bg-black text-white">Product Inquiry</option>
+                  <option value="custom-solution" className="bg-black text-white">Custom Solution</option>
+                  <option value="partnership" className="bg-black text-white">Partnership</option>
+                  <option value="support" className="bg-black text-white">Support</option>
+                  <option value="other" className="bg-black text-white">Other</option>
                 </select>
               </div>
 
@@ -250,10 +233,6 @@ This message was sent from the Edgeble AI website contact form.
                   </>
                 )}
               </button>
-
-              <p className="text-white/60 text-sm text-center">
-                Your message will be sent to <strong>info@edgeble.ai</strong>
-              </p>
             </form>
           </div>
 
