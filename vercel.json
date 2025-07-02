@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/blog/:slug",
+      "destination": "/blog/:slug"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/blog/([^/]+)",
+      "dest": "/index.html"
+    }
+  ]
+}
