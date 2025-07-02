@@ -202,12 +202,56 @@ const BlogPostPage = () => {
       authorImage: 'images/jagan.jpg',
       date: '2024-03-25',
       readTime: '5 min read',
-      image: 'https://www.edgeble.ai/blog13.png',
+      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Conference', 'AI', 'Mumbai'],
       category: 'Events'
     },
-    'aij-moscow': {
+    'thub-enclave': {
       id: 6,
+      title: 'Edgeble at T-Hub Innovative Enclave 2025',
+      excerpt: 'Edgeble AI was proud to participate in the T-Hub Innovative Enclave 2025 — a convergence of India\'s most forward-thinking startups and ecosystem leaders.',
+      content: `
+        <p class="text-lg mb-6">The T-Hub Innovative Enclave 2025 brought together the most promising startups and technology leaders from across India. As participants, we had the opportunity to showcase our edge AI solutions and connect with fellow innovators.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Innovation Showcase</h3>
+        <p class="mb-6">The event featured live demonstrations of cutting-edge technologies, with our EdgeGPT platform receiving significant attention from investors and industry partners.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Ecosystem Building</h3>
+        <p class="mb-6">The enclave emphasized the importance of building strong startup ecosystems and fostering collaboration between technology companies, investors, and government initiatives.</p>
+      `,
+      author: 'Srinivas Patnaik',
+      authorRole: 'Strategy Analyst',
+      authorImage: 'images/srinivas.png',
+      date: '2024-12-03',
+      readTime: '3 min read',
+      image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800',
+      tags: ['T-Hub', 'Innovation', 'Startup'],
+      category: 'Events'
+    },
+    'cie-avishkar': {
+      id: 7,
+      title: 'Speaking at CIE-IIIT Avishkar 2024',
+      excerpt: 'About TinyML Taipei 2024, About Edgeble AI Participation, End-to-End Edge AI Lifecycle.',
+      content: `
+        <p class="text-lg mb-6">The CIE-IIIT Avishkar 2024 conference provided an excellent platform to discuss the latest developments in TinyML and edge AI technologies. Our presentation covered the complete lifecycle of edge AI development and deployment.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">TinyML Revolution</h3>
+        <p class="mb-6">We explored how TinyML is enabling AI capabilities on resource-constrained devices, opening new possibilities for IoT and embedded systems applications.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">End-to-End Solutions</h3>
+        <p class="mb-6">Our talk emphasized the importance of considering the entire AI lifecycle, from model development and optimization to deployment and monitoring at the edge.</p>
+      `,
+      author: 'Chakrish Krishtam',
+      authorRole: 'AI/ML Engineer',
+      authorImage: 'images/srinivas.png',
+      date: '2024-02-24',
+      readTime: '6 min read',
+      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
+      tags: ['TinyML', 'Conference', 'AI Lifecycle'],
+      category: 'Technology'
+    },
+    'aij-moscow': {
+      id: 8,
       title: 'Speaking at AIJ Moscow 2024',
       excerpt: 'The Future of AI Acceleration: Transforming Edge Computing for Tomorrow\'s Industries. Speaking on the future of AI acceleration and how edge computing is transforming industries.',
       content: `
@@ -237,16 +281,16 @@ const BlogPostPage = () => {
       authorImage: 'images/jagan.jpg',
       date: '2024-02-08',
       readTime: '7 min read',
-      image: 'https://www.edgeble.ai/blog10.png',
+      image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['AI Acceleration', 'Moscow', 'Edge Computing'],
       category: 'Technology'
     },
     'deeptech-gfst': {
-      id: 7,
+      id: 9,
       title: 'Edgeble at DeepTech, GFST 2024 India',
       excerpt: 'Pushing the Limits of Edge AI: 60FPS Live YOLOv5 Object Detection on Edgeble AI\'s 6TOPS Edge AI Accelerator Modules. Demonstrating real-time AI capabilities at the edge.',
       content: `
-        <p class="text-lg mb-6">At DeepTech GFST 2024 India, we demonstrated the incredible capabilities of our edge AI accelerator modules by showcasing 60FPS live YOLOv5  object detection running on our 6TOPS Edge AI Accelerator.</p>
+        <p class="text-lg mb-6">At DeepTech GFST 2024 India, we demonstrated the incredible capabilities of our edge AI accelerator modules by showcasing 60FPS live YOLOv5 object detection running on our 6TOPS Edge AI Accelerator.</p>
         
         <h3 class="text-2xl font-bold text-white mb-4 mt-8">Real-Time Performance</h3>
         <p class="mb-6">Our demonstration proved that edge AI can deliver real-time performance for demanding computer vision applications, achieving 60 frames per second object detection without compromising accuracy.</p>
@@ -272,12 +316,12 @@ const BlogPostPage = () => {
       authorImage: 'images/srinivas.png',
       date: '2024-01-26',
       readTime: '5 min read',
-      image: 'https://www.edgeble.ai/blog9.png',
+      image: 'https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['DeepTech', 'YOLOv5', 'Real-time AI'],
       category: 'Technology'
     },
     'sponsor-deeptech': {
-      id: 8,
+      id: 10,
       title: 'Edgeble Sponsor DeepTech, GFST 2024 India',
       excerpt: 'We would like to express our sincere gratitude to our sponsors and event partners. A big Thank you to our Lanyard Sponsor! Edgeble AI supporting the DeepTech ecosystem.',
       content: `
@@ -297,12 +341,12 @@ const BlogPostPage = () => {
       authorImage: 'images/srinivas.png',
       date: '2024-01-12',
       readTime: '3 min read',
-      image: 'https://www.edgeble.ai/blog8.png',
+      image: 'https://images.pexels.com/photos/159298/gear-machine-mechanical-mechanical-engineering-159298.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Sponsorship', 'DeepTech', 'Community'],
       category: 'Events'
     },
     'tinyml-taipei': {
-      id: 9,
+      id: 11,
       title: 'Edgeble at TinyML Taipei 2024 Innovation',
       excerpt: 'End-to-End Edge AI Lifecycle with Real-Time, On-Device AI. Powered by EdgeGPT Pre-trained Edge AI Accelerators. Showcasing our comprehensive edge AI solutions.',
       content: `
@@ -332,12 +376,12 @@ const BlogPostPage = () => {
       authorImage: 'images/srinivas.png',
       date: '2024-11-05',
       readTime: '6 min read',
-      image: 'https://www.edgeble.ai/blog7.png',
+      image: 'https://images.pexels.com/photos/3786157/pexels-photo-3786157.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['TinyML', 'Taipei', 'Edge AI Lifecycle'],
       category: 'Technology'
     },
     'industrial-summit': {
-      id: 10,
+      id: 12,
       title: 'Industrial Future Summit 2024',
       excerpt: 'Revolutionising Vehicle Battery System Welding Inspection with Edge AI. We\'re participating! Industrial Future Summit - The leading event for Future Builders in Stockholm.',
       content: `
@@ -367,54 +411,117 @@ const BlogPostPage = () => {
       authorImage: 'images/srinivas.png',
       date: '2024-10-15',
       readTime: '8 min read',
-      image: 'https://www.edgeble.ai/blog6.webp',
+      image: 'https://images.pexels.com/photos/2132227/pexels-photo-2132227.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Industrial', 'Battery Systems', 'Quality Control'],
       category: 'Industry'
     },
-    // Add other existing blog posts...
-    'thub-enclave': {
-      id: 11,
-      title: 'Edgeble at T-Hub Innovative Enclave 2025',
-      excerpt: 'Edgeble AI was proud to participate in the T-Hub Innovative Enclave 2025 — a convergence of India\'s most forward-thinking startups and ecosystem leaders.',
+    'ai-hardware-summit': {
+      id: 13,
+      title: 'Edgeble at AI Hardware and Edge AI Summit 2024',
+      excerpt: 'Summary of our participation at Edge AI For Innovation & Impact.',
       content: `
-        <p class="text-lg mb-6">The T-Hub Innovative Enclave 2025 brought together the most promising startups and technology leaders from across India. As participants, we had the opportunity to showcase our edge AI solutions and connect with fellow innovators.</p>
+        <p class="text-lg mb-6">The AI Hardware and Edge AI Summit 2024 brought together leading innovators in AI hardware design and edge computing solutions. Our participation highlighted the critical role of specialized hardware in enabling widespread AI adoption at the edge.</p>
         
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Innovation Showcase</h3>
-        <p class="mb-6">The event featured live demonstrations of cutting-edge technologies, with our EdgeGPT platform receiving significant attention from investors and industry partners.</p>
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Revolutionary Design</h3>
+        <p class="mb-6">Our EdgeGPT NPU represents a breakthrough in edge AI processing, featuring a novel architecture designed specifically for real-world deployment scenarios. The heterogeneous computing architecture combines specialized AI processing units with traditional CPU cores, optimized for different types of AI workloads.</p>
         
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Ecosystem Building</h3>
-        <p class="mb-6">The enclave emphasized the importance of building strong startup ecosystems and fostering collaboration between technology companies, investors, and government initiatives.</p>
+        <div class="bg-white/5 rounded-xl p-6 mb-8 border border-white/10">
+          <h4 class="text-lg font-semibold text-white mb-3">Key Innovations:</h4>
+          <ul class="space-y-2 text-white/80">
+            <li>• Heterogeneous computing architecture</li>
+            <li>• Specialized AI processing units</li>
+            <li>• Power-efficient design</li>
+            <li>• Real-world deployment optimization</li>
+          </ul>
+        </div>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Performance Metrics</h3>
+        <p class="mb-6">With up to 32 TOPS of AI processing power while maintaining exceptional power efficiency, our NPU delivers the performance needed for demanding edge applications across various industries.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Industry Impact</h3>
+        <p class="mb-6">The summit emphasized how specialized AI hardware is becoming essential for enabling real-time AI applications in manufacturing, automotive, healthcare, and other critical sectors where latency and reliability are paramount.</p>
+      `,
+      author: 'Alberto Bianchi',
+      authorRole: 'Hardware Engineer',
+      authorImage: 'images/srinivas.png',
+      date: '2024-10-09',
+      readTime: '8 min read',
+      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
+      tags: ['NPU', 'Architecture', 'Performance'],
+      category: 'Technology'
+    },
+    'mobile-congress': {
+      id: 14,
+      title: 'Edgeble at Indian Mobile Congress 2023',
+      excerpt: 'Summary of our participation at Indian Mobile Congress 2023.',
+      content: `
+        <p class="text-lg mb-6">The Indian Mobile Congress 2023 provided an excellent platform to showcase how edge AI is transforming mobile and telecommunications infrastructure. Our participation highlighted the critical role of edge computing in enabling next-generation mobile applications.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Mobile Edge Computing</h3>
+        <p class="mb-6">We demonstrated how our edge AI solutions can be integrated into mobile network infrastructure to enable real-time AI processing at the network edge, reducing latency and improving user experiences.</p>
+        
+        <div class="bg-white/5 rounded-xl p-6 mb-8 border border-white/10">
+          <h4 class="text-lg font-semibold text-white mb-3">Key Applications:</h4>
+          <ul class="space-y-2 text-white/80">
+            <li>• 5G network optimization</li>
+            <li>• Real-time video analytics</li>
+            <li>• IoT device management</li>
+            <li>• Network security enhancement</li>
+          </ul>
+        </div>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">5G and Edge AI Convergence</h3>
+        <p class="mb-6">The convergence of 5G networks and edge AI creates unprecedented opportunities for mobile applications that require ultra-low latency and high-bandwidth processing capabilities.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Future of Mobile AI</h3>
+        <p class="mb-6">Our presentation explored how edge AI will enable new categories of mobile applications, from augmented reality to autonomous systems, that require real-time processing capabilities.</p>
+      `,
+      author: 'Jagan Teki',
+      authorRole: 'CEO & Founder',
+      authorImage: 'images/jagan.jpg',
+      date: '2023-10-25',
+      readTime: '7 min read',
+      image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=800',
+      tags: ['Mobile', '5G', 'Edge Computing'],
+      category: 'Technology'
+    },
+    'edge-expo-europe': {
+      id: 15,
+      title: 'Edgeble at Edge Computing Expo Europe 2023',
+      excerpt: 'Recap of Edgeble presence at the Edge Computing Expo Europe 2023. Learn about our latest innovations and engagements with industry leaders.',
+      content: `
+        <p class="text-lg mb-6">Edge Computing Expo Europe 2023 was a landmark event that brought together the leading innovators in edge computing technology. Our participation provided valuable insights into the European market and opportunities for collaboration with industry leaders.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">European Market Insights</h3>
+        <p class="mb-6">The European edge computing market presents unique opportunities and challenges, with strong emphasis on data privacy, regulatory compliance, and sustainable technology solutions.</p>
+        
+        <div class="bg-white/5 rounded-xl p-6 mb-8 border border-white/10">
+          <h4 class="text-lg font-semibold text-white mb-3">Key Themes:</h4>
+          <ul class="space-y-2 text-white/80">
+            <li>• Data sovereignty and privacy</li>
+            <li>• Sustainable edge computing</li>
+            <li>• Industrial automation</li>
+            <li>• Smart city initiatives</li>
+          </ul>
+        </div>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Industry Partnerships</h3>
+        <p class="mb-6">The expo facilitated valuable connections with European technology partners, system integrators, and potential customers across various industries including automotive, manufacturing, and telecommunications.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Technology Demonstrations</h3>
+        <p class="mb-6">We showcased our latest edge AI accelerator modules and demonstrated real-world applications in industrial automation and smart infrastructure, receiving positive feedback from attendees and industry experts.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Future Collaborations</h3>
+        <p class="mb-6">The connections made at the expo have led to ongoing discussions about potential partnerships and pilot projects with European companies looking to implement edge AI solutions.</p>
       `,
       author: 'Srinivas Patnaik',
       authorRole: 'Strategy Analyst',
       authorImage: 'images/srinivas.png',
-      date: '2024-12-03',
-      readTime: '3 min read',
-      image: 'https://www.edgeble.ai/blog12.png',
-      tags: ['T-Hub', 'Innovation', 'Startup'],
-      category: 'Events'
-    },
-    'cie-avishkar': {
-      id: 12,
-      title: 'Speaking at CIE-IIIT Avishkar 2024',
-      excerpt: 'About TinyML Taipei 2024, About Edgeble AI Participation, End-to-End Edge AI Lifecycle.',
-      content: `
-        <p class="text-lg mb-6">The CIE-IIIT Avishkar 2024 conference provided an excellent platform to discuss the latest developments in TinyML and edge AI technologies. Our presentation covered the complete lifecycle of edge AI development and deployment.</p>
-        
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">TinyML Revolution</h3>
-        <p class="mb-6">We explored how TinyML is enabling AI capabilities on resource-constrained devices, opening new possibilities for IoT and embedded systems applications.</p>
-        
-        <h3 class="text-2xl font-bold text-white mb-4 mt-8">End-to-End Solutions</h3>
-        <p class="mb-6">Our talk emphasized the importance of considering the entire AI lifecycle, from model development and optimization to deployment and monitoring at the edge.</p>
-      `,
-      author: 'Chakrish Krishtam',
-      authorRole: 'AI/ML Engineer',
-      authorImage: 'images/srinivas.png',
-      date: '2024-02-24',
+      date: '2023-06-14',
       readTime: '6 min read',
-      image: 'https://www.edgeble.ai/blog11.png',
-      tags: ['TinyML', 'Conference', 'AI Lifecycle'],
-      category: 'Technology'
+      image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
+      tags: ['Europe', 'Edge Computing', 'Partnerships'],
+      category: 'Events'
     }
   };
 
