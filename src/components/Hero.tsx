@@ -46,7 +46,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-xl md:text-xl text-white max-w-4xl mx-auto mb-12 leading-relaxed animate-fadeIn animation-delay-400">
-            Powered by Edgeble EdgeGPT — a new class of optimized models, NPU modules, and orchestration for scalable, real-time edge intelligence
+            Powered by Edgeble EdgeGPT — a new class of optimized models, NPU modules, and orchestration to deploy agents for real-world
           </p>
 
           {/* CTA Buttons */}
