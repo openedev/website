@@ -21,7 +21,7 @@ const Products = () => {
     },
     {
       id: 3,
-      name: 'Agentic Edge AI',
+      name: 'Agentic Edge AI Loop',
       description: 'Full-stack orchestration to train, develop, deploy, monitor and agent.',
       image: 'images/agentic.png',
       badge: 'Agentic',
