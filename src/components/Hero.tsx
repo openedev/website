@@ -46,7 +46,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-white max-w-4xl mx-auto mb-12 leading-relaxed animate-fadeIn animation-delay-400">
-            A Decentralized Edge AI infrastructure enabling autonomous, goal-directed <span className="text-green-400 font-bold">agents</span> at the edge
+	    Edge AI that learns on-site and adapts in real time — building toward fully autonomous, decentralized <span className="text-green-400 font-bold">agents</span>
           </p>
 
           {/* CTA Buttons */}
