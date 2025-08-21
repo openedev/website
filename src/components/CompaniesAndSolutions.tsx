@@ -118,10 +118,13 @@ const CompaniesAndSolutions = () => {
       };
     };
 
+    const companiesCleanup = setupInfiniteScroll(companiesScrollRef, 300, companies.length);
+
     // Setup infinite scroll for solutions (340px + 56px gap = 396px per item for rectangular Vision AI box)
     const solutionsCleanup = setupInfiniteScroll(solutionsScrollRef, 396, solutions.length);
 
     return () => {
+      companiesCleanup?.();
       solutionsCleanup?.();
     };
   }, [companies.length, solutions.length]);
@@ -132,7 +135,7 @@ const CompaniesAndSolutions = () => {
         {/* Companies We Worked With */}
         <div className="mb-32">
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Companies We Worked With
+            Companies We Working With
           </h2>
           <div className="relative overflow-hidden">
             <div
