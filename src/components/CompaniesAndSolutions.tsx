@@ -36,19 +36,19 @@ const CompaniesAndSolutions = () => {
   const solutions = [
     {
       icon: Eye,
-      description: 'Inspect Label, QR, TyreTread',
+      description: 'Dynamic Label Inspection',
       isCustomImage: true,
       customImage: 'images/inspect.png'
     },
     {
       icon: Brain,
-      description: 'Track, Count, Re-Identify',
+      description: 'Tracking, Re-Identify',
       isCustomImage: true,
       customImage: 'images/track.png'
     },
     {
       icon: Shield,
-      description: 'Welding Monitor Inspection',
+      description: 'Weld Penetration Inspection',
       isCustomImage: true,
       customImage: 'images/weld.png'
     },

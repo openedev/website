@@ -41,12 +41,17 @@ const Hero = () => {
 
           {/* Main Headline - Positioned slightly lower */}
           <h1 className="text-2xl md:text-7xl lg:text-7xl font-bold text-white mb-6 animate-fadeIn animation-delay-200">
-            <span className="block">The Agentic Edge AI NPU</span>
+            <span className="block">A Self-learning Edge AI</span>
           </h1>
 
           {/* Subheadline */}
+          <p className="text-xl md:text-4xl text-white max-w-4xl mx-auto mb-12 leading-relaxed animate-fadeIn animation-delay-400">
+	    Infer.<span className="text-green-400 font-bold font-italian"> Act. Learn.</span> All on Edge.
+          </p>
+
+          {/* Subheadline */}
           <p className="text-xl md:text-2xl text-white max-w-4xl mx-auto mb-12 leading-relaxed animate-fadeIn animation-delay-400">
-	    Edge AI that learns on-site and adapts in real time — building toward fully autonomous, decentralized <span className="text-green-400 font-bold">edge agents</span>
+	    A Global Edge AI Platform that turn any device into adaptive, autonomy, and agentic  
           </p>
 
           {/* CTA Buttons */}
