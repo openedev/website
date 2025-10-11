@@ -5,7 +5,11 @@ export default {
     extend: {
       maxWidth: {
         '7xl': '85rem', // Reduced from 90rem to 85rem (approximately 17cm)
-      }
+      },
+      fontFamily: {
+	sans: ['Manrope', 'sans-serif'],
+	manrope: ['Manrope', 'sans-serif'],
+      },
     },
   },
   plugins: [],

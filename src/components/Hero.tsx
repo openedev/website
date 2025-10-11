@@ -39,11 +39,10 @@ const Hero = () => {
             The New Edge AI Standard
           </div>
 
-          {/* Main Headline - Positioned slightly lower */}
-          <h1 className="text-2xl md:text-7xl lg:text-7xl font-bold text-white mb-6 animate-fadeIn animation-delay-200">
-	    <span className="text-green-400 font-bold font-italian">Self-learning</span> Edge AI
-            <span className="block">for Any Edge Device</span>
-          </h1>
+	  <h1 className="text-[2.5rem] md:text-[5rem] lg:text-[5rem] font-manrope font-medium tracking-tight text-white leading-tight mb-6 animate-fadeIn animation-delay-200">
+  <span className="text-green-400">Self-learning</span> Edge AI
+  <span className="block">for Any Edge Device</span>
+</h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-4xl text-white max-w-4xl mx-auto mb-12 leading-relaxed animate-fadeIn animation-delay-400">
