@@ -5,27 +5,26 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: 'Self-learning NPU Modules',
-      description: 'Deploy-ready Edge AI Modules with pre-programmed Self-learning runtime.',
-      image: '/images/npu.png',
-      badge: 'Chip',
-      link: '/products/npu'
+      name: 'Self-learning Runtime',
+      description: 'Runtime firmware turns Edge Devices to learn, correct and recovers',
+      image: 'images/agentic1.png',
+      badge: 'Agentic',
+      link: '/products/agentic'
     },
     {
       id: 2,
-      name: 'Adaptive Edge Models',
-      description: 'Trained, Quantize, Optimized for Edge AI Usecases than model attributes.',
-      image: 'images/edgegpt.png',
-      badge: 'Model',
-      link: '/products/model'
+      name: 'Self-learning Module',
+      description: 'Deploy-ready Edge AI Modules with pre-programmed Self-learning runtime',
+      image: '/images/module.png',
+      badge: 'Module',
+      link: '/products/npu'
     },
     {
       id: 3,
-      name: 'Self-learning Runtime',
-      description: 'Full-stack orchestration to train, develop, deploy, monitor and agent.',
-      image: 'images/agentic.png',
-      badge: 'Agentic',
-      link: '/products/agentic'
+      name: 'Self-learning Silicon',
+      description: 'Agentic Edge AI NPU bridging inference and decision-making directly on the chip',
+      badge: 'Chip',
+      link: '/products/model'
     }
   ];
 
