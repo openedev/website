@@ -18,7 +18,7 @@ const Runtime = () => {
                 Runtime turns Edge Devices to learn, correct and recovers — All on the Edge.
               </p>
               <button className="mt-8 bg-white text-black hover:bg-white/90 px-8 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 inline-flex items-center gap-2">
-                Book a Demo →
+                Product Inquiry
               </button>
             </div>
 
