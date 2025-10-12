@@ -11,11 +11,11 @@ const Runtime = () => {
               <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-6 font-medium">
                 DEPLOY-READY SELF-LEARNING EDGE AI MODULES
               </p>
-              <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 whitespace-nowrap">
+              <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 whitespace-nowrap">
                 Self-learning Runtime
               </h2>
-              <p className="text-xl text-white/80 leading-relaxed">
-                Runtime turns Edge Devices to learn, correct and recovers — All on the Edge.
+              <p className="text-xl text-white max-w-4xl">
+                Edge Devices to learn, correct and recovers — All on the Edge
               </p>
               <button className="mt-8 bg-white text-black hover:bg-white/90 px-8 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 inline-flex items-center gap-2">
                 Product Inquiry

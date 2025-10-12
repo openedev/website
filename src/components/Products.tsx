@@ -5,15 +5,15 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: 'EdgeGPT NPU',
-      description: 'Co-designed with EdgeGPT Models for predictable latency and power.',
+      name: 'Self-learning NPU Modules',
+      description: 'Deploy-ready Edge AI Modules with pre-programmed Self-learning runtime.',
       image: '/images/npu.png',
       badge: 'Chip',
       link: '/products/npu'
     },
     {
       id: 2,
-      name: 'EdgeGPT Model',
+      name: 'Adaptive Edge Models',
       description: 'Trained, Quantize, Optimized for Edge AI Usecases than model attributes.',
       image: 'images/edgegpt.png',
       badge: 'Model',
@@ -21,7 +21,7 @@ const Products = () => {
     },
     {
       id: 3,
-      name: 'Agentic Edge AI Loop',
+      name: 'Self-learning Runtime',
       description: 'Full-stack orchestration to train, develop, deploy, monitor and agent.',
       image: 'images/agentic.png',
       badge: 'Agentic',
@@ -36,10 +36,10 @@ const Products = () => {
         <div className="flex items-center justify-between mb-20">
           <div>
             <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              Our Products
+              Products
             </h2>
-            <p className="text-xl text-white max-w-3xl">
-              Agentic Edge AI NPUs designed for diverse applications, from IoT devices, automotive and industrial automation
+            <p className="text-xl text-white max-w-4xl">
+              Self-learning Edge AI Runtime and NPUs designed for IoT Endpoints to Gateway Edge devices
             </p>
           </div>
           <div>
