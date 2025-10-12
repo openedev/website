@@ -135,7 +135,7 @@ const CompaniesAndSolutions = () => {
         {/* Companies We Worked With */}
         <div className="mb-32">
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Companies We Working With
+            We works with
           </h2>
           <div className="relative overflow-hidden">
             <div
@@ -170,7 +170,7 @@ const CompaniesAndSolutions = () => {
         {/* Solutions We Delivered */}
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            NPU Modules, EdgeGPT-0 Models We Deployed
+            Self-learning Edge AI deployments in
           </h2>
           <div className="relative overflow-hidden">
             <div
