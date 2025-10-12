@@ -63,7 +63,7 @@ const WhatsNew = () => {
               What's New
             </h2>
             <p className="text-xl text-white max-w-3xl">
-              Stay updated with our latest product launches, industry partnerships, and upcoming events.
+              Stay updated with our latest products, partnerships, and events
             </p>
           </div>
           <div>
