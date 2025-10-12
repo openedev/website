@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import CompaniesAndSolutions from './components/CompaniesAndSolutions';
+import FullStackAI from './components/FullStackAI';
 import Products from './components/Products';
 import Solutions from './components/Solutions';
 import WhatsNew from './components/WhatsNew';
@@ -21,6 +22,7 @@ function HomePage() {
       <main>
         <Hero />
         <CompaniesAndSolutions />
+        <FullStackAI />
         <Products />
         <Solutions />
         <WhatsNew />
