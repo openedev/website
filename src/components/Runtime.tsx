@@ -23,33 +23,33 @@ const Runtime = () => {
             </div>
 
             <div className="space-y-10 pt-8">
-              {/* Fine-Tuning and RLHF */}
+              {/* Adaptive Edge Models */}
               <div>
                 <h3 className="text-2xl font-bold text-white mb-4">
-                  Fine-Tuning and RLHF
+                  Adaptive Edge Models
                 </h3>
                 <p className="text-white/70 leading-relaxed">
-                  Adapt best-in-class foundation models to your business and your specific data to build sustainable, successful AI programs and data from your enterprise.
+                  Adaptive Edge Models that senses drift and adapts through on-device loopback learning.
                 </p>
               </div>
 
-              {/* Foundation Models */}
+              {/* Retrain Engine */}
               <div>
                 <h3 className="text-2xl font-bold text-white mb-4">
-                  Foundation Models
+                  Retrain Engine
                 </h3>
                 <p className="text-white/70 leading-relaxed">
-                  Scale partners or integrates with all of the leading AI models, from open-source to closed-source, including Google, Meta, Cohere, and more.
+                  Integrated micro-learning algorithms that enables local retraining without cloud dependency.
                 </p>
               </div>
 
-              {/* Enterprise Data */}
+              {/* Agentic Interface */}
               <div>
                 <h3 className="text-2xl font-bold text-white mb-4">
-                  Enterprise Data
+                  Agentic Interface
                 </h3>
                 <p className="text-white/70 leading-relaxed">
-                  Scale's Data Engine enables you to integrate your enterprise data into the fold of these models, providing the base for long-term strategic differentiation.
+                  Built-in agentic control interfaces allow physical systems to self-correct and optimize in real time.
                 </p>
               </div>
             </div>
@@ -68,11 +68,11 @@ const Runtime = () => {
                     </div>
                   </div>
 
-                  {/* Middle Layer - Foundation Models & RLHF */}
+                  {/* Middle Layer - Retrain Engine & RLHF */}
                   <div className="absolute bottom-32 left-1/2 transform -translate-x-1/2 w-[85%] h-28 bg-gradient-to-br from-gray-600 via-gray-700 to-gray-800 rounded-lg shadow-2xl flex items-center justify-center border border-white/30">
                     <div className="grid grid-cols-2 gap-4 w-full px-8">
                       <div className="text-center">
-                        <div className="text-xs uppercase tracking-wider text-white/70">Fine-Tuned Foundation Models</div>
+                        <div className="text-xs uppercase tracking-wider text-white/70">Fine-Tuned Retrain Engine</div>
                       </div>
                       <div className="text-center">
                         <div className="text-xs uppercase tracking-wider text-white/70">RLHF</div>
