@@ -40,7 +40,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header - Left Aligned */}
         <div className="mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="text-5xl md:text-5xl font-bold text-white mb-4">
             About Edgeble
           </h2>
           <p className="text-xl text-white max-w-3xl">

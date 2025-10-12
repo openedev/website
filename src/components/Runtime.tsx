@@ -11,7 +11,7 @@ const Runtime = () => {
               <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-6 font-medium">
                 DEPLOY-READY SELF-LEARNING EDGE AI MODULES
               </p>
-              <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 whitespace-nowrap">
+              <h2 className="text-5xl md:text-5xl font-bold text-white mb-4 whitespace-nowrap">
                 Self-learning Runtime
               </h2>
               <p className="text-xl text-white max-w-4xl">

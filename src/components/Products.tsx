@@ -35,7 +35,7 @@ const Products = () => {
         {/* Section Header */}
         <div className="flex items-center justify-between mb-20">
           <div>
-            <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            <h2 className="text-5xl md:text-5xl font-bold text-white mb-4">
               Products
             </h2>
             <p className="text-xl text-white max-w-4xl">
