@@ -12,7 +12,7 @@ const Runtime = () => {
                 DEPLOY-READY SELF-LEARNING EDGE AI MODULES
               </p>
               <h2 className="text-5xl md:text-5xl font-bold text-white mb-4 whitespace-nowrap">
-                Self-learning Runtime
+                Self-learning Edge AI
               </h2>
               <p className="text-xl text-white max-w-4xl">
                 Edge Devices to learn, correct and recovers — All on the Edge
