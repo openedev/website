@@ -97,24 +97,6 @@ const Products = () => {
             </a>
           ))}
         </div>
-
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-white/5 rounded-2xl p-8 md:p-12 border border-white/10">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              Need a Custom Edge AI Solution?
-            </h3>
-            <p className="text-white mb-6 max-w-2xl mx-auto">
-              Our engineering team can develop tailored Edge AI for your specific requirements and use cases.
-            </p>
-            <a 
-              href="#contact"
-              className="bg-white text-black hover:bg-white/90 px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105 inline-block"
-            >
-              Contact Our Engineers
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );
