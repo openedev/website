@@ -43,9 +43,9 @@ function App() {
         <Route path="/solutions" element={<SolutionsPage />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
-        <Route path="/products/npu" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">EdgeGPT NPU Chips - Coming Soon</h1></div>} />
-        <Route path="/products/model" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">EdgeGPT Model - Coming Soon</h1></div>} />
-        <Route path="/products/agentic" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">Agentic Edge AI Orchestration - Coming Soon</h1></div>} />
+        <Route path="/products/runtime" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">Self-learning Runtime - Coming Soon</h1></div>} />
+        <Route path="/products/module" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">Self-learning Module - Coming Soon</h1></div>} />
+        <Route path="/products/npu" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">Self-learning NPU - Coming Soon</h1></div>} />
       </Routes>
     </Router>
   );

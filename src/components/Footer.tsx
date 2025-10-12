@@ -15,9 +15,9 @@ const Footer = () => {
 
   const footerLinks = {
     products: [
-      { name: 'Edge AI NPU', href: '/products/npu' },
-      { name: 'EdgeGPT Model', href: '/products/model' },
-      { name: 'Agentic Edge AI', href: '/products/agentic' },
+      { name: 'Self-learning Runtime', href: '/products/runtime' },
+      { name: 'Self-learning Module', href: '/products/module' },
+      { name: 'Self-learning NPU', href: '/products/npu' },
     ],
     solutions: [
       { name: 'Industrial Automation', href: '#' },
