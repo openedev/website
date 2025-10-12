@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FullStackAI = () => {
+const Runtime = () => {
   return (
     <section className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -9,13 +9,13 @@ const FullStackAI = () => {
           <div className="space-y-12">
             <div>
               <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-6 font-medium">
-                AI FOR THE ENTERPRISE
+                DEPLOY-READY SELF-LEARNING EDGE AI MODULES
               </p>
-              <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
-                Full-Stack AI Solutions
+              <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 whitespace-nowrap">
+                Self-learning Runtime
               </h2>
               <p className="text-xl text-white/80 leading-relaxed">
-                Outcomes delivered with world-class data, models, agents, and deployment.
+                Runtime turns Edge Devices to learn, correct and recovers — All on the Edge.
               </p>
               <button className="mt-8 bg-white text-black hover:bg-white/90 px-8 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 inline-flex items-center gap-2">
                 Book a Demo →
@@ -139,4 +139,4 @@ const FullStackAI = () => {
   );
 };
 
-export default FullStackAI;
+export default Runtime;
