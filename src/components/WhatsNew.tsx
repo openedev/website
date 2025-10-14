@@ -134,27 +134,6 @@ const WhatsNew = () => {
             );
           })}
         </div>
-
-        {/* Newsletter Signup */}
-        <div className="bg-white/5 rounded-2xl p-8 md:p-12 text-center border border-white/10">
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Stay in the Loop
-          </h3>
-          <p className="text-white mb-8 max-w-2xl mx-auto">
-            Subscribe to our newsletter for the latest updates on products, partnerships, and industry insights.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent"
-            />
-            <button className="bg-white text-black hover:bg-white/90 px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center">
-              Subscribe
-              <ExternalLink className="ml-2 w-4 h-4" />
-            </button>
-          </div>
-        </div>
       </div>
     </section>
   );
