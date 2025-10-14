@@ -6,42 +6,42 @@ const WhatsNew = () => {
     {
       type: 'event',
       icon: Users,
-      title: 'Showcase at Bosch Global FIT.Fest\'25',
-      description: 'On behalf of the entire team at BGSW, I would like to extend our heartfelt thanks for your organization\'s participation in Marketplace Stalls at our flagship Technical Event, FIT.Fest\'25, last week.',
-      date: '2025-06-19',
-      image: '/images/blog-bosch.png?auto=compress&cs=tinysrgb&w=600',
-      badge: 'Bosch Event',
-      slug: 'fit-fest25'
+      title: 'Pitching at Moscow Startup Summit',
+      description: 'Edgeble pitched at the Moscow Startup Summit, highlighting the world’s first Self-Learning Edge AI platform redefining autonomous intelligence.',
+      date: '2025-10-02',
+      image: '/images/blog-moscow.jpeg',
+      badge: 'Event',
+      slug: 'moscow-2025'
     },
     {
       type: 'event',
       icon: Users,
-      title: 'Pitching at Beyond Borders: The Era of Agentic AI',
-      description: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.',
-      date: '2025-06-02',
-      image: 'images/blog-ey.png?auto=compress&cs=tinysrgb&w=600',
-      badge: 'Agentic AI',
-      slug: 'beyond-borders'
+      title: 'Edgeble Among Top 25 Global Startups Sber500',
+      description: 'Edgeble has been selected among the Top 25 startups worldwide by Sber500, recognizing innovation in Self-Learning Edge AI.',
+      date: '2025-09-25',
+      image: 'images/blog-sber500.png',
+      badge: 'Innovation',
+      slug: 'sber500'
     },
     {
       type: 'event',
       icon: Users,
-      title: 'Pitching at Peak XV, Rajan Anandan',
-      description: 'With T-Hub, Edgeble is honored to pitch with Rajan Anandan, Managing Director at Peak XV Partners (formerly Sequoia Capital India & SEA). From AI trends to the future of startups in India, the insights shared were as sharp as they were inspiring.',
-      date: '2025-03-25',
-      image: 'images/peak.png?auto=compress&cs=tinysrgb&w=600',
-      badge: 'Peak XV',
-      slug: 'peak-xv'
+      title: 'Pitching at Venture Dock, YC',
+      description: 'Edgeble pitched its Agentic Edge AI platform at Venture Dock hosted by YC Startup in San Francisco.',
+      date: '2025-09-19',
+      image: '/images/blog-venture-dock.jpg',
+      badge: 'Pitch',
+      slug: 'pitch-venture'
     },
     {
       type: 'product',
       icon: Users,
-      title: 'Speaking at IDA Ireland Startup Roundtable',
-      description: 'Excited to have been part of the IDA Ireland Startup Roundtable hosted at T-Hub. It was a great opportunity to share insights on startup innovation, global collaboration, and the growing synergy between India and Ireland in the tech and business space.',
+      title: 'Edgeble Selected to Present at 8th EMVA Forum, Germany',
+      description: 'Edgeble has been selected to present and exhibit a poster at the 8th European Machine Vision Forum (EMVA) in Germany on Agentic Edge AI for Imaging the Invisible in Industrial Vision Systems.',
       date: '2024-03-30',
-      image: 'images/ida.png',
-      badge: 'Roundtable',
-      slug: 'ida-ireland'
+      image: 'images/blog-emva.jpg',
+      badge: 'Product',
+      slug: 'emva-2025'
     }
   ];
 

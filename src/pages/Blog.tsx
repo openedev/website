@@ -5,6 +5,110 @@ import Footer from '../components/Footer';
 
 const BlogPage = () => {
   const blogPosts = [
+
+  {
+  id: 7,
+  title: 'Pitching at Moscow Startup Summit',
+  excerpt: 'Edgeble pitched at the Moscow Startup Summit, highlighting the world’s first Self-Learning Edge AI platform redefining autonomous intelligence.',
+  content: `
+    <p class="text-lg mb-6"><strong>Edgeble</strong> participated in the <strong>Moscow Startup Summit</strong>, presenting its <strong>Self-Learning Edge AI</strong> platform that enables on-device inference, adaptation, and continuous learning without cloud dependency.</p>
+
+    <p class="mb-6">The summit brought together global investors, innovators, and leaders in AI, positioning Edgeble at the forefront of the agentic edge revolution.</p>
+
+    <p class="text-white/70 italic">#MoscowStartupSummit #AgenticAI #EdgeAI #Innovation</p>
+  `,
+  author: 'Jagan Teki',
+  date: '2025-10-02',
+  readTime: '3 min read',
+  image: '/images/blog-moscow.jpeg',
+  tags: ['Moscow', 'Startup', 'Agentic AI'],
+  category: 'Events'
+},
+
+	  {
+  id: 6,
+  title: 'Edgeble Among Top 25 Global Startups Selected by Sber500',
+  slug: 'sber500-selection',
+  excerpt: 'Edgeble has been selected among the Top 25 startups worldwide by Sber500, recognizing innovation in Self-Learning Edge AI.',
+  content: `
+    <p class="text-lg mb-6"><strong>Edgeble</strong> has been recognized among the <strong>Top 25 Global Startups</strong> selected by <strong>Sber500</strong> for its innovation in <strong>Self-Learning Edge AI</strong> and its contributions to industrial autonomy and AI-driven edge systems.</p>
+
+    <p class="text-white/70 italic">#Sber500 #GlobalStartups #EdgeAI #Innovation</p>
+  `,
+  author: 'Jagan Teki',
+  date: '2025-09-25',
+  readTime: '2 min read',
+  image: '/images/blog-sber500.png',
+  tags: ['Sber500', 'Global Startups', 'Innovation'],
+  category: 'Recognition'
+},
+
+	  {
+  id: 5,
+  title: 'Pitching at Venture Dock, YC',
+  slug: 'venture-dock-yc',
+  excerpt: 'Edgeble pitched its Agentic Edge AI platform at Venture Dock hosted by YC Startup in San Francisco.',
+  content: `
+    <p class="text-lg mb-6"><strong>Edgeble</strong> presented its <strong>Agentic Edge AI</strong> technology at <strong>Venture Dock hosted by YC Startup</strong> in San Francisco, showcasing how Edgeble’s self-learning runtime accelerates industrial, logistics, and AI-driven deployments at the edge.</p>
+
+    <p class="text-white/70 italic">#YCStartup #VentureDock #EdgeAI #AgenticAI</p>
+  `,
+  author: 'Jagan Teki',
+  date: '2025-09-19',
+  readTime: '2 min read',
+  image: '/images/blog-venture-dock.jpg',
+  tags: ['Venture Dock', 'YC', 'Agentic AI'],
+  category: 'Events'
+},
+
+ {
+  id: 4,
+  title: 'Edgeble at InnoTrek 2025 – USA DeepTech Showcase',
+  slug: 'innotrek-2025',
+  excerpt: 'Edgeble will showcase Self-Learning Edge AI technology at NASSCOM’s InnoTrek 2025 USA, connecting with global investors, partners, and innovators.',
+  content: `
+    <p class="text-lg mb-6">We’re thrilled to announce that <strong>Edgeble</strong> will be participating in <strong>InnoTrek 2025 – USA</strong>, organized by NASSCOM DeepTech. We'll showcase our <strong>Self-Learning Edge AI</strong> technology powering factories, surveillance, and aerospace systems — and introduce our vision for the <strong>Agentic Edge AI NPU</strong>.</p>
+
+    <p class="mb-6">We look forward to engaging with <strong>global investors, partners, and innovators</strong> to bring the next wave of AI closer to where the world works.</p>
+
+    <p class="mb-6">Key pitch sessions include:</p>
+    <ul class="list-disc list-inside mb-6">
+      <li>Capgemini – San Francisco</li>
+      <li>Venture Dock – San Francisco</li>
+      <li>Dallas Venture Capital – Dallas</li>
+      <li>Mphasis – NYC</li>
+      <li>Uber Technologies – NYC</li>
+    </ul>
+
+    <p class="text-white/70 italic">#InnoTrek2025 #NASSCOM #DeepTech #AgenticAI #EdgeAI #Innovation #GlobalExpansion</p>
+  `,
+  author: 'Jagan Teki',
+  date: '2025-09-04',
+  readTime: '4 min read',
+  image: '/images/blog-innotrek.jpeg',
+  tags: ['InnoTrek', 'DeepTech', 'EdgeAI', 'NASSCOM'],
+  category: 'Events'
+},
+
+    {
+  id: 3,
+  title: 'Edgeble Selected to Present at 8th EMVA Forum, Germany',
+  slug: 'emva-germany',
+  excerpt: 'Edgeble has been selected to present and exhibit a poster at the 8th European Machine Vision Forum (EMVA) in Germany on Agentic Edge AI for Imaging the Invisible in Industrial Vision Systems.',
+  content: `
+    <p class="text-lg mb-6">Edgeble has been selected to present and exhibit a poster at the <strong>8th European Machine Vision Forum (EMVA)</strong> in Germany, highlighting our work on <strong>Agentic Edge AI for Imaging the Invisible in Industrial Vision Systems</strong>.</p>
+
+    <p class="mb-6">This recognition marks a major step forward for Edgeble’s Self-Learning Edge AI platform — demonstrating how edge-based intelligence can reveal insights hidden in industrial vision systems.</p>
+
+    <p class="text-white/70 italic">#EMVA #EMVF #MachineVision #AgenticAI #EdgeAI #IndustrialAI</p>
+  `,
+  author: 'Jagan Teki',
+  date: '2025-08-02',
+  readTime: '3 min read',
+  image: '/images/blog-emva.jpg',
+  tags: ['EMVA', 'Machine Vision', 'Agentic AI'],
+  category: 'Events'
+},
     {
       id: 1,
       title: 'Showcase at Bosch Global FIT.Fest\'25',
