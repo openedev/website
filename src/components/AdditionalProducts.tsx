@@ -26,6 +26,9 @@ const AdditionalProducts = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between mb-20">
           <div>
+              <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
+                DEPLOY-READY SELF-LEARNING MODULES
+              </p>
             <h2 className="text-5xl md:text-5xl font-bold text-white mb-4">
               Self-learning Module
             </h2>
