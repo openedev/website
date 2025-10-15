@@ -40,7 +40,7 @@ const AdditionalProducts = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {products.map((product) => (
             <a
               key={product.id}
