@@ -27,7 +27,7 @@ const AdditionalProducts = () => {
         <div className="flex items-center justify-between mb-20">
           <div>
             <h2 className="text-5xl md:text-5xl font-bold text-white mb-4">
-              Products
+              Self-learning Module
             </h2>
             <p className="text-xl text-white max-w-4xl">
               Self-learning Edge AI Runtime and NPUs designed for IoT Endpoints to Gateway Edge devices
