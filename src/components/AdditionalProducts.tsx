@@ -51,10 +51,10 @@ const AdditionalProducts = () => {
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
+                  className="w-full h-full object-contain object-center transition-transform duration-300 group-hover:scale-110"
                   style={{
-                    objectFit: 'cover',
-                    objectPosition: product.id === 1 ? 'center center' : 'center'
+                    objectFit: 'contain',
+                    objectPosition: 'center'
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
