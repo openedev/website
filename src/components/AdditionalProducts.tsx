@@ -54,7 +54,8 @@ const AdditionalProducts = () => {
                   className="w-full h-full object-contain object-center transition-transform duration-300 group-hover:scale-110"
                   style={{
                     objectFit: 'contain',
-                    objectPosition: 'center'
+                    objectPosition: 'center',
+                    transform: product.id === 2 ? 'scale(1.4)' : 'scale(1)'
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
