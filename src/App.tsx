@@ -4,7 +4,6 @@ import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import CompaniesAndSolutions from './components/CompaniesAndSolutions';
 import Runtime from './components/Runtime';
-import Products from './components/Products';
 import AdditionalProducts from './components/AdditionalProducts';
 import Solutions from './components/Solutions';
 import WhatsNew from './components/WhatsNew';
@@ -24,7 +23,6 @@ function HomePage() {
         <Hero />
         <CompaniesAndSolutions />
         <Runtime />
-        <Products />
         <AdditionalProducts />
         <Solutions />
         <WhatsNew />
