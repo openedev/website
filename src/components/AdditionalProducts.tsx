@@ -30,7 +30,7 @@ const AdditionalProducts = () => {
               Self-learning Module
             </h2>
             <p className="text-xl text-white max-w-4xl">
-              Self-learning Edge AI Runtime and NPUs designed for IoT Endpoints to Gateway Edge devices
+              From IoT Endpoints to Gateway Edge devices
             </p>
           </div>
           <div>
