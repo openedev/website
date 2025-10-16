@@ -33,7 +33,7 @@ const CompaniesAndSolutions = () => {
     },
     {
       name: 'Hero',
-      logo: 'images/hero.jpg',
+      logo: 'images/hero.png',
       link: '#hero'
     }
   ];
