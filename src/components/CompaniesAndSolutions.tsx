@@ -6,30 +6,35 @@ const CompaniesAndSolutions = () => {
   const solutionsScrollRef = useRef<HTMLDivElement>(null);
 
   const companies = [
-    { 
-      name: 'Amara Raja', 
+    {
+      name: 'Amara Raja',
       logo: 'https://cdn.brandfetch.io/id3CTtdAAH/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B',
-      link: '#amara-raja' 
+      link: '#amara-raja'
     },
-    { 
-      name: 'AirFi', 
+    {
+      name: 'AirFi',
       logo: 'images/airfi_logo_light_color.svg',
-      link: '#airfi' 
+      link: '#airfi'
     },
-    { 
-      name: 'Apollo', 
+    {
+      name: 'Apollo',
       logo: 'https://cdn.brandfetch.io/idgr_3pras/w/208/h/80/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B',
-      link: '#apollo' 
+      link: '#apollo'
     },
-    { 
-      name: 'Collins Aerospace', 
+    {
+      name: 'Collins Aerospace',
       logo: 'https://cdn.brandfetch.io/idMr1kh5YW/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B',
-      link: '#collins-aerospace' 
+      link: '#collins-aerospace'
     },
-    { 
-      name: 'Patil Rail Infra', 
+    {
+      name: 'Patil Rail Infra',
       logo: 'images/patil.jpg',
-      link: '#patil-rail-infra' 
+      link: '#patil-rail-infra'
+    },
+    {
+      name: 'Hero',
+      logo: 'images/hero.jpg',
+      link: '#hero'
     }
   ];
 
