@@ -151,16 +151,20 @@ const CompaniesAndSolutions = () => {
               {duplicatedCompanies.map((company, index) => (
               <div
                 key={`${company.name}-${index}`}
-                className="flex-shrink-0 flex items-center justify-center min-w-[150px] h-[80px] px-4"
+                className="flex-shrink-0 flex items-center justify-center min-w-[200px] h-[100px] px-6"
               >
                 <img
                   src={company.logo}
                   alt={`${company.name} logo`}
                   className={`${
-                    company.name === 'Patil Rail Infra' 
-                      ? 'h-[80px] w-auto object-contain' 
-                      : 'h-[60px] w-auto object-contain'
-                  } grayscale invert`}
+                    company.name === 'Hero' || company.name === 'Patil Rail Infra'
+                      ? 'h-[90px] w-auto object-contain'
+                      : 'h-[70px] w-auto object-contain'
+                  } ${
+                    company.name === 'AirFi' || company.name === 'Hero'
+                      ? 'grayscale brightness-0 invert'
+                      : 'grayscale brightness-200'
+                  }`}
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.style.display = 'none';
