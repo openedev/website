@@ -26,10 +26,10 @@ const Runtime = () => {
               {/* Adaptive Edge Models */}
               <div>
                 <h3 className="text-2xl font-bold text-white mb-4">
-                  Adaptive Edge Models
+                  Domain-specific Edge Models
                 </h3>
                 <p className="text-white/70 leading-relaxed">
-                  Adaptive Edge Models that senses drift and adapts through on-device loopback learning.
+                  Fine-tuned, Quantized and Adaptive Edge Models that senses drift and adapts through on-device loopback learning.
                 </p>
               </div>
 
