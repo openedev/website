@@ -8,8 +8,128 @@ const BlogPostPage = () => {
   const { slug } = useParams();
 
   const blogPosts = {
-    'fit-fest25': {
+    'moscow-summit': {
       id: 1,
+      title: 'Pitching at Moscow Startup Summit',
+      excerpt: 'Edgeble pitched at the Moscow Startup Summit, highlighting the world’s first Self-Learning Edge AI platform redefining autonomous intelligence.',
+      content: `
+        <p class="text-lg mb-6">Participated in the Moscow Startup Summit, presenting its Self-Learning Edge AI platform that enables on-device inference, adaptation, and continues learning without cloud dependency.</p>
+        
+        <p class="mb-6">Your insights and expertise greatly enriched the event, and the feedback we received from attendees has been overwhelmingly positive. We truly appreciate the time and effort You and Your team dedicated to preparing and presenting in the Stall. Your contribution played a significant role in making FIT.Fest'25 a success, and we are grateful for your support.</p>
+        
+        <div class="bg-white/5 rounded-xl p-6 mb-8 border border-white/10">
+          <h4 class="text-lg font-semibold text-white mb-3">Event Highlights:</h4>
+          <ul class="space-y-2 text-white/80">
+            <li>• Flagship Technical Event by Bosch Global Software Technologies</li>
+            <li>• Marketplace Stalls showcasing innovative solutions</li>
+            <li>• Positive feedback from industry attendees</li>
+            <li>• Collaboration with leading technology companies</li>
+          </ul>
+        </div>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Event Highlights</h3>
+        <p class="mb-6">FIT.Fest'25 brought together industry leaders, innovators, and technology enthusiasts to showcase cutting-edge solutions and foster collaboration in the automotive and technology sectors. The event served as a platform for demonstrating the latest advancements in edge AI and automotive technologies.</p>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Edgeble's Contribution</h3>
+        <p class="mb-6">Our participation in the Marketplace Stalls provided an excellent opportunity to demonstrate our Edge AI accelerator modules and engage with Bosch's engineering teams and partners. The showcase highlighted our commitment to advancing edge AI technologies in automotive and industrial applications.</p>
+        
+        <blockquote class="border-l-4 border-white pl-6 italic text-white/90 mb-8 bg-white/5 p-4 rounded-r-xl">
+          "The collaboration between innovative startups and established industry leaders like Bosch is crucial for driving technological advancement in the automotive sector." - Event Participant
+        </blockquote>
+        
+        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Future Collaborations</h3>
+        <p class="mb-6">The positive reception at FIT.Fest'25 opens doors for future collaborations and partnerships in the automotive technology space, particularly in areas where edge AI can enhance vehicle performance and safety.</p>
+      `,
+      author: 'Jagan Teki',
+      authorRole: 'CEO & Founder',
+      authorImage: '/images/jagan.jpg',
+      date: '2025-10-02',
+      readTime: '2 min read',
+      image: '/images/blog-bosch.png',
+      tags: ['Moscow', 'Startup', 'Agenti AI'],
+      category: 'Events'
+    },
+
+    'sber500-selection': {
+    id: 2,
+    title: 'Edgeble Among Top 25 Global Startups Selected by Sber500',
+    excerpt: 'Edgeble has been selected among the Top 25 startups worldwide by Sber500, recognizing innovation in Self-Learning Edge AI.',
+    content: `
+      <p class="text-lg mb-6"><strong>Edgeble</strong> has been recognized among the <strong>Top 25 Global Startups</strong> selected by <strong>Sber500</strong> for its innovation in <strong>Self-Learning Edge AI</strong> and its contributions to industrial autonomy and AI-driven edge systems.</p>
+      <p class="text-white/70 italic">#Sber500 #GlobalStartups #EdgeAI #Innovation</p>
+    `,
+    author: 'Jagan Teki',
+    authorRole: 'CEO & Founder',
+    authorImage: '/images/jagan.jpg',
+    date: '2025-09-25',
+    readTime: '2 min read',
+    image: '/images/blog-sber500.png',
+    tags: ['Sber500', 'Global Startups', 'Innovation'],
+    category: 'Recognition',
+  },
+  'venture-dock-yc': {
+    id: 3,
+    title: 'Pitching at Venture Dock, YC',
+    excerpt: 'Edgeble pitched its Agentic Edge AI platform at Venture Dock hosted by YC Startup in San Francisco.',
+    content: `
+      <p class="text-lg mb-6"><strong>Edgeble</strong> presented its <strong>Agentic Edge AI</strong> technology at <strong>Venture Dock hosted by YC Startup</strong> in San Francisco, showcasing how Edgeble’s self-learning runtime accelerates industrial, logistics, and AI-driven deployments at the edge.</p>
+      <p class="text-white/70 italic">#YCStartup #VentureDock #EdgeAI #AgenticAI</p>
+    `,
+    author: 'Jagan Teki',
+    authorRole: 'CEO & Founder',
+    authorImage: '/images/jagan.jpg',
+    date: '2025-09-19',
+    readTime: '2 min read',
+    image: '/images/blog-venture-dock.jpg',
+    tags: ['Venture Dock', 'YC', 'Agentic AI'],
+    category: 'Events',
+  },
+  'innotrek-2025': {
+    id: 4,
+    title: 'Edgeble at InnoTrek 2025 – USA DeepTech Showcase',
+    excerpt: 'Edgeble will showcase Self-Learning Edge AI technology at NASSCOM’s InnoTrek 2025 USA, connecting with global investors, partners, and innovators.',
+    content: `
+      <p class="text-lg mb-6">We’re thrilled to announce that <strong>Edgeble</strong> will be participating in <strong>InnoTrek 2025 – USA</strong>, organized by NASSCOM DeepTech. We'll showcase our <strong>Self-Learning Edge AI</strong> technology powering factories, surveillance, and aerospace systems — and introduce our vision for the <strong>Agentic Edge AI NPU</strong>.</p>
+      <p class="mb-6">We look forward to engaging with <strong>global investors, partners, and innovators</strong> to bring the next wave of AI closer to where the world works.</p>
+      <p class="mb-6">Key pitch sessions include:</p>
+      <ul class="list-disc list-inside mb-6">
+        <li>Capgemini – San Francisco</li>
+        <li>Venture Dock – San Francisco</li>
+        <li>Dallas Venture Capital – Dallas</li>
+        <li>Mphasis – NYC</li>
+        <li>Uber Technologies – NYC</li>
+      </ul>
+      <p class="text-white/70 italic">#InnoTrek2025 #NASSCOM #DeepTech #AgenticAI #EdgeAI #Innovation #GlobalExpansion</p>
+    `,
+    author: 'Jagan Teki',
+    authorRole: 'CEO & Founder',
+    authorImage: '/images/jagan.jpg',
+    date: '2025-09-04',
+    readTime: '4 min read',
+    image: '/images/blog-innotrek.jpeg',
+    tags: ['InnoTrek', 'DeepTech', 'EdgeAI', 'NASSCOM'],
+    category: 'Events',
+  },
+  'emva-germany': {
+    id: 5,
+    title: 'Edgeble Selected to Present at 8th EMVA Forum, Germany',
+    excerpt: 'Edgeble has been selected to present and exhibit a poster at the 8th European Machine Vision Forum (EMVA) in Germany on Agentic Edge AI for Imaging the Invisible in Industrial Vision Systems.',
+    content: `
+      <p class="text-lg mb-6">Edgeble has been selected to present and exhibit a poster at the <strong>8th European Machine Vision Forum (EMVA)</strong> in Germany, highlighting our work on <strong>Agentic Edge AI for Imaging the Invisible in Industrial Vision Systems</strong>.</p>
+      <p class="mb-6">This recognition marks a major step forward for Edgeble’s Self-Learning Edge AI platform — demonstrating how edge-based intelligence can reveal insights hidden in industrial vision systems.</p>
+      <p class="text-white/70 italic">#EMVA #EMVF #MachineVision #AgenticAI #EdgeAI #IndustrialAI</p>
+    `,
+    author: 'Jagan Teki',
+    authorRole: 'CEO & Founder',
+    authorImage: '/images/jagan.jpg',
+    date: '2025-08-02',
+    readTime: '3 min read',
+    image: '/images/blog-emva.jpg',
+    tags: ['EMVA', 'Machine Vision', 'Agentic AI'],
+    category: 'Events',
+  },    
+    'fit-fest25': {
+      id: 6,
       title: 'Showcase at Bosch Global FIT.Fest\'25',
       excerpt: 'On behalf of the entire team at BGSW, I would like to extend our heartfelt thanks for your organization\'s participation in Marketplace Stalls at our flagship Technical Event, FIT.Fest\'25, last week.',
       content: `
@@ -50,7 +170,7 @@ const BlogPostPage = () => {
       category: 'Events'
     },
     'beyond-borders': {
-      id: 2,
+      id: 7,
       title: 'Pitching at Beyond Borders: The Era of Agentic AI',
       excerpt: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.',
       content: `
@@ -93,7 +213,7 @@ const BlogPostPage = () => {
       category: 'Events'
     },
     'peak-xv': {
-      id: 3,
+      id: 8,
       title: 'Pitching at Peak XV, Rajan Anandan',
       excerpt: 'With T-Hub, Edgeble is honored to pitch with Rajan Anandan, Managing Director at Peak XV Partners (formerly Sequoia Capital India & SEA). From AI trends to the future of startups in India, the insights shared were as sharp as they were inspiring.',
       content: `
@@ -134,7 +254,7 @@ const BlogPostPage = () => {
       category: 'Events'
     },
     'ida-ireland': {
-      id: 4,
+      id: 9,
       title: 'Speaking at IDA Ireland Startup Roundtable',
       excerpt: 'Excited to have been part of the IDA Ireland Startup Roundtable hosted at T-Hub. It was a great opportunity to share insights on startup innovation, global collaboration, and the growing synergy between India and Ireland in the tech and business space.',
       content: `
@@ -170,7 +290,7 @@ const BlogPostPage = () => {
       category: 'Events'
     },
     'nasscom-mumbai': {
-      id: 5,
+      id: 10,
       title: 'Speaking at Nasscom AI Days, Mumbai',
       excerpt: 'Edgeble AI was proud to be part of NASSCOM AI Days held in Mumbai — an event that brought together India\'s top minds in artificial intelligence, innovation, and enterprise technology.',
       content: `
@@ -207,7 +327,7 @@ const BlogPostPage = () => {
       category: 'Events'
     },
     'thub-enclave': {
-      id: 6,
+      id: 11,
       title: 'Edgeble at T-Hub Innovative Enclave 2025',
       excerpt: 'Edgeble AI was proud to participate in the T-Hub Innovative Enclave 2025 — a convergence of India\'s most forward-thinking startups and ecosystem leaders.',
       content: `
@@ -229,7 +349,7 @@ const BlogPostPage = () => {
       category: 'Events'
     },
     'cie-avishkar': {
-      id: 7,
+      id: 12,
       title: 'Speaking at CIE-IIIT Avishkar 2024',
       excerpt: 'About TinyML Taipei 2024, About Edgeble AI Participation, End-to-End Edge AI Lifecycle.',
       content: `
@@ -251,7 +371,7 @@ const BlogPostPage = () => {
       category: 'Technology'
     },
     'aij-moscow': {
-      id: 8,
+      id: 13,
       title: 'Speaking at AIJ Moscow 2024',
       excerpt: 'The Future of AI Acceleration: Transforming Edge Computing for Tomorrow\'s Industries. Speaking on the future of AI acceleration and how edge computing is transforming industries.',
       content: `
@@ -286,7 +406,7 @@ const BlogPostPage = () => {
       category: 'Technology'
     },
     'deeptech-gfst': {
-      id: 9,
+      id: 14,
       title: 'Edgeble at DeepTech, GFST 2024 India',
       excerpt: 'Pushing the Limits of Edge AI: 60FPS Live YOLOv5 Object Detection on Edgeble AI\'s 6TOPS Edge AI Accelerator Modules. Demonstrating real-time AI capabilities at the edge.',
       content: `
@@ -321,7 +441,7 @@ const BlogPostPage = () => {
       category: 'Technology'
     },
     'sponsor-deeptech': {
-      id: 10,
+      id: 15,
       title: 'Edgeble Sponsor DeepTech, GFST 2024 India',
       excerpt: 'We would like to express our sincere gratitude to our sponsors and event partners. A big Thank you to our Lanyard Sponsor! Edgeble AI supporting the DeepTech ecosystem.',
       content: `
@@ -346,7 +466,7 @@ const BlogPostPage = () => {
       category: 'Events'
     },
     'tinyml-taipei': {
-      id: 11,
+      id: 16,
       title: 'Edgeble at TinyML Taipei 2024 Innovation',
       excerpt: 'End-to-End Edge AI Lifecycle with Real-Time, On-Device AI. Powered by EdgeGPT Pre-trained Edge AI Accelerators. Showcasing our comprehensive edge AI solutions.',
       content: `
@@ -381,7 +501,7 @@ const BlogPostPage = () => {
       category: 'Technology'
     },
     'industrial-summit': {
-      id: 12,
+      id: 17,
       title: 'Industrial Future Summit 2024',
       excerpt: 'Revolutionising Vehicle Battery System Welding Inspection with Edge AI. We\'re participating! Industrial Future Summit - The leading event for Future Builders in Stockholm.',
       content: `
@@ -416,7 +536,7 @@ const BlogPostPage = () => {
       category: 'Industry'
     },
     'ai-hardware-summit': {
-      id: 13,
+      id: 18,
       title: 'Edgeble at AI Hardware and Edge AI Summit 2024',
       excerpt: 'Summary of our participation at Edge AI For Innovation & Impact.',
       content: `
@@ -451,7 +571,7 @@ const BlogPostPage = () => {
       category: 'Technology'
     },
     'mobile-congress': {
-      id: 14,
+      id: 19,
       title: 'Edgeble at Indian Mobile Congress 2023',
       excerpt: 'Summary of our participation at Indian Mobile Congress 2023.',
       content: `
@@ -486,7 +606,7 @@ const BlogPostPage = () => {
       category: 'Technology'
     },
     'edge-expo-europe': {
-      id: 15,
+      id: 20,
       title: 'Edgeble at Edge Computing Expo Europe 2023',
       excerpt: 'Recap of Edgeble presence at the Edge Computing Expo Europe 2023. Learn about our latest innovations and engagements with industry leaders.',
       content: `
