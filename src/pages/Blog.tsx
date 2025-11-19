@@ -266,7 +266,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 12,
+      id: 13,
       title: 'Speaking at AIJ Moscow 2024',
       slug: 'aij-moscow',
       excerpt: 'The Future of AI Acceleration: Transforming Edge Computing for Tomorrow\'s Industries. Speaking on the future of AI acceleration and how edge computing is transforming industries.',
@@ -290,7 +290,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 13,
+      id: 14,
       title: 'Edgeble at DeepTech, GFST 2024 India',
       slug: 'deeptech-gfst',
       excerpt: 'Pushing the Limits of Edge AI: 60FPS Live YOLOv5 Object Detection on Edgeble AI\'s 6TOPS Edge AI Accelerator Modules. Demonstrating real-time AI capabilities at the edge.',
@@ -314,7 +314,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 14,
+      id: 15,
       title: 'Edgeble Sponsor DeepTech, GFST 2024 India',
       slug: 'sponsor-deeptech',
       excerpt: 'We would like to express our sincere gratitude to our sponsors and event partners. A big Thank you to our Lanyard Sponsor! Edgeble AI supporting the DeepTech ecosystem.',
@@ -338,7 +338,7 @@ const BlogPage = () => {
       category: 'Events'
     },
     {
-      id: 15,
+      id: 16,
       title: 'Edgeble at TinyML Taipei 2024 Innovation',
       slug: 'tinyml-taipei',
       excerpt: 'End-to-End Edge AI Lifecycle with Real-Time, On-Device AI. Powered by EdgeGPT Pre-trained Edge AI Accelerators. Showcasing our comprehensive edge AI solutions.',
@@ -362,7 +362,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 16,
+      id: 17,
       title: 'Industrial Future Summit 2024',
       slug: 'industrial-summit',
       excerpt: 'Revolutionising Vehicle Battery System Welding Inspection with Edge AI. We\'re participating! Industrial Future Summit - The leading event for Future Builders in Stockholm.',
@@ -386,7 +386,7 @@ const BlogPage = () => {
       category: 'Industry'
     },
     {
-      id: 17,
+      id: 18,
       title: 'Edgeble at AI Hardware and Edge AI Summit 2024',
       slug: 'ai-hardware-summit',
       excerpt: 'Summary of our participation at Edge AI For Innovation & Impact.',
@@ -407,7 +407,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 18,
+      id: 19,
       title: 'Edgeble at Indian Mobile Congress 2023',
       slug: 'mobile-congress',
       excerpt: 'Summary of our participation at Indian Mobile Congress 2023.',
@@ -428,7 +428,7 @@ const BlogPage = () => {
       category: 'Industry'
     },
     {
-      id: 19,
+      id: 20,
       title: 'Edgeble at Edge Computing Expo Europe 2023',
       slug: 'edge-expo-europe',
       excerpt: 'Recap of Edgeble presence at the Edge Computing Expo Europe 2023. Learn about our latest innovations and engagements with industry leaders.',
