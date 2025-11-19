@@ -9,7 +9,7 @@ const BlogPage = () => {
   {
   id: 1,
   title: 'Pitching at Moscow Startup Summit',
-  slug: 'moscow-summit'
+  slug: 'moscow-summit',
   excerpt: 'Edgeble pitched at the Moscow Startup Summit, highlighting the world’s first Self-Learning Edge AI platform redefining autonomous intelligence.',
   content: `
     <p class="text-lg mb-6"><strong>Edgeble</strong> participated in the <strong>Moscow Startup Summit</strong>, presenting its <strong>Self-Learning Edge AI</strong> platform that enables on-device inference, adaptation, and continuous learning without cloud dependency.</p>
