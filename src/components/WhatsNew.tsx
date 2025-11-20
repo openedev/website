@@ -11,7 +11,7 @@ const WhatsNew = () => {
       date: '2025-10-02',
       image: '/images/blog-moscow.jpeg',
       badge: 'Event',
-      slug: 'moscow-2025'
+      slug: 'moscow-summit'
     },
     {
       type: 'event',
@@ -21,7 +21,7 @@ const WhatsNew = () => {
       date: '2025-09-25',
       image: 'images/blog-sber500.png',
       badge: 'Innovation',
-      slug: 'sber500'
+      slug: 'sber500-selection'
     },
     {
       type: 'event',
@@ -31,7 +31,7 @@ const WhatsNew = () => {
       date: '2025-09-19',
       image: '/images/blog-venture-dock.jpg',
       badge: 'Pitch',
-      slug: 'pitch-venture'
+      slug: 'venture-dock-yc'
     },
     {
       type: 'product',
@@ -41,7 +41,7 @@ const WhatsNew = () => {
       date: '2024-03-30',
       image: 'images/blog-emva.jpg',
       badge: 'Product',
-      slug: 'emva-2025'
+      slug: 'innotrek-2025'
     }
   ];
 
