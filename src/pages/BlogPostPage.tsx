@@ -644,7 +644,7 @@ const BlogPostPage = () => {
       category: 'Events'
     }
       'deloitte': {
-    id: 21,
+    id: 1,
     title: 'Digital Transformation at Deloitte Events',
     excerpt: 'Edgeble showcased Edge AI solutions at Deloitte\'s Digital Transformation conferences, demonstrating innovations in edge computing and autonomous systems.',
     content: `
@@ -683,7 +683,7 @@ const BlogPostPage = () => {
     category: 'Events'
   },
   'capgemini': {
-    id: 22,
+    id: 2,
     title: 'Innovation at Capgemini Technology Events',
     excerpt: 'Edgeble presented Edge AI innovations at Capgemini\'s technology and digital transformation forums, showcasing solutions for enterprise automation.',
     content: `
@@ -722,7 +722,7 @@ const BlogPostPage = () => {
     category: 'Events'
   },
   'tech30': {
-    id: 23,
+    id: 3,
     title: 'Recognized at TechSparks Tech30 Awards',
     excerpt: 'Edgeble was selected and recognized at YourStory\'s TechSparks Tech30 Awards, highlighting innovation in Self-Learning Edge AI and autonomous systems.',
     content: `
@@ -761,7 +761,7 @@ const BlogPostPage = () => {
     category: 'Events'
   },
   'tie-50': {
-    id: 24,
+    id: 4,
     title: 'Featured at TiE 50 Startup Awards',
     excerpt: 'Edgeble was featured at TiE 50 Startup Awards, recognizing excellence in entrepreneurship and innovation in Self-Learning Edge AI technology.',
     content: `
@@ -800,7 +800,7 @@ const BlogPostPage = () => {
     category: 'Events'
   },
   'nasscom-ntlf': {
-    id: 25,
+    id: 5,
     title: 'Innovation at NASSCOM Technology & Leadership Forum',
     excerpt: 'Edgeble showcased Self-Learning Edge AI at NASSCOM\'s Technology & Leadership Forum, demonstrating advanced applications in autonomous systems and enterprise AI.',
     content: `
@@ -839,7 +839,7 @@ const BlogPostPage = () => {
     category: 'Events'
   },
   'yourstory': {
-    id: 26,
+    id: 6,
     title: 'Featured on YourStory - Building Edge AI for India',
     excerpt: 'Edgeble was featured on YourStory, sharing our journey in pioneering Self-Learning Edge AI and our vision for autonomous intelligence in India and globally.',
     content: `
