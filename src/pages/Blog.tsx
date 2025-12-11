@@ -5,9 +5,111 @@ import Footer from '../components/Footer';
 
 const BlogPage = () => {
   const blogPosts = [
+	      {
+    id: 7,
+    title: 'Speaking at Deloitte',
+    slug: 'deloitte',
+    excerpt: 'Edgeble connected with Deloitte, presenting edge AI solutions to one of the world\'s leading professional services firms.',
+    content: `
+    <p class="text-lg mb-6"><strong>Deloitte</strong> is one of the largest professional services firms globally. <strong>Edgeble</strong> had the honor to present our Self-Learning Edge AI platform to Deloitte\'s technology and innovation teams.</p>
+    <p class="mb-6">The engagement explored how edge AI is enabling organizations to modernize their infrastructure, improve operational efficiency, and create new business opportunities in an increasingly distributed world.</p>
+    <p class="text-white/70 italic">#Deloitte #ProfessionalServices #EdgeAI #DigitalInnovation</p>
+    `,
+    author: 'Jagan Teki',
+    date: '2024-12-11',
+    readTime: '3 min read',
+    image: '/images/blog-deloitte.jpeg',
+    tags: ['Deloitte', 'Professional Services', 'Edge AI'],
+    category: 'Events'
+    },
+	      {
+    id: 8,
+    title: 'Speaking at Capgemini',
+    slug: 'capgemini',
+    excerpt: 'Edgeble showcased Edge AI innovations to Capgemini, one of the world\'s largest IT services companies.',
+    content: `
+    <p class="text-lg mb-6"><strong>Capgemini</strong> is a global leader in IT services and consulting. <strong>Edgeble</strong> had the privilege to present our Self-Learning Edge AI platform to Capgemini\'s innovation and technology leadership teams.</p>
+    <p class="mb-6">The engagement provided valuable insights into how global enterprises are leveraging edge AI to transform their operations and deliver enhanced solutions to their clients.</p>
+    <p class="text-white/70 italic">#Capgemini #EnterpriseAI #EdgeAI #DigitalTransformation</p>
+    `,
+    author: 'Jagan Teki',
+    date: '2024-12-10',
+    readTime: '3 min read',
+    image: '/images/blog-capgemini.jpeg',
+    tags: ['Capgemini', 'Enterprise', 'Edge AI'],
+    category: 'Events'
+    },
+	      {
+    id: 9,
+    title: 'Speaking at Tech30',
+    slug: 'tech30',
+    excerpt: 'Edgeble participated in Tech30, connecting with India\'s leading tech companies and corporate innovators.',
+    content: `
+    <p class="text-lg mb-6"><strong>Tech30</strong> brings together leading technology companies to discuss innovation, digital transformation, and emerging technologies. <strong>Edgeble</strong> was honored to present our Self-Learning Edge AI platform to this select group of corporate leaders.</p>
+    <p class="mb-6">The forum provided valuable insights into how established tech companies are embracing edge AI to drive innovation and improve their offerings.</p>
+    <p class="text-white/70 italic">#Tech30 #CorporateInnovation #EdgeAI #DigitalTransformation</p>
+    `,
+    author: 'Jagan Teki',
+    date: '2024-12-09',
+    readTime: '3 min read',
+    image: '/images/blog-tech30.jpeg',
+    tags: ['Tech30', 'Corporate Tech', 'Edge AI'],
+    category: 'Events'
+    },
+	      {
+    id: 10,
+    title: 'Speaking at TiE 50',
+    slug: 'tie-50',
+    excerpt: 'Edgeble connected with TiE 50, demonstrating edge AI innovations to India\'s top entrepreneurs and startup ecosystem leaders.',
+    content: `
+    <p class="text-lg mb-6"><strong>TiE 50</strong> is TiE\'s flagship program recognizing the 50 most promising startups in India. <strong>Edgeble</strong> had the opportunity to showcase our Self-Learning Edge AI platform to this elite group of entrepreneurs.</p>
+    <p class="mb-6">The program connected us with some of India\'s most innovative founders who are shaping the future of technology and business.</p>
+    <p class="text-white/70 italic">#TiE50 #TopStartups #EdgeAI #Entrepreneurship</p>
+    `,
+    author: 'Jagan Teki',
+    date: '2024-12-08',
+    readTime: '3 min read',
+    image: '/images/blog-tie50.jpeg',
+    tags: ['TiE', 'Top Startups', 'Edge AI'],
+    category: 'Events'
+    },
+	      {
+    id: 11,
+    title: 'Speaking at NASSCOM',
+    slug: 'nasscom',
+    excerpt: 'Edgeble participated in NASSCOM, showcasing Edge AI solutions to India\'s leading IT and software industry leaders.',
+    content: `
+    <p class="text-lg mb-6"><strong>NASSCOM</strong> is a premier forum for the Indian IT and software industry. <strong>Edgeble</strong> was honored to participate and present our Self-Learning Edge AI platform to industry leaders and innovators.</p>
+    <p class="mb-6">The event provided an excellent opportunity to discuss how edge AI is transforming industries and creating new opportunities for Indian tech companies in the global market.</p>
+    <p class="text-white/70 italic">#NASSCOM #EdgeAI #ITIndustry #Innovation</p>
+    `,
+    author: 'Jagan Teki',
+    date: '2024-12-07',
+    readTime: '3 min read',
+    image: '/images/blog-nasscom.jpeg',
+    tags: ['NASSCOM', 'IT Industry', 'Edge AI'],
+    category: 'Events'
+    },
+	      {
+    id: 12,
+    title: 'Speaking at YourStory',
+    slug: 'yourstory',
+    excerpt: 'Edgeble showcased Self-Learning Edge AI capabilities at YourStory, connecting with Indian tech innovators and entrepreneurs.',
+    content: `
+    <p class="text-lg mb-6"><strong>Edgeble</strong> was excited to participate in <strong>YourStory</strong>, a leading platform for Indian startup stories and innovation. We shared our vision for Self-Learning Edge AI and its transformative impact on industries.</p>
+    <p class="mb-6">The event brought together visionary entrepreneurs and tech leaders from across India, fostering innovation and collaboration in the startup ecosystem.</p>
+    <p class="text-white/70 italic">#YourStory #EdgeAI #Startups #Innovation</p>
+    `,
+    author: 'Jagan Teki',
+    date: '2024-12-06',
+    readTime: '3 min read',
+    image: '/images/blog-yourstory.jpeg',
+    tags: ['YourStory', 'Startups', 'Edge AI'],
+    category: 'Events'
+    },
 
   {
-  id: 1,
+  id: 7,
   title: 'Pitching at Moscow Startup Summit',
   slug: 'moscow-summit',
   excerpt: 'Edgeble pitched at the Moscow Startup Summit, highlighting the world’s first Self-Learning Edge AI platform redefining autonomous intelligence.',
@@ -27,7 +129,7 @@ const BlogPage = () => {
 },
 
 	  {
-  id: 2,
+  id: 8,
   title: 'Edgeble Among Top 25 Global Startups Selected by Sber500',
   slug: 'sber500-selection',
   excerpt: 'Edgeble has been selected among the Top 25 startups worldwide by Sber500, recognizing innovation in Self-Learning Edge AI.',
@@ -45,7 +147,7 @@ const BlogPage = () => {
 },
 
 	  {
-  id: 3,
+  id: 9,
   title: 'Pitching at Venture Dock, YC',
   slug: 'venture-dock-yc',
   excerpt: 'Edgeble pitched its Agentic Edge AI platform at Venture Dock hosted by YC Startup in San Francisco.',
@@ -63,7 +165,7 @@ const BlogPage = () => {
 },
 
  {
-  id: 4,
+  id: 10,
   title: 'Edgeble at InnoTrek 2025 – USA DeepTech Showcase',
   slug: 'innotrek-2025',
   excerpt: 'Edgeble will showcase Self-Learning Edge AI technology at NASSCOM’s InnoTrek 2025 USA, connecting with global investors, partners, and innovators.',
@@ -92,7 +194,7 @@ const BlogPage = () => {
 },
 
     {
-  id: 5,
+  id: 11,
   title: 'Edgeble Selected to Present at 8th EMVA Forum, Germany',
   slug: 'emva-germany',
   excerpt: 'Edgeble has been selected to present and exhibit a poster at the 8th European Machine Vision Forum (EMVA) in Germany on Agentic Edge AI for Imaging the Invisible in Industrial Vision Systems.',
@@ -111,7 +213,7 @@ const BlogPage = () => {
   category: 'Events'
 },
     {
-      id: 6,
+      id: 12,
       title: 'Showcase at Bosch Global FIT.Fest\'25',
       slug: 'fit-fest25',
       excerpt: 'On behalf of the entire team at BGSW, I would like to extend our heartfelt thanks for your organization\'s participation in Marketplace Stalls at our flagship Technical Event, FIT.Fest\'25, last week.',
@@ -134,7 +236,7 @@ const BlogPage = () => {
       category: 'Events'
     },
     {
-      id: 7,
+      id: 13,
       title: 'Pitching at Beyond Borders: The Era of Agentic AI',
       slug: 'beyond-borders',
       excerpt: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore how autonomous intelligence is poised to redefine the future of industries.',
@@ -159,7 +261,7 @@ const BlogPage = () => {
       category: 'Events'
     },
     {
-      id: 8,
+      id: 14,
       title: 'Pitching at Peak XV, Rajan Anandan',
       slug: 'peak-xv',
       excerpt: 'With T-Hub, Edgeble is honored to pitch with Rajan Anandan, Managing Director at Peak XV Partners (formerly Sequoia Capital India & SEA). From AI trends to the future of startups in India, the insights shared were as sharp as they were inspiring.',
@@ -182,7 +284,7 @@ const BlogPage = () => {
       category: 'Events'
     },
     {
-      id: 9,
+      id: 15,
       title: 'Speaking at IDA Ireland Startup Roundtable',
       slug: 'ida-ireland',
       excerpt: 'Excited to have been part of the IDA Ireland Startup Roundtable hosted at T-Hub. It was a great opportunity to share insights on startup innovation, global collaboration, and the growing synergy between India and Ireland in the tech and business space.',
@@ -203,7 +305,7 @@ const BlogPage = () => {
       category: 'Events'
     },
     {
-      id: 10,
+      id: 16,
       title: 'Speaking at Nasscom AI Days, Mumbai',
       slug: 'nasscom-mumbai',
       excerpt: 'Edgeble AI was proud to be part of NASSCOM AI Days held in Mumbai — an event that brought together India\'s top minds in artificial intelligence, innovation, and enterprise technology.',
@@ -224,7 +326,7 @@ const BlogPage = () => {
       category: 'Events'
     },
     {
-      id: 11,
+      id: 17,
       title: 'Edgeble at T-Hub Innovative Enclave 2025',
       slug: 'thub-enclave',
       excerpt: 'Edgeble AI was proud to participate in the T-Hub Innovative Enclave 2025 — a convergence of India\'s most forward-thinking startups and ecosystem leaders.',
@@ -245,7 +347,7 @@ const BlogPage = () => {
       category: 'Events'
     },
     {
-      id: 12,
+      id: 18,
       title: 'Speaking at CIE-IIIT Avishkar 2024',
       slug: 'cie-avishkar',
       excerpt: 'About TinyML Taipei 2024, About Edgeble AI Participation, End-to-End Edge AI Lifecycle.',
@@ -266,7 +368,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 13,
+      id: 19,
       title: 'Speaking at AIJ Moscow 2024',
       slug: 'aij-moscow',
       excerpt: 'The Future of AI Acceleration: Transforming Edge Computing for Tomorrow\'s Industries. Speaking on the future of AI acceleration and how edge computing is transforming industries.',
@@ -290,7 +392,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 14,
+      id: 20,
       title: 'Edgeble at DeepTech, GFST 2024 India',
       slug: 'deeptech-gfst',
       excerpt: 'Pushing the Limits of Edge AI: 60FPS Live YOLOv5 Object Detection on Edgeble AI\'s 6TOPS Edge AI Accelerator Modules. Demonstrating real-time AI capabilities at the edge.',
@@ -314,7 +416,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 15,
+      id: 21,
       title: 'Edgeble Sponsor DeepTech, GFST 2024 India',
       slug: 'sponsor-deeptech',
       excerpt: 'We would like to express our sincere gratitude to our sponsors and event partners. A big Thank you to our Lanyard Sponsor! Edgeble AI supporting the DeepTech ecosystem.',
@@ -338,7 +440,7 @@ const BlogPage = () => {
       category: 'Events'
     },
     {
-      id: 16,
+      id: 22,
       title: 'Edgeble at TinyML Taipei 2024 Innovation',
       slug: 'tinyml-taipei',
       excerpt: 'End-to-End Edge AI Lifecycle with Real-Time, On-Device AI. Powered by EdgeGPT Pre-trained Edge AI Accelerators. Showcasing our comprehensive edge AI solutions.',
@@ -362,7 +464,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 17,
+      id: 23,
       title: 'Industrial Future Summit 2024',
       slug: 'industrial-summit',
       excerpt: 'Revolutionising Vehicle Battery System Welding Inspection with Edge AI. We\'re participating! Industrial Future Summit - The leading event for Future Builders in Stockholm.',
@@ -386,7 +488,7 @@ const BlogPage = () => {
       category: 'Industry'
     },
     {
-      id: 18,
+      id: 24,
       title: 'Edgeble at AI Hardware and Edge AI Summit 2024',
       slug: 'ai-hardware-summit',
       excerpt: 'Summary of our participation at Edge AI For Innovation & Impact.',
@@ -407,7 +509,7 @@ const BlogPage = () => {
       category: 'Technology'
     },
     {
-      id: 19,
+      id: 25,
       title: 'Edgeble at Indian Mobile Congress 2023',
       slug: 'mobile-congress',
       excerpt: 'Summary of our participation at Indian Mobile Congress 2023.',
@@ -428,7 +530,7 @@ const BlogPage = () => {
       category: 'Industry'
     },
     {
-      id: 20,
+      id: 26,
       title: 'Edgeble at Edge Computing Expo Europe 2023',
       slug: 'edge-expo-europe',
       excerpt: 'Recap of Edgeble presence at the Edge Computing Expo Europe 2023. Learn about our latest innovations and engagements with industry leaders.',
@@ -447,7 +549,8 @@ const BlogPage = () => {
       image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Autonomous Vehicles', 'Safety', 'Real-time'],
       category: 'Automotive'
-    }
+    },
+	  
   ];
 
   const formatDate = (dateString: string) => {
