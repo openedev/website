@@ -642,7 +642,7 @@ const BlogPostPage = () => {
       image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
       tags: ['Europe', 'Edge Computing', 'Partnerships'],
       category: 'Events'
-    }
+    },
       'deloitte': {
     id: 7,
     title: 'Digital Transformation at Deloitte Events',
