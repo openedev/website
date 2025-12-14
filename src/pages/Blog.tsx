@@ -35,7 +35,7 @@ const BlogPage = () => {
     author: 'Jagan Teki',
     date: '2024-12-10',
     readTime: '3 min read',
-    image: '/images/blog-capgemini.jpeg',
+    image: '/images/capgemini.JPG',
     tags: ['Capgemini', 'Enterprise', 'Edge AI'],
     category: 'Events'
     },
