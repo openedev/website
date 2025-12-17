@@ -108,4 +108,3 @@ export function loadBlogPostsFromStorage(): void {
 if (typeof window !== 'undefined') {
   loadBlogPostsFromStorage();
 }
-}
