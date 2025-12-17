@@ -204,8 +204,6 @@ const AdminBlog: React.FC = () => {
              <button onClick={() => handleEditPost(post)} className="text-blue-400 hover:text-blue-300">
                <Edit className="w-4 h-4" />
              </button>
-                      <Trash2 className="w-4 h-4" />
-                    </button>
                   </div>
                 ))
               )}
