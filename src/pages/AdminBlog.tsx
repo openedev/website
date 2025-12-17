@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Trash2, Plus, Save, GripVertical } from 'lucide-react';
-import { blogPostsData, sortPosts, addPost, deletePost, updatePostOrder, saveBlogPostsToStorage, loadBlogPostsFromStorage } from '../data/blogData';
+import { Trash2, Plus, Save, GripVertica, Edit, Xl } from 'lucide-react';
+import { blogPostsData, sortPosts, addPost,, updatePost deletePost, updatePostOrder, saveBlogPostsToStorage, loadBlogPostsFromStorage } from '../data/blogData';
 import { BlogPost } from '../types/blog';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -17,7 +17,8 @@ const AdminBlog: React.FC = () => {
     tags: '',
     category: '',
   });
-  const [draggedId, setDraggedId] = useState<string | null>(null);
+  const [draggedId, setDraggedId] = useState<string | null>(null);;
+ const [editingId, setEditingId] = useState<string | null>(null)
   const [message, setMessage] = useState({ type: '', text: '' });
 
   // Load posts on component mount
@@ -71,6 +72,45 @@ const AdminBlog: React.FC = () => {
       setTimeout(() => setMessage({ type: '', text: '' }), 3000);
     }
   };
+
+ const handleEditPost = (post: BlogPost) => {
+ setEditingId(post.id);
+ setFormData({
+ title: post.title,
+ excerpt: post.excerpt,
+ content: post.content,
+ image: post.image,
+ author: post.author,
+ authorRole: post.authorRole,
+ tags: post.tags.join(', '),
+ category: post.category
+ });
+ };
+
+ const handleUpdatePost = () => {
+ if (!editingId || !formData.title || !formData.content || !formData.author) {
+ setMessage({ type: 'error', text: 'Title, content, and author are required' });
+ return;
+ }
+ updatePost(editingId, {
+ title: formData.title,
+ slug: generateSlug(formData.title),
+ excerpt: formData.excerpt || formData.title,
+ content: formData.content,
+ author: formData.author,
+ authorRole: formData.authorRole || '',
+ image: formData.image || 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg',
+ tags: formData.tags ? formData.tags.split(',').map(t => t.trim()) : [],
+ category: formData.category || 'Events',
+ });
+ saveBlogPostsToStorage();
+ setPosts(sortPosts(blogPostsData));
+ setEditingId(null);
+ setFormData({ title: '', excerpt: '', content: '', image: '', author: '', authorRole: '', tags: '', category: '' });
+ setMessage({ type: 'success', text: 'Post updated successfully!' });
+ setTimeout(() => setMessage({ type: '', text: '' }), 3000);
+ };
+
 
   const handleDragStart = (id: string) => {
     setDraggedId(id);
@@ -134,8 +174,9 @@ const AdminBlog: React.FC = () => {
                 <option value="Recognition">Recognition</option>
                 <option value="Industry">Industry</option>
               </select>
-              <button onClick={handleAddPost} className="w-full bg-white text-black py-2 rounded-lg hover:bg-white/90 font-semibold flex items-center justify-center gap-2">
-                <Plus className="w-4 h-4" /> Add Post
+              <button onClick={editingId ? handleUpdatePost : handleAddPost} className="w-full bg-white text-black py-2 rounded-lg hover:bg-white/90 font-semibold flex items-center justify-center gap-2">
+                           {editingId ? '✏️ Update Post' : (<><Plus className="w-4 h-4" /> Add Post</>)}
+                           </button>
               </button>
             </div>
           </div>
@@ -155,6 +196,14 @@ const AdminBlog: React.FC = () => {
                       <p className="text-sm text-white/50 truncate">{post.author}</p>
                     </div>
                     <button onClick={() => handleDeletePost(post.id)} className="text-red-400 hover:text-red-300 flex-shrink-0">
+             {editingId === post.id && (
+               <button onClick={() => { setEditingId(null); setFormData({ title: '', excerpt: '', content: '', image: '', author: '', authorRole: '', tags: '', category: '' }); }} className="text-gray-400 hover:text-gray-300">
+                 <X className="w-4 h-4" />
+               </button>
+             )}
+             <button onClick={() => handleEditPost(post)} className="text-blue-400 hover:text-blue-300">
+               <Edit className="w-4 h-4" />
+             </button>
                       <Trash2 className="w-4 h-4" />
                     </button>
                   </div>
