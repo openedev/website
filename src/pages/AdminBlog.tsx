@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Trash2, Plus, Save, GripVertica, Edit, Xl } from 'lucide-react';
-import { blogPostsData, sortPosts, addPost,, updatePost deletePost, updatePostOrder, saveBlogPostsToStorage, loadBlogPostsFromStorage } from '../data/blogData';
+import { blogPostsData, sortPosts, addPost, updatePost, deletePost, updatePostOrder, saveBlogPostsToStorage, loadBlogPostsFromStorage } from '../data/blogData';
 import { BlogPost } from '../types/blog';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
