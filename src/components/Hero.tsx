@@ -40,30 +40,22 @@ const Hero = () => {
           </div>
 
 	  <h1 className="text-[2.5rem] md:text-[4.5rem] lg:text-[4.5rem] font-manrope font-medium tracking-tight text-white leading-tight mb-6 animate-fadeIn animation-delay-200">
-	    <span className="text-green-400">Self-learning</span> Edge AI
-	    <span className="block">for Any Edge Device</span>
+	    <span className="text-green-400">Self-learning</span> Edge Intelligence
 	  </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-4xl text-white max-w-4xl mx-auto mb-12 leading-relaxed animate-fadeIn animation-delay-400">
-	    Infer.<span className="text-green-400 font-bold font-italian"> Act. Learn.</span> All on Edge.
+          <p className="text-xl md:text-3xl text-white max-w-4xl mx-auto mb-12 leading-relaxed animate-fadeIn animation-delay-400">
+	    Infer. Act. Learn. directly inside<span className="text-green-400 font-bold font-italian"> Physical </span> Systems
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fadeIn animation-delay-600">
             <button 
-              onClick={handleGetStarted}
-              className="group px-8 py-4 bg-white text-black hover:bg-white/90 font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center"
-            >
-              Get Started
-              <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button 
               onClick={handleRunNPU}
               className="group px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl border border-white/20 transition-all duration-300 backdrop-blur-sm flex items-center justify-center"
             >
               <Cpu className="mr-2 w-5 h-5" />
-              Run NPU
+              Run Self-learning Edge NPU
             </button>
           </div>
 
