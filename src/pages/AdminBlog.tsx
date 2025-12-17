@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Trash2, Plus, Save, GripVertical } from 'lucide-react';
-import { blogPostsData, sortPosts, addPost, deletePost, updatePostOrder, saveBlogPostsToStorage } from '../data/blogData';
+import { blogPostsData, sortPosts, addPost, deletePost, updatePostOrder, saveBlogPostsToStorage, loadBlogPostsFromStorage } from '../data/blogData';
 import { BlogPost } from '../types/blog';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 const AdminBlog: React.FC = () => {
-  const [posts, setPosts] = useState<BlogPost[]>(sortPosts(blogPostsData));
+  const [posts, setPosts] = useState<BlogPost[]>([]);
   const [formData, setFormData] = useState({
     title: '',
     excerpt: '',
@@ -19,6 +19,12 @@ const AdminBlog: React.FC = () => {
   });
   const [draggedId, setDraggedId] = useState<string | null>(null);
   const [message, setMessage] = useState({ type: '', text: '' });
+
+  // Load posts on component mount
+  useEffect(() => {
+    loadBlogPostsFromStorage();
+    setPosts(sortPosts(blogPostsData));
+  }, []);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -34,7 +40,7 @@ const AdminBlog: React.FC = () => {
       return;
     }
 
-    const newPost = addPost({
+    addPost({
       title: formData.title,
       slug: generateSlug(formData.title),
       excerpt: formData.excerpt || formData.title,
@@ -49,6 +55,7 @@ const AdminBlog: React.FC = () => {
       authorImage: '/images/default.jpg',
     });
 
+    saveBlogPostsToStorage();
     setPosts(sortPosts(blogPostsData));
     setFormData({ title: '', excerpt: '', content: '', image: '', author: '', authorRole: '', tags: '', category: '' });
     setMessage({ type: 'success', text: 'Post added successfully!' });
@@ -58,6 +65,7 @@ const AdminBlog: React.FC = () => {
   const handleDeletePost = (id: string) => {
     if (confirm('Are you sure you want to delete this post?')) {
       deletePost(id);
+      saveBlogPostsToStorage();
       setPosts(sortPosts(blogPostsData));
       setMessage({ type: 'success', text: 'Post deleted successfully!' });
       setTimeout(() => setMessage({ type: '', text: '' }), 3000);
@@ -90,6 +98,7 @@ const AdminBlog: React.FC = () => {
       if (post) post.order = index;
     });
     saveBlogPostsToStorage();
+    setPosts(sortPosts(blogPostsData));
     setMessage({ type: 'success', text: 'Changes saved successfully!' });
     setTimeout(() => setMessage({ type: '', text: '' }), 3000);
   };
