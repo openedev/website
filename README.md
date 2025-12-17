@@ -5,6 +5,7 @@ A modern blog management system built with React, TypeScript, and Tailwind CSS.
 ## Quick Start
 
 ### Installation
+
 ```bash
 git clone https://github.com/akhil-0201/website.git
 cd website
@@ -12,81 +13,87 @@ npm install
 ```
 
 ### Running
+
 ```bash
-npm run dev          # Start development server
-npm run build        # Build for production
+npm run dev     # Start development server
+npm run build   # Build for production
 ```
 
 The website will be available at `http://localhost:5173`
 
-## Blog Management - Quick Guide
+## Blog Management
 
-### Admin Panel
-Access the admin panel at: **`http://localhost:5173/admin/blog`**
+### Access Admin Panel
 
-#### Available Features:
-- ✅ **Add Posts** - Create new blog posts with title, content, author, tags
-- ✅ **Edit Posts** - Modify post order with drag-and-drop
+Go to: **`http://localhost:5173/admin/blog`**
+
+### Features
+
+- ✅ **Add Posts** - Create new blog posts
+- ✅ **Edit Posts** - Modify existing posts
 - ✅ **Delete Posts** - Remove posts with confirmation
+- ✅ **Reorder Posts** - Drag and drop to reorder
 - ✅ **Save Changes** - Persist all changes to localStorage
 
-### File Locations
+## File Structure
 
-**Blog Data & Functions:**
-- Location: `src/data/blogData.ts`
-- Manages: Post storage, CRUD operations, localStorage sync
+### Blog Management Files
 
-**Admin Interface:**
-- Location: `src/pages/AdminBlog.tsx`
-- Features: Form, drag-and-drop reordering, post management
+| File | Location | Purpose |
+|------|----------|----------|
+| Blog Data | `src/data/blogData.ts` | CRUD operations, localStorage management |
+| Admin UI | `src/pages/AdminBlog.tsx` | Admin panel interface |
+| Blog List | `src/pages/Blog.tsx` | Display all blog posts |
+| Post Detail | `src/pages/BlogPostPage.tsx` | Display single post |
+| Types | `src/types/blog.ts` | TypeScript interfaces |
+| Routing | `src/App.tsx` | Route configuration |
 
-**Blog Display:**
-- List View: `src/pages/Blog.tsx` → `/blog`
-- Detail View: `src/pages/BlogPostPage.tsx` → `/blog/:slug`
+## How to Use Admin Panel
 
-**Routing:**
-- Location: `src/App.tsx`
-- Admin Route: `/admin/blog` → AdminBlog component
+### Adding a New Post
 
-**Type Definitions:**
-- Location: `src/types/blog.ts`
-- Defines: BlogPost interface and related types
+1. Navigate to `http://localhost:5173/admin/blog`
+2. Fill in the form on the left:
+   - **Title** (required) - Post title
+   - **Excerpt** (optional) - Short summary
+   - **Content** (required) - Full HTML content
+   - **Image URL** (optional) - Featured image link
+   - **Author** (required) - Author name
+   - **Author Role** (optional) - Position/title
+   - **Tags** (optional) - Comma-separated (e.g., "AI, Edge, ML")
+   - **Category** (optional) - Events, Technology, Recognition, Industry
+3. Click **Add Post** button
+4. Post appears in the list on the right
+5. Click **Save Changes** to persist to localStorage
 
-## How to Use the Admin Panel
+### Editing a Post
 
-### Adding a Post
-1. Go to `http://localhost:5173/admin/blog`
-2. Fill in the form:
-   - **Title** - Post title (required)
-   - **Excerpt** - Short summary shown in blog list (optional)
-   - **Content** - Full post content - HTML supported (required)
-   - **Image URL** - Featured image link (optional)
-   - **Author** - Your name (required)
-   - **Author Role** - Position/title (optional)
-   - **Tags** - Comma-separated tags (e.g., "AI, Edge, ML")
-   - **Category** - Events, Technology, Recognition, or Industry
-3. Click **"Add Post"** button
-4. See the post appear in the list on the right
-5. Click **"Save Changes"** to persist to localStorage
+1. Find the post in the list
+2. Click the **edit icon** (pencil)
+3. Modify fields as needed
+4. Click **Update Post**
+5. Click **Save Changes** to save
+
+### Deleting a Post
+
+1. Find the post in the list
+2. Click the **delete icon** (trash)
+3. Confirm deletion in popup
+4. Click **Save Changes** to persist deletion
 
 ### Reordering Posts
-1. In the admin panel posts list (right side)
-2. Click and drag any post using the grip handle (⋮ icon)
-3. Drop to reorder
-4. Click **"Save Changes"** to persist order
 
-### Deleting Posts
-1. Locate the post in the posts list
-2. Click the trash icon (🗑️) on the right
-3. Confirm deletion in popup
-4. Click **"Save Changes"" to persist deletion
+1. In the posts list, hover over any post
+2. Click and drag using the **grip handle** (≡)
+3. Drop at new position
+4. Click **Save Changes** to save order
 
 ## Data Storage
 
 **Default Storage:** Browser localStorage
-- Key: `edgeble_blog_posts`
+- **Key:** `edgeble_blog_posts`
 - Posts persist until browser cache is cleared
-- Changes auto-save when "Save Changes" is clicked
+- Changes auto-save when "Save Changes" button is clicked
 
 **To Reset Data:**
 Open browser console (F12) and run:
@@ -94,55 +101,26 @@ Open browser console (F12) and run:
 localStorage.removeItem('edgeble_blog_posts')
 ```
 
-## Project Structure
+## Key Functions
 
-```
-src/
-├── pages/
-│   ├── Blog.tsx              # Blog listing page (/blog)
-│   ├── BlogPostPage.tsx      # Individual post view (/blog/:slug)
-│   └── AdminBlog.tsx         # Admin management panel (/admin/blog)
-├── data/
-│   └── blogData.ts           # Blog CRUD functions & storage
-├── types/
-│   └── blog.ts               # TypeScript interfaces
-└── App.tsx                   # Routing configuration
-```
+**In `src/data/blogData.ts`:**
 
-## Key Functions (src/data/blogData.ts)
+- `addPost(post)` - Add new post
+- `updatePost(id, updates)` - Update existing post
+- `deletePost(id)` - Delete post by ID
+- `sortPosts(posts)` - Sort posts by order or date
+- `getPostBySlug(slug)` - Get post by slug
+- `saveBlogPostsToStorage()` - Save to localStorage
+- `loadBlogPostsFromStorage()` - Load from localStorage
 
-| Function | Purpose |
-|----------|----------|
-| `sortPosts()` | Sort posts by order or date |
-| `getPostBySlug()` | Get post by slug or ID |
-| `addPost()` | Add new post |
-| `deletePost()` | Delete post by ID |
-| `updatePostOrder()` | Update manual post order |
-| `saveBlogPostsToStorage()` | Save to localStorage |
-| `loadBlogPostsFromStorage()` | Load from localStorage |
+## Routes
 
-## Main Routes
-
-| Path | Component | Purpose |
-|------|-----------|----------|
+| Route | Component | Purpose |
+|-------|-----------|----------|
 | `/` | HomePage | Home page |
 | `/blog` | Blog | Blog listing |
 | `/blog/:slug` | BlogPostPage | Individual post |
-| `/admin/blog` | AdminBlog | **Admin management** |
-
-## Troubleshooting
-
-**Posts not showing?**
-- Check localStorage in DevTools (F12 → Application → Local Storage)
-- Clear cache: `localStorage.removeItem('edgeble_blog_posts')`
-
-**Changes not saving?**
-- Make sure to click "Save Changes" button in admin panel
-- Check browser console for errors (F12)
-
-**Posts not reordering?**
-- Use the grip handle (⋮) to drag posts
-- Click "Save Changes" to persist
+| `/admin/blog` | AdminBlog | Admin panel |
 
 ## Built With
 
@@ -155,7 +133,5 @@ src/
 ## License
 
 MIT License
-
----
 
 **Built with ❤️ for content creators and developers**
