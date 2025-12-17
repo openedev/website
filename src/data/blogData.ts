@@ -73,6 +73,14 @@ export function updatePostOrder(orderedIds: string[]): BlogPost[] {
   return sortPosts(blogPostsData);
 
   }
+export function updatePost(id: string, updates: Partial<Omit<BlogPost, 'id' | 'createdAt'>>): BlogPost | undefined {
+ const post = blogPostsData.find(p => p.id === id);
+ if (post) {
+ Object.assign(post, updates);
+ }
+ return post;
+}
+
     export function deletePost(id: string): BlogPost[] {
   blogPostsData = blogPostsData.filter(p => p.id !== id);
   saveBlogPostsToStorage();
