@@ -206,7 +206,9 @@ const AdminBlog: React.FC = () => {
              <button onClick={() => handleEditPost(post)} className="text-blue-400 hover:text-blue-300">
                <Edit className="w-4 h-4" />
              </button>
-           </div>            <button onClick={handleSaveChanges} className="w-full mt-6 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 font-semibold flex items-center justify-center gap-2">
+           </div>
+          </div>
+          <button onClick={handleSaveChanges} className="w-full mt-6 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 font-semibold flex items-center justify-center gap-2">
               <Save className="w-4 h-4" /> Save Changes
             </button>
           </div>
