@@ -71,4 +71,48 @@ export function updatePostOrder(orderedIds: string[]): BlogPost[] {
     }
   });
   return sortPosts(blogPostsData);
+
+  }
+export function updatePost(id: string, updates: Partial<Omit<BlogPost, 'id' | 'createdAt'>>): BlogPost | undefined {
+ const post = blogPostsData.find(p => p.id === id);
+ if (post) {
+ Object.assign(post, updates);
+ }
+ return post;
+}
+
+    export function deletePost(id: string): BlogPost[] {
+  blogPostsData = blogPostsData.filter(p => p.id !== id);
+  saveBlogPostsToStorage();
+  return blogPostsData;
+}
+
+const STORAGE_KEY = 'edgeble_blog_posts';
+
+export function saveBlogPostsToStorage(): void {
+  if (typeof window !== 'undefined') {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(blogPostsData));
+    } catch (error) {
+      console.error('Error saving blog posts to storage:', error);
+    }
+  }
+}
+
+export function loadBlogPostsFromStorage(): void {
+  if (typeof window !== 'undefined') {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored) {
+        blogPostsData = JSON.parse(stored);
+      }
+    } catch (error) {
+      console.error('Error loading blog posts from storage:', error);
+    }
+  }
+}
+
+// Load posts from storage on module initialization
+if (typeof window !== 'undefined') {
+  loadBlogPostsFromStorage();
 }
