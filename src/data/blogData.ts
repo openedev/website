@@ -72,6 +72,7 @@ export function updatePostOrder(orderedIds: string[]): BlogPost[] {
   });
   return sortPosts(blogPostsData);
 
+  }
     export function deletePost(id: string): BlogPost[] {
   blogPostsData = blogPostsData.filter(p => p.id !== id);
   saveBlogPostsToStorage();
