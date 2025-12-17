@@ -3,7 +3,7 @@ import { Calendar, User, ArrowLeft, Clock, Share2, Linkedin, Twitter } from 'luc
 import { useParams } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import { blogPostsData, sortPosts, loadBlogPostsFromStorage, getBlogPostBySlug } from '../data/blogData';
+import { blogPostsData, sortPosts, loadBlogPostsFromStorage, getPostBySlug } from '../data/blogData';
 import { BlogPost } from '../types/blog';
 
 const BlogPostPage = () => {
@@ -16,7 +16,7 @@ const BlogPostPage = () => {
     loadBlogPostsFromStorage();
     
     // Find the post by slug
-    const foundPost = getBlogPostBySlug(slug || '');
+    const foundPost = getPostBySlug(slug || '');
     
     if (foundPost) {
       setPost(foundPost);
