@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Plus, Edit, Trash2, Save, X } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import { blogPostsData, addPost, updatePostOrder, sortPosts } from '../data/blogData';
+import { blogPostsData, addPost, sortPosts } from '../data/blogData';
 import { BlogPost } from '../types/blog';
 
 const AdminBlog = () => {
@@ -26,7 +26,7 @@ const AdminBlog = () => {
 
   const handleAddPost = () => {
     if (formData.title && formData.excerpt && formData.content) {
-      const newPost = addPost({
+      addPost({
         title: formData.title!,
         excerpt: formData.excerpt!,
         content: formData.content!,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Eye, Users, MapPin, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Target, Eye, Users, MapPin, Linkedin, Mail } from 'lucide-react';
 
 const About = () => {
   const team = [

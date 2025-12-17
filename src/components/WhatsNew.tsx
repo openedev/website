@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, ArrowRight, ExternalLink, Award, Newspaper, Users } from 'lucide-react';
+import { Calendar, ArrowRight, Users } from 'lucide-react';
 
 const WhatsNew = () => {
   const news = [

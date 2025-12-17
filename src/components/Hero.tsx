@@ -1,16 +1,9 @@
 import React from 'react';
-import { ChevronRight, Cpu, Zap, Globe, Brain } from 'lucide-react';
+import { Cpu, Zap, Globe, Brain } from 'lucide-react';
 
 const Hero = () => {
   const handleRunNPU = () => {
     const element = document.querySelector('#companies-solutions');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const handleGetStarted = () => {
-    const element = document.querySelector('#contact');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }

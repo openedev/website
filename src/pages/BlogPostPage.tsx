@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, User, ArrowLeft, Clock, Tag, Share2, Linkedin, Twitter } from 'lucide-react';
+import { Calendar, ArrowLeft, Clock, Tag, Share2, Linkedin, Twitter } from 'lucide-react';
 import { useParams } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -646,12 +646,12 @@ const BlogPostPage = () => {
       'deloitte': {
     id: 7,
     title: 'Digital Transformation at Deloitte Events',
-    excerpt: 'Edgeble showcased Edge AI solutions at Deloitte\'s Digital Transformation conferences, demonstrating innovations in edge computing and autonomous systems.',
+    excerpt: "Edgeble showcased Edge AI solutions at Deloitte's Digital Transformation conferences, demonstrating innovations in edge computing and autonomous systems.",
     content: `
-      <p class="text-lg mb-6">Deloitte\'s Digital Transformation events bring together enterprise leaders and technology innovators to explore the future of digital innovation. Edgeble participated to showcase how Edge AI is transforming industries through on-device intelligence and autonomous edge computing.</p>
+      <p class="text-lg mb-6">Deloitte's Digital Transformation events bring together enterprise leaders and technology innovators to explore the future of digital innovation. Edgeble participated to showcase how Edge AI is transforming industries through on-device intelligence and autonomous edge computing.</p>
       
       <h3 class="text-2xl font-bold text-white mb-4 mt-8">Event Highlights</h3>
-      <p class="mb-6">Deloitte\'s conferences focused on digital innovation, cloud transformation, and the convergence of AI with edge computing. The event provided a platform for industry leaders to discuss emerging technologies and their practical applications.</p>
+      <p class="mb-6">Deloitte's conferences focused on digital innovation, cloud transformation, and the convergence of AI with edge computing. The event provided a platform for industry leaders to discuss emerging technologies and their practical applications.</p>
       
       <div class="bg-white/5 rounded-xl p-6 mb-8 border border-white/10">
         <h4 class="text-lg font-semibold text-white mb-3">Key Topics:</h4>

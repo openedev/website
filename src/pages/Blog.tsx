@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar, User, ArrowLeft, Clock, Tag, ArrowRight, ExternalLink } from 'lucide-react';
+import { Calendar, User, ArrowLeft, Clock, ArrowRight, ExternalLink } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
@@ -9,9 +9,9 @@ const BlogPage = () => {
     id: 7,
     title: 'Speaking at Deloitte',
     slug: 'deloitte',
-    excerpt: 'Edgeble connected with Deloitte, presenting edge AI solutions to one of the world\'s leading professional services firms.',
+    excerpt: "Edgeble connected with Deloitte, presenting edge AI solutions to one of the world's leading professional services firms.",
     content: `
-    <p class="text-lg mb-6"><strong>Deloitte</strong> is one of the largest professional services firms globally. <strong>Edgeble</strong> had the honor to present our Self-Learning Edge AI platform to Deloitte\'s technology and innovation teams.</p>
+    <p class="text-lg mb-6"><strong>Deloitte</strong> is one of the largest professional services firms globally. <strong>Edgeble</strong> had the honor to present our Self-Learning Edge AI platform to Deloitte's technology and innovation teams.</p>
     <p class="mb-6">The engagement explored how edge AI is enabling organizations to modernize their infrastructure, improve operational efficiency, and create new business opportunities in an increasingly distributed world.</p>
     <p class="text-white/70 italic">#Deloitte #ProfessionalServices #EdgeAI #DigitalInnovation</p>
     `,
@@ -26,9 +26,9 @@ const BlogPage = () => {
     id: 8,
     title: 'Speaking at Capgemini',
     slug: 'capgemini',
-    excerpt: 'Edgeble showcased Edge AI innovations to Capgemini, one of the world\'s largest IT services companies.',
+    excerpt: "Edgeble showcased Edge AI innovations to Capgemini, one of the world's largest IT services companies.",
     content: `
-    <p class="text-lg mb-6"><strong>Capgemini</strong> is a global leader in IT services and consulting. <strong>Edgeble</strong> had the privilege to present our Self-Learning Edge AI platform to Capgemini\'s innovation and technology leadership teams.</p>
+    <p class="text-lg mb-6"><strong>Capgemini</strong> is a global leader in IT services and consulting. <strong>Edgeble</strong> had the privilege to present our Self-Learning Edge AI platform to Capgemini's innovation and technology leadership teams.</p>
     <p class="mb-6">The engagement provided valuable insights into how global enterprises are leveraging edge AI to transform their operations and deliver enhanced solutions to their clients.</p>
     <p class="text-white/70 italic">#Capgemini #EnterpriseAI #EdgeAI #DigitalTransformation</p>
     `,
@@ -60,10 +60,10 @@ const BlogPage = () => {
     id: 10,
     title: 'Speaking at TiE 50',
     slug: 'tie-50',
-    excerpt: 'Edgeble connected with TiE 50, demonstrating edge AI innovations to India\'s top entrepreneurs and startup ecosystem leaders.',
+    excerpt: "Edgeble connected with TiE 50, demonstrating edge AI innovations to India's top entrepreneurs and startup ecosystem leaders.",
     content: `
-    <p class="text-lg mb-6"><strong>TiE 50</strong> is TiE\'s flagship program recognizing the 50 most promising startups in India. <strong>Edgeble</strong> had the opportunity to showcase our Self-Learning Edge AI platform to this elite group of entrepreneurs.</p>
-    <p class="mb-6">The program connected us with some of India\'s most innovative founders who are shaping the future of technology and business.</p>
+    <p class="text-lg mb-6"><strong>TiE 50</strong> is TiE's flagship program recognizing the 50 most promising startups in India. <strong>Edgeble</strong> had the opportunity to showcase our Self-Learning Edge AI platform to this elite group of entrepreneurs.</p>
+    <p class="mb-6">The program connected us with some of India's most innovative founders who are shaping the future of technology and business.</p>
     <p class="text-white/70 italic">#TiE50 #TopStartups #EdgeAI #Entrepreneurship</p>
     `,
     author: 'Jagan Teki',
