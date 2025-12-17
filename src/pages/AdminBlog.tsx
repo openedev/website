@@ -195,7 +195,9 @@ const AdminBlog: React.FC = () => {
                       <p className="font-semibold text-white truncate">{post.title}</p>
                       <p className="text-sm text-white/50 truncate">{post.author}</p>
                     </div>
-                    <button onClick={() => handleDeletePost(post.id)} className="text-red-400 hover:text-red-300 flex-shrink-0">
+ <button onClick={() => handleDeletePost(post.id)} className="text-red-400 hover:text-red-300 flex-shrink-0">
+               <Trash2 className="w-4 h-4" />
+             </button>
              {editingId === post.id && (
                <button onClick={() => { setEditingId(null); setFormData({ title: '', excerpt: '', content: '', image: '', author: '', authorRole: '', tags: '', category: '' }); }} className="text-gray-400 hover:text-gray-300">
                  <X className="w-4 h-4" />
@@ -204,11 +206,7 @@ const AdminBlog: React.FC = () => {
              <button onClick={() => handleEditPost(post)} className="text-blue-400 hover:text-blue-300">
                <Edit className="w-4 h-4" />
              </button>
-                  </div>
-                ))
-              )}
-            </div>
-            <button onClick={handleSaveChanges} className="w-full mt-6 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 font-semibold flex items-center justify-center gap-2">
+           </div>            <button onClick={handleSaveChanges} className="w-full mt-6 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 font-semibold flex items-center justify-center gap-2">
               <Save className="w-4 h-4" /> Save Changes
             </button>
           </div>
