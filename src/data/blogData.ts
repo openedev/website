@@ -1,4 +1,5 @@
-import { BlogPost } from '../types/blog';
+440
+  import { BlogPost } from '../types/blog';
 
 export let blogPostsData: BlogPost[] = [
   {
