@@ -24,7 +24,7 @@ export default function PhysicalSystems() {
   return (
   <section className="bg-black pt-32 pb-10 text-center">
     {/* TEXT LINE */}
-    <p className="text-xl md:text-3xl text-white/70 tracking-wide flex justify-center gap-2">
+    <p className="text-xl md:text-2xl text-white/70 tracking-wide flex justify-center gap-2">
       Edgeble enables physical systems in
 
       {/* Industrial */}
@@ -53,11 +53,11 @@ export default function PhysicalSystems() {
     </p>
 
     {/* LOGOS */}
-    <div className="mt-12 flex justify-center gap-14 flex-wrap animate-fadeIn">
+    <div className="mt-12 flex justify-center gap-64 flex-wrap animate-fadeIn">
       {SECTORS[active].logos.map((name) => (
         <div
           key={name}
-          className="text-white/60 text-lg tracking-wide"
+          className="text-white/200 text-lg tracking-wide"
         >
           {name}
         </div>
