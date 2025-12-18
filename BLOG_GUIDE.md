@@ -2,6 +2,52 @@
 
 A quick reference guide for managing blog posts on the Edgeble website.
 
+## 🎯 First Time Setup - Initialize Your Existing Blogs
+
+You already have **6 blog posts** defined in your codebase! Here's how to get them displaying:
+
+### Option 1: Automatic Initialization (Recommended)
+
+Your existing blogs should automatically appear when you:
+1. Visit your website's **Blog page** (`/blog`)
+2. The system will load the default blogs from `src/data/blogData.ts`
+3. These blogs persist in your browser's localStorage
+
+**Note:** Make sure you're not in incognito/private mode (data won't persist).
+
+### Option 2: Manual Reset via Admin Panel
+
+If blogs aren't showing:
+
+1. Go to `/admin/blog` (admin interface)
+2. Your existing blogs should appear in the list on the right
+3. Click **"Save Changes"** to persist them to localStorage
+4. Visit `/blog` to see them displayed
+
+### Option 3: Restore via Browser Console
+
+If you accidentally cleared your data:
+
+```javascript
+// Open DevTools (F12) → Console
+// Paste and run this code:
+localStorage.setItem('edgeble_blog_posts', JSON.stringify([
+  {
+    id: '1',
+    slug: 'moscow-summit',
+    title: 'Pitching at Moscow Startup Summit',
+    excerpt: 'Edgeble pitched at the Moscow Startup Summit...',
+    author: 'Jagan Teki',
+    // ... (see blogData.ts for full structure)
+  }
+  // ... other 5 posts
+]));
+```
+
+**From now on, use the Admin Panel (`/admin/blog`) to manage your blogs instead of editing code directly.**
+
+
+
 ## 🚀 Quick Steps to Add a New Blog Post
 
 ### Step 1: Access the Admin Panel
