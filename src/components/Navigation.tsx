@@ -19,16 +19,7 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
-    { 
-      name: 'Products', 
-      hasDropdown: true,
-      children: [
-        { name: 'Self-learning Runtime', href: '/products/runtime' },
-        { name: 'Self-learning Module', href: '/products/module' },
-        { name: 'Self-learning NPU', href: '/products/npu' },
-      ] 
-    },
-    { name: 'Solutions', href: '#solutions' },
+    { name: 'Products', href: '#products' },
     { name: "Blog", href: '/blog' },
     { name: 'About', href: '#about' },
     { name: 'Contact', href: '#contact' },
