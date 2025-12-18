@@ -1,108 +1,134 @@
-440
-  import { BlogPost } from '../types/blog';
+import { BlogPost } from '../types/blog';
 
 export let blogPostsData: BlogPost[] = [
   {
-    id: '1',
-    slug: 'moscow-summit',
+    id: 1,
     title: 'Pitching at Moscow Startup Summit',
+    slug: 'moscow-summit',
     excerpt: 'Edgeble pitched at the Moscow Startup Summit, highlighting the world\'s first Self-Learning Edge AI platform redefining autonomous intelligence.',
-    content: `<p class="text-lg mb-6">Participated in the Moscow Startup Summit, presenting its Self-Learning Edge AI platform that enables on-device inference, adaptation, and continuous learning without cloud dependency.</p><p class="text-lg mb-6">The platform represents a breakthrough in edge computing, allowing AI models to learn and adapt directly on devices without requiring constant cloud connectivity or expensive computational resources.</p>`,
+    content: `<p class="text-lg mb-6"><strong>Edgeble</strong> participated in the <strong>Moscow Startup Summit</strong>, presenting its <strong>Self-Learning Edge AI</strong> platform that enables on-device inference, adaptation, and continuous learning without cloud dependency.</p>
+    <p class="mb-6">The summit brought together global investors, innovators, and leaders in AI, positioning Edgeble at the forefront of the agentic edge revolution.</p>
+    <p class="text-white/70 italic">#MoscowStartupSummit #AgenticAI #EdgeAI #Innovation</p>`,
     author: 'Jagan Teki',
-    authorRole: 'CEO & Founder',
-    authorImage: '/images/jagan.jpg',
     date: '2025-10-02',
     readTime: '3 min read',
     image: '/images/blog-moscow.jpeg',
     tags: ['Moscow', 'Startup', 'Agentic AI'],
-    category: 'Events',
-    order: null,
-    createdAt: '2025-10-02T00:00:00Z'
+    category: 'Events'
   },
   {
-    id: '2',
-    slug: 'sber500-selection',
+    id: 2,
     title: 'Edgeble Among Top 25 Global Startups Selected by Sber500',
+    slug: 'sber500-selection',
     excerpt: 'Edgeble has been selected among the Top 25 startups worldwide by Sber500, recognizing innovation in Self-Learning Edge AI.',
-    content: `<p class="text-lg mb-6"><strong>Edgeble</strong> has been recognized among the <strong>Top 25 Global Startups</strong> selected by <strong>Sber500</strong> for its innovation in <strong>Self-Learning Edge AI</strong>.</p><p class="text-lg mb-6">This recognition validates our commitment to revolutionizing edge computing and demonstrates the global importance of on-device AI intelligence. Sber500's selection affirms our position as a leader in next-generation AI infrastructure.</p>`,
+    content: `<p class="text-lg mb-6"><strong>Edgeble</strong> has been recognized among the <strong>Top 25 Global Startups</strong> selected by <strong>Sber500</strong> for its innovation in <strong>Self-Learning Edge AI</strong> and its contributions to industrial autonomy and AI-driven edge systems.</p>
+    <p class="text-white/70 italic">#Sber500 #GlobalStartups #EdgeAI #Innovation</p>`,
     author: 'Jagan Teki',
-    authorRole: 'CEO & Founder',
-    authorImage: '/images/jagan.jpg',
     date: '2025-09-25',
     readTime: '2 min read',
     image: '/images/blog-sber500.png',
     tags: ['Sber500', 'Global Startups', 'Innovation'],
-    category: 'Recognition',
-    order: null,
-    createdAt: '2025-09-25T00:00:00Z'
+    category: 'Recognition'
   },
   {
-    id: '3',
-    slug: 'edge-ai-future',
-    title: 'The Future of Edge AI: Why On-Device Intelligence Matters',
-    excerpt: 'Explore how edge AI is transforming technology and why on-device intelligence is the future of computation.',
-    content: `<p class="text-lg mb-6">Edge AI represents a paradigm shift in how we approach artificial intelligence. Instead of sending all data to centralized cloud servers, edge AI brings intelligence directly to devices.</p><p class="text-lg mb-6">This approach offers numerous advantages: reduced latency, improved privacy, lower bandwidth requirements, and the ability to function offline. As IoT devices proliferate and real-time processing becomes critical, edge AI has become essential.</p><p class="text-lg mb-6">The future belongs to systems that can learn and adapt locally, enabling smarter, faster, and more secure applications across all industries.</p>`,
+    id: 3,
+    title: 'Pitching at Venture Dock, YC',
+    slug: 'venture-dock-yc',
+    excerpt: 'Edgeble pitched its Agentic Edge AI platform at Venture Dock hosted by YC Startup in San Francisco.',
+    content: `<p class="text-lg mb-6"><strong>Edgeble</strong> presented its <strong>Agentic Edge AI</strong> technology at <strong>Venture Dock hosted by YC Startup</strong> in San Francisco, showcasing how Edgeble\'s self-learning runtime accelerates industrial, logistics, and AI-driven deployments at the edge.</p>
+    <p class="text-white/70 italic">#YCStartup #VentureDock #EdgeAI #AgenticAI</p>`,
     author: 'Jagan Teki',
-    authorRole: 'CEO & Founder',
-    authorImage: '/images/jagan.jpg',
-    date: '2025-09-15',
-    readTime: '5 min read',
-    image: '/images/blog-edge-ai.jpeg',
-    tags: ['Edge AI', 'Technology', 'Innovation'],
-    category: 'Technology',
-    order: null,
-    createdAt: '2025-09-15T00:00:00Z'
+    date: '2025-09-19',
+    readTime: '2 min read',
+    image: '/images/blog-venture-dock.jpg',
+    tags: ['Venture Dock', 'YC', 'Agentic AI'],
+    category: 'Events'
   },
   {
-    id: '4',
-    slug: 'self-learning-systems',
-    title: 'Building Self-Learning Systems: A Technical Deep Dive',
-    excerpt: 'Understand the architecture and principles behind self-learning AI systems that adapt without explicit programming.',
-    content: `<p class="text-lg mb-6">Self-learning systems represent the next frontier in artificial intelligence. Unlike traditional machine learning models that are trained once and then deployed, self-learning systems continuously adapt to new data and changing environments.</p><p class="text-lg mb-6">These systems use sophisticated feedback mechanisms, reinforcement learning principles, and advanced neural architectures to improve performance over time. They can identify patterns, make decisions, and optimize their own parameters without human intervention.</p><p class="text-lg mb-6">Edgeble's self-learning edge AI platform enables these capabilities directly on edge devices, making intelligent systems accessible to a broader range of applications and use cases.</p>`,
+    id: 4,
+    title: 'Edgeble at InnoTrek 2025 – USA DeepTech Showcase',
+    slug: 'innotrek-2025',
+    excerpt: 'Edgeble will showcase Self-Learning Edge AI technology at NASSCOM\'s InnoTrek 2025 USA, connecting with global investors, partners, and innovators.',
+    content: `<p class="text-lg mb-6">We\'re thrilled to announce that <strong>Edgeble</strong> will be participating in <strong>InnoTrek 2025 – USA</strong>, organized by NASSCOM DeepTech. We\'ll showcase our <strong>Self-Learning Edge AI</strong> technology powering factories, surveillance, and aerospace systems — and introduce our vision for the <strong>Agentic Edge AI NPU</strong>.</p>
+    <p class="mb-6">We look forward to engaging with <strong>global investors, partners, and innovators</strong> to bring the next wave of AI closer to where the world works.</p>
+    <p class="mb-6">Key pitch sessions include:</p>
+    <ul class="list-disc list-inside mb-6">
+      <li>Capgemini – San Francisco</li>
+      <li>Venture Dock – San Francisco</li>
+      <li>Dallas Venture Capital – Dallas</li>
+      <li>Mphasis – NYC</li>
+      <li>Uber Technologies – NYC</li>
+    </ul>
+    <p class="text-white/70 italic">#InnoTrek2025 #NASSCOM #DeepTech #AgenticAI #EdgeAI #Innovation #GlobalExpansion</p>`,
     author: 'Jagan Teki',
-    authorRole: 'CEO & Founder',
-    authorImage: '/images/jagan.jpg',
-    date: '2025-09-08',
-    readTime: '6 min read',
-    image: '/images/blog-self-learning.jpeg',
-    tags: ['Self-Learning', 'AI', 'Technology'],
-    category: 'Technology',
-    order: null,
-    createdAt: '2025-09-08T00:00:00Z'
-  },
-  {
-    id: '5',
-    slug: 'privacy-in-edge-computing',
-    title: 'Why Privacy Matters in Edge Computing',
-    excerpt: 'Discover how edge computing provides superior privacy protection compared to cloud-based AI solutions.',
-    content: `<p class="text-lg mb-6">Privacy is one of the most critical concerns in the AI era. Traditional cloud-based AI solutions require sending sensitive data to remote servers, creating privacy vulnerabilities and regulatory compliance challenges.</p><p class="text-lg mb-6">Edge computing transforms this model by processing data locally on devices. This approach ensures that sensitive information never leaves the user's device, providing strong privacy guarantees and enabling compliance with regulations like GDPR and CCPA.</p><p class="text-lg mb-6">With Edgeble's edge AI platform, organizations can deploy intelligent systems while maintaining complete data privacy and control.</p>`,
-    author: 'Jagan Teki',
-    authorRole: 'CEO & Founder',
-    authorImage: '/images/jagan.jpg',
-    date: '2025-08-28',
+    date: '2025-09-04',
     readTime: '4 min read',
-    image: '/images/blog-privacy.jpeg',
-    tags: ['Privacy', 'Security', 'Edge Computing'],
-    category: 'Security',
-    order: null,
-    createdAt: '2025-08-28T00:00:00Z'
+    image: '/images/blog-innotrek.jpeg',
+    tags: ['InnoTrek', 'DeepTech', 'EdgeAI', 'NASSCOM'],
+    category: 'Events'
   },
   {
-    id: '6',
-    slug: 'iot-edge-ai-integration',
-    title: 'Integrating Edge AI with IoT Devices: Best Practices',
-    excerpt: 'Learn how to effectively integrate edge AI with IoT devices for smarter, autonomous systems.',
-    content: `<p class="text-lg mb-6">The Internet of Things (IoT) generates massive amounts of data from connected devices worldwide. Traditionally, this data was sent to cloud servers for processing, creating latency and bandwidth challenges.</p><p class="text-lg mb-6">Edge AI changes this by enabling IoT devices to process and learn from data locally. This integration creates smarter devices that can make decisions independently and respond in real-time to changing conditions.</p><p class="text-lg mb-6">Best practices for IoT-Edge AI integration include choosing lightweight models, optimizing for device resources, implementing robust security measures, and ensuring seamless synchronization when cloud connectivity is available.</p>`,
+    id: 5,
+    title: 'Edgeble Selected to Present at 8th EMVA Forum, Germany',
+    slug: 'emva-germany',
+    excerpt: 'Edgeble has been selected to present and exhibit a poster at the 8th European Machine Vision Forum (EMVA) in Germany on Agentic Edge AI for Imaging the Invisible in Industrial Vision Systems.',
+    content: `<p class="text-lg mb-6">Edgeble has been selected to present and exhibit a poster at the <strong>8th European Machine Vision Forum (EMVA)</strong> in Germany, highlighting our work on <strong>Agentic Edge AI for Imaging the Invisible in Industrial Vision Systems</strong>.</p>
+    <p class="mb-6">This recognition marks a major step forward for Edgeble\'s Self-Learning Edge AI platform — demonstrating how edge-based intelligence can reveal insights hidden in industrial vision systems.</p>
+    <p class="text-white/70 italic">#EMVA #EMVF #MachineVision #AgenticAI #EdgeAI #IndustrialAI</p>`,
     author: 'Jagan Teki',
-    authorRole: 'CEO & Founder',
-    authorImage: '/images/jagan.jpg',
-    date: '2025-08-18',
+    date: '2025-08-02',
+    readTime: '3 min read',
+    image: '/images/blog-emva.jpg',
+    tags: ['EMVA', 'Machine Vision', 'Agentic AI'],
+    category: 'Events'
+  },
+  {
+    id: 6,
+    title: 'Showcase at Bosch Global FIT.Fest\'25',
+    slug: 'fit-fest25',
+    excerpt: 'Edgeble showcased its Edge AI accelerator modules at Bosch Global FIT.Fest\'25, a flagship technical event bringing together industry leaders and innovators.',
+    content: `<p class="text-lg mb-6">On behalf of the entire team at BGSW, we extend our heartfelt thanks for your organization\'s participation in Marketplace Stalls at our flagship Technical Event, FIT.Fest\'25.</p>
+    <p class="mb-6">Your insights and expertise greatly enriched the event, and the feedback we received from attendees has been overwhelmingly positive. We truly appreciate the time and effort dedicated to preparing and presenting. Your contribution played a significant role in making FIT.Fest\'25 a success.</p>
+    <h3 class="text-2xl font-bold text-white mb-4 mt-8">Event Highlights</h3>
+    <p class="mb-6">FIT.Fest\'25 brought together industry leaders, innovators, and technology enthusiasts to showcase cutting-edge solutions and foster collaboration in the automotive and technology sectors.</p>`,
+    author: 'Jagan Teki',
+    date: '2025-06-19',
+    readTime: '3 min read',
+    image: '/images/blog-bosch.png',
+    tags: ['Bosch', 'FIT.Fest', 'Marketplace'],
+    category: 'Events'
+  },
+  {
+    id: 7,
+    title: 'Pitching at Beyond Borders: The Era of Agentic AI',
+    slug: 'beyond-borders',
+    excerpt: 'T-Hub, in strategic partnership with EY, hosted a convergence of visionary founders and global tech leaders to explore agentic AI innovation.',
+    content: `<p class="text-lg mb-6">T-Hub, in strategic partnership with EY, hosted "Beyond Borders: The Era of Agentic AI," bringing together startup builders and enterprise leaders to discuss autonomous intelligence.</p>
+    <p class="mb-6">We brought startup builders and enterprise leaders into one room to talk honestly about what it really takes to make AI work inside large organizations—and how agentic platforms are shifting what\'s possible.</p>
+    <h3 class="text-2xl font-bold text-white mb-4 mt-8">The Future of Autonomous Intelligence</h3>
+    <p class="mb-6">The event showcased how agentic AI is moving beyond traditional automation to create truly autonomous systems that can reason, adapt, and make decisions independently.</p>`,
+    author: 'Jagan Teki',
+    date: '2025-06-02',
     readTime: '5 min read',
-    image: '/images/blog-iot.jpeg',
-    tags: ['IoT', 'Edge AI', 'Integration'],
-    category: 'Technology',
-    order: null,
-    createdAt: '2025-08-18T00:00:00Z'
+    image: '/images/blog-ey.png',
+    tags: ['Agentic AI', 'EY Partnership', 'T-Hub'],
+    category: 'Events'
+  },
+  {
+    id: 8,
+    title: 'Pitching at Peak XV, Rajan Anandan',
+    slug: 'peak-xv',
+    excerpt: 'Edgeble pitched with Rajan Anandan from Peak XV Partners at T-Hub, discussing AI trends and the future of startups in India.',
+    content: `<p class="text-lg mb-6">With T-Hub, Edgeble had the honor to pitch alongside Rajan Anandan, Managing Director at Peak XV Partners. From AI trends to the future of startups in India, the insights shared were as sharp as they were inspiring.</p>
+    <p class="mb-6">It was great to see Hyderabad\'s incredible founder community show up on short notice, bringing curiosity, energy, and thoughtful questions.</p>
+    <h3 class="text-2xl font-bold text-white mb-4 mt-8">Insights from Peak XV</h3>
+    <p class="mb-6">Rajan shared valuable perspectives on the evolving startup ecosystem in India, highlighting the growing importance of AI and deep tech innovations.</p>`,
+    author: 'Jagan Teki',
+    date: '2025-03-25',
+    readTime: '4 min read',
+    image: '/images/peak.png',
+    tags: ['Peak XV', 'Rajan Anandan', 'T-Hub'],
+    category: 'Events'
   }
 ];
 
@@ -117,44 +143,8 @@ export function sortPosts(posts: BlogPost[]): BlogPost[] {
   });
 }
 
-export function getPostBySlug(slug: string): BlogPost | undefined {
-  return blogPostsData.find(p => p.slug === slug || p.id === slug);
-}
-
-export function addPost(post: Omit<BlogPost, 'id' | 'order' | 'createdAt'>): BlogPost {
-  const newPost: BlogPost = {
-    ...post,
-    id: Date.now().toString(),
-    order: null,
-    createdAt: new Date().toISOString()
-  };
-  blogPostsData.push(newPost);
-  saveBlogPostsToStorage();
-  return newPost;
-}
-
-export function updatePostOrder(orderedIds: string[]): BlogPost[] {
-  orderedIds.forEach((id, index) => {
-    const post = blogPostsData.find(p => p.id === id);
-    if (post) {
-      post.order = index;
-    }
-  });
-  saveBlogPostsToStorage();
-  return sortPosts(blogPostsData);
-}
-
-export function updatePost(id: string, updates: Partial<Omit<BlogPost, 'id' | 'createdAt'>>): BlogPost | undefined {
-  const post = blogPostsData.find(p => p.id === id);
-  if (post) {
-    Object.assign(post, updates);
-    saveBlogPostsToStorage();
-  }
-  return post;
-}
-
 export function deletePost(id: string): BlogPost[] {
-  blogPostsData = blogPostsData.filter(p => p.id !== id);
+  blogPostsData = blogPostsData.filter(p => p.id !== parseInt(id));
   saveBlogPostsToStorage();
   return blogPostsData;
 }
@@ -178,10 +168,9 @@ export function loadBlogPostsFromStorage(): void {
       if (stored) {
         blogPostsData = JSON.parse(stored);
       } else {
-              // Storage is empty on first load, keep default posts
-              saveBlogPostsToStorage();
-            }
-           
+        // Storage is empty on first load, keep default posts
+        saveBlogPostsToStorage();
+      }
     } catch (error) {
       console.error('Error loading blog posts from storage:', error);
     }
