@@ -176,11 +176,10 @@ export function loadBlogPostsFromStorage(): void {
       const stored = localStorage.getItem(STORAGE_KEY);
       if (stored) {
         blogPostsData = JSON.parse(stored);
-      }
-            else {
-        // Storage is empty on first load, keep default posts
-        saveBlogPostsToStorage();
-      }
+      } else {
+              // Storage is empty on first load, keep default posts
+              saveBlogPostsToStorage();
+            }
            
     } catch (error) {
       console.error('Error loading blog posts from storage:', error);
