@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronRight, Cpu, Zap, Globe, Brain } from 'lucide-react';
+import PhysicalSystems from "./PhysicalSystems";
 
 const Hero = () => {
   const handleRunNPU = () => {
@@ -50,10 +51,10 @@ const Hero = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-left mb-16 animate-fadeIn animation-delay-600">
+          <div className="flex flex-col sm:flex-row gap-4 justify-left mb-26 animate-fadeIn animation-delay-600">
             <button 
               onClick={handleRunNPU}
-              className="group px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl border border-white/20 transition-all duration-300 backdrop-blur-sm flex items-left justify-left"
+              className="group px-8 py-4 bg-white/10 hover:bg-white/100 text-white font-semibold rounded-xl border border-white/20 transition-all duration-300 backdrop-blur-sm flex items-left justify-left"
             >
               <Cpu className="mr-2 w-5 h-5" />
               Run Self-learning Edge
@@ -61,6 +62,11 @@ const Hero = () => {
           </div>
 
         </div>
+      </div>
+
+      {/* Bottom content inside Hero */}
+      <div className="mt-32">
+        <PhysicalSystems />
       </div>
 
       {/* Scroll Indicator */}
