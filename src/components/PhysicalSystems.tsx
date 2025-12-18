@@ -22,41 +22,47 @@ export default function PhysicalSystems() {
   }, []);
 
   return (
-    <section className="bg-black py-32 text-center">
-      {/* TEXT LINE */}
-      <div className="relative inline-block">
-        <p className="text-xl md:text-3xl text-white/70 tracking-wide">
-          Edgeble enables physical systems in{" "}
-          <span className={active === 0 ? "text-white" : "text-white/30"}>
-            Industrial </span>
-            and{" "}
-          <span className={active === 1 ? "text-white" : "text-white/30"}>
-            Automotive
-          </span>{" "}
-        </p>
+  <section className="bg-black pt-32 pb-10 text-center">
+    {/* TEXT LINE */}
+    <p className="text-xl md:text-3xl text-white/70 tracking-wide flex justify-center gap-2">
+      Edgeble enables physical systems in
 
-        {/* MOVING LINE */}
+      {/* Industrial */}
+      <span className="relative inline-block">
+        <span className={active === 0 ? "text-white" : "text-white/30"}>
+          Industrial
+        </span>
+
+        {active === 0 && (
+          <span className="absolute left-0 -bottom-2 w-full h-[2px] bg-[#77DB89]" />
+        )}
+      </span>
+
+      and
+
+      {/* Automotive */}
+      <span className="relative inline-block">
+        <span className={active === 1 ? "text-white" : "text-white/30"}>
+          Automotive
+        </span>
+
+        {active === 1 && (
+          <span className="absolute left-0 -bottom-2 w-full h-[2px] bg-[#77DB89]" />
+        )}
+      </span>
+    </p>
+
+    {/* LOGOS */}
+    <div className="mt-12 flex justify-center gap-14 flex-wrap animate-fadeIn">
+      {SECTORS[active].logos.map((name) => (
         <div
-          className="absolute h-[2px] bg-[#77DB89] transition-transform duration-700"
-          style={{
-            width: "110px",
-            bottom: "-10px",
-            transform: `translateX(${active * 135}px)`,
-          }}
-        />
-      </div>
-
-      {/* LOGOS */}
-      <div className="mt-16 flex justify-center gap-14 flex-wrap animate-fadeIn">
-        {SECTORS[active].logos.map((name) => (
-          <div
-            key={name}
-            className="text-white/60 text-lg tracking-wide"
-          >
-            {name}
-          </div>
-        ))}
-      </div>
-    </section>
-  );
+          key={name}
+          className="text-white/60 text-lg tracking-wide"
+        >
+          {name}
+        </div>
+      ))}
+    </div>
+  </section>
+);
 }
