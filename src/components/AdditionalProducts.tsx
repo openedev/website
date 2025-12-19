@@ -33,7 +33,7 @@ const AdditionalProducts = () => {
               Self-learning Edge Intelligence
             </h2>
             <p className="text-xl text-white max-w-4xl">
-              Physical systems from IoT Endpoints to Gateway Nodes
+              Physical intelligence from IoT Endpoints to Gateway Nodes
             </p>
           </div>
         </div>

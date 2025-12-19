@@ -178,7 +178,7 @@ const CompaniesAndSolutions = () => {
               Self-learning Edge Agents
             </h2>
             <p className="text-xl text-white max-w-4xl">
-              Edge Agent for Physical systems
+              Edge Agent for Physical Intelligence
             </p>
            </div>
           </div>
