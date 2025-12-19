@@ -1,13 +1,22 @@
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const SECTORS = [
   {
     label: "Industrial",
-    logos: ["AmaraRaja", "PatilRail", "Collins Aerospace"],
+    logos: [
+      { name: "AmaraRaja", image: "/amara-raja.png" },
+      { name: "PatilRail", image: "/patil.jpg" },
+      { name: "Collins Aerospace", image: "/collins-aerospace.png" },
+    ],
   },
   {
     label: "Automotive",
-    logos: ["Apollo Tyres", "Nissan", "Hero"],
+    logos: [
+      { name: "Apollo Tyres", image: "/apollo-tyres.png" },
+      { name: "Nissan", image: "/nissan.png" },
+      { name: "Hero", image: "/hero.png" },
+    ],
   },
 ];
 
@@ -22,47 +31,45 @@ export default function PhysicalSystems() {
   }, []);
 
   return (
-  <section className="bg-black pt-32 pb-10 text-center">
-    {/* TEXT LINE */}
-    <p className="text-xl md:text-2xl text-white/80 tracking-wide flex justify-center gap-2">
-      Edgeble enables physical systems in
-
-      {/* Industrial */}
-      <span className="relative inline-block">
-        <span className={active === 0 ? "text-white" : "text-white/100"}>
-          Industrial
+    <section className="bg-black pt-32 pb-10 text-center">
+      {/* TEXT LINE */}
+      <p className="text-xl md:text-2xl text-white/80 tracking-wide flex justify-center gap-2">
+        Edgeble enables physical systems in
+        {/* Industrial */}
+        <span className="relative inline-block">
+          <span className={active === 0 ? "text-white" : "text-white/100"}>
+            Industrial
+          </span>
+          {active === 0 && (
+            <span className="absolute left-0 -bottom-2 w-full h-[2px] bg-[#77DB89]" />
+          )}
         </span>
-
-        {active === 0 && (
-          <span className="absolute left-0 -bottom-2 w-full h-[2px] bg-[#77DB89]" />
-        )}
-      </span>
-
-      and
-
-      {/* Automotive */}
-      <span className="relative inline-block">
-        <span className={active === 1 ? "text-white" : "text-white/100"}>
-          Automotive
+        and
+        {/* Automotive */}
+        <span className="relative inline-block">
+          <span className={active === 1 ? "text-white" : "text-white/100"}>
+            Automotive
+          </span>
+          {active === 1 && (
+            <span className="absolute left-0 -bottom-2 w-full h-[2px] bg-[#77DB89]" />
+          )}
         </span>
+      </p>
 
-        {active === 1 && (
-          <span className="absolute left-0 -bottom-2 w-full h-[2px] bg-[#77DB89]" />
-        )}
-      </span>
-    </p>
-
-    {/* LOGOS */}
-    <div className="mt-12 flex justify-center gap-64 flex-wrap animate-fadeIn">
-      {SECTORS[active].logos.map((name) => (
-        <div
-          key={name}
-          className="text-white/200 text-lg tracking-wide"
-        >
-          {name}
-        </div>
-      ))}
-    </div>
-  </section>
-);
+      {/* LOGOS */}
+      <div className="mt-12 flex justify-center gap-12 flex-wrap animate-fadeIn">
+        {SECTORS[active].logos.map((logo) => (
+          <div key={logo.name} className="flex items-center justify-center h-16">
+            <Image
+              src={logo.image}
+              alt={logo.name}
+              width={120}
+              height={80}
+              className="object-contain"
+            />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
