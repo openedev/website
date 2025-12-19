@@ -8,7 +8,7 @@ const CompaniesAndSolutions = () => {
   const companies = [
     {
       name: 'Amara Raja',
-      logo: 'https://cdn.brandfetch.io/id3CTtdAAH/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B',
+      logo: 'https://cdn.brandfetch.io/id3CTcGAAH/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B',
       link: '#amara-raja'
     },
     {
@@ -36,36 +36,42 @@ const CompaniesAndSolutions = () => {
   const solutions = [
     {
       icon: Eye,
+      title: 'Dynamic Label Inspection',
       description: 'Dynamic Label Inspection',
       isCustomImage: true,
       customImage: 'images/inspect.png'
     },
     {
       icon: Brain,
+      title: 'Tracking, Re-Identify',
       description: 'Tracking, Re-Identify',
       isCustomImage: true,
       customImage: 'images/track.png'
     },
     {
       icon: Shield,
+      title: 'Weld Penetration Inspection',
       description: 'Weld Penetration Inspection',
       isCustomImage: true,
       customImage: 'images/weld.png'
     },
     {
       icon: Zap,
+      title: 'Volume, Depth Inspection',
       description: 'Volume, Depth Inspection',
       isCustomImage: true,
       customImage: 'images/volume.png'
     },
     {
       icon: Factory,
+      title: 'Predictive Maintenance',
       description: 'Predictive Maintenance',
       isCustomImage: true,
       customImage: 'images/llm.png'
     },
     {
       icon: Car,
+      title: 'Autonomous Driving System',
       description: 'Autonomous Driving System',
       isCustomImage: true,
       customImage: 'images/adas.png'
@@ -87,11 +93,11 @@ const CompaniesAndSolutions = () => {
 
       const scroll = () => {
         scrollPosition += speed;
-        
+
         if (scrollPosition >= maxScroll) {
           scrollPosition = 0;
         }
-        
+
         container.scrollLeft = scrollPosition;
         requestAnimationFrame(scroll);
       };
@@ -119,7 +125,6 @@ const CompaniesAndSolutions = () => {
     };
 
     const companiesCleanup = setupInfiniteScroll(companiesScrollRef, 300, companies.length);
-
     // Setup infinite scroll for solutions (340px + 56px gap = 396px per item for rectangular Vision AI box)
     const solutionsCleanup = setupInfiniteScroll(solutionsScrollRef, 396, solutions.length);
 
@@ -132,41 +137,6 @@ const CompaniesAndSolutions = () => {
   return (
     <section id="companies-solutions" className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Companies We Worked With */}
-        <div className="mb-32">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            We works with
-          </h2>
-          <div className="relative overflow-hidden">
-            <div
-              ref={companiesScrollRef}
-              className="flex overflow-x-hidden scrollbar-hide space-x-4 pb-4"
-              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-            >
-              {duplicatedCompanies.map((company, index) => (
-              <div
-                key={`${company.name}-${index}`}
-                className="flex-shrink-0 flex items-center justify-center min-w-[150px] h-[80px] px-4"
-              >
-                <img
-                  src={company.logo}
-                  alt={`${company.name} logo`}
-                  className={`${
-                    company.name === 'Patil Rail Infra'
-                      ? 'h-[80px] w-auto object-contain'
-                      : 'h-[60px] w-auto object-contain'
-                  } grayscale invert`}
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                  }}
-                />
-            </div>
-         ))}
-            </div>
-          </div>
-        </div>
-
         {/* Solutions We Delivered */}
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
@@ -185,32 +155,31 @@ const CompaniesAndSolutions = () => {
                     key={`${solution.title}-${index}`}
                     href={solution.link}
                     className={`flex-shrink-0 flex flex-col justify-between bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl transition-all duration-300 transform hover:-translate-y-1 group ${
-		      solution.isCustomImage
-		        ? 'w-[340px] h-[420px] p-2 flex flex-col justify-between'
-		        : 'min-w-[280px] p-6'
-		    }`}
+                      solution.isCustomImage
+                        ? 'w-[340px] h-[420px] p-2 flex flex-col justify-between'
+                        : 'min-w-[280px] p-6'
+                    }`}
                   >
                     {solution.isCustomImage ? (
-		    <div className="flex flex-col items-center justify-start w-[320px] h-[420px] p-2">
-		      {/* Image container */}
-		      <div className="w-full h-[320px] flex items-center justify-center overflow-hidden">
-		        <img
-			  src={solution.customImage}
-			  alt={solution.title}
-			  className="max-w-full max-h-full object-contain object-center mx-auto"
-			  onError={(e) => {
-                            const target = e.target as HTMLImageElement;
-			    target.style.display = 'none';
-			  }}
-			/>
-		      </div>
-
-                      {/* Text container */}
-		      <div className="text-center px-4 py-2">
-		        <h3 className="text-base font-bold text-white">{solution.title}</h3>
-		        <p className="text-xl text-white">{solution.description}</p>
-		      </div>
-		    </div>
+                      <div className="flex flex-col items-center justify-start w-[320px] h-[420px] p-2">
+                        {/* Image container */}
+                        <div className="w-full h-[320px] flex items-center justify-center overflow-hidden">
+                          <img
+                            src={solution.customImage}
+                            alt={solution.title}
+                            className="max-w-full max-h-full object-contain object-center mx-auto"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.style.display = 'none';
+                            }}
+                          />
+                        </div>
+                        {/* Text container */}
+                        <div className="text-center px-4 py-2">
+                          <h3 className="text-base font-bold text-white">{solution.title}</h3>
+                          <p className="text-xl text-white">{solution.description}</p>
+                        </div>
+                      </div>
                     ) : (
                       // Standard vertical layout for other solutions
                       <div className="text-center h-full flex flex-col justify-center">
