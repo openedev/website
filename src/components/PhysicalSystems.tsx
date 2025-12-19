@@ -24,12 +24,12 @@ export default function PhysicalSystems() {
   return (
   <section className="bg-black pt-32 pb-10 text-center">
     {/* TEXT LINE */}
-    <p className="text-xl md:text-2xl text-white/70 tracking-wide flex justify-center gap-2">
+    <p className="text-xl md:text-2xl text-white/80 tracking-wide flex justify-center gap-2">
       Edgeble enables physical systems in
 
       {/* Industrial */}
       <span className="relative inline-block">
-        <span className={active === 0 ? "text-white" : "text-white/30"}>
+        <span className={active === 0 ? "text-white" : "text-white/100"}>
           Industrial
         </span>
 
@@ -42,7 +42,7 @@ export default function PhysicalSystems() {
 
       {/* Automotive */}
       <span className="relative inline-block">
-        <span className={active === 1 ? "text-white" : "text-white/30"}>
+        <span className={active === 1 ? "text-white" : "text-white/100"}>
           Automotive
         </span>
 
