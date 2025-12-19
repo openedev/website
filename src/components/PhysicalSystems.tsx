@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 const SECTORS = [
   {
@@ -60,12 +59,10 @@ export default function PhysicalSystems() {
       <div className="mt-12 flex justify-center gap-12 flex-wrap animate-fadeIn">
         {SECTORS[active].logos.map((logo) => (
           <div key={logo.name} className="flex items-center justify-center h-16">
-            <Image
+            <img
               src={logo.image}
               alt={logo.name}
-              width={120}
-              height={80}
-              className="object-contain"
+              style={{ maxWidth: "120px", height: "auto" }}
             />
           </div>
         ))}
