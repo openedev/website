@@ -75,25 +75,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Values */}
-        <div className="mb-20">
-          <h3 className="text-3xl font-bold text-white text-center mb-12">Our Values</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {values.map((value, index) => {
-              const IconComponent = value.icon;
-              return (
-                <div key={index} className="text-center p-6 bg-white/5 rounded-2xl hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-white/20">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-full mb-4">
-                    <IconComponent className="w-8 h-8 text-black" />
-                  </div>
-                  <h4 className="text-xl font-bold text-white mb-3">{value.title}</h4>
-                  <p className="text-white leading-relaxed">{value.description}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
         {/* Team */}
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-white text-center mb-12">Leadership Team</h3>

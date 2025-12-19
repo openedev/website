@@ -12,11 +12,6 @@ const CompaniesAndSolutions = () => {
       link: '#amara-raja'
     },
     {
-      name: 'AirFi',
-      logo: 'images/airfi_logo_light_color.svg',
-      link: '#airfi'
-    },
-    {
       name: 'Apollo',
       logo: 'https://cdn.brandfetch.io/idgr_3pras/w/208/h/80/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B',
       link: '#apollo'

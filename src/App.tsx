@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 import CompaniesAndSolutions from './components/CompaniesAndSolutions';
 import Runtime from './components/Runtime';
 import AdditionalProducts from './components/AdditionalProducts';
-import Solutions from './components/Solutions';
 import WhatsNew from './components/WhatsNew';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -25,7 +24,6 @@ function HomePage() {
         <CompaniesAndSolutions />
         <Runtime />
         <AdditionalProducts />
-        <Solutions />
         <WhatsNew />
         <About />
         <Contact />
@@ -41,7 +39,6 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contact-engineers" element={<ContactEngineers />} />
-        <Route path="/solutions" element={<SolutionsPage />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
                 <Route path="/admin/blog" element={<AdminBlog />} />

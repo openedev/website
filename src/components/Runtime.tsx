@@ -2,7 +2,7 @@ import React from 'react';
 
 const Runtime = () => {
   return (
-    <section className="py-24 bg-black">
+    <section id="runtime" className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
