@@ -5,41 +5,36 @@ const AdditionalProducts = () => {
   const products = [
     {
       id: 1,
-      name: 'Self-learning Runtime',
-      description: 'Runtime firmware turns Edge Devices to learn, correct and recovers',
+      name: 'Self-learning Engine',
+      description: 'Runtime Engine turns physical systems to learn, correct and recovers',
       image: 'images/agentic1.png',
-      badge: 'Agentic',
+      badge: 'Agentic Core',
       link: '/products/agentic'
     },
     {
       id: 2,
-      name: 'Self-learning Module',
-      description: 'Deploy-ready Edge AI Modules with pre-programmed Self-learning runtime',
+      name: 'Self-learning Agent',
+      description: 'Deploy-ready Edge AI Modules with pre-programmed Self-learning engine',
       image: '/images/module.png',
-      badge: 'Module',
+      badge: 'Edge Agent',
       link: '/products/npu'
     }
   ];
 
   return (
-    <section className="py-24 bg-black">
+    <section id="runtime" className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between mb-20">
-          <div>
+	<div className="flex justify-center mb-20 text-center">
+	  <div>
               <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
-                DEPLOY-READY SELF-LEARNING MODULES
+                RESILIENT NERVOUS SYSTEM FOR PHYSICAL AI
               </p>
             <h2 className="text-5xl md:text-5xl font-bold text-white mb-4">
-              Self-learning Module
+              Self-learning Edge Intelligence
             </h2>
             <p className="text-xl text-white max-w-4xl">
-              From IoT Endpoints to Gateway Edge devices
+              Physical systems from IoT Endpoints to Gateway Nodes
             </p>
-          </div>
-          <div>
-            <button className="bg-white text-black hover:bg-white/90 px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105">
-              See Products
-            </button>
           </div>
         </div>
 

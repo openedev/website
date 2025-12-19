@@ -21,17 +21,17 @@ const About = () => {
     {
       icon: Target,
       title: 'Moat',
-      description: 'Builders of Self-learning Edge AI Platform'
+      description: 'Self-learning Edge Intelligence'
     },
     {
       icon: Eye,
       title: 'Vision',
-      description: 'Global Deployment of Self-learning Edge Nodes'
+      description: 'A world of resilient, self-evolving machines'
     },
     {
       icon: Users,
       title: 'Mission',
-      description: 'Edge Devices to learn, correct and recovers'
+      description: 'Physical System learn, correct and recovers'
     }
   ];
 
@@ -58,8 +58,8 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 	{/* About */}
         <div className="mb-20">
-          <h3 className="text-3xl font-bold text-white text-center mb-12">About Edgeble</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <h3 className="text-5xl font-bold text-white text-center mb-12">About Edgeble</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-xl">
             {company.map((value, index) => {
               const IconComponent = value.icon;
               return (
@@ -67,7 +67,7 @@ const About = () => {
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-full mb-4">
                     <IconComponent className="w-8 h-8 text-black" />
                   </div>
-                  <h4 className="text-xl font-bold text-white mb-3">{value.title}</h4>
+                  <h4 className="text-2xl font-bold text-white mb-3">{value.title}</h4>
                   <p className="text-white leading-relaxed">{value.description}</p>
                 </div>
               );
@@ -77,7 +77,7 @@ const About = () => {
 
         {/* Team */}
         <div className="mb-20">
-          <h3 className="text-3xl font-bold text-white text-center mb-12">Leadership Team</h3>
+          <h3 className="text-4xl font-bold text-white text-center mb-12">Leadership Team</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl mx-auto">
             {team.map((member, index) => (
               <div key={index} className="text-center group">

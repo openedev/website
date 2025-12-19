@@ -139,10 +139,21 @@ const CompaniesAndSolutions = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Solutions We Delivered */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-            Self-learning Edge AI deployments in
-          </h2>
-          <div className="relative overflow-hidden">
+	  <div className="flex justify-center mb-20 text-center">
+	   <div>
+              <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
+                DEPLOY-READY SELF-LEARNING AGENTS
+              </p>
+            <h2 className="text-5xl md:text-5xl font-bold text-white mb-4">
+              Self-learning Edge Agents
+            </h2>
+            <p className="text-xl text-white max-w-4xl">
+              Edge Agent for Physical systems
+            </p>
+           </div>
+          </div>
+
+	  <div className="relative overflow-hidden">
             <div
               ref={solutionsScrollRef}
               className="flex overflow-x-hidden scrollbar-hide space-x-14 pb-4"
