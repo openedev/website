@@ -27,7 +27,7 @@ const AdditionalProducts = () => {
 	<div className="flex justify-center mb-20 text-center">
 	  <div>
               <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
-                DEPLOY-READY SELF-LEARNING MODULES
+                RESILIENT NERVOUS SYSTEM FOR PHYSICAL AI
               </p>
             <h2 className="text-5xl md:text-5xl font-bold text-white mb-4">
               Self-learning Edge Intelligence
