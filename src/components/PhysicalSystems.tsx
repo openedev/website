@@ -66,7 +66,6 @@ export default function PhysicalSystems() {
             />
           </div>
                 }))}
-            </div>
     </section>
   );
 }
