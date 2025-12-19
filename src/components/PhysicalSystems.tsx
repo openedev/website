@@ -65,7 +65,8 @@ export default function PhysicalSystems() {
               style={{ maxWidth: "100px", height: "auto" }}
             />
           </div>
-        }))}      </div>
+                }))}
+            </div>
     </section>
   );
 }
