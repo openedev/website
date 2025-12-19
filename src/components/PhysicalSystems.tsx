@@ -56,16 +56,18 @@ export default function PhysicalSystems() {
       </p>
 
       {/* LOGOS */}
-      <div key={logo.name} className="flex flex-col items-center justify-center gap-3">
-            
+      <div className="flex flex-col items-center justify-center gap-3">
+        {SECTORS[active].logos.map((logo) => (
+          <div key={logo.name}>
             <p className="text-white/80 text-sm font-medium">{logo.name}</p>
-        <img
+            <img
               src={logo.image}
               alt={logo.name}
               style={{ maxWidth: "100px", height: "auto" }}
             />
           </div>
-                }))}
+        ))}
+      </div>
     </section>
   );
 }
