@@ -56,13 +56,14 @@ export default function PhysicalSystems() {
       </p>
 
       {/* LOGOS */}
-      <d<iv key={logo.name} className="flex flex-col items-center justify-center gap-3">
-            <img
+      <div key={logo.name} className="flex flex-col items-center justify-center gap-3">
+            
+            <p className="text-white/80 text-sm font-medium">{logo.name}</p>
+        <img
               src={logo.image}
               alt={logo.name}
               style={{ maxWidth: "100px", height: "auto" }}
             />
-            <p className="text-white/80 text-sm font-medium">{logo.name}</p>
           </div>
         ))}
       </div>
