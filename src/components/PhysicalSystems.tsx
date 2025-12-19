@@ -32,7 +32,7 @@ export default function PhysicalSystems() {
   return (
     <section className="bg-black pt-32 pb-10 text-center">
       {/* TEXT LINE */}
-      <p className="text-xl md:text-2xl text-white/80 tracking-wide flex justify-center gap-2">
+      <p className="text-xl md:text-2xl text-white/80 tracking-wide flex justify-center gap-2 mb-12">
         Edgeble enables physical systems in
         {/* Industrial */}
         <span className="relative inline-block">
@@ -56,14 +56,15 @@ export default function PhysicalSystems() {
       </p>
 
       {/* LOGOS */}
-      <div className="flex flex-col items-center justify-center gap-3">
+      <div className="flex flex-wrap items-start justify-center gap-8 px-4">
         {SECTORS[active].logos.map((logo) => (
-          <div key={logo.name}>
-            <p className="text-white/80 text-sm font-medium">{logo.name}</p>
+          <div key={logo.name} className="flex flex-col items-center justify-center">
+            <p className="text-white/80 text-sm font-medium mb-3">{logo.name}</p>
             <img
               src={logo.image}
               alt={logo.name}
-              style={{ maxWidth: "100px", height: "auto" }}
+              style={{ maxWidth: "120px", height: "auto", minHeight: "70px" }}
+              className="object-contain"
             />
           </div>
         ))}
