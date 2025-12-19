@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, User, ArrowLeft } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowLeft } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
