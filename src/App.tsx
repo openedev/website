@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import CompaniesAndSolutions from './components/CompaniesAndSolutions';
-import Runtime from './components/Runtime';
 import AdditionalProducts from './components/AdditionalProducts';
 import WhatsNew from './components/WhatsNew';
 import About from './components/About';
@@ -22,7 +21,6 @@ function HomePage() {
       <main>
         <Hero />
         <CompaniesAndSolutions />
-        <Runtime />
         <AdditionalProducts />
         <WhatsNew />
         <About />
@@ -42,7 +40,6 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
                 <Route path="/admin/blog" element={<AdminBlog />} />
-        <Route path="/products/runtime" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">Self-learning Runtime - Coming Soon</h1></div>} />
         <Route path="/products/module" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">Self-learning Module - Coming Soon</h1></div>} />
         <Route path="/products/npu" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">Self-learning NPU - Coming Soon</h1></div>} />
       </Routes>
