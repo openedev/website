@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
+import PhysicalSystems from "./components/PhysicalSystems";
 import CompaniesAndSolutions from './components/CompaniesAndSolutions';
 import AdditionalProducts from './components/AdditionalProducts';
 import WhatsNew from './components/WhatsNew';
@@ -19,7 +20,8 @@ function HomePage() {
       <Navigation />
       <main>
         <Hero />
-        <CompaniesAndSolutions />
+        <PhysicalSystems />
+	<CompaniesAndSolutions />
         <AdditionalProducts />
         <WhatsNew />
         <About />

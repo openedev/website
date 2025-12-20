@@ -1,6 +1,5 @@
 import React from 'react';
 import { ChevronRight, Cpu, Zap, Globe, Brain } from 'lucide-react';
-import PhysicalSystems from "./PhysicalSystems";
 
 const Hero = () => {
   const handleRunNPU = () => {
@@ -62,11 +61,6 @@ const Hero = () => {
           </div>
 
         </div>
-      </div>
-
-      {/* Bottom content inside Hero */}
-      <div className="mt-32">
-        <PhysicalSystems />
       </div>
 
       {/* Scroll Indicator */}
