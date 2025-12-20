@@ -2,7 +2,7 @@ export const COMPANY_LOGOS = {
   Industrial: [
     {
       name: 'Amara Raja',
-      logo: 'https://cdn.brandfetch.io/id3CTtdAAH/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B',
+      logo: '/images/amar.png',
     },
     {
       name: 'Patil Rail Infra',
@@ -10,17 +10,17 @@ export const COMPANY_LOGOS = {
     },
     {
       name: 'Collins Aerospace',
-      logo: 'https://cdn.brandfetch.io/idMr1kh5YW/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B',
+      logo: '/images/collins.png',
     },
   ],
   Automotive: [
     {
       name: 'Apollo Tyres',
-      logo: 'https://cdn.brandfetch.io/idgr_3pras/w/208/h/80/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B',
+      logo: '/images/apollo.jpg',
     },
     {
       name: 'Nissan',
-      logo: '/images/nissan.png',
+      logo: '/images/nissan.svg',
     },
     {
       name: 'Hero',

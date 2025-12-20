@@ -19,8 +19,8 @@ export default function PhysicalSystems() {
   return (
     <section className="bg-black pt-24 pb-16 text-center">
       {/* TEXT LINE */}
-      <p className="text-xl md:text-2xl text-white/80 tracking-wide flex justify-center gap-2 mb-12">
-        Edgeble enables physical systems in
+      <p className="text-xl md:text-2xl text-white tracking-wide flex justify-center gap-2 mb-12">
+        Edgeble enabling physical systems in
 
         {SECTORS.map((sector, index) => (
           <span key={sector} className="relative inline-block mx-1">
@@ -37,16 +37,26 @@ export default function PhysicalSystems() {
 
       {/* LOGOS — FULL WIDTH GRID */}
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-12 items-center justify-center">
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-x-16 gap-y-10 items-center justify-center">
           {logos.map((company) => (
             <div
               key={company.name}
-              className="flex items-center justify-center h-[70px]"
+              className="flex items-center justify-center h-[72px]"
             >
               <img
                 src={company.logo}
                 alt={`${company.name} logo`}
-                className="max-h-[60px] w-auto object-contain grayscale invert opacity-80 hover:opacity-100 transition"
+		className="
+		  max-h-[80px]
+		  max-w-[140px]
+		  w-auto
+		  object-contain
+		  opacity-100
+		  grayscale
+		  invert
+		  transition
+		  hover:opacity-100
+                "
                 onError={(e) => {
                   (e.target as HTMLImageElement).style.display = "none";
                 }}
