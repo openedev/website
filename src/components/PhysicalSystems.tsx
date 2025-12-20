@@ -9,7 +9,7 @@ export default function PhysicalSystems() {
   useEffect(() => {
     const id = setInterval(() => {
       setActive((prev) => (prev === 0 ? 1 : 0));
-    }, 3000);
+    }, 4000);
     return () => clearInterval(id);
   }, []);
 
