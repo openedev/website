@@ -17,7 +17,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen bg-black overflow-hidden">
+    <section className="relative min-h-[850px] bg-black overflow-hidden">
       {/* Circuit Pattern Overlay */}
       <div className="absolute inset-0 opacity-5">
         <svg className="w-full h-full text-white" viewBox="0 0 100 100" preserveAspectRatio="none">
