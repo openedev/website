@@ -36,12 +36,12 @@ export default function PhysicalSystems() {
       </p>
 
       {/* LOGOS — FULL WIDTH GRID */}
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-x-16 gap-y-10 items-center justify-center">
+      <div className="w-full max-w-7xl mx-auto px-8">
+        <div className="flex items-center justify-between gap-12">
           {logos.map((company) => (
             <div
               key={company.name}
-              className="flex items-center justify-center h-[72px]"
+              className="flex items-center justify-center h-[72px] flex-1"
             >
               <img
                 src={company.logo}
