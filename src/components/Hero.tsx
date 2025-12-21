@@ -46,7 +46,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-xl md:text-3xl text-white max-w-4xl mb-12 leading-relaxed animate-fadeIn animation-delay-400">
-	    Infer. Act. Learn. directly inside<span className="text-[#77DB89]"> Physical </span> Systems
+	    Infer. Act. Learn. continuously inside<span className="text-[#77DB89]"> Physical </span> Systems
           </p>
 
           {/* CTA Buttons */}
