@@ -58,6 +58,10 @@ const Hero = () => {
               <Cpu className="mr-2 w-5 h-5" />
               Run Self-learning Edge
             </button>
+
+	    <a href="#news"
+	      className="text-white/80 hover:text-white text-2xl font-medium transition-all flex items-center gap-1" > Latest <span>→</span>
+	    </a>
           </div>
 
         </div>
