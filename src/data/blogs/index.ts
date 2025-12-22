@@ -1,7 +1,9 @@
 import lpc2025 from "./lpc2025";
 import nissan from "./nissan";
+import capgemeni from "./capgemeni";
 
 export const NEW_BLOGS = [
 	lpc2025,
 	nissan,
+	capgemeni,
 ];
