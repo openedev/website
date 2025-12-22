@@ -5,6 +5,13 @@ import { useParams } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
+const getInitials = (name: string) =>
+  name
+    .split(" ")
+    .map((n) => n[0])
+    .join("")
+    .toUpperCase();
+
 const BlogPostPage = () => {
   const { slug } = useParams<{ slug: string }>();
 
@@ -72,17 +79,11 @@ const BlogPostPage = () => {
 
           {/* Author Info */}
           <div className="flex items-center mb-8">
-            <img
-              alt={post.author}
-              className="w-12 h-12 rounded-full object-cover mr-4"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150';
-              }}
-            />
+	    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white font-semibold mr-4">
+	    	{getInitials(post.author)}
+	    </div>
             <div>
               <div className="font-semibold text-white">{post.author}</div>
-              <div className="text-white/60 text-sm">{post.authorRole}</div>
             </div>
           </div>
         </div>
@@ -153,19 +154,13 @@ const BlogPostPage = () => {
         {/* Author Bio */}
         <div className="mt-12 p-6 bg-white/5 rounded-2xl border border-white/10">
           <div className="flex items-start space-x-4">
-            <img
-              alt={post.author}
-              className="w-16 h-16 rounded-full object-cover"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150';
-              }}
-            />
+	    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white font-semibold mr-4">
+	    	{getInitials(post.author)}
+	    </div>
             <div>
               <h4 className="text-lg font-semibold text-white mb-1">{post.author}</h4>
-              <p className="text-white/60 text-sm mb-2">{post.authorRole}</p>
               <p className="text-white/80 text-sm">
-                {post.author} is Founder & CEO of Edgeble, specializing in Edge AI innovation and technology development. 
+                {post.author} is Founder & CEO of Edgeble, Dept. Self-learning Edge Intelligence
               </p>
             </div>
           </div>
