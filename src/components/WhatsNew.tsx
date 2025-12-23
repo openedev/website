@@ -31,9 +31,16 @@ const WhatsNew = () => {
           <div>
             <a 
               href="/blog"
-              className="bg-white text-black hover:bg-white/90 px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105"
+	      className="bg-white text-black hover:bg-white/90 px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105"
             >
               View Blog
+            </a>
+            
+	    <a 
+              href="/news"
+              className="bg-white/10 text-white hover:bg-white/20 border border-white/30 px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105"
+            >
+              View News
             </a>
           </div>
         </div>
