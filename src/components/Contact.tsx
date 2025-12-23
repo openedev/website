@@ -25,36 +25,43 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitError('');
+  e.preventDefault();
+  setIsSubmitting(true);
+  setSubmitError('');
 
-    try {
-      // Simulate form submission (replace with actual API call)
-      await new Promise(resolve => setTimeout(resolve, 1000));
+  try {
+    const response = await fetch("https://formspree.io/f/xojarqwr", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify(formData)
+    });
 
-      // Show success message
-      setIsSubmitted(true);
-      
-      // Reset form after successful submission
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        subject: '',
-        message: ''
-      });
-
-      // Hide success message after 5 seconds
-      setTimeout(() => setIsSubmitted(false), 5000);
-
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      setSubmitError('There was an error submitting your message. Please try again or contact us directly at info@edgeble.ai');
-    } finally {
-      setIsSubmitting(false);
+    if (!response.ok) {
+      throw new Error("Failed to submit");
     }
-  };
+
+    setIsSubmitted(true);
+    setFormData({
+      name: '',
+      email: '',
+      company: '',
+      subject: '',
+      message: ''
+    });
+
+    setTimeout(() => setIsSubmitted(false), 5000);
+
+  } catch (err) {
+    setSubmitError(
+      "There was an error submitting your message. Please email info@edgeble.ai"
+    );
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   const contactInfo = [
     {
@@ -96,7 +103,7 @@ const Contact = () => {
             Get in <span className="text-white">Touch</span>
           </h2>
           <p className="text-xl text-white max-w-3xl">
-            Ready to accelerate your Edge AI journey? Our experts are here to help you find the perfect edge AI solution.
+            Ready to enable your your Physical systems with Edge AI? Write to us!
           </p>
         </div>
 
