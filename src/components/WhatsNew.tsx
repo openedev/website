@@ -3,7 +3,9 @@ import { Calendar, ArrowRight, ExternalLink, Award, Newspaper, Users } from 'luc
 import { ALL_BLOGS } from "../data/allBlogs";
 
 const WhatsNew = () => {
-  const latestBlogs = ALL_BLOGS.slice(0, 4);
+  const latestBlogs = [...ALL_BLOGS]
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  .slice(0, 4);
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString('en-US', {
@@ -83,7 +85,7 @@ const WhatsNew = () => {
                   </div>
                   <p className="text-white mb-4 leading-relaxed">{item.excerpt}</p>
                   <a 
-                    href={`/blog/${item.slug}`}
+                    href={`/${item.type}/${item.slug}`}
                     className="flex items-center text-white hover:text-white/70 font-semibold transition-all duration-200 group"
                   >
                     Read More
