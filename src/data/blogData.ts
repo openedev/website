@@ -190,25 +190,6 @@ export const blogPostsData: BlogPost[] = [
 },
 
     {
-  id: 11,
-  title: 'Edgeble Selected to Present at 8th EMVA Forum, Germany',
-  slug: 'emva-germany',
-  excerpt: 'Edgeble has been selected to present and exhibit a poster at the 8th European Machine Vision Forum (EMVA) in Germany on Agentic Edge AI for Imaging the Invisible in Industrial Vision Systems.',
-  content: `
-    <p class="text-lg mb-6">Edgeble has been selected to present and exhibit a poster at the <strong>8th European Machine Vision Forum (EMVA)</strong> in Germany, highlighting our work on <strong>Agentic Edge AI for Imaging the Invisible in Industrial Vision Systems</strong>.</p>
-
-    <p class="mb-6">This recognition marks a major step forward for Edgeble’s Self-Learning Edge AI platform — demonstrating how edge-based intelligence can reveal insights hidden in industrial vision systems.</p>
-
-    <p class="text-white/70 italic">#EMVA #EMVF #MachineVision #AgenticAI #EdgeAI #IndustrialAI</p>
-  `,
-  author: 'Jagan Teki',
-  date: '2025-08-02',
-  readTime: '3 min read',
-  image: '/images/blog-emva.jpg',
-  tags: ['EMVA', 'Machine Vision', 'Agentic AI'],
-  category: 'Events'
-},
-    {
       id: 12,
       title: 'Showcase at Bosch Global FIT.Fest\'25',
       slug: 'fit-fest25',

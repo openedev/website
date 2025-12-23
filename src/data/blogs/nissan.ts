@@ -10,6 +10,7 @@ const blog: BlogPost = {
   readTime: "3 min read",
   image: "/images/nissan-win.jpg",
   tags: ['RNTBCI', 'Nissan', 'Automotive', 'ADAS'],
+  type: "news",
   category: "Recognition",
 };
 

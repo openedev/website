@@ -31,7 +31,7 @@ const BlogPage = () => {
             </button>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Blog & <span className="text-white">News</span>
+            News
           </h1>
           <p className="text-xl text-white max-w-3xl">
             Stay updated with latest in-depth technology trends.

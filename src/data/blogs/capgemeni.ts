@@ -10,6 +10,7 @@ const blog: BlogPost = {
   readTime: "3 min read",
   image: "/images/capgemini.JPG",
   tags: ['LifeSciences', 'Manufacturing', 'PhysicalAI', 'EdgeAI'],
+  type: "news",
   category: "Industry",
 };
 
