@@ -143,7 +143,7 @@ const Navigation = () => {
                   ) : (
                     <button
                       onClick={() => handleNavigation(item.href)}
-                      className="text-white hover:text-white/70 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                      className="text-white hover:text-white/70 px-3 py-2 text-md font-medium transition-colors duration-200"
                     >
                       {item.name}
                     </button>
