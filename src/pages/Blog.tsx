@@ -130,7 +130,7 @@ const BlogPage = () => {
             Stay in the Loop
           </h3>
           <p className="text-white mb-8 max-w-2xl mx-auto">
-            Subscribe to our newsletter for the latest updates on products, partnerships, and industry insights.
+            Subscribe to our newsletter for the latest blogs, news.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <input

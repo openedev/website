@@ -3,9 +3,9 @@ import { BlogPost } from "./blogTypes";
 export const blogPostsData: BlogPost[] = [
     {
     id: 7,
-    title: 'Speaking at Deloitte',
-    slug: 'deloitte',
-    excerpt: 'Edgeble connected with Deloitte, presenting edge AI solutions to one of the world\'s leading professional services firms.',
+    title: 'Pitching at Deloitte FWD 2025',
+    slug: 'fwd25',
+    excerpt: 'Edgeble Self-learning Edge Intelligence at FWD25',
     content: `
     <p class="text-lg mb-6"><strong>Deloitte</strong> is one of the largest professional services firms globally. <strong>Edgeble</strong> had the honor to present our Self-Learning Edge AI platform to Deloitte\'s technology and innovation teams.</p>
     <p class="mb-6">The engagement explored how edge AI is enabling organizations to modernize their infrastructure, improve operational efficiency, and create new business opportunities in an increasingly distributed world.</p>
@@ -14,15 +14,16 @@ export const blogPostsData: BlogPost[] = [
     author: 'Jagan Teki',
     date: '2024-12-11',
     readTime: '3 min read',
-    image: '/images/blog-deloitte.jpeg',
-    tags: ['Deloitte', 'Professional Services', 'Edge AI'],
+    image: '/images/fwd.JPG',
+    tags: ['Deloitte', 'FWD', 'Edge AI'],
+    type: "news",
     category: 'Events'
     },
-	      {
+    {
     id: 8,
-    title: 'Speaking at Capgemini',
-    slug: 'capgemini',
-    excerpt: 'Edgeble showcased Edge AI innovations to Capgemini, one of the world\'s largest IT services companies.',
+    title: 'Together: Mphasis <> Edgeble',
+    slug: 'mphasis',
+    excerpt: 'Edgeble listed Mphasis startup colloboration',
     content: `
     <p class="text-lg mb-6"><strong>Capgemini</strong> is a global leader in IT services and consulting. <strong>Edgeble</strong> had the privilege to present our Self-Learning Edge AI platform to Capgemini\'s innovation and technology leadership teams.</p>
     <p class="mb-6">The engagement provided valuable insights into how global enterprises are leveraging edge AI to transform their operations and deliver enhanced solutions to their clients.</p>
@@ -31,9 +32,10 @@ export const blogPostsData: BlogPost[] = [
     author: 'Jagan Teki',
     date: '2024-12-10',
     readTime: '3 min read',
-    image: '/images/capgemini.JPG',
-    tags: ['Capgemini', 'Enterprise', 'Edge AI'],
-    category: 'Events'
+    image: '/images/mphasis.jpeg',
+    tags: ['Mphasis', 'Enterprise', 'Edge AI'],
+    type: "news",
+    category: "Industry",
     },
 	      {
     id: 9,
@@ -52,11 +54,11 @@ export const blogPostsData: BlogPost[] = [
     tags: ['Tech30', 'Corporate Tech', 'Edge AI'],
     category: 'Events'
     },
-	      {
+    {
     id: 10,
-    title: 'Speaking at TiE 50',
+    title: 'Edgeble as TiE50 by TiEHyd',
     slug: 'tie-50',
-    excerpt: 'Edgeble connected with TiE 50, demonstrating edge AI innovations to India\'s top entrepreneurs and startup ecosystem leaders.',
+    excerpt: 'Why Edgeble is TOP50 by TiE',
     content: `
     <p class="text-lg mb-6"><strong>TiE 50</strong> is TiE\'s flagship program recognizing the 50 most promising startups in India. <strong>Edgeble</strong> had the opportunity to showcase our Self-Learning Edge AI platform to this elite group of entrepreneurs.</p>
     <p class="mb-6">The program connected us with some of India\'s most innovative founders who are shaping the future of technology and business.</p>
@@ -65,9 +67,10 @@ export const blogPostsData: BlogPost[] = [
     author: 'Jagan Teki',
     date: '2024-12-08',
     readTime: '3 min read',
-    image: '/images/blog-tie50.jpeg',
+    image: '/images/tie.jpg',
     tags: ['TiE', 'Top Startups', 'Edge AI'],
-    category: 'Events'
+    type: "news",
+    category: 'Recognition'
     },
 	      {
     id: 11,
@@ -444,7 +447,7 @@ export const blogPostsData: BlogPost[] = [
       id: 23,
       title: 'Industrial Future Summit 2024',
       slug: 'industrial-summit',
-      excerpt: 'Revolutionising Vehicle Battery System Welding Inspection with Edge AI. We\'re participating! Industrial Future Summit - The leading event for Future Builders in Stockholm.',
+      excerpt: 'Edgeble Sub-surface Bearing Inclusion inpsection at Industrial Future Summit, Stockholm.',
       content: `
         <p class="text-lg mb-6">Industrial Future Summit 2024 in Stockholm brought together industry leaders to discuss the future of manufacturing and industrial automation. We were excited to participate and share our vision for edge AI in industrial applications.</p>
         

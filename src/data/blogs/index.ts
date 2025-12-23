@@ -4,6 +4,7 @@ import capgemeni from "./capgemeni";
 import yourstory from "./yourstory";
 import emva25 from "./emva25";
 import tinyml24 from "./tinyml24";
+import ifs2025 from "./ifs2025";
 
 export const NEW_BLOGS = [
 	lpc2025,
@@ -12,4 +13,5 @@ export const NEW_BLOGS = [
 	yourstory,
         emva25,
         tinyml24,
+	ifs2025,
 ];
