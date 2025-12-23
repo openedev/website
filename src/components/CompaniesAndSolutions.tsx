@@ -7,37 +7,43 @@ const CompaniesAndSolutions = () => {
   const solutions = [
     {
       icon: Eye,
+      title: 'Label Agent',
       description: 'Dynamic Label Inspection',
       isCustomImage: true,
       customImage: 'images/inspect.png'
     },
     {
       icon: Brain,
+      title: 'Tracking Agent',
       description: 'Tracking, Re-Identify',
       isCustomImage: true,
       customImage: 'images/track.png'
     },
     {
       icon: Shield,
-      description: 'Weld Penetration Inspection',
+      title: 'Weld Agent',
+      description: 'Monitoring, Penetration',
       isCustomImage: true,
       customImage: 'images/weld.png'
     },
     {
       icon: Zap,
-      description: 'Volume, Depth Inspection',
+      title: 'Metal Agent',
+      description: 'Metal Defect, Correction',
       isCustomImage: true,
-      customImage: 'images/volume.png'
+      customImage: 'images/metal.png'
     },
     {
       icon: Factory,
-      description: 'Predictive Maintenance',
+      title: 'Predictive Agent',
+      description: 'Long-running machines',
       isCustomImage: true,
       customImage: 'images/llm.png'
     },
     {
       icon: Car,
-      description: 'Autonomous Driving System',
+      title: 'Autonomy Agent',
+      description: 'Perception, adaptation',
       isCustomImage: true,
       customImage: 'images/adas.png'
     }
@@ -107,10 +113,10 @@ const CompaniesAndSolutions = () => {
                 DEPLOY-READY SELF-LEARNING AGENTS
               </p>
             <h2 className="text-5xl md:text-5xl font-bold text-white mb-4">
-              Self-learning Edge Agents
+              Self-learning Phyiscal Agents
             </h2>
             <p className="text-xl text-white max-w-4xl">
-              Edge Agent for Physical Intelligence
+              Monitor → Detect Drift → Adapt → Correct → Continue
             </p>
            </div>
           </div>
@@ -150,7 +156,7 @@ const CompaniesAndSolutions = () => {
 
                       {/* Text container */}
 		      <div className="text-center px-4 py-2">
-		        <h3 className="text-base font-bold text-white">{solution.title}</h3>
+		        <h3 className="text-xl text-[#77DB89] font-bold mb-2">{solution.title}</h3>
 		        <p className="text-xl text-white">{solution.description}</p>
 		      </div>
 		    </div>
