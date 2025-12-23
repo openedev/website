@@ -13,6 +13,7 @@ import ContactEngineers from './pages/ContactEngineers';
 import SolutionsPage from './pages/SolutionsPage';
 import Blog from './pages/Blog';
 import BlogPostPage from './pages/BlogPostPage';
+import News from './pages/News';
 
 function HomePage() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path="/contact-engineers" element={<ContactEngineers />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
+        <Route path="/news" element={<News />} />
         <Route path="/products/runtime" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">Self-learning Runtime - Coming Soon</h1></div>} />
         <Route path="/products/module" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">Self-learning Module - Coming Soon</h1></div>} />
         <Route path="/products/npu" element={<div className="min-h-screen bg-black text-white flex items-center justify-center"><h1 className="text-4xl">Self-learning NPU - Coming Soon</h1></div>} />

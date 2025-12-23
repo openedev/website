@@ -11,7 +11,8 @@ const blog: BlogPost = {
   readTime: "3 min read",
   image: "/images/lpc2025.png",
   tags: ['Plumbers', 'EdgeAI', 'LinuxNPU'],
-  category: "Events",
+  type: "blog",
+  category: "Technology",
 };
 
 export default blog;

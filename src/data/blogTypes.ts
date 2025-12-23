@@ -1,3 +1,5 @@
+export type ContentType = "blog" | "news";
+
 export interface BlogPost {
   title: string;
   slug: string;
@@ -9,4 +11,5 @@ export interface BlogPost {
   image: string;
   category: string;
   tags?: string[]; 
+  type: ContentType;
 }

@@ -9,6 +9,7 @@ const blog: BlogPost = {
   readTime: "3 min read",
   image: "/images/tech30.JPG",
   tags: ['TechSparks', 'YourStory', 'Tech30', 'Startups'],
+  type: "news",
   category: "Recognition",
 };
 
