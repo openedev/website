@@ -3,6 +3,7 @@ import { BlogPost } from "../blogTypes";
 const blog: BlogPost = {
   title: "Speaking at Capgemini Next-Gen Manufacturing and Quality",
   slug: "cap25",
+  excerpt: "Capgemini found clear scope of Edge AI in Life Sciences and Healthcare",
   content:
     "Edgeble is Honored to be part of the Capgemini Life Sciences and Healthcare Roundtable on Data & Technology: Powering Next-Gen Manufacturing and Quality.",
   author: "Jagan Teki",
