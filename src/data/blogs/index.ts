@@ -8,6 +8,7 @@ import ifs2025 from "./ifs2025";
 import fwd25 from "./fwd25";
 import mphasis from "./mphasis";
 import tie25 from "./tie25";
+import ece23 from "./ece23";
 
 export const NEW_BLOGS = [
 	lpc2025,
@@ -20,4 +21,5 @@ export const NEW_BLOGS = [
 	fwd25,
 	mphasis,
 	tie25,
+	ece23,
 ];
