@@ -17,7 +17,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[850px] bg-black overflow-hidden">
+    <section className="relative min-h-[800px] bg-black overflow-hidden">
       {/* Circuit Pattern Overlay */}
       <div className="absolute inset-0 opacity-5">
         <svg className="w-full h-full text-white" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -36,7 +36,7 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-8 animate-fadeIn">
             <Zap className="w-4 h-4 mr-2" />
-	    New Edge AI Standard for Physical Systems
+	    New Physical Edge AI Standard
           </div>
 
 	  <h1 className="text-[2.5rem] md:text-[4.5rem] lg:text-[4.5rem] font-manrope font-medium tracking-tight text-white leading-tight mb-6 animate-fadeIn animation-delay-200">

@@ -17,10 +17,10 @@ export default function PhysicalSystems() {
   const logos = COMPANY_LOGOS[activeSector];
 
   return (
-    <section className="bg-black pt-24 pb-16 text-center">
+    <section className="bg-black pt-10 pb-12 text-center">
       {/* TEXT LINE */}
       <p className="text-xl md:text-2xl text-white tracking-wide flex justify-center gap-2 mb-12">
-        Edgeble enabling physical systems in
+        Edgeble enabling Physical Edge AI in
 
         {SECTORS.map((sector, index) => (
           <span key={sector} className="relative inline-block mx-1">

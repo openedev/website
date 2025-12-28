@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
+import FeaturedUpdates from './components/FeaturedUpdates';
 import PhysicalSystems from "./components/PhysicalSystems";
 import CompaniesAndSolutions from './components/CompaniesAndSolutions';
 import AdditionalProducts from './components/AdditionalProducts';
@@ -21,6 +22,7 @@ function HomePage() {
       <Navigation />
       <main>
         <Hero />
+	<FeaturedUpdates />
         <PhysicalSystems />
 	<CompaniesAndSolutions />
         <AdditionalProducts />
