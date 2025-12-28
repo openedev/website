@@ -113,7 +113,7 @@ const BlogPage = () => {
                 </div>
 
                 <a 
-                  href={`/blog/${post.slug}`}
+                  href={`/news/${post.slug}`}
                   className="flex items-center text-white hover:text-white/70 font-semibold transition-all duration-200 group"
                 >
                   Read More
