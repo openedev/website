@@ -104,6 +104,11 @@ const blog: BlogPost = {
   alt="Edgeble receiving RNTBCI Open Innovation Challenge award"
   class="w-full rounded-xl my-8"/>
 
+  <img
+  src="/images/nissan-grant1.jpg"
+  alt="Edgeble receiving RNTBCI Open Innovation Challenge award"
+  class="w-full rounded-xl my-8"/>
+
   <p class="text-xl mb-6">
   Being selected as a winner of the RNTBCI Open Innovation Challenge marks an important milestone for
   Edgeble validating our belief that the future of automotive intelligence lies in systems that can
