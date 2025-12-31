@@ -40,16 +40,6 @@ const blog: BlogPost = {
   and adapts to changing conditions directly at the source.
   </p>
 
-  <img
-  src="/images/nissan-predict1.png"
-  alt="Edge AI operating inside automotive factory systems"
-  class="w-full rounded-xl my-8" />
-
-  <img
-  src="/images/nissan-predict2.png"
-  alt="Edge AI operating inside automotive factory systems"
-  class="w-full rounded-xl my-8" />
-
   <p class="text-xl mb-6">
   By running intelligence locally and learning from operational feedback, physical systems gain the ability
   to respond early to deviations, maintain consistency, and evolve safely over long production lifecycles.
@@ -64,16 +54,6 @@ const blog: BlogPost = {
   Edgeble’s self-learning edge intelligence enables on-device perception pipelines that remain deterministic,
   explainable, and adaptable to real-world driving conditions.
   </p>
-
-  <img
-  src="/images/nissan-adas1.png"
-  alt="Edge intelligence operating inside vehicle systems"
-  class="w-full rounded-xl my-8"/>
-
-  <img
-  src="/images/nissan-adas2.png"
-  alt="Edge intelligence operating inside vehicle systems"
-  class="w-full rounded-xl my-8"/>
 
   <p class="text-xl mb-6">
   By keeping intelligence inside the vehicle and aligned with physical constraints, systems can improve
