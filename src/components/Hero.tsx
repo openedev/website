@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="text-left">
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-8 animate-fadeIn">
-            <Zap className="w-4 h-4 mr-2" />
+            <Zap className="w-4 h-4 mr-2 text-[#77DB89]" />
 	    New Physical Edge AI Standard
           </div>
 
@@ -53,15 +53,19 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-left mb-26 animate-fadeIn animation-delay-600">
             <button 
               onClick={handleRunNPU}
-              className="group px-8 py-4 bg-white/10 hover:bg-white/100 text-white font-semibold rounded-xl border border-white/20 transition-all duration-300 backdrop-blur-sm flex items-left justify-left"
+              className="group px-8 py-4 bg-white/10 hover:bg-white/80 md:text-lg text-white font-semibold rounded-xl border border-white/20 transition-all duration-300 backdrop-blur-sm flex items-left justify-left"
             >
-              <Cpu className="mr-2 w-5 h-5" />
+              <Cpu className="mr-2 w-5 h-7" />
               Run Self-learning Edge
             </button>
 
-	    <a href="#news"
-	      className="text-white/80 hover:text-white text-2xl font-medium transition-all flex items-center gap-1" > Latest <span>→</span>
-	    </a>
+            <button
+              onClick="#news"
+              className="group px-8 py-4 bg-white/10 hover:bg-white/80 md:text-lg text-white font-semibold rounded-xl border border-white/20 transition-all duration-300 backdrop-blur-sm flex items-left justify-left"
+            >
+              <Brain className="mr-2 w-5 h-7" />
+              What's New
+            </button>
           </div>
 
         </div>
