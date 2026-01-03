@@ -9,6 +9,13 @@ const Hero = () => {
     }
   };
 
+  const WhatsNew = () => {
+    const element = document.querySelector('#whats-new');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const handleGetStarted = () => {
     const element = document.querySelector('#contact');
     if (element) {
@@ -60,7 +67,7 @@ const Hero = () => {
             </button>
 
             <button
-              onClick="#news"
+              onClick={WhatsNew}
               className="group px-8 py-4 bg-white/10 hover:bg-white/80 md:text-lg text-white font-semibold rounded-xl border border-white/20 transition-all duration-300 backdrop-blur-sm flex items-left justify-left"
             >
               <Brain className="mr-2 w-5 h-7" />
