@@ -47,13 +47,13 @@ const Hero = () => {
           </div>
 
 	  <h1 className="text-[2.5rem] md:text-[4.5rem] lg:text-[4.5rem] font-manrope font-medium tracking-tight text-white leading-tight mb-6 animate-fadeIn animation-delay-200">
-	    <span className="text-[#77DB89]">Self-learning</span> Edge
-	    <span className="block">Intelligence</span>
+	    <span className="text-[#77DB89]">Self-learning</span> Physical
+	    <span className="block">Edge Intelligence</span>
 	  </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-3xl text-white max-w-4xl mb-12 leading-relaxed animate-fadeIn animation-delay-400">
-	    Infer. Act. Learn. continuously inside<span className="text-[#77DB89]"> Physical </span> Systems
+	    Infer. <span className="text-[#77DB89]">Act. Learn. </span>continuously inside<span className="text-[#77DB89]"> Physical </span> Systems
           </p>
 
           {/* CTA Buttons */}
