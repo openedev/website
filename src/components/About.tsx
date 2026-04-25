@@ -149,7 +149,7 @@ const About = () => {
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-white mb-2">1+</div>
-                  <div className="text-white">Patents</div>
+                  <div className="text-white">Patents Filed</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-white mb-2">raising</div>
