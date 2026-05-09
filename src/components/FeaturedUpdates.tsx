@@ -41,7 +41,7 @@ const FeaturedUpdates = () => {
             </div>
 
             <h3 className="text-2xl font-semibold text-white mb-3">
-              Self-learning Label Inspection Agent in Manufacturing Physical System
+              Live Self-learning Inspection Agent in Manufacturing
             </h3>
 
             <p className="text-white leading-relaxed">

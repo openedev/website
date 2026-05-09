@@ -43,17 +43,18 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-8 animate-fadeIn">
             <Zap className="w-4 h-4 mr-2 text-[#77DB89]" />
-	    New Physical Edge AI Standard
+	    New Physical AI Runtime Layer
           </div>
 
 	  <h1 className="text-[2.5rem] md:text-[4.5rem] lg:text-[4.5rem] font-manrope font-medium tracking-tight text-white leading-tight mb-6 animate-fadeIn animation-delay-200">
-	    <span className="text-[#77DB89]">Self-learning</span>
-	    <span className="block">Physical Intelligence</span>
+	    <span className="text-[#77DB89]">Self-Correcting</span>
+	    <span className="block">Runtime for</span>
+	    <span className="block">Physical AI Systems</span>
 	  </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-3xl text-white max-w-4xl mb-12 leading-relaxed animate-fadeIn animation-delay-400">
-	    Infer. <span className="text-[#77DB89]">Act. Learn. </span>continuously<span className="text-[#77DB89]"> inside Physical </span> Systems
+	    Edgeble keeps deployed AI systems <span className="text-[#77DB89]">running, learning, and adapting on-device </span>— without cloud retraining or downtime
           </p>
 
           {/* CTA Buttons */}
@@ -63,7 +64,7 @@ const Hero = () => {
               className="group px-8 py-4 bg-white/10 hover:bg-white/80 md:text-lg text-white font-semibold rounded-xl border border-white/20 transition-all duration-300 backdrop-blur-sm flex items-left justify-left"
             >
               <Cpu className="mr-2 w-5 h-7" />
-              Run Self-learning Edge
+              Run Runtime Demo
             </button>
 
             <button

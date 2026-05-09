@@ -8,28 +8,28 @@ const CompaniesAndSolutions = () => {
     {
       icon: Eye,
       title: 'Label Agent',
-      description: 'Dynamic Label Inspection',
+      description: 'Detects drift, corrects model confidence, and adapts labels',
       isCustomImage: true,
       customImage: 'images/inspect.png'
     },
     {
       icon: Brain,
       title: 'Tracking Agent',
-      description: 'Tracking, Re-Identify',
+      description: 'Maintains identity, count accuracy across changing scenes',
       isCustomImage: true,
       customImage: 'images/track.png'
     },
     {
       icon: Shield,
       title: 'Weld Agent',
-      description: 'Monitoring, Penetration',
+      description: 'Detects defects and stabilizes inspection across lighting/material changes',
       isCustomImage: true,
       customImage: 'images/weld.png'
     },
     {
       icon: Zap,
       title: 'Metal Agent',
-      description: 'Metal Defect, Correction',
+      description: 'Corrects defect inspection under motion, alignment, and surface variation',
       isCustomImage: true,
       customImage: 'images/metal.png'
     },
@@ -113,10 +113,10 @@ const CompaniesAndSolutions = () => {
                 DEPLOY-READY SELF-LEARNING AGENTS
               </p>
             <h2 className="text-5xl md:text-5xl font-bold text-white mb-4">
-              Self-learning Phyiscal Agents
+              Deploy-ready Physical AI Runtime Agents
             </h2>
-            <p className="text-xl text-white max-w-4xl">
-              Monitor → Detect Drift → Adapt → Correct → Continue
+            <p className="text-2xl text-white max-w-4xl">
+	      Monitor → Diagnose → Fix → Adapt → Continue
             </p>
            </div>
           </div>

@@ -5,8 +5,8 @@ const AdditionalProducts = () => {
   const products = [
     {
       id: 1,
-      name: 'Self-learning Engine',
-      description: 'Runtime Engine turns physical systems to learn, correct and recovers',
+      name: 'Edgeble Runtime Engine',
+      description: 'Diagnoses physical, system, and model failures, then applies controlled correction or adaptation',
       image: 'images/agentic1.png',
       badge: 'Agentic Core',
       link: '/products/agentic'
@@ -14,7 +14,7 @@ const AdditionalProducts = () => {
     {
       id: 2,
       name: 'Self-learning Agent',
-      description: 'Deploy-ready Edge AI Modules with pre-programmed Self-learning engine',
+      description: 'Deploy-ready Edge AI Modules with pre-programmed Edgeble runtime engine',
       image: '/images/module.png',
       badge: 'Edge Agent',
       link: '/products/npu'
@@ -30,10 +30,10 @@ const AdditionalProducts = () => {
                 RESILIENT NERVOUS SYSTEM FOR PHYSICAL AI
               </p>
             <h2 className="text-5xl md:text-5xl font-bold text-white mb-4">
-              Self-learning Edge Intelligence
+              Self-learning Physical AI
             </h2>
-            <p className="text-xl text-white max-w-4xl">
-              Physical intelligence from IoT Endpoints to Gateway Nodes
+            <p className="text-2xl text-white max-w-4xl">
+	      Runtime Layer from Edge Devices to Factory Gateways
             </p>
           </div>
         </div>
@@ -66,10 +66,10 @@ const AdditionalProducts = () => {
               </div>
 
               <div className="p-8 bg-black/60 backdrop-blur-sm flex-1 flex flex-col">
-                <h3 className="text-2xl font-bold mb-6 tracking-tight text-white leading-tight">
+                <h3 className="text-3xl font-bold mb-6 tracking-tight text-white leading-tight">
                   {product.name}
                 </h3>
-                <p className="text-white/90 mb-6 text-base leading-relaxed font-medium">
+                <p className="text-white/90 mb-6 text-xl leading-relaxed font-medium">
                   {product.description}
                 </p>
 
