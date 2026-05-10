@@ -6,17 +6,17 @@ const AdditionalProducts = () => {
     {
       id: 1,
       name: 'Edgeble Runtime Engine',
-      description: 'Diagnoses physical, system, and model failures, then applies controlled correction or adaptation',
+      description: 'Diagnoses physical, system, and model failures, then applies controlled correction or on-device adaptation',
       image: 'images/agentic1.png',
-      badge: 'Agentic Core',
+      badge: 'hardware-agnostic',
       link: '/products/agentic'
     },
     {
       id: 2,
-      name: 'Self-learning Agent',
-      description: 'Deploy-ready Edge AI Modules with pre-programmed Edgeble runtime engine',
+      name: 'Learning Acceleration Layer',
+      description: 'Deploys on Edgeble modules or existing edge systems to accelerate runtime learning workloads',
       image: '/images/module.png',
-      badge: 'Edge Agent',
+      badge: 'hardware-optimized',
       link: '/products/npu'
     }
   ];
@@ -27,13 +27,13 @@ const AdditionalProducts = () => {
 	<div className="flex justify-center mb-20 text-center">
 	  <div>
               <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
-                RESILIENT NERVOUS SYSTEM FOR PHYSICAL AI
+                RUNTIME INFRASTRUCTURE FOR PHYSICAL AI
               </p>
             <h2 className="text-5xl md:text-5xl font-bold text-white mb-4">
-              Self-learning Physical AI
+              Edgeble Physical AI Runtime
             </h2>
             <p className="text-2xl text-white max-w-4xl">
-	      Runtime Layer from Edge Devices to Factory Gateways
+	      Self-correcting runtime from edge devices to factory gateways
             </p>
           </div>
         </div>
