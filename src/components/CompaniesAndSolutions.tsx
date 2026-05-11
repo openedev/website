@@ -113,7 +113,7 @@ const CompaniesAndSolutions = () => {
                 DEPLOY-READY SELF-LEARNING AGENTS
               </p>
             <h2 className="text-5xl md:text-5xl font-bold text-white mb-4">
-              Deploy-ready Physical AI Runtime Agents
+              Physical AI Runtime Agents
             </h2>
             <p className="text-2xl text-white max-w-4xl">
 	      Monitor → Diagnose → Fix → Adapt → Continue
