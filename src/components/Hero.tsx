@@ -47,8 +47,7 @@ const Hero = () => {
           </div>
 
 	  <h1 className="text-[2.5rem] md:text-[4.5rem] lg:text-[4.5rem] font-manrope font-medium tracking-tight text-white leading-tight mb-6 animate-fadeIn animation-delay-200">
-	    <span className="text-[#77DB89]">Self-Correcting</span>
-	    <span className="block">Physical AI</span>
+	    <span className="text-[#77DB89]">Self-Correcting </span>Physical AI
 	  </h1>
 
           {/* Subheadline */}
