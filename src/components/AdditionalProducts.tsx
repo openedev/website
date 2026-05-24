@@ -13,8 +13,8 @@ const AdditionalProducts = () => {
     },
     {
       id: 2,
-      name: 'Learning Acceleration Layer',
-      description: 'Deploys on Edgeble modules or existing edge systems to accelerate runtime learning workloads',
+      name: 'Edgeble Runtime Module',
+      description: 'Edge hardware modules pre-programmed with the runtime, optimized for self-correcting workloads',
       image: '/images/module.png',
       badge: 'hardware-optimized',
       link: '/products/npu'
