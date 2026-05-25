@@ -31,13 +31,6 @@ const Footer = () => {
       { name: 'News & Events', href: '#news' },
       { name: 'Contact', href: '#contact' },
     ],
-    resources: [
-      { name: 'Documentation', href: '#' },
-      { name: 'Developer Tools', href: '#' },
-      { name: 'Case Studies', href: '#' },
-      { name: 'Whitepapers', href: '#' },
-      { name: 'Blog', href: '#' }
-    ]
   };
 
   return (
@@ -121,55 +114,39 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Resources */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Resources</h4>
-            <ul className="space-y-1">
-              {footerLinks.resources.map((link, index) => (
-                <li key={index}>
-                  <a 
-                    href={link.href} 
-                    className="text-white/70 hover:text-white transition-colors duration-200"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* Logo and Social Media positioned on the border line */}
-        <div className="mt-16 -mb-8">
-          <div className="flex items-center justify-between">
-            <button 
+          {/* Brand */}
+          <div className="md:justify-self-center md:text-left">
+            <button
               onClick={handleLogoClick}
               className="text-4xl font-bold text-white hover:text-white/90 transition-colors duration-200"
             >
               edgeble
             </button>
-            <div className="flex space-x-6">
-              <a 
-                href="https://www.linkedin.com/company/edgeble/" 
+            <div className="mt-6 flex items-center space-x-6">
+              <a
+                href="https://www.linkedin.com/company/edgeble/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors duration-200"
+                aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a 
-                href="https://x.com/edgeble" 
+              <a
+                href="https://x.com/edgeble"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors duration-200"
+                aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
               </a>
-              <a 
-                href="https://github.com/edgeble" 
+              <a
+                href="https://github.com/edgeble"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition-colors duration-200"
+                aria-label="GitHub"
               >
                 <Github className="w-5 h-5" />
               </a>
@@ -181,9 +158,9 @@ const Footer = () => {
       {/* Bottom Footer */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-white/70 text-sm mb-4 md:mb-0">
-              © 2024 Edgeble. All rights reserved. | Privacy Policy | Terms of Service
+          <div className="flex justify-center items-center text-center">
+            <div className="text-white/70 text-sm">
+              © 2026 Edgeble. All rights reserved. | Privacy Policy | Terms of Service
             </div>
           </div>
         </div>
