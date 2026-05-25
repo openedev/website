@@ -15,8 +15,8 @@ const Footer = () => {
 
   const footerLinks = {
     products: [
-      { name: 'Self-learning Engine', href: '#' },
-      { name: 'Self-learning Agent', href: '#' },
+      { name: 'Runtime Engine', href: '#' },
+      { name: 'Runtime Module', href: '#' },
     ],
     solutions: [
       { name: 'Label Inspection', href: '#' },
@@ -26,10 +26,10 @@ const Footer = () => {
     ],
     company: [
       { name: 'About Us', href: '#about' },
+      { name: 'Research', href: '#' },
       { name: 'Careers', href: '#' },
       { name: 'News & Events', href: '#news' },
       { name: 'Contact', href: '#contact' },
-      { name: 'Support', href: '#' }
     ],
     resources: [
       { name: 'Documentation', href: '#' },
@@ -89,7 +89,7 @@ const Footer = () => {
 
           {/* Solutions */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Self-learning Agents</h4>
+            <h4 className="text-lg font-semibold mb-4">Industries</h4>
             <ul className="space-y-1">
               {footerLinks.solutions.map((link, index) => (
                 <li key={index}>

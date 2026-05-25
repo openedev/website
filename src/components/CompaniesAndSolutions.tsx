@@ -7,10 +7,17 @@ const CompaniesAndSolutions = () => {
   const solutions = [
     {
       icon: Eye,
-      title: 'Label Agent',
+      title: 'Label Inspct',
       description: 'Detects drift, corrects model confidence, and adapts labels',
       isCustomImage: true,
       customImage: 'images/inspect.png'
+    },
+    {
+      icon: Zap,
+      title: 'Metal Defect',
+      description: 'Corrects defect inspection under motion, alignment, and surface variation',
+      isCustomImage: true,
+      customImage: 'images/metal.png'
     },
     {
       icon: Brain,
@@ -25,13 +32,6 @@ const CompaniesAndSolutions = () => {
       description: 'Detects defects and stabilizes inspection across lighting/material changes',
       isCustomImage: true,
       customImage: 'images/weld.png'
-    },
-    {
-      icon: Zap,
-      title: 'Metal Agent',
-      description: 'Corrects defect inspection under motion, alignment, and surface variation',
-      isCustomImage: true,
-      customImage: 'images/metal.png'
     },
     {
       icon: Factory,
@@ -110,10 +110,10 @@ const CompaniesAndSolutions = () => {
 	  <div className="flex justify-center mb-20 text-center">
 	   <div>
               <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
-                DEPLOY-READY SELF-LEARNING AGENTS
+                SELF-CORRECTION IN PRODUCTION
               </p>
             <h2 className="text-5xl md:text-5xl font-bold text-white mb-4">
-              Physical AI Runtime Agents
+              Self-correcting Runtime Deployments
             </h2>
             <p className="text-2xl text-white max-w-4xl">
 	      Monitor → Diagnose → Fix → Adapt → Continue
