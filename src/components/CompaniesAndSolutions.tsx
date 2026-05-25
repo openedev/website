@@ -7,7 +7,7 @@ const CompaniesAndSolutions = () => {
   const solutions = [
     {
       icon: Eye,
-      title: 'Label Inspct',
+      title: 'Label Inspect',
       description: 'Detects drift, corrects model confidence, and adapts labels',
       isCustomImage: true,
       customImage: 'images/inspect.png'
@@ -20,30 +20,16 @@ const CompaniesAndSolutions = () => {
       customImage: 'images/metal.png'
     },
     {
-      icon: Brain,
-      title: 'Tracking Agent',
-      description: 'Maintains identity, count accuracy across changing scenes',
-      isCustomImage: true,
-      customImage: 'images/track.png'
-    },
-    {
       icon: Shield,
-      title: 'Weld Agent',
+      title: 'Weld Inspect',
       description: 'Detects defects and stabilizes inspection across lighting/material changes',
       isCustomImage: true,
       customImage: 'images/weld.png'
     },
     {
-      icon: Factory,
-      title: 'Predictive Agent',
-      description: 'Long-running machines',
-      isCustomImage: true,
-      customImage: 'images/llm.png'
-    },
-    {
       icon: Car,
-      title: 'Autonomy Agent',
-      description: 'Perception, adaptation',
+      title: 'Autonomy Perception',
+      description: 'On-device perception with adaptive runtime for real road conditions',
       isCustomImage: true,
       customImage: 'images/adas.png'
     }

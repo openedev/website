@@ -21,12 +21,12 @@ const About = () => {
     {
       icon: Target,
       title: 'Moat',
-      description: 'Self-learning Edge Intelligence'
+      description: 'Cross-layer diagnosis and on-device self-correction'
     },
     {
       icon: Eye,
       title: 'Vision',
-      description: 'A world of resilient, self-evolving machines'
+      description: 'The adaptation layer Physical AI needs to stay alive in the field'
     },
     {
       icon: Users,

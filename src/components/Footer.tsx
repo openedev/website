@@ -19,10 +19,10 @@ const Footer = () => {
       { name: 'Runtime Module', href: '#' },
     ],
     solutions: [
-      { name: 'Label Inspection', href: '#' },
-      { name: 'Metal Defect', href: '#' },
-      { name: 'Predictive', href: '#' },
-      { name: 'Tyre SKU Inspection', href: '#' },
+      { name: 'Industrial', href: '#' },
+      { name: 'Manufacturing', href: '#' },
+      { name: 'Quality Inspection', href: '#' },
+      { name: 'Supply Chain', href: '#' },
     ],
     company: [
       { name: 'About Us', href: '#about' },
