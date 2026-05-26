@@ -72,13 +72,6 @@ const Contact = () => {
       link: 'mailto:info@edgeble.ai'
     },
     {
-      icon: Mail,
-      title: 'Sales',
-      details: 'sales@edgeble.ai',
-      subtitle: '',
-      link: 'mailto:sales@edgeble.ai'
-    },
-    {
       icon: Phone,
       title: 'Phone',
       details: '+91 91000 90959',

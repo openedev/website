@@ -7,17 +7,17 @@ const AdditionalProducts = () => {
       id: 1,
       name: 'Edgeble Runtime Engine',
       description: 'Diagnoses physical, system, and model failures, then applies controlled correction or on-device adaptation',
-      image: 'images/agentic1.png',
+      image: 'images/runtime.png',
       badge: 'hardware-agnostic',
-      link: '/products/agentic'
+      link: '/products/runtime'
     },
     {
       id: 2,
       name: 'Edgeble Runtime Module',
       description: 'Edge hardware modules pre-programmed with the runtime, optimized for self-correcting workloads',
-      image: '/images/module.png',
+      image: '/images/runtime-mod.png',
       badge: 'hardware-optimized',
-      link: '/products/npu'
+      link: '/products/module'
     }
   ];
 
@@ -45,7 +45,7 @@ const AdditionalProducts = () => {
               href={product.link}
               className="group bg-black/40 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/20 hover:border-white/40 block h-[660px] flex flex-col"
             >
-              <div className="relative h-[440px] overflow-hidden bg-black/20 flex-shrink-0">
+              <div className="relative h-[440px] overflow-hidden bg-black/20 flex-shrink-0 px-6 py-8">
                 <img
                   src={product.image}
                   alt={product.name}
@@ -53,7 +53,7 @@ const AdditionalProducts = () => {
                   style={{
                     objectFit: 'contain',
                     objectPosition: 'center',
-                    transform: product.id === 2 ? 'scale(1.4)' : 'scale(1)'
+                    transform: product.id === 2 ? 'scale(1.08)' : 'scale(1)',
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
