@@ -35,13 +35,13 @@ const FeaturedUpdates = () => {
           >
             <div className="flex items-center justify-between mb-4">
               <span className="text-md uppercase tracking-widest text-white/90">
-                Agent-Deployment
+                Live-Deployment
               </span>
               <ArrowRight className="w-5 h-5 text-white/80 group-hover:translate-x-1 transition-transform" />
             </div>
 
             <h3 className="text-2xl font-semibold text-white mb-3">
-              Live Self-learning Inspection Agent in Manufacturing
+              Live Self-Correcting Inspection in Manufacturing
             </h3>
 
             <p className="text-white leading-relaxed">

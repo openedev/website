@@ -46,8 +46,8 @@ export default function PhysicalSystems() {
                 src={company.logo}
                 alt={`${company.name} logo`}
 		className="
-		  max-h-[80px]
-		  max-w-[140px]
+		  max-h-[100px]
+		  max-w-[160px]
 		  w-auto
 		  object-contain
 		  opacity-100
