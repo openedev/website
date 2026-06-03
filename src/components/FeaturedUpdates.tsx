@@ -12,19 +12,18 @@ const FeaturedUpdates = () => {
             className="group relative rounded-2xl border border-white/15 bg-white/5 p-8 hover:border-[#77DB89] transition-all"
           >
             <div className="flex items-center justify-between mb-4">
-              <span className="text-md uppercase tracking-widest text-[#77DB89]">
+              <span className="text-lg uppercase tracking-widest text-[#77DB89]">
                 Recognition
               </span>
               <ArrowRight className="w-5 h-5 text-white/60 group-hover:translate-x-1 transition-transform" />
             </div>
 
             <h3 className="text-2xl font-semibold text-white mb-3">
-              Winner of RNTBCI Open Innovation Challenge
+              Winner of Curiosity 2026 by South Park Commons
             </h3>
 
-            <p className="text-white/80 leading-relaxed">
-              Renault Nissan Technology & Business Centre has selected Edgeble Edge AI Accelerator &
-	      Orchestration excellence in automotive physical systems.
+            <p className="text-xl leading-relaxed">
+              Edgeble Won the Curiosity 2026 by South Park Commons India and ARTPARK/IISc Banglore in Physical AI category.
             </p>
           </a>
 
