@@ -1,3 +1,4 @@
+import curiosity from "./curiosity";
 import lpc2025 from "./lpc2025";
 import nissan from "./nissan";
 import capgemeni from "./capgemeni";
@@ -11,6 +12,7 @@ import tie25 from "./tie25";
 import ece23 from "./ece23";
 
 export const NEW_BLOGS = [
+	curiosity,
 	lpc2025,
 	nissan,
 	capgemeni,

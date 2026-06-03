@@ -8,7 +8,7 @@ const FeaturedUpdates = () => {
 
           {/* Primary Highlight — RNTBCI */}
           <a
-            href="/news/nissan25"
+            href="/news/curiosity"
             className="group relative rounded-2xl border border-white/15 bg-white/5 p-8 hover:border-[#77DB89] transition-all"
           >
             <div className="flex items-center justify-between mb-4">
