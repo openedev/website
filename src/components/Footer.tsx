@@ -15,21 +15,20 @@ const Footer = () => {
 
   const footerLinks = {
     products: [
-      { name: 'Runtime Engine', href: '#' },
-      { name: 'Runtime Module', href: '#' },
+      { name: 'Self-Correcting Runtime', href: '/#correction-stack' },
+      { name: 'Self-Correcting Compute', href: '/#correction-stack' },
     ],
     solutions: [
       { name: 'Industrial', href: '#' },
-      { name: 'Manufacturing', href: '#' },
+      { name: 'Automotive', href: '#' },
       { name: 'Quality Inspection', href: '#' },
-      { name: 'Supply Chain', href: '#' },
+      { name: 'Autonomy Perception', href: '#' },
     ],
     company: [
-      { name: 'About Us', href: '#about' },
-      { name: 'Research', href: '#' },
-      { name: 'Careers', href: '#' },
-      { name: 'News & Events', href: '#news' },
-      { name: 'Contact', href: '#contact' },
+      { name: 'Team', href: '#team' },
+      { name: 'Build with us', href: '/#build-with-us' },
+      { name: 'News & Blogs', href: '/news' },
+      { name: 'Contact', href: '/contact' },
     ],
   };
 
@@ -42,7 +41,7 @@ const Footer = () => {
             <div>
               <h3 className="text-2xl font-bold mb-2">Stay Updated</h3>
               <p className="text-white/70">
-                Get the latest news, product updates, and industry insights delivered to your inbox.
+                Get updates on Physical AI runtime deployments, product releases, and field learnings.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">

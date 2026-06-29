@@ -96,7 +96,7 @@ const Contact = () => {
             Get in <span className="text-white">Touch</span>
           </h2>
           <p className="text-xl text-white max-w-3xl">
-            Ready to enable your your Physical systems with Edge AI? Write to us!
+            Building inspection, perception, or control systems that must keep working in the field? Write to us.
           </p>
         </div>
 
@@ -191,8 +191,8 @@ const Contact = () => {
                   className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all duration-200 disabled:opacity-50"
                 >
                   <option value="" className="bg-black text-white">Select a subject</option>
-                  <option value="product-inquiry" className="bg-black text-white">Product Inquiry</option>
-                  <option value="custom-solution" className="bg-black text-white">Custom Solution</option>
+                  <option value="product-inquiry" className="bg-black text-white">Runtime Inquiry</option>
+                  <option value="custom-solution" className="bg-black text-white">Deployment Review</option>
                   <option value="partnership" className="bg-black text-white">Partnership</option>
                   <option value="support" className="bg-black text-white">Support</option>
                   <option value="other" className="bg-black text-white">Other</option>

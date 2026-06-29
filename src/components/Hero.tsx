@@ -1,79 +1,28 @@
 import React from 'react';
-import { ChevronRight, Cpu, Zap, Globe, Brain } from 'lucide-react';
+import { Zap } from 'lucide-react';
+import CorrectionField from './CorrectionField';
 
 const Hero = () => {
-  const handleRunNPU = () => {
-    const element = document.querySelector('#companies-solutions');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const WhatsNew = () => {
-    const element = document.querySelector('#whats-new');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const handleGetStarted = () => {
-    const element = document.querySelector('#contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
-    <section className="relative min-h-[800px] bg-black overflow-hidden">
-      {/* Circuit Pattern Overlay */}
-      <div className="absolute inset-0 opacity-5">
-        <svg className="w-full h-full text-white" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <defs>
-            <pattern id="circuit" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
-              <path d="M0,5 L10,5 M5,0 L5,10" stroke="currentColor" strokeWidth="0.5" fill="none"/>
-              <circle cx="5" cy="5" r="1" fill="currentColor"/>
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#circuit)"/>
-        </svg>
-      </div>
+    <section id="home" className="relative min-h-[840px] bg-black overflow-hidden">
+      <CorrectionField idPrefix="hero-field" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-56 pb-20">
-        <div className="text-left">
-          {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-8 animate-fadeIn">
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.98)_0%,rgba(0,0,0,0.90)_34%,rgba(0,0,0,0.48)_58%,rgba(0,0,0,0.14)_100%)] pointer-events-none" />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-80 pb-16">
+        <div className="max-w-3xl text-left">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-6 animate-fadeIn">
             <Zap className="w-4 h-4 mr-2 text-[#77DB89]" />
-	    New Physical AI Runtime Layer
+            Self-Correcting Runtime for On-device Physical AI
           </div>
 
-	  <h1 className="text-[2.5rem] md:text-[4.5rem] lg:text-[4.5rem] font-manrope font-medium tracking-tight text-white leading-tight mb-6 animate-fadeIn animation-delay-200">
-	    <span className="text-[#77DB89]">Self-Correcting </span>Physical AI
-	  </h1>
+          <h1 className="text-[2.6rem] md:text-[4.7rem] lg:text-[4.7rem] font-manrope font-medium tracking-tight text-white leading-tight mb-6 animate-fadeIn animation-delay-200">
+            <span className="text-[#77DB89]">On-Device Correction</span> for Physical AI
+          </h1>
 
-          {/* Subheadline */}
-          <p className="text-xl md:text-3xl text-white max-w-4xl mb-12 leading-relaxed animate-fadeIn animation-delay-400">
-	    Edgeble keeps deployed AI systems <span className="text-[#77DB89]">running, learning, and adapting on-device </span>— without cloud retraining or downtime
+          <p className="text-2xl md:text-2xl text-white max-w-2xl leading-relaxed animate-fadeIn animation-delay-400">
+            Knows exactly which layer in physical topology failed: the physical system, AI compute, or model. Then self-corrects on-device without stopping inference.
           </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-left mb-26 animate-fadeIn animation-delay-600">
-            <button 
-              onClick={handleRunNPU}
-              className="group px-8 py-4 bg-white/10 hover:bg-white/80 md:text-lg text-white font-semibold rounded-xl border border-white/20 transition-all duration-300 backdrop-blur-sm flex items-left justify-left"
-            >
-              <Cpu className="mr-2 w-5 h-7" />
-              Run Runtime Demo
-            </button>
-
-            <button
-              onClick={WhatsNew}
-              className="group px-8 py-4 bg-white/10 hover:bg-white/80 md:text-lg text-white font-semibold rounded-xl border border-white/20 transition-all duration-300 backdrop-blur-sm flex items-left justify-left"
-            >
-              <Brain className="mr-2 w-5 h-7" />
-              What's New
-            </button>
-          </div>
-
         </div>
       </div>
     </section>

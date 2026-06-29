@@ -163,3 +163,59 @@ body {
   background-color: rgba(249, 115, 22, 0.3);
   color: #ffffff;
 }
+
+@keyframes correctionIcon {
+  0%, 24% {
+    color: rgba(255, 90, 64, 0.86);
+    opacity: 0.86;
+    filter: drop-shadow(0 0 7px rgba(255, 90, 64, 0.35));
+  }
+  38%, 72% {
+    color: #77DB89;
+    opacity: 1;
+    filter: drop-shadow(0 0 14px rgba(119, 219, 137, 0.72));
+  }
+  100% {
+    color: rgba(255, 90, 64, 0.82);
+    opacity: 0.88;
+    filter: drop-shadow(0 0 7px rgba(255, 90, 64, 0.3));
+  }
+}
+
+.correction-icon {
+  animation: correctionIcon 8.8s ease-in-out infinite;
+}
+
+.correction-icon svg {
+  stroke: currentColor;
+}
+
+@keyframes correctionIconDark {
+  0%, 24% {
+    color: rgba(155, 42, 30, 0.95);
+    opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(255, 90, 64, 0.45));
+  }
+  38%, 72% {
+    color: rgba(32, 120, 54, 0.98);
+    opacity: 1;
+    filter: drop-shadow(0 0 16px rgba(119, 219, 137, 0.82));
+  }
+  100% {
+    color: rgba(155, 42, 30, 0.92);
+    opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(255, 90, 64, 0.38));
+  }
+}
+
+.correction-icon-dark {
+  animation-name: correctionIconDark;
+}
+
+.correction-icon-secondary {
+  opacity: 0.74;
+}
+
+.correction-icon-secondary svg {
+  stroke: currentColor;
+}

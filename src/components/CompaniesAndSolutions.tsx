@@ -1,166 +1,58 @@
-import React, { useEffect, useRef } from 'react';
-import { Eye, Brain, Shield, Zap, Factory, Car } from 'lucide-react';
+import React from 'react';
+import { Activity, Brain, CheckCircle, Cpu, RotateCcw, Shield } from 'lucide-react';
 
 const CompaniesAndSolutions = () => {
-  const solutionsScrollRef = useRef<HTMLDivElement>(null);
-
-  const solutions = [
-    {
-      icon: Eye,
-      title: 'Label Inspect',
-      description: 'Detects drift, corrects model confidence, and adapts labels',
-      isCustomImage: true,
-      customImage: 'images/inspect.png'
-    },
-    {
-      icon: Zap,
-      title: 'Metal Defect',
-      description: 'Corrects defect inspection under motion, alignment, and surface variation',
-      isCustomImage: true,
-      customImage: 'images/metal.png'
-    },
-    {
-      icon: Shield,
-      title: 'Weld Inspect',
-      description: 'Detects defects and stabilizes inspection across lighting/material changes',
-      isCustomImage: true,
-      customImage: 'images/weld.png'
-    },
-    {
-      icon: Car,
-      title: 'Autonomy Perception',
-      description: 'On-device perception with adaptive runtime for real road conditions',
-      isCustomImage: true,
-      customImage: 'images/adas.png'
-    }
+  const layers = [
+    { icon: Shield, title: 'Physical System', detail: 'Sensors, optics, links, motion, alignment, and environment.' },
+    { icon: Cpu, title: 'AI Compute', detail: 'Runtime, scheduling, memory, thresholds, and acceleration paths.' },
+    { icon: Brain, title: 'Model', detail: 'Confidence drift, missed events, quantization loss, and domain shift.' },
   ];
 
-  // Duplicate arrays for infinite scroll effect
-  const duplicatedSolutions = [...solutions, ...solutions, ...solutions];
-
-  useEffect(() => {
-    const setupInfiniteScroll = (scrollRef: React.RefObject<HTMLDivElement>, itemWidth: number, totalItems: number) => {
-      const container = scrollRef.current;
-      if (!container) return;
-
-      let scrollPosition = 0;
-      const maxScroll = itemWidth * totalItems;
-      const speed = 0.4; // Adjust speed as needed
-
-      const scroll = () => {
-        scrollPosition += speed;
-        
-        if (scrollPosition >= maxScroll) {
-          scrollPosition = 0;
-        }
-        
-        container.scrollLeft = scrollPosition;
-        requestAnimationFrame(scroll);
-      };
-
-      // Start the animation
-      const animationId = requestAnimationFrame(scroll);
-
-      // Pause on hover
-      const handleMouseEnter = () => {
-        cancelAnimationFrame(animationId);
-      };
-
-      const handleMouseLeave = () => {
-        requestAnimationFrame(scroll);
-      };
-
-      container.addEventListener('mouseenter', handleMouseEnter);
-      container.addEventListener('mouseleave', handleMouseLeave);
-
-      return () => {
-        cancelAnimationFrame(animationId);
-        container.removeEventListener('mouseenter', handleMouseEnter);
-        container.removeEventListener('mouseleave', handleMouseLeave);
-      };
-    };
-
-    // Setup infinite scroll for solutions (340px + 56px gap = 396px per item for rectangular Vision AI box)
-    const solutionsCleanup = setupInfiniteScroll(solutionsScrollRef, 396, solutions.length);
-
-    return () => {
-      solutionsCleanup?.();
-    };
-  }, [solutions.length]);
+  const loop = [
+    { icon: Activity, label: 'Detect failure' },
+    { icon: Shield, label: 'Diagnose layer' },
+    { icon: RotateCcw, label: 'Correct locally' },
+    { icon: CheckCircle, label: 'Continue inference' },
+  ];
 
   return (
-    <section id="companies-solutions" className="py-24 bg-black">
+    <section id="correction-stack" className="py-24 bg-black border-y border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Solutions We Delivered */}
-        <div>
-	  <div className="flex justify-center mb-20 text-center">
-	   <div>
-              <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
-                SELF-CORRECTION IN PRODUCTION
-              </p>
-            <h2 className="text-5xl md:text-5xl font-bold text-white mb-4">
-              Self-correcting Runtime Deployments
-            </h2>
-            <p className="text-2xl text-white max-w-4xl">
-	      Monitor → Diagnose → Fix → Adapt → Continue
-            </p>
-           </div>
-          </div>
+        <div className="max-w-3xl mb-14">
+          <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
+            SELF-CORRECTION ARCHITECTURE
+          </p>
+          <h2 className="text-4xl md:text-6xl font-bold text-white mb-5 leading-tight">
+            Diagnose the layer. Correct on-device.
+          </h2>
+          <p className="text-xl md:text-2xl text-white/80 leading-relaxed">
+            A compact runtime loop for deployed Physical AI. The core moat is knowing what broke before applying correction.
+          </p>
+        </div>
 
-	  <div className="relative overflow-hidden">
-            <div
-              ref={solutionsScrollRef}
-              className="flex overflow-x-hidden scrollbar-hide space-x-14 pb-4"
-              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-            >
-              {duplicatedSolutions.map((solution, index) => {
-                const IconComponent = solution.icon;
-                return (
-                  <a
-                    key={`${solution.title}-${index}`}
-                    href={solution.link}
-                    className={`flex-shrink-0 flex flex-col justify-between bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 rounded-2xl transition-all duration-300 transform hover:-translate-y-1 group ${
-		      solution.isCustomImage
-		        ? 'w-[340px] h-[420px] p-2 flex flex-col justify-between'
-		        : 'min-w-[280px] p-6'
-		    }`}
-                  >
-                    {solution.isCustomImage ? (
-		    <div className="flex flex-col items-center justify-start w-[320px] h-[420px] p-2">
-		      {/* Image container */}
-		      <div className="w-full h-[320px] flex items-center justify-center overflow-hidden">
-		        <img
-			  src={solution.customImage}
-			  alt={solution.title}
-			  className="max-w-full max-h-full object-contain object-center mx-auto"
-			  onError={(e) => {
-                            const target = e.target as HTMLImageElement;
-			    target.style.display = 'none';
-			  }}
-			/>
-		      </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+          {loop.map((step) => {
+            const IconComponent = step.icon;
+            return (
+              <div key={step.label} className="border border-white/10 bg-white/[0.04] rounded-lg p-5">
+                <IconComponent className="w-6 h-6 text-[#77DB89] mb-4" />
+                <h3 className="text-white font-semibold text-lg">{step.label}</h3>
+              </div>
+            );
+          })}
+        </div>
 
-                      {/* Text container */}
-		      <div className="text-center px-4 py-2">
-		        <h3 className="text-xl text-[#77DB89] font-bold mb-2">{solution.title}</h3>
-		        <p className="text-xl text-white">{solution.description}</p>
-		      </div>
-		    </div>
-                    ) : (
-                      // Standard vertical layout for other solutions
-                      <div className="text-center h-full flex flex-col justify-center">
-                        <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform duration-200">
-                          <IconComponent className="w-8 h-8 text-black" />
-                        </div>
-                        <h3 className="text-lg font-bold text-white mb-2">{solution.title}</h3>
-                        <p className="text-white text-sm">{solution.description}</p>
-                      </div>
-                    )}
-                  </a>
-                );
-              })}
-            </div>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {layers.map((layer) => {
+            const IconComponent = layer.icon;
+            return (
+              <div key={layer.title} className="border-l border-[#77DB89] bg-white/[0.03] px-6 py-5">
+                <IconComponent className="w-6 h-6 text-[#77DB89] mb-4" />
+                <h3 className="text-2xl font-semibold text-white mb-3">{layer.title}</h3>
+                <p className="text-white/70 leading-relaxed">{layer.detail}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -160,7 +160,7 @@ const BlogPostPage = () => {
             <div>
               <h4 className="text-lg font-semibold text-white mb-1">{post.author}</h4>
               <p className="text-white/80 text-sm">
-                {post.author} is Founder & CEO of Edgeble, Dept. Self-learning Edge Intelligence
+                {post.author} is Founder & CEO of Edgeble, building self-correcting runtime infrastructure for Physical AI.
               </p>
             </div>
           </div>

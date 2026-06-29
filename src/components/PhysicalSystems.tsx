@@ -1,63 +1,33 @@
-import { useEffect, useState } from "react";
-import { COMPANY_LOGOS } from "../data/companyLogos";
-
-const SECTORS = ["Industrial", "Automotive"] as const;
+import React from 'react';
+import { COMPANY_LOGOS } from '../data/companyLogos';
 
 export default function PhysicalSystems() {
-  const [active, setActive] = useState<0 | 1>(0);
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setActive((prev) => (prev === 0 ? 1 : 0));
-    }, 4000);
-    return () => clearInterval(id);
-  }, []);
-
-  const activeSector = SECTORS[active];
-  const logos = COMPANY_LOGOS[activeSector];
+  const customers = [...COMPANY_LOGOS.Industrial, ...COMPANY_LOGOS.Automotive];
 
   return (
-    <section className="bg-black pt-10 pb-12 text-center">
-      {/* TEXT LINE */}
-      <p className="text-xl md:text-2xl text-white tracking-wide flex justify-center gap-2 mb-12">
-        Edgeble Self-Correcting Physical AI in
-        {SECTORS.map((sector, index) => (
-          <span key={sector} className="relative inline-block mx-1">
-            <span className={active === index ? "text-white" : "text-white/40"}>
-              {sector}
-            </span>
+    <section id="customers" className="bg-black py-24 border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mb-14">
+          <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
+            CUSTOMERS
+          </p>
+          <h2 className="text-4xl md:text-6xl font-bold text-white mb-5 leading-tight">
+            Physical AI teams building at the edge.
+          </h2>
+        </div>
 
-            {active === index && (
-              <span className="absolute left-0 -bottom-2 w-full h-[2px] bg-[#77DB89]" />
-            )}
-          </span>
-        ))}
-      </p>
-
-      {/* LOGOS — FULL WIDTH GRID */}
-      <div className="w-full max-w-7xl mx-auto px-8">
-        <div className="flex items-center justify-between gap-12">
-          {logos.map((company) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          {customers.map((company) => (
             <div
               key={company.name}
-              className="flex items-center justify-center h-[72px] flex-1"
+              className="h-28 border border-white/10 bg-white/[0.04] rounded-lg flex items-center justify-center px-5"
             >
               <img
                 src={company.logo}
                 alt={`${company.name} logo`}
-		className="
-		  max-h-[100px]
-		  max-w-[160px]
-		  w-auto
-		  object-contain
-		  opacity-100
-		  grayscale
-		  invert
-		  transition
-		  hover:opacity-100
-                "
+                className="max-h-16 max-w-full w-auto object-contain grayscale invert"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = "none";
+                  (e.target as HTMLImageElement).style.display = 'none';
                 }}
               />
             </div>

@@ -6,17 +6,17 @@ const AdditionalProducts = () => {
     {
       id: 1,
       name: 'Edgeble Runtime Engine',
-      description: 'Diagnoses physical, system, and model failures, then applies controlled correction or on-device adaptation',
+      description: 'Diagnoses physical, AI system, and model failures, then applies controlled on-device correction.',
       image: 'images/runtime.png',
-      badge: 'hardware-agnostic',
+      badge: 'software runtime',
       link: '/products/runtime'
     },
     {
       id: 2,
       name: 'Edgeble Runtime Module',
-      description: 'Edge hardware modules pre-programmed with the runtime, optimized for self-correcting workloads',
+      description: 'Edge hardware modules pre-integrated with the runtime for inspection, perception, and gateway workloads.',
       image: '/images/runtime-mod.png',
-      badge: 'hardware-optimized',
+      badge: 'runtime hardware',
       link: '/products/module'
     }
   ];
@@ -27,13 +27,13 @@ const AdditionalProducts = () => {
 	<div className="flex justify-center mb-20 text-center">
 	  <div>
               <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
-                RUNTIME INFRASTRUCTURE FOR PHYSICAL AI
+                RUNTIME INFRASTRUCTURE
               </p>
             <h2 className="text-5xl md:text-5xl font-bold text-white mb-4">
-              Edgeble Physical AI Runtime
+              Products for self-correcting Physical AI
             </h2>
             <p className="text-2xl text-white max-w-4xl">
-	      Self-correcting runtime from edge devices to factory gateways
+	      Deploy the same correction loop from edge devices to factory gateways
             </p>
           </div>
         </div>

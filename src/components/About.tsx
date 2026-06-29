@@ -21,17 +21,17 @@ const About = () => {
     {
       icon: Target,
       title: 'Moat',
-      description: 'Cross-layer diagnosis and on-device self-correction'
+      description: 'Cross-layer diagnosis and correction that runs beside inference on edge chips'
     },
     {
       icon: Eye,
       title: 'Vision',
-      description: 'The adaptation layer Physical AI needs to stay alive in the field'
+      description: 'Physical AI that keeps working when field conditions move away from the lab'
     },
     {
       icon: Users,
       title: 'Mission',
-      description: 'Physical System learn, correct and recovers'
+      description: 'Help deployed AI detect failure, diagnose root cause, and recover locally'
     }
   ];
 
@@ -121,7 +121,7 @@ const About = () => {
                 Global Presence
               </h3>
               <p className="text-white mb-6">
-                Headquartered in India serve clients globally while maintaining the agility of a focused technology company.
+                Headquartered in India, Edgeble serves global industrial and automotive teams building on-device Physical AI.
               </p>
               <div className="flex items-start text-white mb-4">
                 <MapPin className="w-5 h-5 mr-3 mt-1 flex-shrink-0" />
