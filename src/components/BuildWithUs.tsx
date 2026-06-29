@@ -19,10 +19,10 @@ export default function BuildWithUs() {
           </h2>
           <div className="space-y-5 mb-8 max-w-2xl">
             <p className="text-xl md:text-2xl text-white/80 leading-relaxed">
-              We believe it is time to safely scale Physical Systems. Only a cross-layer approach can diagnose when physical drift degrades model behavior, then correct the right layer as more physical systems and robotics come onboard.
+              As Physical AI moves into robots, factories, vehicles, and edge devices, failures will not come from the model alone. Sensors drift, compute changes, environments shift, and behavior degrades in ways that need on-device self-correction.
             </p>
             <p className="text-xl md:text-2xl text-white/80 leading-relaxed">
-              Many research and engineering challenges remain. We are building the team to solve them. If these problems interest you, contact us at <a href="mailto:info@edgeble.ai" className="text-[#77DB89] hover:text-white transition-colors">info@edgeble.ai</a>.
+              Edgeble is building that cross-layer runtime. We are looking for researchers and engineers who want to solve hard problems across physical systems, edge compute, and models. Reach us at <a href="mailto:info@edgeble.ai" className="text-[#77DB89] hover:text-white transition-colors">info@edgeble.ai</a>
             </p>
           </div>
           <a

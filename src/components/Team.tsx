@@ -6,13 +6,13 @@ const Team = () => {
     {
       name: 'Jagan Teki',
       role: 'Founder',
-      description: 'Leads Edgeble\'s self-correction architecture and engineering across physical systems, robotics, edge AI NPUs, camera pipelines, Linux kernel systems, AI models, and deployed Physical AI infrastructure.',
+      description: 'Leads Edgeble\'s product and architecture.',
       linkedin: 'https://in.linkedin.com/in/jaganteki',
     },
     {
       name: 'Srinivas Patnaik',
-      role: 'Co-founder',
-      description: 'Leads Edgeble\'s physical-system correction architecture and product direction, while driving company building, customer strategy, enterprise adoption, and production Physical AI partnerships.',
+      role: 'Co-founder (in-transition)',
+      description: 'Leads Edgeble products and customer adoption.',
       linkedin: 'https://www.linkedin.com/in/srinivassatumahanti',
     },
   ];
@@ -40,7 +40,7 @@ const Team = () => {
               </div>
               <h3 className="text-3xl font-bold text-white mb-2">{member.name}</h3>
               <p className="text-[#77DB89] text-lg font-semibold mb-5">{member.role}</p>
-              <p className="text-white/75 leading-relaxed mb-7">{member.description}</p>
+              <p className="text-xl text-white/80 leading-relaxed mb-7">{member.description}</p>
               <a
                 href={member.linkedin}
                 target="_blank"
