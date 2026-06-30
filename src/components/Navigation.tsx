@@ -70,7 +70,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           <button
             onClick={handleLogoClick}
-            className="text-4xl font-bold text-white hover:text-white/90 transition-colors duration-200"
+            className="text-[2.5rem] font-manrope font-medium tracking-tight text-white hover:text-white/90 transition-colors duration-200"
           >
             edgeble
           </button>
