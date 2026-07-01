@@ -22,8 +22,8 @@ function HomePage() {
         <Hero />
         <FeaturedUpdates />
         <CompaniesAndSolutions />
-        <Team />
         <PhysicalSystems />
+        <Team />
         <BuildWithUs />
       </main>
       <Footer />

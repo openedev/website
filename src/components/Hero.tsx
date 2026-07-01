@@ -21,7 +21,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-2xl md:text-2xl text-white max-w-2xl leading-relaxed animate-fadeIn animation-delay-400">
-            Your deployed AI degrades in the field: conditions shift, hardware can't keep up, or the model loses accuracy. Edgeble finds what failed and corrects it on-device: no cloud, no downtime, no engineer.
+            Your deployed AI degrades in the field: conditions shift, hardware can't keep up, or the model loses accuracy. Edgeble finds what failed and corrects it on-device.
           </p>
         </div>
       </div>
