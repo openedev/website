@@ -5,7 +5,7 @@ const CompaniesAndSolutions = () => {
   const layers = [
     { icon: Shield, title: 'Physical System', detail: 'Sensors, optics, links, motion, alignment, and environment.' },
     { icon: Cpu, title: 'AI Compute', detail: 'Runtime, scheduling, memory, thresholds, and acceleration paths.' },
-    { icon: Brain, title: 'Model', detail: 'Confidence drift, missed events, quantization loss, and domain shift.' },
+    { icon: Brain, title: 'Model', detail: 'Confidence drift, novelty-search, quantization loss, and domain shift.' },
   ];
 
   const loop = [
