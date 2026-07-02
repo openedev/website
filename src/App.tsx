@@ -7,6 +7,7 @@ import PhysicalSystems from './components/PhysicalSystems';
 import CompaniesAndSolutions from './components/CompaniesAndSolutions';
 import Team from './components/Team';
 import BuildWithUs from './components/BuildWithUs';
+import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ContactEngineers from './pages/ContactEngineers';
@@ -25,6 +26,7 @@ function HomePage() {
         <PhysicalSystems />
         <Team />
         <BuildWithUs />
+        <FAQ />
       </main>
       <Footer />
     </div>
