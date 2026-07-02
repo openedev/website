@@ -15,12 +15,12 @@ const faqs = [
     answer: `Most edge AI tools stop at running inference or flagging that something is wrong. They leave the fixing to you. Runtime does not just detect a problem; it finds which layer caused it - the physical system, the hardware, or the model - and corrects it automatically on the device without stopping. Acting on the problem, not just reporting it, is the difference.`,
   },
   {
-    question: 'Does it work on my hardware and models?',
+    question: 'Does it work on specific silicon, hardware, and model?',
     answer: `Yes. The runtime is hardware-agnostic and runs as a separate module across edge silicon, integrating with your existing inference and models. It has been proven across multiple NPUs and platforms. You keep your stack; Edgeble adds the self-correction layer on top. If you would rather not integrate anything, we also offer plug-and-play hardware with the self-correcting runtime built in and ready to deploy.`,
   },
   {
-    question: 'Do I have to replace my existing AI system?',
-    answer: `No. Runtime plugs into what you already have as a separate layer, keeping deployed AI accurate without requiring a rebuild. You can add self-correction to your existing system, or take the full stack - runtime, inference, and hardware - if you prefer.`,
+    question: 'Do you need to replace or modify an existing AI system?',
+    answer: `No. Runtime plugs into a running AI system as a separate layer - it adds self-correction without replacing or rebuilding what is already deployed. Take just the runtime layer onto an existing stack, or the full stack - runtime, inference, and hardware - if preferred.`,
   },
   {
     question: 'How does integration work, and how long does it take?',

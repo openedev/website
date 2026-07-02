@@ -6,7 +6,7 @@ const Team = () => {
     {
       name: 'Jagan Teki',
       role: 'Founder',
-      description: 'Leads Edgeble\'s product and architecture.',
+      description: 'Leads Edgeble products and architecture.',
       linkedin: 'https://in.linkedin.com/in/jaganteki',
     },
     {
