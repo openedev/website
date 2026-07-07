@@ -17,11 +17,11 @@ const Hero = () => {
           </div>
 
           <h1 className="text-[2.6rem] md:text-[4.7rem] lg:text-[4.7rem] font-manrope font-medium tracking-tight text-white leading-tight mb-6 animate-fadeIn animation-delay-200">
-            <span className="text-[#77DB89]">Physical AI</span> That Fixes Itself
+            <span className="text-[#77DB89]">Catch & Correct</span> Physical AI Failures
           </h1>
 
           <p className="text-2xl md:text-2xl text-white max-w-2xl leading-relaxed animate-fadeIn animation-delay-400">
-	    Deployed AI degrades in the field conditions shift, hardware strains, models drift. Edgeble catches, diagnoses, and corrects it on-device without stopping the line or the robot.
+            Physical AI degrades in the field conditions shift, hardware strains, models drift. Edgeble continuously diagnose, catch and corrects it on-device without stopping the production, line or the robot.
           </p>
         </div>
       </div>
