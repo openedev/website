@@ -9,7 +9,7 @@ const CompaniesAndSolutions = () => {
   ];
 
   const loop = [
-    { icon: Activity, label: 'Detect failure' },
+    { icon: Activity, label: 'Catch failure' },
     { icon: Shield, label: 'Diagnose layer' },
     { icon: RotateCcw, label: 'Correct locally' },
     { icon: CheckCircle, label: 'Continue inference' },

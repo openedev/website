@@ -21,7 +21,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-2xl md:text-2xl text-white max-w-2xl leading-relaxed animate-fadeIn animation-delay-400">
-            Physical AI degrades in the field conditions shift, hardware strains, models drift. Edgeble continuously diagnose, catch and corrects it on-device without stopping the production, line or the robot.
+	    Physical AI degrades in the field — conditions shift, hardware strains, models drift. Edgeble continuously catches, diagnoses, and corrects it on-device — without stopping the line or the robot.
           </p>
         </div>
       </div>
