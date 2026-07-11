@@ -11,17 +11,17 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-80 pb-16">
         <div className="max-w-3xl text-left">
-          <div className="inline-flex items-center px-5 py-2.5 rounded-full bg-white/10 border border-white/20 text-white text-base md:text-[1.05rem] font-medium mb-7 animate-fadeIn">
+          <div className="inline-flex items-center px-5 py-2.5 rounded-full bg-white/10 border border-white/20 text-white text-base md:text-[1.05rem] font-medium mb-4 animate-fadeIn">
             <Zap className="w-[18px] h-[18px] mr-2.5 text-[#77DB89]" />
             Self-Correcting Runtime Layer
           </div>
 
-          <h1 className="text-[2.6rem] md:text-[4.7rem] lg:text-[4.7rem] font-manrope font-medium tracking-tight text-white leading-tight mb-6 animate-fadeIn animation-delay-200">
-            <span className="text-[#77DB89]">Catch & Correct</span> Physical AI Failures
+          <h1 className="text-[2.6rem] md:text-[4rem] lg:text-[4rem] font-manrope font-medium tracking-tight text-white leading-tight mb-4 animate-fadeIn animation-delay-200">
+            <span className="text-[#77DB89]">Catch & Correct</span> Physical AI Failures — Before They <span className="text-[#77DB89]">Stop </span> Your Line or Robot
           </h1>
 
-          <p className="text-2xl md:text-2xl text-white max-w-2xl leading-relaxed animate-fadeIn animation-delay-400">
-	    Physical AI degrades in the field — conditions shift, hardware strains, models drift. Edgeble continuously catches, diagnoses, and corrects it on-device — without stopping the line or the robot.
+	  <p className="text-2xl md:text-2xl text-white max-w-2xl leading-relaxed animate-fadeIn animation-delay-400">
+	    Physical AI degrades in the field as conditions shift, hardware strains and models drift. Edgeble diagnose the failure is in the physical, runtime or model, then corrects it on-device while inference continues.
           </p>
         </div>
       </div>
