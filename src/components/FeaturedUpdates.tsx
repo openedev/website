@@ -8,7 +8,7 @@ const FeaturedUpdates = () => {
 
           {/* Primary Highlight - Samsung ennovateX */}
           <a
-            href="/news/curiosity"
+            href="/news/ennovatex"
             className="group relative rounded-2xl border border-white/15 bg-white/5 p-8 hover:border-[#77DB89] transition-all"
           >
             <h3 className="text-2xl font-semibold text-white mb-3 flex items-center gap-3">
@@ -17,7 +17,7 @@ const FeaturedUpdates = () => {
             </h3>
 
             <p className="text-xl leading-relaxed">
-	       Edgeble has been selected for Samsung ennovateX's AX Startup Pitch - Grand Finale.
+	       Edgeble has been selected for Samsung ennovateX 2026's AX Startup Pitch Finale.
             </p>
           </a>
 

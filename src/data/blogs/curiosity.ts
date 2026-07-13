@@ -3,96 +3,58 @@ import { BlogPost } from "../blogTypes";
 const blog: BlogPost = {
   title: "Winner of Curiosity 2026 by South Park Commons",
   slug: "curiosity",
-  excerpt: "Why Edgeble Self-Correction Won Curiosity 2026 by South Park Commons?",
+  excerpt:
+    "Edgeble won Curiosity 2026 by South Park Commons India and ARTPARK/IISc Bangalore in the Physical AI category.",
   content: `
-  <p class="text-xl mb-6">
-  Edgeble has been selected as a <strong>winner of the RNTBCI Open Innovation Challenge</strong>, organized by
-  <a href="https://rntbci.in" target="_blank" class="underline">Renault Nissan Technology & Business Centre India (RNTBCI)</a>
-  and <a href="https://www.nissan-global.com/EN" target="_blank" class="underline">Nissan</a> following a rigorous technical and business evaluation
-  in <span class="text-[#77DB89] font-semibold">Edge AI Accelerator & Orchestration</span> sector.
+    <p class="text-xl mb-6">
+      Edgeble won <strong>Curiosity 2026</strong> by South Park Commons India and ARTPARK/IISc Bangalore in the <span class="text-[#77DB89] font-semibold">Physical AI</span> category.
+    </p>
 
-  <p class="text-xl mb-6">
-  The challenge recognized Edgeble’s work in building <strong>self-learning edge intelligence</strong> designed to operate
-  directly inside automotive physical systems spanning both manufacturing environments and vehicle platforms.
-  </p>
+    <img
+      src="/images/spc0.jpeg"
+      alt="Edgeble at Curiosity 2026 by South Park Commons India"
+      class="w-full rounded-xl my-8"
+    />
 
-  <h3 class="text-2xl font-bold text-white mb-4 mt-10">
-  Edge Intelligence Inside Automotive Physical Systems
-  </h3>
+    <p class="text-xl mb-6">
+      Curiosity brings together ambitious builders working on frontier technology. For Edgeble, the recognition validates a core belief: physical AI systems need intelligence that can run close to the machine, observe real-world behavior, and correct itself as conditions change.
+    </p>
 
-  <p class="text-xl mb-6">
-  Automotive systems operate under strict real-time, safety, and reliability constraints.
-  Yet most AI deployments remain static, cloud-dependent, and disconnected from long-running physical behavior.
-  </p>
+    <h3 class="text-2xl font-bold text-white mb-4 mt-10">
+      Why Self-Correction Matters
+    </h3>
 
-  <p class="text-xl mb-6">
-  Edgeble’s approach embeds intelligence directly inside the system by enabling on-device inference, continuous
-  observation of physical signals, and controlled learning without disrupting operations.
-  </p>
+    <p class="text-xl mb-6">
+      Physical systems do not stay fixed. Cameras drift, sensors age, lighting changes, machines wear, and operating environments keep moving. Static AI models struggle in these conditions because they are trained once and then expected to behave the same everywhere.
+    </p>
 
-  <h3 class="text-2xl font-bold text-white mb-4 mt-12">
-  Intelligence for Factory Environments
-  </h3>
+    <p class="text-xl mb-6">
+      Edgeble is building self-learning edge intelligence that can detect change, adapt locally, and keep inference aligned with the actual physical environment. This makes AI more useful for factories, robotics, inspection systems, mobility platforms, and other real-world deployments where reliability matters.
+    </p>
 
-  <p class="text-xl mb-6">
-  On the factory floor, machines, welds, assemblies, and motion systems evolve continuously due to wear, drift,
-  and operational variability. Edgeble’s edge-native intelligence observes these physical processes in real time
-  and adapts to changing conditions directly at the source.
-  </p>
+    <img
+      src="/images/spc1.jpg"
+      alt="Curiosity 2026 Physical AI recognition for Edgeble"
+      class="w-full rounded-xl my-8"
+    />
 
-  <p class="text-xl mb-6">
-  By running intelligence locally and learning from operational feedback, physical systems gain the ability
-  to respond early to deviations, maintain consistency, and evolve safely over long production lifecycles.
-  </p>
+    <h3 class="text-2xl font-bold text-white mb-4 mt-12">
+      Recognition from the Physical AI Ecosystem
+    </h3>
 
-  <h3 class="text-2xl font-bold text-white mb-4 mt-12">
-  Intelligence for Vehicle Platforms
-  </h3>
+    <p class="text-xl mb-6">
+      Winning Curiosity 2026 is an important milestone for Edgeble&#39;s runtime work on self-correcting infrastructure for Physical AI. It reflects the growing need for AI systems that are not only accurate in demos, but resilient in production.
+    </p>
 
-  <p class="text-xl mb-6">
-  Modern vehicles rely on tightly coupled perception and control systems that must react within milliseconds. 
-  Edgeble’s self-learning edge intelligence enables on-device perception pipelines that remain deterministic,
-  explainable, and adaptable to real-world driving conditions.
-  </p>
+    <img
+      src="/images/spc2.jpg"
+      alt="Edgeble team at the Curiosity 2026 event"
+      class="w-full rounded-xl my-8"
+    />
 
-  <p class="text-xl mb-6">
-  By keeping intelligence inside the vehicle and aligned with physical constraints, systems can improve
-  robustness, responsiveness, and long-term reliability without relying on continuous cloud connectivity.
-  </p>
-
-  <h3 class="text-2xl font-bold text-white mb-4 mt-12">
-  Collaboration with RNTBCI and Nissan
-  </h3>
-
-  <p class="text-xl mb-6">
-  This recognition strengthens Edgeble’s collaboration with
-  <a href="https://www.nissan-global.com" target="_blank" class="underline">Nissan</a> and
-  RNTBCI to advance next-generation edge intelligence architectures for automotive systems.
-  </p>
-
-  <p class="text-xl mb-6">
-  Together, the focus is on building scalable, upgradeable, and verifiable intelligence that aligns
-  with real-world automotive constraints — from factory deployment to vehicle integration.
-  </p>
-
-  <h3 class="text-2xl font-bold text-white mb-4 mt-12">
-  Recognition Moment
-  </h3>
-
-  <img
-  src="/images/nissan-grant.jpeg"
-  alt="Edgeble receiving RNTBCI Open Innovation Challenge award"
-  class="w-full rounded-xl my-8"/>
-
-  <img
-  src="/images/nissan-grant1.jpg"
-  alt="Edgeble receiving RNTBCI Open Innovation Challenge award"
-  class="w-full rounded-xl my-8"/>
-
-  <p class="text-xl mb-6">
-  Being selected as a winner of the RNTBCI Open Innovation Challenge marks an important milestone for
-  Edgeble validating our belief that the future of automotive intelligence lies in systems that can
-  <strong>infer, act, and learn continuously inside physical environments</strong>.</p>
+    <p class="text-xl mb-6">
+      We are grateful to South Park Commons India and ARTPARK/IISc Bangalore for recognizing Edgeble&#39;s approach, and we look forward to continuing the work with builders, researchers, and industry partners shaping the next generation of physical intelligence.
+    </p>
   `,
   author: "Jagan Teki",
   date: "2026-05-31",
