@@ -16,12 +16,12 @@ const Hero = () => {
             Self-Correcting Runtime Layer
           </div>
 
-          <h1 className="text-[2.6rem] md:text-[4rem] lg:text-[4rem] font-manrope font-medium tracking-tight text-white leading-tight mb-4 animate-fadeIn animation-delay-200">
-            <span className="text-[#77DB89]">Catch & Correct</span> Physical AI Failures — Before They <span className="text-[#77DB89]">Stop </span> Your Line or Robot
+          <h1 className="text-[2.6rem] md:text-[4.6rem] lg:text-[4.6rem] font-manrope font-medium tracking-tight text-white leading-tight mb-4 animate-fadeIn animation-delay-200">
+            <span className="text-[#77DB89]">Catch & Correct</span> Physical AI Failures
           </h1>
 
 	  <p className="text-2xl md:text-2xl text-white max-w-2xl leading-relaxed animate-fadeIn animation-delay-400">
-	    Physical AI degrades in the field as conditions shift, hardware strains and models drift. Edgeble diagnose the failure is in the physical, runtime or model, then corrects it on-device while inference continues.
+           Physical AI degrades in the field as conditions shift, hardware strains, and models drift. Edgeble diagnoses whether the failure is physical, compute, or model — then corrects it on-device while inference continues. No stopped lines, no stalled robots, no silent bad output.
           </p>
         </div>
       </div>
