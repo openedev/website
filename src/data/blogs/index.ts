@@ -1,3 +1,4 @@
+import nxp from "./nxp";
 import ennovatex from "./ennovatex";
 import curiosity from "./curiosity";
 import lpc2025 from "./lpc2025";
@@ -13,6 +14,7 @@ import tie25 from "./tie25";
 import ece23 from "./ece23";
 
 export const NEW_BLOGS = [
+	nxp,
 	ennovatex,
 	curiosity,
 	lpc2025,
