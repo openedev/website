@@ -13,11 +13,12 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = [
+  const navItems: Array<{ name: string; href: string; highlight?: boolean }> = [
     { name: 'Home', href: '#home' },
     { name: 'Architecture', href: '#correction-stack' },
     { name: 'Team', href: '#team' },
     { name: 'Customers', href: '#customers' },
+    { name: 'Jobs', href: '/jobs', highlight: true },
     { name: 'Blog', href: '/blog' },
     { name: 'News', href: '/news' },
   ];
@@ -81,7 +82,11 @@ const Navigation = () => {
                 <button
                   key={item.name}
                   onClick={() => handleNavigation(item.href)}
-                  className="text-white hover:text-white/70 px-2 py-2 text-sm font-medium transition-colors duration-200"
+                  className={`px-2 py-2 text-sm font-medium transition-colors duration-200 ${
+                    item.highlight
+                      ? 'rounded-lg border border-[#77DB89]/70 bg-[#77DB89] text-black hover:bg-white hover:text-black'
+                      : 'text-white hover:text-white/70'
+                  }`}
                 >
                   {item.name}
                 </button>
@@ -117,7 +122,11 @@ const Navigation = () => {
               <button
                 key={item.name}
                 onClick={() => handleNavigation(item.href)}
-                className="text-white hover:text-white/70 block px-3 py-2 text-base font-medium transition-colors duration-200 w-full text-left"
+                className={`block px-3 py-2 text-base font-medium transition-colors duration-200 w-full text-left ${
+                  item.highlight
+                    ? 'rounded-lg border border-[#77DB89]/70 bg-[#77DB89] text-black hover:bg-white hover:text-black'
+                    : 'text-white hover:text-white/70'
+                }`}
               >
                 {item.name}
               </button>

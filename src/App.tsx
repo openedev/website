@@ -14,6 +14,8 @@ import ContactEngineers from './pages/ContactEngineers';
 import Blog from './pages/Blog';
 import BlogPostPage from './pages/BlogPostPage';
 import News from './pages/News';
+import JobsPage from './pages/JobsPage';
+import JobPostPage from './pages/JobPostPage';
 
 function HomePage() {
   return (
@@ -56,6 +58,8 @@ function App() {
         <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/news" element={<News />} />
         <Route path="/news/:slug" element={<BlogPostPage />} />
+        <Route path="/jobs" element={<JobsPage />} />
+        <Route path="/jobs/:slug" element={<JobPostPage />} />
         <Route path="/products/runtime" element={<div className="min-h-screen bg-black text-white flex items-center justify-center px-6 text-center"><h1 className="text-4xl">Edgeble Runtime Engine - Coming Soon</h1></div>} />
         <Route path="/products/module" element={<div className="min-h-screen bg-black text-white flex items-center justify-center px-6 text-center"><h1 className="text-4xl">Edgeble Runtime Module - Coming Soon</h1></div>} />
         <Route path="/products/npu" element={<div className="min-h-screen bg-black text-white flex items-center justify-center px-6 text-center"><h1 className="text-4xl">On-device Physical AI Runtime - Coming Soon</h1></div>} />

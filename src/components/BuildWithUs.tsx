@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Briefcase } from 'lucide-react';
 import CorrectionField from './CorrectionField';
 
 export default function BuildWithUs() {
@@ -25,13 +25,22 @@ export default function BuildWithUs() {
               Edgeble is building that cross-layer runtime. We are looking for researchers and engineers who want to solve hard problems across physical systems, edge compute, and models. Reach us at <a href="mailto:info@edgeble.ai" className="text-[#77DB89] hover:text-white transition-colors">info@edgeble.ai</a>
             </p>
           </div>
-          <a
-            href="mailto:info@edgeble.ai"
-            className="inline-flex items-center justify-center bg-white text-black hover:bg-white/90 px-6 py-3 rounded-lg font-semibold transition-colors"
-          >
-            Contact us
-            <ArrowRight className="ml-2 w-4 h-4" />
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="/jobs"
+              className="inline-flex items-center justify-center bg-[#77DB89] text-black hover:bg-white px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
+              <Briefcase className="mr-2 w-4 h-4" />
+              View open roles
+            </a>
+            <a
+              href="mailto:info@edgeble.ai"
+              className="inline-flex items-center justify-center bg-white text-black hover:bg-white/90 px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
+              Contact us
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
