@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/jobs/robotics-physical-correction",
+      "destination": "/jobs/robotics-physical-correction/index.html"
+    },
+    {
+      "source": "/jobs/physical-ai-deployment",
+      "destination": "/jobs/physical-ai-deployment/index.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

@@ -25,7 +25,7 @@ const Team = () => {
             OUR TEAM
           </p>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-5 leading-tight">
-            Building runtime infrastructure for Physical AI.
+            Building Self-Correction Runtime for Physical AI
           </h2>
           <p className="text-xl md:text-2xl text-white/120 leading-relaxed">
             Edgeble's founders bring embedded and silicon systems, physical-system engineering, AI deployment, and startup experience: the rare cross-layer depth needed for self-correcting Physical AI.

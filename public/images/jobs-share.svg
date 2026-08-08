@@ -1,0 +1,28 @@
+<svg width="1200" height="627" viewBox="0 0 1200 627" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="627" fill="#090D14"/>
+  <rect x="52" y="52" width="1096" height="523" rx="28" fill="url(#paint0_linear)" stroke="rgba(255,255,255,0.10)"/>
+  <rect x="92" y="92" width="84" height="84" rx="18" fill="#77DB89"/>
+  <path d="M116 142V118H128C136 118 142 122 142 129C142 134 139 138 133 140L144 142V149H134L123 142H116ZM123 135H129C132 135 135 133 135 129C135 125 132 123 129 123H123V135Z" fill="#090D14"/>
+  <text x="204" y="136" fill="#FFFFFF" font-family="Manrope, Inter, Arial, sans-serif" font-size="44" font-weight="700">Edgeble</text>
+  <text x="92" y="240" fill="#77DB89" font-family="Manrope, Inter, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3">NOW HIRING</text>
+  <text x="92" y="305" fill="#FFFFFF" font-family="Manrope, Inter, Arial, sans-serif" font-size="58" font-weight="700">Open roles for Physical AI</text>
+  <text x="92" y="362" fill="#D7DFEA" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="400">Self-correcting runtime for deployed models, edge NPUs, and real systems.</text>
+  <rect x="92" y="424" width="200" height="64" rx="32" fill="#77DB89"/>
+  <text x="132" y="466" fill="#090D14" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Apply now</text>
+  <circle cx="1085" cy="190" r="118" fill="rgba(119,219,137,0.12)"/>
+  <circle cx="1085" cy="190" r="78" fill="rgba(119,219,137,0.20)"/>
+  <path d="M1085 142C1111 142 1132 163 1132 189C1132 215 1111 236 1085 236C1059 236 1038 215 1038 189C1038 163 1059 142 1085 142Z" fill="#77DB89"/>
+  <path d="M1074 189H1093" stroke="#090D14" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1089 180L1097 188L1089 196" stroke="#090D14" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="720" y="340" width="398" height="160" rx="24" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="752" y="374" width="68" height="68" rx="16" fill="#77DB89"/>
+  <path d="M770 416V394H782C790 394 796 398 796 405C796 410 793 414 787 416L798 418V425H788L777 418H770ZM777 409H783C786 409 789 407 789 403C789 399 786 397 783 397H777V409Z" fill="#090D14"/>
+  <text x="846" y="399" fill="#FFFFFF" font-family="Manrope, Inter, Arial, sans-serif" font-size="28" font-weight="700">View open roles</text>
+  <text x="846" y="436" fill="#D7DFEA" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="400">Match the right role to your background and apply directly.</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="52" y1="52" x2="1148" y2="575" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101726"/>
+      <stop offset="1" stop-color="#0C111A"/>
+    </linearGradient>
+  </defs>
+</svg>
