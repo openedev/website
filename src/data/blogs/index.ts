@@ -1,4 +1,5 @@
 import nxp from "./nxp";
+import nxp2026 from "./nxp2026";
 import ennovatex from "./ennovatex";
 import curiosity from "./curiosity";
 import lpc2025 from "./lpc2025";
@@ -23,6 +24,7 @@ export const NEW_BLOGS = [
 	yourstory,
         emva25,
         tinyml24,
+	nxp2026,
 	ifs2025,
 	fwd25,
 	mphasis,

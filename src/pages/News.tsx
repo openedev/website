@@ -46,40 +46,62 @@ const BlogPage = () => {
 		  .filter(post => post.type === "news")
 		  .map((post, index) => (
             <div key={post.id} className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20">
-              {/* Image */}
-              <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-900 to-black">
-                <img 
-                  src={post.image} 
-                  alt={post.title}
-                  className={`w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 ${
-                    post.id === 1 ? 'beyond-borders-image' : ''
-                  }`}
-                  style={{
-                    objectFit: 'cover',
-                    objectPosition: 'center'
-                  }}
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800';
-                  }}
-                />
-                {/* Overlay for better text readability */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                
-                {/* Badge */}
-                <div className="absolute top-4 left-4 z-10">
-                  <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white text-black shadow-lg">
-                    {post.category}
-                  </span>
-                </div>
-                {/* Date */}
-                <div className="absolute bottom-4 right-4 bg-black/80 backdrop-blur-sm rounded-lg px-3 py-1 z-10">
-                  <div className="flex items-center text-white text-sm">
-                    <Calendar className="w-4 h-4 mr-2" />
-                    {formatDate(post.date)}
+              {post.image ? (
+                <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-900 to-black">
+                  <img 
+                    src={post.image} 
+                    alt={post.title}
+                    className={`w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300 ${
+                      post.id === 1 ? 'beyond-borders-image' : ''
+                    }`}
+                    style={{
+                      objectFit: 'cover',
+                      objectPosition: 'center'
+                    }}
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800';
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                  <div className="absolute top-4 left-4 z-10">
+                    <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white text-black shadow-lg">
+                      {post.category}
+                    </span>
+                  </div>
+                  <div className="absolute bottom-4 right-4 bg-black/80 backdrop-blur-sm rounded-lg px-3 py-1 z-10">
+                    <div className="flex items-center text-white text-sm">
+                      <Calendar className="w-4 h-4 mr-2" />
+                      {formatDate(post.date)}
+                    </div>
                   </div>
                 </div>
-              </div>
+              ) : (
+                <div className="relative border-b border-white/10 bg-black p-6 md:p-8">
+                  <div className="flex items-start justify-between gap-4 mb-6">
+                    <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white text-black shadow-lg">
+                      {post.category}
+                    </span>
+                    <div className="flex items-center text-white/60 text-sm whitespace-nowrap">
+                      <Calendar className="w-4 h-4 mr-2" />
+                      {formatDate(post.date)}
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <h3 className="text-2xl font-bold text-white leading-tight max-w-xl">
+                      {post.title}
+                    </h3>
+                    <p className="text-white/80 leading-relaxed max-w-xl">{post.excerpt}</p>
+                    <div className="flex items-center text-white/60 text-sm">
+                      <User className="w-4 h-4 mr-2" />
+                      <span>{post.author}</span>
+                      <span className="mx-2">•</span>
+                      <Clock className="w-4 h-4 mr-2" />
+                      <span>{post.readTime}</span>
+                    </div>
+                  </div>
+                </div>
+              )}
 
               {/* Content */}
               <div className="p-6">

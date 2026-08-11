@@ -1,0 +1,19 @@
+<svg width="1200" height="627" viewBox="0 0 1200 627" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="627" fill="#05070B"/>
+  <rect x="56" y="56" width="1088" height="515" rx="28" fill="#0B1018" stroke="rgba(255,255,255,0.10)"/>
+  <rect x="92" y="92" width="76" height="76" rx="20" fill="#77DB89"/>
+  <path d="M111 142V113H127C138 113 145 118 145 126C145 132 142 136 136 138L147 142V148H135L124 142H111ZM124 135H129C133 135 136 133 136 129C136 126 133 124 129 124H124V135Z" fill="#05070B"/>
+  <text x="188" y="126" fill="#FFFFFF" font-family="Manrope, Inter, Arial, sans-serif" font-size="34" font-weight="700">Edgeble</text>
+  <text x="92" y="222" fill="#77DB89" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="5">PHYSICAL INTELLIGENCE</text>
+  <text x="92" y="298" fill="#FFFFFF" font-family="Manrope, Inter, Arial, sans-serif" font-size="54" font-weight="700">Self-Correcting Physical AI</text>
+  <text x="92" y="360" fill="#FFFFFF" font-family="Manrope, Inter, Arial, sans-serif" font-size="54" font-weight="700">on NXP i.MX</text>
+  <text x="92" y="430" fill="#D7DFEA" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="400">Live drift recovery running on i.MX 8M Plus.</text>
+  <text x="92" y="480" fill="#9FB1C7" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="400">Live at the NXP Startup Impact Showcase, Sept 15</text>
+  <rect x="840" y="122" width="260" height="88" rx="22" fill="#101824" stroke="rgba(255,255,255,0.12)"/>
+  <text x="872" y="156" fill="#77DB89" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="3">RUNNING LIVE</text>
+  <text x="872" y="186" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="600">i.MX 8M Plus</text>
+  <circle cx="1018" cy="403" r="84" fill="rgba(119,219,137,0.12)"/>
+  <circle cx="1018" cy="403" r="56" fill="rgba(119,219,137,0.22)"/>
+  <circle cx="1018" cy="403" r="30" fill="#77DB89"/>
+  <path d="M1007 403H1028M1022 395L1030 403L1022 411" stroke="#05070B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

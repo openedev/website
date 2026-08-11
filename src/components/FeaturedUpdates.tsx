@@ -8,16 +8,16 @@ const FeaturedUpdates = () => {
 
           {/* Primary Highlight - NXP */}
           <a
-            href="/news/nxp-startup-impact-showcase-2026"
+            href="/blog/nxp-2026"
             className="group relative rounded-2xl border border-white/15 bg-white/5 p-8 hover:border-[#77DB89] transition-all"
           >
             <h3 className="text-2xl font-semibold text-white mb-3 flex items-center gap-3">
-              <span>TOP 15 by NXP Startup Impact Showcase 2026</span>
+              <span>Self-Correcting Physical AI on NXP i.MX</span>
               <ArrowRight className="w-5 h-5 text-white/60 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </h3>
 
             <p className="text-xl leading-relaxed">
-	       Edgeble has been selected among the Top 15 startups by NXP Startup Impact Showcase 2026.
+	       Live drift recovery on i.MX 8M Plus at the NXP Startup Impact Showcase on Sept 15.
             </p>
           </a>
 

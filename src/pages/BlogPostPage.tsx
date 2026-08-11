@@ -57,9 +57,12 @@ const BlogPostPage = () => {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-3 leading-tight max-w-4xl">
             {post.title}
           </h1>
+          <p className="text-lg md:text-xl text-white/70 max-w-4xl leading-relaxed mb-6">
+            {post.excerpt}
+          </p>
 
           {/* Meta Information */}
           <div className="flex flex-wrap items-center text-white/60 text-sm mb-8 gap-4">
@@ -89,28 +92,29 @@ const BlogPostPage = () => {
         </div>
       </div>
 
-      {/* Featured Image */}
-      <div className="relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative h-[400px] md:h-[500px] overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-black">
-            <img
-              src={post.image}
-              alt={post.title}
-              className={`w-full h-full object-cover object-center ${
-                post.id === 2 ? 'beyond-borders-image' : ''
-              }`}
-              style={{
-                objectFit: 'cover',
-                objectPosition: 'center'
-              }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent rounded-2xl"></div>
+      {post.image && (
+        <div className="relative">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative h-[400px] md:h-[500px] overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-black">
+              <img
+                src={post.image}
+                alt={post.title}
+                className={`w-full h-full object-cover object-center ${
+                  post.id === 2 ? 'beyond-borders-image' : ''
+                }`}
+                style={{
+                  objectFit: 'cover',
+                  objectPosition: 'center'
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent rounded-2xl"></div>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* Article Content */}
-      <article className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <article className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${post.image ? 'py-16' : 'py-10'}`}>
         <div className="prose prose-lg prose-invert max-w-none">
           <div 
             className="text-white/90 leading-relaxed"
