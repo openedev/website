@@ -39,7 +39,7 @@ function ContactPage() {
   return (
     <div className="min-h-screen bg-black">
       <Navigation />
-      <main className="pt-20">
+      <main className="pt-[112px]">
         <Contact />
       </main>
       <Footer />

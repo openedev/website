@@ -21,7 +21,7 @@ const BlogPostPage = () => {
     return (
       <div className="min-h-screen bg-black text-white flex items-center justify-center">
         <Navigation />
-        <div className="text-center pt-20">
+        <div className="text-center pt-[112px]">
           <h1 className="text-4xl font-bold mb-4">Post Not Found</h1>
           <p className="text-white/70 mb-8">The blog post you're looking for doesn't exist.</p>
           <a href="/blog" className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-white/90 transition-all duration-200">
@@ -38,7 +38,7 @@ const BlogPostPage = () => {
       <Navigation />
 
       {/* Header */}
-      <div className="bg-black border-b border-white/10 pt-20">
+      <div className="bg-black border-b border-white/10 pt-[112px]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex items-center mb-6">
             <button 
