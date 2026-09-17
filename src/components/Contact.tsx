@@ -74,9 +74,9 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      details: '+91 91000 90959',
+      details: '+91 80500 18725',
       subtitle: '',
-      link: 'tel:+919100090959'
+      link: 'tel:+918050018725'
     },
     {
       icon: MapPin,
