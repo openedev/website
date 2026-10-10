@@ -22,8 +22,8 @@ const Hero = () => {
           </h1>
 
           <p className="text-3xl md:text-4xl lg:text-4xl text-white max-w-3xl font-manrope font-normal leading-snug animate-fadeIn animation-delay-400">
-            <span className="block">Every decision from model, chip, and sensor</span>
-            <span className="block">detect, diagnose and corrects on the device</span>
+            <span className="block">Every wrong decision from model, chip, sensor </span>
+            <span className="block">detected, diagnosed and corrected on-device</span>
           </p>
 
           <div className="mt-6 flex flex-col lg:flex-row lg:items-center max-w-3xl text-xl lg:text-[1.3rem] text-white/80 font-medium animate-fadeIn animation-delay-600">
