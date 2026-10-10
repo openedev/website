@@ -4,12 +4,12 @@ import CorrectionField from './CorrectionField';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-[840px] bg-black overflow-hidden">
+    <section id="home" className="relative min-h-[100svh] bg-black overflow-hidden flex items-center">
       <CorrectionField idPrefix="hero-field" />
 
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.94)_0%,rgba(0,0,0,0.72)_34%,rgba(0,0,0,0.28)_58%,rgba(0,0,0,0.04)_100%)] pointer-events-none" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-80 pb-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
         <div className="max-w-5xl text-left">
           <div className="inline-flex items-center px-5 py-2.5 rounded-full bg-white/10 border border-white/20 text-white text-base md:text-[1.05rem] font-medium mb-4 animate-fadeIn">
             <Zap className="w-[18px] h-[18px] mr-2.5 text-white/70" />
@@ -22,8 +22,8 @@ const Hero = () => {
           </h1>
 
           <p className="text-3xl md:text-4xl lg:text-4xl text-white max-w-4xl font-manrope font-normal leading-tight animate-fadeIn animation-delay-400">
-            <span className="block">Any model, any chip, any physical. Every decision</span>
-            <span className="block">checked, every drift fixed, on the device.</span>
+            <span className="block">Any model, any chip, any sensor. Every decision</span>
+            <span className="block">checked, every drift fixed, on the device</span>
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row sm:items-center max-w-4xl text-lg text-white/80 font-medium animate-fadeIn animation-delay-600">
