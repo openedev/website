@@ -21,7 +21,7 @@ const blog: BlogPost = {
   author: "Jagan Teki",
   date: "2026-08-04",
   readTime: "1 min read",
-  image: "/images/Pitch 118.png",
+  image: "/images/nxp-startup-impact-showcase-2026.jpg",
   tags: ["NXP", "Startup Impact Showcase", "Top 15", "Physical AI"],
   type: "news",
   category: "Recognition",

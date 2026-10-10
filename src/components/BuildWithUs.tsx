@@ -28,7 +28,7 @@ export default function BuildWithUs() {
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="/jobs"
-              className="inline-flex items-center justify-center bg-[#77DB89] text-black hover:bg-white px-6 py-3 rounded-lg font-semibold transition-colors"
+              className="inline-flex items-center justify-center bg-white text-black hover:bg-white/90 px-6 py-3 rounded-lg font-semibold transition-colors"
             >
               <Briefcase className="mr-2 w-4 h-4" />
               View open roles

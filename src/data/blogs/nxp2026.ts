@@ -25,6 +25,12 @@ const blog: BlogPost = {
       Every correction passes independent ground-truth validation gates before it goes live, so the line never has to stop.
     </p>
 
+    <img
+      src="/images/nxp-startup-impact-showcase-2026.jpg"
+      alt="Edgeble and NXP Startup Impact Showcase demonstration booth"
+      class="w-full rounded-xl my-8"
+    />
+
     <h3 class="text-2xl font-bold text-white mb-4 mt-12">
       What we will show live
     </h3>
@@ -38,6 +44,11 @@ const blog: BlogPost = {
       The footage behind the demo comes from our production-proven runtime on Rockchip RK3588.
       The same loop is hardware-agnostic by design, and i.MX 8M Plus is the showcase target, with i.MX 95 (eIQ Neutron) as our next integration.
     </p>
+
+    <video controls preload="metadata" class="w-full rounded-xl my-8">
+      <source src="/videos/imx8mp-self-correct.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
 
     <h3 class="text-2xl font-bold text-white mb-4 mt-12">
       What we have validated
@@ -69,7 +80,7 @@ const blog: BlogPost = {
   author: "Jagan Teki",
   date: "2026-08-11",
   readTime: "2 min read",
-  image: "",
+  image: "/images/nxp-2026-showcase.jpg",
   tags: ["NXP", "i.MX 8M Plus", "Physical AI", "Drift Recovery", "Edge AI"],
   type: "blog",
   category: "Technology",

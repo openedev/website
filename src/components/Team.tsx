@@ -11,7 +11,7 @@ const Team = () => {
     },
     {
       name: 'Srinivas Patnaik',
-      role: 'Co-founder (in-transition)',
+      role: 'Co-founder',
       description: 'Leads Edgeble products and customer adoption.',
       linkedin: 'https://www.linkedin.com/in/srinivassatumahanti',
     },

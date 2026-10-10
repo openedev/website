@@ -13,8 +13,14 @@ import fwd25 from "./fwd25";
 import mphasis from "./mphasis";
 import tie25 from "./tie25";
 import ece23 from "./ece23";
+import embeddedworldChina2026 from "./embeddedworldChina2026";
+import edgeAiTaipei2026 from "./edgeAiTaipei2026";
+import qualcommDragonwing2026 from "./qualcommDragonwing2026";
 
 export const NEW_BLOGS = [
+	qualcommDragonwing2026,
+	edgeAiTaipei2026,
+	embeddedworldChina2026,
 	nxp,
 	ennovatex,
 	curiosity,

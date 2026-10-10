@@ -32,6 +32,12 @@ const BlogPostPage = () => {
     );
   }
 
+  const isNxp2026 = post.slug === 'nxp-2026';
+  const isNxpShowcase = post.slug === 'nxp-startup-impact-showcase-2026';
+  const isEmbeddedWorld = post.slug === 'embeddedworld-china-2026';
+  const isEdgeAiTaipei = post.slug === 'edge-ai-taipei-2026';
+  const isQualcommDragonwing = post.slug === 'edgeble-qualcomm-dragonwing-2026';
+
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
@@ -57,10 +63,10 @@ const BlogPostPage = () => {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-3 leading-tight max-w-4xl">
+          <h1 className="max-w-4xl text-3xl md:text-4xl lg:max-w-none lg:text-[clamp(1.8rem,2.5vw,2.75rem)] lg:whitespace-nowrap lg:overflow-hidden lg:text-ellipsis font-bold text-white mb-3 leading-tight">
             {post.title}
           </h1>
-          <p className="text-lg md:text-xl text-white/70 max-w-4xl leading-relaxed mb-6">
+          <p className="max-w-4xl text-lg md:text-xl lg:max-w-none lg:whitespace-nowrap lg:overflow-hidden lg:text-ellipsis text-white/70 leading-relaxed mb-6">
             {post.excerpt}
           </p>
 
@@ -95,15 +101,27 @@ const BlogPostPage = () => {
       {post.image && (
         <div className="relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="relative h-[400px] md:h-[500px] overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 to-black">
+            <div className={`${isNxpShowcase ? 'max-w-5xl mx-auto' : ''} relative overflow-hidden rounded-2xl ${
+              isNxp2026
+                ? 'aspect-[16/9] md:aspect-[2/1] bg-gradient-to-br from-gray-900 to-black'
+                : isNxpShowcase
+                  ? 'aspect-[5/4] md:aspect-[4/3] bg-white'
+                  : isEmbeddedWorld
+                    ? 'aspect-[1365/519] bg-black'
+                    : isEdgeAiTaipei
+                      ? 'aspect-[1504/724] bg-black'
+                      : isQualcommDragonwing
+                        ? 'aspect-[1531/744] bg-black'
+                  : 'h-[400px] md:h-[500px] bg-gradient-to-br from-gray-900 to-black'
+            }`}>
               <img
                 src={post.image}
                 alt={post.title}
-                className={`w-full h-full object-cover object-center ${
-                  post.id === 2 ? 'beyond-borders-image' : ''
-                }`}
+                className={`w-full h-full object-center ${
+                  isNxpShowcase || isEmbeddedWorld || isEdgeAiTaipei || isQualcommDragonwing ? 'object-contain' : 'object-cover'
+                } ${post.id === 2 ? 'beyond-borders-image' : ''}`}
                 style={{
-                  objectFit: 'cover',
+                  objectFit: isNxpShowcase || isEmbeddedWorld || isEdgeAiTaipei || isQualcommDragonwing ? 'contain' : 'cover',
                   objectPosition: 'center'
                 }}
               />
