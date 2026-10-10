@@ -11,7 +11,7 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
         <div className="max-w-5xl text-left">
-          <div className="inline-flex items-center px-5 py-2.5 rounded-full bg-white/10 border border-white/20 text-white text-base md:text-[1.05rem] font-medium mb-4 animate-fadeIn">
+          <div className="inline-flex items-center px-5 py-2.5 rounded-full bg-white/10 border border-white/20 text-white text-base md:text-[1.05rem] font-medium mb-6 animate-fadeIn">
             <Zap className="w-[18px] h-[18px] mr-2.5 text-white/70" />
             Self-Correcting Runtime Layer
           </div>
