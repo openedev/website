@@ -16,12 +16,12 @@ const Hero = () => {
             Self-Correcting Runtime Layer
           </div>
 
-          <h1 className="text-3xl md:text-4xl lg:text-4xl font-manrope font-normal tracking-tight text-white leading-tight mb-8 animate-fadeIn animation-delay-200">
+          <h1 className="text-3xl md:text-4xl lg:text-4xl font-manrope font-normal tracking-tight text-white leading-snug space-y-2 mb-8 animate-fadeIn animation-delay-200">
             <span className="block">Edgeble keeps deployed Physical AI accurate</span>
             <span className="block">on-device, for the life of the machine</span>
           </h1>
 
-          <p className="text-3xl md:text-4xl lg:text-4xl text-white max-w-4xl font-manrope font-normal leading-tight animate-fadeIn animation-delay-400">
+          <p className="text-3xl md:text-4xl lg:text-4xl text-white max-w-4xl font-manrope font-normal leading-snug animate-fadeIn animation-delay-400">
             <span className="block">Every decision from model, chip, and sensor</span>
             <span className="block">detect, diagnose and corrects on the device</span>
           </p>
