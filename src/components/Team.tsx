@@ -35,11 +35,11 @@ const Team = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
           {team.map((member) => (
             <div key={member.name} className="border border-white/10 bg-white/[0.04] rounded-lg p-7 min-h-[330px] flex flex-col">
-              <div className="w-12 h-12 bg-[#77DB89] text-black rounded-lg flex items-center justify-center mb-6">
+              <div className="w-12 h-12 bg-white text-black rounded-lg flex items-center justify-center mb-6">
                 <Target className="w-6 h-6" />
               </div>
               <h3 className="text-3xl font-bold text-white mb-2">{member.name}</h3>
-              <p className="text-[#77DB89] text-lg font-semibold mb-5">{member.role}</p>
+              <p className="text-white/70 text-lg font-semibold mb-5">{member.role}</p>
               <p className="text-xl text-white/80 leading-relaxed mb-7">{member.description}</p>
               <a
                 href={member.linkedin}

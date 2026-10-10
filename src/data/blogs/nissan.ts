@@ -9,7 +9,7 @@ const blog: BlogPost = {
   Edgeble has been selected as a <strong>winner of the RNTBCI Open Innovation Challenge</strong>, organized by
   <a href="https://rntbci.in" target="_blank" class="underline">Renault Nissan Technology & Business Centre India (RNTBCI)</a>
   and <a href="https://www.nissan-global.com/EN" target="_blank" class="underline">Nissan</a> following a rigorous technical and business evaluation
-  in <span class="text-[#77DB89] font-semibold">Edge AI Accelerator & Orchestration</span> sector.
+  in <span class="text-white/80 font-semibold">Edge AI Accelerator & Orchestration</span> sector.
 
   <p class="text-xl mb-6">
   The challenge recognized Edgeble’s work in building <strong>self-learning edge intelligence</strong> designed to operate

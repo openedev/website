@@ -35,7 +35,7 @@ const CompaniesAndSolutions = () => {
             const IconComponent = step.icon;
             return (
               <div key={step.label} className="border border-white/10 bg-white/[0.04] rounded-lg p-5">
-                <IconComponent className="w-6 h-6 text-[#77DB89] mb-4" />
+                <IconComponent className="w-6 h-6 text-white/70 mb-4" />
                 <h3 className="text-white font-semibold text-lg">{step.label}</h3>
               </div>
             );
@@ -46,8 +46,8 @@ const CompaniesAndSolutions = () => {
           {layers.map((layer) => {
             const IconComponent = layer.icon;
             return (
-              <div key={layer.title} className="border-l border-[#77DB89] bg-white/[0.03] px-6 py-5">
-                <IconComponent className="w-6 h-6 text-[#77DB89] mb-4" />
+              <div key={layer.title} className="border-l border-white/20 bg-white/[0.03] px-6 py-5">
+                <IconComponent className="w-6 h-6 text-white/70 mb-4" />
                 <h3 className="text-2xl font-semibold text-white mb-3">{layer.title}</h3>
                 <p className="text-white/70 leading-relaxed">{layer.detail}</p>
               </div>

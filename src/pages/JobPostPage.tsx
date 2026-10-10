@@ -48,19 +48,19 @@ export default function JobPostPage() {
             </button>
           </div>
 
-          <p className="text-sm uppercase tracking-[0.2em] text-[#77DB89] mb-5 font-medium">
+          <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
             JOB OPENING
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-[#77DB89] mb-5 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-5 leading-tight">
             {job.title}
           </h1>
           <div className="flex flex-wrap gap-4 text-white/70 text-sm font-medium">
             <span className="inline-flex items-center gap-2">
-              <Clock className="w-4 h-4 text-[#77DB89]" />
+              <Clock className="w-4 h-4 text-white/60" />
               {job.type}
             </span>
             <span className="inline-flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-[#77DB89]" />
+              <MapPin className="w-4 h-4 text-white/60" />
               {job.location}
             </span>
           </div>

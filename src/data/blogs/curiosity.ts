@@ -7,7 +7,7 @@ const blog: BlogPost = {
     "Edgeble won Curiosity 2026 by South Park Commons India and ARTPARK/IISc Bangalore in the Physical AI category.",
   content: `
     <p class="text-xl mb-6">
-      Edgeble won <strong>Curiosity 2026</strong> by South Park Commons India and ARTPARK/IISc Bangalore in the <span class="text-[#77DB89] font-semibold">Physical AI</span> category.
+      Edgeble won <strong>Curiosity 2026</strong> by South Park Commons India and ARTPARK/IISc Bangalore in the <span class="text-white/80 font-semibold">Physical AI</span> category.
     </p>
 
     <img

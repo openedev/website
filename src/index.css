@@ -12,7 +12,8 @@ body {
   }
   
   body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+    font-weight: 500;
     background-color: #000000;
     color: #ffffff;
   }

@@ -20,7 +20,7 @@ export default function JobsPage() {
               Back
             </button>
           </div>
-          <p className="text-sm uppercase tracking-[0.2em] text-[#77DB89] mb-5 font-medium">
+          <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
             JOBS
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -37,21 +37,21 @@ export default function JobsPage() {
           {JOB_OPENINGS.map((job) => (
             <article
               key={job.slug}
-              className="border border-white/10 bg-white/[0.04] rounded-lg p-7 hover:border-[#77DB89]/70 transition-colors"
+              className="border border-white/10 bg-white/[0.04] rounded-lg p-7 hover:border-white/30 transition-colors"
             >
               <div className="flex flex-col lg:flex-row lg:items-start gap-6">
-                <div className="h-12 w-12 shrink-0 rounded-lg bg-[#77DB89] text-black flex items-center justify-center">
+                <div className="h-12 w-12 shrink-0 rounded-lg bg-white text-black flex items-center justify-center">
                   <Briefcase className="w-6 h-6" />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <h2 className="text-3xl font-semibold text-[#77DB89] mb-3">{job.title}</h2>
+                  <h2 className="text-3xl font-semibold text-white mb-3">{job.title}</h2>
                   <div className="flex flex-wrap gap-3 mb-4 text-sm font-medium text-white/70">
                     <span className="inline-flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-[#77DB89]" />
+                      <Clock className="w-4 h-4 text-white/60" />
                       {job.type}
                     </span>
                     <span className="inline-flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-[#77DB89]" />
+                      <MapPin className="w-4 h-4 text-white/60" />
                       {job.location}
                     </span>
                   </div>
@@ -65,7 +65,7 @@ export default function JobsPage() {
                   </div>
                   <a
                     href={`/jobs/${job.slug}`}
-                    className="inline-flex items-center text-white hover:text-[#77DB89] font-semibold transition-colors"
+                    className="inline-flex items-center text-white/80 hover:text-white font-semibold transition-colors"
                   >
                     View role
                     <ArrowRight className="ml-2 w-4 h-4" />

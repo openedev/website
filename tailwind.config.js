@@ -4,11 +4,18 @@ export default {
   theme: {
     extend: {
       maxWidth: {
-        '7xl': '85rem', // Reduced from 90rem to 85rem (approximately 17cm)
+        '7xl': '96rem',
+      },
+      fontWeight: {
+        light: '300',
+        normal: '400',
+        medium: '500',
+        semibold: '500',
+        bold: '500',
       },
       fontFamily: {
-	sans: ['Manrope', 'sans-serif'],
-	manrope: ['Manrope', 'sans-serif'],
+        sans: ['Manrope', 'sans-serif'],
+        manrope: ['Manrope', 'sans-serif'],
       },
     },
   },
