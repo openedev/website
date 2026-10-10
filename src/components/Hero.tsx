@@ -26,10 +26,10 @@ const Hero = () => {
             <span className="block">detected, diagnosed and corrected on-device</span>
           </p>
 
-          <div className="mt-6 flex flex-col lg:flex-row lg:items-center max-w-3xl text-xl lg:text-[1.3rem] text-white/80 font-medium animate-fadeIn animation-delay-600">
-            <span className="pb-3 lg:pb-0 lg:pr-6">50% fewer people watching the AI</span>
-            <span className="border-t lg:border-t-0 lg:border-l border-white/30 py-3 lg:py-0 lg:px-6">30% fewer wrong decisions</span>
-            <span className="border-t lg:border-t-0 lg:border-l border-white/30 pt-3 lg:pt-0 lg:pl-6">0 line or robot stops</span>
+          <div className="mt-6 flex flex-col md:flex-row md:items-center max-w-3xl text-lg lg:text-[1.25rem] text-white/80 font-medium animate-fadeIn animation-delay-600">
+            <span className="pb-3 md:pb-0 md:pr-3 md:whitespace-nowrap">50% fewer people watching the AI</span>
+            <span className="border-t md:border-t-0 md:border-l border-white/30 py-3 md:py-0 md:px-3 md:whitespace-nowrap">30% fewer wrong decisions</span>
+            <span className="border-t md:border-t-0 md:border-l border-white/30 pt-3 md:pt-0 md:pl-3 md:whitespace-nowrap">0 line or robot stops</span>
           </div>
         </div>
       </div>
