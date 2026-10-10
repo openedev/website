@@ -28,21 +28,6 @@ const FeaturedUpdates = () => {
             </p>
           </a>
 
-          {/* Additional Highlight - NXP i.MX */}
-          <a
-            href="/blog/nxp-2026"
-            className="group relative rounded-2xl border border-white/10 bg-white/3 p-8 hover:border-white/30 transition-all"
-          >
-            <h3 className="text-2xl font-semibold text-white mb-3 flex items-center gap-3">
-              <span>Self-Correcting Physical AI on NXP i.MX</span>
-              <ArrowRight className="w-5 h-5 text-white/80 group-hover:translate-x-1 transition-transform flex-shrink-0" />
-            </h3>
-
-            <p className="text-xl leading-relaxed">
-              Live drift recovery on i.MX 8M Plus at the NXP Startup Impact Showcase on Sept 15.
-            </p>
-          </a>
-
         </div>
       </div>
     </section>
