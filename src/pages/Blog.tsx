@@ -34,7 +34,7 @@ const BlogPage = () => {
             Blog
           </h1>
           <p className="text-xl text-white max-w-3xl">
-            Stay updated with latest in-depth technology enablements.
+            Read Edgeble's latest writing, announcements, and event updates.
           </p>
         </div>
       </div>
@@ -42,9 +42,7 @@ const BlogPage = () => {
       {/* Blog Posts Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-	  {ALL_BLOGS
-		  .filter(post => post.type === "blog")
-		  .map((post, index) => (
+	  {ALL_BLOGS.map((post, index) => (
             <div key={post.id} className="group bg-white/5 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-white/10 hover:border-white/20">
               {post.image ? (
                 <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-900 to-black">

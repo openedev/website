@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import FeaturedUpdates from './components/FeaturedUpdates';
@@ -13,7 +13,6 @@ import Footer from './components/Footer';
 import ContactEngineers from './pages/ContactEngineers';
 import Blog from './pages/Blog';
 import BlogPostPage from './pages/BlogPostPage';
-import News from './pages/News';
 import JobsPage from './pages/JobsPage';
 import JobPostPage from './pages/JobPostPage';
 
@@ -56,7 +55,7 @@ function App() {
         <Route path="/contact-engineers" element={<ContactEngineers />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
-        <Route path="/news" element={<News />} />
+        <Route path="/news" element={<Navigate to="/blog" replace />} />
         <Route path="/news/:slug" element={<BlogPostPage />} />
         <Route path="/jobs" element={<JobsPage />} />
         <Route path="/jobs/:slug" element={<JobPostPage />} />

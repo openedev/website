@@ -36,12 +36,6 @@ const WhatsNew = () => {
               View Blog
             </a>
             
-	    <a 
-              href="/news"
-              className="bg-white/10 text-white hover:bg-white/20 border border-white/30 px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105"
-            >
-              View News
-            </a>
           </div>
         </div>
 
@@ -92,7 +86,7 @@ const WhatsNew = () => {
                   </div>
                   <p className="text-white mb-4 leading-relaxed">{item.excerpt}</p>
                   <a 
-                    href={`/${item.type}/${item.slug}`}
+                    href={`/blog/${item.slug}`}
                     className="flex items-center text-white hover:text-white/70 font-semibold transition-all duration-200 group"
                   >
                     Read More

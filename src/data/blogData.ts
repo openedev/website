@@ -410,25 +410,4 @@ export const blogPostsData: BlogPost[] = [
       tags: ['NPU', 'Architecture', 'Performance'],
       category: 'Technology'
     },
-    {
-      id: 25,
-      title: 'Edgeble at Indian Mobile Congress 2023',
-      slug: 'mobile-congress',
-      excerpt: 'Summary of our participation at Indian Mobile Congress 2023.',
-      content: `
-        <p>Deploying AI in industrial environments presents unique challenges that require careful consideration of reliability, safety, and performance requirements. Here are the key lessons we've learned.</p>
-        
-        <h3>Environmental Considerations</h3>
-        <p>Industrial environments demand ruggedized solutions that can operate reliably in extreme temperatures, vibration, and electromagnetic interference conditions.</p>
-        
-        <h3>Safety First</h3>
-        <p>Safety-critical applications require redundant systems, fail-safe mechanisms, and compliance with industry standards such as ISO 26262 for automotive applications.</p>
-      `,
-      author: 'Jagan Teki',
-      date: '2023-10-25',
-      readTime: '7 min read',
-      image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['Industrial', 'Deployment', 'Best Practices'],
-      category: 'Industry'
-    },
   ];

@@ -6,13 +6,15 @@ const Team = () => {
     {
       name: 'Jagan Teki',
       role: 'Founder',
-      description: 'Leads Edgeble products and architecture.',
+      headline: 'Leads Model, Compute Correction architecture',
+      description: '19+ Years Embedded/Silicon - RISC-V, LPDDR, Linux Kernel, U-Boot Maintainer, 5 Patents (1 published, 4 filed)',
       linkedin: 'https://in.linkedin.com/in/jaganteki',
     },
     {
       name: 'Srinivas Patnaik',
       role: 'Co-founder',
-      description: 'Leads Edgeble products and customer adoption.',
+      headline: 'Leads Physical Systems Correction and customer adoption',
+      description: '18+ Years Automotive/Mechatronics/Edge AI products - Eastern Michigan University, ISB, 3 USA Patents',
       linkedin: 'https://www.linkedin.com/in/srinivassatumahanti',
     },
   ];
@@ -22,13 +24,13 @@ const Team = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-14">
           <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
-            OUR TEAM
+            TEAM
           </p>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-5 leading-tight">
-            Building Self-Correction Runtime for Physical AI
+            Cross-layer founders
           </h2>
           <p className="text-xl md:text-2xl text-white/120 leading-relaxed">
-            Edgeble's founders bring embedded and silicon systems, physical-system engineering, AI deployment, and startup experience: the rare cross-layer depth needed for self-correcting Physical AI.
+            model, silicon, physical systems, and the runtime between them.
           </p>
         </div>
 
@@ -40,7 +42,14 @@ const Team = () => {
               </div>
               <h3 className="text-3xl font-bold text-white mb-2">{member.name}</h3>
               <p className="text-white/70 text-lg font-semibold mb-5">{member.role}</p>
-              <p className="text-xl text-white/80 leading-relaxed mb-7">{member.description}</p>
+              <p className="text-xl text-white/80 leading-relaxed mb-7">
+                {member.headline && (
+                  <span className="block font-semibold">
+                    {member.headline}
+                  </span>
+                )}
+                <span className="block font-light whitespace-pre-line">{member.description}</span>
+              </p>
               <a
                 href={member.linkedin}
                 target="_blank"

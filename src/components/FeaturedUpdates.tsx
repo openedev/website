@@ -8,7 +8,7 @@ const FeaturedUpdates = () => {
 
           {/* Primary Highlight - EmbeddedWorld China */}
           <a
-            href="/news/embeddedworld-china-2026"
+            href="/blog/embeddedworld-china-2026"
             className="group relative rounded-2xl border border-white/15 bg-white/5 p-8 hover:border-white/30 transition-all"
           >
             <p className="text-2xl font-semibold text-white leading-relaxed flex items-center gap-3">

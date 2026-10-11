@@ -28,7 +28,7 @@ const Footer = () => {
       { name: 'Team', href: '#team' },
       { name: 'Jobs', href: '/jobs' },
       { name: 'Build with us', href: '/#build-with-us' },
-      { name: 'News & Blogs', href: '/news' },
+      { name: 'Blog', href: '/blog' },
       { name: 'Contact', href: '/contact' },
     ],
   };
@@ -118,7 +118,7 @@ const Footer = () => {
           <div className="md:justify-self-center md:text-left">
             <button
               onClick={handleLogoClick}
-              className="text-[2.5rem] font-manrope font-medium tracking-tight text-white hover:text-white/90 transition-colors duration-200"
+              className="text-[2.5rem] font-manrope font-normal tracking-tight text-white hover:text-white/90 transition-colors duration-200"
             >
               edgeble
             </button>

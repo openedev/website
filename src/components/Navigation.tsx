@@ -20,7 +20,6 @@ const Navigation = () => {
     { name: 'Customers', href: '#customers' },
     { name: 'Jobs', href: '/jobs', highlight: true },
     { name: 'Blog', href: '/blog' },
-    { name: 'News', href: '/news' },
   ];
 
   const handleNavigation = (href: string) => {
@@ -68,7 +67,7 @@ const Navigation = () => {
       <div className="block border-b border-white/10 bg-black/95 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-9 flex items-center justify-center gap-4 overflow-x-auto whitespace-nowrap text-xs sm:text-sm font-medium tracking-wide">
           <a
-            href="/news/embeddedworld-china-2026"
+            href="/blog/embeddedworld-china-2026"
             className="inline-flex items-center gap-2 flex-shrink-0 hover:text-white/90 transition-colors"
           >
             <span className="relative flex h-2.5 w-2.5">
@@ -101,7 +100,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           <button
             onClick={handleLogoClick}
-            className="text-[2.5rem] font-manrope font-medium tracking-tight text-white hover:text-white/90 transition-colors duration-200"
+            className="text-[2.5rem] font-manrope font-normal tracking-tight text-white hover:text-white/90 transition-colors duration-200"
           >
             edgeble
           </button>
