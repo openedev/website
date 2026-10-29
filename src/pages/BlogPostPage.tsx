@@ -56,10 +56,10 @@ const BlogPostPage = () => {
             </span>
           </div>
 
-          <h1 className="max-w-4xl text-3xl md:text-4xl lg:max-w-none lg:text-[clamp(1.8rem,2.5vw,2.75rem)] lg:whitespace-nowrap lg:overflow-hidden lg:text-ellipsis font-bold text-white mb-3 leading-tight">
+          <h1 className="max-w-4xl text-3xl md:text-4xl lg:max-w-none lg:text-[clamp(1.8rem,2.5vw,2.75rem)] break-words font-bold text-white mb-3 leading-tight">
             {post.title}
           </h1>
-          <p className="max-w-4xl text-lg md:text-xl lg:max-w-none lg:whitespace-nowrap lg:overflow-hidden lg:text-ellipsis text-white/70 leading-relaxed mb-6">
+          <p className="max-w-4xl text-lg md:text-xl lg:max-w-none break-words text-white/70 leading-relaxed mb-6">
             {post.excerpt}
           </p>
 
@@ -88,7 +88,7 @@ const BlogPostPage = () => {
                   : isQualcommDragonwing
                     ? 'aspect-[8/5] bg-black'
                   : isEmbeddedWorld
-                    ? 'aspect-[1365/519] bg-site'
+                    ? 'aspect-[16/9] bg-site'
                     : isEdgeAiTaipei
                       ? 'aspect-[1504/724] bg-site'
                   : 'h-[400px] md:h-[500px] bg-gradient-to-br from-gray-900 to-black'
