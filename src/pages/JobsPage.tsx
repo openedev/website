@@ -6,10 +6,10 @@ import { JOB_OPENINGS } from '../data/jobs';
 
 export default function JobsPage() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-site text-white">
       <Navigation />
 
-      <div className="bg-black border-b border-white/10 pt-[112px]">
+      <div className="bg-site border-b border-white/10 pt-[112px]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex items-center mb-6">
             <button
@@ -58,7 +58,7 @@ export default function JobsPage() {
                   <p className="text-lg text-white/75 leading-relaxed mb-5">{job.summary}</p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {job.tags.map((tag) => (
-                      <span key={tag} className="border border-white/10 bg-black px-3 py-1.5 text-sm text-white/70 rounded">
+                      <span key={tag} className="border border-white/10 bg-site px-3 py-1.5 text-sm text-white/70 rounded">
                         {tag}
                       </span>
                     ))}

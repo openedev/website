@@ -19,7 +19,7 @@ export default function JobPostPage() {
 
   if (!job) {
     return (
-      <div className="min-h-screen bg-black text-white flex items-center justify-center">
+      <div className="min-h-screen bg-site text-white flex items-center justify-center">
         <Navigation />
         <div className="text-center pt-[112px] px-6">
           <h1 className="text-4xl font-bold mb-4">Role Not Found</h1>
@@ -33,10 +33,10 @@ export default function JobPostPage() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-site text-white">
       <Navigation />
 
-      <div className="bg-black border-b border-white/10 pt-[112px]">
+      <div className="bg-site border-b border-white/10 pt-[112px]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex items-center mb-6">
             <button

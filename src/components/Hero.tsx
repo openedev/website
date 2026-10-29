@@ -4,7 +4,7 @@ import CorrectionField from './CorrectionField';
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-[100svh] bg-black overflow-hidden flex items-center">
+    <section id="home" className="relative min-h-[100svh] bg-site overflow-hidden flex items-center">
       <CorrectionField idPrefix="hero-field" />
 
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.94)_0%,rgba(0,0,0,0.72)_34%,rgba(0,0,0,0.28)_58%,rgba(0,0,0,0.04)_100%)] pointer-events-none" />

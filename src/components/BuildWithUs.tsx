@@ -4,7 +4,7 @@ import CorrectionField from './CorrectionField';
 
 export default function BuildWithUs() {
   return (
-    <section id="build-with-us" className="relative min-h-[720px] overflow-hidden bg-black py-28 border-t border-white/10">
+    <section id="build-with-us" className="relative min-h-[720px] overflow-hidden bg-site py-28 border-t border-white/10">
       <CorrectionField idPrefix="build-field" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.98)_0%,rgba(0,0,0,0.92)_38%,rgba(0,0,0,0.58)_68%,rgba(0,0,0,0.22)_100%)] pointer-events-none" />
 

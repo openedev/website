@@ -64,7 +64,7 @@ const Navigation = () => {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
-      <div className="block border-b border-white/10 bg-black/95 text-white">
+      <div className="block border-b border-white/10 bg-site text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-9 flex items-center justify-center gap-4 overflow-x-auto whitespace-nowrap text-xs sm:text-sm font-medium tracking-wide">
           <a
             href="/blog/embeddedworld-china-2026"
@@ -94,7 +94,7 @@ const Navigation = () => {
         </div>
       </div>
       <nav className={`transition-all duration-300 ${
-      isScrolled ? 'bg-black/95 backdrop-blur-md border-b border-white/10' : 'bg-black/90 backdrop-blur-md border-b border-white/10'
+      isScrolled ? 'bg-site border-b border-white/10' : 'bg-site border-b border-white/10'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -145,7 +145,7 @@ const Navigation = () => {
       </div>
 
       {isOpen && (
-        <div className="lg:hidden bg-black/95 backdrop-blur-md border-b border-white/10">
+        <div className="lg:hidden bg-site border-b border-white/10">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               <button

@@ -19,7 +19,7 @@ const BlogPostPage = () => {
 
   if (!post) {
     return (
-      <div className="min-h-screen bg-black text-white flex items-center justify-center">
+      <div className="min-h-screen bg-site text-white flex items-center justify-center">
         <Navigation />
         <div className="text-center pt-[112px]">
           <h1 className="text-4xl font-bold mb-4">Post Not Found</h1>
@@ -39,12 +39,12 @@ const BlogPostPage = () => {
   const isQualcommDragonwing = post.slug === 'edgeble-qualcomm-dragonwing-2026';
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-site text-white">
       {/* Navigation */}
       <Navigation />
 
       {/* Header */}
-      <div className="bg-black border-b border-white/10 pt-[112px]">
+      <div className="bg-site border-b border-white/10 pt-[112px]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex items-center mb-6">
             <button 
@@ -107,11 +107,11 @@ const BlogPostPage = () => {
                 : isNxpShowcase
                   ? 'aspect-[5/4] md:aspect-[4/3] bg-white'
                   : isEmbeddedWorld
-                    ? 'aspect-[1365/519] bg-black'
+                    ? 'aspect-[1365/519] bg-site'
                     : isEdgeAiTaipei
-                      ? 'aspect-[1504/724] bg-black'
+                      ? 'aspect-[1504/724] bg-site'
                       : isQualcommDragonwing
-                        ? 'aspect-[1531/744] bg-black'
+                      ? 'aspect-[1531/744] bg-site'
                   : 'h-[400px] md:h-[500px] bg-gradient-to-br from-gray-900 to-black'
             }`}>
               <img

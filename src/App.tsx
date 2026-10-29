@@ -18,7 +18,7 @@ import JobPostPage from './pages/JobPostPage';
 
 function HomePage() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-site">
       <Navigation />
       <main>
         <Hero />
@@ -36,7 +36,7 @@ function HomePage() {
 
 function ContactPage() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-site">
       <Navigation />
       <main className="pt-[112px]">
         <Contact />
@@ -59,9 +59,9 @@ function App() {
         <Route path="/news/:slug" element={<BlogPostPage />} />
         <Route path="/jobs" element={<JobsPage />} />
         <Route path="/jobs/:slug" element={<JobPostPage />} />
-        <Route path="/products/runtime" element={<div className="min-h-screen bg-black text-white flex items-center justify-center px-6 text-center"><h1 className="text-4xl">Edgeble Runtime Engine - Coming Soon</h1></div>} />
-        <Route path="/products/module" element={<div className="min-h-screen bg-black text-white flex items-center justify-center px-6 text-center"><h1 className="text-4xl">Edgeble Runtime Module - Coming Soon</h1></div>} />
-        <Route path="/products/npu" element={<div className="min-h-screen bg-black text-white flex items-center justify-center px-6 text-center"><h1 className="text-4xl">On-device Physical AI Runtime - Coming Soon</h1></div>} />
+        <Route path="/products/runtime" element={<div className="min-h-screen bg-site text-white flex items-center justify-center px-6 text-center"><h1 className="text-4xl">Edgeble Runtime Engine - Coming Soon</h1></div>} />
+        <Route path="/products/module" element={<div className="min-h-screen bg-site text-white flex items-center justify-center px-6 text-center"><h1 className="text-4xl">Edgeble Runtime Module - Coming Soon</h1></div>} />
+        <Route path="/products/npu" element={<div className="min-h-screen bg-site text-white flex items-center justify-center px-6 text-center"><h1 className="text-4xl">On-device Physical AI Runtime - Coming Soon</h1></div>} />
       </Routes>
     </Router>
   );

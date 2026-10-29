@@ -14,12 +14,12 @@ const BlogPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-site text-white">
       {/* Navigation */}
       <Navigation />
 
       {/* Header */}
-      <div className="bg-black border-b border-white/10 pt-[112px]">
+      <div className="bg-site border-b border-white/10 pt-[112px]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex items-center mb-6">
             <button 
@@ -75,7 +75,7 @@ const BlogPage = () => {
                   </div>
                 </div>
               ) : (
-                <div className="relative border-b border-white/10 bg-black p-6 md:p-8">
+                <div className="relative border-b border-white/10 bg-site p-6 md:p-8">
                   <div className="flex items-start justify-between gap-4 mb-6">
                     <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white text-black shadow-lg">
                       {post.category}

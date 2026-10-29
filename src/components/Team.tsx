@@ -20,7 +20,7 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-24 bg-black">
+    <section id="team" className="py-24 bg-site">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-14">
           <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
