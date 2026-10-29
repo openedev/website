@@ -34,19 +34,26 @@ export default function FAQ() {
   return (
     <section id="faq" className="bg-site py-24 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mb-14">
-          <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
-            FAQ
-          </p>
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-5 leading-tight">
-            What customers ask before deploying.
-          </h2>
-          <p className="text-xl md:text-2xl text-white/80 leading-relaxed">
-            Practical answers about where Edgeble Runtime fits, how it integrates, and what self-correction changes in the field.
-          </p>
-        </div>
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.25fr)] lg:items-start lg:gap-20">
+          <div className="max-w-xl mb-12 lg:mb-0">
+            <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
+              FAQ
+            </p>
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-5 leading-tight">
+              What customers ask before deploying.
+            </h2>
+            <p className="text-xl md:text-2xl text-white/80 leading-relaxed">
+              How Edgeble fits your AI, corrects the claim, protects data, and helps your Physical AI accurate for the life of the machine.
+            </p>
+            <a
+              href="mailto:info@edgeble.ai"
+              className="mt-8 inline-flex items-center justify-center bg-white text-black hover:bg-white/90 px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
+              Talk to Founders
+            </a>
+          </div>
 
-        <div className="w-full border-y border-white/10">
+          <div className="w-full border-y border-white/10">
           {faqs.map((item, index) => {
             const isOpen = openIndex === index;
             const answerId = `faq-answer-${index}`;
@@ -79,6 +86,7 @@ export default function FAQ() {
               </div>
             );
           })}
+          </div>
         </div>
 
       </div>

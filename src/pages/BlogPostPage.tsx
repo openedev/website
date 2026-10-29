@@ -1,16 +1,9 @@
 import React from 'react';
 import { ALL_BLOGS } from "../data/allBlogs";
-import { Calendar, User, ArrowLeft, Clock, Tag, Share2, Linkedin, Twitter } from 'lucide-react';
+import { Calendar, ArrowLeft, Clock, Tag } from 'lucide-react';
 import { useParams } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-
-const getInitials = (name: string) =>
-  name
-    .split(" ")
-    .map((n) => n[0])
-    .join("")
-    .toUpperCase();
 
 const BlogPostPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -74,25 +67,11 @@ const BlogPostPage = () => {
           <div className="flex flex-wrap items-center text-white/60 text-sm mb-8 gap-4">
             <div className="flex items-center">
               <Calendar className="w-4 h-4 mr-2" />
-              <span>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+              <span>Publish {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
             </div>
             <div className="flex items-center">
               <Clock className="w-4 h-4 mr-2" />
               <span>{post.readTime}</span>
-            </div>
-            <div className="flex items-center">
-              <Share2 className="w-4 h-4 mr-2" />
-              <span>Share</span>
-            </div>
-          </div>
-
-          {/* Author Info */}
-          <div className="flex items-center mb-8">
-	    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white font-semibold mr-4">
-	    	{getInitials(post.author)}
-	    </div>
-            <div>
-              <div className="font-semibold text-white">{post.author}</div>
             </div>
           </div>
         </div>
@@ -114,17 +93,30 @@ const BlogPostPage = () => {
                       ? 'aspect-[1531/744] bg-site'
                   : 'h-[400px] md:h-[500px] bg-gradient-to-br from-gray-900 to-black'
             }`}>
-              <img
-                src={post.image}
-                alt={post.title}
-                className={`w-full h-full object-center ${
-                  isNxpShowcase || isEmbeddedWorld || isEdgeAiTaipei || isQualcommDragonwing ? 'object-contain' : 'object-cover'
-                } ${post.id === 2 ? 'beyond-borders-image' : ''}`}
-                style={{
-                  objectFit: isNxpShowcase || isEmbeddedWorld || isEdgeAiTaipei || isQualcommDragonwing ? 'contain' : 'cover',
-                  objectPosition: 'center'
-                }}
-              />
+              {isNxp2026 ? (
+                <video
+                  src="/videos/imx8mp-self-correct.mp4"
+                  poster={post.image}
+                  aria-label={post.title}
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                />
+              ) : (
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className={`w-full h-full object-center ${
+                    isNxpShowcase || isEmbeddedWorld || isEdgeAiTaipei || isQualcommDragonwing ? 'object-contain' : 'object-cover'
+                  } ${post.id === 2 ? 'beyond-borders-image' : ''}`}
+                  style={{
+                    objectFit: isNxpShowcase || isEmbeddedWorld || isEdgeAiTaipei || isQualcommDragonwing ? 'contain' : 'cover',
+                    objectPosition: 'center'
+                  }}
+                />
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent rounded-2xl"></div>
             </div>
           </div>
@@ -158,35 +150,6 @@ const BlogPostPage = () => {
           </div>
         </div>
 
-        {/* Share Buttons */}
-        <div className="mt-12 pt-8 border-t border-white/10">
-          <h4 className="text-lg font-semibold text-white mb-4">Share this article</h4>
-          <div className="flex space-x-4">
-            <button className="flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors">
-              <Linkedin className="w-4 h-4 mr-2" />
-              LinkedIn
-            </button>
-            <button className="flex items-center px-4 py-2 bg-blue-400 hover:bg-blue-500 rounded-lg transition-colors">
-              <Twitter className="w-4 h-4 mr-2" />
-              Twitter
-            </button>
-          </div>
-        </div>
-
-        {/* Author Bio */}
-        <div className="mt-12 p-6 bg-white/5 rounded-2xl border border-white/10">
-          <div className="flex items-start space-x-4">
-	    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white font-semibold mr-4">
-	    	{getInitials(post.author)}
-	    </div>
-            <div>
-              <h4 className="text-lg font-semibold text-white mb-1">{post.author}</h4>
-              <p className="text-white/80 text-sm">
-                {post.author} is Founder & CEO of Edgeble, building self-correcting runtime infrastructure for Physical AI.
-              </p>
-            </div>
-          </div>
-        </div>
       </article>
 
       <Footer />

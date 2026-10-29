@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Github, ArrowRight } from 'lucide-react';
+import { Linkedin, Twitter, Github } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
@@ -15,19 +15,17 @@ const Footer = () => {
 
   const footerLinks = {
     products: [
-      { name: 'Self-Correcting Runtime', href: '/#correction-stack' },
-      { name: 'Self-Correcting Compute', href: '/#correction-stack' },
+      { name: 'Correction API, Platform', href: '/#correction-stack' },
+      { name: 'Correction Compute, Orchestration', href: '/#correction-stack' },
     ],
     solutions: [
       { name: 'Industrial', href: '#' },
       { name: 'Automotive', href: '#' },
-      { name: 'Quality Inspection', href: '#' },
-      { name: 'Autonomy Perception', href: '#' },
+      { name: 'Robotics', href: '#' },
     ],
     company: [
       { name: 'Team', href: '#team' },
       { name: 'Jobs', href: '/jobs' },
-      { name: 'Build with us', href: '/#build-with-us' },
       { name: 'Blog', href: '/blog' },
       { name: 'Contact', href: '/contact' },
     ],
@@ -35,31 +33,6 @@ const Footer = () => {
 
   return (
     <footer className="bg-site text-white">
-      {/* Newsletter Section */}
-      <div className="border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-2xl font-bold mb-2">Stay Updated</h3>
-              <p className="text-white/70">
-                Get updates on Physical AI runtime deployments, product releases, and field learnings.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                className="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent"
-              />
-              <button className="bg-white text-black hover:bg-white/90 px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center whitespace-nowrap">
-                Subscribe
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
