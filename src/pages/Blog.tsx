@@ -5,6 +5,15 @@ import Footer from '../components/Footer';
 import { ALL_BLOGS } from "../data/allBlogs";
 
 const BlogPage = () => {
+  React.useEffect(() => {
+    const previousTitle = document.title;
+    document.title = 'Research | Edgeble';
+
+    return () => {
+      document.title = previousTitle;
+    };
+  }, []);
+
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString('en-US', {
       year: 'numeric',
@@ -31,10 +40,10 @@ const BlogPage = () => {
             </button>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Blog
+            Research
           </h1>
           <p className="text-xl text-white max-w-3xl">
-            Read Edgeble's latest writing, announcements, and event updates.
+            Latest research, announcements, and events
           </p>
         </div>
       </div>

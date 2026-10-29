@@ -85,18 +85,18 @@ const BlogPostPage = () => {
                 ? 'aspect-[16/9] md:aspect-[2/1] bg-gradient-to-br from-gray-900 to-black'
                 : isNxpShowcase
                   ? 'aspect-[5/4] md:aspect-[4/3] bg-white'
+                  : isQualcommDragonwing
+                    ? 'aspect-[8/5] bg-black'
                   : isEmbeddedWorld
                     ? 'aspect-[1365/519] bg-site'
                     : isEdgeAiTaipei
                       ? 'aspect-[1504/724] bg-site'
-                      : isQualcommDragonwing
-                      ? 'aspect-[1531/744] bg-site'
                   : 'h-[400px] md:h-[500px] bg-gradient-to-br from-gray-900 to-black'
             }`}>
-              {isNxp2026 ? (
+              {isNxp2026 || isQualcommDragonwing ? (
                 <video
-                  src="/videos/imx8mp-self-correct.mp4"
-                  poster={post.image}
+                  src={isNxp2026 ? '/videos/imx8mp-self-correct.mp4' : '/videos/qualcomm-dragonwing-self-correction.mp4'}
+                  poster={isNxp2026 ? post.image : undefined}
                   aria-label={post.title}
                   className="w-full h-full object-cover"
                   autoPlay
