@@ -127,6 +127,11 @@ const blog: BlogPost = {
     <p class="text-xl mb-6">
       The talk was presented by Jagan Teki, Founder and CEO of Edgeble AI, with Srinivas Patnaik, Co-founder and Head of Physical Systems, as co-author. The full presentation connects production quality inspection, embedded runtime design, and the next generation of heterogeneous edge silicon.
     </p>
+
+    <figure class="my-10">
+      <img src="/images/embeddedworld/ewc-2026-conference.jpg" alt="Jagan Teki presenting Edgeble's self-correction talk at EmbeddedWorld China 2026" class="w-full rounded-xl" loading="lazy" />
+      <figcaption class="text-sm text-white/60 mt-3">Edgeble presenting the self-correction runtime at EmbeddedWorld China 2026.</figcaption>
+    </figure>
   `,
   author: "Jagan Teki",
   date: "2026-10-15",

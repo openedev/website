@@ -16,7 +16,7 @@ const Footer = () => {
   const footerLinks = {
     products: [
       { name: 'Correction API, Platform', href: '/#correction-stack' },
-      { name: 'Correction Compute, Orchestration', href: '/#correction-stack' },
+      { name: 'Correction Hardware, Orchestration', href: '/#correction-stack' },
     ],
     solutions: [
       { name: 'Industrial', href: '#' },
