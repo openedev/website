@@ -14,20 +14,16 @@ const Hero = () => {
         <div className="w-full mx-auto text-center">
           <div className="inline-flex items-center px-5 py-2.5 rounded-full bg-white/10 border border-white/20 text-white text-base md:text-[1.05rem] font-medium mb-6 animate-fadeIn">
             <Zap className="w-[18px] h-[18px] mr-2.5 text-white/70" />
-            Self-Correcting Runtime Layer
+            Runtime layer between AI and physical world
           </div>
 
-          <h1 className="text-2xl sm:text-5xl md:text-7xl lg:text-7xl xl:text-[5.75rem] whitespace-nowrap font-manrope font-normal tracking-tight text-white leading-[0.98] mb-8 animate-fadeIn animation-delay-200">
-            <span className="block">Correct now. Fix forever.</span>
+          <h1 className="text-2xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-[5.25rem] whitespace-nowrap font-manrope font-normal tracking-tight text-white leading-[0.98] mb-8 animate-fadeIn animation-delay-200">
+            <span className="block">Self-Correcting Physical AI</span>
           </h1>
 
           <p className="text-xl md:text-2xl lg:text-[2rem] text-white/90 font-manrope font-light leading-snug mb-8 animate-fadeIn animation-delay-300">
-            The runtime layer between AI and the physical world.
-          </p>
-
-          <p className="text-lg md:text-xl lg:text-[1.625rem] text-white max-w-3xl mx-auto font-manrope font-normal leading-snug animate-fadeIn animation-delay-400">
             <span className="block">Every wrong decision from model, chip, sensor is detected,</span>
-            <span className="block">diagnosed and corrected on-device with proof</span>
+            <span className="block">diagnosed and corrected <span className="font-medium text-[var(--edgeble-green)]">on-device</span> with proof</span>
           </p>
 
           <div className="mt-6 flex flex-col md:flex-row md:items-center md:justify-center max-w-3xl mx-auto text-lg lg:text-[1.25rem] text-white/80 font-medium animate-fadeIn animation-delay-600">

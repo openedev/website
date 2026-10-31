@@ -16,8 +16,10 @@ import ece23 from "./ece23";
 import embeddedworldChina2026 from "./embeddedworldChina2026";
 import edgeAiTaipei2026 from "./edgeAiTaipei2026";
 import qualcommDragonwing2026 from "./qualcommDragonwing2026";
+import embeddedworldIndia2026 from "./embeddedworldIndia2026";
 
 export const NEW_BLOGS = [
+	embeddedworldIndia2026,
 	qualcommDragonwing2026,
 	edgeAiTaipei2026,
 	embeddedworldChina2026,

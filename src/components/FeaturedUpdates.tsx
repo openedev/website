@@ -6,13 +6,13 @@ const FeaturedUpdates = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-          {/* Primary Highlight - EmbeddedWorld China */}
+          {/* Primary Highlight - Embedded World India */}
           <a
-            href="/blog/embeddedworld-china-2026"
+            href="/blog/embeddedworld-india-2026"
             className="group relative rounded-2xl border border-white/15 bg-white/5 p-8 hover:border-white/30 transition-all"
           >
             <p className="text-2xl font-semibold text-white leading-relaxed flex items-center gap-3">
-              <span>Edgeble speaking at EmbeddedWorld China 2026 in<br />Advanced Packaging &amp; Heterogeneous Compute track.</span>
+              <span>Edgeble speaking at Embedded World India 2026 in<br />AI - Embedded Vision track.</span>
               <ArrowRight className="w-5 h-5 text-white/60 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </p>
           </a>
@@ -23,7 +23,7 @@ const FeaturedUpdates = () => {
             className="group relative rounded-2xl border border-white/15 bg-white/5 p-8 hover:border-white/30 transition-all"
           >
             <p className="text-2xl font-semibold text-white leading-relaxed flex items-center gap-3">
-              <span>Edgeble Self-Correcting on Qualcomm Dragonwing<br />Live Drift Recovery, Open Source AI Week, San Francisco</span>
+              <span>Self-Correcting on Qualcomm Dragonwing <br />ExecuTorch, Open Source AI Week, SF</span>
               <ArrowRight className="w-5 h-5 text-white/60 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </p>
           </a>
