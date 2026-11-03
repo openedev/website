@@ -40,7 +40,7 @@ export default function Where() {
                 aria-label={t.title}
               />
               <div className="p-5">
-                <span className="text-[var(--edgeble-green)] text-sm uppercase tracking-[0.2em] font-medium">{t.kicker}</span>
+                <span className="text-[var(--edgeble-green)] text-base uppercase tracking-[0.2em] font-medium">{t.kicker}</span>
                 <h3 className="text-2xl text-white mt-2 mb-2">{t.title}</h3>
                 <p className="text-white/70 font-light text-base leading-relaxed">{t.body}</p>
               </div>
@@ -69,7 +69,7 @@ export default function Where() {
         <div className="mt-14 grid grid-cols-1 lg:grid-cols-3 gap-5">
           {stack.map((row) => (
             <div key={row.label} className="border border-white/10 bg-white/[0.04] rounded-xl p-6">
-              <p className="text-sm uppercase tracking-[0.2em] text-[var(--edgeble-green)] mb-4 font-medium">{row.label}</p>
+              <p className="text-base uppercase tracking-[0.2em] text-[var(--edgeble-green)] mb-4 font-medium">{row.label}</p>
               <ul className="flex flex-wrap gap-2">
                 {row.items.map((item) => (
                   <li key={item} className="px-3 py-1.5 rounded-full border border-white/15 text-white/80 text-base font-light">

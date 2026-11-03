@@ -1,7 +1,7 @@
 import React from 'react';
 
 const stats = [
-  { value: '9 of 9', label: 'wrong calls caught on a live line' },
+  { value: '9 of 9', label: 'wrong claims caught on a live line' },
   { value: '13 ms', label: 'to check one claim, on the device' },
   { value: '0', label: 'line stops for a model change' },
 ];

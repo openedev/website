@@ -50,7 +50,7 @@ export default function Start() {
               rel={d.external ? 'noopener noreferrer' : undefined}
               className="group border border-white/10 bg-white/[0.04] hover:border-white/30 rounded-xl p-7 flex flex-col transition-colors"
             >
-              <span className="text-[var(--edgeble-green)] text-sm uppercase tracking-[0.2em] font-medium mb-6">{d.kicker}</span>
+              <span className="text-[var(--edgeble-green)] text-base uppercase tracking-[0.2em] font-medium mb-6">{d.kicker}</span>
               <h3 className="text-2xl text-white mb-3">{d.title}</h3>
               <p className="text-lg text-white/70 font-light leading-relaxed mb-8">{d.body}</p>
               <span className="mt-auto inline-flex items-center gap-2 text-base text-white/80 group-hover:text-white">

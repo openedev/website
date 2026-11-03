@@ -8,7 +8,7 @@ const steps = [
     body: 'Each claim is checked against evidence the model never had. A wrong call is corrected before it becomes a decision.',
     numbers: [
       { value: '13 ms', label: 'per claim' },
-      { value: '9 of 9', label: 'wrong calls caught' },
+      { value: '9 of 9', label: 'wrong claims caught on a live line' },
     ],
   },
   {
@@ -53,8 +53,8 @@ export default function Loop() {
           {steps.map((s) => (
             <div key={s.kicker} className="border border-white/10 bg-white/[0.04] rounded-xl p-7 flex flex-col">
               <div className="flex items-baseline justify-between mb-6">
-                <span className="text-[var(--edgeble-green)] text-sm uppercase tracking-[0.2em] font-medium">{s.kicker}</span>
-                <span className="text-white/50 text-sm font-light">{s.when}</span>
+                <span className="text-[var(--edgeble-green)] text-base uppercase tracking-[0.2em] font-medium">{s.kicker}</span>
+                <span className="text-white/60 text-lg font-light">{s.when}</span>
               </div>
               <h3 className="text-2xl text-white mb-3">{s.title}</h3>
               <p className="text-lg text-white/70 font-light leading-relaxed mb-8">{s.body}</p>
