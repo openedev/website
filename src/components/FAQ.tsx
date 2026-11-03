@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     question: 'What does it fix?',
-    answer: `A wrong call has one of three causes: the sensor, the chip, or the model. Edgeble finds which one and fixes that one. If model is not the cause and nothing is retrained. When it is, the fix is small, happens on the device, is tested before it goes live, and can be undone in seconds.`,
+    answer: `A wrong claim has one of three causes: the sensor, the chip, or the model. Edgeble finds which one and fixes that one. If model is not the cause and nothing is retrained. When it is, the fix is small, happens on the device, is tested before it goes live, and can be undone in seconds.`,
   },
   {
     question: 'How do we start?',

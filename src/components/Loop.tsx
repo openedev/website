@@ -5,7 +5,7 @@ const steps = [
     kicker: 'CATCH',
     when: 'every claim · milliseconds',
     title: 'A judge beside the model.',
-    body: 'Each claim is checked against evidence the model never had. A wrong call is corrected before it becomes a decision.',
+    body: 'Each claim is checked against evidence the model never had. A wrong claim is corrected before it becomes a decision.',
     numbers: [
       { value: '13 ms', label: 'per claim' },
       { value: '9 of 9', label: 'wrong claims caught on a live line' },
@@ -13,7 +13,7 @@ const steps = [
   },
   {
     kicker: 'FIX',
-    when: 'when wrong calls repeat · minutes',
+    when: 'when wrong claims repeat · minutes',
     title: 'Find the layer. Fix that layer.',
     body: 'Sensor, chip or model. A lamp through the PLC, a frame budget, or on-device learning: a small retrain of the model’s head from confirmed captures, gated, swapped live, rolled back in seconds if it must be.',
     numbers: [

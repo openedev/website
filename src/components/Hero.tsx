@@ -19,7 +19,7 @@ const Hero = () => {
           </h1>
           <p className="text-xl md:text-2xl lg:text-[1.75rem] text-white/80 font-light leading-snug max-w-3xl">
             Every output of a model is a claim. The runtime beside the model checks it on the device,
-            catches the wrong call in <span className="text-[var(--edgeble-green)] font-medium">13 ms</span>,
+            catches the wrong claim in <span className="text-[var(--edgeble-green)] font-medium">13 ms</span>,
             fixes the cause on the device and proves it. Nothing stops. Nothing leaves the device.
           </p>
         </div>
