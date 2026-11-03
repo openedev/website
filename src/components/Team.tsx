@@ -64,7 +64,7 @@ const Team = () => {
           ))}
         </div>
 
-        <p className="mt-8 text-xl md:text-2xl text-white/75 font-light leading-relaxed">
+        <p className="mt-8 text-base md:text-lg text-white/70 font-light leading-relaxed">
           Behind them, five engineers on the device: model, NPU, camera, lines.
           <a href="/jobs" className="ml-2 text-white/90 hover:text-white underline underline-offset-4">We are hiring.</a>
         </p>
