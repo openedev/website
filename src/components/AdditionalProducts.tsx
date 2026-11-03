@@ -26,7 +26,7 @@ const AdditionalProducts = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 	<div className="flex justify-center mb-20 text-center">
 	  <div>
-              <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
+              <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
                 RUNTIME INFRASTRUCTURE
               </p>
             <h2 className="text-5xl md:text-5xl font-bold text-white mb-4">

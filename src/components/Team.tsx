@@ -23,7 +23,7 @@ const Team = () => {
     <section id="team" className="py-24 bg-site">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-14">
-          <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
+          <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
             TEAM
           </p>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-5 leading-tight">

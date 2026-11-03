@@ -10,7 +10,7 @@ export default function BuildWithUs() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
-          <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
+          <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
             BUILD WITH US
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">

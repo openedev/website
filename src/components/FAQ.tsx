@@ -40,7 +40,7 @@ export default function FAQ() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.25fr)] lg:items-start lg:gap-20">
           <div className="max-w-xl mb-12 lg:mb-0">
-            <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
+            <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
               FAQ
             </p>
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-5 leading-tight">

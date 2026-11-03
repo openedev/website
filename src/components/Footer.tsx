@@ -21,9 +21,9 @@ const Footer = () => {
       { name: 'Architecture', href: '/architecture' },
     ],
     solutions: [
-      { name: 'Industrial', href: '#' },
-      { name: 'Automotive', href: '#' },
-      { name: 'Robotics', href: '#' },
+      { name: 'Industrial lines', href: '/#where' },
+      { name: 'Automotive', href: '/#where' },
+      { name: 'Robotics', href: '/#where' },
     ],
     company: [
       { name: 'Team', href: '#team' },
@@ -134,7 +134,7 @@ const Footer = () => {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex justify-center items-center text-center">
-            <div className="text-white/70 text-sm">
+            <div className="text-white/70 text-base">
               © 2026 Edgeble. All rights reserved. | Privacy Policy | Terms of Service
             </div>
           </div>
