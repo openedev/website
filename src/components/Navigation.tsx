@@ -79,6 +79,18 @@ const Navigation = () => {
           <span className="h-4 w-px bg-white/20 flex-shrink-0" aria-hidden="true" />
 
           <a
+            href="/start"
+            className="inline-flex items-center gap-2 flex-shrink-0 hover:text-white/90 transition-colors"
+          >
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#77DB89]" />
+            </span>
+            <span>How to start</span>
+          </a>
+
+          <span className="h-4 w-px bg-white/20 flex-shrink-0" aria-hidden="true" />
+
+          <a
             href="/blog/edgeble-qualcomm-dragonwing-2026"
             className="inline-flex items-center gap-2 flex-shrink-0 hover:text-white/90 transition-colors"
           >
