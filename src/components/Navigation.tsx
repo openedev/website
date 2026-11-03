@@ -15,9 +15,9 @@ const Navigation = () => {
 
   const navItems: Array<{ name: string; href: string; highlight?: boolean }> = [
     { name: 'Home', href: '#home' },
-    { name: 'Architecture', href: '#correction-stack' },
+    { name: 'Architecture', href: '/architecture' },
     { name: 'Team', href: '#team' },
-    { name: 'Customers', href: '#customers' },
+    { name: 'Customers', href: '#where' },
     { name: 'Research', href: '/blog' },
   ];
 

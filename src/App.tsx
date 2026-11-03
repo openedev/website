@@ -3,10 +3,12 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import FeaturedUpdates from './components/FeaturedUpdates';
-import PhysicalSystems from './components/PhysicalSystems';
-import CompaniesAndSolutions from './components/CompaniesAndSolutions';
+import WhyWrongClaims from './components/WhyWrongClaims';
+import Loop from './components/Loop';
+import Where from './components/Where';
+import Start from './components/Start';
+import ArchitecturePage from './pages/ArchitecturePage';
 import Team from './components/Team';
-import BuildWithUs from './components/BuildWithUs';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -22,11 +24,12 @@ function HomePage() {
       <Navigation />
       <main>
         <Hero />
+        <WhyWrongClaims />
+        <Loop />
+        <Start />
+        <Where />
         <FeaturedUpdates />
-        <CompaniesAndSolutions />
-        <PhysicalSystems />
         <Team />
-        <BuildWithUs />
         <FAQ />
       </main>
       <Footer />
@@ -51,6 +54,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/architecture" element={<ArchitecturePage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/contact-engineers" element={<ContactEngineers />} />
         <Route path="/blog" element={<Blog />} />
