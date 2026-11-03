@@ -160,26 +160,34 @@ export default function StartPage() {
                       <p className="text-lg font-light">Sent. Your six answers came with it, so the first reply is already specific.</p>
                     </div>
                   ) : (
-                    <form onSubmit={submit} className="space-y-4">
-                      <p className="text-lg text-white mb-2">Send this to the founders.</p>
-                      {(['name', 'email', 'company'] as const).map((f) => (
-                        <input
-                          key={f}
-                          type={f === 'email' ? 'email' : 'text'}
-                          required={f !== 'company'}
-                          placeholder={f === 'name' ? 'Name' : f === 'email' ? 'Work email' : 'Company'}
-                          value={form[f]}
-                          onChange={(e) => setForm({ ...form, [f]: e.target.value })}
-                          className="w-full bg-black/40 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-white/40"
-                        />
+                    <form onSubmit={submit} className="space-y-5">
+                      <p className="text-xl text-white mb-2">Send this to the founders.</p>
+                      {([
+                        { f: 'name', label: 'Name', type: 'text', req: true },
+                        { f: 'email', label: 'Work email', type: 'email', req: true },
+                        { f: 'company', label: 'Company', type: 'text', req: false },
+                      ] as const).map(({ f, label, type, req }) => (
+                        <label key={f} className="block">
+                          <span className="block text-sm uppercase tracking-[0.16em] text-white/60 mb-2">{label}{req ? '' : ' (optional)'}</span>
+                          <input
+                            type={type}
+                            required={req}
+                            value={form[f]}
+                            onChange={(e) => setForm({ ...form, [f]: e.target.value })}
+                            className="w-full bg-white text-black border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--edgeble-green)]"
+                          />
+                        </label>
                       ))}
-                      <textarea
-                        placeholder="Anything else: the model, the board, the line, the date you need it by"
-                        value={form.notes}
-                        onChange={(e) => setForm({ ...form, notes: e.target.value })}
-                        rows={4}
-                        className="w-full bg-black/40 border border-white/15 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-white/40"
-                      />
+                      <label className="block">
+                        <span className="block text-sm uppercase tracking-[0.16em] text-white/60 mb-2">Anything else (optional)</span>
+                        <textarea
+                          placeholder="The model, the board, the line, the date you need it by"
+                          value={form.notes}
+                          onChange={(e) => setForm({ ...form, notes: e.target.value })}
+                          rows={4}
+                          className="w-full bg-white text-black border border-white/20 rounded-lg px-4 py-3 placeholder-black/40 focus:outline-none focus:ring-2 focus:ring-[var(--edgeble-green)]"
+                        />
+                      </label>
                       {error && <p className="text-base text-red-300">{error}</p>}
                       <button type="submit" disabled={sending} className="inline-flex items-center justify-center bg-white text-black hover:bg-white/90 px-6 py-3 rounded-lg font-semibold transition-colors disabled:opacity-60">
                         {sending ? 'Sending' : 'Send'}
