@@ -23,7 +23,7 @@ const Hero = () => {
 
           <p className="text-xl md:text-2xl lg:text-[2rem] text-white/90 font-manrope font-light leading-snug mb-8 animate-fadeIn animation-delay-300">
             <span className="block">Every wrong decision from model, chip, sensor is detected,</span>
-            <span className="block">diagnosed and corrected <span className="font-medium text-[var(--edgeble-green)]">on-device</span> with proof</span>
+            <span className="block">diagnosed and corrected <span className="font-medium text-[var(--edgeble-green)]">on-device</span> with ledger</span>
           </p>
 
           <div className="mt-6 flex flex-col md:flex-row md:items-center md:justify-center max-w-3xl mx-auto text-lg lg:text-[1.25rem] text-white/80 font-medium animate-fadeIn animation-delay-600">
