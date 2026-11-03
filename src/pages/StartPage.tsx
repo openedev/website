@@ -114,6 +114,7 @@ export default function StartPage() {
             <h1 className="text-4xl md:text-6xl text-white mb-5 leading-tight">Six questions, then the right door.</h1>
             <p className="text-xl md:text-2xl text-white/75 font-light leading-relaxed max-w-3xl mb-12">
               Tell us where the model runs and what you have. We tell you which way in fits, and what happens next.
+              Pick one answer per question; the door appears below as soon as all six are in.
             </p>
 
             <div className="space-y-10 max-w-4xl">
@@ -139,8 +140,8 @@ export default function StartPage() {
               ))}
             </div>
 
-            {door && (
-              <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl">
+            <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl">
+                {door ? (
                 <div className="border border-[var(--edgeble-green)]/40 bg-white/[0.04] rounded-xl p-8">
                   <span className="text-[var(--edgeble-green)] text-sm uppercase tracking-[0.2em] font-medium">{door.kicker}</span>
                   <h2 className="text-3xl text-white mt-4 mb-4">{door.title}</h2>
@@ -152,6 +153,15 @@ export default function StartPage() {
                     </a>
                   )}
                 </div>
+                ) : (
+                <div className="border border-white/10 bg-white/[0.04] rounded-xl p-8">
+                  <span className="text-white/50 text-sm uppercase tracking-[0.2em] font-medium">YOUR DOOR</span>
+                  <h2 className="text-3xl text-white/60 mt-4 mb-4">Appears here after the six answers.</h2>
+                  <p className="text-lg text-white/50 font-light leading-relaxed">
+                    {questions.filter((q) => answers[q.id]).length} of 6 answered. You can send the form without finishing; the answers you gave come with it.
+                  </p>
+                </div>
+                )}
 
                 <div className="border border-white/10 bg-white/[0.04] rounded-xl p-8">
                   {sent ? (
@@ -196,7 +206,6 @@ export default function StartPage() {
                   )}
                 </div>
               </div>
-            )}
           </div>
         </section>
       </main>
