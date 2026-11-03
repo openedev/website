@@ -8,6 +8,7 @@ import Loop from './components/Loop';
 import Where from './components/Where';
 import Start from './components/Start';
 import ArchitecturePage from './pages/ArchitecturePage';
+import StartPage from './pages/StartPage';
 import Team from './components/Team';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
@@ -55,6 +56,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/architecture" element={<ArchitecturePage />} />
+        <Route path="/start" element={<StartPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/contact-engineers" element={<ContactEngineers />} />
         <Route path="/blog" element={<Blog />} />

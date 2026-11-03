@@ -23,7 +23,7 @@ const doors = [
     title: 'Our module and camera, per line',
     body: 'Our edge module and camera on your line, with the runtime inside, on a three-year term. Our orchestration provisions the module, updates it over the air with rollback, and keeps every line in one fleet view. This is how the lines in production run today.',
     cta: 'Talk to founders',
-    href: 'mailto:info@edgeble.ai',
+    href: '/start',
     external: false,
   },
 ];
