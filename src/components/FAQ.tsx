@@ -23,6 +23,10 @@ const faqs = [
     answer: `Two ways. If you already run inference, hook the correction API into it and run the correction toolchain once to load the evidence: a few confirmed examples from your site. If you are still validating in the lab, install the correction beside the inference on the device and it runs from there. Either way your model does not change, and you watch the log from day one. Docs on request · info@edgeble.ai`,
   },
   {
+    question: 'Is this on-device learning?',
+    answer: `Yes, and it is bounded. When the judge has corrected the same kind of wrong claim enough times and the cause is the model, the runtime retrains only the model’s head, on the device, from captures the judge confirmed. The candidate must pass a learning check and a forgetting exam on frames it never trained on, runs in shadow, then is swapped live with the old model kept for rollback. The backbone never changes, nothing is uploaded, and every step is in the ledger. That is on-device retraining inside a declared envelope, which is what the EU AI Act and ISO/PAS 8800 allow after release.`,
+  },
+  {
     question: 'What do we get as proof?',
     answer: `A signed ledger: one line per claim with every check’s vote, the verdict, every capture, every gate result and every swap or rollback. It is the record the EU AI Act asks for and the field-monitoring evidence ISO/PAS 8800 expects in a vehicle produced on the device as a by-product of running.`,
   },
