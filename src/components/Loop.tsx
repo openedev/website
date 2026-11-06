@@ -56,8 +56,8 @@ export default function Loop() {
                 <span className="text-[var(--edgeble-green)] text-base uppercase tracking-[0.2em] font-medium">{s.kicker}</span>
                 <span className="text-white/60 text-lg font-light">{s.when}</span>
               </div>
-              <h3 className="text-2xl text-white mb-3">{s.title}</h3>
-              <p className="text-lg text-white/70 font-light leading-relaxed mb-8">{s.body}</p>
+              <h3 className="text-2xl md:text-3xl text-white mb-3">{s.title}</h3>
+              <p className="text-lg md:text-xl text-white/70 font-light leading-relaxed mb-8">{s.body}</p>
               <div className="mt-auto grid grid-cols-2 gap-4 border-t border-white/10 pt-5">
                 {s.numbers.map((n) => (
                   <div key={n.label}>

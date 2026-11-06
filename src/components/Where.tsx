@@ -41,8 +41,8 @@ export default function Where() {
               />
               <div className="p-5">
                 <span className="text-[var(--edgeble-green)] text-base uppercase tracking-[0.2em] font-medium">{t.kicker}</span>
-                <h3 className="text-2xl text-white mt-2 mb-2">{t.title}</h3>
-                <p className="text-white/70 font-light text-base leading-relaxed">{t.body}</p>
+                <h3 className="text-2xl md:text-3xl text-white mt-2 mb-2">{t.title}</h3>
+                <p className="text-white/70 font-light text-lg md:text-xl leading-relaxed">{t.body}</p>
               </div>
             </div>
           ))}
@@ -81,7 +81,7 @@ export default function Where() {
               <p className="text-base uppercase tracking-[0.2em] text-[var(--edgeble-green)] mb-4 font-medium">{row.label}</p>
               <ul className="flex flex-wrap gap-2">
                 {row.items.map((item) => (
-                  <li key={item} className="px-3 py-1.5 rounded-full border border-white/15 text-white/80 text-base font-light">
+                  <li key={item} className="px-3 py-1.5 rounded-full border border-white/15 text-white/80 text-lg font-light">
                     {item}
                   </li>
                 ))}
