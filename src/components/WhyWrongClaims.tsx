@@ -16,6 +16,25 @@ export default function WhyWrongClaims() {
           </p>
         </div>
 
+        <div className="grid grid-cols-1 gap-5 mb-5">
+          <figure className="rounded-xl border border-white/10 bg-site overflow-hidden">
+            <img
+              src="/images/why-claim.svg"
+              alt="Every output of a model is a claim; a few are wrong and look like the right ones; nothing stands between them and the action. Measured on our line and in the published record, by scene."
+              className="w-full h-auto"
+              loading="lazy"
+            />
+          </figure>
+          <figure className="rounded-xl border border-white/10 bg-site overflow-hidden">
+            <img
+              src="/images/why-curve.svg"
+              alt="Wrong claims reaching the action over time after deployment: the model alone climbs at each event and drops only at a retrain weeks later; with the judge the line stays flat."
+              className="w-full h-auto"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+
         <figure className="rounded-xl border border-white/10 bg-site overflow-hidden">
           <img
             src="/images/wrong-claims-bands-dark.png"
@@ -24,7 +43,7 @@ export default function WhyWrongClaims() {
             loading="lazy"
           />
           <figcaption className="px-5 py-4 text-base md:text-lg text-white/55 font-light">
-            Published measurements, 2017 to 2026, per decision, across the three scenes a physical AI
+            The published record in full: measurements 2017 to 2026, per decision, across the three scenes a physical AI
             runs in: fixed, moving, acting. Sources in our research notes.
           </figcaption>
         </figure>
