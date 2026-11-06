@@ -33,16 +33,15 @@ export default function WhyWrongClaims() {
               loading="lazy"
             />
           </figure>
+          <figure className="rounded-xl border border-white/10 bg-site overflow-hidden">
+            <img
+              src="/images/why-record.svg"
+              alt="The published record: wrong claims per 100 decisions, cost of one wrong claim and time to a deployed fix, across fixed, moving and acting scenes"
+              className="w-full h-auto"
+              loading="lazy"
+            />
+          </figure>
         </div>
-
-        <figure className="rounded-xl border border-white/10 bg-site overflow-hidden">
-          <img
-            src="/images/why-record.svg"
-            alt="The published record: wrong claims per 100 decisions, cost of one wrong claim and time to a deployed fix, across fixed, moving and acting scenes"
-            className="w-full h-auto"
-            loading="lazy"
-          />
-        </figure>
       </div>
     </section>
   );
