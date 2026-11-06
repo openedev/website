@@ -48,6 +48,15 @@ export default function Where() {
           ))}
         </div>
 
+        <figure className="mt-14 rounded-xl border border-white/10 bg-site overflow-hidden">
+          <img
+            src="/images/runtime-beside-your-model.svg"
+            alt="Your model stays sealed. The judge sits beside it and hands the verified claim to your decision, on your silicon: NXP, Qualcomm, DeepX, Rockchip."
+            className="w-full h-auto"
+            loading="lazy"
+          />
+        </figure>
+
         <div className="mt-14">
           <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">DEPLOYED AND TESTED WITH</p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
