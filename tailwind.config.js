@@ -17,8 +17,8 @@ export default {
         bold: '500',
       },
       fontFamily: {
-        sans: ['Manrope', 'sans-serif'],
-        manrope: ['Manrope', 'sans-serif'],
+        sans: ['Lato', 'sans-serif'],
+        manrope: ['Lato', 'sans-serif'],
       },
     },
   },

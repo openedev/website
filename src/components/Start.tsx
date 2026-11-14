@@ -12,7 +12,7 @@ const doors = [
   },
   {
     kicker: 'ADD IT TO YOUR LINE',
-    title: 'The correction API',
+    title: 'Correction API',
     body: 'Install the correction package on your device, run the toolchain once to build the bank from a few confirmed examples and cut the model for a sealed NPU, hook the API at the decision point. Your model does not change. Docs on request.',
     cta: 'How do we start, in the FAQ',
     href: '#faq',

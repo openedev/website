@@ -51,7 +51,7 @@ export default function Where() {
         <figure className="mt-14 rounded-xl border border-white/10 bg-site overflow-hidden">
           <img
             src="/images/runtime-beside-your-model.svg"
-            alt="Your model stays sealed. The judge sits beside it and hands the verified claim to your decision, on your silicon: NXP, Qualcomm, DeepX, Rockchip."
+            alt="Your model stays sealed. The judge sits beside it and hands the verified claim to your decision, on your silicon: NXP, Qualcomm, DeepX, Rockchip. Your physical scene is the source of independent evidence: fixed, moving, acting."
             className="w-full h-auto"
             loading="lazy"
           />
