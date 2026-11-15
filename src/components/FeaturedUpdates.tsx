@@ -23,7 +23,7 @@ const FeaturedUpdates = () => {
             className="group relative rounded-2xl border border-white/15 bg-white/5 p-8 hover:border-white/30 transition-all"
           >
             <p className="text-2xl font-semibold text-white leading-relaxed flex items-center gap-3">
-              <span>Talk: Cross-Layer Self-Correction for Embedded Vision AI.<br />Tuesday 18 November, 16:30, AI and Embedded Vision track.</span>
+              <span>Talk: Cross-Layer Self-Correction for Embedded Vision AI.<br />Thursday 19 November, 11:55, AI and Embedded Vision track.</span>
               <ArrowRight className="w-5 h-5 text-white/60 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </p>
           </a>

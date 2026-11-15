@@ -4,7 +4,7 @@ const blog: BlogPost = {
   title: "Cross-Layer Self-Correction for Embedded Vision AI: the talk at Embedded World India 2026",
   slug: "embeddedworld-india-2026",
   excerpt:
-    "Tuesday 18 November, 16:30, AI and Embedded Vision track, Bengaluru. A technical deep dive: from the conveyor to the NPU to the model, with the production cases from rail, battery and tyre lines on Rockchip, DeepX and NXP NPUs.",
+    "Thursday 19 November, 11:55, AI and Embedded Vision track, Bengaluru. A technical deep dive: from the conveyor to the NPU to the model, with the production cases from rail, battery and tyre lines on Rockchip, DeepX and NXP NPUs.",
   content: `
     <p class="text-xl mb-6">
       Embedded vision AI degrades after deployment, and the cause is rarely where it appears. Lighting shifts, conveyor speed changes and lens contamination; pipeline stalls, thermal throttling and memory pressure; drift, false positives and never-seen inputs. From inside the model they all look identical: accuracy falls. Retraining, the default response, fixes one layer and hides the other two.
@@ -16,7 +16,7 @@ const blog: BlogPost = {
 
     <h3 class="text-2xl font-bold text-white mb-4 mt-10">When and where</h3>
     <p class="text-xl mb-6">
-      <strong>Tuesday 18 November 2026, 16:30 to 17:20</strong><br />
+      <strong>Thursday 19 November 2026, 11:55</strong><br />
       Embedded World India Conference, Bangalore International Exhibition Centre (BIEC), Bengaluru<br />
       Track: AI and Embedded Vision. Format: technical deep dive, non-promotional.<br />
       The runtime runs live on booth SP16 all three days.

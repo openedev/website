@@ -15,7 +15,7 @@ const blog: BlogPost = {
       <strong>Booth SP16</strong>, Embedded World India 2026<br />
       Bangalore International Exhibition Centre (BIEC), Bengaluru<br />
       <strong>17 to 19 November 2026</strong>, all three days<br />
-      The talk, <a href="/blog/embeddedworld-india-2026" class="text-white underline underline-offset-4">Cross-Layer Self-Correction for Embedded Vision AI</a>, is on Tuesday 18 November at 16:30.
+      The talk, <a href="/blog/embeddedworld-india-2026" class="text-white underline underline-offset-4">Cross-Layer Self-Correction for Embedded Vision AI</a>, is on Thursday 19 November at 11:55.
     </p>
 
     <figure class="my-10">
