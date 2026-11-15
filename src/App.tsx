@@ -8,7 +8,8 @@ import Loop from './components/Loop';
 import Where from './components/Where';
 import Start from './components/Start';
 import ArchitecturePage from './pages/ArchitecturePage';
-import StartPage from './pages/StartPage';
+import StartBrochurePage from './pages/StartBrochurePage';
+import LetUsKnowPage from './pages/LetUsKnowPage';
 import Team from './components/Team';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
@@ -56,7 +57,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/architecture" element={<ArchitecturePage />} />
-        <Route path="/start" element={<StartPage />} />
+        <Route path="/start" element={<StartBrochurePage />} />
+        <Route path="/letusknow" element={<LetUsKnowPage />} />
+        <Route path="/letusknow/:mode" element={<LetUsKnowPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/contact-engineers" element={<ContactEngineers />} />
         <Route path="/blog" element={<Blog />} />

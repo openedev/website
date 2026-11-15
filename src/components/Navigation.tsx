@@ -79,7 +79,7 @@ const Navigation = () => {
           <span className="h-4 w-px bg-white/20 flex-shrink-0" aria-hidden="true" />
 
           <a
-            href="/start"
+            href="/letusknow"
             className="inline-flex items-center gap-2 flex-shrink-0 hover:text-white/90 transition-colors"
           >
             <span className="relative flex h-2.5 w-2.5">

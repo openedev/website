@@ -50,7 +50,7 @@ export default function FAQ() {
               How Edgeble fits your AI, corrects the claim, protects data, and helps your Physical AI accurate for the life of the machine.
             </p>
             <a
-              href="/start"
+              href="/letusknow"
               className="mt-8 inline-flex items-center justify-center bg-white text-black hover:bg-white/90 px-6 py-3 rounded-lg font-semibold transition-colors"
             >
               Talk to Founders

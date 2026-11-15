@@ -21,14 +21,14 @@ const ways = [
     body: 'Our full stack, with correction built in.',
     stack: ['Our platform', 'Our model', 'Our inference engine'],
     cta: 'Have it installed',
-    href: '/start?scene=A%20factory%20line%20or%20dock',
+    href: '/letusknow/orchestration?scene=A%20factory%20line%20or%20dock',
   },
   {
     title: 'Correction runtime.',
     body: 'Your stack, with correction firmware beside it.',
     stack: ['Your platform', 'Your model', 'Your inference engine', 'Your Silicon'],
     cta: 'Licence the runtime',
-    href: '/start?stage=We%20ship%20this%20inside%20our%20product',
+    href: '/letusknow/runtime?stage=We%20ship%20this%20inside%20our%20product',
   },
 ];
 
