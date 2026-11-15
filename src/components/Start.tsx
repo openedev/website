@@ -17,7 +17,6 @@ const silicon: { name: string; status: Status }[] = [
 
 const ways = [
   {
-    kicker: '01 — WE DEPLOY',
     title: 'Correction orchestration.',
     body: 'Our full stack, with correction built in.',
     stack: ['Our platform', 'Our model', 'Our inference engine'],
@@ -25,7 +24,6 @@ const ways = [
     href: '/start?scene=A%20factory%20line%20or%20dock',
   },
   {
-    kicker: '02 — YOU DEPLOY',
     title: 'Correction runtime.',
     body: 'Your stack, with correction firmware beside it.',
     stack: ['Your platform', 'Your model', 'Your inference engine', 'Your Silicon'],
@@ -36,7 +34,7 @@ const ways = [
 
 function CorrectionBar() {
   return (
-    <div className="w-12 flex-shrink-0 rounded-md bg-[#F2F2F2] flex items-center justify-center" aria-hidden="true">
+    <div className="w-14 md:w-16 min-h-full flex-shrink-0 rounded-md bg-[#F2F2F2] flex items-center justify-center" aria-hidden="true">
       <span className="[writing-mode:vertical-rl] rotate-180 text-[#181818] text-xl font-bold uppercase tracking-[0.5em]">
         Correction
       </span>
@@ -60,12 +58,11 @@ export default function Start() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
           {ways.map((w, i) => (
-            <div key={w.kicker} className="border border-white/10 bg-white/[0.04] rounded-xl p-7 flex flex-col">
-              <span className="text-[var(--edgeble-green)] text-base uppercase tracking-[0.2em] font-medium mb-5">{w.kicker}</span>
+            <div key={w.title} className="border border-white/10 bg-white/[0.04] rounded-xl p-7 flex flex-col">
               <h3 className="text-2xl md:text-3xl text-white mb-2">{w.title}</h3>
               <p className="text-lg md:text-xl text-white/70 font-light leading-relaxed mb-7">{w.body}</p>
 
-              <div className="flex gap-3 flex-1">
+              <div className="flex gap-3 flex-1 min-h-[28rem]">
                 <div className="flex-1 min-w-0 flex flex-col gap-2">
                   {w.stack.map((s) => (
                     <div key={s} className="border border-white/25 rounded-md px-5 py-4 text-white text-xl md:text-2xl">

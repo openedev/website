@@ -4,6 +4,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 type Q = { id: string; question: string; options: string[] };
+type StartRoute = 'orchestration' | 'runtime' | 'brochure';
 
 const questions: Q[] = [
   { id: 'scene', question: 'Where does the model run?', options: ['A factory line or dock', 'A vehicle', 'A robot', 'A phone or a device', 'Not decided yet'] },
@@ -15,6 +16,19 @@ const questions: Q[] = [
 ];
 
 type Door = { kicker: string; title: string; body: string; next: string; href?: string; cta?: string };
+
+const routeOptions: { id: StartRoute; label: string }[] = [
+  { id: 'orchestration', label: 'Orchestration' },
+  { id: 'runtime', label: 'Runtime' },
+  { id: 'brochure', label: 'Brochure' },
+];
+
+const brochureDoor: Door = {
+  kicker: 'BROCHURE',
+  title: 'Correction Brochure',
+  body: 'A short guide to the correction layer between the model and the physical system: what it observes, what it fixes, and how the ledger follows every verdict.',
+  next: 'Enter your details to download the brochure. Your request and answers will also reach info@edgeble.ai.',
+};
 
 function decide(a: Record<string, string>): Door {
   const line = a.scene === 'A factory line or dock';
@@ -67,6 +81,15 @@ function decide(a: Record<string, string>): Door {
 }
 
 export default function StartPage() {
+  const [route, setRoute] = useState<StartRoute | ''>(() => {
+    if (typeof window === 'undefined') return '';
+    const sp = new URLSearchParams(window.location.search);
+    const requested = sp.get('route');
+    if (routeOptions.some((option) => option.id === requested)) return requested as StartRoute;
+    if (sp.has('scene')) return 'orchestration';
+    if (sp.has('stage')) return 'runtime';
+    return '';
+  });
   const [answers, setAnswers] = useState<Record<string, string>>(() => {
     const init: Record<string, string> = {};
     if (typeof window !== 'undefined') {
@@ -82,8 +105,19 @@ export default function StartPage() {
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState('');
-  const done = questions.every((q) => answers[q.id]);
-  const door = useMemo(() => (done ? decide(answers) : null), [answers, done]);
+  const questionFlow = route === 'orchestration' || route === 'runtime';
+  const done = questionFlow && questions.every((q) => answers[q.id]);
+  const door = useMemo(() => {
+    if (route === 'brochure') return brochureDoor;
+    return done ? decide(answers) : null;
+  }, [answers, done, route]);
+
+  const chooseRoute = (next: StartRoute) => {
+    setRoute(next);
+    setAnswers({});
+    setSent(false);
+    setError('');
+  };
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -93,9 +127,23 @@ export default function StartPage() {
       const r = await fetch('https://formspree.io/f/xojarqwr', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ ...form, subject: `Start: ${door?.kicker ?? ''}`, recommendation: door?.title ?? '', ...answers }),
+        body: JSON.stringify({
+          ...form,
+          subject: route === 'brochure' ? 'Correction Brochure request' : `Start: ${door?.kicker ?? route}`,
+          route,
+          recommendation: door?.title ?? '',
+          ...answers,
+        }),
       });
       if (!r.ok) throw new Error('failed');
+      if (route === 'brochure') {
+        const link = document.createElement('a');
+        link.href = '/docs/Edgeble-Correction-Brochure-V1.0.pdf';
+        link.download = 'Edgeble-Correction-Brochure-V1.0.pdf';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+      }
       setSent(true);
     } catch {
       setError('Could not send. Email info@edgeble.ai and paste your answers.');
@@ -111,16 +159,32 @@ export default function StartPage() {
         <section className="bg-site py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">TALK TO FOUNDERS</p>
-            <h1 className="text-4xl md:text-6xl text-white mb-5 leading-tight">Six questions, then the right door.</h1>
+            <h1 className="text-4xl md:text-6xl text-white mb-5 leading-tight">Choose the right door.</h1>
             <p className="text-xl md:text-2xl text-white/75 font-light leading-relaxed max-w-3xl mb-12">
-              Tell us where the model runs and what you have. We tell you which way in fits, and what happens next.
-              Pick one answer per question; the door appears below as soon as all six are in.
+              Start with Orchestration, Runtime, or Brochure. The first two keep the six-question path; Brochure needs
+              only your details and starts the download after you submit.
             </p>
 
             <div className="space-y-10 max-w-4xl">
-              {questions.map((q, i) => (
+              <div>
+                <p className="text-lg text-white/60 mb-3"><span className="text-[var(--edgeble-green)] mr-3">01</span>What are you looking for?</p>
+                <div className="flex flex-wrap gap-2">
+                  {routeOptions.map((option) => (
+                    <button
+                      key={option.id}
+                      type="button"
+                      onClick={() => chooseRoute(option.id)}
+                      className={`px-4 py-2 rounded-full border text-base transition-colors ${route === option.id ? 'border-[var(--edgeble-green)] bg-[var(--edgeble-green)]/15 text-white' : 'border-white/15 text-white/75 hover:border-white/40 hover:text-white'}`}
+                    >
+                      {option.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {questionFlow && questions.map((q, i) => (
                 <div key={q.id}>
-                  <p className="text-lg text-white/60 mb-3"><span className="text-[var(--edgeble-green)] mr-3">{String(i + 1).padStart(2, '0')}</span>{q.question}</p>
+                  <p className="text-lg text-white/60 mb-3"><span className="text-[var(--edgeble-green)] mr-3">{String(i + 2).padStart(2, '0')}</span>{q.question}</p>
                   <div className="flex flex-wrap gap-2">
                     {q.options.map((o) => {
                       const on = answers[q.id] === o;
@@ -138,6 +202,18 @@ export default function StartPage() {
                   </div>
                 </div>
               ))}
+
+              {route === 'brochure' && (
+                <p className="text-lg text-white/60 font-light leading-relaxed">
+                  No further questions for the brochure. Add your details below and the PDF will download after submission.
+                </p>
+              )}
+
+              {!route && (
+                <p className="text-lg text-white/50 font-light leading-relaxed">
+                  Choose one path above to continue.
+                </p>
+              )}
             </div>
 
             <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl">
@@ -167,11 +243,15 @@ export default function StartPage() {
                   {sent ? (
                     <div className="flex items-start gap-3 text-white">
                       <CheckCircle className="w-6 h-6 text-[var(--edgeble-green)] flex-shrink-0 mt-0.5" />
-                      <p className="text-lg font-light">Sent. Your six answers came with it, so the first reply is already specific.</p>
+                      <p className="text-lg font-light">
+                        {route === 'brochure'
+                          ? 'Sent. Your brochure download should start now, and your details have reached the founders.'
+                          : 'Sent. Your answers came with it, so the first reply is already specific.'}
+                      </p>
                     </div>
                   ) : (
                     <form onSubmit={submit} className="space-y-5">
-                      <p className="text-xl text-white mb-2">Send this to the founders.</p>
+                      <p className="text-xl text-white mb-2">{route === 'brochure' ? 'Get the brochure.' : 'Send this to the founders.'}</p>
                       {([
                         { f: 'name', label: 'Name', type: 'text', req: true },
                         { f: 'email', label: 'Work email', type: 'email', req: true },
@@ -200,7 +280,7 @@ export default function StartPage() {
                       </label>
                       {error && <p className="text-base text-red-300">{error}</p>}
                       <button type="submit" disabled={sending} className="inline-flex items-center justify-center bg-white text-black hover:bg-white/90 px-6 py-3 rounded-lg font-semibold transition-colors disabled:opacity-60">
-                        {sending ? 'Sending' : 'Send'}
+                        {sending ? 'Sending' : route === 'brochure' ? 'Send & download' : 'Send'}
                       </button>
                     </form>
                   )}
