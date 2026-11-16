@@ -16,7 +16,7 @@ const Footer = () => {
   const footerLinks = {
     products: [
       { name: 'Correction runtime', href: '/#start' },
-      { name: 'Correction module', href: '/#start' },
+      { name: 'Correction orchestration', href: '/#start' },
       { name: 'Runtime licence', href: '/#where' },
       { name: 'Architecture', href: '/architecture' },
     ],
