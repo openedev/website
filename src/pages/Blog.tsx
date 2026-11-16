@@ -39,10 +39,10 @@ const BlogPage = () => {
               Back
             </button>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-6xl text-white mb-5 leading-tight">
             Research
           </h1>
-          <p className="text-xl text-white max-w-3xl">
+          <p className="text-xl md:text-2xl text-white/75 font-light leading-relaxed max-w-3xl">
             Latest research, announcements, and events
           </p>
         </div>

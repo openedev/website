@@ -18,7 +18,7 @@ const Footer = () => {
       { name: 'Correction runtime', href: '/#start' },
       { name: 'Correction orchestration', href: '/#start' },
       { name: 'Runtime licence', href: '/#where' },
-      { name: 'Architecture', href: '/architecture' },
+      { name: 'Architecture', href: '/#architecture' },
     ],
     solutions: [
       { name: 'Industrial lines', href: '/#where' },
@@ -40,13 +40,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Products */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Products</h4>
+            <h4 className="text-xl font-semibold mb-4 text-white">Products</h4>
             <ul className="space-y-1">
               {footerLinks.products.map((link, index) => (
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-white/70 hover:text-white transition-colors duration-200"
+                    className="text-lg text-white/85 hover:text-white transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -57,13 +57,13 @@ const Footer = () => {
 
           {/* Solutions */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Industries</h4>
+            <h4 className="text-xl font-semibold mb-4 text-white">Industries</h4>
             <ul className="space-y-1">
               {footerLinks.solutions.map((link, index) => (
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-white/70 hover:text-white transition-colors duration-200"
+                    className="text-lg text-white/85 hover:text-white transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -74,13 +74,13 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Company</h4>
+            <h4 className="text-xl font-semibold mb-4 text-white">Company</h4>
             <ul className="space-y-1">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
                   <a 
                     href={link.href} 
-                    className="text-white/70 hover:text-white transition-colors duration-200"
+                    className="text-lg text-white/85 hover:text-white transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -102,7 +102,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/edgeble/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/70 hover:text-white transition-colors duration-200"
+                className="text-lg text-white/85 hover:text-white transition-colors duration-200"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
@@ -111,7 +111,7 @@ const Footer = () => {
                 href="https://x.com/edgeble"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/70 hover:text-white transition-colors duration-200"
+                className="text-lg text-white/85 hover:text-white transition-colors duration-200"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
@@ -120,7 +120,7 @@ const Footer = () => {
                 href="https://github.com/edgeble"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/70 hover:text-white transition-colors duration-200"
+                className="text-lg text-white/85 hover:text-white transition-colors duration-200"
                 aria-label="GitHub"
               >
                 <Github className="w-5 h-5" />
@@ -134,7 +134,7 @@ const Footer = () => {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex justify-center items-center text-center">
-            <div className="text-white/70 text-base">
+            <div className="text-white/80 text-lg">
               © 2026 Edgeble. All rights reserved. | Privacy Policy | Terms of Service
             </div>
           </div>

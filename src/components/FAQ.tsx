@@ -43,10 +43,10 @@ export default function FAQ() {
             <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
               FAQ
             </p>
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-5 leading-tight">
+            <h2 className="text-4xl md:text-6xl text-white mb-5 leading-tight">
               What customers ask before deploying.
             </h2>
-            <p className="text-xl md:text-2xl text-white/80 leading-relaxed">
+            <p className="text-xl md:text-2xl text-white/75 font-light leading-relaxed">
               How Edgeble fits your AI, corrects the claim, protects data, and helps your Physical AI accurate for the life of the machine.
             </p>
             <a
@@ -75,7 +75,7 @@ export default function FAQ() {
                     <span className="flex h-6 w-7 shrink-0 items-center justify-center bg-white text-[11px] font-bold text-black">
                       {String(index + 1).padStart(2, '0')}
                     </span>
-                    <span className="text-xl md:text-2xl font-semibold text-white">{item.question}</span>
+                    <span className="text-2xl md:text-3xl font-semibold text-white">{item.question}</span>
                   </div>
                   <span className="relative flex h-6 w-6 shrink-0 items-center justify-center text-white/80">
                     <Plus className={`absolute h-5 w-5 transition-opacity ${isOpen ? 'opacity-0' : 'opacity-100'}`} />
@@ -84,7 +84,7 @@ export default function FAQ() {
                 </button>
                 {isOpen && (
                   <div id={answerId} className="pb-7 pl-11 pr-10 md:pl-11">
-                    <p className="max-w-4xl text-lg md:text-xl leading-relaxed text-white/72">{item.answer}</p>
+                    <p className="max-w-4xl text-xl md:text-2xl leading-relaxed text-white/85 font-light">{item.answer}</p>
                   </div>
                 )}
               </div>

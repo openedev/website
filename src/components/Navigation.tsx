@@ -15,7 +15,7 @@ const Navigation = () => {
 
   const navItems: Array<{ name: string; href: string; highlight?: boolean }> = [
     { name: 'Home', href: '#home' },
-    { name: 'Architecture', href: '/architecture' },
+    { name: 'Architecture', href: '#architecture' },
     { name: 'Team', href: '#team' },
     { name: 'Customers', href: '#where' },
     { name: 'Research', href: '/blog' },
@@ -30,18 +30,20 @@ const Navigation = () => {
 
     const scrollToSection = () => {
       if (href === '#home') {
+        window.history.pushState(null, '', '/');
         window.scrollTo({ top: 0, behavior: 'smooth' });
         return;
       }
 
       const element = document.querySelector(href);
       if (element) {
+        window.history.pushState(null, '', href);
         element.scrollIntoView({ behavior: 'smooth' });
       }
     };
 
     if (window.location.pathname !== '/') {
-      navigate('/');
+      navigate(`/${href}`);
       setTimeout(scrollToSection, 100);
     } else {
       scrollToSection();
@@ -64,7 +66,7 @@ const Navigation = () => {
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
       <div className="block border-b border-white/10 bg-site text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-9 flex items-center justify-center gap-4 overflow-x-auto whitespace-nowrap text-xs sm:text-sm font-medium tracking-wide">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-10 flex items-center justify-center gap-4 overflow-x-auto whitespace-nowrap text-sm sm:text-base font-medium tracking-wide">
           <a
             href="/jobs"
             className="inline-flex items-center gap-2 flex-shrink-0 hover:text-white/90 transition-colors"
@@ -91,14 +93,14 @@ const Navigation = () => {
           <span className="h-4 w-px bg-white/20 flex-shrink-0" aria-hidden="true" />
 
           <a
-            href="/blog/edgeble-qualcomm-dragonwing-2026"
+            href="/blog/embeddedworld-india-2026-booth"
             className="inline-flex items-center gap-2 flex-shrink-0 hover:text-white/90 transition-colors"
           >
             <span className="relative flex h-2.5 w-2.5">
               <span className="absolute inline-flex h-full w-full rounded-full bg-[#77DB89] opacity-75 animate-ping" />
               <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#77DB89]" />
             </span>
-            <span>Live: Qualcomm Dragonwing &mdash; Open Source AI Week, San Francisco</span>
+            <span>Live: Correction on physical bench &mdash; EmbeddedWorld India 2026</span>
           </a>
         </div>
       </div>
@@ -120,7 +122,7 @@ const Navigation = () => {
                 <button
                   key={item.name}
                   onClick={() => handleNavigation(item.href)}
-                  className={`px-2 py-2 text-sm font-medium transition-colors duration-200 ${
+                  className={`px-2 py-2 text-base font-medium transition-colors duration-200 ${
                     item.highlight
                       ? 'rounded-lg border border-white/30 bg-white text-black hover:bg-white/90'
                       : 'text-white hover:text-white/70'

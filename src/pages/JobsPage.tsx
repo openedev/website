@@ -20,13 +20,13 @@ export default function JobsPage() {
               Back
             </button>
           </div>
-          <p className="text-sm uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
+          <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
             JOBS
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h1 className="text-4xl md:text-6xl text-white mb-5 leading-tight">
             Open roles at Edgeble
           </h1>
-          <p className="text-xl text-white/80 max-w-3xl leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/75 font-light leading-relaxed max-w-3xl">
             Work on production self-correcting runtime infrastructure for Physical AI, across models, edge compute, and deployed physical systems.
           </p>
         </div>

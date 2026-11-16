@@ -10,9 +10,10 @@ const statusClass: Record<Status, string> = {
 };
 
 const silicon: { name: string; status: Status }[] = [
-  { name: 'Industrial', status: 'IN PRODUCTION' },
-  { name: 'Automotive', status: 'VALIDATING' },
-  { name: 'Robotics', status: 'NEXT' },
+  { name: 'Rockchip', status: 'IN PRODUCTION' },
+  { name: 'NXP', status: 'VALIDATING' },
+  { name: 'Qualcomm', status: 'VALIDATING' },
+  { name: 'NVIDIA', status: 'NEXT' },
 ];
 
 const ways = [
@@ -50,9 +51,8 @@ export default function Start() {
           <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">START</p>
           <h2 className="text-4xl md:text-6xl text-white mb-5 leading-tight">One core. Two ways to get it.</h2>
           <p className="text-xl md:text-2xl text-white/75 font-light leading-relaxed">
-            The same correction layer runs in both. We deploy it as a station on your line, or you deploy it as
-            firmware beside your own model. The open-source runner below is the door you can open today without
-            talking to us.
+            The same correction layer in both: we deploy it as a station on your line, or you deploy it as firmware
+            beside your own model. The open-source runner below is the door you can open today.
           </p>
         </div>
 

@@ -1,17 +1,19 @@
 import React from 'react';
 import { COMPANY_LOGOS } from '../data/companyLogos';
+import SelfCorrectionFlow from './SelfCorrectionFlow';
 
 const tiles = [
   { src: '/videos/where-line.mp4', kicker: 'LINES', title: 'In production', body: 'Battery, rail, tyre and aerospace lines. The runtime replaced the incumbent inspection station.' },
   { src: '/videos/where-car.mp4', kicker: 'CARS', title: 'Vehicle-tested with Nissan', body: 'Six driver-assistance functions on the same runtime. The moving-camera judge is next.' },
   { src: '/videos/where-robot.mp4', kicker: 'ROBOTS', title: 'On the bench', body: 'The loop reproduced on a sealed Qualcomm NPU and published open source. Robot policies are the next rung.' },
-  { src: '/videos/where-npu.mp4', kicker: 'ANY SILICON', title: 'Four NPU families', body: 'Rockchip, NXP, DeepX, Qualcomm. Here on an NXP i.MX 8M Plus with 2 GB of RAM.' },
+  { src: '/videos/where-npu.mp4', kicker: 'ON-DEVICE', title: 'Beside the model, on the NPU', body: 'The same correction on Rockchip, NXP, DeepX and Qualcomm. Here on an NXP i.MX 8M Plus with 2 GB of RAM.' },
 ];
 
 const stack = [
-  { label: 'WORKS WITH NPU', items: ['Rockchip RK3588', 'NXP i.MX 8M Plus', 'DeepX', 'Qualcomm Dragonwing'] },
+  { label: 'WHERE CORRECTION BELONGS', items: ['Industrial · in production', 'Automotive · validating', 'Robot · next'] },
+  { label: 'WHAT IT CORRECTS', items: ['Sensor: light, lens, belt', 'Chip: heat, dropped frames', 'Model: drift, a new type'] },
   { label: 'GOVERNS THE MODEL', items: ['YOLO (Ultralytics)', 'classifiers', 'PP-OCR', 'Qwen2', 'vendor-sealed models'] },
-  { label: 'RUNS BENEATH THE STACK', items: ['RKNN', 'eIQ', 'DeepX SDK', 'ExecuTorch', 'QAIRT', 'LiteRT', 'ONNX Runtime'] },
+  { label: 'RUNS ON YOUR SILICON', items: ['Rockchip RK3588', 'NXP i.MX 8M Plus', 'DeepX', 'Qualcomm Dragonwing', 'RKNN', 'eIQ', 'ExecuTorch', 'QAIRT', 'LiteRT', 'ONNX Runtime'] },
 ];
 
 export default function Where() {
@@ -48,10 +50,10 @@ export default function Where() {
           ))}
         </div>
 
-        <figure className="mt-14 rounded-xl border border-white/10 bg-site overflow-hidden">
+        <figure id="architecture" className="mt-14 rounded-xl border border-white/10 bg-site overflow-hidden scroll-mt-28">
           <img
             src="/images/runtime-beside-your-model.svg"
-            alt="Your model stays sealed. The judge sits beside it and hands the verified claim to your decision, on your silicon: NXP, Qualcomm, DeepX, Rockchip. Your physical scene is the source of independent evidence: fixed, moving, acting."
+            alt="Deployed AI makes wrong claims. Correction fixes them on-device. Your model stays sealed; correction, toolchain, judge, correct and ledger, sits beside it and hands the verified claim to your decision. Where correction belongs: industrial in production, automotive validating, robot next. Six causes, one symptom: sensor, chip, model."
             className="w-full h-auto"
             loading="lazy"
           />
@@ -75,7 +77,7 @@ export default function Where() {
           </div>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {stack.map((row) => (
             <div key={row.label} className="border border-white/10 bg-white/[0.04] rounded-xl p-6">
               <p className="text-base uppercase tracking-[0.2em] text-[var(--edgeble-green)] mb-4 font-medium">{row.label}</p>
@@ -89,6 +91,20 @@ export default function Where() {
             </div>
           ))}
         </div>
+
+        <figure className="mt-14 rounded-xl border border-white/10 bg-site overflow-hidden">
+          <figcaption className="px-6 md:px-10 pt-10 pb-2 text-center">
+            <h3 className="text-3xl md:text-5xl text-white">Correct now. Fix forever.</h3>
+            <p className="mt-4 text-xl md:text-2xl text-white/75 font-light leading-relaxed max-w-4xl mx-auto">
+              Stage 1 judges every claim in milliseconds and corrects the wrong one; it never blocks the line.
+              Stage 2 runs behind it when wrong claims repeat: it finds which layer moved, sensor, chip or model,
+              fixes it on-device and proves the fix before it goes live.
+            </p>
+          </figcaption>
+          <div className="p-3 md:p-6">
+            <SelfCorrectionFlow />
+          </div>
+        </figure>
       </div>
     </section>
   );

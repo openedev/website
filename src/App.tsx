@@ -7,7 +7,6 @@ import WhyWrongClaims from './components/WhyWrongClaims';
 import Loop from './components/Loop';
 import Where from './components/Where';
 import Start from './components/Start';
-import ArchitecturePage from './pages/ArchitecturePage';
 import StartBrochurePage from './pages/StartBrochurePage';
 import LetUsKnowPage from './pages/LetUsKnowPage';
 import Team from './components/Team';
@@ -56,7 +55,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/architecture" element={<ArchitecturePage />} />
+        <Route path="/architecture" element={<Navigate to="/#architecture" replace />} />
         <Route path="/start" element={<StartBrochurePage />} />
         <Route path="/letusknow" element={<LetUsKnowPage />} />
         <Route path="/letusknow/:mode" element={<LetUsKnowPage />} />

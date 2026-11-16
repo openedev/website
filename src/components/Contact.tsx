@@ -92,10 +92,10 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header - Left Aligned */}
         <div className="mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-6xl text-white mb-5 leading-tight">
             Get in <span className="text-white">Touch</span>
           </h2>
-          <p className="text-xl text-white max-w-3xl">
+          <p className="text-xl md:text-2xl text-white/75 font-light leading-relaxed max-w-3xl">
             Building inspection, perception, or control systems that must keep working in the field? Write to us.
           </p>
         </div>

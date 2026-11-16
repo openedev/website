@@ -1,7 +1,7 @@
 import { BlogPost } from "../blogTypes";
 
 const blog: BlogPost = {
-  title: "Cross-Layer Self-Correction for Embedded Vision AI: the talk at Embedded World India 2026",
+  title: "Talk: Cross-Layer Self-Correction for Embedded Vision AI, EmbeddedWorld India 2026",
   slug: "embeddedworld-india-2026",
   excerpt:
     "Thursday 19 November, 11:55, AI and Embedded Vision track, Bengaluru. A technical deep dive: from the conveyor to the NPU to the model, with the production cases from rail, battery and tyre lines on Rockchip, DeepX and NXP NPUs.",

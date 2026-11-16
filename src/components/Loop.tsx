@@ -4,7 +4,7 @@ const steps = [
   {
     kicker: 'CATCH',
     when: 'every claim · milliseconds',
-    title: 'A judge beside the model.',
+    title: 'Correction beside the model.',
     body: 'Each claim is checked against evidence the model never had. A wrong claim is corrected before it becomes a decision.',
     numbers: [
       { value: '13 ms', label: 'per claim' },
@@ -17,14 +17,14 @@ const steps = [
     title: 'Find the layer. Fix that layer.',
     body: 'Sensor, chip or model. A lamp through the PLC, a frame budget, or on-device learning: a small retrain of the model’s head from confirmed captures, gated, swapped live, rolled back in seconds if it must be.',
     numbers: [
-      { value: '53 of 53', label: 'labels learned on the device' },
+      { value: '53 of 53', label: 'labels learned on-device' },
       { value: '< 5 s', label: 'rollback' },
     ],
   },
   {
     kicker: 'PROVE',
     when: 'every verdict · a signed ledger',
-    title: 'Proof, produced on the device.',
+    title: 'Proof, produced on-device.',
     body: 'One line per claim: the evidence, the verdict, every gate, every swap. The record the EU AI Act and ISO/PAS 8800 ask for, written as a by-product of running.',
     numbers: [
       { value: '11 of 12', label: 'drift events corrected' },
@@ -40,12 +40,11 @@ export default function Loop() {
         <div className="max-w-3xl mb-14">
           <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">THE RUNTIME</p>
           <h2 className="text-4xl md:text-6xl text-white mb-5 leading-tight">
-            Catch. Fix. Prove. On the device.
+            Catch. Fix. Prove. On-device.
           </h2>
           <p className="text-xl md:text-2xl text-white/75 font-light leading-relaxed">
-            One runtime beside any model, on any NPU. On-device correction of every claim, on-device
-            retraining of the model's head when the model is the cause, and proof in a ledger. The model
-            stays sealed. Nothing leaves the device.
+            Correction beside the deployed model, on-device. It checks every claim, corrects the wrong one,
+            fixes the layer that failed, sensor, chip or model, and signs the ledger.
           </p>
         </div>
 
@@ -70,9 +69,9 @@ export default function Loop() {
           ))}
         </div>
 
-        <p className="mt-6 text-base md:text-lg text-white/50 font-light">
-          Measured on a battery line in production, October 2026. Forgetting 3 to 9 % on frames never trained on.
-          <a href="/architecture" className="ml-2 text-white/70 hover:text-white underline underline-offset-4">How it works, layer by layer</a>
+        <p className="mt-6 text-lg md:text-xl text-white/55 font-light">
+          Battery line in production, October 2026. 4 of 6 causes of wrong claims were not the model.
+          <a href="#architecture" className="ml-2 text-white/70 hover:text-white underline underline-offset-4">How it works, layer by layer</a>
         </p>
       </div>
     </section>

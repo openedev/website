@@ -26,10 +26,10 @@ const Team = () => {
           <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
             TEAM
           </p>
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-5 leading-tight">
+          <h2 className="text-4xl md:text-6xl text-white mb-5 leading-tight">
             Cross-layer founders
           </h2>
-          <p className="text-xl md:text-2xl text-white/120 leading-relaxed">
+          <p className="text-xl md:text-2xl text-white/75 font-light leading-relaxed">
             model, silicon, physical systems, and the runtime between them.
           </p>
         </div>
