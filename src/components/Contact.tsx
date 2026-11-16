@@ -255,14 +255,14 @@ const Contact = () => {
                             href={info.link}
                             target={info.link.startsWith('http') ? '_blank' : '_self'}
                             rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined}
-                            className="text-white hover:text-white/70 transition-colors duration-200"
+                            className="text-white hover:text-white/85 transition-colors duration-200"
                           >
                             {info.details}
                           </a>
                         ) : (
                           <p className="text-white">{info.details}</p>
                         )}
-                        {info.subtitle && <p className="text-white/70 text-sm">{info.subtitle}</p>}
+                        {info.subtitle && <p className="text-white/85 text-sm">{info.subtitle}</p>}
                       </div>
                     </div>
                   );

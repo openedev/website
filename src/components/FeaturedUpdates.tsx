@@ -13,7 +13,7 @@ const FeaturedUpdates = () => {
           >
             <p className="text-2xl font-semibold text-white leading-relaxed flex items-center gap-3">
               <span>Embedded World India 2026, Bengaluru, 17 to 19 November. Booth SP16: live demo</span>
-              <ArrowRight className="w-5 h-5 text-white/60 group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <ArrowRight className="w-5 h-5 text-white/75 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </p>
           </a>
 
@@ -24,7 +24,7 @@ const FeaturedUpdates = () => {
           >
             <p className="text-2xl font-semibold text-white leading-relaxed flex items-center gap-3">
               <span>Talk: Cross-Layer Self-Correction for Embedded Vision AI. Thursday 19 November, 11:55</span>
-              <ArrowRight className="w-5 h-5 text-white/60 group-hover:translate-x-1 transition-transform flex-shrink-0" />
+              <ArrowRight className="w-5 h-5 text-white/75 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </p>
           </a>
 

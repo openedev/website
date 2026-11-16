@@ -5,7 +5,7 @@ export default function WhyWrongClaims() {
     <section id="why" className="bg-black py-24 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-12">
-          <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">WHY</p>
+          <p className="text-base uppercase tracking-[0.2em] text-white/75 mb-5 font-medium">WHY</p>
           <h2 className="text-4xl md:text-6xl text-white mb-5 leading-tight">
             A well-built model still makes wrong claims.
           </h2>

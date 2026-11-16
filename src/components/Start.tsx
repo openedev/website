@@ -6,7 +6,7 @@ type Status = 'IN PRODUCTION' | 'VALIDATING' | 'NEXT';
 const statusClass: Record<Status, string> = {
   'IN PRODUCTION': 'text-[var(--edgeble-green)]',
   VALIDATING: 'text-[#FFB454]',
-  NEXT: 'text-white/50',
+  NEXT: 'text-white/70',
 };
 
 const silicon: { name: string; status: Status }[] = [
@@ -48,7 +48,7 @@ export default function Start() {
     <section id="start" className="bg-black py-24 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-14">
-          <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">START</p>
+          <p className="text-base uppercase tracking-[0.2em] text-white/75 mb-5 font-medium">START</p>
           <h2 className="text-4xl md:text-6xl text-white mb-5 leading-tight">One core. Two ways to get it.</h2>
           <p className="text-xl md:text-2xl text-white/75 font-light leading-relaxed">
             The same correction layer in both: we deploy it as a station on your line, or you deploy it as firmware
@@ -83,7 +83,7 @@ export default function Start() {
                     </div>
                   ) : (
                     <div className="border border-dashed border-white/35 rounded-md px-5 py-4 flex-1 flex flex-col justify-center">
-                      <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-3">Your silicon</p>
+                      <p className="text-base uppercase tracking-[0.2em] text-white/75 mb-3">Your silicon</p>
                       <dl className="space-y-2.5">
                         {silicon.map((s) => (
                           <div key={s.name} className="flex items-baseline justify-between gap-4">

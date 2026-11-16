@@ -50,7 +50,7 @@ const ContactEngineers = () => {
           <div className="flex items-center mb-6">
             <button 
               onClick={() => window.history.back()}
-              className="flex items-center text-white hover:text-white/70 transition-colors duration-200 mr-4"
+              className="flex items-center text-white hover:text-white/85 transition-colors duration-200 mr-4"
             >
               <ArrowLeft className="w-5 h-5 mr-2" />
               Back
@@ -82,18 +82,18 @@ const ContactEngineers = () => {
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-white mb-1">{engineer.name}</h3>
                     <p className="text-white font-medium mb-2">{engineer.role}</p>
-                    <p className="text-white/70 text-sm mb-4">{engineer.specialization}</p>
+                    <p className="text-white/85 text-sm mb-4">{engineer.specialization}</p>
                     
                     <div className="space-y-3">
                       <div className="flex items-center text-white">
                         <Phone className="w-4 h-4 mr-3" />
-                        <a href={`tel:${engineer.phone}`} className="hover:text-white/70 transition-colors">
+                        <a href={`tel:${engineer.phone}`} className="hover:text-white/85 transition-colors">
                           {engineer.phone}
                         </a>
                       </div>
                       <div className="flex items-center text-white">
                         <Mail className="w-4 h-4 mr-3" />
-                        <a href={`mailto:${engineer.email}`} className="hover:text-white/70 transition-colors">
+                        <a href={`mailto:${engineer.email}`} className="hover:text-white/85 transition-colors">
                           {engineer.email}
                         </a>
                       </div>
@@ -150,7 +150,7 @@ const ContactEngineers = () => {
               
               <div className="mt-8 p-4 bg-white/10 rounded-xl">
                 <h3 className="font-semibold text-white mb-2">Quick Response</h3>
-                <p className="text-white/70 text-sm">
+                <p className="text-white/85 text-sm">
                   For urgent technical support or custom solution inquiries, our engineers typically respond within 2-4 hours during business hours.
                 </p>
               </div>

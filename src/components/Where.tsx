@@ -22,7 +22,7 @@ export default function Where() {
     <section id="where" className="bg-site py-24 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-14">
-          <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">WHERE IT RUNS</p>
+          <p className="text-base uppercase tracking-[0.2em] text-white/75 mb-5 font-medium">WHERE IT RUNS</p>
           <h2 className="text-4xl md:text-6xl text-white mb-5 leading-tight">
             One runtime. Lines today. Cars tested. Robots next.
           </h2>
@@ -44,7 +44,7 @@ export default function Where() {
               <div className="p-5">
                 <span className="text-[var(--edgeble-green)] text-base uppercase tracking-[0.2em] font-medium">{t.kicker}</span>
                 <h3 className="text-2xl md:text-3xl text-white mt-2 mb-2">{t.title}</h3>
-                <p className="text-white/70 font-light text-lg md:text-xl leading-relaxed">{t.body}</p>
+                <p className="text-white/85 text-lg md:text-xl leading-relaxed">{t.body}</p>
               </div>
             </div>
           ))}
@@ -60,7 +60,7 @@ export default function Where() {
         </figure>
 
         <div className="mt-14">
-          <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">DEPLOYED AND TESTED WITH</p>
+          <p className="text-base uppercase tracking-[0.2em] text-white/75 mb-5 font-medium">DEPLOYED AND TESTED WITH</p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {customers.map((company) => (
               <div key={company.name} className="h-24 border border-white/10 bg-white/[0.04] rounded-lg flex items-center justify-center px-5">
@@ -83,7 +83,7 @@ export default function Where() {
               <p className="text-base uppercase tracking-[0.2em] text-[var(--edgeble-green)] mb-4 font-medium">{row.label}</p>
               <ul className="flex flex-wrap gap-2">
                 {row.items.map((item) => (
-                  <li key={item} className="px-3 py-1.5 rounded-full border border-white/15 text-white/80 text-lg font-light">
+                  <li key={item} className="px-3 py-1.5 rounded-full border border-white/15 text-white/80 text-lg">
                     {item}
                   </li>
                 ))}

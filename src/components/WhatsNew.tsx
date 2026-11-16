@@ -87,7 +87,7 @@ const WhatsNew = () => {
                   <p className="text-white mb-4 leading-relaxed">{item.excerpt}</p>
                   <a 
                     href={`/blog/${item.slug}`}
-                    className="flex items-center text-white hover:text-white/70 font-semibold transition-all duration-200 group"
+                    className="flex items-center text-white hover:text-white/85 font-semibold transition-all duration-200 group"
                   >
                     Read More
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

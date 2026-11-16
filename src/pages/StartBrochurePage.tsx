@@ -53,7 +53,7 @@ export default function StartBrochurePage() {
       <main className="pt-[112px]">
         <section className="bg-site py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">START</p>
+            <p className="text-base uppercase tracking-[0.2em] text-white/75 mb-5 font-medium">START</p>
             <h1 className="text-4xl md:text-6xl text-white mb-5 leading-tight">Get the Correction Brochure.</h1>
             <p className="text-xl md:text-2xl text-white/75 font-light leading-relaxed max-w-3xl mb-12">
               A concise view of the correction layer between the model and the physical system: what it observes,
@@ -64,11 +64,11 @@ export default function StartBrochurePage() {
               <div className="border border-[var(--edgeble-green)]/40 bg-white/[0.04] rounded-xl p-8">
                 <span className="text-[var(--edgeble-green)] text-sm uppercase tracking-[0.2em] font-medium">BROCHURE</span>
                 <h2 className="text-3xl text-white mt-4 mb-4">Correction Brochure</h2>
-                <p className="text-lg text-white/75 font-light leading-relaxed mb-6">
+                <p className="text-lg text-white/85 leading-relaxed mb-6">
                   See how Edgeble catches a wrong claim, finds the layer that caused it, corrects it on-device, and
                   records the proof for the next decision.
                 </p>
-                <p className="text-base text-white/55 font-light">
+                <p className="text-base text-white/70">
                   Submit your details and the PDF will download. Your request will also reach info@edgeble.ai.
                 </p>
               </div>
@@ -77,7 +77,7 @@ export default function StartBrochurePage() {
                 {sent ? (
                   <div className="flex items-start gap-3 text-white">
                     <CheckCircle className="w-6 h-6 text-[var(--edgeble-green)] flex-shrink-0 mt-0.5" />
-                    <p className="text-lg font-light">
+                    <p className="text-lg">
                       Sent. Your brochure download should start now, and your details have reached the founders.
                     </p>
                   </div>
@@ -90,7 +90,7 @@ export default function StartBrochurePage() {
                       { f: 'company', label: 'Company', type: 'text', req: false },
                     ] as const).map(({ f, label, type, req }) => (
                       <label key={f} className="block">
-                        <span className="block text-sm uppercase tracking-[0.16em] text-white/60 mb-2">{label}{req ? '' : ' (optional)'}</span>
+                        <span className="block text-sm uppercase tracking-[0.16em] text-white/75 mb-2">{label}{req ? '' : ' (optional)'}</span>
                         <input
                           type={type}
                           required={req}
@@ -101,7 +101,7 @@ export default function StartBrochurePage() {
                       </label>
                     ))}
                     <label className="block">
-                      <span className="block text-sm uppercase tracking-[0.16em] text-white/60 mb-2">Anything else (optional)</span>
+                      <span className="block text-sm uppercase tracking-[0.16em] text-white/75 mb-2">Anything else (optional)</span>
                       <textarea
                         placeholder="The model, the board, the line, the date you need it by"
                         value={form.notes}

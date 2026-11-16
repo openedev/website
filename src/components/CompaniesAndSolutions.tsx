@@ -19,7 +19,7 @@ const CompaniesAndSolutions = () => {
     <section id="correction-stack" className="py-24 bg-black border-y border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-14">
-          <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
+          <p className="text-base uppercase tracking-[0.2em] text-white/75 mb-5 font-medium">
             SELF-CORRECTION ARCHITECTURE
           </p>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-5 leading-tight">
@@ -35,7 +35,7 @@ const CompaniesAndSolutions = () => {
             const IconComponent = step.icon;
             return (
               <div key={step.label} className="border border-white/10 bg-white/[0.04] rounded-lg p-5">
-                <IconComponent className="w-6 h-6 text-white/70 mb-4" />
+                <IconComponent className="w-6 h-6 text-white/85 mb-4" />
                 <h3 className="text-white font-semibold text-lg">{step.label}</h3>
               </div>
             );
@@ -47,9 +47,9 @@ const CompaniesAndSolutions = () => {
             const IconComponent = layer.icon;
             return (
               <div key={layer.title} className="border-l border-white/20 bg-white/[0.03] px-6 py-5">
-                <IconComponent className="w-6 h-6 text-white/70 mb-4" />
+                <IconComponent className="w-6 h-6 text-white/85 mb-4" />
                 <h3 className="text-2xl font-semibold text-white mb-3">{layer.title}</h3>
-                <p className="text-white/70 leading-relaxed">{layer.detail}</p>
+                <p className="text-white/85 leading-relaxed">{layer.detail}</p>
               </div>
             );
           })}

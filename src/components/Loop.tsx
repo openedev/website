@@ -38,7 +38,7 @@ export default function Loop() {
     <section id="loop" className="bg-site py-24 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-14">
-          <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">THE RUNTIME</p>
+          <p className="text-base uppercase tracking-[0.2em] text-white/75 mb-5 font-medium">THE RUNTIME</p>
           <h2 className="text-4xl md:text-6xl text-white mb-5 leading-tight">
             Catch. Fix. Prove. On-device.
           </h2>
@@ -53,7 +53,7 @@ export default function Loop() {
             <div key={s.kicker} className="border border-white/10 bg-white/[0.04] rounded-xl p-7 flex flex-col">
               <div className="flex items-baseline justify-between mb-6">
                 <span className="text-[var(--edgeble-green)] text-base uppercase tracking-[0.2em] font-medium">{s.kicker}</span>
-                <span className="text-white/60 text-lg font-light">{s.when}</span>
+                <span className="text-white/75 text-lg">{s.when}</span>
               </div>
               <h3 className="text-2xl md:text-3xl text-white mb-3">{s.title}</h3>
               <p className="text-lg md:text-xl text-white/70 font-light leading-relaxed mb-8">{s.body}</p>
@@ -61,7 +61,7 @@ export default function Loop() {
                 {s.numbers.map((n) => (
                   <div key={n.label}>
                     <div className="text-2xl md:text-3xl text-white font-manrope">{n.value}</div>
-                    <div className="text-white/60 text-base font-light mt-1">{n.label}</div>
+                    <div className="text-white/75 text-base mt-1">{n.label}</div>
                   </div>
                 ))}
               </div>
@@ -69,9 +69,9 @@ export default function Loop() {
           ))}
         </div>
 
-        <p className="mt-6 text-lg md:text-xl text-white/55 font-light">
+        <p className="mt-6 text-lg md:text-xl text-white/70">
           Battery line in production, October 2026. 4 of 6 causes of wrong claims were not the model.
-          <a href="#architecture" className="ml-2 text-white/70 hover:text-white underline underline-offset-4">How it works, layer by layer</a>
+          <a href="#architecture" className="ml-2 text-white/85 hover:text-white underline underline-offset-4">How it works, layer by layer</a>
         </p>
       </div>
     </section>

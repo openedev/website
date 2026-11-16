@@ -158,7 +158,7 @@ export default function StartPage() {
       <main className="pt-[112px]">
         <section className="bg-site py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">TALK TO FOUNDERS</p>
+            <p className="text-base uppercase tracking-[0.2em] text-white/75 mb-5 font-medium">TALK TO FOUNDERS</p>
             <h1 className="text-4xl md:text-6xl text-white mb-5 leading-tight">Choose the right door.</h1>
             <p className="text-xl md:text-2xl text-white/75 font-light leading-relaxed max-w-3xl mb-12">
               Start with Orchestration, Runtime, or Brochure. The first two keep the six-question path; Brochure needs
@@ -167,14 +167,14 @@ export default function StartPage() {
 
             <div className="space-y-10 max-w-4xl">
               <div>
-                <p className="text-lg text-white/60 mb-3"><span className="text-[var(--edgeble-green)] mr-3">01</span>What are you looking for?</p>
+                <p className="text-lg text-white/75 mb-3"><span className="text-[var(--edgeble-green)] mr-3">01</span>What are you looking for?</p>
                 <div className="flex flex-wrap gap-2">
                   {routeOptions.map((option) => (
                     <button
                       key={option.id}
                       type="button"
                       onClick={() => chooseRoute(option.id)}
-                      className={`px-4 py-2 rounded-full border text-base transition-colors ${route === option.id ? 'border-[var(--edgeble-green)] bg-[var(--edgeble-green)]/15 text-white' : 'border-white/15 text-white/75 hover:border-white/40 hover:text-white'}`}
+                      className={`px-4 py-2 rounded-full border text-base transition-colors ${route === option.id ? 'border-[var(--edgeble-green)] bg-[var(--edgeble-green)]/15 text-white' : 'border-white/15 text-white/85 hover:border-white/40 hover:text-white'}`}
                     >
                       {option.label}
                     </button>
@@ -184,7 +184,7 @@ export default function StartPage() {
 
               {questionFlow && questions.map((q, i) => (
                 <div key={q.id}>
-                  <p className="text-lg text-white/60 mb-3"><span className="text-[var(--edgeble-green)] mr-3">{String(i + 2).padStart(2, '0')}</span>{q.question}</p>
+                  <p className="text-lg text-white/75 mb-3"><span className="text-[var(--edgeble-green)] mr-3">{String(i + 2).padStart(2, '0')}</span>{q.question}</p>
                   <div className="flex flex-wrap gap-2">
                     {q.options.map((o) => {
                       const on = answers[q.id] === o;
@@ -193,7 +193,7 @@ export default function StartPage() {
                           key={o}
                           type="button"
                           onClick={() => setAnswers({ ...answers, [q.id]: o })}
-                          className={`px-4 py-2 rounded-full border text-base transition-colors ${on ? 'border-[var(--edgeble-green)] bg-[var(--edgeble-green)]/15 text-white' : 'border-white/15 text-white/75 hover:border-white/40 hover:text-white'}`}
+                          className={`px-4 py-2 rounded-full border text-base transition-colors ${on ? 'border-[var(--edgeble-green)] bg-[var(--edgeble-green)]/15 text-white' : 'border-white/15 text-white/85 hover:border-white/40 hover:text-white'}`}
                         >
                           {o}
                         </button>
@@ -204,13 +204,13 @@ export default function StartPage() {
               ))}
 
               {route === 'brochure' && (
-                <p className="text-lg text-white/60 font-light leading-relaxed">
+                <p className="text-lg text-white/75 leading-relaxed">
                   No further questions for the brochure. Add your details below and the PDF will download after submission.
                 </p>
               )}
 
               {!route && (
-                <p className="text-lg text-white/50 font-light leading-relaxed">
+                <p className="text-lg text-white/70 leading-relaxed">
                   Choose one path above to continue.
                 </p>
               )}
@@ -221,8 +221,8 @@ export default function StartPage() {
                 <div className="border border-[var(--edgeble-green)]/40 bg-white/[0.04] rounded-xl p-8">
                   <span className="text-[var(--edgeble-green)] text-sm uppercase tracking-[0.2em] font-medium">{door.kicker}</span>
                   <h2 className="text-3xl text-white mt-4 mb-4">{door.title}</h2>
-                  <p className="text-lg text-white/75 font-light leading-relaxed mb-6">{door.body}</p>
-                  <p className="text-base text-white/55 font-light">{door.next}</p>
+                  <p className="text-lg text-white/85 leading-relaxed mb-6">{door.body}</p>
+                  <p className="text-base text-white/70">{door.next}</p>
                   {door.href && (
                     <a href={door.href} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 text-white hover:text-white/80 underline underline-offset-4">
                       {door.cta} <ArrowUpRight className="w-4 h-4" />
@@ -231,9 +231,9 @@ export default function StartPage() {
                 </div>
                 ) : (
                 <div className="border border-white/10 bg-white/[0.04] rounded-xl p-8">
-                  <span className="text-white/50 text-sm uppercase tracking-[0.2em] font-medium">YOUR DOOR</span>
-                  <h2 className="text-3xl text-white/60 mt-4 mb-4">Appears here after the six answers.</h2>
-                  <p className="text-lg text-white/50 font-light leading-relaxed">
+                  <span className="text-white/70 text-sm uppercase tracking-[0.2em] font-medium">YOUR DOOR</span>
+                  <h2 className="text-3xl text-white/75 mt-4 mb-4">Appears here after the six answers.</h2>
+                  <p className="text-lg text-white/70 leading-relaxed">
                     {questions.filter((q) => answers[q.id]).length} of 6 answered. You can send the form without finishing; the answers you gave come with it.
                   </p>
                 </div>
@@ -243,7 +243,7 @@ export default function StartPage() {
                   {sent ? (
                     <div className="flex items-start gap-3 text-white">
                       <CheckCircle className="w-6 h-6 text-[var(--edgeble-green)] flex-shrink-0 mt-0.5" />
-                      <p className="text-lg font-light">
+                      <p className="text-lg">
                         {route === 'brochure'
                           ? 'Sent. Your brochure download should start now, and your details have reached the founders.'
                           : 'Sent. Your answers came with it, so the first reply is already specific.'}
@@ -258,7 +258,7 @@ export default function StartPage() {
                         { f: 'company', label: 'Company', type: 'text', req: false },
                       ] as const).map(({ f, label, type, req }) => (
                         <label key={f} className="block">
-                          <span className="block text-sm uppercase tracking-[0.16em] text-white/60 mb-2">{label}{req ? '' : ' (optional)'}</span>
+                          <span className="block text-sm uppercase tracking-[0.16em] text-white/75 mb-2">{label}{req ? '' : ' (optional)'}</span>
                           <input
                             type={type}
                             required={req}
@@ -269,7 +269,7 @@ export default function StartPage() {
                         </label>
                       ))}
                       <label className="block">
-                        <span className="block text-sm uppercase tracking-[0.16em] text-white/60 mb-2">Anything else (optional)</span>
+                        <span className="block text-sm uppercase tracking-[0.16em] text-white/75 mb-2">Anything else (optional)</span>
                         <textarea
                           placeholder="The model, the board, the line, the date you need it by"
                           value={form.notes}

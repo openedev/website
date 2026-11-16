@@ -23,7 +23,7 @@ const Team = () => {
     <section id="team" className="py-24 bg-site">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-14">
-          <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
+          <p className="text-base uppercase tracking-[0.2em] text-white/75 mb-5 font-medium">
             TEAM
           </p>
           <h2 className="text-4xl md:text-6xl text-white mb-5 leading-tight">
@@ -41,14 +41,14 @@ const Team = () => {
                 <Target className="w-6 h-6" />
               </div>
               <h3 className="text-3xl font-bold text-white mb-2">{member.name}</h3>
-              <p className="text-white/70 text-lg font-semibold mb-5">{member.role}</p>
+              <p className="text-white/85 text-lg font-semibold mb-5">{member.role}</p>
               <p className="text-xl text-white/80 leading-relaxed mb-7">
                 {member.headline && (
                   <span className="block font-semibold">
                     {member.headline}
                   </span>
                 )}
-                <span className="block font-light whitespace-pre-line">{member.description}</span>
+                <span className="block whitespace-pre-line">{member.description}</span>
               </p>
               <a
                 href={member.linkedin}
@@ -64,7 +64,7 @@ const Team = () => {
           ))}
         </div>
 
-        <p className="mt-8 text-base md:text-lg text-white/70 font-light leading-relaxed">
+        <p className="mt-8 text-base md:text-lg text-white/85 leading-relaxed">
           Behind them, five engineers on the device: model, NPU, camera, lines.
           <a href="/jobs" className="ml-2 text-white/90 hover:text-white underline underline-offset-4">We are hiring.</a>
         </p>

@@ -85,7 +85,7 @@ function LandingPage() {
       <main className="pt-[112px]">
         <section className="bg-site py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">LET US KNOW</p>
+            <p className="text-base uppercase tracking-[0.2em] text-white/75 mb-5 font-medium">LET US KNOW</p>
             <h1 className="text-4xl md:text-6xl text-white mb-5 leading-tight">Which layer are you bringing to the line?</h1>
             <p className="text-xl md:text-2xl text-white/75 font-light leading-relaxed max-w-3xl mb-12">
               Choose the path that matches the way you want to deploy correction. Each path keeps its own questions and recommendation.
@@ -113,7 +113,7 @@ function LandingPage() {
                 >
                   <span className="text-[var(--edgeble-green)] text-sm uppercase tracking-[0.2em] font-medium">{option.number}</span>
                   <h2 className="text-3xl text-white mt-4 mb-4">{option.title}</h2>
-                  <p className="text-lg text-white/70 font-light leading-relaxed mb-8">{option.body}</p>
+                  <p className="text-lg text-white/85 leading-relaxed mb-8">{option.body}</p>
                   <span className="inline-flex items-center gap-2 text-white underline underline-offset-4">
                     Continue <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </span>
@@ -179,14 +179,14 @@ function FlowPage({ mode }: { mode: Mode }) {
       <main className="pt-[112px]">
         <section className="bg-site py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">LET US KNOW · {mode.toUpperCase()}</p>
+            <p className="text-base uppercase tracking-[0.2em] text-white/75 mb-5 font-medium">LET US KNOW · {mode.toUpperCase()}</p>
             <h1 className="text-4xl md:text-6xl text-white mb-5 leading-tight">{copy.title}</h1>
             <p className="text-xl md:text-2xl text-white/75 font-light leading-relaxed max-w-3xl mb-12">{copy.body} Pick one answer per question; the door appears below as soon as all six are in.</p>
 
             <div className="space-y-10 max-w-4xl">
               {questions.map((q, i) => (
                 <div key={q.id}>
-                  <p className="text-lg text-white/60 mb-3"><span className="text-[var(--edgeble-green)] mr-3">{String(i + 1).padStart(2, '0')}</span>{q.question}</p>
+                  <p className="text-lg text-white/75 mb-3"><span className="text-[var(--edgeble-green)] mr-3">{String(i + 1).padStart(2, '0')}</span>{q.question}</p>
                   <div className="flex flex-wrap gap-2">
                     {q.options.map((option) => {
                       const selected = answers[q.id] === option;
@@ -195,7 +195,7 @@ function FlowPage({ mode }: { mode: Mode }) {
                           key={option}
                           type="button"
                           onClick={() => { setAnswers({ ...answers, [q.id]: option }); setSent(false); }}
-                          className={`px-4 py-2 rounded-full border text-base transition-colors ${selected ? 'border-[var(--edgeble-green)] bg-[var(--edgeble-green)]/15 text-white' : 'border-white/15 text-white/75 hover:border-white/40 hover:text-white'}`}
+                          className={`px-4 py-2 rounded-full border text-base transition-colors ${selected ? 'border-[var(--edgeble-green)] bg-[var(--edgeble-green)]/15 text-white' : 'border-white/15 text-white/85 hover:border-white/40 hover:text-white'}`}
                         >
                           {option}
                         </button>
@@ -211,8 +211,8 @@ function FlowPage({ mode }: { mode: Mode }) {
                 <div className="border border-[var(--edgeble-green)]/40 bg-white/[0.04] rounded-xl p-8">
                   <span className="text-[var(--edgeble-green)] text-sm uppercase tracking-[0.2em] font-medium">{door.kicker}</span>
                   <h2 className="text-3xl text-white mt-4 mb-4">{door.title}</h2>
-                  <p className="text-lg text-white/75 font-light leading-relaxed mb-6">{door.body}</p>
-                  <p className="text-base text-white/55 font-light">{door.next}</p>
+                  <p className="text-lg text-white/85 leading-relaxed mb-6">{door.body}</p>
+                  <p className="text-base text-white/70">{door.next}</p>
                   {door.href && (
                     <a href={door.href} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 text-white hover:text-white/80 underline underline-offset-4">
                       {door.cta} <ArrowUpRight className="w-4 h-4" />
@@ -221,9 +221,9 @@ function FlowPage({ mode }: { mode: Mode }) {
                 </div>
               ) : (
                 <div className="border border-white/10 bg-white/[0.04] rounded-xl p-8">
-                  <span className="text-white/50 text-sm uppercase tracking-[0.2em] font-medium">YOUR DOOR</span>
-                  <h2 className="text-3xl text-white/60 mt-4 mb-4">Appears here after the six answers.</h2>
-                  <p className="text-lg text-white/50 font-light leading-relaxed">{questions.filter((q) => answers[q.id]).length} of 6 answered. You can send the form without finishing; the answers you gave come with it.</p>
+                  <span className="text-white/70 text-sm uppercase tracking-[0.2em] font-medium">YOUR DOOR</span>
+                  <h2 className="text-3xl text-white/75 mt-4 mb-4">Appears here after the six answers.</h2>
+                  <p className="text-lg text-white/70 leading-relaxed">{questions.filter((q) => answers[q.id]).length} of 6 answered. You can send the form without finishing; the answers you gave come with it.</p>
                 </div>
               )}
 
@@ -231,7 +231,7 @@ function FlowPage({ mode }: { mode: Mode }) {
                 {sent ? (
                   <div className="flex items-start gap-3 text-white">
                     <CheckCircle className="w-6 h-6 text-[var(--edgeble-green)] flex-shrink-0 mt-0.5" />
-                    <p className="text-lg font-light">Sent. Your answers came with it, so the first reply is already specific.</p>
+                    <p className="text-lg">Sent. Your answers came with it, so the first reply is already specific.</p>
                   </div>
                 ) : (
                   <form onSubmit={submit} className="space-y-5">
@@ -242,12 +242,12 @@ function FlowPage({ mode }: { mode: Mode }) {
                       { f: 'company', label: 'Company', type: 'text', req: false },
                     ] as const).map(({ f, label, type, req }) => (
                       <label key={f} className="block">
-                        <span className="block text-sm uppercase tracking-[0.16em] text-white/60 mb-2">{label}{req ? '' : ' (optional)'}</span>
+                        <span className="block text-sm uppercase tracking-[0.16em] text-white/75 mb-2">{label}{req ? '' : ' (optional)'}</span>
                         <input type={type} required={req} value={form[f]} onChange={(e) => setForm({ ...form, [f]: e.target.value })} className="w-full bg-white text-black border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--edgeble-green)]" />
                       </label>
                     ))}
                     <label className="block">
-                      <span className="block text-sm uppercase tracking-[0.16em] text-white/60 mb-2">Anything else (optional)</span>
+                      <span className="block text-sm uppercase tracking-[0.16em] text-white/75 mb-2">Anything else (optional)</span>
                       <textarea placeholder="The model, the board, the line, the date you need it by" value={form.notes} onChange={(e) => setForm({ ...form, notes: e.target.value })} rows={4} className="w-full bg-white text-black border border-white/20 rounded-lg px-4 py-3 placeholder-black/40 focus:outline-none focus:ring-2 focus:ring-[var(--edgeble-green)]" />
                     </label>
                     {error && <p className="text-base text-red-300">{error}</p>}

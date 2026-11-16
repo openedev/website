@@ -16,7 +16,7 @@ const BlogPostPage = () => {
         <Navigation />
         <div className="text-center pt-[112px]">
           <h1 className="text-4xl font-bold mb-4">Post Not Found</h1>
-          <p className="text-white/70 mb-8">The blog post you're looking for doesn't exist.</p>
+          <p className="text-white/85 mb-8">The blog post you're looking for doesn't exist.</p>
           <a href="/blog" className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-white/90 transition-all duration-200">
             Back to Blog
           </a>
@@ -42,7 +42,7 @@ const BlogPostPage = () => {
           <div className="flex items-center mb-6">
             <button 
               onClick={() => window.history.back()}
-              className="flex items-center text-white hover:text-white/70 transition-colors duration-200 mr-4"
+              className="flex items-center text-white hover:text-white/85 transition-colors duration-200 mr-4"
             >
               <ArrowLeft className="w-5 h-5 mr-2" />
               Back to Blog
@@ -59,12 +59,12 @@ const BlogPostPage = () => {
           <h1 className="max-w-4xl text-3xl md:text-4xl lg:max-w-none lg:text-[clamp(1.8rem,2.5vw,2.75rem)] break-words font-bold text-white mb-3 leading-tight">
             {post.title}
           </h1>
-          <p className="max-w-4xl text-lg md:text-xl lg:max-w-none break-words text-white/70 leading-relaxed mb-6">
+          <p className="max-w-4xl text-lg md:text-xl lg:max-w-none break-words text-white/85 leading-relaxed mb-6">
             {post.excerpt}
           </p>
 
           {/* Meta Information */}
-          <div className="flex flex-wrap items-center text-white/60 text-sm mb-8 gap-4">
+          <div className="flex flex-wrap items-center text-white/75 text-sm mb-8 gap-4">
             <div className="flex items-center">
               <Calendar className="w-4 h-4 mr-2" />
               <span>Publish {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
@@ -142,7 +142,7 @@ const BlogPostPage = () => {
             {post.tags.map((tag, index) => (
               <span
                 key={index}
-                className="px-3 py-1 bg-white/10 rounded-lg text-sm text-white/70 hover:bg-white/20 transition-colors cursor-pointer"
+                className="px-3 py-1 bg-white/10 rounded-lg text-sm text-white/85 hover:bg-white/20 transition-colors cursor-pointer"
               >
                 {tag}
               </span>

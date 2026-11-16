@@ -8,7 +8,7 @@ const Runtime = () => {
           {/* Left Content */}
           <div className="space-y-12">
             <div>
-              <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
+              <p className="text-base uppercase tracking-[0.2em] text-white/75 mb-5 font-medium">
                 REAL WORLD, PHYSICAL AI
               </p>
               <h2 className="text-5xl md:text-5xl font-bold text-white mb-4 whitespace-nowrap">
@@ -28,7 +28,7 @@ const Runtime = () => {
                 <h3 className="text-2xl font-bold text-white mb-4">
                   Domain-specific Edge Models
                 </h3>
-                <p className="text-white/70 leading-relaxed">
+                <p className="text-white/85 leading-relaxed">
                   Fine-tuned, Quantized and Adaptive Edge Models that senses drift and adapts through on-device loopback learning.
                 </p>
               </div>
@@ -38,7 +38,7 @@ const Runtime = () => {
                 <h3 className="text-2xl font-bold text-white mb-4">
                   Retrain Engine
                 </h3>
-                <p className="text-white/70 leading-relaxed">
+                <p className="text-white/85 leading-relaxed">
                   Integrated micro-learning algorithms that enables local retraining without cloud dependency.
                 </p>
               </div>
@@ -48,7 +48,7 @@ const Runtime = () => {
                 <h3 className="text-2xl font-bold text-white mb-4">
                   Agentic Interface
                 </h3>
-                <p className="text-white/70 leading-relaxed">
+                <p className="text-white/85 leading-relaxed">
                   Built-in agentic control interfaces allow physical systems to self-correct and optimize in real time.
                 </p>
               </div>

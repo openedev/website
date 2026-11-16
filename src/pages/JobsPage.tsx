@@ -14,13 +14,13 @@ export default function JobsPage() {
           <div className="flex items-center mb-6">
             <button
               onClick={() => window.history.back()}
-              className="flex items-center text-white hover:text-white/70 transition-colors duration-200 mr-4"
+              className="flex items-center text-white hover:text-white/85 transition-colors duration-200 mr-4"
             >
               <ArrowLeft className="w-5 h-5 mr-2" />
               Back
             </button>
           </div>
-          <p className="text-base uppercase tracking-[0.2em] text-white/60 mb-5 font-medium">
+          <p className="text-base uppercase tracking-[0.2em] text-white/75 mb-5 font-medium">
             JOBS
           </p>
           <h1 className="text-4xl md:text-6xl text-white mb-5 leading-tight">
@@ -45,20 +45,20 @@ export default function JobsPage() {
                 </div>
                 <div className="min-w-0 flex-1">
                   <h2 className="text-3xl font-semibold text-white mb-3">{job.title}</h2>
-                  <div className="flex flex-wrap gap-3 mb-4 text-sm font-medium text-white/70">
+                  <div className="flex flex-wrap gap-3 mb-4 text-sm font-medium text-white/85">
                     <span className="inline-flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-white/60" />
+                      <Clock className="w-4 h-4 text-white/75" />
                       {job.type}
                     </span>
                     <span className="inline-flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-white/60" />
+                      <MapPin className="w-4 h-4 text-white/75" />
                       {job.location}
                     </span>
                   </div>
-                  <p className="text-lg text-white/75 leading-relaxed mb-5">{job.summary}</p>
+                  <p className="text-lg text-white/85 leading-relaxed mb-5">{job.summary}</p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {job.tags.map((tag) => (
-                      <span key={tag} className="border border-white/10 bg-site px-3 py-1.5 text-sm text-white/70 rounded">
+                      <span key={tag} className="border border-white/10 bg-site px-3 py-1.5 text-sm text-white/85 rounded">
                         {tag}
                       </span>
                     ))}

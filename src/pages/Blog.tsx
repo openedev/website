@@ -33,7 +33,7 @@ const BlogPage = () => {
           <div className="flex items-center mb-6">
             <button 
               onClick={() => window.history.back()}
-              className="flex items-center text-white hover:text-white/70 transition-colors duration-200 mr-4"
+              className="flex items-center text-white hover:text-white/85 transition-colors duration-200 mr-4"
             >
               <ArrowLeft className="w-5 h-5 mr-2" />
               Back
@@ -61,24 +61,24 @@ const BlogPage = () => {
                   <FileText className="w-6 h-6" />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <div className="flex flex-wrap items-center gap-3 mb-4 text-sm font-medium text-white/70">
+                  <div className="flex flex-wrap items-center gap-3 mb-4 text-sm font-medium text-white/85">
                     <span className="border border-white/10 bg-site px-3 py-1.5 text-white/80 rounded">
                       {post.category}
                     </span>
                     <span className="inline-flex items-center gap-2">
-                      <Calendar className="w-4 h-4 text-white/60" />
+                      <Calendar className="w-4 h-4 text-white/75" />
                       Publish {formatDate(post.date)}
                     </span>
                     <span className="inline-flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-white/60" />
+                      <Clock className="w-4 h-4 text-white/75" />
                       {post.readTime}
                     </span>
                   </div>
                   <h2 className="text-3xl font-semibold text-white mb-3">{post.title}</h2>
-                  <p className="text-lg text-white/75 leading-relaxed mb-5">{post.excerpt}</p>
+                  <p className="text-lg text-white/85 leading-relaxed mb-5">{post.excerpt}</p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {post.tags.slice(0, 3).map((tag) => (
-                      <span key={tag} className="border border-white/10 bg-site px-3 py-1.5 text-sm text-white/70 rounded">
+                      <span key={tag} className="border border-white/10 bg-site px-3 py-1.5 text-sm text-white/85 rounded">
                         {tag}
                       </span>
                     ))}

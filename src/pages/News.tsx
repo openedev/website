@@ -24,7 +24,7 @@ const BlogPage = () => {
           <div className="flex items-center mb-6">
             <button 
               onClick={() => window.history.back()}
-              className="flex items-center text-white hover:text-white/70 transition-colors duration-200 mr-4"
+              className="flex items-center text-white hover:text-white/85 transition-colors duration-200 mr-4"
             >
               <ArrowLeft className="w-5 h-5 mr-2" />
               Back
@@ -82,7 +82,7 @@ const BlogPage = () => {
                     <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white text-black shadow-lg">
                       {post.category}
                     </span>
-                    <div className="flex items-center text-white/60 text-sm whitespace-nowrap">
+                    <div className="flex items-center text-white/75 text-sm whitespace-nowrap">
                       <Calendar className="w-4 h-4 mr-2" />
                       {formatDate(post.date)}
                     </div>
@@ -92,7 +92,7 @@ const BlogPage = () => {
                       {post.title}
                     </h3>
                     <p className="text-white/80 leading-relaxed max-w-xl">{post.excerpt}</p>
-                    <div className="flex items-center text-white/60 text-sm">
+                    <div className="flex items-center text-white/75 text-sm">
                       <User className="w-4 h-4 mr-2" />
                       <span>{post.author}</span>
                       <span className="mx-2">•</span>
@@ -113,7 +113,7 @@ const BlogPage = () => {
                 <p className="text-white mb-4 leading-relaxed">{post.excerpt}</p>
                 
                 <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center text-white/60 text-sm">
+                  <div className="flex items-center text-white/75 text-sm">
                     <User className="w-4 h-4 mr-2" />
                     <span>{post.author}</span>
                     <span className="mx-2">•</span>
@@ -127,7 +127,7 @@ const BlogPage = () => {
                   {post.tags.slice(0, 3).map((tag, index) => (
                     <span
                       key={index}
-                      className="px-2 py-1 bg-white/10 rounded-lg text-xs text-white/70"
+                      className="px-2 py-1 bg-white/10 rounded-lg text-xs text-white/85"
                     >
                       {tag}
                     </span>
@@ -136,7 +136,7 @@ const BlogPage = () => {
 
                 <a 
                   href={`/news/${post.slug}`}
-                  className="flex items-center text-white hover:text-white/70 font-semibold transition-all duration-200 group"
+                  className="flex items-center text-white hover:text-white/85 font-semibold transition-all duration-200 group"
                 >
                   Read More
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
