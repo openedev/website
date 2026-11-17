@@ -9,11 +9,10 @@ const statusClass: Record<Status, string> = {
   NEXT: 'text-white/70',
 };
 
-const silicon: { name: string; status: Status }[] = [
-  { name: 'Rockchip', status: 'IN PRODUCTION' },
-  { name: 'NXP', status: 'VALIDATING' },
-  { name: 'Qualcomm', status: 'VALIDATING' },
-  { name: 'NVIDIA', status: 'NEXT' },
+const physical: { name: string; status: Status }[] = [
+  { name: 'Industrial', status: 'IN PRODUCTION' },
+  { name: 'Automotive', status: 'VALIDATING' },
+  { name: 'Robotics', status: 'VALIDATING' },
 ];
 
 const ways = [
@@ -83,9 +82,9 @@ export default function Start() {
                     </div>
                   ) : (
                     <div className="border border-dashed border-white/35 rounded-md px-5 py-4 flex-1 flex flex-col justify-center">
-                      <p className="text-base uppercase tracking-[0.2em] text-white/75 mb-3">Your silicon</p>
+                      <p className="text-base uppercase tracking-[0.2em] text-white/75 mb-3">Your physical</p>
                       <dl className="space-y-2.5">
-                        {silicon.map((s) => (
+                        {physical.map((s) => (
                           <div key={s.name} className="flex items-baseline justify-between gap-4">
                             <dt className="text-white text-xl md:text-2xl">{s.name}</dt>
                             <dd className={`text-base uppercase tracking-[0.18em] font-bold ${statusClass[s.status]}`}>{s.status}</dd>

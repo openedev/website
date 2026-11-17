@@ -34,5 +34,5 @@
 <text x='600' y='755' text-anchor='middle' fill='#F2F2F2' font-size='21'>heat · dropped frames</text>
 <text x='865' y='710' text-anchor='middle' fill='#F2F2F2' font-size='22' font-weight='bold' letter-spacing='2'>MODEL</text>
 <text x='865' y='755' text-anchor='middle' fill='#F2F2F2' font-size='21'>drift · a new type</text>
-<text x='600' y='895' text-anchor='middle' fill='#8A8F96' font-size='20'>Runs on your silicon: Rockchip · NXP · Qualcomm · DeepX. Nothing leaves the site.</text>
+<text x='600' y='895' text-anchor='middle' fill='#8A8F96' font-size='20'>Runs on your silicon: NPU · GPU. Nothing leaves the site.</text>
 </svg>

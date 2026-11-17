@@ -13,7 +13,7 @@ const stack = [
   { label: 'WHERE CORRECTION BELONGS', items: ['Industrial · in production', 'Automotive · validating', 'Robot · next'] },
   { label: 'WHAT IT CORRECTS', items: ['Sensor: light, lens, belt', 'Chip: heat, dropped frames', 'Model: drift, a new type'] },
   { label: 'GOVERNS THE MODEL', items: ['YOLO (Ultralytics)', 'classifiers', 'PP-OCR', 'Qwen2', 'vendor-sealed models'] },
-  { label: 'RUNS ON YOUR SILICON', items: ['Rockchip RK3588', 'NXP i.MX 8M Plus', 'DeepX', 'Qualcomm Dragonwing', 'RKNN', 'eIQ', 'ExecuTorch', 'QAIRT', 'LiteRT', 'ONNX Runtime'] },
+  { label: 'RUNS ON YOUR SILICON', items: ['NPU', 'GPU', 'RKNN', 'eIQ', 'ExecuTorch', 'QAIRT', 'LiteRT', 'ONNX Runtime'] },
 ];
 
 export default function Where() {
