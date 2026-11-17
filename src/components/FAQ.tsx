@@ -7,8 +7,8 @@ const faqs = [
     answer: `A deployed model makes claims this part is defective, this lane is clear, grasp here. Edgeble is a runtime beside the model that checks every claim before it becomes a decision, in about 13 milliseconds, and corrects the wrong ones on the spot. When wrong claims repeat, it finds the cause sensor, chip or model fixes it on the device, and proves the fix. Nothing stops; nothing leaves the device.`,
   },
   {
-    question: 'How can it know the model is wrong?',
-    answer: `It does not take the model’s word for it. It compares what the model says with what the site has already confirmed to be true: a second opinion from different evidence. If the evidence agrees, the call stands. If it disagrees, the call is corrected. If it is unsure, it says so instead of guessing.`,
+    question: 'How can it know the model made claim wrong?',
+    answer: `It does not take the model’s word for it. It compares what the model says with what the site has already confirmed to be true: a judge’s opinion from different evidence. If the evidence agrees, the call stands. If it disagrees, the call is corrected. If it is unsure, it says so instead of guessing.`,
   },
   {
     question: 'Does it work with our model and our hardware?',
@@ -20,7 +20,12 @@ const faqs = [
   },
   {
     question: 'How do we start?',
-    answer: `Two ways. If you already run inference, hook the correction API into it and run the correction toolchain once to load the evidence: a few confirmed examples from your site. If you are still validating in the lab, install the correction beside the inference on the device and it runs from there. Either way your model does not change, and you watch the log from day one. Docs on request · info@edgeble.ai`,
+    answer: (
+      <>
+        Two ways. If you already run inference, hook the correction API into it and run the correction toolchain once to load the evidence: a few confirmed examples from your site. If you are still validating in the lab, install the correction beside the inference on the device and it runs from there. Either way your model does not change, and you watch the log from day one.{' '}
+        <a href="/letusknow" className="text-white underline underline-offset-4">Please write to us</a>.
+      </>
+    ),
   },
   {
     question: 'Is this on-device learning?',
@@ -75,7 +80,7 @@ export default function FAQ() {
                     <span className="flex h-6 w-7 shrink-0 items-center justify-center bg-white text-[11px] font-bold text-black">
                       {String(index + 1).padStart(2, '0')}
                     </span>
-                    <span className="text-2xl md:text-3xl font-semibold text-white">{item.question}</span>
+                    <span className="text-xl md:text-2xl font-semibold text-white">{item.question}</span>
                   </div>
                   <span className="relative flex h-6 w-6 shrink-0 items-center justify-center text-white/80">
                     <Plus className={`absolute h-5 w-5 transition-opacity ${isOpen ? 'opacity-0' : 'opacity-100'}`} />
