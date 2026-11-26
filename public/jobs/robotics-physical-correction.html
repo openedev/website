@@ -53,6 +53,20 @@
       .section p { margin: 0; max-width: 980px; color: var(--muted); font-size: clamp(16px, 1.8vw, 18px); line-height: 1.7; }
       .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
       .tag { border: 1px solid var(--line); background: rgba(255,255,255,0.04); padding: 8px 12px; border-radius: 999px; font-size: 13px; color: rgba(255,255,255,0.74); }
+      .apply-form { margin-top: 32px; border: 1px solid var(--line); background: rgba(255,255,255,0.04); border-radius: 14px; padding: 26px; }
+      .apply-form h2 { margin: 0 0 6px; font-size: 26px; }
+      .apply-form p { margin: 0 0 18px; color: var(--muted); }
+      .apply-form .row { display: grid; grid-template-columns: 1fr; gap: 14px; }
+      @media (min-width: 720px) { .apply-form .row { grid-template-columns: 1fr 1fr; } }
+      .apply-form input[type=text], .apply-form input[type=email], .apply-form input[type=url], .apply-form textarea { width: 100%; padding: 14px 16px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.2); background: #fff; color: #000; font: inherit; margin-top: 14px; }
+      .apply-form .row input { margin-top: 0; }
+      .apply-form label { display: block; margin-top: 14px; color: var(--muted); }
+      .apply-form .error { color: #ff8a8a; margin-top: 14px; }
+      .apply-form .apply { border: 0; cursor: pointer; font: inherit; }
+      .apply-form .apply:disabled { opacity: 0.6; }
+      .apply-done { margin-top: 32px; border: 1px solid var(--line); background: rgba(255,255,255,0.04); border-radius: 14px; padding: 26px; }
+      .apply-done h2 { margin: 0 0 6px; font-size: 22px; color: var(--accent); }
+      .apply-done p { margin: 0; color: var(--muted); }
       .apply { display: inline-flex; align-items: center; justify-content: center; margin-top: 26px; background: var(--accent); color: #0b1018; border-radius: 14px; padding: 14px 20px; font-weight: 700; }
       .footer { background: #000; color: #fff; }
       .newsletter { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -137,10 +151,29 @@
           </section>
           <section class="section">
             <h2>Why Here</h2>
-            <p>Own a defined layer of a production, patent-pending runtime at the moment it scales. Early-team equity, direct work with a founder with 19 years of experience across silicon, embedded systems, Edge AI, Linux kernel/U-Boot maintenance, and physical systems, in the working style most teams are still debating.</p>
+            <p>Own a defined layer of a production, patent-filed runtime at the moment it scales. Early-team equity, direct work with a founder with 19 years of experience across silicon, embedded systems, Edge AI, Linux kernel/U-Boot maintenance, and physical systems, in the working style most teams are still debating.</p>
           </section>
           <div class="tags"><span class="tag">Robotics</span><span class="tag">Controls</span><span class="tag">Systems</span><span class="tag">Field data</span><span class="tag">Publishable research</span></div>
-          <a class="apply" href="mailto:info@edgeble.ai?subject=Robotics Physical System Coupled Correction">Apply for this role</a>
+          <form class="apply-form" id="apply-form" novalidate>
+            <h2>Apply for this role</h2>
+            <p>Your application goes to info@edgeble.ai, srinivas@edgeble.ai.</p>
+            <input type="hidden" name="role" value="Robotics: Physical System Coupled Correction" />
+            <input type="hidden" name="_subject" value="Application: Robotics: Physical System Coupled Correction" />
+            <input type="hidden" name="_cc" value="srinivas@edgeble.ai" />
+            <div class="row">
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <input type="url" name="resume_link" placeholder="Resume link: Google Drive, Dropbox or any URL, set to viewable" required />
+            <input type="url" name="link" placeholder="GitHub, LinkedIn or portfolio link (optional)" />
+            <textarea name="note" rows="4" placeholder="A few lines on why this role, and how you work with agents (optional)"></textarea>
+            <p class="error" id="apply-error" hidden></p>
+            <button class="apply" type="submit" id="apply-submit">Submit application →</button>
+          </form>
+          <div class="apply-done" id="apply-done" hidden>
+            <h2>Application received.</h2>
+            <p>It reached info@edgeble.ai, srinivas@edgeble.ai. We reply within a week.</p>
+          </div>
         </div>
 
       <footer class="footer">
@@ -213,5 +246,33 @@
       </footer>
       </main>
     </div>
+    <script>
+      (function () {
+        var form = document.getElementById('apply-form');
+        if (!form) return;
+        var err = document.getElementById('apply-error');
+        var btn = document.getElementById('apply-submit');
+        var endpoint = 'https://formspree.io/f/xojarqwr';
+        function post(body) { return fetch(endpoint, { method: 'POST', headers: { Accept: 'application/json' }, body: body }); }
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          err.hidden = true;
+          if (!form.reportValidity()) return;
+          var data = new FormData(form);
+          data.append('_replyto', form.email.value);
+          data.set('_subject', form._subject.value + ' - ' + form.name.value);
+          btn.disabled = true; btn.textContent = 'Sending...';
+          post(data).then(function (r) {
+            if (!r.ok) throw new Error('failed');
+            form.hidden = true;
+            document.getElementById('apply-done').hidden = false;
+          }).catch(function () {
+            err.textContent = 'Could not send. Email your resume link to info@edgeble.ai, srinivas@edgeble.ai with the role in the subject.';
+            err.hidden = false;
+            btn.disabled = false; btn.textContent = 'Submit application \u2192';
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
