@@ -19,14 +19,14 @@ const howWeWork =
   'Edgeble is agent-native. We build with agentic coding workflows daily on internal platform tooling already set up for it. You direct the agents; your judgment goes on what agents cannot do: correction logic, validation design, and what better means. If you would rather type every line yourself, this role will frustrate you, self-select accordingly.';
 
 const whyHere =
-  'Own a defined layer of a production, patent-pending runtime at the moment it scales. Early-team equity, direct work with a founder with 19 years of experience across silicon, embedded systems, Edge AI, Linux kernel/U-Boot maintenance, and physical systems, in the working style most teams are still debating.';
+  'Own a defined layer of a production, patent-filed runtime at the moment it scales. Early-team equity, direct work with a founder with 19 years of experience across silicon, embedded systems, Edge AI, Linux kernel/U-Boot maintenance, and physical systems, in the working style most teams are still debating.';
 
 export const JOB_OPENINGS: JobOpening[] = [
   {
-    slug: 'mts-on-device-model',
+    slug: 'on-device-model',
     title: 'Machine Learning - On-Device Model Correction',
     type: 'Full-time',
-    location: 'Hyderabad / Hybrid',
+    location: 'Hyderabad / On-site',
     summary:
       'Own the model layer of Edgeble runtime: degradation detection, on-device adaptation, and validation before an adapted model ever serves.',
     whatWeBuild,
@@ -39,10 +39,26 @@ export const JOB_OPENINGS: JobOpening[] = [
     tags: ['Model correction', 'Edge AI', 'Quantization', 'On-device adaptation', 'Agent-native'],
   },
   {
-    slug: 'mts-on-device-npu',
+    slug: 'on-device-platform',
+    title: 'Platform Engineering - Correction Platform',
+    type: 'Full-time',
+    location: 'Hyderabad / On-site',
+    summary:
+      'Own the platform that turns the runtime into a product: the build, convert, deploy and update path a customer team uses to put self-correcting AI on their own devices, with their own data and models.',
+    whatWeBuild,
+    role:
+      'Own the platform layer. The runtime already corrects models in production; the platform is how a customer team gets there without us in the room. That means the device image and its layers, the inference hooks a vendor engine plugs into, the correction layer on top, and the host-side toolchain that builds the image, converts a model for the target NPU, and ships updates to a fleet. It also means the data path: collecting frames on the device, labelling them, fine-tuning on the module itself, and feeding what the judge catches in the field back into the next model. You will design the interfaces between these pieces, make them work the same across silicon vendors, and shape the three ways customers run it: hosted by us, in their cloud with our scripts, or fully on their own metal.',
+    howWeWork,
+    you:
+      '3-5 years building developer platforms, embedded Linux products, or ML infrastructure that other engineers depend on. Comfortable across the whole span: Yocto or Debian image builds, update and fleet mechanics, Python and C/C++ tooling, model conversion for at least one NPU stack, and clean CLI and API design. You care about a customer engineer reading your docs and succeeding on the first try. Agent-augmented working evidence matters, as above.',
+    whyHere,
+    tags: ['Developer platform', 'Embedded Linux', 'Model toolchain', 'Fleet updates', 'Edge AI'],
+  },
+  {
+    slug: 'on-device-npu',
     title: 'Machine Learning - On-Device NPU, Camera',
     type: 'Full-time',
-    location: 'Hyderabad / Hybrid',
+    location: 'Hyderabad / On-site',
     summary:
       'Own the system layer of Edgeble runtime: the full vision-inference substrate from photons to tensors across camera paths, ISP pipelines, and NPU runtimes.',
     whatWeBuild,
@@ -58,7 +74,7 @@ export const JOB_OPENINGS: JobOpening[] = [
     slug: 'robotics-physical-correction',
     title: 'Robotics: Physical System Coupled Correction',
     type: 'Full-time',
-    location: 'Hyderabad / Hybrid',
+    location: 'Hyderabad / On-site',
     summary:
       'Investigate how on-device correction works when the physical system and the model are coupled, using real deployment data and a path to publishable findings.',
     whatWeBuild,
@@ -74,7 +90,7 @@ export const JOB_OPENINGS: JobOpening[] = [
     slug: 'physical-ai-deployment',
     title: 'Physical AI Deployment: Industrial/Automotive',
     type: 'Full-time',
-    location: 'Hyderabad / Hybrid',
+    location: 'Hyderabad / On-site',
     summary:
       'Work on deploying self-correcting Physical AI in industrial and automotive settings where real-world reliability matters more than lab metrics.',
     whatWeBuild,
