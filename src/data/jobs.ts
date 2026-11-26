@@ -24,7 +24,7 @@ const whyHere =
 export const JOB_OPENINGS: JobOpening[] = [
   {
     slug: 'mts-on-device-model',
-    title: 'MTS - On-Device Model Correction',
+    title: 'Machine Learning - On-Device Model Correction',
     type: 'Full-time',
     location: 'Hyderabad / Hybrid',
     summary:
@@ -40,7 +40,7 @@ export const JOB_OPENINGS: JobOpening[] = [
   },
   {
     slug: 'mts-on-device-npu',
-    title: 'MTS - On-Device NPU, Camera Correction',
+    title: 'Machine Learning - On-Device NPU, Camera',
     type: 'Full-time',
     location: 'Hyderabad / Hybrid',
     summary:
